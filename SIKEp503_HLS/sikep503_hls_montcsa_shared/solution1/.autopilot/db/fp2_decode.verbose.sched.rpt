@@ -1,0 +1,172 @@
+
+
+================================================================
+== Vitis HLS Report for 'fp2_decode'
+================================================================
+* Date:           Mon Sep 14 16:36:29 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_montcsa_shared
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      208|      208|  2.080 us|  2.080 us|  208|  208|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.99>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%x_offset_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %x_offset" [src_montcsa/sidh.cpp:71]   --->   Operation 9 'read' 'x_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i3 @_ssdm_op_BitConcatenate.i3.i2.i1, i2 %x_offset_read, i1 0" [src_montcsa/sidh.cpp:71]   --->   Operation 10 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [2/2] (1.99ns)   --->   "%call_ln71 = call void @fp2_decode_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_69_2, i3 %tmp, i64 %x" [src_montcsa/sidh.cpp:71]   --->   Operation 11 'call' 'call_ln71' <Predicate = true> <Delay = 1.99> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 1.48>
+ST_2 : Operation 12 [1/2] (1.48ns)   --->   "%call_ln71 = call void @fp2_decode_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_69_2, i3 %tmp, i64 %x" [src_montcsa/sidh.cpp:71]   --->   Operation 12 'call' 'call_ln71' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 1.14>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%enc_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %enc" [src_montcsa/sidh.cpp:71]   --->   Operation 13 'read' 'enc_read' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [2/2] (1.14ns)   --->   "%call_ln71 = call void @fp2_decode_Pipeline_VITIS_LOOP_76_3, i64 %enc_read, i8 %gmem, i2 %x_offset_read, i64 %x" [src_montcsa/sidh.cpp:71]   --->   Operation 14 'call' 'call_ln71' <Predicate = true> <Delay = 1.14> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln71 = call void @fp2_decode_Pipeline_VITIS_LOOP_76_3, i64 %enc_read, i8 %gmem, i2 %x_offset_read, i64 %x" [src_montcsa/sidh.cpp:71]   --->   Operation 15 'call' 'call_ln71' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.71>
+ST_5 : Operation 16 [2/2] (0.71ns)   --->   "%call_ln34 = call void @fpmul503_mont.19.1, i64 %x, i2 %x_offset_read, i1 0" [src_montcsa/fpx.cpp:34->src_montcsa/fpx.cpp:380->src_montcsa/sidh.cpp:95]   --->   Operation 16 'call' 'call_ln34' <Predicate = true> <Delay = 0.71> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln34 = call void @fpmul503_mont.19.1, i64 %x, i2 %x_offset_read, i1 0" [src_montcsa/fpx.cpp:34->src_montcsa/fpx.cpp:380->src_montcsa/sidh.cpp:95]   --->   Operation 17 'call' 'call_ln34' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.71>
+ST_7 : Operation 18 [2/2] (0.71ns)   --->   "%call_ln34 = call void @fpmul503_mont.19.1, i64 %x, i2 %x_offset_read, i1 1" [src_montcsa/fpx.cpp:34->src_montcsa/fpx.cpp:381->src_montcsa/sidh.cpp:95]   --->   Operation 18 'call' 'call_ln34' <Predicate = true> <Delay = 0.71> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty_49, i32 0, i32 0, void @empty_17, i32 0, i32 0, void @empty_20, void @empty_38, void @empty_17, i32 16, i32 16, i32 16, i32 16, void @empty_17, void @empty_17, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln34 = call void @fpmul503_mont.19.1, i64 %x, i2 %x_offset_read, i1 1" [src_montcsa/fpx.cpp:34->src_montcsa/fpx.cpp:381->src_montcsa/sidh.cpp:95]   --->   Operation 20 'call' 'call_ln34' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln96 = ret" [src_montcsa/sidh.cpp:96]   --->   Operation 21 'ret' 'ret_ln96' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.992ns
+The critical path consists of the following:
+	wire read operation ('x_offset_read', src_montcsa/sidh.cpp:71) on port 'x_offset' (src_montcsa/sidh.cpp:71) [5]  (0.000 ns)
+	'call' operation 0 bit ('call_ln71', src_montcsa/sidh.cpp:71) to 'fp2_decode_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_69_2' [9]  (1.992 ns)
+
+ <State 2>: 1.481ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln71', src_montcsa/sidh.cpp:71) to 'fp2_decode_Pipeline_VITIS_LOOP_67_1_VITIS_LOOP_69_2' [9]  (1.481 ns)
+
+ <State 3>: 1.147ns
+The critical path consists of the following:
+	wire read operation ('enc_read', src_montcsa/sidh.cpp:71) on port 'enc' (src_montcsa/sidh.cpp:71) [6]  (0.000 ns)
+	'call' operation 0 bit ('call_ln71', src_montcsa/sidh.cpp:71) to 'fp2_decode_Pipeline_VITIS_LOOP_76_3' [10]  (1.147 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.714ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln34', src_montcsa/fpx.cpp:34->src_montcsa/fpx.cpp:380->src_montcsa/sidh.cpp:95) to 'fpmul503_mont.19.1' [11]  (0.714 ns)
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.714ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln34', src_montcsa/fpx.cpp:34->src_montcsa/fpx.cpp:381->src_montcsa/sidh.cpp:95) to 'fpmul503_mont.19.1' [12]  (0.714 ns)
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,1096 @@
+<title>モンゴメリ乗算器 検出・自動変換レポート</title>
+<style>
+  :root {
+    --bg: #EDEAE1;
+    --panel: #E3DFD3;
+    --panel-2: #DAD5C6;
+    --ink: #22262A;
+    --ink-dim: #5A5C56;
+    --line: #CFC8B8;
+    --accent: #AE5B2B;
+    --accent-ink: #FFFFFF;
+    --accent2: #3E7268;
+    --warn: #A83F27;
+    --code-ink: #3A3D33;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16191C;
+      --panel: #1E2225;
+      --panel-2: #262B2E;
+      --ink: #E7E2D6;
+      --ink-dim: #A7A296;
+      --line: #363B3E;
+      --accent: #DB9257;
+      --accent-ink: #1A1206;
+      --accent2: #63AFA3;
+      --warn: #E17A5F;
+      --code-ink: #D8D3C4;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16191C;
+    --panel: #1E2225;
+    --panel-2: #262B2E;
+    --ink: #E7E2D6;
+    --ink-dim: #A7A296;
+    --line: #363B3E;
+    --accent: #DB9257;
+    --accent-ink: #1A1206;
+    --accent2: #63AFA3;
+    --warn: #E17A5F;
+    --code-ink: #D8D3C4;
+    color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --bg: #EDEAE1;
+    --panel: #E3DFD3;
+    --panel-2: #DAD5C6;
+    --ink: #22262A;
+    --ink-dim: #5A5C56;
+    --line: #CFC8B8;
+    --accent: #AE5B2B;
+    --accent-ink: #FFFFFF;
+    --accent2: #3E7268;
+    --warn: #A83F27;
+    --code-ink: #3A3D33;
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  body {
+    font-family: -apple-system, "Segoe UI", "Hiragino Sans", "Yu Gothic", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 0 20px 96px;
+  }
+  ::selection { background: var(--accent); color: var(--accent-ink); }
+
+  .wrap { max-width: 780px; margin: 0 auto; }
+  .wide  { max-width: 940px; margin: 0 auto; }
+
+  h1, h2, h3 {
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Hiragino Mincho ProN", serif;
+    text-wrap: balance;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  code, .mono, .num, table {
+    font-variant-numeric: tabular-nums;
+  }
+  code, pre, .mono {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", "JetBrains Mono", Consolas, "Courier New", monospace;
+  }
+
+  /* ---------- Header / spec block ---------- */
+  header.report-head {
+    max-width: 940px;
+    margin: 56px auto 64px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .eyebrow {
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+  h1.title {
+    font-size: clamp(28px, 4.2vw, 42px);
+    line-height: 1.15;
+    margin: 0 0 12px;
+  }
+  .subtitle {
+    color: var(--ink-dim);
+    font-size: 17px;
+    max-width: 62ch;
+    margin: 0 0 28px;
+  }
+  .spec-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    font-family: ui-monospace, "SF Mono", Consolas, monospace;
+    font-size: 13px;
+  }
+  .spec-cell {
+    background: var(--panel);
+    padding: 10px 14px;
+  }
+  .spec-cell .k {
+    display: block;
+    color: var(--ink-dim);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .spec-cell .v { color: var(--ink); }
+
+  /* ---------- Section structure ---------- */
+  section.stage {
+    max-width: 940px;
+    margin: 0 auto 72px;
+  }
+  .stage-head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 6px;
+  }
+  .stage-num {
+    font-family: Georgia, "Iowan Old Style", serif;
+    font-size: 15px;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stage h2 {
+    font-size: 26px;
+    margin: 0;
+  }
+  .stage-sub {
+    color: var(--ink-dim);
+    max-width: 68ch;
+    margin: 10px 0 28px 44px;
+  }
+  .stage-body { margin-left: 44px; }
+  .stage-body > * + * { margin-top: 22px; }
+  @media (max-width: 560px) {
+    .stage-sub, .stage-body { margin-left: 0; }
+  }
+
+  p { max-width: 68ch; }
+  .stage-body p, .stage-body ul, .stage-body ol { max-width: 68ch; }
+  ul, ol { padding-left: 22px; }
+  li + li { margin-top: 6px; }
+
+  h3.sub {
+    font-size: 17px;
+    margin: 0 0 10px;
+  }
+
+  /* ---------- Code / log blocks ---------- */
+  .codeblock {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
+    padding: 16px 18px;
+    overflow-x: auto;
+  }
+  .codeblock pre {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--code-ink);
+    white-space: pre;
+  }
+  .codeblock .label {
+    font-family: ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin: 0 0 10px;
+  }
+  .tok-fn { color: var(--accent2); }
+  .tok-kw { color: var(--accent); }
+  .tok-cm { color: var(--ink-dim); font-style: italic; }
+  .tok-ok { color: var(--accent2); font-weight: 600; }
+  .tok-skip { color: var(--ink-dim); }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  @media (max-width: 700px) {
+    .two-col { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Criteria list ---------- */
+  .criteria {
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .criterion {
+    background: var(--panel);
+    padding: 14px 18px;
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 4px 14px;
+  }
+  .criterion .idx {
+    font-family: Georgia, serif;
+    color: var(--accent);
+    font-size: 18px;
+  }
+  .criterion .name {
+    font-weight: 600;
+    margin: 0;
+  }
+  .criterion .desc {
+    grid-column: 2;
+    color: var(--ink-dim);
+    font-size: 14.5px;
+    margin: 2px 0 0;
+  }
+  .criterion .names {
+    grid-column: 2;
+    font-family: ui-monospace, monospace;
+    font-size: 12.5px;
+    color: var(--ink-dim);
+    margin-top: 6px;
+  }
+
+  /* ---------- Pipeline diagram ---------- */
+  .pipeline {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    overflow-x: auto;
+    padding: 4px 0 10px;
+  }
+  .pipe-stage {
+    flex: 1 0 200px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 16px 18px;
+    position: relative;
+  }
+  .pipe-stage + .pipe-stage { border-left: none; }
+  .pipe-stage .tag {
+    font-family: ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .pipe-stage .head {
+    font-weight: 700;
+    margin: 6px 0 8px;
+    font-size: 15px;
+  }
+  .pipe-stage p { font-size: 13.5px; color: var(--ink-dim); margin: 0; max-width: none; }
+  .pipe-arrow {
+    flex: 0 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 18px;
+    background: var(--panel-2);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .pipe-stage.current { border-top: 3px solid var(--accent); }
+
+  /* ---------- Data tables ---------- */
+  .tablewrap { overflow-x: auto; }
+  table.data {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+    min-width: 560px;
+  }
+  table.data caption {
+    text-align: left;
+    font-family: ui-monospace, monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin-bottom: 10px;
+  }
+  table.data th, table.data td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--line);
+    text-align: right;
+  }
+  table.data th:first-child, table.data td:first-child {
+    text-align: left;
+  }
+  table.data thead th {
+    font-weight: 600;
+    color: var(--ink-dim);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--ink);
+  }
+  table.data tbody tr:last-child td { border-bottom: 2px solid var(--ink); }
+  table.data td.hi { color: var(--accent); font-weight: 700; }
+  table.data td.ok { color: var(--accent2); font-weight: 700; }
+  table.data td.warn-cell { color: var(--warn); font-weight: 700; }
+  table.data tr.emph td { font-weight: 700; }
+
+  .badge {
+    display: inline-block;
+    font-family: ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+  }
+  .badge.ok { color: var(--accent2); }
+  .badge.warn { color: var(--warn); }
+
+  /* ---------- Utilization bars ---------- */
+  .bars { display: grid; gap: 22px; margin-top: 6px; }
+  .bar-group .bar-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13.5px;
+    margin-bottom: 6px;
+  }
+  .bar-group .bar-label .name { font-weight: 600; }
+  .bar-group .bar-label .val {
+    font-family: ui-monospace, monospace;
+    color: var(--ink-dim);
+  }
+  .bar-track {
+    position: relative;
+    height: 22px;
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    background: var(--accent2);
+    border-radius: 2px 0 0 2px;
+  }
+  .bar-fill.over { background: var(--warn); }
+  .bar-track .marker-100 {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 100%;
+    width: 0;
+    border-left: 1px dashed var(--ink-dim);
+  }
+  .bar-track.capped .bar-fill { width: 100% !important; }
+
+  /* ---------- Callouts ---------- */
+  .callout {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent2);
+    padding: 16px 20px;
+    font-size: 14.5px;
+  }
+  .callout .head {
+    font-weight: 700;
+    margin: 0 0 6px;
+    color: var(--accent2);
+  }
+  .callout p { margin: 0; max-width: none; }
+
+  .kv-inline {
+    font-family: ui-monospace, monospace;
+    font-size: 13px;
+    background: var(--panel-2);
+    padding: 1px 6px;
+    border-radius: 3px;
+  }
+
+  footer.report-foot {
+    max-width: 940px;
+    margin: 80px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-dim);
+    font-size: 13px;
+    font-family: ui-monospace, monospace;
+  }
+
+  a { color: var(--accent); }
+</style>
+
+<header class="report-head">
+  <p class="eyebrow">HLS 合成レポート — Montgomery Multiplication</p>
+  <h1 class="title">モンゴメリ乗算器の自動検出・変換パイプライン</h1>
+  <p class="subtitle">
+    ビット単位のリファレンス実装から出発し、語単位CIOSへの再実装、
+    <code>montgomery_auto_rewriter</code>による自動検出・置換、
+    呼び出し箇所統合によるリソース削減、窓法による高速化、
+    コア差し替えによる極小化までを検証し、速度重視・バランス・
+    リソース最小の3オプションを確立した記録(実際のRSA-512 modExp演算)。
+  </p>
+  <div class="spec-grid">
+    <div class="spec-cell"><span class="k">対象アプリケーション</span><span class="v">RSA-512 秘密鍵べき乗 (modExp)</span></div>
+    <div class="spec-cell"><span class="k">出典</span><span class="v">tsalomon/EmbeddedMontgomeryRSA</span></div>
+    <div class="spec-cell"><span class="k">語幅 / 語数</span><span class="v">32-bit &times; 16 語 (512-bit)</span></div>
+    <div class="spec-cell"><span class="k">デバイス</span><span class="v">xcvu29p-fsga2577-2L-e</span></div>
+    <div class="spec-cell"><span class="k">クロック目標</span><span class="v">10.0 ns (100 MHz)</span></div>
+    <div class="spec-cell"><span class="k">ツールチェーン</span><span class="v">Vitis HLS 2024.2</span></div>
+  </div>
+</header>
+
+<section class="stage">
+  <div class="stage-head"><span class="stage-num">1</span><h2>検出機構</h2></div>
+  <p class="stage-sub">
+    <code>montgomery_auto_rewriter</code>(Clang LibToolingベースの静的解析
+    ツール)が、C/C++ソースを走査してモンゴメリ乗算のパターンを検出する
+    しくみ。
+  </p>
+  <div class="stage-body">
+
+    <div>
+      <h3 class="sub">4つの検出基準</h3>
+      <div class="criteria">
+        <div class="criterion">
+          <span class="idx">1</span>
+          <p class="name">多倍長走査ループ</p>
+          <p class="desc">語数ぶんを回す<code>for</code>ループが2段以上ネストしていること。</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">2</span>
+          <p class="name">還元定数による乗算</p>
+          <p class="desc">モンゴメリ定数(n′)を使った語ごとの乗算、または既知の還元関数呼び出し。</p>
+          <p class="names">mprime · m0inv · n0inv · nprime · qinv · minv · inv · u &nbsp;|&nbsp; montgomery_reduce · redc · fpmul_mont · rdc_mont</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">3</span>
+          <p class="name">法(モジュラス)の参照</p>
+          <p class="desc">引数または大域定数として法が実際に使われていること。</p>
+          <p class="names">mod · modulus · N · p · prime · M · m</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">4</span>
+          <p class="name">条件付き最終減算(任意)</p>
+          <p class="desc">定数時間化のための末尾補正。判定を後押しする追加シグナル。</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="sub">検出コマンドとトレース出力</h3>
+      <div class="codeblock">
+        <p class="label">$ montgomery_auto_rewriter --dry-run --trace</p>
+        <pre><span class="tok-cm">// src_converted/mont_word.c を解析</span>
+
+[mont-auto] Function 'mont_word_compute_mprime':
+  forDepth=1, redcMul=2, modUse=0, kind=Unknown <span class="tok-skip">=&gt; SKIP</span>
+  <span class="tok-cm">reason: need &gt;=2 nested for loops (got 1)</span>
+  <span class="tok-cm">reason: modulus parameter not referenced</span>
+
+[mont-auto] Function '<span class="tok-fn">montMult_words</span>':
+  forDepth=2, redcMul=1, mul=3, modUse=1, condSub=1
+  kind=MontMul(CIOS) <span class="tok-ok">=&gt; CONVERT</span>
+  params: a=x, b=y, c=out, mod=m, mprime=mprime, nwords=-</pre>
+      </div>
+      <p style="margin-top:14px; color:var(--ink-dim); font-size:14.5px;">
+        前処理用の<code class="mono">mont_word_compute_mprime</code>(Newton法による
+        逆元計算)はループ深さ1・法未参照のため正しく除外され、
+        乗算本体の<code class="mono">montMult_words</code>だけが検出対象になった。
+        <code class="mono">nwords=-</code>は、SIKEの<code class="mono">fpmul_mont</code>と
+        同じく可変長引数を持たない固定長配列設計だったため、
+        語数パラメータの解決が不要だったことを示す。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="stage">
+  <div class="stage-head"><span class="stage-num">2</span><h2>変換後アーキテクチャ</h2></div>
+  <p class="stage-sub">
+    出典コードのビット単位アルゴリズムは検出対象の構造と一致しないため、
+    実際には2段階の変換を経ている。
+  </p>
+  <div class="stage-body">
+
+    <div class="pipeline">
+      <div class="pipe-stage">
+        <p class="tag">Stage 0 · 出典そのまま</p>
+        <p class="head">ビット単位 shift-and-add</p>
+        <p><code class="mono">for(i=mBits;i&gt;0;i--)</code> でX を1ビットずつ処理。
+        R=2<sup>mBits</sup>。検出パターン不一致。</p>
+      </div>
+      <div class="pipe-arrow">&#8594;</div>
+      <div class="pipe-stage current">
+        <p class="tag">Stage 1 · 手動再実装(変換前)</p>
+        <p class="head">語単位 CIOS</p>
+        <p><code class="mono">montMult_words</code>。32bit&times;16語、R=2<sup>512</sup>。
+        <code class="mono">fpmul_mont</code>と同型の固定長シグネチャで検出可能に。</p>
+      </div>
+      <div class="pipe-arrow">&#8594;</div>
+      <div class="pipe-stage">
+        <p class="tag">Stage 2 · 自動変換(変換後)</p>
+        <p class="head">最適化コアへ委譲</p>
+        <p><code class="mono">mont::MontOps&lt;&gt;::mul(...)</code> 呼び出しへ本体を
+        置換。FIOS-CSA-True / Flat の2系統を検証。</p>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="sub">Stage 1 &#8594; Stage 2: 自動書き換えの中身</h3>
+      <div class="two-col">
+        <div class="codeblock">
+          <p class="label">変換前 (抜粋)</p>
+          <pre>void montMult_words(
+    <span class="tok-kw">const</span> uint32_t x[16], y[16],
+    <span class="tok-kw">const</span> uint32_t m[16],
+    uint32_t mprime,
+    uint32_t out[16])
+{
+  <span class="tok-cm">// t += x[i]*y (行ごと)</span>
+  <span class="tok-cm">// t += (t[0]*mprime)*m</span>
+  <span class="tok-cm">// t &gt;&gt;= 1 word</span>
+  <span class="tok-cm">// ...16行を素朴なCIOSで実装</span>
+}</pre>
+        </div>
+        <div class="codeblock">
+          <p class="label">変換後 (自動生成)</p>
+          <pre>void montMult_words(...)
+{
+#pragma HLS INLINE off
+  <span class="tok-cm">// Auto-converted by
+  // montgomery_auto_rewriter</span>
+  <span class="tok-kw">constexpr unsigned</span> MAX_NWORDS = 16;
+  <span class="tok-fn">mont::MontOps</span>&lt;Digit, MAX_NWORDS&gt;
+      ::mul(x, y, out, m,
+            mprime, MAX_NWORDS);
+}</pre>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="sub">2つの最適化コア</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px;">
+        <code class="mono">mont::MontOps&lt;&gt;</code>は既定でFIOS-CSA-True(真の
+        キャリーセーブ表現)へ委譲する。LUT削減を狙う場合は、SIKE研究で
+        確立した手法と同様に、ディスパッチャを経由せず
+        <code class="mono">mont_fios_csa_flat::MontOps_FIOS_CSA_Flat&lt;&gt;::mul(...)</code>
+        を直接呼び出す1行差し替えでFlat版に切り替える。
+      </p>
+      <div class="two-col">
+        <div class="callout" style="border-left-color:var(--accent);">
+          <p class="head" style="color:var(--accent);">FIOS-CSA-True</p>
+          <p>和・桁上げを冗長表現(S, C)のまま全反復にわたって保持し、
+          最後に1回だけ3:2圧縮器で正規化する。単発レイテンシは最速だが、
+          圧縮器がLUTベースのためLUT消費が大きい。</p>
+        </div>
+        <div class="callout">
+          <p class="head">FIOS-CSA-Flat</p>
+          <p>外側ループを完全展開し、通常の<code class="mono">+</code>演算子で
+          FPGA内蔵の高速キャリーチェーン(CARRY8)へ直接マッピングする。
+          速度はTrueにほぼ並びつつLUTを大幅に抑える。</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="sub">レイテンシ決定化: 最初から組み込んだ3つの選択パターン</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px; margin-bottom:14px;">
+        「実行時データでループ本体の計算量が変わる」箇所は、HLSの合成
+        レイテンシが不定(min≠max)になる。今回は3箇所すべてに
+        「常に計算し、採用するかどうかをビットマスクで選ぶ」定数時間
+        パターンを設計段階から適用した。
+      </p>
+      <ol style="max-width:68ch; font-size:14.5px;">
+        <li><strong>最終条件付き減算</strong> — <code class="mono">t&gt;=m</code>なら
+          <code class="mono">t-=m</code>を、分岐ではなく減算後の値との
+          マスク選択に。</li>
+        <li><strong>大小比較ループ</strong> — 早期<code class="mono">break</code>を
+          廃し、全16語を常にスキャンしてから結果を確定。</li>
+        <li><strong>modExpの指数ビット分岐</strong> — 毎回モンゴメリ乗算を
+          実行し、指数ビットが1かどうかで採用可否だけを選ぶ。</li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
+<section class="stage">
+  <div class="stage-head"><span class="stage-num">3</span><h2>合成結果</h2></div>
+  <p class="stage-sub">
+    3構成(変換前 / FIOS-CSA-True / FIOS-CSA-Flat)すべてで
+    レイテンシが完全に決定的(min = max)であることを確認した上で比較する。
+  </p>
+  <div class="stage-body">
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>レイテンシ・速度</caption>
+        <thead>
+          <tr><th>構成</th><th>サイクル数</th><th>実時間</th><th>速度倍率</th><th>決定性</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>変換前(CIOS)</td>
+            <td class="num">574,030</td>
+            <td class="num">5.740 ms</td>
+            <td class="num">1.00&times;</td>
+            <td><span class="badge ok">min = max</span></td>
+          </tr>
+          <tr>
+            <td>変換後 FIOS-CSA-True</td>
+            <td class="num hi">56,035</td>
+            <td class="num hi">0.560 ms</td>
+            <td class="num hi">10.25&times;</td>
+            <td><span class="badge ok">min = max</span></td>
+          </tr>
+          <tr>
+            <td>変換後 FIOS-CSA-Flat</td>
+            <td class="num">57,051</td>
+            <td class="num">0.571 ms</td>
+            <td class="num">10.06&times;</td>
+            <td><span class="badge ok">min = max</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>リソース使用量(デバイス比 / SLR比)</caption>
+        <thead>
+          <tr><th>構成</th><th>DSP</th><th>LUT</th><th>FF</th><th>LUT (SLR)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>変換前(CIOS)</td>
+            <td class="num">36 <span style="color:var(--ink-dim);">(0.29%)</span></td>
+            <td class="num">27,526 <span style="color:var(--ink-dim);">(1.6%)</span></td>
+            <td class="num">17,762 <span style="color:var(--ink-dim);">(0.5%)</span></td>
+            <td class="num">6%</td>
+          </tr>
+          <tr>
+            <td>変換後 FIOS-CSA-True</td>
+            <td class="num">667 <span style="color:var(--ink-dim);">(5%)</span></td>
+            <td class="num warn-cell">1,454,775 <span style="color:var(--ink-dim);">(84%)</span></td>
+            <td class="num">158,222 <span style="color:var(--ink-dim);">(4%)</span></td>
+            <td class="num warn-cell">336%</td>
+          </tr>
+          <tr class="emph">
+            <td>変換後 FIOS-CSA-Flat</td>
+            <td class="num">429 <span style="color:var(--ink-dim);">(3%)</span></td>
+            <td class="num">367,870 <span style="color:var(--ink-dim);">(21%)</span></td>
+            <td class="num">107,253 <span style="color:var(--ink-dim);">(3%)</span></td>
+            <td class="num ok">85%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h3 class="sub">LUT使用率 — デバイス全体 / 単一SLR</h3>
+      <div class="bars">
+        <div class="bar-group">
+          <div class="bar-label"><span class="name">変換前 &middot; デバイス比</span><span class="val">1.6%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:1.6%"></div><div class="marker-100"></div></div>
+        </div>
+        <div class="bar-group">
+          <div class="bar-label"><span class="name">True &middot; デバイス比</span><span class="val">84%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:84%"></div><div class="marker-100"></div></div>
+        </div>
+        <div class="bar-group">
+          <div class="bar-label"><span class="name">True &middot; 単一SLR比</span><span class="val">336% &mdash; 超過</span></div>
+          <div class="bar-track capped"><div class="bar-fill over" style="width:100%"></div><div class="marker-100"></div></div>
+        </div>
+        <div class="bar-group">
+          <div class="bar-label"><span class="name">Flat &middot; デバイス比</span><span class="val">21%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:21%"></div><div class="marker-100"></div></div>
+        </div>
+        <div class="bar-group">
+          <div class="bar-label"><span class="name">Flat &middot; 単一SLR比</span><span class="val">85%</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:85%"></div><div class="marker-100"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p class="head">要点</p>
+      <p>
+        FIOS-CSA-Flatへの切り替えで、Trueに対しLUTを74.7%削減
+        (1,454,775 &rarr; 367,870)、DSPを35.7%削減(667 &rarr; 429)しながら、
+        速度は1.8%落ちるのみ(10.25&times; &rarr; 10.06&times;)。単一SLR比のLUTも
+        336%(超過)から85%(収容範囲内)へ改善し、SIKE研究では一度も
+        達成できなかった「単一SLRに収まる高速化」を実現した。
+        レイテンシの完全な決定性(min = max)は3構成すべてで維持。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="stage">
+  <div class="stage-head"><span class="stage-num">4</span><h2>リソース削減 &mdash; 呼び出し箇所の統合</h2></div>
+  <p class="stage-sub">
+    FIOS-CSA-Flat版をさらに調べたところ、<code class="mono">montMult_words</code>
+    がソースコード上の呼び出し箇所ごとに物理的に複製されていることが判明した。
+    その解消に取り組んだ記録。
+  </p>
+  <div class="stage-body">
+
+    <div>
+      <h3 class="sub">発見: 使用時間0.33%の呼び出しがLUTの73%を占めていた</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px;">
+        <code class="mono">rsa_modexp_hw</code>は<code class="mono">montMult_words</code>を
+        5箇所(ループ外3箇所: <code class="mono">MontForm(1)</code> /
+        <code class="mono">MontForm(c)</code> / <code class="mono">FromMont</code>、
+        ループ内2箇所: 二乗 / z候補算出)から呼ぶ。合成結果を調べると、
+        ループ内の2箇所は自動的に1インスタンスへ共有されていた一方、
+        ループ外の3箇所は<strong>それぞれ専用の物理ハードウェア</strong>
+        (1個あたり約87,000〜94,000 LUT)として複製されていた。
+      </p>
+      <div class="tablewrap">
+        <table class="data">
+          <caption>複製発覚時のインスタンス内訳(FIOS-CSA-Flat)</caption>
+          <thead>
+            <tr><th>呼び出し箇所</th><th>使用サイクル数</th><th>LUT</th><th>割合</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ループ内(共有済み・1個)</td>
+              <td class="num">56,835</td>
+              <td class="num">95,504</td>
+              <td class="num">全体の99.7%の時間</td>
+            </tr>
+            <tr>
+              <td>MontForm(1)</td>
+              <td class="num">55</td>
+              <td class="num warn-cell">87,182</td>
+              <td class="num warn-cell">0.10%の時間</td>
+            </tr>
+            <tr>
+              <td>MontForm(c)</td>
+              <td class="num">73</td>
+              <td class="num warn-cell">93,824</td>
+              <td class="num warn-cell">0.13%の時間</td>
+            </tr>
+            <tr>
+              <td>FromMont</td>
+              <td class="num">60</td>
+              <td class="num warn-cell">87,243</td>
+              <td class="num warn-cell">0.11%の時間</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="max-width:68ch; color:var(--warn); font-size:14.5px; font-weight:600;">
+        ループ外3箇所の合計188サイクル(全体の0.33%)のために、約268,000
+        LUT(設計全体の73%)が専有されていた。
+      </p>
+    </div>
+
+    <div>
+      <h3 class="sub">対策1(失敗): set_directive_allocation</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px;">
+        SIKE研究での前例(<code class="mono">fp2mul_mont</code>の16重複製問題)
+        と同じ手法をまず試したが、今回も真の共有には至らなかった。
+        呼び出し階層がシンプル(<code class="mono">rsa_modexp_hw</code>が
+        直接5箇所から呼ぶのみ)なため"call is removed"警告こそ出なかった
+        ものの、複製は3インスタンスのまま解消せず、LUTはむしろ微増
+        するという分かりにくい副作用のみが残った。
+      </p>
+    </div>
+
+    <div>
+      <h3 class="sub">対策2(成功): 呼び出し文を1つに統一し、小さなループで反復する</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px; margin-bottom:14px;">
+        実測から読み取れたVitis HLSの実際の挙動: <strong>同一のループ本体
+        内で繰り返し実行される、ソース上1つの呼び出し文</strong>は自動的に
+        1インスタンスへ共有される。一方、<strong>別々の文として書かれた
+        呼び出し</strong>は、たとえ同じ関数への呼び出しであっても複製
+        される。この性質を利用し、ループ外の呼び出しを人為的に小さな
+        ループへ統一した。
+      </p>
+      <div class="two-col">
+        <div class="codeblock">
+          <p class="label">Before &mdash; 複製される</p>
+          <pre>montMult_words(
+    one, r2m, m, mprime,
+    zarr1);
+montMult_words(
+    c, r2m, m, mprime,
+    parr1);</pre>
+        </div>
+        <div class="codeblock">
+          <p class="label">After &mdash; 共有される</p>
+          <pre>uint32_t x[2][N], y[2][N],
+         out[2][N];
+x[0]=one; y[0]=r2m;
+x[1]=c;   y[1]=r2m;
+<span class="tok-kw">for</span> (unsigned s=0; s&lt;2; s++)
+  <span class="tok-fn">montMult_words</span>(
+      x[s], y[s], m,
+      mprime, out[s]);</pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--warn);">
+      <p class="head" style="color: var(--warn);">副作用: 部分適用は既存の共有を壊す</p>
+      <p>
+        この書き換えをループ外の2箇所だけに適用したところ、狙い通り
+        そこは1インスタンスへ統合された。しかし<strong>副作用として、
+        元々共有できていたループ内の2箇所(二乗/z候補)の共有が崩れ、
+        2インスタンスに分裂してしまった</strong>。Vitisの資源バインディング
+        は関数全体を通した大域的な判断をしているらしく、一部だけの
+        修正では予測できない影響が出る。関数内の全ての同種呼び出し
+        箇所に一貫してこのパターンを適用することで解決した。
+      </p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>呼び出し統合の前後比較(FIOS-CSA-Flat)</caption>
+        <thead>
+          <tr><th>構成</th><th>物理<br>インスタンス数</th><th>LUT</th><th>DSP</th><th>LUT (SLR)</th><th>レイテンシ</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>統合前</td>
+            <td class="num">4</td>
+            <td class="num">367,870 <span style="color:var(--ink-dim);">(21%)</span></td>
+            <td class="num">429 <span style="color:var(--ink-dim);">(3%)</span></td>
+            <td class="num">85%</td>
+            <td class="num">57,051 cyc</td>
+          </tr>
+          <tr class="emph">
+            <td>統合後</td>
+            <td class="num ok">3</td>
+            <td class="num ok">283,587 <span style="color:var(--ink-dim);">(16%)</span></td>
+            <td class="num ok">363 <span style="color:var(--ink-dim);">(3%)</span></td>
+            <td class="num ok">65%</td>
+            <td class="num ok">56,585 cyc</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <p class="head">要点</p>
+      <p>
+        LUTを22.9%削減(367,870 &rarr; 283,587)、DSPを15.4%削減
+        (429 &rarr; 363)しながら、レイテンシも0.8%改善(57,051 &rarr; 56,585
+        サイクル) &mdash; 速度を犠牲にせずリソースを削減できた。
+        残る<code class="mono">FromMont</code>(復号の最後に1回だけ呼ばれる、
+        86,870 LUT)はペアになる呼び出しが存在しないため統合不可能で、
+        既知の残存コストとして受け入れている。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="stage">
+  <div class="stage-head"><span class="stage-num">5</span><h2>速度重視オプションの確立</h2></div>
+  <p class="stage-sub">
+    リソース重視版を基準に3つの追加改善案を検証し、最終的に
+    速度重視オプションとして確立した記録。
+  </p>
+  <div class="stage-body">
+
+    <div>
+      <h3 class="sub">検証した3案</h3>
+      <div class="criteria">
+        <div class="criterion">
+          <span class="idx">A</span>
+          <p class="name">FromMontを追加でループへ包む</p>
+          <p class="desc">効果なし(LUT 284,201 &asymp; 283,587)。ペアになる呼び出しが
+          存在しない孤立した呼び出しは、ループで包むだけでは共有先が
+          生まれない。</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">B</span>
+          <p class="name">4bit固定窓法(windowed exponentiation)</p>
+          <p class="desc">乗算回数を約1027回&rarr;約657回に削減するアルゴリズム
+          改善。実装に落とし穴があった(下記参照)。</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">C</span>
+          <p class="name">ループ内二乗/z候補の並列化</p>
+          <p class="desc">18.1%高速化(46,336 cyc)したが、LUTが32.9%増加
+          (376,955)。明確な速度対リソースのトレードオフ。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--warn);">
+      <p class="head" style="color: var(--warn);">落とし穴: UNROLL付け忘れによる大幅な性能劣化</p>
+      <p>
+        案Bの定数時間テーブル参照(16エントリ&times;16語=256回のAND/OR
+        選択)に<code class="mono">#pragma HLS UNROLL</code>を付け忘れたところ、
+        窓1つあたり602サイクルという直列オーバーヘッドが生じ、
+        <strong>理論上は高速化するはずが実際には38%悪化した(78,099
+        cycle)</strong>。UNROLL追加で45,460 cycle(19.7%高速化)まで
+        改善したが、今度はテーブル構築部分(事前変換+事前計算チェーン)
+        が別ループ形状のため複製され、LUTが40.2%増加した。
+        <strong>アルゴリズム的な演算回数削減だけでは不十分で、各ループの
+        並列化指定を個別に確認する必要がある。</strong>
+      </p>
+    </div>
+
+    <div>
+      <h3 class="sub">窓法 + 呼び出し統合 &rarr; 実用的な速度重視オプション</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px;">
+        案Bに、Section 4で確立した「呼び出し箇所を1つのループへ統合する」
+        手法を適用した。事前変換2回と事前計算チェーン14回を、
+        <code class="mono">j=0..15</code>の1つのループへ統合する
+        (<code class="mono">j</code>はループ変数であり実行時の秘密データ
+        ではないため、<code class="mono">if(j==0) else if(j==1)</code>
+        のような分岐は定数時間性を損なわない)。これにより物理インスタンス
+        数が4&rarr;3へ削減された。
+      </p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>最終2オプションの比較</caption>
+        <thead>
+          <tr><th>構成</th><th>サイクル数</th><th>実時間</th><th>LUT</th><th>DSP</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>リソース重視(Section 4)</td>
+            <td class="num">56,585</td>
+            <td class="num">0.566 ms</td>
+            <td class="num">283,587 <span style="color:var(--ink-dim);">(16% / SLR65%)</span></td>
+            <td class="num">363</td>
+          </tr>
+          <tr class="emph">
+            <td>速度重視(窓法+統合)</td>
+            <td class="num ok">46,044</td>
+            <td class="num ok">0.460 ms</td>
+            <td class="num">305,063 <span style="color:var(--ink-dim);">(18% / SLR70%)</span></td>
+            <td class="num ok">359</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <p class="head">要点</p>
+      <p>
+        速度重視オプションは、リソース重視版に対しDSPをむしろわずかに
+        減らし(363 &rarr; 359)、LUT増加をわずか7.6%に抑えながら
+        18.6%高速化した(56,585 &rarr; 46,044 cycle)。窓法単体
+        (統合前、LUT+40.2%)から呼び出し統合によって大幅に改善した形。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="stage">
+  <div class="stage-head"><span class="stage-num">6</span><h2>リソース最小化オプション</h2></div>
+  <p class="stage-sub">
+    「性能は控えめにして、さらにリソースを削減したい」という方向の
+    第3のオプション。呼び出し構造はそのままに、乗算器コア自体を
+    より軽量なものへ差し替えた。
+  </p>
+  <div class="stage-body">
+
+    <div>
+      <h3 class="sub">FIOS-CSA-Flat(空間並列) vs MontOps_Fast(時分割再利用)</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px;">
+        FIOS-CSA-Flatは、CIOSの外側16反復ループを
+        <code class="mono">#pragma HLS UNROLL</code>で完全展開し、16個の
+        乗算器群を空間的に並べて配置する。一方
+        <code class="mono">montgomery_converter/include/mont_ops_fast.hpp</code>
+        の<code class="mono">MontOps_Fast&lt;T,NWORDS&gt;</code>は、外側
+        ループを<code class="mono">#pragma HLS PIPELINE</code>にとどめ、
+        <strong>同じ乗算器群を16反復にわたって時分割で再利用</strong>する
+        古典的CIOS実装。シグネチャが完全に同一
+        (<code class="mono">mul(a,b,c,mod,mprime)</code>)なため、
+        <code class="mono">mont_word.cpp</code>のinclude文と呼び出し1行を
+        差し替えるだけで、これまでの呼び出し統合の仕組みをそのまま
+        流用できた。
+      </p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>3オプションの全体比較</caption>
+        <thead>
+          <tr><th>構成</th><th>サイクル数</th><th>実時間</th><th>LUT</th><th>DSP</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>速度重視(窓法+統合)</td>
+            <td class="num">46,044</td>
+            <td class="num">0.460 ms</td>
+            <td class="num">305,063 <span style="color:var(--ink-dim);">(18%)</span></td>
+            <td class="num">359</td>
+          </tr>
+          <tr>
+            <td>バランス(FIOS-CSA-Flat+統合)</td>
+            <td class="num">56,585</td>
+            <td class="num">0.566 ms</td>
+            <td class="num">283,587 <span style="color:var(--ink-dim);">(16%)</span></td>
+            <td class="num">363</td>
+          </tr>
+          <tr class="emph">
+            <td>リソース最小(MontOps_Fast)</td>
+            <td class="num">126,311</td>
+            <td class="num">1.263 ms</td>
+            <td class="num ok">17,983 <span style="color:var(--ink-dim);">(1%)</span></td>
+            <td class="num ok">110</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <p class="head">要点</p>
+      <p>
+        リソース最小オプションはLUTを93.7%削減(283,587 &rarr; 17,983)、
+        DSPを69.7%削減(363 &rarr; 110)する代わりに、レイテンシが
+        2.23倍(56,585 &rarr; 126,311 cycle)になる。驚くべきことに、
+        この構成は<strong>変換前(素のCIOS、27,526 LUT)よりもさらに
+        小さいLUT使用量</strong>になった。「変換」という行為自体が
+        必ずしもリソース増加を意味するわけではなく、どのコアを選ぶか
+        次第で、変換前を下回るフットプリントで、なおかつ検出・自動
+        変換パイプラインの恩恵(コア差し替えの容易さ)を享受できる
+        ことを示す実例となった。
+      </p>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--accent2);">
+      <p class="head" style="color: var(--accent2);">3つのオプション</p>
+      <p>
+        <code class="mono">RSA_Montgomery_HLS/</code>には現在3つの
+        実用的なオプションが揃っている:
+        <strong>速度重視</strong>(<code class="mono">src_converted_flat_speed/</code>)、
+        <strong>バランス</strong>(<code class="mono">src_converted_flat/</code>)、
+        <strong>リソース最小</strong>(<code class="mono">src_converted_lean/</code>)。
+        いずれも同じ検出・変換パイプラインと呼び出し統合の仕組みを共有し、
+        乗算器コアとアルゴリズム構造だけを用途に応じて選択できる。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="report-foot">
+  RSA_Montgomery_HLS &nbsp;/&nbsp; xcvu29p-fsga2577-2L-e &nbsp;/&nbsp; Vitis HLS 2024.2 &nbsp;/&nbsp; 2026-09-15
+</footer>

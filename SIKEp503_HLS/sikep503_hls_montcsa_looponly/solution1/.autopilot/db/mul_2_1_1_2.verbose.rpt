@@ -1,0 +1,459 @@
+
+
+================================================================
+== Vitis HLS Report for 'mul_2_1_1_2'
+================================================================
+* Date:           Wed Aug 26 17:10:15 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_montcsa
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.207 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       24|       24|  0.240 us|  0.240 us|   25|   25|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------+-----------+---------+---------+----------+----------+-----+-----+---------+
+        |                     |           |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |       Instance      |   Module  |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------+-----------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_mul_2_1_1_fu_12  |mul_2_1_1  |       24|       24|  0.240 us|  0.240 us|   25|   25|      yes|
+        +---------------------+-----------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        -|        -|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|    312|    26580|   160084|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        0|      129|     -|
+|Register             |        -|      -|       25|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|    312|    26605|   160213|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|     10|        3|       37|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      2|       ~0|        9|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +---------------------+-----------+---------+-----+-------+--------+-----+
+    |       Instance      |   Module  | BRAM_18K| DSP |   FF  |   LUT  | URAM|
+    +---------------------+-----------+---------+-----+-------+--------+-----+
+    |grp_mul_2_1_1_fu_12  |mul_2_1_1  |        0|  312|  26580|  160084|    0|
+    +---------------------+-----------+---------+-----+-------+--------+-----+
+    |Total                |           |        0|  312|  26580|  160084|    0|
+    +---------------------+-----------+---------+-----+-------+--------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------+-----+-----------+-----+-----------+
+    |    Name   | LUT | Input Size| Bits| Total Bits|
+    +-----------+-----+-----------+-----+-----------+
+    |ap_NS_fsm  |  129|         26|    1|         26|
+    +-----------+-----+-----------+-----+-----------+
+    |Total      |  129|         26|    1|         26|
+    +-----------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------+----+----+-----+-----------+
+    |    Name   | FF | LUT| Bits| Const Bits|
+    +-----------+----+----+-----+-----------+
+    |ap_CS_fsm  |  25|   0|   25|          0|
+    +-----------+----+----+-----+-----------+
+    |Total      |  25|   0|   25|          0|
+    +-----------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------+-----+-----+------------+--------------+--------------+
+|  RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------+-----+-----+------------+--------------+--------------+
+|ap_clk      |   in|    1|  ap_ctrl_hs|   mul.2.1.1.2|  return value|
+|ap_rst      |   in|    1|  ap_ctrl_hs|   mul.2.1.1.2|  return value|
+|ap_start    |   in|    1|  ap_ctrl_hs|   mul.2.1.1.2|  return value|
+|ap_done     |  out|    1|  ap_ctrl_hs|   mul.2.1.1.2|  return value|
+|ap_idle     |  out|    1|  ap_ctrl_hs|   mul.2.1.1.2|  return value|
+|ap_ready    |  out|    1|  ap_ctrl_hs|   mul.2.1.1.2|  return value|
+|ap_ce       |   in|    1|  ap_ctrl_hs|   mul.2.1.1.2|  return value|
+|c_address0  |  out|    3|   ap_memory|             c|         array|
+|c_ce0       |  out|    1|   ap_memory|             c|         array|
+|c_we0       |  out|    1|   ap_memory|             c|         array|
+|c_d0        |  out|   64|   ap_memory|             c|         array|
+|c_q0        |   in|   64|   ap_memory|             c|         array|
++------------+-----+-----+------------+--------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 25, depth = 25
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 25
+* Pipeline : 1
+  Pipeline-0 : II = 25, D = 25, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 26 [25/25] (0.00ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 26 'call' 'call_ln113' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 7.20>
+ST_2 : Operation 27 [24/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 27 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 7.20>
+ST_3 : Operation 28 [23/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 28 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 7.20>
+ST_4 : Operation 29 [22/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 29 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 7.20>
+ST_5 : Operation 30 [21/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 30 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 7.20>
+ST_6 : Operation 31 [20/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 31 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 7.20>
+ST_7 : Operation 32 [19/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 32 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 7.20>
+ST_8 : Operation 33 [18/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 33 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 7.20>
+ST_9 : Operation 34 [17/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 34 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 7.20>
+ST_10 : Operation 35 [16/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 35 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 7.20>
+ST_11 : Operation 36 [15/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 36 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 7.20>
+ST_12 : Operation 37 [14/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 37 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 7.20>
+ST_13 : Operation 38 [13/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 38 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 7.20>
+ST_14 : Operation 39 [12/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 39 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 7.20>
+ST_15 : Operation 40 [11/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 40 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 7.20>
+ST_16 : Operation 41 [10/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 41 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 7.20>
+ST_17 : Operation 42 [9/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 42 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 7.20>
+ST_18 : Operation 43 [8/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 43 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 7.20>
+ST_19 : Operation 44 [7/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 44 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 7.20>
+ST_20 : Operation 45 [6/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 45 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 21 <SV = 20> <Delay = 7.20>
+ST_21 : Operation 46 [5/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 46 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 7.20>
+ST_22 : Operation 47 [4/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 47 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 23 <SV = 22> <Delay = 7.20>
+ST_23 : Operation 48 [3/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 48 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 24 <SV = 23> <Delay = 7.20>
+ST_24 : Operation 49 [2/25] (7.20ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 49 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 25 <SV = 24> <Delay = 0.00>
+ST_25 : Operation 50 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 50 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 51 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 51 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 52 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 52 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 53 [1/25] (0.00ns)   --->   "%call_ln113 = call void @mul.2.1.1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 53 'call' 'call_ln113' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_25 : Operation 54 [1/1] (0.00ns)   --->   "%ret_ln172 = ret" [../montgomery_converter/include/mont_ops.hpp:172]   --->   Operation 54 'ret' 'ret_ln172' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 1
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ c]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+specmemcore_ln0 (specmemcore) [ 00000000000000000000000000]
+specmemcore_ln0 (specmemcore) [ 00000000000000000000000000]
+specmemcore_ln0 (specmemcore) [ 00000000000000000000000000]
+call_ln113      (call       ) [ 00000000000000000000000000]
+ret_ln172       (ret        ) [ 00000000000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="c">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="c"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1001" name="const_2">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="mul.2.1.1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1004" name="grp_mul_2_1_1_fu_12">
+<pin_list>
+<pin id="13" dir="0" index="0" bw="0" slack="0"/>
+<pin id="14" dir="0" index="1" bw="64" slack="0"/>
+<pin id="15" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln113/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="16"><net_src comp="2" pin="0"/><net_sink comp="12" pin=0"/></net>
+
+<net id="17"><net_src comp="0" pin="0"/><net_sink comp="12" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: c | {18 19 20 21 22 23 24 25 }
+ - Input state : 
+	Port: mul.2.1.1.2 : c | {1 2 3 4 5 6 7 8 9 10 11 12 13 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------|---------|---------|---------|---------|
+| Operation|   Functional Unit   |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|---------------------|---------|---------|---------|---------|
+|   call   | grp_mul_2_1_1_fu_12 |   312   | 16.4646 |  27835  |  159735 |
+|----------|---------------------|---------|---------|---------|---------|
+|   Total  |                     |   312   | 16.4646 |  27835  |  159735 |
+|----------|---------------------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           |   DSP  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |   312  |   16   |  27835 | 159735 |
+|   Memory  |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |   312  |   16   |  27835 | 159735 |
++-----------+--------+--------+--------+--------+

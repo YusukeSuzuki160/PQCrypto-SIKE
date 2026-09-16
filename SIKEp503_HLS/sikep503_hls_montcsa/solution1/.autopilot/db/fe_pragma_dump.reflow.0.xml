@@ -1,0 +1,187 @@
+<pragmas>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi66ELb0EEC2EDq66_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<65, false>::ap_int_base<64, false>(ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base<128, false>(ap_range_ref<128, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="src_montcsa/fpx.cpp" line="64" pragmaType="inline" parentfunction="fpmul503_mont" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>& ap_int_base<128, false>::operator>>=<32>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="src_montcsa/generic/mpx_iface_tvu_mul.hpp" line="0" pragmaType="inline" parentfunction="convert_blocks_to_digits" off="1" region="0" recursive="0"/>
+<pragma file="src_montcsa/generic/mpx_iface_tvu_mul.hpp" line="199" pragmaType="pipeline" parentfunction="convert_blocks_to_digits" off="0" ii="1" rewind="0" style=""/>
+<pragma file="src_montcsa/generic/mpx_iface_tvu_mul.hpp" line="217" pragmaType="pipeline" parentfunction="convert_blocks_to_digits" off="0" ii="1" rewind="0" style=""/>
+<pragma file="src_montcsa/generic/mpx_iface_tvu_mul.hpp" line="186" pragmaType="unroll" parentfunction="convert_blocks_to_digits" factor="2" skip_exit_check="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint<512, false>(ap_range_ref<512, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint<65, false>(ap_range_ref<65, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<65, false>::operator[](int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint<128, false>(ap_range_ref<128, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<65>::ap_uint<64>(ap_uint<64> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<65, false>::RType<65, false>::plus operator+<65, false, 65, false>(ap_int_base<65, false> const&, ap_int_base<65, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<65>::ap_uint<66>(ap_uint<66> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<128>::ap_uint<128, false>(ap_int_base<128, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<128, false>::ssdm_int(unsigned __int128)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<128, false>::ap_range_ref(ap_int_base<128, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="to_uint64" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>::RType<128, false>::arg1 operator<<<128, false>(ap_int_base<128, false> const&, unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>& operator>>=<128, false>(ap_int_base<128, false>&, unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<128, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="src_montcsa/generic/mpx_iface_tvu_mul.hpp" line="137" pragmaType="inline" parentfunction="add_prod_to_acc" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>& ap_int_base<128, false>::operator|=<128, false>(ap_int_base<128, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<128>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="154" pragmaType="inline" parentfunction="digit_x_digit" off="1" region="0" recursive="0"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="272" pragmaType="inline" parentfunction="mp_mul" off="1" region="0" recursive="0"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="275" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="17" latency="-1" variable="a"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="276" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="17" latency="-1" variable="b"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="277" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="17" latency="-1" variable="c"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="278" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="207" latency="-1" variable="a"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="279" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="207" latency="-1" variable="b"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="280" pragmaType="bind_storage" parentfunction="mp_mul" op="666" impl="207" latency="-1" variable="c"/>
+<pragma file="src_montcsa/generic/mpx_iface_tvu_mul.hpp" line="0" pragmaType="inline" parentfunction="mul" off="1" region="0" recursive="0"/>
+<pragma file="src_montcsa/generic/mpx_iface_tvu_mul.hpp" line="107" pragmaType="pipeline" parentfunction="mul" off="0" ii="1" rewind="0" style=""/>
+<pragma file="src_montcsa/generic/mpx_iface_tvu_mul.hpp" line="87" pragmaType="unroll" parentfunction="mul" factor="2" skip_exit_check="0"/>
+<pragma file="src_montcsa/generic/mpx_iface_tvu_mul.hpp" line="81" pragmaType="bind_storage" parentfunction="mul" op="666" impl="22" latency="-1" variable="acc"/>
+<pragma file="src_montcsa/generic/mpx_iface_tvu_mul.hpp" line="82" pragmaType="array_partition" parentfunction="mul" dim="1" factor="2" mode="cyclic" dynamic="0" variable="acc"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<128>::ap_uint<64>(ap_uint<64> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>::RType<128, false>::mult operator*<128, false, 128, false>(ap_int_base<128, false> const&, ap_int_base<128, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<128>::ap_uint<256>(ap_uint<256> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<66, false>::ap_int_base<65, false>(ap_int_base<65, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<66, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<66>::ap_uint<66, false>(ap_int_base<66, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<66, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<66, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<66>::ap_int<66, true>(ap_int_base<66, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<65, false>::ap_range_ref(ap_int_base<65, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<65, false>::ap_int_base<66, false>(ap_int_base<66, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<65, false>::operator bool() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_bit_ref<65, false>::ap_bit_ref(ap_int_base<65, false>*, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base<65, false>(ap_range_ref<65, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi65ELb0EEC2EDq65_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, false>::ap_int_base<66, false>(ap_int_base<66, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, false>::ap_int_base<65, false>(ap_int_base<65, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="_ZN8ssdm_intILi66ELb1EEC2EDq66_i" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<65, false>::ap_int_base<67, false>(ap_int_base<67, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::RType<32, true>::plus operator+<64, false, 32, true>(ap_int_base<64, false> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<66, true>::ap_int_base<64, false>(ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base<66, true>(ap_int_base<66, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="ssdm_int<64, false>::ssdm_int(unsigned long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<65>::ap_uint<67>(ap_uint<67> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::RType<($_0)32, true>::plus operator+<64, false>(ap_int_base<64, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint<66>(ap_int<66> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint<65, false>(ap_bit_ref<65, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<65>::ap_uint<1>(ap_uint<1> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<66, false>::RType<65, false>::plus operator+<66, false, 65, false>(ap_int_base<66, false> const&, ap_int_base<65, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<256, false>::ap_int_base<128, false>(ap_int_base<128, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<256, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<256>::ap_uint<256, false>(ap_int_base<256, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi256ELb0EEC2EDq256_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>::ap_int_base<256, false>(ap_int_base<256, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<65, false>::ap_int_base<1, false>(ap_int_base<1, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base<65, false>(ap_bit_ref<65, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<67>::ap_uint<67, false>(ap_int_base<67, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi67ELb0EEC2EDq67_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, false>::ap_int_base<64, false>(ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base<512, false>(ap_range_ref<512, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<512, false>::ap_range_ref(ap_int_base<512, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_range_ref<512, false>::operator=(unsigned long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<512>::ap_uint(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<512, false>::ap_int_base(unsigned long)" off="0" region="0" recursive="0"/>
+<pragma file="/home2/meltpoint/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_common.h" line="523" pragmaType="inline" parentfunction="_ZN8ssdm_intILi512ELb0EEC2EDq512_j" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<512, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="344" pragmaType="unroll" parentfunction="rdc_mont" factor="-1" skip_exit_check="0"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="351" pragmaType="unroll" parentfunction="rdc_mont" factor="-1" skip_exit_check="0"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="319" pragmaType="unroll" parentfunction="rdc_mont" factor="-1" skip_exit_check="0"/>
+<pragma file="src_montcsa/generic/fp_generic.cpp" line="322" pragmaType="unroll" parentfunction="rdc_mont" factor="-1" skip_exit_check="0"/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="49" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="ap_ctrl_hs" port="return" name=""/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="50" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="51" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ct" bundle="" offset="" name="" depth="402" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="52" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="pk" bundle="" offset="" name="" depth="378" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="53" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ss" bundle="" offset="" name="" depth="16" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="35" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ct" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="36" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="pk" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="37" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="m_axi" port="ss" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="38" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="ct" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="39" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="pk" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="40" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="ss" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src_montcsa/sikep503_kem_enc_hw.cpp" line="41" pragmaType="interface" parentfunction="sikep503_kem_enc_hw" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src_montcsa/ec_isogeny.cpp" line="386" pragmaType="inline" parentfunction="LADDER3PT" off="0" region="0" recursive="0"/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="103" pragmaType="inline" parentfunction="mul" off="1" region="0" recursive="0"/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="129" pragmaType="loop_tripcount" parentfunction="mul" min="1" max="8" avg="4"/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="134" pragmaType="pipeline" parentfunction="mul" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="133" pragmaType="loop_tripcount" parentfunction="mul" min="1" max="8" avg="4"/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="155" pragmaType="pipeline" parentfunction="mul" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="154" pragmaType="loop_tripcount" parentfunction="mul" min="1" max="8" avg="4"/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="124" pragmaType="pipeline" parentfunction="mul" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="123" pragmaType="loop_tripcount" parentfunction="mul" min="3" max="10" avg="6"/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="120" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="t"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="88" pragmaType="inline" parentfunction="mul" off="1" region="0" recursive="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="216" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="207" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="193" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="103" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="102" pragmaType="loop_tripcount" parentfunction="mul" min="8" max="8" avg="8"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="137" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="155" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="173" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="181" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="96" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="93" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="S"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="94" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="Cy"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="130" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="pp_lo"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="131" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="pp_hi"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="132" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="pm_lo"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="133" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="pm_hi"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="151" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="newS"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="152" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="newC"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="157" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="ops"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="189" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="t"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="204" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="u"/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="55" pragmaType="inline" parentfunction="cond_sub" off="0" region="0" recursive="0"/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="79" pragmaType="pipeline" parentfunction="cond_sub" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="78" pragmaType="loop_tripcount" parentfunction="cond_sub" min="1" max="8" avg="4"/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="67" pragmaType="pipeline" parentfunction="cond_sub" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="66" pragmaType="loop_tripcount" parentfunction="cond_sub" min="1" max="8" avg="4"/>
+<pragma file="../montgomery_converter/include/mont_ops.hpp" line="61" pragmaType="array_partition" parentfunction="cond_sub" dim="1" factor="0" mode="complete" dynamic="0" variable="u"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="64" pragmaType="inline" parentfunction="csa_reduce8" off="0" region="0" recursive="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_true.hpp" line="55" pragmaType="inline" parentfunction="csa32" off="0" region="0" recursive="0"/>
+<pragma file="src_montcsa/fpx.cpp" line="80" pragmaType="inline" parentfunction="fpsqr503_mont" off="1" region="0" recursive="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="147" pragmaType="inline" parentfunction="mul" off="1" region="0" recursive="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="149" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="prod"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="44" pragmaType="inline" parentfunction="square_full" off="1" region="0" recursive="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="84" pragmaType="unroll" parentfunction="square_full" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="68" pragmaType="unroll" parentfunction="square_full" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="70" pragmaType="unroll" parentfunction="square_full" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="55" pragmaType="unroll" parentfunction="square_full" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="49" pragmaType="unroll" parentfunction="square_full" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="47" pragmaType="array_partition" parentfunction="square_full" dim="1" factor="0" mode="complete" dynamic="0" variable="acc"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="93" pragmaType="inline" parentfunction="redc" off="1" region="0" recursive="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="140" pragmaType="unroll" parentfunction="redc" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="133" pragmaType="unroll" parentfunction="redc" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="111" pragmaType="unroll" parentfunction="redc" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="115" pragmaType="unroll" parentfunction="redc" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="121" pragmaType="unroll" parentfunction="redc" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="97" pragmaType="unroll" parentfunction="redc" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="95" pragmaType="array_partition" parentfunction="redc" dim="1" factor="0" mode="complete" dynamic="0" variable="t"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_square.hpp" line="130" pragmaType="array_partition" parentfunction="redc" dim="1" factor="0" mode="complete" dynamic="0" variable="u"/>
+</pragmas>

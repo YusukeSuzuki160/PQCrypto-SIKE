@@ -1,0 +1,2167 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 32, Column: 3 }
+Function:        montMult_words
+Args:            
+  - Callee:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 46, 
+                   Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 78, 
+                   Column: 52 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          'get_bit(unsigned int const*, unsigned int)'
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 6, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SEL_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:121:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CSUB_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:112:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        FIOS_OUTER
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:61:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        CARRY_CHAIN
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PRESUM
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 49, Column: 0 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_54_1
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:54:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '17'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 68, 
+                   Column: 13 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            montMult_words
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 46, 
+                   Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            montMult_words
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 32, Column: 3 }
+Function:        montMult_words
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 32, Column: 3 }
+Function:        montMult_words.1
+Args:            
+  - Callee:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words.1
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 32, Column: 3 }
+Function:        montMult_words
+Args:            
+  - Callee:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 46, 
+                   Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.1
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 78, 
+                   Column: 52 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          'get_bit(unsigned int const*, unsigned int)'
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 6, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 86, 
+                   Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_rsa_modexp_hw_ir
+Args:            
+  - Callee:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_rsa_modexp_hw_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                   Column: 0 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_bit(unsigned int const*, unsigned int)'
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 6, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 42, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        r2m5seq
+  - ArrayName:       r2m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ' '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:42:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 42, 
+                       Column: 97 }
+  - OrigDirection:   read
+  - OrigID:          for.inc17.load.8
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 43, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        c6seq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_43_3
+  - String:          ' '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:43:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 43, 
+                       Column: 74 }
+  - OrigDirection:   read
+  - OrigID:          for.inc35.load.4
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 43, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        r2m5seq7
+  - ArrayName:       r2m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_43_3
+  - String:          ' '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:43:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 43, 
+                       Column: 95 }
+  - OrigDirection:   read
+  - OrigID:          for.inc35.load.9
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 7, 
+                   Column: 19 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 7, 
+                       Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_79_10.load.7
+  - ArrayName:       d
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_55_6
+  - String:          ' '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:55:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.2
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        mod61seq
+  - ArrayName:       mod
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.30
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.60
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.80
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.100
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.120
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.140
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.160
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.180
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.200
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.220
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.240
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.260
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.280
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.300
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.320
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.340
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 125, Column: 5 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.2
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        c62seq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.7996
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8001
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8006
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8011
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8016
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8021
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8026
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8031
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8036
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8041
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8046
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8051
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8056
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8061
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8066
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 123, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          entry.store.8071
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        mod1seq
+  - ArrayName:       mod
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.30
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.60
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.80
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.100
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.120
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.140
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.160
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.180
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.200
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.220
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.240
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.260
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.280
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.300
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.320
+  - OrigAccess:      load
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 84, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          entry.load.340
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 43, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 43, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          c6seq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_43_3
+  - String:          ' '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:43:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 43, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 43, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          r2m5seq7
+  - ArrayName:       r2m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_43_3
+  - String:          ' '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:43:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 42, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 42, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          r2m5seq
+  - ArrayName:       r2m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ' '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:42:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.2
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+  - OrigDirection:   read
+  - OrigID:          mod61seq
+  - ArrayName:       mod
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 125, Column: 5 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.2
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 125, Column: 5 }
+  - OrigDirection:   write
+  - OrigID:          c62seq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+  - OrigDirection:   read
+  - OrigID:          mod1seq
+  - ArrayName:       mod
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_27_1
+  - String:          '> at '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:27:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          '> at '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:42:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_43_3
+  - String:          '> at '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:43:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_44_4
+  - String:          '> at '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:44:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_48_5
+  - String:          '> at '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:48:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_55_6
+  - String:          '> at '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:55:22'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 64, 
+                   Column: 26 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_64_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 65, 
+                   Column: 26 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_65_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 66, 
+                   Column: 26 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_66_9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 79, 
+                   Column: 27 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_79_10
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 82, 
+                   Column: 27 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_82_11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 83, 
+                   Column: 27 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_83_12
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                   Column: 0 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_64_7
+  - String:          ''' ('
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:64:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rsa_modexp_hw
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                   Column: 0 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_65_8
+  - String:          ''' ('
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:65:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rsa_modexp_hw
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                   Column: 0 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_66_9
+  - String:          ''' ('
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:66:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rsa_modexp_hw
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                   Column: 0 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_79_10
+  - String:          ''' ('
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:79:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rsa_modexp_hw
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                   Column: 0 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_82_11
+  - String:          ''' ('
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:82:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rsa_modexp_hw
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                   Column: 0 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_83_12
+  - String:          ''' ('
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:83:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          rsa_modexp_hw
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 18 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           loop_x
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 34 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           loop_y
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 50 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           zcand
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 50 }
+Function:        rsa_modexp_hw
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=loop_out'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  rsa_modexp_hw
+  - String:          ' '
+  - varLoc:          'src_converted_flat/rsa_modexp_hw.cpp:63:50'
+  - String:          ' '
+  - VarName:         loop_out
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 50 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            loop_out
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 18 }
+Function:        rsa_modexp_hw
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=loop_x'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  rsa_modexp_hw
+  - String:          ' '
+  - varLoc:          'src_converted_flat/rsa_modexp_hw.cpp:63:18'
+  - String:          ' '
+  - VarName:         loop_x
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 18 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            loop_x
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 34 }
+Function:        rsa_modexp_hw
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=loop_y'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  rsa_modexp_hw
+  - String:          ' '
+  - varLoc:          'src_converted_flat/rsa_modexp_hw.cpp:63:34'
+  - String:          ' '
+  - VarName:         loop_y
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 34 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            loop_y
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 18 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          loop_x
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 34 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          loop_y
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 63, 
+                   Column: 50 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          loop_out
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.10.11.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.10.11.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.10.11.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 125, Column: 5 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                   Line: 125, Column: 5 }
+Function:        _ZN18mont_fios_csa_flat21MontOps_FIOS_CSA_FlatIjLj16EE3mulEPKjS3_PjS3_j.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 43, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 43, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 42, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ' '
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:42:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 42, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          '''('
+  - LoopLoc:         'src_converted_flat/rsa_modexp_hw.cpp:42:22'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 32, Column: 3 }
+Function:        montMult_words.1.1
+Args:            
+  - Callee:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words.1.1
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 32, Column: 3 }
+Function:        montMult_words.1.9.12.1
+Args:            
+  - Callee:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.10.11.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words.1.9.12.1
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 32, Column: 3 }
+Function:        montMult_words.1.2
+Args:            
+  - Callee:          'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fios_csa_flat.hpp, 
+                       Line: 49, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words.1.2
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 46, 
+                   Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.1.1
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 68, 
+                   Column: 13 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.1.9.12.1
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 86, 
+                   Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.1.2
+    DebugLoc:        { File: src_converted_flat/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_flat/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

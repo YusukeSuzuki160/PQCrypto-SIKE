@@ -1,0 +1,118 @@
+
+
+================================================================
+== Vitis HLS Report for 'montMult_words_1'
+================================================================
+* Date:           Tue Sep 15 18:38:06 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        rsa_modexp_hls_converted_flat_v2
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       47|       47|  0.470 us|  0.470 us|   47|   47|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.30>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%mprime_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mprime" [src_converted_flat_v2/mont_word.cpp:22]   --->   Operation 3 'read' 'mprime_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%m_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %m" [src_converted_flat_v2/mont_word.cpp:22]   --->   Operation 4 'read' 'm_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [2/2] (7.30ns)   --->   "%call_ln32 = call void @mul, i32 %x, i1 %y, i32 %out_r, i32 %gmem, i64 %m_read, i32 %mprime_read" [src_converted_flat_v2/mont_word.cpp:32]   --->   Operation 5 'call' 'call_ln32' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_10, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty_0, void @empty_1, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/2] (0.00ns)   --->   "%call_ln32 = call void @mul, i32 %x, i1 %y, i32 %out_r, i32 %gmem, i64 %m_read, i32 %mprime_read" [src_converted_flat_v2/mont_word.cpp:32]   --->   Operation 7 'call' 'call_ln32' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%ret_ln34 = ret" [src_converted_flat_v2/mont_word.cpp:34]   --->   Operation 8 'ret' 'ret_ln34' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 7.300ns
+The critical path consists of the following:
+	wire read operation ('mprime_read', src_converted_flat_v2/mont_word.cpp:22) on port 'mprime' (src_converted_flat_v2/mont_word.cpp:22) [8]  (0.000 ns)
+	'call' operation 0 bit ('call_ln32', src_converted_flat_v2/mont_word.cpp:32) to 'mul' [10]  (7.300 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

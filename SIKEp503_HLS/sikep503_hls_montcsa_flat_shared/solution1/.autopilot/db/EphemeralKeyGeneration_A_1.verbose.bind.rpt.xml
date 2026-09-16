@@ -1,0 +1,99 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'EphemeralKeyGeneration_A_1'" level="0">
+<item name = "Date">Mon Sep 14 16:33:47 2026
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls_montcsa_flat_shared</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 13.722 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">161558768, 19334344652, 2.217 sec, 265.311 sec, 161558768, 19334344652, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_1_fu_1265">EphemeralKeyGeneration_A_1_Pipeline_1, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_2_fu_1270">EphemeralKeyGeneration_A_1_Pipeline_2, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1_fu_1275">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1264_fu_1282">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1264, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1260_fu_1289">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1260, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1265_fu_1296">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1265, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1261_fu_1303">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1261, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1266_fu_1310">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1266, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_25_1_fu_1317">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_25_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1262_fu_1322">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1262, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1267_fu_1329">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1267, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1263_fu_1336">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1263, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpadd503_151_4_fu_1343">fpadd503_151_4, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_LADDER3PT_impl_250_s_fu_1357">LADDER3PT_impl_250_s, 943814, 943814, 9.438 ms, 9.438 ms, 943814, 943814, no</column>
+<column name="grp_fpsub503_31_fu_1383">fpsub503_31, 23, 23, 0.230 us, 0.230 us, 23, 23, no</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1268_fu_1392">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1268, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1270_fu_1398">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1270, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1269_fu_1404">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1269, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1271_fu_1410">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1271, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_xDBLe_fu_1416">xDBLe, 1257021, 1257021, 12.570 ms, 12.570 ms, 1257021, 1257021, no</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_313_1_fu_1433">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_313_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_313_1272_fu_1449">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_313_1272, 18, 18, 0.180 us, 0.180 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpsub503_32_fu_1462">fpsub503_32, 23, 23, 0.230 us, 0.230 us, 23, 23, no</column>
+<column name="grp_fpadd503_33_fu_1471">fpadd503_33, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fpadd503_34_fu_1480">fpadd503_34, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fp2sqr503_mont_35_fu_1489">fp2sqr503_mont_35, 79, 79, 0.790 us, 0.790 us, 79, 79, no</column>
+<column name="grp_fp2sqr503_mont_39_fu_1497">fp2sqr503_mont_39, 79, 79, 0.790 us, 0.790 us, 79, 79, no</column>
+<column name="grp_fpadd503_36_fu_1505">fpadd503_36, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fpadd503_151_3_fu_1512">fpadd503_151_3, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fpadd503_37_fu_1522">fpadd503_37, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fp2sqr503_mont_38_fu_1529">fp2sqr503_mont_38, 79, 79, 0.790 us, 0.790 us, 79, 79, no</column>
+<column name="grp_fp2sqr503_mont_2_1_fu_1537">fp2sqr503_mont_2_1, 79, 79, 0.790 us, 0.790 us, 79, 79, no</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Outline_VITIS_LOOP_175_3_fu_1544">EphemeralKeyGeneration_A_1_Outline_VITIS_LOOP_175_3, 26342, 26342, 0.263 ms, 0.263 ms, 26342, 26342, no</column>
+<column name="grp_eval_4_isog_fu_1558">eval_4_isog, 3725, 3725, 37.250 us, 37.250 us, 3725, 3725, no</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1278_fu_1569">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1278, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1280_fu_1576">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1280, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1279_fu_1583">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1279, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1281_fu_1590">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1281, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fp2mul503_mont_329_fu_1597">fp2mul503_mont_329, 536, 536, 5.360 us, 5.360 us, 536, 536, no</column>
+<column name="grp_fp2mul503_mont_328_fu_1606">fp2mul503_mont_328, 536, 536, 5.360 us, 5.360 us, 536, 536, no</column>
+<column name="grp_fp2inv503_mont_fu_1615">fp2inv503_mont, 16034, 16034, 0.220 ms, 0.220 ms, 16034, 16034, no</column>
+<column name="grp_fp2mul503_mont_327_fu_1622">fp2mul503_mont_327, 536, 536, 5.360 us, 5.360 us, 536, 536, no</column>
+<column name="grp_fp2mul503_mont_1129_fu_1631">fp2mul503_mont_1129, 558, 558, 5.580 us, 5.580 us, 558, 558, no</column>
+<column name="grp_fp2mul503_mont_2_fu_1640">fp2mul503_mont_2, 558, 558, 5.580 us, 5.580 us, 558, 558, no</column>
+<column name="grp_fp2mul503_mont_fu_1649">fp2mul503_mont, 558, 558, 5.580 us, 5.580 us, 558, 558, no</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1282_fu_1657">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1282, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_from_mont_fu_1663">from_mont, 41, 41, 0.410 us, 0.410 us, 41, 41, no</column>
+<column name="grp_from_mont_fu_1675">from_mont, 41, 41, 0.410 us, 0.410 us, 41, 41, no</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1283_fu_1689">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_17_1283, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1_fu_1695">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1, 134, 134, 1.340 us, 1.340 us, 128, 128, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1284_fu_1703">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1284, 134, 134, 1.340 us, 1.340 us, 128, 128, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1285_fu_1711">EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_42_1285, 134, 134, 1.340 us, 1.340 us, 128, 128, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_141_1">160583348, 19333369232, 1295027 ~ 155914268, -, -, 124, no</column>
+<column name=" + VITIS_LOOP_143_2">1257067, 155876308, 1257067, -, -, 1 ~ 124, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,212 @@
+<stg><name>fpmul503_mont.11</name>
+
+
+<trans_list>
+
+<trans id="8" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64">
+<![CDATA[
+entry:2 %call_ln68 = call void @mul.10, i64 %ma, i64 %mb, i64 %mc_0, i64 %mc_1, i64 %mc_2, i64 %mc_3, i64 %mc_4, i64 %mc_5, i64 %mc_6, i64 %mc_7
+
+]]></Node>
+<StgValue><ssdm name="call_ln68"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="4" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<![CDATA[
+entry:0 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mb, i64 666, i64 207, i64 18446744073709551615
+
+]]></Node>
+<StgValue><ssdm name="specmemcore_ln0"/></StgValue>
+</operation>
+
+<operation id="5" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<![CDATA[
+entry:1 %specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %ma, i64 666, i64 17, i64 18446744073709551615
+
+]]></Node>
+<StgValue><ssdm name="specmemcore_ln0"/></StgValue>
+</operation>
+
+<operation id="6" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64" op_5_bw="64" op_6_bw="64" op_7_bw="64" op_8_bw="64" op_9_bw="64" op_10_bw="64">
+<![CDATA[
+entry:2 %call_ln68 = call void @mul.10, i64 %ma, i64 %mb, i64 %mc_0, i64 %mc_1, i64 %mc_2, i64 %mc_3, i64 %mc_4, i64 %mc_5, i64 %mc_6, i64 %mc_7
+
+]]></Node>
+<StgValue><ssdm name="call_ln68"/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="0">
+<![CDATA[
+entry:3 %ret_ln70 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln70"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="9" name="ma" dir="0" iftype="1">
+<core>RAM_1P</core><StgValue><ssdm name="ma"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="10" name="mb" dir="0" iftype="1">
+<core>RAM_1P</core><StgValue><ssdm name="mb"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="11" name="mc_0" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mc_0"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="12" name="mc_1" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mc_1"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="13" name="mc_2" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mc_2"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="14" name="mc_3" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mc_3"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="15" name="mc_4" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mc_4"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="16" name="mc_5" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mc_5"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="17" name="mc_6" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mc_6"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="18" name="mc_7" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mc_7"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="20" from="mul.10" to="call_ln68" fromId="19" toId="3">
+</dataflow>
+<dataflow id="21" from="ma" to="call_ln68" fromId="9" toId="3">
+</dataflow>
+<dataflow id="22" from="mb" to="call_ln68" fromId="10" toId="3">
+</dataflow>
+<dataflow id="23" from="mc_0" to="call_ln68" fromId="11" toId="3">
+</dataflow>
+<dataflow id="24" from="mc_1" to="call_ln68" fromId="12" toId="3">
+</dataflow>
+<dataflow id="25" from="mc_2" to="call_ln68" fromId="13" toId="3">
+</dataflow>
+<dataflow id="26" from="mc_3" to="call_ln68" fromId="14" toId="3">
+</dataflow>
+<dataflow id="27" from="mc_4" to="call_ln68" fromId="15" toId="3">
+</dataflow>
+<dataflow id="28" from="mc_5" to="call_ln68" fromId="16" toId="3">
+</dataflow>
+<dataflow id="29" from="mc_6" to="call_ln68" fromId="17" toId="3">
+</dataflow>
+<dataflow id="30" from="mc_7" to="call_ln68" fromId="18" toId="3">
+</dataflow>
+<dataflow id="32" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="31" toId="4">
+</dataflow>
+<dataflow id="33" from="mb" to="specmemcore_ln0" fromId="10" toId="4">
+</dataflow>
+<dataflow id="35" from="StgValue_34" to="specmemcore_ln0" fromId="34" toId="4">
+</dataflow>
+<dataflow id="37" from="StgValue_36" to="specmemcore_ln0" fromId="36" toId="4">
+</dataflow>
+<dataflow id="39" from="StgValue_38" to="specmemcore_ln0" fromId="38" toId="4">
+</dataflow>
+<dataflow id="40" from="_ssdm_op_SpecMemCore" to="specmemcore_ln0" fromId="31" toId="5">
+</dataflow>
+<dataflow id="41" from="ma" to="specmemcore_ln0" fromId="9" toId="5">
+</dataflow>
+<dataflow id="42" from="StgValue_34" to="specmemcore_ln0" fromId="34" toId="5">
+</dataflow>
+<dataflow id="44" from="StgValue_43" to="specmemcore_ln0" fromId="43" toId="5">
+</dataflow>
+<dataflow id="45" from="StgValue_38" to="specmemcore_ln0" fromId="38" toId="5">
+</dataflow>
+<dataflow id="46" from="mul.10" to="call_ln68" fromId="19" toId="6">
+</dataflow>
+<dataflow id="47" from="ma" to="call_ln68" fromId="9" toId="6">
+</dataflow>
+<dataflow id="48" from="mb" to="call_ln68" fromId="10" toId="6">
+</dataflow>
+<dataflow id="49" from="mc_0" to="call_ln68" fromId="11" toId="6">
+</dataflow>
+<dataflow id="50" from="mc_1" to="call_ln68" fromId="12" toId="6">
+</dataflow>
+<dataflow id="51" from="mc_2" to="call_ln68" fromId="13" toId="6">
+</dataflow>
+<dataflow id="52" from="mc_3" to="call_ln68" fromId="14" toId="6">
+</dataflow>
+<dataflow id="53" from="mc_4" to="call_ln68" fromId="15" toId="6">
+</dataflow>
+<dataflow id="54" from="mc_5" to="call_ln68" fromId="16" toId="6">
+</dataflow>
+<dataflow id="55" from="mc_6" to="call_ln68" fromId="17" toId="6">
+</dataflow>
+<dataflow id="56" from="mc_7" to="call_ln68" fromId="18" toId="6">
+</dataflow>
+</dataflows>
+
+
+</stg>

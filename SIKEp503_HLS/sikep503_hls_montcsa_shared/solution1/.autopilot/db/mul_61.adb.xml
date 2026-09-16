@@ -1,0 +1,106 @@
+<stg><name>mul.61</name>
+
+
+<trans_list>
+
+<trans id="6" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<![CDATA[
+entry:0 %call_ln113 = call void @mul.70, i64 %a, i64 %b, i64 %coeff
+
+]]></Node>
+<StgValue><ssdm name="call_ln113"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="4" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<![CDATA[
+entry:0 %call_ln113 = call void @mul.70, i64 %a, i64 %b, i64 %coeff
+
+]]></Node>
+<StgValue><ssdm name="call_ln113"/></StgValue>
+</operation>
+
+<operation id="5" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0">
+<![CDATA[
+entry:1 %ret_ln172 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln172"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="7" name="a" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="a"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="8" name="b" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="b"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="9" name="coeff" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="coeff"/><MemPortTyVec>0 0 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="11" from="mul.70" to="call_ln113" fromId="10" toId="3">
+</dataflow>
+<dataflow id="12" from="a" to="call_ln113" fromId="7" toId="3">
+</dataflow>
+<dataflow id="13" from="b" to="call_ln113" fromId="8" toId="3">
+</dataflow>
+<dataflow id="14" from="coeff" to="call_ln113" fromId="9" toId="3">
+</dataflow>
+<dataflow id="15" from="mul.70" to="call_ln113" fromId="10" toId="4">
+</dataflow>
+<dataflow id="16" from="a" to="call_ln113" fromId="7" toId="4">
+</dataflow>
+<dataflow id="17" from="b" to="call_ln113" fromId="8" toId="4">
+</dataflow>
+<dataflow id="18" from="coeff" to="call_ln113" fromId="9" toId="4">
+</dataflow>
+</dataflows>
+
+
+</stg>

@@ -1,0 +1,63 @@
+{
+  "0": {
+    "basicblocks": 25,
+    "calls": "4 4 3",
+    "file": "rsa_modexp_hw.cpp",
+    "fileloc": 10,
+    "instructions": 200,
+    "loads": {
+      "L": 10,
+      "T": 1
+    },
+    "name": "rsa_modexp_hw",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 1768
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "mont_ops_fast.hpp",
+    "fileloc": 59,
+    "instructions": 525,
+    "loads": {
+      "L": 17
+    },
+    "name": "mul",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 525
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "mont_ops_fast.hpp",
+    "fileloc": 59,
+    "instructions": 512,
+    "loads": {
+      "L": 17
+    },
+    "name": "mul",
+    "total_instructions": 512
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "mont_word.cpp",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "montMult_words",
+    "total_instructions": 514
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "mont_word.cpp",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "montMult_words",
+    "total_instructions": 527
+  }
+}

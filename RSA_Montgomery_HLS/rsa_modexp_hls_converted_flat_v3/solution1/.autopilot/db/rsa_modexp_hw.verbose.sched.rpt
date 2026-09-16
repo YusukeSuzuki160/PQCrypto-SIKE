@@ -1,0 +1,322 @@
+
+
+================================================================
+== Vitis HLS Report for 'rsa_modexp_hw'
+================================================================
+* Date:           Tue Sep 15 18:39:22 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        rsa_modexp_hls_converted_flat_v3
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    46336|    46336|  0.463 ms|  0.463 ms|  46337|  46337|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 22
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%one = alloca i64 1" [src_converted_flat_v3/rsa_modexp_hw.cpp:26]   --->   Operation 23 'alloca' 'one' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.63> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%zarr1 = alloca i64 1" [src_converted_flat_v3/rsa_modexp_hw.cpp:30]   --->   Operation 24 'alloca' 'zarr1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%parr1 = alloca i64 1" [src_converted_flat_v3/rsa_modexp_hw.cpp:31]   --->   Operation 25 'alloca' 'parr1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%conv_x = alloca i64 1" [src_converted_flat_v3/rsa_modexp_hw.cpp:41]   --->   Operation 26 'alloca' 'conv_x' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%conv_y = alloca i64 1" [src_converted_flat_v3/rsa_modexp_hw.cpp:41]   --->   Operation 27 'alloca' 'conv_y' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%conv_out = alloca i64 1" [src_converted_flat_v3/rsa_modexp_hw.cpp:41]   --->   Operation 28 'alloca' 'conv_out' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln0 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1, i1 %one"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 1.48>
+ST_2 : Operation 30 [1/1] (1.00ns)   --->   "%p_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %p"   --->   Operation 30 'read' 'p_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 31 [1/1] (1.00ns)   --->   "%r2m_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %r2m"   --->   Operation 31 'read' 'r2m_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 32 [1/1] (1.00ns)   --->   "%mprime_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %mprime"   --->   Operation 32 'read' 'mprime_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 33 [1/1] (1.00ns)   --->   "%m_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %m"   --->   Operation 33 'read' 'm_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 34 [1/1] (1.00ns)   --->   "%d_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %d"   --->   Operation 34 'read' 'd_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 35 [1/1] (1.00ns)   --->   "%c_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %c"   --->   Operation 35 'read' 'c_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 36 [1/2] (1.48ns)   --->   "%call_ln0 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1, i1 %one"   --->   Operation 36 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %r2m_read, i32 2, i32 63" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 37 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %c_read, i32 2, i32 63" [src_converted_flat_v3/rsa_modexp_hw.cpp:43]   --->   Operation 38 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%one_addr = getelementptr i1 %one, i64 0, i64 0" [src_converted_flat_v3/rsa_modexp_hw.cpp:28]   --->   Operation 39 'getelementptr' 'one_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] ( I:0.63ns O:0.63ns )   --->   "%store_ln28 = store i1 1, i4 %one_addr" [src_converted_flat_v3/rsa_modexp_hw.cpp:28]   --->   Operation 40 'store' 'store_ln28' <Predicate = true> <Delay = 0.63> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.63> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%sext_ln42 = sext i62 %trunc_ln" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 41 'sext' 'sext_ln42' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i32 %gmem, i64 %sext_ln42" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 42 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [8/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 43 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 44 [7/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 44 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 45 [6/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 45 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 46 [5/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 46 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 47 [4/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 47 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 48 [3/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 48 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 49 [2/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 49 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 7.30>
+ST_10 : Operation 50 [1/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 50 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 51 [2/2] (0.00ns)   --->   "%call_ln42 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2, i32 %gmem, i62 %trunc_ln, i32 %conv_x, i32 %conv_y, i1 %one" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 51 'call' 'call_ln42' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 52 [1/2] (0.00ns)   --->   "%call_ln42 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2, i32 %gmem, i62 %trunc_ln, i32 %conv_x, i32 %conv_y, i1 %one" [src_converted_flat_v3/rsa_modexp_hw.cpp:42]   --->   Operation 52 'call' 'call_ln42' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 1.12>
+ST_13 : Operation 53 [2/2] (1.12ns)   --->   "%call_ln43 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3, i32 %gmem, i32 %conv_x, i32 %conv_y, i62 %trunc_ln1, i62 %trunc_ln" [src_converted_flat_v3/rsa_modexp_hw.cpp:43]   --->   Operation 53 'call' 'call_ln43' <Predicate = true> <Delay = 1.12> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 54 [1/2] (0.00ns)   --->   "%call_ln43 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3, i32 %gmem, i32 %conv_x, i32 %conv_y, i62 %trunc_ln1, i62 %trunc_ln" [src_converted_flat_v3/rsa_modexp_hw.cpp:43]   --->   Operation 54 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 55 [2/2] (0.00ns)   --->   "%call_ln0 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_44_4, i32 %gmem, i32 %conv_x, i32 %conv_y, i64 %m_read, i32 %mprime_read, i32 %conv_out"   --->   Operation 55 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 56 [1/2] (0.00ns)   --->   "%call_ln0 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_44_4, i32 %gmem, i32 %conv_x, i32 %conv_y, i64 %m_read, i32 %mprime_read, i32 %conv_out"   --->   Operation 56 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 57 [2/2] (0.00ns)   --->   "%call_ln0 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5, i32 %conv_out, i32 %zarr1, i32 %parr1"   --->   Operation 57 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 1.48>
+ST_18 : Operation 58 [1/2] (1.48ns)   --->   "%call_ln0 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5, i32 %conv_out, i32 %zarr1, i32 %parr1"   --->   Operation 58 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 1.14>
+ST_19 : Operation 59 [2/2] (1.14ns)   --->   "%call_ln0 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_55_6, i32 %gmem, i32 %zarr1, i32 %parr1, i64 %m_read, i32 %mprime_read, i64 %d_read"   --->   Operation 59 'call' 'call_ln0' <Predicate = true> <Delay = 1.14> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 0.00>
+ST_20 : Operation 60 [1/2] (0.00ns)   --->   "%call_ln0 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_55_6, i32 %gmem, i32 %zarr1, i32 %parr1, i64 %m_read, i32 %mprime_read, i64 %d_read"   --->   Operation 60 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 21 <SV = 20> <Delay = 7.30>
+ST_21 : Operation 61 [2/2] (7.30ns)   --->   "%call_ln80 = call void @montMult_words.1.2, i32 %zarr1, i1 %one, i32 %gmem, i64 %m_read, i32 %mprime_read, i64 %p_read" [src_converted_flat_v3/rsa_modexp_hw.cpp:80]   --->   Operation 61 'call' 'call_ln80' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 0.00>
+ST_22 : Operation 62 [1/1] (0.00ns)   --->   "%spectopmodule_ln10 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_11" [src_converted_flat_v3/rsa_modexp_hw.cpp:10]   --->   Operation 62 'spectopmodule' 'spectopmodule_ln10' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 63 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_8, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty, void @empty_0, void @empty_9, i32 16, i32 16, i32 16, i32 16, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 63 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 64 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem"   --->   Operation 64 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 65 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %c, void @empty_1, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_2, void @empty_4, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 65 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 66 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %c, void @empty_5, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 66 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %d, void @empty_1, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_2, void @empty_6, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 67 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %d, void @empty_5, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 69 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %m, void @empty_1, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_2, void @empty_7, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 69 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 70 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %m, void @empty_5, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 70 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 71 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %mprime"   --->   Operation 71 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 72 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mprime, void @empty_1, i32 4294967295, i32 4294967295, void @empty_18, i32 0, i32 0, void @empty_19, void @empty_4, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 72 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 73 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mprime, void @empty_5, i32 4294967295, i32 4294967295, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 73 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 74 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %r2m, void @empty_1, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_2, void @empty_20, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 74 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 75 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %r2m, void @empty_5, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 75 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 76 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %p, void @empty_1, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_2, void @empty_10, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 76 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 77 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %p, void @empty_5, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 77 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 78 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_1, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_19, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 78 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 79 [1/2] (0.00ns)   --->   "%call_ln80 = call void @montMult_words.1.2, i32 %zarr1, i1 %one, i32 %gmem, i64 %m_read, i32 %mprime_read, i64 %p_read" [src_converted_flat_v3/rsa_modexp_hw.cpp:80]   --->   Operation 79 'call' 'call_ln80' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_22 : Operation 80 [1/1] (0.00ns)   --->   "%ret_ln81 = ret" [src_converted_flat_v3/rsa_modexp_hw.cpp:81]   --->   Operation 80 'ret' 'ret_ln81' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 1.481ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1' [37]  (1.481 ns)
+
+ <State 3>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 32 bit ('gmem_addr', src_converted_flat_v3/rsa_modexp_hw.cpp:42) [42]  (0.000 ns)
+	bus request operation ('empty', src_converted_flat_v3/rsa_modexp_hw.cpp:42) on port 'gmem' (src_converted_flat_v3/rsa_modexp_hw.cpp:42) [43]  (7.300 ns)
+
+ <State 4>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', src_converted_flat_v3/rsa_modexp_hw.cpp:42) on port 'gmem' (src_converted_flat_v3/rsa_modexp_hw.cpp:42) [43]  (7.300 ns)
+
+ <State 5>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', src_converted_flat_v3/rsa_modexp_hw.cpp:42) on port 'gmem' (src_converted_flat_v3/rsa_modexp_hw.cpp:42) [43]  (7.300 ns)
+
+ <State 6>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', src_converted_flat_v3/rsa_modexp_hw.cpp:42) on port 'gmem' (src_converted_flat_v3/rsa_modexp_hw.cpp:42) [43]  (7.300 ns)
+
+ <State 7>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', src_converted_flat_v3/rsa_modexp_hw.cpp:42) on port 'gmem' (src_converted_flat_v3/rsa_modexp_hw.cpp:42) [43]  (7.300 ns)
+
+ <State 8>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', src_converted_flat_v3/rsa_modexp_hw.cpp:42) on port 'gmem' (src_converted_flat_v3/rsa_modexp_hw.cpp:42) [43]  (7.300 ns)
+
+ <State 9>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', src_converted_flat_v3/rsa_modexp_hw.cpp:42) on port 'gmem' (src_converted_flat_v3/rsa_modexp_hw.cpp:42) [43]  (7.300 ns)
+
+ <State 10>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', src_converted_flat_v3/rsa_modexp_hw.cpp:42) on port 'gmem' (src_converted_flat_v3/rsa_modexp_hw.cpp:42) [43]  (7.300 ns)
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 1.120ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln43', src_converted_flat_v3/rsa_modexp_hw.cpp:43) to 'rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3' [46]  (1.120 ns)
+
+ <State 14>: 0.000ns
+The critical path consists of the following:
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+ <State 16>: 0.000ns
+The critical path consists of the following:
+
+ <State 17>: 0.000ns
+The critical path consists of the following:
+
+ <State 18>: 1.481ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5' [48]  (1.481 ns)
+
+ <State 19>: 1.147ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'rsa_modexp_hw_Pipeline_VITIS_LOOP_55_6' [49]  (1.147 ns)
+
+ <State 20>: 0.000ns
+The critical path consists of the following:
+
+ <State 21>: 7.300ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln80', src_converted_flat_v3/rsa_modexp_hw.cpp:80) to 'montMult_words.1.2' [50]  (7.300 ns)
+
+ <State 22>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,44 @@
+{
+  "0": {
+    "basicblocks": 37,
+    "calls": "2 2 2 2 1 2",
+    "file": "rsa_modexp_hw.cpp",
+    "fileloc": 10,
+    "instructions": 151,
+    "loads": {
+      "L": 5
+    },
+    "name": "rsa_modexp_hw",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 1309
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "rsa_modexp_hw.cpp",
+    "fileloc": 5,
+    "instructions": 8,
+    "loads": {
+      "L": 1
+    },
+    "name": "get_bit",
+    "total_instructions": 8
+  },
+  "2": {
+    "basicblocks": 57,
+    "calls": "",
+    "file": "mont_word.c",
+    "fileloc": 19,
+    "instructions": 230,
+    "loads": {
+      "L": 21
+    },
+    "name": "montMult_words",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 230
+  }
+}

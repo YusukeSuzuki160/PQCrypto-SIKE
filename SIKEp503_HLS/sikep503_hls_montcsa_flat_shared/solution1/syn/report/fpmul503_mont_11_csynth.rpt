@@ -1,0 +1,166 @@
+
+
+================================================================
+== Vitis HLS Report for 'fpmul503_mont_11'
+================================================================
+* Date:           Mon Sep 14 16:37:08 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_montcsa_flat_shared
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.165 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       15|       15|  0.150 us|  0.150 us|    4|    4|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------+--------+---------+---------+----------+----------+-----+-----+---------+
+        |                  |        |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |     Instance     | Module |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +------------------+--------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_mul_10_fu_70  |mul_10  |       15|       15|  0.150 us|  0.150 us|    4|    4|      yes|
+        +------------------+--------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|        4|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|    742|    25043|    44058|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        0|       35|     -|
+|Register             |        -|      -|        9|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|    742|    25052|    44097|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|     24|        2|       10|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      6|       ~0|        2|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +------------------+--------+---------+-----+-------+-------+-----+
+    |     Instance     | Module | BRAM_18K| DSP |   FF  |  LUT  | URAM|
+    +------------------+--------+---------+-----+-------+-------+-----+
+    |grp_mul_10_fu_70  |mul_10  |        0|  742|  25043|  44058|    0|
+    +------------------+--------+---------+-----+-------+-------+-----+
+    |Total             |        |        0|  742|  25043|  44058|    0|
+    +------------------+--------+---------+-----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |grp_mul_10_fu_70_ap_start  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|   4|           2|           3|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                |  26|          5|    1|          5|
+    |ap_enable_reg_pp0_iter0  |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  35|          7|    2|          7|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------+---+----+-----+-----------+
+    |              Name             | FF| LUT| Bits| Const Bits|
+    +-------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                      |  4|   0|    4|          0|
+    |ap_enable_reg_pp0_iter0_reg    |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1        |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2        |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3        |  1|   0|    1|          0|
+    |grp_mul_10_fu_70_ap_start_reg  |  1|   0|    1|          0|
+    +-------------------------------+---+----+-----+-----------+
+    |Total                          |  9|   0|    9|          0|
+    +-------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++-------------+-----+-----+------------+------------------+--------------+
+|ap_clk       |   in|    1|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_return_0  |  out|   64|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_return_1  |  out|   64|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_return_2  |  out|   64|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_return_3  |  out|   64|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_return_4  |  out|   64|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_return_5  |  out|   64|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_return_6  |  out|   64|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ap_return_7  |  out|   64|  ap_ctrl_hs|  fpmul503_mont.11|  return value|
+|ma_read      |   in|   64|     ap_none|           ma_read|        scalar|
+|ma_read_45   |   in|   64|     ap_none|        ma_read_45|        scalar|
+|ma_read_46   |   in|   64|     ap_none|        ma_read_46|        scalar|
+|ma_read_47   |   in|   64|     ap_none|        ma_read_47|        scalar|
+|ma_read_48   |   in|   64|     ap_none|        ma_read_48|        scalar|
+|ma_read_49   |   in|   64|     ap_none|        ma_read_49|        scalar|
+|ma_read_50   |   in|   64|     ap_none|        ma_read_50|        scalar|
+|ma_read_51   |   in|   64|     ap_none|        ma_read_51|        scalar|
+|mb_address0  |  out|    3|   ap_memory|                mb|         array|
+|mb_ce0       |  out|    1|   ap_memory|                mb|         array|
+|mb_q0        |   in|   64|   ap_memory|                mb|         array|
+|mb_address1  |  out|    3|   ap_memory|                mb|         array|
+|mb_ce1       |  out|    1|   ap_memory|                mb|         array|
+|mb_q1        |   in|   64|   ap_memory|                mb|         array|
++-------------+-----+-----+------------+------------------+--------------+
+

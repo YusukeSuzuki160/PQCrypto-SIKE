@@ -1,0 +1,2189 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 33, Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 54, Column: 52 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          'get_bit(unsigned int const*, unsigned int)'
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 53, Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            montMult_words
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 45, Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            montMult_words
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 34, Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            montMult_words
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 33, Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            montMult_words
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 33, Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.3
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 34, Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 45, Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 54, Column: 52 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          'get_bit(unsigned int const*, unsigned int)'
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 62, Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_rsa_modexp_hw_ir
+Args:            
+  - Callee:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_rsa_modexp_hw_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_bit(unsigned int const*, unsigned int)'
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 7, Column: 19 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 7, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_55_4.load.9
+  - ArrayName:       d
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_41_2
+  - String:          ' '
+  - LoopLoc:         'src/rsa_modexp_hw.cpp:41:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        y7seq
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:37:26'
+  - String:          ' '
+  - Function:        montMult_words.3
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 39, Column: 72 }
+  - OrigDirection:   read
+  - OrigID:          for.inc21.load.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        m8seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ' '
+  - Function:        montMult_words.3
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 54, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          for.inc56.load.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        m8seq9
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words.3
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 100, Column: 56 }
+  - OrigDirection:   read
+  - OrigID:          for.inc135.load.9
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          y7seq
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:33:22'
+  - String:          ' '
+  - Function:        montMult_words.3
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m8seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:33:22'
+  - String:          ' '
+  - Function:        montMult_words.3
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+  - OrigDirection:   read
+  - OrigID:          land.lhs.true.load.3
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_88_6
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:88:22'
+  - String:          ' '
+  - Function:        montMult_words.3
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        y7seq
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:37:26'
+  - String:          ' '
+  - Function:        montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 39, Column: 72 }
+  - OrigDirection:   read
+  - OrigID:          for.inc21.load.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        m8seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ' '
+  - Function:        montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 54, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          for.inc56.load.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        m8seq9
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 100, Column: 56 }
+  - OrigDirection:   read
+  - OrigID:          for.inc135.load.9
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+Function:        montMult_words.2
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/mont_word.c, Line: 39, Column: 72 }
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_37_3.load.3
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          y7seq
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:33:22'
+  - String:          ' '
+  - Function:        montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m8seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:33:22'
+  - String:          ' '
+  - Function:        montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+  - OrigDirection:   read
+  - OrigID:          land.lhs.true.load.3
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_88_6
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:88:22'
+  - String:          ' '
+  - Function:        montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        m1seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ' '
+  - Function:        montMult_words.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 54, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          for.inc56.load.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        m1seq2
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 100, Column: 56 }
+  - OrigDirection:   read
+  - OrigID:          for.inc135.load.9
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.1
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m1seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:33:22'
+  - String:          ' '
+  - Function:        montMult_words.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+  - OrigDirection:   read
+  - OrigID:          land.lhs.true.load.3
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_88_6
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:88:22'
+  - String:          ' '
+  - Function:        montMult_words.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        m7seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ' '
+  - Function:        montMult_words
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 54, Column: 70 }
+  - OrigDirection:   read
+  - OrigID:          for.inc56.load.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        m7seq8
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 100, Column: 56 }
+  - OrigDirection:   read
+  - OrigID:          for.inc135.load.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/mont_word.c, Line: 107, Column: 23 }
+Function:        montMult_words
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        out9seq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_107_8
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:107:23'
+  - String:          ' '
+  - Function:        montMult_words
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src/mont_word.c, Line: 109, Column: 16 }
+  - OrigDirection:   write
+  - OrigID:          for.inc152.store.11
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m7seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:33:22'
+  - String:          ' '
+  - Function:        montMult_words
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+Function:        montMult_words
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src/mont_word.c, Line: 90, Column: 32 }
+  - OrigDirection:   read
+  - OrigID:          land.lhs.true.load.3
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_88_6
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:88:22'
+  - String:          ' '
+  - Function:        montMult_words
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m8seq9
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words.3
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m8seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ' '
+  - Function:        montMult_words.3
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          y7seq
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:37:26'
+  - String:          ' '
+  - Function:        montMult_words.3
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m8seq9
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m8seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ' '
+  - Function:        montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          y7seq
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:37:26'
+  - String:          ' '
+  - Function:        montMult_words.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m1seq2
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m1seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ' '
+  - Function:        montMult_words.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 107, Column: 23 }
+Function:        montMult_words
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 107, Column: 23 }
+  - OrigDirection:   write
+  - OrigID:          out9seq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_107_8
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:107:23'
+  - String:          ' '
+  - Function:        montMult_words
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m7seq8
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          m7seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ' '
+  - Function:        montMult_words
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_28_1
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:28:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:33:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_88_6
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:88:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_107_8
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:107:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:33:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_88_6
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:88:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_107_8
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:107:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_28_1
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:28:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:33:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_88_6
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:88:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_107_8
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:107:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_28_1
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:28:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:33:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_88_6
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:88:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_107_8
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:107:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_27_1
+  - String:          '> at '
+  - LoopLoc:         'src/rsa_modexp_hw.cpp:27:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_59_6
+  - String:          '> at '
+  - LoopLoc:         'src/rsa_modexp_hw.cpp:59:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_58_5
+  - String:          '> at '
+  - LoopLoc:         'src/rsa_modexp_hw.cpp:58:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_55_4
+  - String:          '> at '
+  - LoopLoc:         'src/rsa_modexp_hw.cpp:55:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_44_3
+  - String:          '> at '
+  - LoopLoc:         'src/rsa_modexp_hw.cpp:44:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_28_1
+  - String:          '> at '
+  - LoopLoc:         'src/mont_word.c:28:22'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 65, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_65_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 65, Column: 26 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_65_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 65, Column: 26 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_65_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 65, Column: 26 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_65_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:37:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_65_5
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:65:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:37:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words.1
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words.1
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words.1
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_65_5
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:65:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words.1
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:37:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words.2
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words.2
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words.2
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_65_5
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:65:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words.2
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:37:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words.3
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:52:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words.3
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words.3
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_65_5
+  - String:          ''' ('
+  - LoopLoc:         'src/mont_word.c:65:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words.3
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.3.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        montMult_words.3.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.3.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.3.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        montMult_words.3.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.3.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.3.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words.3.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.3.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          '''('
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        montMult_words.2.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        montMult_words.2.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words.2.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          '''('
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.1.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        montMult_words.1.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.1.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.1.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words.1.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.1.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          '''('
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.1.2
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        montMult_words.1.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words.1.2
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.1.2
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ' '
+  - Function:        montMult_words.1.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 98, Column: 26 }
+Function:        montMult_words.1.2
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          '''('
+  - LoopLoc:         'src/mont_word.c:98:26'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/mont_word.c, Line: 107, Column: 23 }
+Function:        montMult_words.1.2
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_107_8
+  - String:          ' '
+  - LoopLoc:         'src/mont_word.c:107:23'
+  - String:          ' '
+  - Function:        montMult_words.1.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/mont_word.c, Line: 107, Column: 23 }
+Function:        montMult_words.1.2
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_107_8
+  - String:          '''('
+  - LoopLoc:         'src/mont_word.c:107:23'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 33, Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.3.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 34, Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.2.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 45, Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.1.1
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 62, Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.1.2
+    DebugLoc:        { File: src/mont_word.c, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src/rsa_modexp_hw.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

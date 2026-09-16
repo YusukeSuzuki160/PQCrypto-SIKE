@@ -1,0 +1,65 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'rdc_mont'" level="0">
+<item name = "Date">Mon Sep 14 16:31:49 2026
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls_montcsa_flat_shared</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.293 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">126, 126, 1.260 us, 1.260 us, 126, 126, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_rdc_mont_Pipeline_VITIS_LOOP_299_1_fu_278">rdc_mont_Pipeline_VITIS_LOOP_299_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_is_digit_lessthan_ct_fu_284">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_is_digit_lessthan_ct_fu_291">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_is_digit_lessthan_ct_fu_298">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_is_digit_lessthan_ct_fu_304">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_is_digit_lessthan_ct_fu_310">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_is_digit_lessthan_ct_fu_317">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_is_digit_lessthan_ct_fu_324">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_is_digit_lessthan_ct_fu_330">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_is_digit_lessthan_ct_fu_337">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_is_digit_lessthan_ct_fu_346">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_is_digit_lessthan_ct_fu_353">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="tmp_45_is_digit_lessthan_ct_fu_359">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="tmp_46_is_digit_lessthan_ct_fu_366">is_digit_lessthan_ct, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_digit_x_digit_fu_373">digit_x_digit, 4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
+<column name="grp_digit_x_digit_fu_380">digit_x_digit, 4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
+<column name="grp_digit_x_digit_fu_387">digit_x_digit, 4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
+<column name="grp_digit_x_digit_fu_394">digit_x_digit, 4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
+<column name="grp_digit_x_digit_fu_401">digit_x_digit, 4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
+<column name="grp_digit_x_digit_fu_408">digit_x_digit, 4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

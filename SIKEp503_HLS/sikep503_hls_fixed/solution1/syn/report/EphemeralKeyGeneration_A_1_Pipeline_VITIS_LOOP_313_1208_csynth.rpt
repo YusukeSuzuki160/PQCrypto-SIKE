@@ -1,0 +1,182 @@
+
+
+================================================================
+== Vitis HLS Report for 'EphemeralKeyGeneration_A_1_Pipeline_VITIS_LOOP_313_1208'
+================================================================
+* Date:           Thu Sep 10 17:48:45 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_fixed
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  1.482 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       34|       34|  0.340 us|  0.340 us|   33|   33|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_313_1  |       32|       32|         4|          4|          1|     8|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|      315|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|      -|        -|        -|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        0|      133|     -|
+|Register             |        -|      -|      411|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|      0|      411|      448|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|      0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+----+---+----+------------+------------+
+    |add_ln313_fu_194_p2     |         +|   0|  0|  12|           4|           1|
+    |icmp_ln151_fu_174_p2    |      icmp|   0|  0|  39|          32|          32|
+    |icmp_ln313_fu_188_p2    |      icmp|   0|  0|  12|           4|           5|
+    |select_ln315_fu_219_p3  |    select|   0|  0|  63|           1|          64|
+    |select_ln316_fu_246_p3  |    select|   0|  0|  63|           1|          64|
+    |select_ln317_fu_239_p3  |    select|   0|  0|  63|           1|          64|
+    |select_ln318_fu_252_p3  |    select|   0|  0|  63|           1|          64|
+    +------------------------+----------+----+---+----+------------+------------+
+    |Total                   |          |   0|  0| 315|          44|         294|
+    +------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |R_X_address0_local      |  26|          5|    4|         20|
+    |R_X_d0_local            |  14|          3|   64|        192|
+    |R_Z_address0_local      |  26|          5|    4|         20|
+    |R_Z_d0_local            |  14|          3|   64|        192|
+    |ap_NS_fsm               |  26|          5|    1|          5|
+    |ap_done_int             |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_268  |   9|          2|    4|          8|
+    |i_fu_60                 |   9|          2|    4|          8|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   | 133|         27|  146|        447|
+    +------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |R_X_addr_7_reg_326       |   3|   0|    4|          1|
+    |R_X_addr_reg_296         |   4|   0|    4|          0|
+    |R_Z_addr_6_reg_336       |   3|   0|    4|          1|
+    |R_Z_addr_reg_306         |   4|   0|    4|          0|
+    |R_next_X_4_load_reg_316  |  64|   0|   64|          0|
+    |R_next_Z_4_load_reg_321  |  64|   0|   64|          0|
+    |ap_CS_fsm                |   4|   0|    4|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |i_fu_60                  |   4|   0|    4|          0|
+    |icmp_ln151_reg_265       |   1|   0|    1|          0|
+    |select_ln315_reg_311     |  64|   0|   64|          0|
+    |select_ln316_reg_341     |  64|   0|   64|          0|
+    |select_ln317_reg_331     |  64|   0|   64|          0|
+    |select_ln318_reg_346     |  64|   0|   64|          0|
+    |trunc_ln316_reg_301      |   3|   0|    3|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 411|   0|  413|          2|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+---------------------------------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |                      Source Object                      |    C Type    |
++---------------------+-----+-----+------------+---------------------------------------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_313_1208|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_313_1208|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_313_1208|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_313_1208|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_313_1208|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  EphemeralKeyGeneration_A.1_Pipeline_VITIS_LOOP_313_1208|  return value|
+|R_next_X_address0    |  out|    3|   ap_memory|                                                 R_next_X|         array|
+|R_next_X_ce0         |  out|    1|   ap_memory|                                                 R_next_X|         array|
+|R_next_X_q0          |   in|   64|   ap_memory|                                                 R_next_X|         array|
+|R_next_X_4_address0  |  out|    3|   ap_memory|                                               R_next_X_4|         array|
+|R_next_X_4_ce0       |  out|    1|   ap_memory|                                               R_next_X_4|         array|
+|R_next_X_4_q0        |   in|   64|   ap_memory|                                               R_next_X_4|         array|
+|R_next_Z_address0    |  out|    3|   ap_memory|                                                 R_next_Z|         array|
+|R_next_Z_ce0         |  out|    1|   ap_memory|                                                 R_next_Z|         array|
+|R_next_Z_q0          |   in|   64|   ap_memory|                                                 R_next_Z|         array|
+|R_next_Z_4_address0  |  out|    3|   ap_memory|                                               R_next_Z_4|         array|
+|R_next_Z_4_ce0       |  out|    1|   ap_memory|                                               R_next_Z_4|         array|
+|R_next_Z_4_q0        |   in|   64|   ap_memory|                                               R_next_Z_4|         array|
+|R_Z_address0         |  out|    4|   ap_memory|                                                      R_Z|         array|
+|R_Z_ce0              |  out|    1|   ap_memory|                                                      R_Z|         array|
+|R_Z_we0              |  out|    1|   ap_memory|                                                      R_Z|         array|
+|R_Z_d0               |  out|   64|   ap_memory|                                                      R_Z|         array|
+|R_Z_q0               |   in|   64|   ap_memory|                                                      R_Z|         array|
+|R_X_address0         |  out|    4|   ap_memory|                                                      R_X|         array|
+|R_X_ce0              |  out|    1|   ap_memory|                                                      R_X|         array|
+|R_X_we0              |  out|    1|   ap_memory|                                                      R_X|         array|
+|R_X_d0               |  out|   64|   ap_memory|                                                      R_X|         array|
+|R_X_q0               |   in|   64|   ap_memory|                                                      R_X|         array|
+|index_4              |   in|   32|     ap_none|                                                  index_4|        scalar|
+|zext_ln143           |   in|    7|     ap_none|                                               zext_ln143|        scalar|
++---------------------+-----+-----+------------+---------------------------------------------------------+--------------+
+

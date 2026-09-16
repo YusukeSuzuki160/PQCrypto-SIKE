@@ -1,0 +1,157 @@
+set moduleName mul_20_1
+set isTopModule 0
+set isCombinational 0
+set isDatapathOnly 0
+set isPipelined 0
+set pipeline_type none
+set FunctionProtocol ap_ctrl_hs
+set isOneStateSeq 0
+set ProfileFlag 0
+set StallSigGenFlag 0
+set isEnableWaveformDebug 1
+set hasInterrupt 0
+set DLRegFirstOffset 0
+set DLRegItemOffset 0
+set svuvm_can_support 1
+set cdfgNum 818
+set C_modelName {mul.20.1}
+set C_modelType { void 0 }
+set ap_memory_interface_dict [dict create]
+dict set ap_memory_interface_dict c { MEM_WIDTH 64 MEM_SIZE 192 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+set C_modelArgList {
+	{ c int 64 regular {array 24 { 2 } 1 1 }  }
+	{ c_offset int 2 regular  }
+}
+set hasAXIMCache 0
+set l_AXIML2Cache [list]
+set AXIMCacheInstDict [dict create]
+set C_modelArgMapList {[ 
+	{ "Name" : "c", "interface" : "memory", "bitwidth" : 64, "direction" : "READWRITE"} , 
+ 	{ "Name" : "c_offset", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} ]}
+# RTL Port declarations: 
+set portNum 12
+set portList { 
+	{ ap_clk sc_in sc_logic 1 clock -1 } 
+	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
+	{ ap_start sc_in sc_logic 1 start -1 } 
+	{ ap_done sc_out sc_logic 1 predone -1 } 
+	{ ap_idle sc_out sc_logic 1 done -1 } 
+	{ ap_ready sc_out sc_logic 1 ready -1 } 
+	{ c_address0 sc_out sc_lv 5 signal 0 } 
+	{ c_ce0 sc_out sc_logic 1 signal 0 } 
+	{ c_we0 sc_out sc_logic 1 signal 0 } 
+	{ c_d0 sc_out sc_lv 64 signal 0 } 
+	{ c_q0 sc_in sc_lv 64 signal 0 } 
+	{ c_offset sc_in sc_lv 2 signal 1 } 
+}
+set NewPortList {[ 
+	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
+ 	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }} , 
+ 	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
+ 	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
+ 	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
+ 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
+ 	{ "name": "c_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "c", "role": "address0" }} , 
+ 	{ "name": "c_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "ce0" }} , 
+ 	{ "name": "c_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "we0" }} , 
+ 	{ "name": "c_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "c", "role": "d0" }} , 
+ 	{ "name": "c_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "c", "role": "q0" }} , 
+ 	{ "name": "c_offset", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "c_offset", "role": "default" }}  ]}
+
+set RtlHierarchyInfo {[
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
+		"CDFG" : "mul_20_1",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "26", "EstimateLatencyMax" : "26",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "c", "Type" : "Memory", "Direction" : "IO",
+				"SubConnect" : [
+					{"ID" : "1", "SubInstance" : "grp_mul_19_1_fu_22", "Port" : "c", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
+			{"Name" : "c_offset", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22", "Parent" : "0", "Child" : ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37"],
+		"CDFG" : "mul_19_1",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"II" : "0",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "25", "EstimateLatencyMax" : "25",
+		"Combinational" : "0",
+		"Datapath" : "0",
+		"ClockEnable" : "0",
+		"HasSubDataflow" : "0",
+		"InDataflowNetwork" : "0",
+		"HasNonBlockingOperation" : "0",
+		"IsBlackBox" : "0",
+		"Port" : [
+			{"Name" : "c", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "c_offset", "Type" : "None", "Direction" : "I"}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_55ns_118_1_1_U2516", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_55ns_118_1_1_U2517", "Parent" : "1"},
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_55ns_118_1_1_U2518", "Parent" : "1"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_55ns_118_1_1_U2519", "Parent" : "1"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_56ns_119_1_1_U2520", "Parent" : "1"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_56ns_119_1_1_U2521", "Parent" : "1"},
+	{"ID" : "8", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_62ns_125_1_1_U2522", "Parent" : "1"},
+	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_62ns_125_1_1_U2523", "Parent" : "1"},
+	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_62ns_125_1_1_U2524", "Parent" : "1"},
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_62ns_125_1_1_U2525", "Parent" : "1"},
+	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_64ns_127_1_1_U2526", "Parent" : "1"},
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_64ns_127_1_1_U2527", "Parent" : "1"},
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_64ns_127_1_1_U2528", "Parent" : "1"},
+	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_64ns_127_1_1_U2529", "Parent" : "1"},
+	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_64ns_127_1_1_U2530", "Parent" : "1"},
+	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_64ns_127_1_1_U2531", "Parent" : "1"},
+	{"ID" : "18", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_65ns_128_1_1_U2532", "Parent" : "1"},
+	{"ID" : "19", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_65ns_128_1_1_U2533", "Parent" : "1"},
+	{"ID" : "20", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_65ns_128_1_1_U2534", "Parent" : "1"},
+	{"ID" : "21", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_65ns_128_1_1_U2535", "Parent" : "1"},
+	{"ID" : "22", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_65ns_128_1_1_U2536", "Parent" : "1"},
+	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_65ns_128_1_1_U2537", "Parent" : "1"},
+	{"ID" : "24", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_65ns_128_1_1_U2538", "Parent" : "1"},
+	{"ID" : "25", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_65ns_128_1_1_U2539", "Parent" : "1"},
+	{"ID" : "26", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64ns_65ns_128_1_1_U2540", "Parent" : "1"},
+	{"ID" : "27", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_64ns_64_1_1_U2541", "Parent" : "1"},
+	{"ID" : "28", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_64ns_64_1_1_U2542", "Parent" : "1"},
+	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_64ns_64_1_1_U2543", "Parent" : "1"},
+	{"ID" : "30", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_64ns_64_1_1_U2544", "Parent" : "1"},
+	{"ID" : "31", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_56ns_64_1_1_U2545", "Parent" : "1"},
+	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_62ns_64_1_1_U2546", "Parent" : "1"},
+	{"ID" : "33", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_62ns_64_1_1_U2547", "Parent" : "1"},
+	{"ID" : "34", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_64ns_64_1_1_U2548", "Parent" : "1"},
+	{"ID" : "35", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_56ns_64_1_1_U2549", "Parent" : "1"},
+	{"ID" : "36", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_64s_64_1_1_U2550", "Parent" : "1"},
+	{"ID" : "37", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_mul_19_1_fu_22.mul_64s_64s_64_1_1_U2551", "Parent" : "1"}]}
+
+
+set ArgLastReadFirstWriteLatency {
+	mul_20_1 {
+		c {Type IO LastRead 9 FirstWrite 18}
+		c_offset {Type I LastRead 0 FirstWrite -1}}
+	mul_19_1 {
+		c {Type IO LastRead 9 FirstWrite 18}
+		c_offset {Type I LastRead 0 FirstWrite -1}}}
+
+set hasDtUnsupportedChannel 0
+
+set PerformanceInfo {[
+	{"Name" : "Latency", "Min" : "26", "Max" : "26"}
+	, {"Name" : "Interval", "Min" : "26", "Max" : "26"}
+]}
+
+set PipelineEnableSignalInfo {[
+]}
+
+set Spec2ImplPortList { 
+	c { ap_memory {  { c_address0 mem_address 1 5 }  { c_ce0 mem_ce 1 1 }  { c_we0 mem_we 1 1 }  { c_d0 mem_din 1 64 }  { c_q0 mem_dout 0 64 } } }
+	c_offset { ap_none {  { c_offset in_data 0 2 } } }
+}

@@ -1,0 +1,393 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'fpinv503_chain_mont'" level="0">
+<item name = "Date">Wed Aug 26 17:10:57 2026
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls_montcsa</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.299 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">15153, 15153, 0.152 ms, 0.152 ms, 15153, 15153, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_fpsqr503_mont_fu_1178">fpsqr503_mont, 29, 29, 0.290 us, 0.290 us, 29, 29, no</column>
+<column name="grp_fpmul503_mont_11_fu_1186">fpmul503_mont_11, 22, 22, 0.220 us, 0.220 us, 22, 22, no</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_217_1_fu_1201">fpinv503_chain_mont_Pipeline_VITIS_LOOP_217_1, 268, 268, 2.680 us, 2.680 us, 267, 267, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_16_1_fu_1214">fpinv503_chain_mont_Pipeline_VITIS_LOOP_16_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_221_2_fu_1221">fpinv503_chain_mont_Pipeline_VITIS_LOOP_221_2, 202, 202, 2.020 us, 2.020 us, 201, 201, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpmul503_mont_2_1_fu_1226">fpmul503_mont_2_1, 29, 29, 0.290 us, 0.290 us, 29, 29, no</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_224_3_fu_1233">fpinv503_chain_mont_Pipeline_VITIS_LOOP_224_3, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpmul503_mont_17_fu_1238">fpmul503_mont_17, 22, 22, 0.220 us, 0.220 us, 23, 23, yes</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_227_4_fu_1259">fpinv503_chain_mont_Pipeline_VITIS_LOOP_227_4, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_230_5_fu_1264">fpinv503_chain_mont_Pipeline_VITIS_LOOP_230_5, 152, 152, 1.520 us, 1.520 us, 151, 151, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_233_6_fu_1269">fpinv503_chain_mont_Pipeline_VITIS_LOOP_233_6, 177, 177, 1.770 us, 1.770 us, 176, 176, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_236_7_fu_1274">fpinv503_chain_mont_Pipeline_VITIS_LOOP_236_7, 177, 177, 1.770 us, 1.770 us, 176, 176, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_239_8_fu_1279">fpinv503_chain_mont_Pipeline_VITIS_LOOP_239_8, 177, 177, 1.770 us, 1.770 us, 176, 176, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_242_9_fu_1284">fpinv503_chain_mont_Pipeline_VITIS_LOOP_242_9, 177, 177, 1.770 us, 1.770 us, 176, 176, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_245_10_fu_1289">fpinv503_chain_mont_Pipeline_VITIS_LOOP_245_10, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_248_11_fu_1294">fpinv503_chain_mont_Pipeline_VITIS_LOOP_248_11, 177, 177, 1.770 us, 1.770 us, 176, 176, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_251_12_fu_1299">fpinv503_chain_mont_Pipeline_VITIS_LOOP_251_12, 202, 202, 2.020 us, 2.020 us, 201, 201, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_254_13_fu_1304">fpinv503_chain_mont_Pipeline_VITIS_LOOP_254_13, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_257_14_fu_1309">fpinv503_chain_mont_Pipeline_VITIS_LOOP_257_14, 152, 152, 1.520 us, 1.520 us, 151, 151, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_260_15_fu_1314">fpinv503_chain_mont_Pipeline_VITIS_LOOP_260_15, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_263_16_fu_1319">fpinv503_chain_mont_Pipeline_VITIS_LOOP_263_16, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_266_17_fu_1324">fpinv503_chain_mont_Pipeline_VITIS_LOOP_266_17, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_269_18_fu_1329">fpinv503_chain_mont_Pipeline_VITIS_LOOP_269_18, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_272_19_fu_1334">fpinv503_chain_mont_Pipeline_VITIS_LOOP_272_19, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_275_20_fu_1339">fpinv503_chain_mont_Pipeline_VITIS_LOOP_275_20, 152, 152, 1.520 us, 1.520 us, 151, 151, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_278_21_fu_1344">fpinv503_chain_mont_Pipeline_VITIS_LOOP_278_21, 302, 302, 3.020 us, 3.020 us, 301, 301, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_281_22_fu_1349">fpinv503_chain_mont_Pipeline_VITIS_LOOP_281_22, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_284_23_fu_1354">fpinv503_chain_mont_Pipeline_VITIS_LOOP_284_23, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_287_24_fu_1359">fpinv503_chain_mont_Pipeline_VITIS_LOOP_287_24, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_290_25_fu_1364">fpinv503_chain_mont_Pipeline_VITIS_LOOP_290_25, 152, 152, 1.520 us, 1.520 us, 151, 151, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_293_26_fu_1369">fpinv503_chain_mont_Pipeline_VITIS_LOOP_293_26, 202, 202, 2.020 us, 2.020 us, 201, 201, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_296_27_fu_1374">fpinv503_chain_mont_Pipeline_VITIS_LOOP_296_27, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_299_28_fu_1379">fpinv503_chain_mont_Pipeline_VITIS_LOOP_299_28, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_302_29_fu_1384">fpinv503_chain_mont_Pipeline_VITIS_LOOP_302_29, 177, 177, 1.770 us, 1.770 us, 176, 176, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_305_30_fu_1389">fpinv503_chain_mont_Pipeline_VITIS_LOOP_305_30, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_308_31_fu_1394">fpinv503_chain_mont_Pipeline_VITIS_LOOP_308_31, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_311_32_fu_1399">fpinv503_chain_mont_Pipeline_VITIS_LOOP_311_32, 202, 202, 2.020 us, 2.020 us, 201, 201, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_314_33_fu_1404">fpinv503_chain_mont_Pipeline_VITIS_LOOP_314_33, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_317_34_fu_1409">fpinv503_chain_mont_Pipeline_VITIS_LOOP_317_34, 202, 202, 2.020 us, 2.020 us, 201, 201, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_320_35_fu_1414">fpinv503_chain_mont_Pipeline_VITIS_LOOP_320_35, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_323_36_fu_1419">fpinv503_chain_mont_Pipeline_VITIS_LOOP_323_36, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_326_37_fu_1424">fpinv503_chain_mont_Pipeline_VITIS_LOOP_326_37, 202, 202, 2.020 us, 2.020 us, 201, 201, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_329_38_fu_1429">fpinv503_chain_mont_Pipeline_VITIS_LOOP_329_38, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_332_39_fu_1434">fpinv503_chain_mont_Pipeline_VITIS_LOOP_332_39, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_335_40_fu_1439">fpinv503_chain_mont_Pipeline_VITIS_LOOP_335_40, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_338_41_fu_1444">fpinv503_chain_mont_Pipeline_VITIS_LOOP_338_41, 127, 127, 1.270 us, 1.270 us, 126, 126, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_341_42_fu_1449">fpinv503_chain_mont_Pipeline_VITIS_LOOP_341_42, 202, 202, 2.020 us, 2.020 us, 201, 201, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_344_43_fu_1454">fpinv503_chain_mont_Pipeline_VITIS_LOOP_344_43, 152, 152, 1.520 us, 1.520 us, 151, 151, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_347_44_fu_1459">fpinv503_chain_mont_Pipeline_VITIS_LOOP_347_44, 7254, 7254, 72.540 us, 72.540 us, 7253, 7253, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_16_1124_fu_1472">fpinv503_chain_mont_Pipeline_VITIS_LOOP_16_1124, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 15575, 1299103, 7866157, -</column>
+<column name="Memory">0, -, 576, 585, 0</column>
+<column name="Multiplexer">-, -, 0, 5056, -</column>
+<column name="Register">-, -, 4591, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 506, 150, 1822, 0</specialColumn>
+<specialColumn name="Available">5376, 12288, 3456000, 1728000, 1280</specialColumn>
+<specialColumn name="Utilization (%)">0, 126, 37, 455, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_16_1_fu_1214">fpinv503_chain_mont_Pipeline_VITIS_LOOP_16_1, 0, 0, 11, 62, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_16_1124_fu_1472">fpinv503_chain_mont_Pipeline_VITIS_LOOP_16_1124, 0, 0, 11, 62, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_217_1_fu_1201">fpinv503_chain_mont_Pipeline_VITIS_LOOP_217_1, 0, 365, 35499, 161132, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_221_2_fu_1221">fpinv503_chain_mont_Pipeline_VITIS_LOOP_221_2, 0, 312, 26664, 160551, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_224_3_fu_1233">fpinv503_chain_mont_Pipeline_VITIS_LOOP_224_3, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_227_4_fu_1259">fpinv503_chain_mont_Pipeline_VITIS_LOOP_227_4, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_230_5_fu_1264">fpinv503_chain_mont_Pipeline_VITIS_LOOP_230_5, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_233_6_fu_1269">fpinv503_chain_mont_Pipeline_VITIS_LOOP_233_6, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_236_7_fu_1274">fpinv503_chain_mont_Pipeline_VITIS_LOOP_236_7, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_239_8_fu_1279">fpinv503_chain_mont_Pipeline_VITIS_LOOP_239_8, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_242_9_fu_1284">fpinv503_chain_mont_Pipeline_VITIS_LOOP_242_9, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_245_10_fu_1289">fpinv503_chain_mont_Pipeline_VITIS_LOOP_245_10, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_248_11_fu_1294">fpinv503_chain_mont_Pipeline_VITIS_LOOP_248_11, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_251_12_fu_1299">fpinv503_chain_mont_Pipeline_VITIS_LOOP_251_12, 0, 312, 26664, 160551, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_254_13_fu_1304">fpinv503_chain_mont_Pipeline_VITIS_LOOP_254_13, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_257_14_fu_1309">fpinv503_chain_mont_Pipeline_VITIS_LOOP_257_14, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_260_15_fu_1314">fpinv503_chain_mont_Pipeline_VITIS_LOOP_260_15, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_263_16_fu_1319">fpinv503_chain_mont_Pipeline_VITIS_LOOP_263_16, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_266_17_fu_1324">fpinv503_chain_mont_Pipeline_VITIS_LOOP_266_17, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_269_18_fu_1329">fpinv503_chain_mont_Pipeline_VITIS_LOOP_269_18, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_272_19_fu_1334">fpinv503_chain_mont_Pipeline_VITIS_LOOP_272_19, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_275_20_fu_1339">fpinv503_chain_mont_Pipeline_VITIS_LOOP_275_20, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_278_21_fu_1344">fpinv503_chain_mont_Pipeline_VITIS_LOOP_278_21, 0, 312, 26664, 160551, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_281_22_fu_1349">fpinv503_chain_mont_Pipeline_VITIS_LOOP_281_22, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_284_23_fu_1354">fpinv503_chain_mont_Pipeline_VITIS_LOOP_284_23, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_287_24_fu_1359">fpinv503_chain_mont_Pipeline_VITIS_LOOP_287_24, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_290_25_fu_1364">fpinv503_chain_mont_Pipeline_VITIS_LOOP_290_25, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_293_26_fu_1369">fpinv503_chain_mont_Pipeline_VITIS_LOOP_293_26, 0, 312, 26664, 160551, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_296_27_fu_1374">fpinv503_chain_mont_Pipeline_VITIS_LOOP_296_27, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_299_28_fu_1379">fpinv503_chain_mont_Pipeline_VITIS_LOOP_299_28, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_302_29_fu_1384">fpinv503_chain_mont_Pipeline_VITIS_LOOP_302_29, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_305_30_fu_1389">fpinv503_chain_mont_Pipeline_VITIS_LOOP_305_30, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_308_31_fu_1394">fpinv503_chain_mont_Pipeline_VITIS_LOOP_308_31, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_311_32_fu_1399">fpinv503_chain_mont_Pipeline_VITIS_LOOP_311_32, 0, 312, 26664, 160551, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_314_33_fu_1404">fpinv503_chain_mont_Pipeline_VITIS_LOOP_314_33, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_317_34_fu_1409">fpinv503_chain_mont_Pipeline_VITIS_LOOP_317_34, 0, 312, 26664, 160551, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_320_35_fu_1414">fpinv503_chain_mont_Pipeline_VITIS_LOOP_320_35, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_323_36_fu_1419">fpinv503_chain_mont_Pipeline_VITIS_LOOP_323_36, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_326_37_fu_1424">fpinv503_chain_mont_Pipeline_VITIS_LOOP_326_37, 0, 312, 26664, 160551, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_329_38_fu_1429">fpinv503_chain_mont_Pipeline_VITIS_LOOP_329_38, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_332_39_fu_1434">fpinv503_chain_mont_Pipeline_VITIS_LOOP_332_39, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_335_40_fu_1439">fpinv503_chain_mont_Pipeline_VITIS_LOOP_335_40, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_338_41_fu_1444">fpinv503_chain_mont_Pipeline_VITIS_LOOP_338_41, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_341_42_fu_1449">fpinv503_chain_mont_Pipeline_VITIS_LOOP_341_42, 0, 312, 26664, 160551, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_344_43_fu_1454">fpinv503_chain_mont_Pipeline_VITIS_LOOP_344_43, 0, 312, 26663, 160547, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_347_44_fu_1459">fpinv503_chain_mont_Pipeline_VITIS_LOOP_347_44, 0, 635, 55951, 321120, 0</column>
+<column name="grp_fpmul503_mont_11_fu_1186">fpmul503_mont_11, 0, 386, 19179, 160263, 0</column>
+<column name="grp_fpmul503_mont_17_fu_1238">fpmul503_mont_17, 0, 323, 29161, 159854, 0</column>
+<column name="grp_fpmul503_mont_2_1_fu_1226">fpmul503_mont_2_1, 0, 386, 19894, 160387, 0</column>
+<column name="grp_fpsqr503_mont_fu_1178">fpsqr503_mont, 0, 376, 19543, 160271, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="tt_U">fp2sqr503_mont_6_t1_RAM_1P_AUTO_1R1W, 0, 64, 65, 0, 8, 64, 1, 512</column>
+<column name="t_U">fpinv503_chain_mont_t_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="t_1_U">fpinv503_chain_mont_t_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="t_2_U">fpinv503_chain_mont_t_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="t_3_U">fpinv503_chain_mont_t_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="t_4_U">fpinv503_chain_mont_t_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="t_5_U">fpinv503_chain_mont_t_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="t_6_U">fpinv503_chain_mont_t_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+<column name="t_7_U">fpinv503_chain_mont_t_RAM_AUTO_1R1W, 0, 64, 65, 0, 15, 64, 1, 960</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="a_address0">31, 6, 3, 18</column>
+<column name="a_ce0">31, 6, 1, 6</column>
+<column name="a_we0">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">2693, 958, 1, 958</column>
+<column name="grp_fpmul503_mont_17_fu_1238_ma_read">49, 9, 64, 576</column>
+<column name="grp_fpmul503_mont_17_fu_1238_ma_read_23">49, 9, 64, 576</column>
+<column name="grp_fpmul503_mont_17_fu_1238_ma_read_24">49, 9, 64, 576</column>
+<column name="grp_fpmul503_mont_17_fu_1238_ma_read_25">49, 9, 64, 576</column>
+<column name="grp_fpmul503_mont_17_fu_1238_ma_read_26">49, 9, 64, 576</column>
+<column name="grp_fpmul503_mont_17_fu_1238_ma_read_27">49, 9, 64, 576</column>
+<column name="grp_fpmul503_mont_17_fu_1238_ma_read_28">49, 9, 64, 576</column>
+<column name="grp_fpmul503_mont_17_fu_1238_ma_read_29">49, 9, 64, 576</column>
+<column name="t_1_address0">14, 3, 4, 12</column>
+<column name="t_1_address0_local">65, 16, 4, 64</column>
+<column name="t_1_ce0">14, 3, 1, 3</column>
+<column name="t_1_ce1">9, 2, 1, 2</column>
+<column name="t_1_d0">14, 3, 64, 192</column>
+<column name="t_1_we0">14, 3, 1, 3</column>
+<column name="t_2_address0">14, 3, 4, 12</column>
+<column name="t_2_address0_local">65, 16, 4, 64</column>
+<column name="t_2_ce0">14, 3, 1, 3</column>
+<column name="t_2_ce1">9, 2, 1, 2</column>
+<column name="t_2_d0">14, 3, 64, 192</column>
+<column name="t_2_we0">14, 3, 1, 3</column>
+<column name="t_3_address0">14, 3, 4, 12</column>
+<column name="t_3_address0_local">65, 16, 4, 64</column>
+<column name="t_3_ce0">14, 3, 1, 3</column>
+<column name="t_3_ce1">9, 2, 1, 2</column>
+<column name="t_3_d0">14, 3, 64, 192</column>
+<column name="t_3_we0">14, 3, 1, 3</column>
+<column name="t_4_address0">14, 3, 4, 12</column>
+<column name="t_4_address0_local">65, 16, 4, 64</column>
+<column name="t_4_ce0">14, 3, 1, 3</column>
+<column name="t_4_ce1">9, 2, 1, 2</column>
+<column name="t_4_d0">14, 3, 64, 192</column>
+<column name="t_4_we0">14, 3, 1, 3</column>
+<column name="t_5_address0">14, 3, 4, 12</column>
+<column name="t_5_address0_local">65, 16, 4, 64</column>
+<column name="t_5_ce0">14, 3, 1, 3</column>
+<column name="t_5_ce1">9, 2, 1, 2</column>
+<column name="t_5_d0">14, 3, 64, 192</column>
+<column name="t_5_we0">14, 3, 1, 3</column>
+<column name="t_6_address0">14, 3, 4, 12</column>
+<column name="t_6_address0_local">65, 16, 4, 64</column>
+<column name="t_6_ce0">14, 3, 1, 3</column>
+<column name="t_6_ce1">9, 2, 1, 2</column>
+<column name="t_6_d0">14, 3, 64, 192</column>
+<column name="t_6_we0">14, 3, 1, 3</column>
+<column name="t_7_address0">14, 3, 4, 12</column>
+<column name="t_7_address0_local">65, 16, 4, 64</column>
+<column name="t_7_ce0">14, 3, 1, 3</column>
+<column name="t_7_ce1">9, 2, 1, 2</column>
+<column name="t_7_d0">14, 3, 64, 192</column>
+<column name="t_7_we0">14, 3, 1, 3</column>
+<column name="t_address0">14, 3, 4, 12</column>
+<column name="t_address0_local">65, 16, 4, 64</column>
+<column name="t_ce0">14, 3, 1, 3</column>
+<column name="t_ce1">9, 2, 1, 2</column>
+<column name="t_d0">14, 3, 64, 192</column>
+<column name="t_we0">14, 3, 1, 3</column>
+<column name="tt_address0">221, 51, 3, 153</column>
+<column name="tt_ce0">221, 51, 1, 51</column>
+<column name="tt_d0">209, 48, 64, 3072</column>
+<column name="tt_we0">209, 48, 1, 48</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">957, 0, 957, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_16_1124_fu_1472_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_16_1_fu_1214_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_217_1_fu_1201_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_221_2_fu_1221_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_224_3_fu_1233_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_227_4_fu_1259_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_230_5_fu_1264_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_233_6_fu_1269_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_236_7_fu_1274_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_239_8_fu_1279_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_242_9_fu_1284_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_245_10_fu_1289_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_248_11_fu_1294_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_251_12_fu_1299_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_254_13_fu_1304_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_257_14_fu_1309_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_260_15_fu_1314_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_263_16_fu_1319_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_266_17_fu_1324_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_269_18_fu_1329_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_272_19_fu_1334_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_275_20_fu_1339_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_278_21_fu_1344_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_281_22_fu_1349_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_284_23_fu_1354_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_287_24_fu_1359_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_290_25_fu_1364_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_293_26_fu_1369_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_296_27_fu_1374_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_299_28_fu_1379_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_302_29_fu_1384_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_305_30_fu_1389_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_308_31_fu_1394_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_311_32_fu_1399_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_314_33_fu_1404_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_317_34_fu_1409_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_320_35_fu_1414_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_323_36_fu_1419_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_326_37_fu_1424_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_329_38_fu_1429_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_332_39_fu_1434_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_335_40_fu_1439_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_338_41_fu_1444_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_341_42_fu_1449_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_344_43_fu_1454_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_347_44_fu_1459_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpmul503_mont_11_fu_1186_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpmul503_mont_17_fu_1238_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpmul503_mont_2_1_fu_1226_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_fpsqr503_mont_fu_1178_ap_start_reg">1, 0, 1, 0</column>
+<column name="reg_1479">64, 0, 64, 0</column>
+<column name="reg_1484">64, 0, 64, 0</column>
+<column name="reg_1489">64, 0, 64, 0</column>
+<column name="reg_1494">64, 0, 64, 0</column>
+<column name="reg_1499">64, 0, 64, 0</column>
+<column name="reg_1504">64, 0, 64, 0</column>
+<column name="reg_1509">64, 0, 64, 0</column>
+<column name="reg_1514">64, 0, 64, 0</column>
+<column name="t_1_load_10_reg_2165">64, 0, 64, 0</column>
+<column name="t_1_load_1_reg_1644">64, 0, 64, 0</column>
+<column name="t_1_load_3_reg_1764">64, 0, 64, 0</column>
+<column name="t_1_load_5_reg_1884">64, 0, 64, 0</column>
+<column name="t_1_load_6_reg_1964">64, 0, 64, 0</column>
+<column name="t_1_load_reg_1564">64, 0, 64, 0</column>
+<column name="t_2_load_10_reg_2171">64, 0, 64, 0</column>
+<column name="t_2_load_1_reg_1649">64, 0, 64, 0</column>
+<column name="t_2_load_3_reg_1769">64, 0, 64, 0</column>
+<column name="t_2_load_5_reg_1889">64, 0, 64, 0</column>
+<column name="t_2_load_6_reg_1969">64, 0, 64, 0</column>
+<column name="t_2_load_reg_1569">64, 0, 64, 0</column>
+<column name="t_3_load_10_reg_2177">64, 0, 64, 0</column>
+<column name="t_3_load_1_reg_1654">64, 0, 64, 0</column>
+<column name="t_3_load_3_reg_1774">64, 0, 64, 0</column>
+<column name="t_3_load_5_reg_1894">64, 0, 64, 0</column>
+<column name="t_3_load_6_reg_1974">64, 0, 64, 0</column>
+<column name="t_3_load_reg_1574">64, 0, 64, 0</column>
+<column name="t_4_load_10_reg_2183">64, 0, 64, 0</column>
+<column name="t_4_load_1_reg_1659">64, 0, 64, 0</column>
+<column name="t_4_load_3_reg_1779">64, 0, 64, 0</column>
+<column name="t_4_load_5_reg_1899">64, 0, 64, 0</column>
+<column name="t_4_load_6_reg_1979">64, 0, 64, 0</column>
+<column name="t_4_load_reg_1579">64, 0, 64, 0</column>
+<column name="t_5_load_10_reg_2189">64, 0, 64, 0</column>
+<column name="t_5_load_1_reg_1664">64, 0, 64, 0</column>
+<column name="t_5_load_3_reg_1784">64, 0, 64, 0</column>
+<column name="t_5_load_5_reg_1904">64, 0, 64, 0</column>
+<column name="t_5_load_6_reg_1984">64, 0, 64, 0</column>
+<column name="t_5_load_reg_1584">64, 0, 64, 0</column>
+<column name="t_6_load_10_reg_2195">64, 0, 64, 0</column>
+<column name="t_6_load_1_reg_1669">64, 0, 64, 0</column>
+<column name="t_6_load_3_reg_1789">64, 0, 64, 0</column>
+<column name="t_6_load_5_reg_1909">64, 0, 64, 0</column>
+<column name="t_6_load_6_reg_1989">64, 0, 64, 0</column>
+<column name="t_6_load_reg_1589">64, 0, 64, 0</column>
+<column name="t_7_load_10_reg_2201">64, 0, 64, 0</column>
+<column name="t_7_load_1_reg_1674">64, 0, 64, 0</column>
+<column name="t_7_load_3_reg_1794">64, 0, 64, 0</column>
+<column name="t_7_load_5_reg_1914">64, 0, 64, 0</column>
+<column name="t_7_load_6_reg_1994">64, 0, 64, 0</column>
+<column name="t_7_load_reg_1594">64, 0, 64, 0</column>
+<column name="t_load_11_reg_2159">64, 0, 64, 0</column>
+<column name="t_load_1_reg_1559">64, 0, 64, 0</column>
+<column name="t_load_2_reg_1639">64, 0, 64, 0</column>
+<column name="t_load_4_reg_1759">64, 0, 64, 0</column>
+<column name="t_load_6_reg_1879">64, 0, 64, 0</column>
+<column name="t_load_7_reg_1959">64, 0, 64, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, fpinv503_chain_mont, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, fpinv503_chain_mont, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, fpinv503_chain_mont, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, fpinv503_chain_mont, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, fpinv503_chain_mont, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, fpinv503_chain_mont, return value</column>
+<column name="a_address0">out, 3, ap_memory, a, array</column>
+<column name="a_ce0">out, 1, ap_memory, a, array</column>
+<column name="a_we0">out, 1, ap_memory, a, array</column>
+<column name="a_d0">out, 64, ap_memory, a, array</column>
+<column name="a_q0">in, 64, ap_memory, a, array</column>
+</table>
+</item>
+</section>
+</profile>

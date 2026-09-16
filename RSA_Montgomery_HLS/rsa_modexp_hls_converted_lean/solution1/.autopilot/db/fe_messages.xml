@@ -1,0 +1,123 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/run_hls_converted_lean.tcl:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=rsa_modexp_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_converted_lean/rsa_modexp_hw.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = c offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_converted_lean/rsa_modexp_hw.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = d offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_converted_lean/rsa_modexp_hw.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = m offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_converted_lean/rsa_modexp_hw.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = r2m offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_converted_lean/rsa_modexp_hw.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = p offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_converted_lean/rsa_modexp_hw.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = mprime bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_converted_lean/rsa_modexp_hw.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=t complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=NWORDS max=NWORDS avg=NWORDS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:116:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:138:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=u complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:142:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:157:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:166:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:169:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=t complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:172:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:178:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=NWORDS max=NWORDS avg=NWORDS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:179:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:186:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:196:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:207:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=u complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:211:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_converted_lean/mont_word.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="montMult_words" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:89:22" msg_body="Loop 'PP_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:115:23" msg_body="Loop 'RED_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="RED_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:61:0" msg_body="Unrolling loop 'SEL_LOOP' (../montgomery_converter/include/mont_ops_fast.hpp:156:19) in function 'mont::MontOps_Fast&lt;unsigned int, 16u&gt;::mul' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../montgomery_converter/include/mont_ops_fast.hpp:156:19" LoopName="SEL_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:61:0" msg_body="Unrolling loop 'SUB_LOOP' (../montgomery_converter/include/mont_ops_fast.hpp:141:19) in function 'mont::MontOps_Fast&lt;unsigned int, 16u&gt;::mul' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../montgomery_converter/include/mont_ops_fast.hpp:141:19" LoopName="SUB_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:61:0" msg_body="Unrolling loop 'PP_LOOP' (../montgomery_converter/include/mont_ops_fast.hpp:89:22) in function 'mont::MontOps_Fast&lt;unsigned int, 16u&gt;::mul' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../montgomery_converter/include/mont_ops_fast.hpp:89:22" LoopName="PP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:61:0" msg_body="Unrolling loop 'RED_LOOP' (../montgomery_converter/include/mont_ops_fast.hpp:115:23) in function 'mont::MontOps_Fast&lt;unsigned int, 16u&gt;::mul' completely with a factor of 15">
+        <args Factor="15" LoopLoc="../montgomery_converter/include/mont_ops_fast.hpp:115:23" LoopName="RED_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fast.hpp:61:0" msg_body="Unrolling loop 'VITIS_LOOP_69_1' (../montgomery_converter/include/mont_ops_fast.hpp:69:19) in function 'mont::MontOps_Fast&lt;unsigned int, 16u&gt;::mul' completely with a factor of 18">
+        <args Factor="18" LoopLoc="../montgomery_converter/include/mont_ops_fast.hpp:69:19" LoopName="VITIS_LOOP_69_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src_converted_lean/rsa_modexp_hw.cpp:68:13" msg_body="Duplicating function 'montMult_words' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="montMult_words"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src_converted_lean/rsa_modexp_hw.cpp:46:9" msg_body="Duplicating function 'montMult_words' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="montMult_words"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src_converted_lean/mont_word.cpp:36:3" msg_body="Duplicating function 'mont::MontOps_Fast&lt;unsigned int, 16u&gt;::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="mont::MontOps_Fast&lt;unsigned int, 16u&gt;::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_converted_lean/rsa_modexp_hw.cpp:17:0" msg_body="Inlining function 'get_bit(unsigned int const*, unsigned int)' into 'rsa_modexp_hw'">
+        <args Callee="get_bit(unsigned int const*, unsigned int)" Callee-DebugLoc="File src_converted_lean/rsa_modexp_hw.cpp Line 6 Column 0" Caller="rsa_modexp_hw" Caller-DebugLoc="File src_converted_lean/rsa_modexp_hw.cpp Line 17 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

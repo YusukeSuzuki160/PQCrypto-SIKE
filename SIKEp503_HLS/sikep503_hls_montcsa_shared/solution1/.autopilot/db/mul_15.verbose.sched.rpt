@@ -1,0 +1,280 @@
+
+
+================================================================
+== Vitis HLS Report for 'mul_15'
+================================================================
+* Date:           Mon Sep 14 16:35:35 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_montcsa_shared
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.207 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       18|       18|  0.180 us|  0.180 us|   19|   19|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 19, depth = 19
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 19
+* Pipeline : 1
+  Pipeline-0 : II = 19, D = 19, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.43>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%a_read_1 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %a_read_42" [../montgomery_converter/include/mont_ops.hpp:100]   --->   Operation 20 'read' 'a_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%a_read_2 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %a_read_41" [../montgomery_converter/include/mont_ops.hpp:100]   --->   Operation 21 'read' 'a_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%a_read_3 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %a_read_40" [../montgomery_converter/include/mont_ops.hpp:100]   --->   Operation 22 'read' 'a_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%a_read_4 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %a_read_39" [../montgomery_converter/include/mont_ops.hpp:100]   --->   Operation 23 'read' 'a_read_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%a_read_5 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %a_read_38" [../montgomery_converter/include/mont_ops.hpp:100]   --->   Operation 24 'read' 'a_read_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%a_read_6 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %a_read_37" [../montgomery_converter/include/mont_ops.hpp:100]   --->   Operation 25 'read' 'a_read_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%a_read_7 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %a_read_36" [../montgomery_converter/include/mont_ops.hpp:100]   --->   Operation 26 'read' 'a_read_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%a_read_8 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %a_read" [../montgomery_converter/include/mont_ops.hpp:100]   --->   Operation 27 'read' 'a_read_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [19/19] (4.43ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 28 'call' 'call_ln113' <Predicate = true> <Delay = 4.43> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 7.20>
+ST_2 : Operation 29 [18/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 29 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 7.20>
+ST_3 : Operation 30 [17/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 30 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 7.20>
+ST_4 : Operation 31 [16/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 31 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 7.20>
+ST_5 : Operation 32 [15/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 32 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 7.20>
+ST_6 : Operation 33 [14/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 33 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 7.20>
+ST_7 : Operation 34 [13/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 34 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 7.20>
+ST_8 : Operation 35 [12/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 35 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 7.20>
+ST_9 : Operation 36 [11/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 36 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 7.20>
+ST_10 : Operation 37 [10/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 37 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 7.20>
+ST_11 : Operation 38 [9/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 38 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 7.20>
+ST_12 : Operation 39 [8/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 39 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 7.20>
+ST_13 : Operation 40 [7/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 40 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 7.20>
+ST_14 : Operation 41 [6/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 41 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 7.20>
+ST_15 : Operation 42 [5/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 42 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 7.20>
+ST_16 : Operation 43 [4/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 43 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 7.20>
+ST_17 : Operation 44 [3/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 44 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 7.20>
+ST_18 : Operation 45 [2/19] (7.20ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 45 'call' 'call_ln113' <Predicate = true> <Delay = 7.20> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 0.00>
+ST_19 : Operation 46 [1/19] (0.00ns)   --->   "%call_ln113 = call void @mul.14, i64 %a_read_8, i64 %a_read_7, i64 %a_read_6, i64 %a_read_5, i64 %a_read_4, i64 %a_read_3, i64 %a_read_2, i64 %a_read_1, i64 %c" [../montgomery_converter/include/mont_ops.hpp:113]   --->   Operation 46 'call' 'call_ln113' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_19 : Operation 47 [1/1] (0.00ns)   --->   "%ret_ln172 = ret" [../montgomery_converter/include/mont_ops.hpp:172]   --->   Operation 47 'ret' 'ret_ln172' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.430ns
+The critical path consists of the following:
+	wire read operation ('a', ../montgomery_converter/include/mont_ops.hpp:100) on port 'a_read_42' (../montgomery_converter/include/mont_ops.hpp:100) [10]  (0.000 ns)
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (4.430 ns)
+
+ <State 2>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 3>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 4>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 5>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 6>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 7>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 8>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 9>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 10>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 11>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 12>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 13>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 14>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 15>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 16>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 17>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 18>: 7.207ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln113', ../montgomery_converter/include/mont_ops.hpp:113) to 'mul.14' [18]  (7.207 ns)
+
+ <State 19>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

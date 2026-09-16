@@ -1,0 +1,289 @@
+
+
+================================================================
+== Vitis HLS Report for 'fpmul503_mont_13'
+================================================================
+* Date:           Mon Sep 14 16:33:14 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_montcsa_flat_shared
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.263 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       19|       19|  0.190 us|  0.190 us|   20|   20|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 20, depth = 20
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 20
+* Pipeline : 1
+  Pipeline-0 : II = 20, D = 20, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.57>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%ma_read_1 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ma_read_29" [src_montcsa_flat/fpx.cpp:62]   --->   Operation 21 'read' 'ma_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%ma_read_2 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ma_read_28" [src_montcsa_flat/fpx.cpp:62]   --->   Operation 22 'read' 'ma_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%ma_read_3 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ma_read_27" [src_montcsa_flat/fpx.cpp:62]   --->   Operation 23 'read' 'ma_read_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%ma_read_4 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ma_read_26" [src_montcsa_flat/fpx.cpp:62]   --->   Operation 24 'read' 'ma_read_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%ma_read_5 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ma_read_25" [src_montcsa_flat/fpx.cpp:62]   --->   Operation 25 'read' 'ma_read_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%ma_read_6 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ma_read_24" [src_montcsa_flat/fpx.cpp:62]   --->   Operation 26 'read' 'ma_read_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%ma_read_7 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ma_read_23" [src_montcsa_flat/fpx.cpp:62]   --->   Operation 27 'read' 'ma_read_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%ma_read_15 = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %ma_read" [src_montcsa_flat/fpx.cpp:62]   --->   Operation 28 'read' 'ma_read_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [20/20] (5.57ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 29 'call' 'call_ln77' <Predicate = true> <Delay = 5.57> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 7.26>
+ST_2 : Operation 30 [19/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 30 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 7.26>
+ST_3 : Operation 31 [18/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 31 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 7.26>
+ST_4 : Operation 32 [17/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 32 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 7.26>
+ST_5 : Operation 33 [16/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 33 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 7.26>
+ST_6 : Operation 34 [15/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 34 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 7.26>
+ST_7 : Operation 35 [14/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 35 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 7.26>
+ST_8 : Operation 36 [13/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 36 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 7.26>
+ST_9 : Operation 37 [12/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 37 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 7.26>
+ST_10 : Operation 38 [11/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 38 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 7.26>
+ST_11 : Operation 39 [10/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 39 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 7.26>
+ST_12 : Operation 40 [9/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 40 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 7.26>
+ST_13 : Operation 41 [8/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 41 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 7.26>
+ST_14 : Operation 42 [7/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 42 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 7.26>
+ST_15 : Operation 43 [6/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 43 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 7.26>
+ST_16 : Operation 44 [5/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 44 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 7.26>
+ST_17 : Operation 45 [4/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 45 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 7.26>
+ST_18 : Operation 46 [3/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 46 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 7.26>
+ST_19 : Operation 47 [2/20] (7.26ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 47 'call' 'call_ln77' <Predicate = true> <Delay = 7.26> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 0.00>
+ST_20 : Operation 48 [1/20] (0.00ns)   --->   "%call_ln77 = call void @mul.12, i64 %ma_read_15, i64 %ma_read_7, i64 %ma_read_6, i64 %ma_read_5, i64 %ma_read_4, i64 %ma_read_3, i64 %ma_read_2, i64 %ma_read_1, i64 %mc" [src_montcsa_flat/fpx.cpp:77]   --->   Operation 48 'call' 'call_ln77' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_20 : Operation 49 [1/1] (0.00ns)   --->   "%ret_ln79 = ret" [src_montcsa_flat/fpx.cpp:79]   --->   Operation 49 'ret' 'ret_ln79' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.577ns
+The critical path consists of the following:
+	wire read operation ('ma', src_montcsa_flat/fpx.cpp:62) on port 'ma_read_29' (src_montcsa_flat/fpx.cpp:62) [10]  (0.000 ns)
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (5.577 ns)
+
+ <State 2>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 3>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 4>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 5>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 6>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 7>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 8>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 9>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 10>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 11>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 12>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 13>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 14>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 15>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 16>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 17>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 18>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 19>: 7.263ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln77', src_montcsa_flat/fpx.cpp:77) to 'mul.12' [18]  (7.263 ns)
+
+ <State 20>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

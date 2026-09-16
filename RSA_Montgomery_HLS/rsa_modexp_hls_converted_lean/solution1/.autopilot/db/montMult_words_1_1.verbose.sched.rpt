@@ -1,0 +1,121 @@
+
+
+================================================================
+== Vitis HLS Report for 'montMult_words_1_1'
+================================================================
+* Date:           Tue Sep 15 21:37:32 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        rsa_modexp_hls_converted_lean
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       75|       75|  0.750 us|  0.750 us|   75|   75|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.30>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%out_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %out_offset"   --->   Operation 3 'read' 'out_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%mprime_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mprime"   --->   Operation 4 'read' 'mprime_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%m_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %m"   --->   Operation 5 'read' 'm_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%y_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %y_offset"   --->   Operation 6 'read' 'y_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%x_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %x_offset"   --->   Operation 7 'read' 'x_offset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [2/2] (7.30ns)   --->   "%call_ln36 = call void @mul, i32 %x, i1 %x_offset_read, i32 %y, i1 %y_offset_read, i32 %out_r, i1 %out_offset_read, i32 %gmem, i64 %m_read, i32 %mprime_read" [src_converted_lean/mont_word.cpp:36]   --->   Operation 8 'call' 'call_ln36' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_2, void @empty_3, void @empty_1, i32 16, i32 16, i32 16, i32 16, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/2] (0.00ns)   --->   "%call_ln36 = call void @mul, i32 %x, i1 %x_offset_read, i32 %y, i1 %y_offset_read, i32 %out_r, i1 %out_offset_read, i32 %gmem, i64 %m_read, i32 %mprime_read" [src_converted_lean/mont_word.cpp:36]   --->   Operation 10 'call' 'call_ln36' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%ret_ln38 = ret" [src_converted_lean/mont_word.cpp:38]   --->   Operation 11 'ret' 'ret_ln38' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 7.300ns
+The critical path consists of the following:
+	wire read operation ('out_offset_read') on port 'out_offset' [10]  (0.000 ns)
+	'call' operation 0 bit ('call_ln36', src_converted_lean/mont_word.cpp:36) to 'mul' [16]  (7.300 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

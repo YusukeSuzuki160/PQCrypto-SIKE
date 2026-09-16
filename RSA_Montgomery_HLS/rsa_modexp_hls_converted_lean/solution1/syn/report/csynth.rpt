@@ -1,0 +1,538 @@
+
+
+================================================================
+== Synthesis Summary Report of 'rsa_modexp_hw'
+================================================================
++ General Information: 
+    * Date:           Tue Sep 15 21:37:34 2026
+    * Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+    * Project:        rsa_modexp_hls_converted_lean
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: virtexuplus58g
+    * Target device:  xcvu29p-fsga2577-2L-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+-----------+-------------+------------+-----+
+    |                   Modules                   | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |         |           |             |            |     |
+    |                   & Loops                   | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |    DSP    |      FF     |     LUT    | URAM|
+    +---------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+-----------+-------------+------------+-----+
+    |+ rsa_modexp_hw                              |     -|  0.00|   126311|  1.263e+06|         -|   126312|     -|        no|  2 (~0%)|  110 (~0%)|  11595 (~0%)|  17987 (1%)|    -|
+    | + rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1    |     -|  5.57|       18|    180.000|         -|       18|     -|        no|        -|          -|      7 (~0%)|    52 (~0%)|    -|
+    |  o VITIS_LOOP_27_1                          |     -|  7.30|       16|    160.000|         1|        1|    16|       yes|        -|          -|            -|           -|    -|
+    | + rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2    |     -|  0.00|       19|    190.000|         -|       19|     -|        no|        -|          -|     53 (~0%)|    74 (~0%)|    -|
+    |  o VITIS_LOOP_42_2                          |     -|  7.30|       17|    170.000|         3|        1|    16|       yes|        -|          -|            -|           -|    -|
+    | + rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3    |     -|  0.00|       43|    430.000|         -|       43|     -|        no|        -|          -|    289 (~0%)|   308 (~0%)|    -|
+    |  o VITIS_LOOP_43_3                          |    II|  7.30|       41|    410.000|        12|        2|    16|       yes|        -|          -|            -|           -|    -|
+    | + rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5    |     -|  5.82|       18|    180.000|         -|       18|     -|        no|        -|          -|     13 (~0%)|    63 (~0%)|    -|
+    |  o VITIS_LOOP_48_5                          |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|        -|          -|            -|           -|    -|
+    | + montMult_words_1_2                        |     -|  0.00|       87|    870.000|         -|       87|     -|        no|        -|   39 (~0%)|   4055 (~0%)|  7128 (~0%)|    -|
+    |  + mul_1                                    |     -|  0.00|       86|    860.000|         -|       86|     -|        no|        -|   39 (~0%)|   4052 (~0%)|  7114 (~0%)|    -|
+    |   + mul_1_Pipeline_CIOS_LOOP                |     -|  0.07|       39|    390.000|         -|       39|     -|        no|        -|   39 (~0%)|   2235 (~0%)|  4099 (~0%)|    -|
+    |    o CIOS_LOOP                              |    II|  7.30|       37|    370.000|         8|        2|    16|       yes|        -|          -|            -|           -|    -|
+    | o VITIS_LOOP_44_4                           |     -|  7.30|      156|  1.560e+03|        78|        -|     2|        no|        -|          -|            -|           -|    -|
+    |  + montMult_words_1_1                       |     -|  0.00|       75|    750.000|         -|       75|     -|        no|        -|   71 (~0%)|   5154 (~0%)|  6804 (~0%)|    -|
+    |   + mul                                     |     -|  0.00|       74|    740.000|         -|       74|     -|        no|        -|   71 (~0%)|   5151 (~0%)|  6790 (~0%)|    -|
+    |    + mul_Pipeline_CIOS_LOOP                 |     -|  0.07|       40|    400.000|         -|       40|     -|        no|        -|   71 (~0%)|   3385 (~0%)|  4763 (~0%)|    -|
+    |     o CIOS_LOOP                             |    II|  7.30|       38|    380.000|         9|        2|    16|       yes|        -|          -|            -|           -|    -|
+    | o VITIS_LOOP_55_6                           |     -|  7.30|   125952|  1.260e+06|       246|        -|   512|        no|        -|          -|            -|           -|    -|
+    |  + rsa_modexp_hw_Pipeline_VITIS_LOOP_64_7   |     -|  5.82|       18|    180.000|         -|       18|     -|        no|        -|          -|     13 (~0%)|    63 (~0%)|    -|
+    |   o VITIS_LOOP_64_7                         |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|        -|          -|            -|           -|    -|
+    |  + rsa_modexp_hw_Pipeline_VITIS_LOOP_65_8   |     -|  5.82|       18|    180.000|         -|       18|     -|        no|        -|          -|     12 (~0%)|    63 (~0%)|    -|
+    |   o VITIS_LOOP_65_8                         |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|        -|          -|            -|           -|    -|
+    |  + rsa_modexp_hw_Pipeline_VITIS_LOOP_79_10  |     -|  5.67|       18|    180.000|         -|       18|     -|        no|        -|          -|     13 (~0%)|    95 (~0%)|    -|
+    |   o VITIS_LOOP_79_10                        |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|        -|          -|            -|           -|    -|
+    |  + rsa_modexp_hw_Pipeline_VITIS_LOOP_82_11  |     -|  5.82|       18|    180.000|         -|       18|     -|        no|        -|          -|     13 (~0%)|    63 (~0%)|    -|
+    |   o VITIS_LOOP_82_11                        |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|        -|          -|            -|           -|    -|
+    |  + rsa_modexp_hw_Pipeline_VITIS_LOOP_83_12  |     -|  5.82|       18|    180.000|         -|       18|     -|        no|        -|          -|     13 (~0%)|    63 (~0%)|    -|
+    |   o VITIS_LOOP_83_12                        |     -|  7.30|       16|    160.000|         2|        1|    16|       yes|        -|          -|            -|           -|    -|
+    |  o VITIS_LOOP_66_9                          |     -|  7.30|      156|  1.560e+03|        78|        -|     2|        no|        -|          -|            -|           -|    -|
+    +---------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+---------+-----------+-------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface  | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|            |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem | READ_WRITE | 32 -> 32   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=2            |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++-----------------+------------+---------------+--------+----------+
+| Interface       | Data Width | Address Width | Offset | Register |
++-----------------+------------+---------------+--------+----------+
+| s_axi_control   | 32         | 5             | 16     | 0        |
+| s_axi_control_r | 32         | 7             | 16     | 0        |
++-----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++-----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface       | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control   | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control   | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control   | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control   | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control   | mprime   | 0x10   | 32    | W      | Data signal of mprime            |                                                                      |
+| s_axi_control_r | c_1      | 0x10   | 32    | W      | Data signal of c                 |                                                                      |
+| s_axi_control_r | c_2      | 0x14   | 32    | W      | Data signal of c                 |                                                                      |
+| s_axi_control_r | d_1      | 0x1c   | 32    | W      | Data signal of d                 |                                                                      |
+| s_axi_control_r | d_2      | 0x20   | 32    | W      | Data signal of d                 |                                                                      |
+| s_axi_control_r | m_1      | 0x28   | 32    | W      | Data signal of m                 |                                                                      |
+| s_axi_control_r | m_2      | 0x2c   | 32    | W      | Data signal of m                 |                                                                      |
+| s_axi_control_r | r2m_1    | 0x34   | 32    | W      | Data signal of r2m               |                                                                      |
+| s_axi_control_r | r2m_2    | 0x38   | 32    | W      | Data signal of r2m               |                                                                      |
+| s_axi_control_r | p_1      | 0x40   | 32    | W      | Data signal of p                 |                                                                      |
+| s_axi_control_r | p_2      | 0x44   | 32    | W      | Data signal of p                 |                                                                      |
++-----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------------------+
+| Argument | Direction | Datatype             |
++----------+-----------+----------------------+
+| c        | inout     | unsigned int const * |
+| d        | inout     | unsigned int const * |
+| m        | inout     | unsigned int const * |
+| mprime   | in        | unsigned int         |
+| r2m      | inout     | unsigned int const * |
+| p        | inout     | unsigned int*        |
++----------+-----------+----------------------+
+
+* SW-to-HW Mapping
++----------+-----------------+-----------+----------+----------------------------------+
+| Argument | HW Interface    | HW Type   | HW Usage | HW Info                          |
++----------+-----------------+-----------+----------+----------------------------------+
+| c        | m_axi_gmem      | interface |          | channel=0                        |
+| c        | s_axi_control_r | register  | offset   | name=c_1 offset=0x10 range=32    |
+| c        | s_axi_control_r | register  | offset   | name=c_2 offset=0x14 range=32    |
+| d        | m_axi_gmem      | interface |          | channel=0                        |
+| d        | s_axi_control_r | register  | offset   | name=d_1 offset=0x1c range=32    |
+| d        | s_axi_control_r | register  | offset   | name=d_2 offset=0x20 range=32    |
+| m        | m_axi_gmem      | interface |          | channel=0                        |
+| m        | s_axi_control_r | register  | offset   | name=m_1 offset=0x28 range=32    |
+| m        | s_axi_control_r | register  | offset   | name=m_2 offset=0x2c range=32    |
+| mprime   | s_axi_control   | register  |          | name=mprime offset=0x10 range=32 |
+| r2m      | m_axi_gmem      | interface |          | channel=0                        |
+| r2m      | s_axi_control_r | register  | offset   | name=r2m_1 offset=0x34 range=32  |
+| r2m      | s_axi_control_r | register  | offset   | name=r2m_2 offset=0x38 range=32  |
+| p        | m_axi_gmem      | interface |          | channel=0                        |
+| p        | s_axi_control_r | register  | offset   | name=p_1 offset=0x40 range=32    |
+| p        | s_axi_control_r | register  | offset   | name=p_2 offset=0x44 range=32    |
++----------+-----------------+-----------+----------+----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+--------+-------+-----------------+--------------------------------------------+
+| HW Interface | Direction | Length | Width | Loop            | Loop Location                              |
++--------------+-----------+--------+-------+-----------------+--------------------------------------------+
+| m_axi_gmem   | read      | 16     | 32    |                 |                                            |
+| m_axi_gmem   | write     | 16     | 32    |                 |                                            |
+| m_axi_gmem   | read      | 16     | 32    | VITIS_LOOP_42_2 | src_converted_lean/rsa_modexp_hw.cpp:42:22 |
++--------------+-----------+--------+-------+-----------------+--------------------------------------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+---------------------------------------------------------+-----------+--------------+--------+-----------------+--------------------------------------------+------------+-------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location                                         | Direction | Burst Status | Length | Loop            | Loop Location                              | Resolution | Problem                                                                                               |
++--------------+----------+---------------------------------------------------------+-----------+--------------+--------+-----------------+--------------------------------------------+------------+-------------------------------------------------------------------------------------------------------+
+| m_axi_gmem   | c        | ../montgomery_converter/include/mont_ops_fast.hpp:158:7 | write     | Widen Fail   |        |                 |                                            | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | c        | ../montgomery_converter/include/mont_ops_fast.hpp:158:7 | write     | Inferred     | 16     |                 |                                            |            |                                                                                                       |
+| m_axi_gmem   | d        | src_converted_lean/rsa_modexp_hw.cpp:7:19               | read      | Fail         |        | VITIS_LOOP_55_6 | src_converted_lean/rsa_modexp_hw.cpp:55:22 | 214-229    | Could not analyze pattern                                                                             |
+| m_axi_gmem   | r2m      | src_converted_lean/rsa_modexp_hw.cpp:42:97              | read      | Widen Fail   |        | VITIS_LOOP_42_2 | src_converted_lean/rsa_modexp_hw.cpp:42:22 | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | r2m      | src_converted_lean/rsa_modexp_hw.cpp:42:97              | read      | Inferred     | 16     | VITIS_LOOP_42_2 | src_converted_lean/rsa_modexp_hw.cpp:42:22 |            |                                                                                                       |
+| m_axi_gmem   |          | src_converted_lean/rsa_modexp_hw.cpp:43:22              | read      | Fail         |        |                 |                                            | 214-224    | Could not burst due to multiple potential reads to the same bundle in the same region.                |
+| m_axi_gmem   | r2m      | src_converted_lean/rsa_modexp_hw.cpp:43:95              | read      | Widen Fail   |        | VITIS_LOOP_43_3 | src_converted_lean/rsa_modexp_hw.cpp:43:22 | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | c        | src_converted_lean/rsa_modexp_hw.cpp:43:74              | read      | Widen Fail   |        | VITIS_LOOP_43_3 | src_converted_lean/rsa_modexp_hw.cpp:43:22 | 214-353    | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | r2m      | src_converted_lean/rsa_modexp_hw.cpp:43:95              | read      | Inferred     | 16     | VITIS_LOOP_43_3 | src_converted_lean/rsa_modexp_hw.cpp:43:22 |            |                                                                                                       |
+| m_axi_gmem   | c        | src_converted_lean/rsa_modexp_hw.cpp:43:74              | read      | Inferred     | 16     | VITIS_LOOP_43_3 | src_converted_lean/rsa_modexp_hw.cpp:43:22 |            |                                                                                                       |
++--------------+----------+---------------------------------------------------------+-----------+--------------+--------+-----------------+--------------------------------------------+------------+-------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------+-----+--------+------------------+--------+-----------+---------+
+| Name                                       | DSP | Pragma | Variable         | Op     | Impl      | Latency |
++--------------------------------------------+-----+--------+------------------+--------+-----------+---------+
+| + rsa_modexp_hw                            | 110 |        |                  |        |           |         |
+|   icmp_ln44_fu_399_p2                      |     |        | icmp_ln44        | seteq  | auto      | 0       |
+|   add_ln44_fu_405_p2                       |     |        | add_ln44         | add    | fabric    | 0       |
+|   icmp_ln55_fu_428_p2                      |     |        | icmp_ln55        | seteq  | auto      | 0       |
+|   i_2_fu_434_p2                            |     |        | i_2              | add    | fabric    | 0       |
+|   icmp_ln66_fu_443_p2                      |     |        | icmp_ln66        | seteq  | auto      | 0       |
+|   add_ln66_fu_449_p2                       |     |        | add_ln66         | add    | fabric    | 0       |
+|   add_ln7_fu_480_p2                        |     |        | add_ln7          | add    | fabric    | 0       |
+|   lshr_ln7_fu_512_p2                       |     |        | lshr_ln7         | lshr   | auto_pipe | 0       |
+|  + rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1  | 0   |        |                  |        |           |         |
+|    icmp_ln27_fu_56_p2                      |     |        | icmp_ln27        | seteq  | auto      | 0       |
+|    add_ln27_fu_62_p2                       |     |        | add_ln27         | add    | fabric    | 0       |
+|  + rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2  | 0   |        |                  |        |           |         |
+|    icmp_ln42_fu_118_p2                     |     |        | icmp_ln42        | seteq  | auto      | 0       |
+|    add_ln42_fu_124_p2                      |     |        | add_ln42         | add    | fabric    | 0       |
+|  + rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3  | 0   |        |                  |        |           |         |
+|    icmp_ln43_fu_142_p2                     |     |        | icmp_ln43        | seteq  | auto      | 0       |
+|    add_ln43_2_fu_148_p2                    |     |        | add_ln43_2       | add    | fabric    | 0       |
+|    add_ln43_fu_162_p2                      |     |        | add_ln43         | add    | fabric    | 0       |
+|    add_ln43_1_fu_178_p2                    |     |        | add_ln43_1       | add    | fabric    | 0       |
+|  + rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5  | 0   |        |                  |        |           |         |
+|    icmp_ln48_fu_101_p2                     |     |        | icmp_ln48        | seteq  | auto      | 0       |
+|    add_ln48_fu_107_p2                      |     |        | add_ln48         | add    | fabric    | 0       |
+|  + montMult_words_1_1                      | 71  |        |                  |        |           |         |
+|   + mul                                    | 71  |        |                  |        |           |         |
+|     d_fu_818_p2                            |     |        | d                | sub    | fabric    | 0       |
+|     icmp_ln154_fu_1384_p2                  |     |        | icmp_ln154       | seteq  | auto      | 0       |
+|     keep_t_fu_1398_p2                      |     |        | keep_t           | and    | auto      | 0       |
+|     select_ln158_fu_1404_p3                |     |        | select_ln158     | select | auto_sel  | 0       |
+|     select_ln158_1_fu_1411_p3              |     |        | select_ln158_1   | select | auto_sel  | 0       |
+|     select_ln158_2_fu_1418_p3              |     |        | select_ln158_2   | select | auto_sel  | 0       |
+|     select_ln158_3_fu_1424_p3              |     |        | select_ln158_3   | select | auto_sel  | 0       |
+|     select_ln158_4_fu_1430_p3              |     |        | select_ln158_4   | select | auto_sel  | 0       |
+|     select_ln158_5_fu_1436_p3              |     |        | select_ln158_5   | select | auto_sel  | 0       |
+|     select_ln158_6_fu_1442_p3              |     |        | select_ln158_6   | select | auto_sel  | 0       |
+|     select_ln158_7_fu_1448_p3              |     |        | select_ln158_7   | select | auto_sel  | 0       |
+|     select_ln158_8_fu_1454_p3              |     |        | select_ln158_8   | select | auto_sel  | 0       |
+|     select_ln158_9_fu_1462_p3              |     |        | select_ln158_9   | select | auto_sel  | 0       |
+|     select_ln158_10_fu_1470_p3             |     |        | select_ln158_10  | select | auto_sel  | 0       |
+|     select_ln158_11_fu_1478_p3             |     |        | select_ln158_11  | select | auto_sel  | 0       |
+|     select_ln158_12_fu_1486_p3             |     |        | select_ln158_12  | select | auto_sel  | 0       |
+|     select_ln158_13_fu_1494_p3             |     |        | select_ln158_13  | select | auto_sel  | 0       |
+|     select_ln158_14_fu_1502_p3             |     |        | select_ln158_14  | select | auto_sel  | 0       |
+|     select_ln158_15_fu_1510_p3             |     |        | select_ln158_15  | select | auto_sel  | 0       |
+|    + mul_Pipeline_CIOS_LOOP                | 71  |        |                  |        |           |         |
+|      icmp_ln80_fu_861_p2                   |     |        | icmp_ln80        | seteq  | auto      | 0       |
+|      add_ln80_fu_867_p2                    |     |        | add_ln80         | add    | fabric    | 0       |
+|      empty_37_fu_873_p2                    |     |        | empty_37         | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U12              | 4   |        | mul_ln92         | mul    | auto      | 0       |
+|      p_fu_901_p2                           |     |        | p                | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U13              | 4   |        | mul_ln93         | mul    | auto      | 0       |
+|      add_ln93_fu_934_p2                    |     |        | add_ln93         | add    | fabric    | 0       |
+|      p_1_fu_944_p2                         |     |        | p_1              | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U14              | 4   |        | mul_ln93_1       | mul    | auto      | 0       |
+|      add_ln93_2_fu_972_p2                  |     |        | add_ln93_2       | add    | fabric    | 0       |
+|      p_2_fu_1056_p2                        |     |        | p_2              | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U15              | 4   |        | mul_ln93_2       | mul    | auto      | 0       |
+|      add_ln93_4_fu_1084_p2                 |     |        | add_ln93_4       | add    | fabric    | 0       |
+|      p_3_fu_1094_p2                        |     |        | p_3              | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U16              | 4   |        | mul_ln93_3       | mul    | auto      | 0       |
+|      add_ln93_6_fu_1122_p2                 |     |        | add_ln93_6       | add    | fabric    | 0       |
+|      p_4_fu_1223_p2                        |     |        | p_4              | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U21              | 4   |        | mul_ln93_4       | mul    | auto      | 0       |
+|      add_ln93_8_fu_1250_p2                 |     |        | add_ln93_8       | add    | fabric    | 0       |
+|      p_5_fu_1260_p2                        |     |        | p_5              | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U22              | 4   |        | mul_ln93_5       | mul    | auto      | 0       |
+|      add_ln93_10_fu_1288_p2                |     |        | add_ln93_10      | add    | fabric    | 0       |
+|      p_6_fu_1298_p2                        |     |        | p_6              | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U23              | 4   |        | mul_ln93_6       | mul    | auto      | 0       |
+|      add_ln93_12_fu_1326_p2                |     |        | add_ln93_12      | add    | fabric    | 0       |
+|      p_7_fu_1443_p2                        |     |        | p_7              | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U24              | 4   |        | mul_ln93_7       | mul    | auto      | 0       |
+|      add_ln93_14_fu_1471_p2                |     |        | add_ln93_14      | add    | fabric    | 0       |
+|      p_8_fu_1481_p2                        |     |        | p_8              | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U12              | 4   |        | mul_ln93_8       | mul    | auto      | 0       |
+|      add_ln93_16_fu_1508_p2                |     |        | add_ln93_16      | add    | fabric    | 0       |
+|      p_9_fu_1518_p2                        |     |        | p_9              | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U13              | 4   |        | mul_ln93_9       | mul    | auto      | 0       |
+|      add_ln93_18_fu_1546_p2                |     |        | add_ln93_18      | add    | fabric    | 0       |
+|      p_10_fu_1556_p2                       |     |        | p_10             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U14              | 4   |        | mul_ln93_10      | mul    | auto      | 0       |
+|      add_ln93_20_fu_1745_p2                |     |        | add_ln93_20      | add    | fabric    | 0       |
+|      p_11_fu_1755_p2                       |     |        | p_11             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U15              | 4   |        | mul_ln93_11      | mul    | auto      | 0       |
+|      add_ln93_22_fu_1783_p2                |     |        | add_ln93_22      | add    | fabric    | 0       |
+|      p_12_fu_1793_p2                       |     |        | p_12             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U16              | 4   |        | mul_ln93_12      | mul    | auto      | 0       |
+|      add_ln93_24_fu_1821_p2                |     |        | add_ln93_24      | add    | fabric    | 0       |
+|      p_13_fu_1831_p2                       |     |        | p_13             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U17              | 4   |        | mul_ln93_13      | mul    | auto      | 0       |
+|      add_ln93_26_fu_1858_p2                |     |        | add_ln93_26      | add    | fabric    | 0       |
+|      p_14_fu_2016_p2                       |     |        | p_14             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U18              | 4   |        | mul_ln93_14      | mul    | auto      | 0       |
+|      add_ln93_28_fu_2043_p2                |     |        | add_ln93_28      | add    | fabric    | 0       |
+|      p_15_fu_2053_p2                       |     |        | p_15             | add    | fabric    | 0       |
+|      s_fu_2080_p2                          |     |        | s                | add    | fabric    | 0       |
+|      mul_32s_32s_32_1_1_U29                | 3   |        | m                | mul    | auto      | 0       |
+|      mul_32ns_32ns_64_1_1_U17              | 4   |        | mul_ln112        | mul    | auto      | 0       |
+|      p0_fu_988_p2                          |     |        | p0               | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U18              | 4   |        | mul_ln119        | mul    | auto      | 0       |
+|      add_ln119_fu_1012_p2                  |     |        | add_ln119        | add    | fabric    | 0       |
+|      p_16_fu_1022_p2                       |     |        | p_16             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U19              | 4   |        | mul_ln119_1      | mul    | auto      | 0       |
+|      add_ln119_2_fu_1135_p2                |     |        | add_ln119_2      | add    | fabric    | 0       |
+|      p_17_fu_1145_p2                       |     |        | p_17             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U20              | 4   |        | mul_ln119_2      | mul    | auto      | 0       |
+|      add_ln119_4_fu_1172_p2                |     |        | add_ln119_4      | add    | fabric    | 0       |
+|      p_18_fu_1182_p2                       |     |        | p_18             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U25              | 4   |        | mul_ln119_3      | mul    | auto      | 0       |
+|      add_ln119_6_fu_1339_p2                |     |        | add_ln119_6      | add    | fabric    | 0       |
+|      p_19_fu_1349_p2                       |     |        | p_19             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U26              | 4   |        | mul_ln119_4      | mul    | auto      | 0       |
+|      add_ln119_8_fu_1377_p2                |     |        | add_ln119_8      | add    | fabric    | 0       |
+|      p_20_fu_1387_p2                       |     |        | p_20             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U27              | 4   |        | mul_ln119_5      | mul    | auto      | 0       |
+|      add_ln119_10_fu_1415_p2               |     |        | add_ln119_10     | add    | fabric    | 0       |
+|      p_21_fu_1579_p2                       |     |        | p_21             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U28              | 4   |        | mul_ln119_6      | mul    | auto      | 0       |
+|      add_ln119_12_fu_1606_p2               |     |        | add_ln119_12     | add    | fabric    | 0       |
+|      p_22_fu_1616_p2                       |     |        | p_22             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U19              | 4   |        | mul_ln119_7      | mul    | auto      | 0       |
+|      add_ln119_14_fu_1643_p2               |     |        | add_ln119_14     | add    | fabric    | 0       |
+|      p_23_fu_1653_p2                       |     |        | p_23             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U20              | 4   |        | mul_ln119_8      | mul    | auto      | 0       |
+|      add_ln119_16_fu_1681_p2               |     |        | add_ln119_16     | add    | fabric    | 0       |
+|      p_24_fu_1691_p2                       |     |        | p_24             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U21              | 4   |        | mul_ln119_9      | mul    | auto      | 0       |
+|      add_ln119_18_fu_1870_p2               |     |        | add_ln119_18     | add    | fabric    | 0       |
+|      p_25_fu_1880_p2                       |     |        | p_25             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U22              | 4   |        | mul_ln119_10     | mul    | auto      | 0       |
+|      add_ln119_20_fu_1907_p2               |     |        | add_ln119_20     | add    | fabric    | 0       |
+|      p_26_fu_1917_p2                       |     |        | p_26             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U23              | 4   |        | mul_ln119_11     | mul    | auto      | 0       |
+|      add_ln119_22_fu_1944_p2               |     |        | add_ln119_22     | add    | fabric    | 0       |
+|      p_27_fu_1954_p2                       |     |        | p_27             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U24              | 4   |        | mul_ln119_12     | mul    | auto      | 0       |
+|      add_ln119_24_fu_1982_p2               |     |        | add_ln119_24     | add    | fabric    | 0       |
+|      p_28_fu_2105_p2                       |     |        | p_28             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U25              | 4   |        | mul_ln119_13     | mul    | auto      | 0       |
+|      add_ln119_26_fu_2132_p2               |     |        | add_ln119_26     | add    | fabric    | 0       |
+|      p_29_fu_2142_p2                       |     |        | p_29             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U26              | 4   |        | mul_ln119_14     | mul    | auto      | 0       |
+|      add_ln119_28_fu_2169_p2               |     |        | add_ln119_28     | add    | fabric    | 0       |
+|      p_30_fu_2179_p2                       |     |        | p_30             | add    | fabric    | 0       |
+|      add_ln124_fu_2207_p2                  |     |        | add_ln124        | add    | fabric    | 0       |
+|      s_3_fu_2213_p2                        |     |        | s_3              | add    | fabric    | 0       |
+|      add_ln127_fu_2231_p2                  |     |        | add_ln127        | add    | fabric    | 0       |
+|  + rsa_modexp_hw_Pipeline_VITIS_LOOP_64_7  | 0   |        |                  |        |           |         |
+|    icmp_ln64_fu_85_p2                      |     |        | icmp_ln64        | seteq  | auto      | 0       |
+|    add_ln64_fu_91_p2                       |     |        | add_ln64         | add    | fabric    | 0       |
+|  + rsa_modexp_hw_Pipeline_VITIS_LOOP_65_8  | 0   |        |                  |        |           |         |
+|    icmp_ln65_fu_104_p2                     |     |        | icmp_ln65        | seteq  | auto      | 0       |
+|    add_ln65_fu_110_p2                      |     |        | add_ln65         | add    | fabric    | 0       |
+|  + rsa_modexp_hw_Pipeline_VITIS_LOOP_79_10 | 0   |        |                  |        |           |         |
+|    icmp_ln79_fu_97_p2                      |     |        | icmp_ln79        | seteq  | auto      | 0       |
+|    add_ln79_fu_103_p2                      |     |        | add_ln79         | add    | fabric    | 0       |
+|    select_ln80_fu_136_p3                   |     |        | select_ln80      | select | auto_sel  | 0       |
+|  + rsa_modexp_hw_Pipeline_VITIS_LOOP_82_11 | 0   |        |                  |        |           |         |
+|    icmp_ln82_fu_69_p2                      |     |        | icmp_ln82        | seteq  | auto      | 0       |
+|    add_ln82_fu_75_p2                       |     |        | add_ln82         | add    | fabric    | 0       |
+|  + rsa_modexp_hw_Pipeline_VITIS_LOOP_83_12 | 0   |        |                  |        |           |         |
+|    icmp_ln83_fu_69_p2                      |     |        | icmp_ln83        | seteq  | auto      | 0       |
+|    add_ln83_fu_75_p2                       |     |        | add_ln83         | add    | fabric    | 0       |
+|  + montMult_words_1_2                      | 39  |        |                  |        |           |         |
+|   + mul_1                                  | 39  |        |                  |        |           |         |
+|     d_fu_606_p2                            |     |        | d                | sub    | fabric    | 0       |
+|     xor_ln154_fu_1145_p2                   |     |        | xor_ln154        | xor    | auto      | 0       |
+|     keep_t_fu_1159_p2                      |     |        | keep_t           | and    | auto      | 0       |
+|     select_ln154_fu_1165_p3                |     |        | select_ln154     | select | auto_sel  | 0       |
+|     icmp_ln154_1_not_fu_1173_p2            |     |        | icmp_ln154_1_not | xor    | auto      | 0       |
+|     not_and_ln154_fu_1179_p2               |     |        | not_and_ln154    | or     | auto      | 0       |
+|     select_ln158_fu_1185_p3                |     |        | select_ln158     | select | auto_sel  | 0       |
+|     and_ln158_fu_1193_p2                   |     |        | and_ln158        | and    | auto      | 0       |
+|     and_ln158_1_fu_1198_p2                 |     |        | and_ln158_1      | and    | auto      | 0       |
+|     or_ln158_fu_1204_p2                    |     |        | or_ln158         | or     | auto      | 0       |
+|     and_ln158_2_fu_1210_p2                 |     |        | and_ln158_2      | and    | auto      | 0       |
+|     and_ln158_3_fu_1215_p2                 |     |        | and_ln158_3      | and    | auto      | 0       |
+|     or_ln158_1_fu_1221_p2                  |     |        | or_ln158_1       | or     | auto      | 0       |
+|     and_ln158_4_fu_1227_p2                 |     |        | and_ln158_4      | and    | auto      | 0       |
+|     and_ln158_5_fu_1232_p2                 |     |        | and_ln158_5      | and    | auto      | 0       |
+|     or_ln158_2_fu_1238_p2                  |     |        | or_ln158_2       | or     | auto      | 0       |
+|     and_ln158_6_fu_1244_p2                 |     |        | and_ln158_6      | and    | auto      | 0       |
+|     and_ln158_7_fu_1249_p2                 |     |        | and_ln158_7      | and    | auto      | 0       |
+|     or_ln158_3_fu_1255_p2                  |     |        | or_ln158_3       | or     | auto      | 0       |
+|     and_ln158_8_fu_1261_p2                 |     |        | and_ln158_8      | and    | auto      | 0       |
+|     and_ln158_9_fu_1266_p2                 |     |        | and_ln158_9      | and    | auto      | 0       |
+|     or_ln158_4_fu_1272_p2                  |     |        | or_ln158_4       | or     | auto      | 0       |
+|     and_ln158_10_fu_1278_p2                |     |        | and_ln158_10     | and    | auto      | 0       |
+|     and_ln158_11_fu_1283_p2                |     |        | and_ln158_11     | and    | auto      | 0       |
+|     or_ln158_5_fu_1289_p2                  |     |        | or_ln158_5       | or     | auto      | 0       |
+|     and_ln158_12_fu_1295_p2                |     |        | and_ln158_12     | and    | auto      | 0       |
+|     and_ln158_13_fu_1300_p2                |     |        | and_ln158_13     | and    | auto      | 0       |
+|     or_ln158_6_fu_1306_p2                  |     |        | or_ln158_6       | or     | auto      | 0       |
+|     and_ln158_14_fu_1312_p2                |     |        | and_ln158_14     | and    | auto      | 0       |
+|     and_ln158_15_fu_1318_p2                |     |        | and_ln158_15     | and    | auto      | 0       |
+|     or_ln158_7_fu_1324_p2                  |     |        | or_ln158_7       | or     | auto      | 0       |
+|     and_ln158_16_fu_1330_p2                |     |        | and_ln158_16     | and    | auto      | 0       |
+|     and_ln158_17_fu_1336_p2                |     |        | and_ln158_17     | and    | auto      | 0       |
+|     or_ln158_8_fu_1342_p2                  |     |        | or_ln158_8       | or     | auto      | 0       |
+|     and_ln158_18_fu_1348_p2                |     |        | and_ln158_18     | and    | auto      | 0       |
+|     and_ln158_19_fu_1354_p2                |     |        | and_ln158_19     | and    | auto      | 0       |
+|     or_ln158_9_fu_1360_p2                  |     |        | or_ln158_9       | or     | auto      | 0       |
+|     and_ln158_20_fu_1366_p2                |     |        | and_ln158_20     | and    | auto      | 0       |
+|     and_ln158_21_fu_1372_p2                |     |        | and_ln158_21     | and    | auto      | 0       |
+|     or_ln158_10_fu_1378_p2                 |     |        | or_ln158_10      | or     | auto      | 0       |
+|     and_ln158_22_fu_1384_p2                |     |        | and_ln158_22     | and    | auto      | 0       |
+|     and_ln158_23_fu_1390_p2                |     |        | and_ln158_23     | and    | auto      | 0       |
+|     or_ln158_11_fu_1396_p2                 |     |        | or_ln158_11      | or     | auto      | 0       |
+|     and_ln158_24_fu_1402_p2                |     |        | and_ln158_24     | and    | auto      | 0       |
+|     and_ln158_25_fu_1408_p2                |     |        | and_ln158_25     | and    | auto      | 0       |
+|     or_ln158_12_fu_1414_p2                 |     |        | or_ln158_12      | or     | auto      | 0       |
+|     and_ln158_26_fu_1420_p2                |     |        | and_ln158_26     | and    | auto      | 0       |
+|     and_ln158_27_fu_1426_p2                |     |        | and_ln158_27     | and    | auto      | 0       |
+|     or_ln158_13_fu_1432_p2                 |     |        | or_ln158_13      | or     | auto      | 0       |
+|     and_ln158_28_fu_1438_p2                |     |        | and_ln158_28     | and    | auto      | 0       |
+|     and_ln158_29_fu_1444_p2                |     |        | and_ln158_29     | and    | auto      | 0       |
+|     or_ln158_14_fu_1450_p2                 |     |        | or_ln158_14      | or     | auto      | 0       |
+|     and_ln158_30_fu_1456_p2                |     |        | and_ln158_30     | and    | auto      | 0       |
+|     and_ln158_31_fu_1462_p2                |     |        | and_ln158_31     | and    | auto      | 0       |
+|     or_ln158_15_fu_1468_p2                 |     |        | or_ln158_15      | or     | auto      | 0       |
+|    + mul_1_Pipeline_CIOS_LOOP              | 39  |        |                  |        |           |         |
+|      icmp_ln80_fu_755_p2                   |     |        | icmp_ln80        | seteq  | auto      | 0       |
+|      add_ln80_fu_761_p2                    |     |        | add_ln80         | add    | fabric    | 0       |
+|      select_ln92_fu_784_p3                 |     |        | select_ln92      | select | auto_sel  | 0       |
+|      and_ln92_fu_792_p2                    |     |        | and_ln92         | and    | auto      | 0       |
+|      m_fu_591_p0                           |     |        | add_ln92         | add    | fabric    | 0       |
+|      p_fu_808_p2                           |     |        | p                | add    | fabric    | 0       |
+|      and_ln93_fu_835_p2                    |     |        | and_ln93         | and    | auto      | 0       |
+|      and_ln93_1_fu_875_p2                  |     |        | and_ln93_1       | and    | auto      | 0       |
+|      and_ln93_2_fu_1003_p2                 |     |        | and_ln93_2       | and    | auto      | 0       |
+|      and_ln93_3_fu_1043_p2                 |     |        | and_ln93_3       | and    | auto      | 0       |
+|      and_ln93_4_fu_1176_p2                 |     |        | and_ln93_4       | and    | auto      | 0       |
+|      and_ln93_5_fu_1216_p2                 |     |        | and_ln93_5       | and    | auto      | 0       |
+|      and_ln93_6_fu_1256_p2                 |     |        | and_ln93_6       | and    | auto      | 0       |
+|      and_ln93_7_fu_1392_p2                 |     |        | and_ln93_7       | and    | auto      | 0       |
+|      and_ln93_8_fu_1432_p2                 |     |        | and_ln93_8       | and    | auto      | 0       |
+|      and_ln93_9_fu_1472_p2                 |     |        | and_ln93_9       | and    | auto      | 0       |
+|      and_ln93_10_fu_1512_p2                |     |        | and_ln93_10      | and    | auto      | 0       |
+|      and_ln93_11_fu_1711_p2                |     |        | and_ln93_11      | and    | auto      | 0       |
+|      and_ln93_12_fu_1751_p2                |     |        | and_ln93_12      | and    | auto      | 0       |
+|      and_ln93_13_fu_1791_p2                |     |        | and_ln93_13      | and    | auto      | 0       |
+|      and_ln93_14_fu_1831_p2                |     |        | and_ln93_14      | and    | auto      | 0       |
+|      s_fu_1871_p2                          |     |        | s                | add    | fabric    | 0       |
+|      mul_32s_32s_32_1_1_U129               | 3   |        | m                | mul    | auto      | 0       |
+|      mul_32ns_32ns_64_1_1_U120             | 4   |        | mul_ln112        | mul    | auto      | 0       |
+|      p0_fu_917_p2                          |     |        | p0               | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U121             | 4   |        | mul_ln119        | mul    | auto      | 0       |
+|      add_ln119_fu_941_p2                   |     |        | add_ln119        | add    | fabric    | 0       |
+|      p_46_fu_951_p2                        |     |        | p_46             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U122             | 4   |        | mul_ln119_1      | mul    | auto      | 0       |
+|      add_ln119_2_fu_979_p2                 |     |        | add_ln119_2      | add    | fabric    | 0       |
+|      p_47_fu_1078_p2                       |     |        | p_47             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U123             | 4   |        | mul_ln119_2      | mul    | auto      | 0       |
+|      add_ln119_4_fu_1106_p2                |     |        | add_ln119_4      | add    | fabric    | 0       |
+|      p_48_fu_1116_p2                       |     |        | p_48             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U124             | 4   |        | mul_ln119_3      | mul    | auto      | 0       |
+|      add_ln119_6_fu_1144_p2                |     |        | add_ln119_6      | add    | fabric    | 0       |
+|      p_49_fu_1291_p2                       |     |        | p_49             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U125             | 4   |        | mul_ln119_4      | mul    | auto      | 0       |
+|      add_ln119_8_fu_1319_p2                |     |        | add_ln119_8      | add    | fabric    | 0       |
+|      p_50_fu_1329_p2                       |     |        | p_50             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U126             | 4   |        | mul_ln119_5      | mul    | auto      | 0       |
+|      add_ln119_10_fu_1357_p2               |     |        | add_ln119_10     | add    | fabric    | 0       |
+|      p_51_fu_1547_p2                       |     |        | p_51             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U127             | 4   |        | mul_ln119_6      | mul    | auto      | 0       |
+|      add_ln119_12_fu_1573_p2               |     |        | add_ln119_12     | add    | fabric    | 0       |
+|      p_52_fu_1583_p2                       |     |        | p_52             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U128             | 4   |        | mul_ln119_7      | mul    | auto      | 0       |
+|      add_ln119_14_fu_1610_p2               |     |        | add_ln119_14     | add    | fabric    | 0       |
+|      p_53_fu_1620_p2                       |     |        | p_53             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U120             | 4   |        | mul_ln119_8      | mul    | auto      | 0       |
+|      add_ln119_16_fu_1647_p2               |     |        | add_ln119_16     | add    | fabric    | 0       |
+|      p_54_fu_1657_p2                       |     |        | p_54             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U121             | 4   |        | mul_ln119_9      | mul    | auto      | 0       |
+|      add_ln119_18_fu_1883_p2               |     |        | add_ln119_18     | add    | fabric    | 0       |
+|      p_55_fu_1893_p2                       |     |        | p_55             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U122             | 4   |        | mul_ln119_10     | mul    | auto      | 0       |
+|      add_ln119_20_fu_1919_p2               |     |        | add_ln119_20     | add    | fabric    | 0       |
+|      p_56_fu_1929_p2                       |     |        | p_56             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U123             | 4   |        | mul_ln119_11     | mul    | auto      | 0       |
+|      add_ln119_22_fu_1957_p2               |     |        | add_ln119_22     | add    | fabric    | 0       |
+|      p_57_fu_1967_p2                       |     |        | p_57             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U124             | 4   |        | mul_ln119_12     | mul    | auto      | 0       |
+|      add_ln119_24_fu_1995_p2               |     |        | add_ln119_24     | add    | fabric    | 0       |
+|      p_58_fu_2023_p2                       |     |        | p_58             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U125             | 4   |        | mul_ln119_13     | mul    | auto      | 0       |
+|      add_ln119_26_fu_2049_p2               |     |        | add_ln119_26     | add    | fabric    | 0       |
+|      p_59_fu_2059_p2                       |     |        | p_59             | add    | fabric    | 0       |
+|      mul_32ns_32ns_64_1_1_U126             | 4   |        | mul_ln119_14     | mul    | auto      | 0       |
+|      add_ln119_28_fu_2085_p2               |     |        | add_ln119_28     | add    | fabric    | 0       |
+|      p_60_fu_2095_p2                       |     |        | p_60             | add    | fabric    | 0       |
+|      s_4_fu_2122_p2                        |     |        | s_4              | add    | fabric    | 0       |
++--------------------------------------------+-----+--------+------------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++---------------------+---------------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                | Usage         | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                     |               |           |      |      |        |          |      |         | Banks            |
++---------------------+---------------+-----------+------+------+--------+----------+------+---------+------------------+
+| + rsa_modexp_hw     |               |           | 2    | 0    |        |          |      |         |                  |
+|   control_s_axi_U   | interface     | s_axilite |      |      |        |          |      |         |                  |
+|   control_r_s_axi_U | interface     | s_axilite |      |      |        |          |      |         |                  |
+|   gmem_m_axi_U      | interface     | m_axi     | 2    |      |        |          |      |         |                  |
+|   one_U             | ram_1p array  |           |      |      |        | one      | auto | 1       | 1, 16, 1         |
+|   zarr1_U           | ram_2p array  |           |      |      |        | zarr1    | auto | 1       | 32, 16, 1        |
+|   zarr2_U           | ram_1p array  |           |      |      |        | zarr2    | auto | 1       | 32, 16, 1        |
+|   parr1_U           | ram_1p array  |           |      |      |        | parr1    | auto | 1       | 32, 16, 1        |
+|   conv_x_U          | ram_2p array  |           |      |      |        | conv_x   | auto | 1       | 32, 32, 1        |
+|   conv_y_U          | ram_1p array  |           |      |      |        | conv_y   | auto | 1       | 32, 32, 1        |
+|   conv_out_U        | ram_t2p array |           |      |      |        | conv_out | auto | 1       | 32, 32, 1        |
+|   loop_x_U          | ram_2p array  |           |      |      |        | loop_x   | auto | 1       | 32, 32, 1        |
+|   loop_y_U          | ram_1p array  |           |      |      |        | loop_y   | auto | 1       | 32, 32, 1        |
+|   loop_out_U        | ram_t2p array |           |      |      |        | loop_out | auto | 1       | 32, 32, 1        |
++---------------------+---------------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------------------------------+------------------------------------------------------------------+
+| Type            | Options                                       | Location                                                         |
++-----------------+-----------------------------------------------+------------------------------------------------------------------+
+| inline          | off                                           | ../montgomery_converter/include/mont_ops_fast.hpp:62 in mul      |
+| array_partition | variable=t complete dim=1                     | ../montgomery_converter/include/mont_ops_fast.hpp:66 in mul, t   |
+| unroll          |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:70 in mul      |
+| loop_tripcount  | min=NWORDS max=NWORDS avg=NWORDS              | ../montgomery_converter/include/mont_ops_fast.hpp:81 in mul      |
+| pipeline        |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:82 in mul      |
+| unroll          |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:90 in mul      |
+| unroll          |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:116 in mul     |
+| array_partition | variable=u complete dim=1                     | ../montgomery_converter/include/mont_ops_fast.hpp:138 in mul, u  |
+| unroll          |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:142 in mul     |
+| unroll          |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:157 in mul     |
+| inline          | off                                           | ../montgomery_converter/include/mont_ops_fast.hpp:166 in redc    |
+| array_partition | variable=t complete dim=1                     | ../montgomery_converter/include/mont_ops_fast.hpp:169 in redc, t |
+| unroll          |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:172 in redc    |
+| loop_tripcount  | min=NWORDS max=NWORDS avg=NWORDS              | ../montgomery_converter/include/mont_ops_fast.hpp:178 in redc    |
+| pipeline        | II=1                                          | ../montgomery_converter/include/mont_ops_fast.hpp:179 in redc    |
+| unroll          |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:186 in redc    |
+| unroll          |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:196 in redc    |
+| array_partition | variable=u complete dim=1                     | ../montgomery_converter/include/mont_ops_fast.hpp:207 in redc, u |
+| unroll          |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:211 in redc    |
+| unroll          |                                               | ../montgomery_converter/include/mont_ops_fast.hpp:221 in redc    |
+| inline          | off                                           | src_converted_lean/mont_word.cpp:26 in montmult_words            |
+| interface       | m_axi port = c offset = slave bundle = gmem   | src_converted_lean/rsa_modexp_hw.cpp:18 in rsa_modexp_hw         |
+| interface       | m_axi port = d offset = slave bundle = gmem   | src_converted_lean/rsa_modexp_hw.cpp:19 in rsa_modexp_hw         |
+| interface       | m_axi port = m offset = slave bundle = gmem   | src_converted_lean/rsa_modexp_hw.cpp:20 in rsa_modexp_hw         |
+| interface       | m_axi port = r2m offset = slave bundle = gmem | src_converted_lean/rsa_modexp_hw.cpp:21 in rsa_modexp_hw         |
+| interface       | m_axi port = p offset = slave bundle = gmem   | src_converted_lean/rsa_modexp_hw.cpp:22 in rsa_modexp_hw         |
+| interface       | s_axilite port = mprime bundle = control      | src_converted_lean/rsa_modexp_hw.cpp:23 in rsa_modexp_hw         |
+| interface       | s_axilite port = return bundle = control      | src_converted_lean/rsa_modexp_hw.cpp:24 in rsa_modexp_hw         |
++-----------------+-----------------------------------------------+------------------------------------------------------------------+
+
+

@@ -1,0 +1,87 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/run_hls.tcl:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=rsa_modexp_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = c offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = d offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = m offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = r2m offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = p offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = mprime bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rsa_modexp_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:53:9" msg_body="Duplicating function 'montMult_words' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="montMult_words"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:45:9" msg_body="Duplicating function 'montMult_words' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="montMult_words"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:34:5" msg_body="Duplicating function 'montMult_words' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="montMult_words"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src/rsa_modexp_hw.cpp:33:5" msg_body="Duplicating function 'montMult_words' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="montMult_words"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src/rsa_modexp_hw.cpp:17:0" msg_body="Inlining function 'get_bit(unsigned int const*, unsigned int)' into 'rsa_modexp_hw'">
+        <args Callee="get_bit(unsigned int const*, unsigned int)" Callee-DebugLoc="File src/rsa_modexp_hw.cpp Line 6 Column 0" Caller="rsa_modexp_hw" Caller-DebugLoc="File src/rsa_modexp_hw.cpp Line 17 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/mont_word.c:37:26" msg_body="Loop 'VITIS_LOOP_37_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_37_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/mont_word.c:52:26" msg_body="Loop 'VITIS_LOOP_52_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_52_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src/mont_word.c:65:26" msg_body="Loop 'VITIS_LOOP_65_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_65_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_37_3' (src/mont_word.c:37:26) in function 'montMult_words' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:37:26" LoopName="VITIS_LOOP_37_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_52_4' (src/mont_word.c:52:26) in function 'montMult_words' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:52:26" LoopName="VITIS_LOOP_52_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_65_5' (src/mont_word.c:65:26) in function 'montMult_words' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:65:26" LoopName="VITIS_LOOP_65_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_37_3' (src/mont_word.c:37:26) in function 'montMult_words.1' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:37:26" LoopName="VITIS_LOOP_37_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_52_4' (src/mont_word.c:52:26) in function 'montMult_words.1' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:52:26" LoopName="VITIS_LOOP_52_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_65_5' (src/mont_word.c:65:26) in function 'montMult_words.1' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:65:26" LoopName="VITIS_LOOP_65_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_37_3' (src/mont_word.c:37:26) in function 'montMult_words.2' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:37:26" LoopName="VITIS_LOOP_37_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_52_4' (src/mont_word.c:52:26) in function 'montMult_words.2' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:52:26" LoopName="VITIS_LOOP_52_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_65_5' (src/mont_word.c:65:26) in function 'montMult_words.2' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:65:26" LoopName="VITIS_LOOP_65_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_37_3' (src/mont_word.c:37:26) in function 'montMult_words.3' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:37:26" LoopName="VITIS_LOOP_37_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_52_4' (src/mont_word.c:52:26) in function 'montMult_words.3' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:52:26" LoopName="VITIS_LOOP_52_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_65_5' (src/mont_word.c:65:26) in function 'montMult_words.3' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src/mont_word.c:65:26" LoopName="VITIS_LOOP_65_5"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

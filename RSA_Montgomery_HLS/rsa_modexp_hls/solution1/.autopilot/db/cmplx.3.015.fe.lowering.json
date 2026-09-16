@@ -1,0 +1,77 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "1 2 4 4 3",
+    "file": "rsa_modexp_hw.cpp",
+    "fileloc": 10,
+    "instructions": 116,
+    "loads": {
+      "L": 5
+    },
+    "name": "rsa_modexp_hw",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 2208
+  },
+  "1": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "mont_word.c",
+    "fileloc": 19,
+    "instructions": 410,
+    "loads": {
+      "L": 23
+    },
+    "name": "montMult_words",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 410
+  },
+  "2": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "mont_word.c",
+    "fileloc": 19,
+    "instructions": 413,
+    "loads": {
+      "L": 22
+    },
+    "name": "montMult_words",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 413
+  },
+  "3": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "mont_word.c",
+    "fileloc": 19,
+    "instructions": 425,
+    "loads": {
+      "L": 39
+    },
+    "name": "montMult_words",
+    "stores": {
+      "L": 20
+    },
+    "total_instructions": 425
+  },
+  "4": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "mont_word.c",
+    "fileloc": 19,
+    "instructions": 422,
+    "loads": {
+      "L": 39
+    },
+    "name": "montMult_words",
+    "stores": {
+      "L": 21
+    },
+    "total_instructions": 422
+  }
+}

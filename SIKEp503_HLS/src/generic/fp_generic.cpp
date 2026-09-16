@@ -309,10 +309,17 @@ void rdc_mont(const dfelm_t ma, felm_t mc)
     }
 
     // Main reduction loop
+    // 外側ループを完全展開(UNROLL)する。i がコンパイル時定数になることで、
+    // 内側ループの境界(i - p503_ZERO_WORDS + 1 等、i に依存)も完全に
+    // 固定化され、HLSのレイテンシ見積もりが不定("?")や可変範囲になる
+    // 問題を解消する(mont_ops_fios_csa_square.hpp の redc() で確認済みの
+    // 手法と同じ)。数学的な計算内容は変更していない。
     for (i = 0; i < NWORDS_FIELD; i++)
     {
+#pragma HLS UNROLL
         for (j = 0; j < i; j++)
         {
+#pragma HLS UNROLL
             if (j < (i - p503_ZERO_WORDS + 1))
             {
                 MUL(mc[j], ((digit_t *)p503p1)[i - j], UV + 1, UV[0]);
@@ -331,14 +338,17 @@ void rdc_mont(const dfelm_t ma, felm_t mc)
     }
 
     // Final words
+    // 同様に外側ループを完全展開する。
     for (i = NWORDS_FIELD; i < 2 * NWORDS_FIELD - 1; i++)
     {
+#pragma HLS UNROLL
         if (count > 0)
         {
             count--;
         }
         for (j = i - NWORDS_FIELD + 1; j < NWORDS_FIELD; j++)
         {
+#pragma HLS UNROLL
             if (j < (NWORDS_FIELD - count))
             {
                 MUL(mc[j], ((digit_t *)p503p1)[i - j], UV + 1, UV[0]);

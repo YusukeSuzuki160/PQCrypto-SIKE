@@ -1,0 +1,283 @@
+
+
+================================================================
+== Vitis HLS Report for 'rsa_modexp_hw'
+================================================================
+* Date:           Mon Sep 14 17:28:21 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        rsa_modexp_hls_converted
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    56035|    56035|  0.560 ms|  0.560 ms|  56036|  56036|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zarr1_0_loc = alloca i64 1"   --->   Operation 12 'alloca' 'zarr1_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zarr1_1_0_loc = alloca i64 1"   --->   Operation 13 'alloca' 'zarr1_1_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zarr1_2_0_loc = alloca i64 1"   --->   Operation 14 'alloca' 'zarr1_2_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zarr1_3_0_loc = alloca i64 1"   --->   Operation 15 'alloca' 'zarr1_3_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zarr1_4_0_loc = alloca i64 1"   --->   Operation 16 'alloca' 'zarr1_4_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zarr1_5_0_loc = alloca i64 1"   --->   Operation 17 'alloca' 'zarr1_5_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%zarr1_6_0_loc = alloca i64 1"   --->   Operation 18 'alloca' 'zarr1_6_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%zarr1_7_0_loc = alloca i64 1"   --->   Operation 19 'alloca' 'zarr1_7_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%zarr1_8_0_loc = alloca i64 1"   --->   Operation 20 'alloca' 'zarr1_8_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%zarr1_9_0_loc = alloca i64 1"   --->   Operation 21 'alloca' 'zarr1_9_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%zarr1_10_0_loc = alloca i64 1"   --->   Operation 22 'alloca' 'zarr1_10_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%zarr1_11_0_loc = alloca i64 1"   --->   Operation 23 'alloca' 'zarr1_11_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%zarr1_12_0_loc = alloca i64 1"   --->   Operation 24 'alloca' 'zarr1_12_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%zarr1_13_0_loc = alloca i64 1"   --->   Operation 25 'alloca' 'zarr1_13_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%zarr1_14_0_loc = alloca i64 1"   --->   Operation 26 'alloca' 'zarr1_14_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%zarr1_15_0_loc = alloca i64 1"   --->   Operation 27 'alloca' 'zarr1_15_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%one = alloca i64 1" [src_converted/rsa_modexp_hw.cpp:26]   --->   Operation 28 'alloca' 'one' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.63> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+ST_1 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln0 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1, i1 %one"   --->   Operation 29 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 1.48>
+ST_2 : Operation 30 [1/2] (1.48ns)   --->   "%call_ln0 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1, i1 %one"   --->   Operation 30 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 1.00>
+ST_3 : Operation 31 [1/1] (1.00ns)   --->   "%p_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %p"   --->   Operation 31 'read' 'p_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 32 [1/1] (1.00ns)   --->   "%r2m_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %r2m"   --->   Operation 32 'read' 'r2m_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 33 [1/1] (1.00ns)   --->   "%mprime_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %mprime"   --->   Operation 33 'read' 'mprime_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 34 [1/1] (1.00ns)   --->   "%m_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %m"   --->   Operation 34 'read' 'm_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 35 [1/1] (1.00ns)   --->   "%d_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %d"   --->   Operation 35 'read' 'd_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 36 [1/1] (1.00ns)   --->   "%c_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %c"   --->   Operation 36 'read' 'c_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%one_addr = getelementptr i1 %one, i64 0, i64 0" [src_converted/rsa_modexp_hw.cpp:28]   --->   Operation 37 'getelementptr' 'one_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] ( I:0.63ns O:0.63ns )   --->   "%store_ln28 = store i1 1, i4 %one_addr" [src_converted/rsa_modexp_hw.cpp:28]   --->   Operation 38 'store' 'store_ln28' <Predicate = true> <Delay = 0.63> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.63> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 39 [2/2] (7.30ns)   --->   "%call_ret = call i512 @montMult_words.3.1, i1 %one, i32 %gmem, i64 %r2m_read, i64 %m_read, i32 %mprime_read" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 39 'call' 'call_ret' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 7.09>
+ST_5 : Operation 40 [1/2] (7.09ns)   --->   "%call_ret = call i512 @montMult_words.3.1, i1 %one, i32 %gmem, i64 %r2m_read, i64 %m_read, i32 %mprime_read" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 40 'call' 'call_ret' <Predicate = true> <Delay = 7.09> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%zarr1 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 41 'extractvalue' 'zarr1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%zarr1_1 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 42 'extractvalue' 'zarr1_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%zarr1_2 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 43 'extractvalue' 'zarr1_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%zarr1_3 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 44 'extractvalue' 'zarr1_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%zarr1_4 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 45 'extractvalue' 'zarr1_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%zarr1_5 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 46 'extractvalue' 'zarr1_5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%zarr1_6 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 47 'extractvalue' 'zarr1_6' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%zarr1_7 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 48 'extractvalue' 'zarr1_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%zarr1_8 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 49 'extractvalue' 'zarr1_8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%zarr1_9 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 50 'extractvalue' 'zarr1_9' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%zarr1_32 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 51 'extractvalue' 'zarr1_32' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%zarr1_33 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 52 'extractvalue' 'zarr1_33' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "%zarr1_34 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 53 'extractvalue' 'zarr1_34' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%zarr1_35 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 54 'extractvalue' 'zarr1_35' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%zarr1_36 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 55 'extractvalue' 'zarr1_36' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%zarr1_37 = extractvalue i512 %call_ret" [src_converted/rsa_modexp_hw.cpp:33]   --->   Operation 56 'extractvalue' 'zarr1_37' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 57 [2/2] (7.30ns)   --->   "%call_ret1 = call i512 @montMult_words.2.1, i32 %gmem, i64 %c_read, i64 %r2m_read, i64 %m_read, i32 %mprime_read" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 57 'call' 'call_ret1' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 6.95>
+ST_7 : Operation 58 [1/2] (6.95ns)   --->   "%call_ret1 = call i512 @montMult_words.2.1, i32 %gmem, i64 %c_read, i64 %r2m_read, i64 %m_read, i32 %mprime_read" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 58 'call' 'call_ret1' <Predicate = true> <Delay = 6.95> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 59 [1/1] (0.00ns)   --->   "%parr1 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 59 'extractvalue' 'parr1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 60 [1/1] (0.00ns)   --->   "%parr1_1 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 60 'extractvalue' 'parr1_1' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 61 [1/1] (0.00ns)   --->   "%parr1_2 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 61 'extractvalue' 'parr1_2' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 62 [1/1] (0.00ns)   --->   "%parr1_3 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 62 'extractvalue' 'parr1_3' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 63 [1/1] (0.00ns)   --->   "%parr1_4 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 63 'extractvalue' 'parr1_4' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 64 [1/1] (0.00ns)   --->   "%parr1_5 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 64 'extractvalue' 'parr1_5' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 65 [1/1] (0.00ns)   --->   "%parr1_6 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 65 'extractvalue' 'parr1_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 66 [1/1] (0.00ns)   --->   "%parr1_7 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 66 'extractvalue' 'parr1_7' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 67 [1/1] (0.00ns)   --->   "%parr1_8 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 67 'extractvalue' 'parr1_8' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 68 [1/1] (0.00ns)   --->   "%parr1_9 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 68 'extractvalue' 'parr1_9' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 69 [1/1] (0.00ns)   --->   "%parr1_32 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 69 'extractvalue' 'parr1_32' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 70 [1/1] (0.00ns)   --->   "%parr1_33 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 70 'extractvalue' 'parr1_33' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 71 [1/1] (0.00ns)   --->   "%parr1_34 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 71 'extractvalue' 'parr1_34' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 72 [1/1] (0.00ns)   --->   "%parr1_35 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 72 'extractvalue' 'parr1_35' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 73 [1/1] (0.00ns)   --->   "%parr1_36 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 73 'extractvalue' 'parr1_36' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 74 [1/1] (0.00ns)   --->   "%parr1_37 = extractvalue i512 %call_ret1" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 74 'extractvalue' 'parr1_37' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 1.14>
+ST_8 : Operation 75 [2/2] (1.14ns)   --->   "%call_ln34 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_41_2, i32 %parr1_37, i32 %parr1_36, i32 %parr1_35, i32 %parr1_34, i32 %parr1_33, i32 %parr1_32, i32 %parr1_9, i32 %parr1_8, i32 %parr1_7, i32 %parr1_6, i32 %parr1_5, i32 %parr1_4, i32 %parr1_3, i32 %parr1_2, i32 %parr1_1, i32 %parr1, i32 %zarr1_37, i32 %zarr1_36, i32 %zarr1_35, i32 %zarr1_34, i32 %zarr1_33, i32 %zarr1_32, i32 %zarr1_9, i32 %zarr1_8, i32 %zarr1_7, i32 %zarr1_6, i32 %zarr1_5, i32 %zarr1_4, i32 %zarr1_3, i32 %zarr1_2, i32 %zarr1_1, i32 %zarr1, i32 %gmem, i64 %d_read, i64 %m_read, i32 %mprime_read, i32 %zarr1_15_0_loc, i32 %zarr1_14_0_loc, i32 %zarr1_13_0_loc, i32 %zarr1_12_0_loc, i32 %zarr1_11_0_loc, i32 %zarr1_10_0_loc, i32 %zarr1_9_0_loc, i32 %zarr1_8_0_loc, i32 %zarr1_7_0_loc, i32 %zarr1_6_0_loc, i32 %zarr1_5_0_loc, i32 %zarr1_4_0_loc, i32 %zarr1_3_0_loc, i32 %zarr1_2_0_loc, i32 %zarr1_1_0_loc, i32 %zarr1_0_loc" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 75 'call' 'call_ln34' <Predicate = true> <Delay = 1.14> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 76 [1/2] (0.00ns)   --->   "%call_ln34 = call void @rsa_modexp_hw_Pipeline_VITIS_LOOP_41_2, i32 %parr1_37, i32 %parr1_36, i32 %parr1_35, i32 %parr1_34, i32 %parr1_33, i32 %parr1_32, i32 %parr1_9, i32 %parr1_8, i32 %parr1_7, i32 %parr1_6, i32 %parr1_5, i32 %parr1_4, i32 %parr1_3, i32 %parr1_2, i32 %parr1_1, i32 %parr1, i32 %zarr1_37, i32 %zarr1_36, i32 %zarr1_35, i32 %zarr1_34, i32 %zarr1_33, i32 %zarr1_32, i32 %zarr1_9, i32 %zarr1_8, i32 %zarr1_7, i32 %zarr1_6, i32 %zarr1_5, i32 %zarr1_4, i32 %zarr1_3, i32 %zarr1_2, i32 %zarr1_1, i32 %zarr1, i32 %gmem, i64 %d_read, i64 %m_read, i32 %mprime_read, i32 %zarr1_15_0_loc, i32 %zarr1_14_0_loc, i32 %zarr1_13_0_loc, i32 %zarr1_12_0_loc, i32 %zarr1_11_0_loc, i32 %zarr1_10_0_loc, i32 %zarr1_9_0_loc, i32 %zarr1_8_0_loc, i32 %zarr1_7_0_loc, i32 %zarr1_6_0_loc, i32 %zarr1_5_0_loc, i32 %zarr1_4_0_loc, i32 %zarr1_3_0_loc, i32 %zarr1_2_0_loc, i32 %zarr1_1_0_loc, i32 %zarr1_0_loc" [src_converted/rsa_modexp_hw.cpp:34]   --->   Operation 76 'call' 'call_ln34' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 7.30>
+ST_10 : Operation 77 [1/1] (0.00ns)   --->   "%zarr1_15_0_loc_load = load i32 %zarr1_15_0_loc"   --->   Operation 77 'load' 'zarr1_15_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 78 [1/1] (0.00ns)   --->   "%zarr1_14_0_loc_load = load i32 %zarr1_14_0_loc"   --->   Operation 78 'load' 'zarr1_14_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 79 [1/1] (0.00ns)   --->   "%zarr1_13_0_loc_load = load i32 %zarr1_13_0_loc"   --->   Operation 79 'load' 'zarr1_13_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 80 [1/1] (0.00ns)   --->   "%zarr1_12_0_loc_load = load i32 %zarr1_12_0_loc"   --->   Operation 80 'load' 'zarr1_12_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 81 [1/1] (0.00ns)   --->   "%zarr1_11_0_loc_load = load i32 %zarr1_11_0_loc"   --->   Operation 81 'load' 'zarr1_11_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 82 [1/1] (0.00ns)   --->   "%zarr1_10_0_loc_load = load i32 %zarr1_10_0_loc"   --->   Operation 82 'load' 'zarr1_10_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 83 [1/1] (0.00ns)   --->   "%zarr1_9_0_loc_load = load i32 %zarr1_9_0_loc"   --->   Operation 83 'load' 'zarr1_9_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 84 [1/1] (0.00ns)   --->   "%zarr1_8_0_loc_load = load i32 %zarr1_8_0_loc"   --->   Operation 84 'load' 'zarr1_8_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 85 [1/1] (0.00ns)   --->   "%zarr1_7_0_loc_load = load i32 %zarr1_7_0_loc"   --->   Operation 85 'load' 'zarr1_7_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 86 [1/1] (0.00ns)   --->   "%zarr1_6_0_loc_load = load i32 %zarr1_6_0_loc"   --->   Operation 86 'load' 'zarr1_6_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 87 [1/1] (0.00ns)   --->   "%zarr1_5_0_loc_load = load i32 %zarr1_5_0_loc"   --->   Operation 87 'load' 'zarr1_5_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 88 [1/1] (0.00ns)   --->   "%zarr1_4_0_loc_load = load i32 %zarr1_4_0_loc"   --->   Operation 88 'load' 'zarr1_4_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 89 [1/1] (0.00ns)   --->   "%zarr1_3_0_loc_load = load i32 %zarr1_3_0_loc"   --->   Operation 89 'load' 'zarr1_3_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 90 [1/1] (0.00ns)   --->   "%zarr1_2_0_loc_load = load i32 %zarr1_2_0_loc"   --->   Operation 90 'load' 'zarr1_2_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 91 [1/1] (0.00ns)   --->   "%zarr1_1_0_loc_load = load i32 %zarr1_1_0_loc"   --->   Operation 91 'load' 'zarr1_1_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 92 [1/1] (0.00ns)   --->   "%zarr1_0_loc_load = load i32 %zarr1_0_loc"   --->   Operation 92 'load' 'zarr1_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 93 [2/2] (7.30ns)   --->   "%call_ln62 = call void @montMult_words.1.2, i32 %zarr1_0_loc_load, i32 %zarr1_1_0_loc_load, i32 %zarr1_2_0_loc_load, i32 %zarr1_3_0_loc_load, i32 %zarr1_4_0_loc_load, i32 %zarr1_5_0_loc_load, i32 %zarr1_6_0_loc_load, i32 %zarr1_7_0_loc_load, i32 %zarr1_8_0_loc_load, i32 %zarr1_9_0_loc_load, i32 %zarr1_10_0_loc_load, i32 %zarr1_11_0_loc_load, i32 %zarr1_12_0_loc_load, i32 %zarr1_13_0_loc_load, i32 %zarr1_14_0_loc_load, i32 %zarr1_15_0_loc_load, i1 %one, i32 %gmem, i64 %m_read, i32 %mprime_read, i64 %p_read" [src_converted/rsa_modexp_hw.cpp:62]   --->   Operation 93 'call' 'call_ln62' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 94 [1/1] (0.00ns)   --->   "%spectopmodule_ln10 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_10" [src_converted/rsa_modexp_hw.cpp:10]   --->   Operation 94 'spectopmodule' 'spectopmodule_ln10' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 95 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_4, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_6, void @empty_7, void @empty_5, i32 16, i32 16, i32 16, i32 16, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0"   --->   Operation 95 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 96 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %gmem"   --->   Operation 96 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 97 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %c, void @empty, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_2, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 97 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 98 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %c, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 98 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 99 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %d, void @empty, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_12, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 99 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 100 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %d, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 100 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 101 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %m, void @empty, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_13, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 101 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 102 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %m, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 102 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 103 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %mprime"   --->   Operation 103 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 104 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mprime, void @empty, i32 4294967295, i32 4294967295, void @empty_14, i32 0, i32 0, void @empty_15, void @empty_2, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0"   --->   Operation 104 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 105 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mprime, void @empty_3, i32 4294967295, i32 4294967295, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0"   --->   Operation 105 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 106 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %r2m, void @empty, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_16, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 106 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 107 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %r2m, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 107 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 108 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %p, void @empty, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_0, void @empty_8, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 108 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 109 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %p, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_9, i32 4294967295, i32 0, i32 0"   --->   Operation 109 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 110 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_15, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0"   --->   Operation 110 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 111 [1/2] (0.00ns)   --->   "%call_ln62 = call void @montMult_words.1.2, i32 %zarr1_0_loc_load, i32 %zarr1_1_0_loc_load, i32 %zarr1_2_0_loc_load, i32 %zarr1_3_0_loc_load, i32 %zarr1_4_0_loc_load, i32 %zarr1_5_0_loc_load, i32 %zarr1_6_0_loc_load, i32 %zarr1_7_0_loc_load, i32 %zarr1_8_0_loc_load, i32 %zarr1_9_0_loc_load, i32 %zarr1_10_0_loc_load, i32 %zarr1_11_0_loc_load, i32 %zarr1_12_0_loc_load, i32 %zarr1_13_0_loc_load, i32 %zarr1_14_0_loc_load, i32 %zarr1_15_0_loc_load, i1 %one, i32 %gmem, i64 %m_read, i32 %mprime_read, i64 %p_read" [src_converted/rsa_modexp_hw.cpp:62]   --->   Operation 111 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 112 [1/1] (0.00ns)   --->   "%ret_ln63 = ret" [src_converted/rsa_modexp_hw.cpp:63]   --->   Operation 112 'ret' 'ret_ln63' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 1.481ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1' [48]  (1.481 ns)
+
+ <State 3>: 1.000ns
+The critical path consists of the following:
+	s_axi read operation ('p_read') on port 'p' [8]  (1.000 ns)
+
+ <State 4>: 7.300ns
+The critical path consists of the following:
+	'call' operation 512 bit ('call_ret', src_converted/rsa_modexp_hw.cpp:33) to 'montMult_words.3.1' [51]  (7.300 ns)
+
+ <State 5>: 7.098ns
+The critical path consists of the following:
+	'call' operation 512 bit ('call_ret', src_converted/rsa_modexp_hw.cpp:33) to 'montMult_words.3.1' [51]  (7.098 ns)
+
+ <State 6>: 7.300ns
+The critical path consists of the following:
+	'call' operation 512 bit ('call_ret1', src_converted/rsa_modexp_hw.cpp:34) to 'montMult_words.2.1' [68]  (7.300 ns)
+
+ <State 7>: 6.959ns
+The critical path consists of the following:
+	'call' operation 512 bit ('call_ret1', src_converted/rsa_modexp_hw.cpp:34) to 'montMult_words.2.1' [68]  (6.959 ns)
+
+ <State 8>: 1.147ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln34', src_converted/rsa_modexp_hw.cpp:34) to 'rsa_modexp_hw_Pipeline_VITIS_LOOP_41_2' [85]  (1.147 ns)
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 7.300ns
+The critical path consists of the following:
+	'load' operation 32 bit ('zarr1_15_0_loc_load') on local variable 'zarr1_15_0_loc' [86]  (0.000 ns)
+	'call' operation 0 bit ('call_ln62', src_converted/rsa_modexp_hw.cpp:62) to 'montMult_words.1.2' [102]  (7.300 ns)
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

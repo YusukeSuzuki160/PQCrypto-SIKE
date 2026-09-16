@@ -1,0 +1,49 @@
+---
+MainSourceFile:  /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls_fixed/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_47_1:  '
+    FileOffset:      47
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/ec_isogeny.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls_fixed/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+        Offset:          25151
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_47_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_1:  '
+    FileOffset:      136
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/ec_isogeny.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls_fixed/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+        Offset:          27195
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_287_1:  '
+    FileOffset:      287
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/ec_isogeny.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls_fixed/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+        Offset:          30583
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_287_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_313_1:  '
+    FileOffset:      313
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/ec_isogeny.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls_fixed/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+        Offset:          31198
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_313_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_371_1:  '
+    FileOffset:      371
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/src/ec_isogeny.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/sikep503_hls_fixed/solution1/.autopilot/db/ec_isogeny.pp.0.cpp
+        Offset:          32401
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_371_1: '
+...

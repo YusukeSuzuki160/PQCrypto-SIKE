@@ -1,0 +1,60 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'xDBLe'" level="0">
+<item name = "Date">Mon Sep 14 16:32:13 2026
+</item>
+<item name = "Version">2024.2.2 (Build 6049644 on Mar  5 2025)</item>
+<item name = "Project">sikep503_hls_montcsa_flat_shared</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus58g</item>
+<item name = "Target device">xcvu29p-fsga2577-2L-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.293 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1257021, 1257021, 12.570 ms, 12.570 ms, 1257021, 1257021, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_xDBLe_Pipeline_VITIS_LOOP_17_1_fu_376">xDBLe_Pipeline_VITIS_LOOP_17_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_xDBLe_Pipeline_VITIS_LOOP_17_1160_fu_384">xDBLe_Pipeline_VITIS_LOOP_17_1160, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_xDBLe_Pipeline_VITIS_LOOP_17_1159_fu_392">xDBLe_Pipeline_VITIS_LOOP_17_1159, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_xDBLe_Pipeline_VITIS_LOOP_17_1161_fu_400">xDBLe_Pipeline_VITIS_LOOP_17_1161, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_fpsub503_186_fu_408">fpsub503_186, 23, 23, 0.230 us, 0.230 us, 23, 23, no</column>
+<column name="grp_fpadd503_150119_fu_424">fpadd503_150119, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fp2sqr503_mont_2_1_fu_440">fp2sqr503_mont_2_1, 79, 79, 0.790 us, 0.790 us, 79, 79, no</column>
+<column name="grp_fp2mul503_mont_1129_fu_447">fp2mul503_mont_1129, 558, 558, 5.580 us, 5.580 us, 558, 558, no</column>
+<column name="grp_fp2mul503_mont_2_fu_457">fp2mul503_mont_2, 558, 558, 5.580 us, 5.580 us, 558, 558, no</column>
+<column name="grp_fpsub503_2_1_fu_466">fpsub503_2_1, 23, 23, 0.230 us, 0.230 us, 23, 23, no</column>
+<column name="grp_fp2mul503_mont_333118_fu_480">fp2mul503_mont_333118, 536, 536, 5.360 us, 5.360 us, 536, 536, no</column>
+<column name="grp_fpadd503_151_2119_fu_490">fpadd503_151_2119, 35, 35, 0.350 us, 0.350 us, 35, 35, no</column>
+<column name="grp_fp2mul503_mont_3301_fu_504">fp2mul503_mont_3301, 558, 558, 5.580 us, 5.580 us, 558, 558, no</column>
+<column name="grp_xDBLe_Pipeline_VITIS_LOOP_313_1_fu_512">xDBLe_Pipeline_VITIS_LOOP_313_1, 10, 10, 0.100 us, 0.100 us, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_47_1">1256997, 1256997, 2499, -, -, 503, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

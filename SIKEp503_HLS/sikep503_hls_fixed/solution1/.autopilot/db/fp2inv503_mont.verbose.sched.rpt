@@ -1,0 +1,323 @@
+
+
+================================================================
+== Vitis HLS Report for 'fp2inv503_mont'
+================================================================
+* Date:           Thu Sep 10 17:45:50 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_fixed
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.293 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+    +---------+---------+----------+----------+--------+--------+---------+
+    |   255833|   255833|  2.558 ms|  2.558 ms|  255833|  255833|       no|
+    +---------+---------+----------+----------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 22
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%carry_2032_loc = alloca i64 1"   --->   Operation 23 'alloca' 'carry_2032_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tt = alloca i64 1" [src/fpx.cpp:92->src/fpx.cpp:364]   --->   Operation 24 'alloca' 'tt' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%t1 = alloca i64 1" [src/fpx.cpp:359]   --->   Operation 25 'alloca' 't1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%t1_1 = alloca i64 1" [src/fpx.cpp:359]   --->   Operation 26 'alloca' 't1_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 27 [2/2] (0.00ns)   --->   "%call_ln361 = call void @fpsqr503_mont, i64 %a_0, i64 %t1" [src/fpx.cpp:361]   --->   Operation 27 'call' 'call_ln361' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 28 [2/2] (0.00ns)   --->   "%call_ln362 = call void @fpsqr503_mont, i64 %a_1, i64 %t1_1" [src/fpx.cpp:362]   --->   Operation 28 'call' 'call_ln362' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 29 [1/2] (0.00ns)   --->   "%call_ln361 = call void @fpsqr503_mont, i64 %a_0, i64 %t1" [src/fpx.cpp:361]   --->   Operation 29 'call' 'call_ln361' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln362 = call void @fpsqr503_mont, i64 %a_1, i64 %t1_1" [src/fpx.cpp:362]   --->   Operation 30 'call' 'call_ln362' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2inv503_mont_Pipeline_VITIS_LOOP_33_1, i64 %t1_1, i64 %t1"   --->   Operation 31 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.48>
+ST_4 : Operation 32 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2inv503_mont_Pipeline_VITIS_LOOP_33_1, i64 %t1_1, i64 %t1"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2inv503_mont_Pipeline_VITIS_LOOP_39_2, i64 %t1, i1 %carry_2032_loc, i64 %p503x2_1"   --->   Operation 33 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 1.48>
+ST_6 : Operation 34 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2inv503_mont_Pipeline_VITIS_LOOP_39_2, i64 %t1, i1 %carry_2032_loc, i64 %p503x2_1"   --->   Operation 34 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 0.27>
+ST_7 : Operation 35 [1/1] (0.00ns)   --->   "%carry_2032_loc_load = load i1 %carry_2032_loc"   --->   Operation 35 'load' 'carry_2032_loc_load' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 36 [2/2] (0.27ns)   --->   "%call_ln0 = call void @fp2inv503_mont_Pipeline_VITIS_LOOP_46_3, i64 %t1, i1 %carry_2032_loc_load, i64 %p503x2_1"   --->   Operation 36 'call' 'call_ln0' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 1.48>
+ST_8 : Operation 37 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2inv503_mont_Pipeline_VITIS_LOOP_46_3, i64 %t1, i1 %carry_2032_loc_load, i64 %p503x2_1"   --->   Operation 37 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 38 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2inv503_mont_Pipeline_VITIS_LOOP_13_1, i64 %t1, i64 %tt"   --->   Operation 38 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 39 [2/2] (0.00ns)   --->   "%call_ln0 = call void @fp2inv503_mont_Pipeline_VITIS_LOOP_79_1, i64 %a_1, i64 %p503x2_1"   --->   Operation 39 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 1.48>
+ST_10 : Operation 40 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2inv503_mont_Pipeline_VITIS_LOOP_13_1, i64 %t1, i64 %tt"   --->   Operation 40 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 41 [1/2] (1.48ns)   --->   "%call_ln0 = call void @fp2inv503_mont_Pipeline_VITIS_LOOP_79_1, i64 %a_1, i64 %p503x2_1"   --->   Operation 41 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 42 [2/2] (0.00ns)   --->   "%call_ln95 = call void @fpinv503_chain_mont, i64 %tt" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 42 'call' 'call_ln95' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 43 [1/2] (0.00ns)   --->   "%call_ln95 = call void @fpinv503_chain_mont, i64 %tt" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 43 'call' 'call_ln95' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 44 [2/2] (0.00ns)   --->   "%call_ln96 = call void @fpsqr503_mont.1, i64 %tt" [src/fpx.cpp:96->src/fpx.cpp:364]   --->   Operation 44 'call' 'call_ln96' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 45 [1/2] (0.00ns)   --->   "%call_ln96 = call void @fpsqr503_mont.1, i64 %tt" [src/fpx.cpp:96->src/fpx.cpp:364]   --->   Operation 45 'call' 'call_ln96' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 46 [2/2] (0.00ns)   --->   "%call_ln97 = call void @fpsqr503_mont.1, i64 %tt" [src/fpx.cpp:97->src/fpx.cpp:364]   --->   Operation 46 'call' 'call_ln97' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 47 [1/2] (0.00ns)   --->   "%call_ln97 = call void @fpsqr503_mont.1, i64 %tt" [src/fpx.cpp:97->src/fpx.cpp:364]   --->   Operation 47 'call' 'call_ln97' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 48 [2/2] (0.00ns)   --->   "%call_ln98 = call void @fpmul503_mont.3.364, i64 %t1, i64 %tt" [src/fpx.cpp:98->src/fpx.cpp:364]   --->   Operation 48 'call' 'call_ln98' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 49 [1/2] (0.00ns)   --->   "%call_ln98 = call void @fpmul503_mont.3.364, i64 %t1, i64 %tt" [src/fpx.cpp:98->src/fpx.cpp:364]   --->   Operation 49 'call' 'call_ln98' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 0.00>
+ST_19 : Operation 50 [2/2] (0.00ns)   --->   "%call_ln366 = call void @fpmul503_mont.3.364, i64 %a_0, i64 %t1" [src/fpx.cpp:366]   --->   Operation 50 'call' 'call_ln366' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 0.00>
+ST_20 : Operation 51 [1/2] (0.00ns)   --->   "%call_ln366 = call void @fpmul503_mont.3.364, i64 %a_0, i64 %t1" [src/fpx.cpp:366]   --->   Operation 51 'call' 'call_ln366' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 21 <SV = 20> <Delay = 0.00>
+ST_21 : Operation 52 [2/2] (0.00ns)   --->   "%call_ln367 = call void @fpmul503_mont.3.364, i64 %a_1, i64 %t1" [src/fpx.cpp:367]   --->   Operation 52 'call' 'call_ln367' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 0.00>
+ST_22 : Operation 53 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a_0, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 53 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 54 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a_1, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 54 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 55 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 55 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 56 [1/1] (0.00ns)   --->   "%specmemcore_ln364 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:364]   --->   Operation 56 'specmemcore' 'specmemcore_ln364' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 57 [1/1] (0.00ns)   --->   "%specmemcore_ln364 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:364]   --->   Operation 57 'specmemcore' 'specmemcore_ln364' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 58 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 58 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 59 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 59 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 60 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 60 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 61 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 61 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 62 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 62 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 63 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 63 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 64 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 64 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 65 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 65 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 66 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 66 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 67 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 67 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 68 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 68 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 69 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 69 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 70 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 70 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 71 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 71 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 72 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 72 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 73 [1/1] (0.00ns)   --->   "%specmemcore_ln95 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:95->src/fpx.cpp:364]   --->   Operation 73 'specmemcore' 'specmemcore_ln95' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 74 [1/1] (0.00ns)   --->   "%specmemcore_ln96 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:96->src/fpx.cpp:364]   --->   Operation 74 'specmemcore' 'specmemcore_ln96' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 75 [1/1] (0.00ns)   --->   "%specmemcore_ln96 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:96->src/fpx.cpp:364]   --->   Operation 75 'specmemcore' 'specmemcore_ln96' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 76 [1/1] (0.00ns)   --->   "%specmemcore_ln96 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:96->src/fpx.cpp:364]   --->   Operation 76 'specmemcore' 'specmemcore_ln96' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 77 [1/1] (0.00ns)   --->   "%specmemcore_ln96 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:96->src/fpx.cpp:364]   --->   Operation 77 'specmemcore' 'specmemcore_ln96' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 78 [1/1] (0.00ns)   --->   "%specmemcore_ln97 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:97->src/fpx.cpp:364]   --->   Operation 78 'specmemcore' 'specmemcore_ln97' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 79 [1/1] (0.00ns)   --->   "%specmemcore_ln97 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:97->src/fpx.cpp:364]   --->   Operation 79 'specmemcore' 'specmemcore_ln97' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 80 [1/1] (0.00ns)   --->   "%specmemcore_ln97 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:97->src/fpx.cpp:364]   --->   Operation 80 'specmemcore' 'specmemcore_ln97' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 81 [1/1] (0.00ns)   --->   "%specmemcore_ln97 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:97->src/fpx.cpp:364]   --->   Operation 81 'specmemcore' 'specmemcore_ln97' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 82 [1/1] (0.00ns)   --->   "%specmemcore_ln98 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:98->src/fpx.cpp:364]   --->   Operation 82 'specmemcore' 'specmemcore_ln98' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 83 [1/1] (0.00ns)   --->   "%specmemcore_ln98 = specmemcore void @_ssdm_op_SpecMemCore, i64 %tt, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:98->src/fpx.cpp:364]   --->   Operation 83 'specmemcore' 'specmemcore_ln98' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 84 [1/1] (0.00ns)   --->   "%specmemcore_ln366 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:366]   --->   Operation 84 'specmemcore' 'specmemcore_ln366' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 85 [1/1] (0.00ns)   --->   "%specmemcore_ln366 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:366]   --->   Operation 85 'specmemcore' 'specmemcore_ln366' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 86 [1/1] (0.00ns)   --->   "%specmemcore_ln367 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/fpx.cpp:367]   --->   Operation 86 'specmemcore' 'specmemcore_ln367' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 87 [1/1] (0.00ns)   --->   "%specmemcore_ln367 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 207, i64 18446744073709551615" [src/fpx.cpp:367]   --->   Operation 87 'specmemcore' 'specmemcore_ln367' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 88 [1/2] (0.00ns)   --->   "%call_ln367 = call void @fpmul503_mont.3.364, i64 %a_1, i64 %t1" [src/fpx.cpp:367]   --->   Operation 88 'call' 'call_ln367' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_22 : Operation 89 [1/1] (0.00ns)   --->   "%ret_ln368 = ret" [src/fpx.cpp:368]   --->   Operation 89 'ret' 'ret_ln368' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fp2inv503_mont_Pipeline_VITIS_LOOP_33_1' [13]  (1.482 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fp2inv503_mont_Pipeline_VITIS_LOOP_39_2' [14]  (1.482 ns)
+
+ <State 7>: 0.278ns
+The critical path consists of the following:
+	'load' operation 1 bit ('carry_2032_loc_load') on local variable 'carry_2032_loc' [15]  (0.000 ns)
+	'call' operation 0 bit ('call_ln0') to 'fp2inv503_mont_Pipeline_VITIS_LOOP_46_3' [16]  (0.278 ns)
+
+ <State 8>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fp2inv503_mont_Pipeline_VITIS_LOOP_46_3' [16]  (1.482 ns)
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'fp2inv503_mont_Pipeline_VITIS_LOOP_13_1' [19]  (1.482 ns)
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 0.000ns
+The critical path consists of the following:
+
+ <State 14>: 0.000ns
+The critical path consists of the following:
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+ <State 16>: 0.000ns
+The critical path consists of the following:
+
+ <State 17>: 0.000ns
+The critical path consists of the following:
+
+ <State 18>: 0.000ns
+The critical path consists of the following:
+
+ <State 19>: 0.000ns
+The critical path consists of the following:
+
+ <State 20>: 0.000ns
+The critical path consists of the following:
+
+ <State 21>: 0.000ns
+The critical path consists of the following:
+
+ <State 22>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

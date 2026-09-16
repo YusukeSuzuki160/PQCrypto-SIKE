@@ -1,0 +1,1177 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 36, Column: 3 }
+Function:        montMult_words
+Args:            
+  - Callee:          'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words
+    DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 46, 
+                   Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words
+    DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 78, 
+                   Column: 52 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          'get_bit(unsigned int const*, unsigned int)'
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 6, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 89, Column: 22 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PP_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 115, Column: 23 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Loop '''
+  - LoopName:        RED_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 61, Column: 0 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SEL_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fast.hpp:156:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont::MontOps_Fast<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 61, Column: 0 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SUB_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fast.hpp:141:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont::MontOps_Fast<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 61, Column: 0 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fast.hpp:89:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont::MontOps_Fast<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 61, Column: 0 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        RED_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fast.hpp:115:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont::MontOps_Fast<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 61, Column: 0 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_69_1
+  - String:          ''' ('
+  - LoopLoc:         '../montgomery_converter/include/mont_ops_fast.hpp:69:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'mont::MontOps_Fast<unsigned int, 16u>::mul'
+  - String:          ''' completely with a factor of '
+  - Factor:          '18'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 68, 
+                   Column: 13 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            montMult_words
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 46, 
+                   Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            montMult_words
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 36, Column: 3 }
+Function:        montMult_words
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 36, Column: 3 }
+Function:        montMult_words.1
+Args:            
+  - Callee:          'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words.1
+    DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 36, Column: 3 }
+Function:        montMult_words
+Args:            
+  - Callee:          'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words
+    DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 46, 
+                   Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.1
+    DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 78, 
+                   Column: 52 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          'get_bit(unsigned int const*, unsigned int)'
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 6, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 86, 
+                   Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words
+    DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_rsa_modexp_hw_ir
+Args:            
+  - Callee:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_rsa_modexp_hw_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                   Column: 0 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_bit(unsigned int const*, unsigned int)'
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 6, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 42, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        r2m5seq
+  - ArrayName:       r2m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ' '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:42:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 42, 
+                       Column: 97 }
+  - OrigDirection:   read
+  - OrigID:          for.inc17.load.8
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 43, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        c6seq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_43_3
+  - String:          ' '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:43:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 43, 
+                       Column: 74 }
+  - OrigDirection:   read
+  - OrigID:          for.inc35.load.4
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 43, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        r2m5seq7
+  - ArrayName:       r2m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_43_3
+  - String:          ' '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:43:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 43, 
+                       Column: 95 }
+  - OrigDirection:   read
+  - OrigID:          for.inc35.load.9
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 7, 
+                   Column: 19 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 7, 
+                       Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          VITIS_LOOP_79_10.load.7
+  - ArrayName:       d
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_55_6
+  - String:          ' '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:55:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 160, Column: 5 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j.2
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        c52seq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.169
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.174
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.179
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.184
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.189
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.194
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.199
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.204
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.209
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.214
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.219
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.224
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.229
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.234
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.239
+  - OrigAccess:      store
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 158, Column: 7 }
+  - OrigDirection:   write
+  - OrigID:          for.end90.store.244
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j.2
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        mod53seq
+  - ArrayName:       mod
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.27
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.77
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.80
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.83
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.86
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.89
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.92
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.95
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.98
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.101
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.104
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.107
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.110
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.113
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.116
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.119
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        mod1seq
+  - ArrayName:       mod
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.26
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.76
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.79
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.82
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.85
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.88
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.91
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.94
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.97
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.100
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.103
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.106
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.109
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.112
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.115
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          entry.load.118
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 43, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 43, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          c6seq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_43_3
+  - String:          ' '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:43:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 43, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 43, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          r2m5seq7
+  - ArrayName:       r2m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_43_3
+  - String:          ' '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:43:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 42, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 42, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          r2m5seq
+  - ArrayName:       r2m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ' '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:42:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 160, Column: 5 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j.2
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 160, Column: 5 }
+  - OrigDirection:   write
+  - OrigID:          c52seq
+  - ArrayName:       c
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j.2
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+  - OrigDirection:   read
+  - OrigID:          mod53seq
+  - ArrayName:       mod
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+  - OrigDirection:   read
+  - OrigID:          mod1seq
+  - ArrayName:       mod
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_27_1
+  - String:          '> at '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:27:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          '> at '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:42:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_43_3
+  - String:          '> at '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:43:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_48_5
+  - String:          '> at '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:48:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_83_12
+  - String:          '> at '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:83:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_82_11
+  - String:          '> at '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:82:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_79_10
+  - String:          '> at '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:79:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_65_8
+  - String:          '> at '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:65:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_64_7
+  - String:          '> at '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:64:26'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 160, Column: 5 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                   Line: 160, Column: 5 }
+Function:        _ZN4mont12MontOps_FastIjLj16EE3mulEPKjS3_PjS3_j.2.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 43, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 43, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 42, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          ' '
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:42:22'
+  - String:          ' '
+  - Function:        rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 42, 
+                   Column: 22 }
+Function:        rsa_modexp_hw
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_42_2
+  - String:          '''('
+  - LoopLoc:         'src_converted_lean/rsa_modexp_hw.cpp:42:22'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 36, Column: 3 }
+Function:        montMult_words.1.1
+Args:            
+  - Callee:          'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words.1.1
+    DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 36, Column: 3 }
+Function:        montMult_words.1.2
+Args:            
+  - Callee:          'mont::MontOps_Fast<unsigned int, 16u>::mul(unsigned int const*, unsigned int const*, unsigned int*, unsigned int const*, unsigned int) (.2.1)'
+    DebugLoc:        { File: ../montgomery_converter/include/mont_ops_fast.hpp, 
+                       Line: 61, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          montMult_words.1.2
+    DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 46, 
+                   Column: 9 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.1.1
+    DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 86, 
+                   Column: 5 }
+Function:        rsa_modexp_hw
+Args:            
+  - Callee:          montMult_words.1.2
+    DebugLoc:        { File: src_converted_lean/mont_word.cpp, Line: 25, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          rsa_modexp_hw
+    DebugLoc:        { File: src_converted_lean/rsa_modexp_hw.cpp, Line: 17, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

@@ -1,0 +1,418 @@
+
+
+================================================================
+== Vitis HLS Report for 'fpinv503_chain_mont'
+================================================================
+* Date:           Mon Sep 14 16:37:28 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_montcsa_flat_shared
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  10.00 ns|  13.722 ns|     2.70 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    15801|    15801|  0.217 ms|  0.217 ms|  15801|  15801|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------------------+-------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+        |                                                             |                                                 |  Latency (cycles) |   Latency (absolute)  |   Interval  |                    Pipeline                    |
+        |                           Instance                          |                      Module                     |   min   |   max   |    min    |    max    |  min |  max |                      Type                      |
+        +-------------------------------------------------------------+-------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+        |grp_fpsqr503_mont_195_fu_1168                                |fpsqr503_mont_195                                |       26|       26|   0.357 us|   0.357 us|    26|    26|                                              no|
+        |grp_fpmul503_mont_9_fu_1176                                  |fpmul503_mont_9                                  |       17|       17|   0.170 us|   0.170 us|    17|    17|                                              no|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_228_1_fu_1191    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_228_1    |      227|      227|   2.270 us|   2.270 us|   226|   226|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_17_1_fu_1204     |fpinv503_chain_mont_Pipeline_VITIS_LOOP_17_1     |       10|       10|   0.100 us|   0.100 us|     9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_232_2_fu_1211    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_232_2    |      218|      218|   2.180 us|   2.180 us|   217|   217|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpmul503_mont_3_1_fu_1216                                |fpmul503_mont_3_1                                |       20|       20|   0.200 us|   0.200 us|    20|    20|                                              no|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_235_3_fu_1223    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_235_3    |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpmul503_mont_13_fu_1228                                 |fpmul503_mont_13                                 |       19|       19|   0.190 us|   0.190 us|    20|    20|                                             yes|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_238_4_fu_1249    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_238_4    |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_241_5_fu_1254    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_241_5    |      164|      164|   1.640 us|   1.640 us|   163|   163|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_244_6_fu_1259    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_244_6    |      191|      191|   1.910 us|   1.910 us|   190|   190|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_247_7_fu_1264    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_247_7    |      191|      191|   1.910 us|   1.910 us|   190|   190|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_250_8_fu_1269    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_250_8    |      191|      191|   1.910 us|   1.910 us|   190|   190|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_253_9_fu_1274    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_253_9    |      191|      191|   1.910 us|   1.910 us|   190|   190|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_256_10_fu_1279   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_256_10   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_259_11_fu_1284   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_259_11   |      191|      191|   1.910 us|   1.910 us|   190|   190|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_262_12_fu_1289   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_262_12   |      218|      218|   2.180 us|   2.180 us|   217|   217|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_265_13_fu_1294   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_265_13   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_268_14_fu_1299   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_268_14   |      164|      164|   1.640 us|   1.640 us|   163|   163|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_271_15_fu_1304   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_271_15   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_274_16_fu_1309   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_274_16   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_277_17_fu_1314   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_277_17   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_280_18_fu_1319   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_280_18   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_283_19_fu_1324   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_283_19   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_286_20_fu_1329   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_286_20   |      164|      164|   1.640 us|   1.640 us|   163|   163|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_289_21_fu_1334   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_289_21   |      326|      326|   3.260 us|   3.260 us|   325|   325|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_292_22_fu_1339   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_292_22   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_295_23_fu_1344   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_295_23   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_298_24_fu_1349   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_298_24   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_301_25_fu_1354   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_301_25   |      164|      164|   1.640 us|   1.640 us|   163|   163|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_304_26_fu_1359   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_304_26   |      218|      218|   2.180 us|   2.180 us|   217|   217|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_307_27_fu_1364   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_307_27   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_310_28_fu_1369   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_310_28   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_313_29_fu_1374   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_313_29   |      191|      191|   1.910 us|   1.910 us|   190|   190|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_316_30_fu_1379   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_316_30   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_319_31_fu_1384   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_319_31   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_322_32_fu_1389   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_322_32   |      218|      218|   2.180 us|   2.180 us|   217|   217|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_325_33_fu_1394   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_325_33   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_328_34_fu_1399   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_328_34   |      218|      218|   2.180 us|   2.180 us|   217|   217|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_331_35_fu_1404   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_331_35   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_334_36_fu_1409   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_334_36   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_337_37_fu_1414   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_337_37   |      218|      218|   2.180 us|   2.180 us|   217|   217|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_340_38_fu_1419   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_340_38   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_343_39_fu_1424   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_343_39   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_346_40_fu_1429   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_346_40   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_349_41_fu_1434   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_349_41   |      137|      137|   1.370 us|   1.370 us|   136|   136|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_352_42_fu_1439   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_352_42   |      218|      218|   2.180 us|   2.180 us|   217|   217|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_355_43_fu_1444   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_355_43   |      164|      164|   1.640 us|   1.640 us|   163|   163|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_358_44_fu_1449   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_358_44   |     7597|     7597|  75.970 us|  75.970 us|  7596|  7596|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_17_1162_fu_1462  |fpinv503_chain_mont_Pipeline_VITIS_LOOP_17_1162  |       10|       10|   0.100 us|   0.100 us|     9|     9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +-------------------------------------------------------------+-------------------------------------------------+---------+---------+-----------+-----------+------+------+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        -|        -|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|  16426|   898106|  1331923|     -|
+|Memory               |        0|      -|      576|      585|     0|
+|Multiplexer          |        -|      -|        0|     5852|     -|
+|Register             |        -|      -|     4480|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|  16426|   903162|  1338360|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|    534|      104|      309|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|    133|       26|       77|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------------------------+-------------------------------------------------+---------+-----+-------+-------+-----+
+    |                           Instance                          |                      Module                     | BRAM_18K| DSP |   FF  |  LUT  | URAM|
+    +-------------------------------------------------------------+-------------------------------------------------+---------+-----+-------+-------+-----+
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_17_1_fu_1204     |fpinv503_chain_mont_Pipeline_VITIS_LOOP_17_1     |        0|    0|     11|     62|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_17_1162_fu_1462  |fpinv503_chain_mont_Pipeline_VITIS_LOOP_17_1162  |        0|    0|     11|     62|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_228_1_fu_1191    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_228_1    |        0|  742|  26625|  45586|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_232_2_fu_1211    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_232_2    |        0|  328|  18666|  25394|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_235_3_fu_1223    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_235_3    |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_238_4_fu_1249    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_238_4    |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_241_5_fu_1254    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_241_5    |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_244_6_fu_1259    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_244_6    |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_247_7_fu_1264    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_247_7    |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_250_8_fu_1269    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_250_8    |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_253_9_fu_1274    |fpinv503_chain_mont_Pipeline_VITIS_LOOP_253_9    |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_256_10_fu_1279   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_256_10   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_259_11_fu_1284   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_259_11   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_262_12_fu_1289   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_262_12   |        0|  328|  18666|  25394|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_265_13_fu_1294   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_265_13   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_268_14_fu_1299   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_268_14   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_271_15_fu_1304   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_271_15   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_274_16_fu_1309   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_274_16   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_277_17_fu_1314   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_277_17   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_280_18_fu_1319   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_280_18   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_283_19_fu_1324   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_283_19   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_286_20_fu_1329   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_286_20   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_289_21_fu_1334   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_289_21   |        0|  328|  18666|  25394|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_292_22_fu_1339   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_292_22   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_295_23_fu_1344   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_295_23   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_298_24_fu_1349   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_298_24   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_301_25_fu_1354   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_301_25   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_304_26_fu_1359   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_304_26   |        0|  328|  18666|  25394|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_307_27_fu_1364   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_307_27   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_310_28_fu_1369   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_310_28   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_313_29_fu_1374   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_313_29   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_316_30_fu_1379   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_316_30   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_319_31_fu_1384   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_319_31   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_322_32_fu_1389   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_322_32   |        0|  328|  18666|  25394|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_325_33_fu_1394   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_325_33   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_328_34_fu_1399   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_328_34   |        0|  328|  18666|  25394|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_331_35_fu_1404   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_331_35   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_334_36_fu_1409   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_334_36   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_337_37_fu_1414   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_337_37   |        0|  328|  18666|  25394|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_340_38_fu_1419   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_340_38   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_343_39_fu_1424   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_343_39   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_346_40_fu_1429   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_346_40   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_349_41_fu_1434   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_349_41   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_352_42_fu_1439   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_352_42   |        0|  328|  18666|  25394|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_355_43_fu_1444   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_355_43   |        0|  328|  18665|  25390|    0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_358_44_fu_1449   |fpinv503_chain_mont_Pipeline_VITIS_LOOP_358_44   |        0|  700|  34371|  68595|    0|
+    |grp_fpmul503_mont_13_fu_1228                                 |fpmul503_mont_13                                 |        0|  372|  15574|  42403|    0|
+    |grp_fpmul503_mont_3_1_fu_1216                                |fpmul503_mont_3_1                                |        0|  254|  10191|  41971|    0|
+    |grp_fpmul503_mont_9_fu_1176                                  |fpmul503_mont_9                                  |        0|  254|   9804|  41861|    0|
+    |grp_fpsqr503_mont_195_fu_1168                                |fpsqr503_mont_195                                |        0|  328|  17581|  24971|    0|
+    +-------------------------------------------------------------+-------------------------------------------------+---------+-----+-------+-------+-----+
+    |Total                                                        |                                                 |        0|16426| 898106|1331923|    0|
+    +-------------------------------------------------------------+-------------------------------------------------+---------+-----+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-------+-----------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    | Memory|                  Module                 | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-------+-----------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |tt_U   |LADDER3PT_impl_250_s_R2_X_RAM_AUTO_1R1W  |        0|  64|  65|    0|     8|   64|     1|          512|
+    |t_U    |fpinv503_chain_mont_t_RAM_AUTO_1R1W      |        0|  64|  65|    0|    15|   64|     1|          960|
+    |t_1_U  |fpinv503_chain_mont_t_RAM_AUTO_1R1W      |        0|  64|  65|    0|    15|   64|     1|          960|
+    |t_2_U  |fpinv503_chain_mont_t_RAM_AUTO_1R1W      |        0|  64|  65|    0|    15|   64|     1|          960|
+    |t_3_U  |fpinv503_chain_mont_t_RAM_AUTO_1R1W      |        0|  64|  65|    0|    15|   64|     1|          960|
+    |t_4_U  |fpinv503_chain_mont_t_RAM_AUTO_1R1W      |        0|  64|  65|    0|    15|   64|     1|          960|
+    |t_5_U  |fpinv503_chain_mont_t_RAM_AUTO_1R1W      |        0|  64|  65|    0|    15|   64|     1|          960|
+    |t_6_U  |fpinv503_chain_mont_t_RAM_AUTO_1R1W      |        0|  64|  65|    0|    15|   64|     1|          960|
+    |t_7_U  |fpinv503_chain_mont_t_RAM_AUTO_1R1W      |        0|  64|  65|    0|    15|   64|     1|          960|
+    +-------+-----------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total  |                                         |        0| 576| 585|    0|   128|  576|     9|         8192|
+    +-------+-----------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------------------------------------+------+-----------+-----+-----------+
+    |                   Name                  |  LUT | Input Size| Bits| Total Bits|
+    +-----------------------------------------+------+-----------+-----+-----------+
+    |a_address0                               |    31|          6|    3|         18|
+    |a_address1                               |    20|          4|    3|         12|
+    |a_ce0                                    |    31|          6|    1|          6|
+    |a_ce1                                    |    20|          4|    1|          4|
+    |a_we0                                    |     9|          2|    1|          2|
+    |ap_NS_fsm                                |  2693|        847|    1|        847|
+    |grp_fpmul503_mont_13_fu_1228_ma_read     |    49|          9|   64|        576|
+    |grp_fpmul503_mont_13_fu_1228_ma_read_23  |    49|          9|   64|        576|
+    |grp_fpmul503_mont_13_fu_1228_ma_read_24  |    49|          9|   64|        576|
+    |grp_fpmul503_mont_13_fu_1228_ma_read_25  |    49|          9|   64|        576|
+    |grp_fpmul503_mont_13_fu_1228_ma_read_26  |    49|          9|   64|        576|
+    |grp_fpmul503_mont_13_fu_1228_ma_read_27  |    49|          9|   64|        576|
+    |grp_fpmul503_mont_13_fu_1228_ma_read_28  |    49|          9|   64|        576|
+    |grp_fpmul503_mont_13_fu_1228_ma_read_29  |    49|          9|   64|        576|
+    |t_1_address0                             |    14|          3|    4|         12|
+    |t_1_address0_local                       |    65|         16|    4|         64|
+    |t_1_ce0                                  |    14|          3|    1|          3|
+    |t_1_d0                                   |    14|          3|   64|        192|
+    |t_1_we0                                  |    14|          3|    1|          3|
+    |t_2_address0                             |    14|          3|    4|         12|
+    |t_2_address0_local                       |    65|         16|    4|         64|
+    |t_2_ce0                                  |    14|          3|    1|          3|
+    |t_2_d0                                   |    14|          3|   64|        192|
+    |t_2_we0                                  |    14|          3|    1|          3|
+    |t_3_address0                             |    14|          3|    4|         12|
+    |t_3_address0_local                       |    65|         16|    4|         64|
+    |t_3_ce0                                  |    14|          3|    1|          3|
+    |t_3_d0                                   |    14|          3|   64|        192|
+    |t_3_we0                                  |    14|          3|    1|          3|
+    |t_4_address0                             |    14|          3|    4|         12|
+    |t_4_address0_local                       |    65|         16|    4|         64|
+    |t_4_ce0                                  |    14|          3|    1|          3|
+    |t_4_d0                                   |    14|          3|   64|        192|
+    |t_4_we0                                  |    14|          3|    1|          3|
+    |t_5_address0                             |    14|          3|    4|         12|
+    |t_5_address0_local                       |    65|         16|    4|         64|
+    |t_5_ce0                                  |    14|          3|    1|          3|
+    |t_5_d0                                   |    14|          3|   64|        192|
+    |t_5_we0                                  |    14|          3|    1|          3|
+    |t_6_address0                             |    14|          3|    4|         12|
+    |t_6_address0_local                       |    65|         16|    4|         64|
+    |t_6_ce0                                  |    14|          3|    1|          3|
+    |t_6_d0                                   |    14|          3|   64|        192|
+    |t_6_we0                                  |    14|          3|    1|          3|
+    |t_7_address0                             |    14|          3|    4|         12|
+    |t_7_address0_local                       |    65|         16|    4|         64|
+    |t_7_ce0                                  |    14|          3|    1|          3|
+    |t_7_d0                                   |    14|          3|   64|        192|
+    |t_7_we0                                  |    14|          3|    1|          3|
+    |t_address0                               |    14|          3|    4|         12|
+    |t_address0_local                         |    65|         16|    4|         64|
+    |t_ce0                                    |    14|          3|    1|          3|
+    |t_d0                                     |    14|          3|   64|        192|
+    |t_we0                                    |    14|          3|    1|          3|
+    |tt_address0                              |   221|         51|    3|        153|
+    |tt_address1                              |   209|         48|    3|        144|
+    |tt_ce0                                   |   221|         51|    1|         51|
+    |tt_ce1                                   |   209|         48|    1|         48|
+    |tt_d0                                    |   209|         48|   64|       3072|
+    |tt_d1                                    |   205|         47|   64|       3008|
+    |tt_we0                                   |   209|         48|    1|         48|
+    |tt_we1                                   |   205|         47|    1|         47|
+    +-----------------------------------------+------+-----------+-----+-----------+
+    |Total                                    |  5852|       1553| 1252|      14260|
+    +-----------------------------------------+------+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------------------------+-----+----+-----+-----------+
+    |                                   Name                                   |  FF | LUT| Bits| Const Bits|
+    +--------------------------------------------------------------------------+-----+----+-----+-----------+
+    |ap_CS_fsm                                                                 |  846|   0|  846|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_17_1162_fu_1462_ap_start_reg  |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_17_1_fu_1204_ap_start_reg     |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_228_1_fu_1191_ap_start_reg    |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_232_2_fu_1211_ap_start_reg    |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_235_3_fu_1223_ap_start_reg    |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_238_4_fu_1249_ap_start_reg    |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_241_5_fu_1254_ap_start_reg    |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_244_6_fu_1259_ap_start_reg    |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_247_7_fu_1264_ap_start_reg    |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_250_8_fu_1269_ap_start_reg    |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_253_9_fu_1274_ap_start_reg    |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_256_10_fu_1279_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_259_11_fu_1284_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_262_12_fu_1289_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_265_13_fu_1294_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_268_14_fu_1299_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_271_15_fu_1304_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_274_16_fu_1309_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_277_17_fu_1314_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_280_18_fu_1319_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_283_19_fu_1324_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_286_20_fu_1329_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_289_21_fu_1334_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_292_22_fu_1339_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_295_23_fu_1344_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_298_24_fu_1349_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_301_25_fu_1354_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_304_26_fu_1359_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_307_27_fu_1364_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_310_28_fu_1369_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_313_29_fu_1374_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_316_30_fu_1379_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_319_31_fu_1384_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_322_32_fu_1389_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_325_33_fu_1394_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_328_34_fu_1399_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_331_35_fu_1404_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_334_36_fu_1409_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_337_37_fu_1414_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_340_38_fu_1419_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_343_39_fu_1424_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_346_40_fu_1429_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_349_41_fu_1434_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_352_42_fu_1439_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_355_43_fu_1444_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpinv503_chain_mont_Pipeline_VITIS_LOOP_358_44_fu_1449_ap_start_reg   |    1|   0|    1|          0|
+    |grp_fpmul503_mont_13_fu_1228_ap_start_reg                                 |    1|   0|    1|          0|
+    |grp_fpmul503_mont_3_1_fu_1216_ap_start_reg                                |    1|   0|    1|          0|
+    |grp_fpmul503_mont_9_fu_1176_ap_start_reg                                  |    1|   0|    1|          0|
+    |grp_fpsqr503_mont_195_fu_1168_ap_start_reg                                |    1|   0|    1|          0|
+    |reg_1469                                                                  |   64|   0|   64|          0|
+    |reg_1474                                                                  |   64|   0|   64|          0|
+    |reg_1479                                                                  |   64|   0|   64|          0|
+    |reg_1484                                                                  |   64|   0|   64|          0|
+    |reg_1489                                                                  |   64|   0|   64|          0|
+    |reg_1494                                                                  |   64|   0|   64|          0|
+    |reg_1499                                                                  |   64|   0|   64|          0|
+    |reg_1504                                                                  |   64|   0|   64|          0|
+    |t_1_load_10_reg_2155                                                      |   64|   0|   64|          0|
+    |t_1_load_1_reg_1634                                                       |   64|   0|   64|          0|
+    |t_1_load_3_reg_1754                                                       |   64|   0|   64|          0|
+    |t_1_load_5_reg_1874                                                       |   64|   0|   64|          0|
+    |t_1_load_6_reg_1954                                                       |   64|   0|   64|          0|
+    |t_1_load_reg_1554                                                         |   64|   0|   64|          0|
+    |t_2_load_10_reg_2161                                                      |   64|   0|   64|          0|
+    |t_2_load_1_reg_1639                                                       |   64|   0|   64|          0|
+    |t_2_load_3_reg_1759                                                       |   64|   0|   64|          0|
+    |t_2_load_5_reg_1879                                                       |   64|   0|   64|          0|
+    |t_2_load_6_reg_1959                                                       |   64|   0|   64|          0|
+    |t_2_load_reg_1559                                                         |   64|   0|   64|          0|
+    |t_3_load_10_reg_2167                                                      |   64|   0|   64|          0|
+    |t_3_load_1_reg_1644                                                       |   64|   0|   64|          0|
+    |t_3_load_3_reg_1764                                                       |   64|   0|   64|          0|
+    |t_3_load_5_reg_1884                                                       |   64|   0|   64|          0|
+    |t_3_load_6_reg_1964                                                       |   64|   0|   64|          0|
+    |t_3_load_reg_1564                                                         |   64|   0|   64|          0|
+    |t_4_load_10_reg_2173                                                      |   64|   0|   64|          0|
+    |t_4_load_1_reg_1649                                                       |   64|   0|   64|          0|
+    |t_4_load_3_reg_1769                                                       |   64|   0|   64|          0|
+    |t_4_load_5_reg_1889                                                       |   64|   0|   64|          0|
+    |t_4_load_6_reg_1969                                                       |   64|   0|   64|          0|
+    |t_4_load_reg_1569                                                         |   64|   0|   64|          0|
+    |t_5_load_10_reg_2179                                                      |   64|   0|   64|          0|
+    |t_5_load_1_reg_1654                                                       |   64|   0|   64|          0|
+    |t_5_load_3_reg_1774                                                       |   64|   0|   64|          0|
+    |t_5_load_5_reg_1894                                                       |   64|   0|   64|          0|
+    |t_5_load_6_reg_1974                                                       |   64|   0|   64|          0|
+    |t_5_load_reg_1574                                                         |   64|   0|   64|          0|
+    |t_6_load_10_reg_2185                                                      |   64|   0|   64|          0|
+    |t_6_load_1_reg_1659                                                       |   64|   0|   64|          0|
+    |t_6_load_3_reg_1779                                                       |   64|   0|   64|          0|
+    |t_6_load_5_reg_1899                                                       |   64|   0|   64|          0|
+    |t_6_load_6_reg_1979                                                       |   64|   0|   64|          0|
+    |t_6_load_reg_1579                                                         |   64|   0|   64|          0|
+    |t_7_load_10_reg_2191                                                      |   64|   0|   64|          0|
+    |t_7_load_1_reg_1664                                                       |   64|   0|   64|          0|
+    |t_7_load_3_reg_1784                                                       |   64|   0|   64|          0|
+    |t_7_load_5_reg_1904                                                       |   64|   0|   64|          0|
+    |t_7_load_6_reg_1984                                                       |   64|   0|   64|          0|
+    |t_7_load_reg_1584                                                         |   64|   0|   64|          0|
+    |t_load_10_reg_2149                                                        |   64|   0|   64|          0|
+    |t_load_1_reg_1629                                                         |   64|   0|   64|          0|
+    |t_load_3_reg_1749                                                         |   64|   0|   64|          0|
+    |t_load_5_reg_1869                                                         |   64|   0|   64|          0|
+    |t_load_6_reg_1949                                                         |   64|   0|   64|          0|
+    |t_load_reg_1549                                                           |   64|   0|   64|          0|
+    +--------------------------------------------------------------------------+-----+----+-----+-----------+
+    |Total                                                                     | 4480|   0| 4480|          0|
+    +--------------------------------------------------------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------+-----+-----+------------+---------------------+--------------+
+|  RTL Ports | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++------------+-----+-----+------------+---------------------+--------------+
+|ap_clk      |   in|    1|  ap_ctrl_hs|  fpinv503_chain_mont|  return value|
+|ap_rst      |   in|    1|  ap_ctrl_hs|  fpinv503_chain_mont|  return value|
+|ap_start    |   in|    1|  ap_ctrl_hs|  fpinv503_chain_mont|  return value|
+|ap_done     |  out|    1|  ap_ctrl_hs|  fpinv503_chain_mont|  return value|
+|ap_idle     |  out|    1|  ap_ctrl_hs|  fpinv503_chain_mont|  return value|
+|ap_ready    |  out|    1|  ap_ctrl_hs|  fpinv503_chain_mont|  return value|
+|a_address0  |  out|    3|   ap_memory|                    a|         array|
+|a_ce0       |  out|    1|   ap_memory|                    a|         array|
+|a_we0       |  out|    1|   ap_memory|                    a|         array|
+|a_d0        |  out|   64|   ap_memory|                    a|         array|
+|a_q0        |   in|   64|   ap_memory|                    a|         array|
+|a_address1  |  out|    3|   ap_memory|                    a|         array|
+|a_ce1       |  out|    1|   ap_memory|                    a|         array|
+|a_q1        |   in|   64|   ap_memory|                    a|         array|
++------------+-----+-----+------------+---------------------+--------------+
+

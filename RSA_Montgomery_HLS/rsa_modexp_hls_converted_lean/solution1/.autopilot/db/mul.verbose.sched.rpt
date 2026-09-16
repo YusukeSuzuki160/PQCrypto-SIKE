@@ -1,0 +1,746 @@
+
+
+================================================================
+== Vitis HLS Report for 'mul'
+================================================================
+* Date:           Tue Sep 15 21:37:32 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        rsa_modexp_hls_converted_lean
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       74|       74|  0.740 us|  0.740 us|   74|   74|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 35
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.30>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%mod_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %mod_r"   --->   Operation 36 'read' 'mod_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%conv6710_loc = alloca i64 1"   --->   Operation 37 'alloca' 'conv6710_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%conv67_111_loc = alloca i64 1"   --->   Operation 38 'alloca' 'conv67_111_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%conv67_212_loc = alloca i64 1"   --->   Operation 39 'alloca' 'conv67_212_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%conv67_313_loc = alloca i64 1"   --->   Operation 40 'alloca' 'conv67_313_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%conv67_414_loc = alloca i64 1"   --->   Operation 41 'alloca' 'conv67_414_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%conv67_515_loc = alloca i64 1"   --->   Operation 42 'alloca' 'conv67_515_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%conv67_616_loc = alloca i64 1"   --->   Operation 43 'alloca' 'conv67_616_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%conv67_717_loc = alloca i64 1"   --->   Operation 44 'alloca' 'conv67_717_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%conv67_818_loc = alloca i64 1"   --->   Operation 45 'alloca' 'conv67_818_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%conv67_919_loc = alloca i64 1"   --->   Operation 46 'alloca' 'conv67_919_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%conv67_1020_loc = alloca i64 1"   --->   Operation 47 'alloca' 'conv67_1020_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%conv67_1121_loc = alloca i64 1"   --->   Operation 48 'alloca' 'conv67_1121_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%conv67_1222_loc = alloca i64 1"   --->   Operation 49 'alloca' 'conv67_1222_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%conv67_1323_loc = alloca i64 1"   --->   Operation 50 'alloca' 'conv67_1323_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%conv67_1424_loc = alloca i64 1"   --->   Operation 51 'alloca' 'conv67_1424_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%p_loc = alloca i64 1"   --->   Operation 52 'alloca' 'p_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%conv8525_loc = alloca i64 1"   --->   Operation 53 'alloca' 'conv8525_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%p_cast = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %mod_read, i32 2, i32 63"   --->   Operation 54 'partselect' 'p_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%p_cast_cast = sext i62 %p_cast"   --->   Operation 55 'sext' 'p_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i32 %gmem, i64 %p_cast_cast"   --->   Operation 56 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [8/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16"   --->   Operation 57 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 58 [7/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16"   --->   Operation 58 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 59 [6/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16"   --->   Operation 59 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 60 [5/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16"   --->   Operation 60 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 61 [4/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16"   --->   Operation 61 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 62 [3/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16"   --->   Operation 62 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 63 [2/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16"   --->   Operation 63 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 64 [1/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i32, i32 %gmem_addr, i64 16"   --->   Operation 64 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 65 [1/1] (7.30ns)   --->   "%gmem_addr_read = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 65 'read' 'gmem_addr_read' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 7.30>
+ST_10 : Operation 66 [1/1] (7.30ns)   --->   "%gmem_addr_read_16 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 66 'read' 'gmem_addr_read_16' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 7.30>
+ST_11 : Operation 67 [1/1] (7.30ns)   --->   "%gmem_addr_read_17 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 67 'read' 'gmem_addr_read_17' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 7.30>
+ST_12 : Operation 68 [1/1] (7.30ns)   --->   "%gmem_addr_read_18 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 68 'read' 'gmem_addr_read_18' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 13 <SV = 12> <Delay = 7.30>
+ST_13 : Operation 69 [1/1] (7.30ns)   --->   "%gmem_addr_read_19 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 69 'read' 'gmem_addr_read_19' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 14 <SV = 13> <Delay = 7.30>
+ST_14 : Operation 70 [1/1] (7.30ns)   --->   "%gmem_addr_read_20 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 70 'read' 'gmem_addr_read_20' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 15 <SV = 14> <Delay = 7.30>
+ST_15 : Operation 71 [1/1] (7.30ns)   --->   "%gmem_addr_read_21 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 71 'read' 'gmem_addr_read_21' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 16 <SV = 15> <Delay = 7.30>
+ST_16 : Operation 72 [1/1] (7.30ns)   --->   "%gmem_addr_read_22 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 72 'read' 'gmem_addr_read_22' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 16> <Delay = 7.30>
+ST_17 : Operation 73 [1/1] (0.00ns)   --->   "%a_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %a_offset"   --->   Operation 73 'read' 'a_offset_read' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 0"   --->   Operation 74 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 75 [1/1] (0.00ns)   --->   "%tmp_33_cast = zext i5 %tmp_s"   --->   Operation 75 'zext' 'tmp_33_cast' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 76 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i32 %a, i64 0, i64 %tmp_33_cast"   --->   Operation 76 'getelementptr' 'a_addr' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 77 [1/1] (0.00ns)   --->   "%tmp_33 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 1"   --->   Operation 77 'bitconcatenate' 'tmp_33' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 78 [1/1] (0.00ns)   --->   "%tmp_34_cast = zext i5 %tmp_33"   --->   Operation 78 'zext' 'tmp_34_cast' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 79 [1/1] (0.00ns)   --->   "%a_addr_16 = getelementptr i32 %a, i64 0, i64 %tmp_34_cast"   --->   Operation 79 'getelementptr' 'a_addr_16' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 80 [1/1] (7.30ns)   --->   "%gmem_addr_read_23 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 80 'read' 'gmem_addr_read_23' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_17 : Operation 81 [2/2] (0.69ns)   --->   "%a_load = load i5 %a_addr"   --->   Operation 81 'load' 'a_load' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_17 : Operation 82 [2/2] (0.69ns)   --->   "%a_load_16 = load i5 %a_addr_16"   --->   Operation 82 'load' 'a_load_16' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 18 <SV = 17> <Delay = 7.30>
+ST_18 : Operation 83 [1/1] (0.00ns)   --->   "%tmp_34 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 2"   --->   Operation 83 'bitconcatenate' 'tmp_34' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 84 [1/1] (0.00ns)   --->   "%tmp_35_cast = zext i5 %tmp_34"   --->   Operation 84 'zext' 'tmp_35_cast' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 85 [1/1] (0.00ns)   --->   "%a_addr_17 = getelementptr i32 %a, i64 0, i64 %tmp_35_cast"   --->   Operation 85 'getelementptr' 'a_addr_17' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 86 [1/1] (0.00ns)   --->   "%tmp_35 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 3"   --->   Operation 86 'bitconcatenate' 'tmp_35' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 87 [1/1] (0.00ns)   --->   "%tmp_36_cast = zext i5 %tmp_35"   --->   Operation 87 'zext' 'tmp_36_cast' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 88 [1/1] (0.00ns)   --->   "%a_addr_18 = getelementptr i32 %a, i64 0, i64 %tmp_36_cast"   --->   Operation 88 'getelementptr' 'a_addr_18' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 89 [1/1] (7.30ns)   --->   "%gmem_addr_read_24 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 89 'read' 'gmem_addr_read_24' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_18 : Operation 90 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load = load i5 %a_addr"   --->   Operation 90 'load' 'a_load' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_18 : Operation 91 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_16 = load i5 %a_addr_16"   --->   Operation 91 'load' 'a_load_16' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_18 : Operation 92 [2/2] (0.69ns)   --->   "%a_load_17 = load i5 %a_addr_17"   --->   Operation 92 'load' 'a_load_17' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_18 : Operation 93 [2/2] (0.69ns)   --->   "%a_load_18 = load i5 %a_addr_18"   --->   Operation 93 'load' 'a_load_18' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 19 <SV = 18> <Delay = 7.30>
+ST_19 : Operation 94 [1/1] (0.00ns)   --->   "%tmp_36 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 4"   --->   Operation 94 'bitconcatenate' 'tmp_36' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_37_cast = zext i5 %tmp_36"   --->   Operation 95 'zext' 'tmp_37_cast' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 96 [1/1] (0.00ns)   --->   "%a_addr_19 = getelementptr i32 %a, i64 0, i64 %tmp_37_cast"   --->   Operation 96 'getelementptr' 'a_addr_19' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 97 [1/1] (0.00ns)   --->   "%tmp_37 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 5"   --->   Operation 97 'bitconcatenate' 'tmp_37' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 98 [1/1] (0.00ns)   --->   "%tmp_38_cast = zext i5 %tmp_37"   --->   Operation 98 'zext' 'tmp_38_cast' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 99 [1/1] (0.00ns)   --->   "%a_addr_20 = getelementptr i32 %a, i64 0, i64 %tmp_38_cast"   --->   Operation 99 'getelementptr' 'a_addr_20' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 100 [1/1] (7.30ns)   --->   "%gmem_addr_read_25 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 100 'read' 'gmem_addr_read_25' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_19 : Operation 101 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_17 = load i5 %a_addr_17"   --->   Operation 101 'load' 'a_load_17' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_19 : Operation 102 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_18 = load i5 %a_addr_18"   --->   Operation 102 'load' 'a_load_18' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_19 : Operation 103 [2/2] (0.69ns)   --->   "%a_load_19 = load i5 %a_addr_19"   --->   Operation 103 'load' 'a_load_19' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_19 : Operation 104 [2/2] (0.69ns)   --->   "%a_load_20 = load i5 %a_addr_20"   --->   Operation 104 'load' 'a_load_20' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 20 <SV = 19> <Delay = 7.30>
+ST_20 : Operation 105 [1/1] (0.00ns)   --->   "%tmp_38 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 6"   --->   Operation 105 'bitconcatenate' 'tmp_38' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 106 [1/1] (0.00ns)   --->   "%tmp_39_cast = zext i5 %tmp_38"   --->   Operation 106 'zext' 'tmp_39_cast' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 107 [1/1] (0.00ns)   --->   "%a_addr_21 = getelementptr i32 %a, i64 0, i64 %tmp_39_cast"   --->   Operation 107 'getelementptr' 'a_addr_21' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 108 [1/1] (0.00ns)   --->   "%tmp_39 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 7"   --->   Operation 108 'bitconcatenate' 'tmp_39' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 109 [1/1] (0.00ns)   --->   "%tmp_40_cast = zext i5 %tmp_39"   --->   Operation 109 'zext' 'tmp_40_cast' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 110 [1/1] (0.00ns)   --->   "%a_addr_22 = getelementptr i32 %a, i64 0, i64 %tmp_40_cast"   --->   Operation 110 'getelementptr' 'a_addr_22' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 111 [1/1] (7.30ns)   --->   "%gmem_addr_read_26 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 111 'read' 'gmem_addr_read_26' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_20 : Operation 112 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_19 = load i5 %a_addr_19"   --->   Operation 112 'load' 'a_load_19' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_20 : Operation 113 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_20 = load i5 %a_addr_20"   --->   Operation 113 'load' 'a_load_20' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_20 : Operation 114 [2/2] (0.69ns)   --->   "%a_load_21 = load i5 %a_addr_21"   --->   Operation 114 'load' 'a_load_21' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_20 : Operation 115 [2/2] (0.69ns)   --->   "%a_load_22 = load i5 %a_addr_22"   --->   Operation 115 'load' 'a_load_22' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 21 <SV = 20> <Delay = 7.30>
+ST_21 : Operation 116 [1/1] (0.00ns)   --->   "%tmp_40 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 8"   --->   Operation 116 'bitconcatenate' 'tmp_40' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 117 [1/1] (0.00ns)   --->   "%tmp_41_cast = zext i5 %tmp_40"   --->   Operation 117 'zext' 'tmp_41_cast' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 118 [1/1] (0.00ns)   --->   "%a_addr_23 = getelementptr i32 %a, i64 0, i64 %tmp_41_cast"   --->   Operation 118 'getelementptr' 'a_addr_23' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 119 [1/1] (0.00ns)   --->   "%tmp_41 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 9"   --->   Operation 119 'bitconcatenate' 'tmp_41' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 120 [1/1] (0.00ns)   --->   "%tmp_42_cast = zext i5 %tmp_41"   --->   Operation 120 'zext' 'tmp_42_cast' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 121 [1/1] (0.00ns)   --->   "%a_addr_24 = getelementptr i32 %a, i64 0, i64 %tmp_42_cast"   --->   Operation 121 'getelementptr' 'a_addr_24' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 122 [1/1] (7.30ns)   --->   "%gmem_addr_read_27 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 122 'read' 'gmem_addr_read_27' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_21 : Operation 123 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_21 = load i5 %a_addr_21"   --->   Operation 123 'load' 'a_load_21' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_21 : Operation 124 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_22 = load i5 %a_addr_22"   --->   Operation 124 'load' 'a_load_22' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_21 : Operation 125 [2/2] (0.69ns)   --->   "%a_load_23 = load i5 %a_addr_23"   --->   Operation 125 'load' 'a_load_23' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_21 : Operation 126 [2/2] (0.69ns)   --->   "%a_load_24 = load i5 %a_addr_24"   --->   Operation 126 'load' 'a_load_24' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 22 <SV = 21> <Delay = 7.30>
+ST_22 : Operation 127 [1/1] (0.00ns)   --->   "%tmp_42 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 10"   --->   Operation 127 'bitconcatenate' 'tmp_42' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 128 [1/1] (0.00ns)   --->   "%tmp_43_cast = zext i5 %tmp_42"   --->   Operation 128 'zext' 'tmp_43_cast' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 129 [1/1] (0.00ns)   --->   "%a_addr_25 = getelementptr i32 %a, i64 0, i64 %tmp_43_cast"   --->   Operation 129 'getelementptr' 'a_addr_25' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 130 [1/1] (0.00ns)   --->   "%tmp_43 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 11"   --->   Operation 130 'bitconcatenate' 'tmp_43' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 131 [1/1] (0.00ns)   --->   "%tmp_44_cast = zext i5 %tmp_43"   --->   Operation 131 'zext' 'tmp_44_cast' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 132 [1/1] (0.00ns)   --->   "%a_addr_26 = getelementptr i32 %a, i64 0, i64 %tmp_44_cast"   --->   Operation 132 'getelementptr' 'a_addr_26' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 133 [1/1] (7.30ns)   --->   "%gmem_addr_read_28 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 133 'read' 'gmem_addr_read_28' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_22 : Operation 134 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_23 = load i5 %a_addr_23"   --->   Operation 134 'load' 'a_load_23' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_22 : Operation 135 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_24 = load i5 %a_addr_24"   --->   Operation 135 'load' 'a_load_24' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_22 : Operation 136 [2/2] (0.69ns)   --->   "%a_load_25 = load i5 %a_addr_25"   --->   Operation 136 'load' 'a_load_25' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_22 : Operation 137 [2/2] (0.69ns)   --->   "%a_load_26 = load i5 %a_addr_26"   --->   Operation 137 'load' 'a_load_26' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 23 <SV = 22> <Delay = 7.30>
+ST_23 : Operation 138 [1/1] (0.00ns)   --->   "%tmp_44 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 12"   --->   Operation 138 'bitconcatenate' 'tmp_44' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 139 [1/1] (0.00ns)   --->   "%tmp_45_cast = zext i5 %tmp_44"   --->   Operation 139 'zext' 'tmp_45_cast' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 140 [1/1] (0.00ns)   --->   "%a_addr_27 = getelementptr i32 %a, i64 0, i64 %tmp_45_cast"   --->   Operation 140 'getelementptr' 'a_addr_27' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 141 [1/1] (0.00ns)   --->   "%tmp_45 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 13"   --->   Operation 141 'bitconcatenate' 'tmp_45' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 142 [1/1] (0.00ns)   --->   "%tmp_46_cast = zext i5 %tmp_45"   --->   Operation 142 'zext' 'tmp_46_cast' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 143 [1/1] (0.00ns)   --->   "%a_addr_28 = getelementptr i32 %a, i64 0, i64 %tmp_46_cast"   --->   Operation 143 'getelementptr' 'a_addr_28' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 144 [1/1] (7.30ns)   --->   "%gmem_addr_read_29 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 144 'read' 'gmem_addr_read_29' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_23 : Operation 145 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_25 = load i5 %a_addr_25"   --->   Operation 145 'load' 'a_load_25' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_23 : Operation 146 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_26 = load i5 %a_addr_26"   --->   Operation 146 'load' 'a_load_26' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_23 : Operation 147 [2/2] (0.69ns)   --->   "%a_load_27 = load i5 %a_addr_27"   --->   Operation 147 'load' 'a_load_27' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_23 : Operation 148 [2/2] (0.69ns)   --->   "%a_load_28 = load i5 %a_addr_28"   --->   Operation 148 'load' 'a_load_28' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 24 <SV = 23> <Delay = 7.30>
+ST_24 : Operation 149 [1/1] (0.00ns)   --->   "%tmp_46 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 14"   --->   Operation 149 'bitconcatenate' 'tmp_46' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 150 [1/1] (0.00ns)   --->   "%tmp_47_cast = zext i5 %tmp_46"   --->   Operation 150 'zext' 'tmp_47_cast' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 151 [1/1] (0.00ns)   --->   "%a_addr_29 = getelementptr i32 %a, i64 0, i64 %tmp_47_cast"   --->   Operation 151 'getelementptr' 'a_addr_29' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 152 [1/1] (0.00ns)   --->   "%tmp_47 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %a_offset_read, i4 15"   --->   Operation 152 'bitconcatenate' 'tmp_47' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 153 [1/1] (0.00ns)   --->   "%tmp_48_cast = zext i5 %tmp_47"   --->   Operation 153 'zext' 'tmp_48_cast' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 154 [1/1] (0.00ns)   --->   "%a_addr_30 = getelementptr i32 %a, i64 0, i64 %tmp_48_cast"   --->   Operation 154 'getelementptr' 'a_addr_30' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 155 [1/1] (7.30ns)   --->   "%gmem_addr_read_30 = read i32 @_ssdm_op_Read.m_axi.p1i32, i32 %gmem_addr"   --->   Operation 155 'read' 'gmem_addr_read_30' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_24 : Operation 156 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_27 = load i5 %a_addr_27"   --->   Operation 156 'load' 'a_load_27' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_24 : Operation 157 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_28 = load i5 %a_addr_28"   --->   Operation 157 'load' 'a_load_28' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_24 : Operation 158 [2/2] (0.69ns)   --->   "%a_load_29 = load i5 %a_addr_29"   --->   Operation 158 'load' 'a_load_29' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_24 : Operation 159 [2/2] (0.69ns)   --->   "%a_load_30 = load i5 %a_addr_30"   --->   Operation 159 'load' 'a_load_30' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 25 <SV = 24> <Delay = 2.10>
+ST_25 : Operation 160 [1/1] (0.00ns)   --->   "%mprime_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mprime"   --->   Operation 160 'read' 'mprime_read' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 161 [1/1] (0.00ns)   --->   "%b_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %b_offset"   --->   Operation 161 'read' 'b_offset_read' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 162 [1/1] (0.00ns)   --->   "%tmp_32 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %b_offset_read, i4 0"   --->   Operation 162 'bitconcatenate' 'tmp_32' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 163 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_29 = load i5 %a_addr_29"   --->   Operation 163 'load' 'a_load_29' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_25 : Operation 164 [1/2] ( I:0.69ns O:0.69ns )   --->   "%a_load_30 = load i5 %a_addr_30"   --->   Operation 164 'load' 'a_load_30' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_25 : Operation 165 [2/2] (1.40ns)   --->   "%call_ln0 = call void @mul_Pipeline_CIOS_LOOP, i5 %tmp_32, i32 %b, i32 %a_load, i32 %a_load_16, i32 %a_load_17, i32 %a_load_18, i32 %a_load_19, i32 %a_load_20, i32 %a_load_21, i32 %a_load_22, i32 %a_load_23, i32 %a_load_24, i32 %a_load_25, i32 %a_load_26, i32 %a_load_27, i32 %a_load_28, i32 %a_load_29, i32 %a_load_30, i32 %mprime_read, i32 %gmem_addr_read, i32 %gmem_addr_read_16, i32 %gmem_addr_read_17, i32 %gmem_addr_read_18, i32 %gmem_addr_read_19, i32 %gmem_addr_read_20, i32 %gmem_addr_read_21, i32 %gmem_addr_read_22, i32 %gmem_addr_read_23, i32 %gmem_addr_read_24, i32 %gmem_addr_read_25, i32 %gmem_addr_read_26, i32 %gmem_addr_read_27, i32 %gmem_addr_read_28, i32 %gmem_addr_read_29, i32 %gmem_addr_read_30, i2 %conv8525_loc, i32 %p_loc, i32 %conv67_1424_loc, i32 %conv67_1323_loc, i32 %conv67_1222_loc, i32 %conv67_1121_loc, i32 %conv67_1020_loc, i32 %conv67_919_loc, i32 %conv67_818_loc, i32 %conv67_717_loc, i32 %conv67_616_loc, i32 %conv67_515_loc, i32 %conv67_414_loc, i32 %conv67_313_loc, i32 %conv67_212_loc, i32 %conv67_111_loc, i32 %conv6710_loc"   --->   Operation 165 'call' 'call_ln0' <Predicate = true> <Delay = 1.40> <CoreType = "Generic">   --->   Generic Core
+
+State 26 <SV = 25> <Delay = 0.00>
+ST_26 : Operation 166 [1/2] (0.00ns)   --->   "%call_ln0 = call void @mul_Pipeline_CIOS_LOOP, i5 %tmp_32, i32 %b, i32 %a_load, i32 %a_load_16, i32 %a_load_17, i32 %a_load_18, i32 %a_load_19, i32 %a_load_20, i32 %a_load_21, i32 %a_load_22, i32 %a_load_23, i32 %a_load_24, i32 %a_load_25, i32 %a_load_26, i32 %a_load_27, i32 %a_load_28, i32 %a_load_29, i32 %a_load_30, i32 %mprime_read, i32 %gmem_addr_read, i32 %gmem_addr_read_16, i32 %gmem_addr_read_17, i32 %gmem_addr_read_18, i32 %gmem_addr_read_19, i32 %gmem_addr_read_20, i32 %gmem_addr_read_21, i32 %gmem_addr_read_22, i32 %gmem_addr_read_23, i32 %gmem_addr_read_24, i32 %gmem_addr_read_25, i32 %gmem_addr_read_26, i32 %gmem_addr_read_27, i32 %gmem_addr_read_28, i32 %gmem_addr_read_29, i32 %gmem_addr_read_30, i2 %conv8525_loc, i32 %p_loc, i32 %conv67_1424_loc, i32 %conv67_1323_loc, i32 %conv67_1222_loc, i32 %conv67_1121_loc, i32 %conv67_1020_loc, i32 %conv67_919_loc, i32 %conv67_818_loc, i32 %conv67_717_loc, i32 %conv67_616_loc, i32 %conv67_515_loc, i32 %conv67_414_loc, i32 %conv67_313_loc, i32 %conv67_212_loc, i32 %conv67_111_loc, i32 %conv6710_loc"   --->   Operation 166 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 27 <SV = 26> <Delay = 6.02>
+ST_27 : Operation 167 [1/1] (0.00ns)   --->   "%gmem_addr_read_cast = zext i32 %gmem_addr_read"   --->   Operation 167 'zext' 'gmem_addr_read_cast' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 168 [1/1] (0.00ns)   --->   "%gmem_addr_read_16_cast = zext i32 %gmem_addr_read_16"   --->   Operation 168 'zext' 'gmem_addr_read_16_cast' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 169 [1/1] (0.00ns)   --->   "%gmem_addr_read_17_cast = zext i32 %gmem_addr_read_17"   --->   Operation 169 'zext' 'gmem_addr_read_17_cast' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 170 [1/1] (0.00ns)   --->   "%gmem_addr_read_18_cast = zext i32 %gmem_addr_read_18"   --->   Operation 170 'zext' 'gmem_addr_read_18_cast' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 171 [1/1] (0.00ns)   --->   "%gmem_addr_read_19_cast = zext i32 %gmem_addr_read_19"   --->   Operation 171 'zext' 'gmem_addr_read_19_cast' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 172 [1/1] (0.00ns)   --->   "%gmem_addr_read_20_cast = zext i32 %gmem_addr_read_20"   --->   Operation 172 'zext' 'gmem_addr_read_20_cast' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 173 [1/1] (0.00ns)   --->   "%gmem_addr_read_21_cast = zext i32 %gmem_addr_read_21"   --->   Operation 173 'zext' 'gmem_addr_read_21_cast' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 174 [1/1] (0.00ns)   --->   "%gmem_addr_read_22_cast = zext i32 %gmem_addr_read_22"   --->   Operation 174 'zext' 'gmem_addr_read_22_cast' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 175 [1/1] (0.00ns)   --->   "%conv67_717_loc_load = load i32 %conv67_717_loc"   --->   Operation 175 'load' 'conv67_717_loc_load' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 176 [1/1] (0.00ns)   --->   "%conv67_616_loc_load = load i32 %conv67_616_loc"   --->   Operation 176 'load' 'conv67_616_loc_load' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 177 [1/1] (0.00ns)   --->   "%conv67_515_loc_load = load i32 %conv67_515_loc"   --->   Operation 177 'load' 'conv67_515_loc_load' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 178 [1/1] (0.00ns)   --->   "%conv67_414_loc_load = load i32 %conv67_414_loc"   --->   Operation 178 'load' 'conv67_414_loc_load' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 179 [1/1] (0.00ns)   --->   "%conv67_313_loc_load = load i32 %conv67_313_loc"   --->   Operation 179 'load' 'conv67_313_loc_load' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 180 [1/1] (0.00ns)   --->   "%conv67_212_loc_load = load i32 %conv67_212_loc"   --->   Operation 180 'load' 'conv67_212_loc_load' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 181 [1/1] (0.00ns)   --->   "%conv67_111_loc_load = load i32 %conv67_111_loc"   --->   Operation 181 'load' 'conv67_111_loc_load' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 182 [1/1] (0.00ns)   --->   "%conv6710_loc_load = load i32 %conv6710_loc"   --->   Operation 182 'load' 'conv6710_loc_load' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 183 [1/1] (0.00ns)   --->   "%zext_ln144 = zext i32 %conv6710_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 183 'zext' 'zext_ln144' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 184 [1/1] (0.88ns)   --->   "%d = sub i33 %zext_ln144, i33 %gmem_addr_read_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 184 'sub' 'd' <Predicate = true> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 185 [1/1] (0.00ns)   --->   "%trunc_ln146 = trunc i33 %d" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 185 'trunc' 'trunc_ln146' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 186 [1/1] (0.00ns)   --->   "%borrow = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 186 'bitselect' 'borrow' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 187 [1/1] (0.00ns)   --->   "%zext_ln140 = zext i1 %borrow" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 187 'zext' 'zext_ln140' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 188 [1/1] (0.00ns)   --->   "%zext_ln144_16 = zext i32 %conv67_111_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 188 'zext' 'zext_ln144_16' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 189 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144 = sub i33 %zext_ln144_16, i33 %gmem_addr_read_16_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 189 'sub' 'sub_ln144' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 190 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_16 = sub i33 %sub_ln144, i33 %zext_ln140" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 190 'sub' 'd_16' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 191 [1/1] (0.00ns)   --->   "%trunc_ln146_16 = trunc i33 %d_16" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 191 'trunc' 'trunc_ln146_16' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 192 [1/1] (0.00ns)   --->   "%borrow_15 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_16, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 192 'bitselect' 'borrow_15' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 193 [1/1] (0.00ns)   --->   "%zext_ln140_15 = zext i1 %borrow_15" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 193 'zext' 'zext_ln140_15' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 194 [1/1] (0.00ns)   --->   "%zext_ln144_17 = zext i32 %conv67_212_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 194 'zext' 'zext_ln144_17' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 195 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_15 = sub i33 %zext_ln144_17, i33 %gmem_addr_read_17_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 195 'sub' 'sub_ln144_15' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 196 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_17 = sub i33 %sub_ln144_15, i33 %zext_ln140_15" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 196 'sub' 'd_17' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 197 [1/1] (0.00ns)   --->   "%trunc_ln146_17 = trunc i33 %d_17" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 197 'trunc' 'trunc_ln146_17' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 198 [1/1] (0.00ns)   --->   "%borrow_16 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_17, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 198 'bitselect' 'borrow_16' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 199 [1/1] (0.00ns)   --->   "%zext_ln140_16 = zext i1 %borrow_16" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 199 'zext' 'zext_ln140_16' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 200 [1/1] (0.00ns)   --->   "%zext_ln144_18 = zext i32 %conv67_313_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 200 'zext' 'zext_ln144_18' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 201 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_16 = sub i33 %zext_ln144_18, i33 %gmem_addr_read_18_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 201 'sub' 'sub_ln144_16' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 202 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_18 = sub i33 %sub_ln144_16, i33 %zext_ln140_16" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 202 'sub' 'd_18' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 203 [1/1] (0.00ns)   --->   "%trunc_ln146_18 = trunc i33 %d_18" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 203 'trunc' 'trunc_ln146_18' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 204 [1/1] (0.00ns)   --->   "%borrow_17 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_18, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 204 'bitselect' 'borrow_17' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 205 [1/1] (0.00ns)   --->   "%zext_ln140_17 = zext i1 %borrow_17" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 205 'zext' 'zext_ln140_17' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 206 [1/1] (0.00ns)   --->   "%zext_ln144_19 = zext i32 %conv67_414_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 206 'zext' 'zext_ln144_19' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 207 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_17 = sub i33 %zext_ln144_19, i33 %gmem_addr_read_19_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 207 'sub' 'sub_ln144_17' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 208 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_19 = sub i33 %sub_ln144_17, i33 %zext_ln140_17" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 208 'sub' 'd_19' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 209 [1/1] (0.00ns)   --->   "%trunc_ln146_19 = trunc i33 %d_19" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 209 'trunc' 'trunc_ln146_19' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 210 [1/1] (0.00ns)   --->   "%borrow_18 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_19, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 210 'bitselect' 'borrow_18' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 211 [1/1] (0.00ns)   --->   "%zext_ln140_18 = zext i1 %borrow_18" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 211 'zext' 'zext_ln140_18' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 212 [1/1] (0.00ns)   --->   "%zext_ln144_20 = zext i32 %conv67_515_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 212 'zext' 'zext_ln144_20' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 213 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_18 = sub i33 %zext_ln144_20, i33 %gmem_addr_read_20_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 213 'sub' 'sub_ln144_18' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 214 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_20 = sub i33 %sub_ln144_18, i33 %zext_ln140_18" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 214 'sub' 'd_20' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 215 [1/1] (0.00ns)   --->   "%trunc_ln146_20 = trunc i33 %d_20" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 215 'trunc' 'trunc_ln146_20' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 216 [1/1] (0.00ns)   --->   "%borrow_19 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_20, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 216 'bitselect' 'borrow_19' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 217 [1/1] (0.00ns)   --->   "%zext_ln140_19 = zext i1 %borrow_19" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 217 'zext' 'zext_ln140_19' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 218 [1/1] (0.00ns)   --->   "%zext_ln144_21 = zext i32 %conv67_616_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 218 'zext' 'zext_ln144_21' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 219 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_19 = sub i33 %zext_ln144_21, i33 %gmem_addr_read_21_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 219 'sub' 'sub_ln144_19' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 220 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_21 = sub i33 %sub_ln144_19, i33 %zext_ln140_19" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 220 'sub' 'd_21' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 221 [1/1] (0.00ns)   --->   "%trunc_ln146_21 = trunc i33 %d_21" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 221 'trunc' 'trunc_ln146_21' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 222 [1/1] (0.00ns)   --->   "%borrow_20 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_21, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 222 'bitselect' 'borrow_20' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 223 [1/1] (0.00ns)   --->   "%zext_ln140_20 = zext i1 %borrow_20" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 223 'zext' 'zext_ln140_20' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 224 [1/1] (0.00ns)   --->   "%zext_ln144_22 = zext i32 %conv67_717_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 224 'zext' 'zext_ln144_22' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 225 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_20 = sub i33 %zext_ln144_22, i33 %gmem_addr_read_22_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 225 'sub' 'sub_ln144_20' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 226 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_22 = sub i33 %sub_ln144_20, i33 %zext_ln140_20" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 226 'sub' 'd_22' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_27 : Operation 227 [1/1] (0.00ns)   --->   "%trunc_ln146_22 = trunc i33 %d_22" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 227 'trunc' 'trunc_ln146_22' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 228 [1/1] (0.00ns)   --->   "%borrow_21 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_22, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 228 'bitselect' 'borrow_21' <Predicate = true> <Delay = 0.00>
+
+State 28 <SV = 27> <Delay = 6.92>
+ST_28 : Operation 229 [1/1] (0.00ns)   --->   "%c_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %c_offset"   --->   Operation 229 'read' 'c_offset_read' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 230 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 0"   --->   Operation 230 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 231 [1/1] (0.00ns)   --->   "%tmp_cast = zext i5 %tmp"   --->   Operation 231 'zext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 232 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i32 %c, i64 0, i64 %tmp_cast"   --->   Operation 232 'getelementptr' 'c_addr' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 233 [1/1] (0.00ns)   --->   "%tmp_17 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 1" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 233 'bitconcatenate' 'tmp_17' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 234 [1/1] (0.00ns)   --->   "%zext_ln158 = zext i5 %tmp_17" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 234 'zext' 'zext_ln158' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 235 [1/1] (0.00ns)   --->   "%c_addr_1 = getelementptr i32 %c, i64 0, i64 %zext_ln158" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 235 'getelementptr' 'c_addr_1' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 236 [1/1] (0.00ns)   --->   "%gmem_addr_read_23_cast = zext i32 %gmem_addr_read_23"   --->   Operation 236 'zext' 'gmem_addr_read_23_cast' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 237 [1/1] (0.00ns)   --->   "%gmem_addr_read_24_cast = zext i32 %gmem_addr_read_24"   --->   Operation 237 'zext' 'gmem_addr_read_24_cast' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 238 [1/1] (0.00ns)   --->   "%gmem_addr_read_25_cast = zext i32 %gmem_addr_read_25"   --->   Operation 238 'zext' 'gmem_addr_read_25_cast' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 239 [1/1] (0.00ns)   --->   "%gmem_addr_read_26_cast = zext i32 %gmem_addr_read_26"   --->   Operation 239 'zext' 'gmem_addr_read_26_cast' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 240 [1/1] (0.00ns)   --->   "%gmem_addr_read_27_cast = zext i32 %gmem_addr_read_27"   --->   Operation 240 'zext' 'gmem_addr_read_27_cast' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 241 [1/1] (0.00ns)   --->   "%gmem_addr_read_28_cast = zext i32 %gmem_addr_read_28"   --->   Operation 241 'zext' 'gmem_addr_read_28_cast' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 242 [1/1] (0.00ns)   --->   "%gmem_addr_read_29_cast = zext i32 %gmem_addr_read_29"   --->   Operation 242 'zext' 'gmem_addr_read_29_cast' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 243 [1/1] (0.00ns)   --->   "%zext_ln80 = zext i32 %gmem_addr_read_30" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 243 'zext' 'zext_ln80' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 244 [1/1] (0.00ns)   --->   "%conv8525_loc_load = load i2 %conv8525_loc"   --->   Operation 244 'load' 'conv8525_loc_load' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 245 [1/1] (0.00ns)   --->   "%p_loc_load = load i32 %p_loc"   --->   Operation 245 'load' 'p_loc_load' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 246 [1/1] (0.00ns)   --->   "%conv67_1424_loc_load = load i32 %conv67_1424_loc"   --->   Operation 246 'load' 'conv67_1424_loc_load' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 247 [1/1] (0.00ns)   --->   "%conv67_1323_loc_load = load i32 %conv67_1323_loc"   --->   Operation 247 'load' 'conv67_1323_loc_load' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 248 [1/1] (0.00ns)   --->   "%conv67_1222_loc_load = load i32 %conv67_1222_loc"   --->   Operation 248 'load' 'conv67_1222_loc_load' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 249 [1/1] (0.00ns)   --->   "%conv67_1121_loc_load = load i32 %conv67_1121_loc"   --->   Operation 249 'load' 'conv67_1121_loc_load' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 250 [1/1] (0.00ns)   --->   "%conv67_1020_loc_load = load i32 %conv67_1020_loc"   --->   Operation 250 'load' 'conv67_1020_loc_load' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 251 [1/1] (0.00ns)   --->   "%conv67_919_loc_load = load i32 %conv67_919_loc"   --->   Operation 251 'load' 'conv67_919_loc_load' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 252 [1/1] (0.00ns)   --->   "%conv67_818_loc_load = load i32 %conv67_818_loc"   --->   Operation 252 'load' 'conv67_818_loc_load' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 253 [1/1] (0.00ns)   --->   "%zext_ln140_21 = zext i1 %borrow_21" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 253 'zext' 'zext_ln140_21' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 254 [1/1] (0.00ns)   --->   "%zext_ln144_23 = zext i32 %conv67_818_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 254 'zext' 'zext_ln144_23' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 255 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_21 = sub i33 %zext_ln144_23, i33 %gmem_addr_read_23_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 255 'sub' 'sub_ln144_21' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 256 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_23 = sub i33 %sub_ln144_21, i33 %zext_ln140_21" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 256 'sub' 'd_23' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 257 [1/1] (0.00ns)   --->   "%trunc_ln146_23 = trunc i33 %d_23" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 257 'trunc' 'trunc_ln146_23' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 258 [1/1] (0.00ns)   --->   "%borrow_22 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_23, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 258 'bitselect' 'borrow_22' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 259 [1/1] (0.00ns)   --->   "%zext_ln140_22 = zext i1 %borrow_22" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 259 'zext' 'zext_ln140_22' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 260 [1/1] (0.00ns)   --->   "%zext_ln144_24 = zext i32 %conv67_919_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 260 'zext' 'zext_ln144_24' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 261 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_22 = sub i33 %zext_ln144_24, i33 %gmem_addr_read_24_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 261 'sub' 'sub_ln144_22' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 262 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_24 = sub i33 %sub_ln144_22, i33 %zext_ln140_22" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 262 'sub' 'd_24' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 263 [1/1] (0.00ns)   --->   "%trunc_ln146_24 = trunc i33 %d_24" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 263 'trunc' 'trunc_ln146_24' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 264 [1/1] (0.00ns)   --->   "%borrow_23 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_24, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 264 'bitselect' 'borrow_23' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 265 [1/1] (0.00ns)   --->   "%zext_ln140_23 = zext i1 %borrow_23" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 265 'zext' 'zext_ln140_23' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 266 [1/1] (0.00ns)   --->   "%zext_ln144_25 = zext i32 %conv67_1020_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 266 'zext' 'zext_ln144_25' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 267 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_23 = sub i33 %zext_ln144_25, i33 %gmem_addr_read_25_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 267 'sub' 'sub_ln144_23' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 268 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_25 = sub i33 %sub_ln144_23, i33 %zext_ln140_23" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 268 'sub' 'd_25' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 269 [1/1] (0.00ns)   --->   "%trunc_ln146_25 = trunc i33 %d_25" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 269 'trunc' 'trunc_ln146_25' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 270 [1/1] (0.00ns)   --->   "%borrow_24 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_25, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 270 'bitselect' 'borrow_24' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 271 [1/1] (0.00ns)   --->   "%zext_ln140_24 = zext i1 %borrow_24" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 271 'zext' 'zext_ln140_24' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 272 [1/1] (0.00ns)   --->   "%zext_ln144_26 = zext i32 %conv67_1121_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 272 'zext' 'zext_ln144_26' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 273 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_24 = sub i33 %zext_ln144_26, i33 %gmem_addr_read_26_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 273 'sub' 'sub_ln144_24' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 274 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_26 = sub i33 %sub_ln144_24, i33 %zext_ln140_24" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 274 'sub' 'd_26' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 275 [1/1] (0.00ns)   --->   "%trunc_ln146_26 = trunc i33 %d_26" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 275 'trunc' 'trunc_ln146_26' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 276 [1/1] (0.00ns)   --->   "%borrow_25 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_26, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 276 'bitselect' 'borrow_25' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 277 [1/1] (0.00ns)   --->   "%zext_ln140_25 = zext i1 %borrow_25" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 277 'zext' 'zext_ln140_25' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 278 [1/1] (0.00ns)   --->   "%zext_ln144_27 = zext i32 %conv67_1222_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 278 'zext' 'zext_ln144_27' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 279 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_25 = sub i33 %zext_ln144_27, i33 %gmem_addr_read_27_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 279 'sub' 'sub_ln144_25' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 280 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_27 = sub i33 %sub_ln144_25, i33 %zext_ln140_25" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 280 'sub' 'd_27' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 281 [1/1] (0.00ns)   --->   "%trunc_ln146_27 = trunc i33 %d_27" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 281 'trunc' 'trunc_ln146_27' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 282 [1/1] (0.00ns)   --->   "%borrow_26 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_27, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 282 'bitselect' 'borrow_26' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 283 [1/1] (0.00ns)   --->   "%zext_ln140_26 = zext i1 %borrow_26" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 283 'zext' 'zext_ln140_26' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 284 [1/1] (0.00ns)   --->   "%zext_ln144_28 = zext i32 %conv67_1323_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 284 'zext' 'zext_ln144_28' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 285 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_26 = sub i33 %zext_ln144_28, i33 %gmem_addr_read_28_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 285 'sub' 'sub_ln144_26' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 286 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_28 = sub i33 %sub_ln144_26, i33 %zext_ln140_26" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 286 'sub' 'd_28' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 287 [1/1] (0.00ns)   --->   "%trunc_ln146_28 = trunc i33 %d_28" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 287 'trunc' 'trunc_ln146_28' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 288 [1/1] (0.00ns)   --->   "%borrow_27 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_28, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 288 'bitselect' 'borrow_27' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 289 [1/1] (0.00ns)   --->   "%zext_ln140_27 = zext i1 %borrow_27" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 289 'zext' 'zext_ln140_27' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 290 [1/1] (0.00ns)   --->   "%zext_ln144_29 = zext i32 %conv67_1424_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 290 'zext' 'zext_ln144_29' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 291 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_27 = sub i33 %zext_ln144_29, i33 %gmem_addr_read_29_cast" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 291 'sub' 'sub_ln144_27' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 292 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_29 = sub i33 %sub_ln144_27, i33 %zext_ln140_27" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 292 'sub' 'd_29' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 293 [1/1] (0.00ns)   --->   "%trunc_ln146_29 = trunc i33 %d_29" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 293 'trunc' 'trunc_ln146_29' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 294 [1/1] (0.00ns)   --->   "%borrow_28 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_29, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:147]   --->   Operation 294 'bitselect' 'borrow_28' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 295 [1/1] (0.00ns)   --->   "%zext_ln140_28 = zext i1 %borrow_28" [../montgomery_converter/include/mont_ops_fast.hpp:140]   --->   Operation 295 'zext' 'zext_ln140_28' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 296 [1/1] (0.00ns)   --->   "%zext_ln144_30 = zext i32 %p_loc_load" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 296 'zext' 'zext_ln144_30' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 297 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln144_28 = sub i33 %zext_ln144_30, i33 %zext_ln80" [../montgomery_converter/include/mont_ops_fast.hpp:144]   --->   Operation 297 'sub' 'sub_ln144_28' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 298 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%d_30 = sub i33 %sub_ln144_28, i33 %zext_ln140_28" [../montgomery_converter/include/mont_ops_fast.hpp:145]   --->   Operation 298 'sub' 'd_30' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_28 : Operation 299 [1/1] (0.00ns)   --->   "%trunc_ln146_30 = trunc i33 %d_30" [../montgomery_converter/include/mont_ops_fast.hpp:146]   --->   Operation 299 'trunc' 'trunc_ln146_30' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 300 [1/1] (0.43ns)   --->   "%icmp_ln154 = icmp_eq  i2 %conv8525_loc_load, i2 0" [../montgomery_converter/include/mont_ops_fast.hpp:154]   --->   Operation 300 'icmp' 'icmp_ln154' <Predicate = true> <Delay = 0.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 301 [1/1] (0.00ns)   --->   "%tmp_63 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %d_30, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:154]   --->   Operation 301 'bitselect' 'tmp_63' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 302 [1/1] (0.12ns)   --->   "%keep_t = and i1 %icmp_ln154, i1 %tmp_63" [../montgomery_converter/include/mont_ops_fast.hpp:154]   --->   Operation 302 'and' 'keep_t' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 303 [1/1] (0.22ns)   --->   "%select_ln158 = select i1 %keep_t, i32 %conv6710_loc_load, i32 %trunc_ln146" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 303 'select' 'select_ln158' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 304 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158, i5 %c_addr" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 304 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_28 : Operation 305 [1/1] (0.22ns)   --->   "%select_ln158_1 = select i1 %keep_t, i32 %conv67_111_loc_load, i32 %trunc_ln146_16" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 305 'select' 'select_ln158_1' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 306 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_1, i5 %c_addr_1" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 306 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_28 : Operation 307 [1/1] (0.22ns)   --->   "%select_ln158_2 = select i1 %keep_t, i32 %conv67_212_loc_load, i32 %trunc_ln146_17" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 307 'select' 'select_ln158_2' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 308 [1/1] (0.22ns)   --->   "%select_ln158_3 = select i1 %keep_t, i32 %conv67_313_loc_load, i32 %trunc_ln146_18" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 308 'select' 'select_ln158_3' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 309 [1/1] (0.22ns)   --->   "%select_ln158_4 = select i1 %keep_t, i32 %conv67_414_loc_load, i32 %trunc_ln146_19" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 309 'select' 'select_ln158_4' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 310 [1/1] (0.22ns)   --->   "%select_ln158_5 = select i1 %keep_t, i32 %conv67_515_loc_load, i32 %trunc_ln146_20" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 310 'select' 'select_ln158_5' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 311 [1/1] (0.22ns)   --->   "%select_ln158_6 = select i1 %keep_t, i32 %conv67_616_loc_load, i32 %trunc_ln146_21" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 311 'select' 'select_ln158_6' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 312 [1/1] (0.22ns)   --->   "%select_ln158_7 = select i1 %keep_t, i32 %conv67_717_loc_load, i32 %trunc_ln146_22" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 312 'select' 'select_ln158_7' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 313 [1/1] (0.22ns)   --->   "%select_ln158_8 = select i1 %keep_t, i32 %conv67_818_loc_load, i32 %trunc_ln146_23" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 313 'select' 'select_ln158_8' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 314 [1/1] (0.22ns)   --->   "%select_ln158_9 = select i1 %keep_t, i32 %conv67_919_loc_load, i32 %trunc_ln146_24" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 314 'select' 'select_ln158_9' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 315 [1/1] (0.22ns)   --->   "%select_ln158_10 = select i1 %keep_t, i32 %conv67_1020_loc_load, i32 %trunc_ln146_25" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 315 'select' 'select_ln158_10' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 316 [1/1] (0.22ns)   --->   "%select_ln158_11 = select i1 %keep_t, i32 %conv67_1121_loc_load, i32 %trunc_ln146_26" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 316 'select' 'select_ln158_11' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 317 [1/1] (0.22ns)   --->   "%select_ln158_12 = select i1 %keep_t, i32 %conv67_1222_loc_load, i32 %trunc_ln146_27" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 317 'select' 'select_ln158_12' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 318 [1/1] (0.22ns)   --->   "%select_ln158_13 = select i1 %keep_t, i32 %conv67_1323_loc_load, i32 %trunc_ln146_28" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 318 'select' 'select_ln158_13' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 319 [1/1] (0.22ns)   --->   "%select_ln158_14 = select i1 %keep_t, i32 %conv67_1424_loc_load, i32 %trunc_ln146_29" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 319 'select' 'select_ln158_14' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_28 : Operation 320 [1/1] (0.22ns)   --->   "%select_ln158_15 = select i1 %keep_t, i32 %p_loc_load, i32 %trunc_ln146_30" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 320 'select' 'select_ln158_15' <Predicate = true> <Delay = 0.22> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 0.69>
+ST_29 : Operation 321 [1/1] (0.00ns)   --->   "%tmp_18 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 2" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 321 'bitconcatenate' 'tmp_18' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 322 [1/1] (0.00ns)   --->   "%zext_ln158_1 = zext i5 %tmp_18" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 322 'zext' 'zext_ln158_1' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 323 [1/1] (0.00ns)   --->   "%c_addr_2 = getelementptr i32 %c, i64 0, i64 %zext_ln158_1" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 323 'getelementptr' 'c_addr_2' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 324 [1/1] (0.00ns)   --->   "%tmp_19 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 3" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 324 'bitconcatenate' 'tmp_19' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 325 [1/1] (0.00ns)   --->   "%zext_ln158_2 = zext i5 %tmp_19" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 325 'zext' 'zext_ln158_2' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 326 [1/1] (0.00ns)   --->   "%c_addr_3 = getelementptr i32 %c, i64 0, i64 %zext_ln158_2" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 326 'getelementptr' 'c_addr_3' <Predicate = true> <Delay = 0.00>
+ST_29 : Operation 327 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_2, i5 %c_addr_2" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 327 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_29 : Operation 328 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_3, i5 %c_addr_3" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 328 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 30 <SV = 29> <Delay = 0.69>
+ST_30 : Operation 329 [1/1] (0.00ns)   --->   "%tmp_20 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 4" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 329 'bitconcatenate' 'tmp_20' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 330 [1/1] (0.00ns)   --->   "%zext_ln158_3 = zext i5 %tmp_20" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 330 'zext' 'zext_ln158_3' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 331 [1/1] (0.00ns)   --->   "%c_addr_4 = getelementptr i32 %c, i64 0, i64 %zext_ln158_3" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 331 'getelementptr' 'c_addr_4' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 332 [1/1] (0.00ns)   --->   "%tmp_21 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 5" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 332 'bitconcatenate' 'tmp_21' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 333 [1/1] (0.00ns)   --->   "%zext_ln158_4 = zext i5 %tmp_21" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 333 'zext' 'zext_ln158_4' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 334 [1/1] (0.00ns)   --->   "%c_addr_5 = getelementptr i32 %c, i64 0, i64 %zext_ln158_4" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 334 'getelementptr' 'c_addr_5' <Predicate = true> <Delay = 0.00>
+ST_30 : Operation 335 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_4, i5 %c_addr_4" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 335 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_30 : Operation 336 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_5, i5 %c_addr_5" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 336 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 31 <SV = 30> <Delay = 0.69>
+ST_31 : Operation 337 [1/1] (0.00ns)   --->   "%tmp_22 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 6" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 337 'bitconcatenate' 'tmp_22' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 338 [1/1] (0.00ns)   --->   "%zext_ln158_5 = zext i5 %tmp_22" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 338 'zext' 'zext_ln158_5' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 339 [1/1] (0.00ns)   --->   "%c_addr_6 = getelementptr i32 %c, i64 0, i64 %zext_ln158_5" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 339 'getelementptr' 'c_addr_6' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 340 [1/1] (0.00ns)   --->   "%tmp_23 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 7" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 340 'bitconcatenate' 'tmp_23' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 341 [1/1] (0.00ns)   --->   "%zext_ln158_6 = zext i5 %tmp_23" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 341 'zext' 'zext_ln158_6' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 342 [1/1] (0.00ns)   --->   "%c_addr_7 = getelementptr i32 %c, i64 0, i64 %zext_ln158_6" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 342 'getelementptr' 'c_addr_7' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 343 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_6, i5 %c_addr_6" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 343 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_31 : Operation 344 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_7, i5 %c_addr_7" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 344 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 32 <SV = 31> <Delay = 0.69>
+ST_32 : Operation 345 [1/1] (0.00ns)   --->   "%tmp_24 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 8" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 345 'bitconcatenate' 'tmp_24' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 346 [1/1] (0.00ns)   --->   "%zext_ln158_7 = zext i5 %tmp_24" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 346 'zext' 'zext_ln158_7' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 347 [1/1] (0.00ns)   --->   "%c_addr_8 = getelementptr i32 %c, i64 0, i64 %zext_ln158_7" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 347 'getelementptr' 'c_addr_8' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 348 [1/1] (0.00ns)   --->   "%tmp_25 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 9" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 348 'bitconcatenate' 'tmp_25' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 349 [1/1] (0.00ns)   --->   "%zext_ln158_8 = zext i5 %tmp_25" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 349 'zext' 'zext_ln158_8' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 350 [1/1] (0.00ns)   --->   "%c_addr_9 = getelementptr i32 %c, i64 0, i64 %zext_ln158_8" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 350 'getelementptr' 'c_addr_9' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 351 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_8, i5 %c_addr_8" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 351 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_32 : Operation 352 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_9, i5 %c_addr_9" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 352 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 33 <SV = 32> <Delay = 0.69>
+ST_33 : Operation 353 [1/1] (0.00ns)   --->   "%tmp_26 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 10" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 353 'bitconcatenate' 'tmp_26' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 354 [1/1] (0.00ns)   --->   "%zext_ln158_9 = zext i5 %tmp_26" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 354 'zext' 'zext_ln158_9' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 355 [1/1] (0.00ns)   --->   "%c_addr_10 = getelementptr i32 %c, i64 0, i64 %zext_ln158_9" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 355 'getelementptr' 'c_addr_10' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 356 [1/1] (0.00ns)   --->   "%tmp_27 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 11" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 356 'bitconcatenate' 'tmp_27' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 357 [1/1] (0.00ns)   --->   "%zext_ln158_10 = zext i5 %tmp_27" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 357 'zext' 'zext_ln158_10' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 358 [1/1] (0.00ns)   --->   "%c_addr_11 = getelementptr i32 %c, i64 0, i64 %zext_ln158_10" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 358 'getelementptr' 'c_addr_11' <Predicate = true> <Delay = 0.00>
+ST_33 : Operation 359 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_10, i5 %c_addr_10" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 359 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_33 : Operation 360 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_11, i5 %c_addr_11" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 360 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 34 <SV = 33> <Delay = 0.69>
+ST_34 : Operation 361 [1/1] (0.00ns)   --->   "%tmp_28 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 12" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 361 'bitconcatenate' 'tmp_28' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 362 [1/1] (0.00ns)   --->   "%zext_ln158_11 = zext i5 %tmp_28" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 362 'zext' 'zext_ln158_11' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 363 [1/1] (0.00ns)   --->   "%c_addr_12 = getelementptr i32 %c, i64 0, i64 %zext_ln158_11" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 363 'getelementptr' 'c_addr_12' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 364 [1/1] (0.00ns)   --->   "%tmp_29 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 13" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 364 'bitconcatenate' 'tmp_29' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 365 [1/1] (0.00ns)   --->   "%zext_ln158_12 = zext i5 %tmp_29" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 365 'zext' 'zext_ln158_12' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 366 [1/1] (0.00ns)   --->   "%c_addr_13 = getelementptr i32 %c, i64 0, i64 %zext_ln158_12" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 366 'getelementptr' 'c_addr_13' <Predicate = true> <Delay = 0.00>
+ST_34 : Operation 367 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_12, i5 %c_addr_12" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 367 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_34 : Operation 368 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_13, i5 %c_addr_13" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 368 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+
+State 35 <SV = 34> <Delay = 0.69>
+ST_35 : Operation 369 [1/1] (0.00ns)   --->   "%tmp_30 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 14" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 369 'bitconcatenate' 'tmp_30' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 370 [1/1] (0.00ns)   --->   "%zext_ln158_13 = zext i5 %tmp_30" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 370 'zext' 'zext_ln158_13' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 371 [1/1] (0.00ns)   --->   "%c_addr_14 = getelementptr i32 %c, i64 0, i64 %zext_ln158_13" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 371 'getelementptr' 'c_addr_14' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 372 [1/1] (0.00ns)   --->   "%tmp_31 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i1.i4, i1 %c_offset_read, i4 15" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 372 'bitconcatenate' 'tmp_31' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 373 [1/1] (0.00ns)   --->   "%zext_ln158_14 = zext i5 %tmp_31" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 373 'zext' 'zext_ln158_14' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 374 [1/1] (0.00ns)   --->   "%c_addr_15 = getelementptr i32 %c, i64 0, i64 %zext_ln158_14" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 374 'getelementptr' 'c_addr_15' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 375 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_0, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_2, void @empty_3, void @empty_1, i32 16, i32 16, i32 16, i32 16, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 375 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 376 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_14, i5 %c_addr_14" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 376 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_35 : Operation 377 [1/1] ( I:0.69ns O:0.69ns )   --->   "%store_ln158 = store i32 %select_ln158_15, i5 %c_addr_15" [../montgomery_converter/include/mont_ops_fast.hpp:158]   --->   Operation 377 'store' 'store_ln158' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_35 : Operation 378 [1/1] (0.00ns)   --->   "%ret_ln160 = ret" [../montgomery_converter/include/mont_ops_fast.hpp:160]   --->   Operation 378 'ret' 'ret_ln160' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 7.300ns
+The critical path consists of the following:
+	wire read operation ('mod_read') on port 'mod_r' [11]  (0.000 ns)
+	'getelementptr' operation 32 bit ('gmem_addr') [132]  (0.000 ns)
+	bus request operation ('empty') on port 'gmem' [133]  (7.300 ns)
+
+ <State 2>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty') on port 'gmem' [133]  (7.300 ns)
+
+ <State 3>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty') on port 'gmem' [133]  (7.300 ns)
+
+ <State 4>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty') on port 'gmem' [133]  (7.300 ns)
+
+ <State 5>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty') on port 'gmem' [133]  (7.300 ns)
+
+ <State 6>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty') on port 'gmem' [133]  (7.300 ns)
+
+ <State 7>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty') on port 'gmem' [133]  (7.300 ns)
+
+ <State 8>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty') on port 'gmem' [133]  (7.300 ns)
+
+ <State 9>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read') on port 'gmem' [134]  (7.300 ns)
+
+ <State 10>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_16') on port 'gmem' [135]  (7.300 ns)
+
+ <State 11>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_17') on port 'gmem' [136]  (7.300 ns)
+
+ <State 12>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_18') on port 'gmem' [137]  (7.300 ns)
+
+ <State 13>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_19') on port 'gmem' [138]  (7.300 ns)
+
+ <State 14>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_20') on port 'gmem' [139]  (7.300 ns)
+
+ <State 15>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_21') on port 'gmem' [140]  (7.300 ns)
+
+ <State 16>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_22') on port 'gmem' [141]  (7.300 ns)
+
+ <State 17>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_23') on port 'gmem' [142]  (7.300 ns)
+
+ <State 18>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_24') on port 'gmem' [143]  (7.300 ns)
+
+ <State 19>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_25') on port 'gmem' [144]  (7.300 ns)
+
+ <State 20>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_26') on port 'gmem' [145]  (7.300 ns)
+
+ <State 21>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_27') on port 'gmem' [146]  (7.300 ns)
+
+ <State 22>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_28') on port 'gmem' [147]  (7.300 ns)
+
+ <State 23>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_29') on port 'gmem' [148]  (7.300 ns)
+
+ <State 24>: 7.300ns
+The critical path consists of the following:
+	bus read operation ('gmem_addr_read_30') on port 'gmem' [149]  (7.300 ns)
+
+ <State 25>: 2.105ns
+The critical path consists of the following:
+	'load' operation 32 bit ('a_load_29') on array 'a' [165]  (0.699 ns)
+	'call' operation 0 bit ('call_ln0') to 'mul_Pipeline_CIOS_LOOP' [182]  (1.406 ns)
+
+ <State 26>: 0.000ns
+The critical path consists of the following:
+
+ <State 27>: 6.021ns
+The critical path consists of the following:
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:144) [201]  (0.880 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [207]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [213]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [219]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [225]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [231]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [237]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [243]  (0.734 ns)
+
+ <State 28>: 6.924ns
+The critical path consists of the following:
+	'sub' operation 33 bit ('sub_ln144_21', ../montgomery_converter/include/mont_ops_fast.hpp:144) [248]  (0.000 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [249]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [255]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [261]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [267]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [273]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [279]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [285]  (0.734 ns)
+	'sub' operation 33 bit ('d', ../montgomery_converter/include/mont_ops_fast.hpp:145) [291]  (0.734 ns)
+	'and' operation 1 bit ('keep_t', ../montgomery_converter/include/mont_ops_fast.hpp:154) [295]  (0.122 ns)
+	'select' operation 32 bit ('select_ln158', ../montgomery_converter/include/mont_ops_fast.hpp:158) [296]  (0.227 ns)
+	'store' operation 0 bit ('store_ln158', ../montgomery_converter/include/mont_ops_fast.hpp:158) of variable 'select_ln158', ../montgomery_converter/include/mont_ops_fast.hpp:158 on array 'c' [297]  (0.699 ns)
+
+ <State 29>: 0.699ns
+The critical path consists of the following:
+	'getelementptr' operation 5 bit ('c_addr_2', ../montgomery_converter/include/mont_ops_fast.hpp:158) [40]  (0.000 ns)
+	'store' operation 0 bit ('store_ln158', ../montgomery_converter/include/mont_ops_fast.hpp:158) of variable 'select_ln158_2', ../montgomery_converter/include/mont_ops_fast.hpp:158 on array 'c' [301]  (0.699 ns)
+
+ <State 30>: 0.699ns
+The critical path consists of the following:
+	'getelementptr' operation 5 bit ('c_addr_4', ../montgomery_converter/include/mont_ops_fast.hpp:158) [46]  (0.000 ns)
+	'store' operation 0 bit ('store_ln158', ../montgomery_converter/include/mont_ops_fast.hpp:158) of variable 'select_ln158_4', ../montgomery_converter/include/mont_ops_fast.hpp:158 on array 'c' [305]  (0.699 ns)
+
+ <State 31>: 0.699ns
+The critical path consists of the following:
+	'getelementptr' operation 5 bit ('c_addr_6', ../montgomery_converter/include/mont_ops_fast.hpp:158) [52]  (0.000 ns)
+	'store' operation 0 bit ('store_ln158', ../montgomery_converter/include/mont_ops_fast.hpp:158) of variable 'select_ln158_6', ../montgomery_converter/include/mont_ops_fast.hpp:158 on array 'c' [309]  (0.699 ns)
+
+ <State 32>: 0.699ns
+The critical path consists of the following:
+	'getelementptr' operation 5 bit ('c_addr_8', ../montgomery_converter/include/mont_ops_fast.hpp:158) [58]  (0.000 ns)
+	'store' operation 0 bit ('store_ln158', ../montgomery_converter/include/mont_ops_fast.hpp:158) of variable 'select_ln158_8', ../montgomery_converter/include/mont_ops_fast.hpp:158 on array 'c' [313]  (0.699 ns)
+
+ <State 33>: 0.699ns
+The critical path consists of the following:
+	'getelementptr' operation 5 bit ('c_addr_10', ../montgomery_converter/include/mont_ops_fast.hpp:158) [64]  (0.000 ns)
+	'store' operation 0 bit ('store_ln158', ../montgomery_converter/include/mont_ops_fast.hpp:158) of variable 'select_ln158_10', ../montgomery_converter/include/mont_ops_fast.hpp:158 on array 'c' [317]  (0.699 ns)
+
+ <State 34>: 0.699ns
+The critical path consists of the following:
+	'getelementptr' operation 5 bit ('c_addr_12', ../montgomery_converter/include/mont_ops_fast.hpp:158) [70]  (0.000 ns)
+	'store' operation 0 bit ('store_ln158', ../montgomery_converter/include/mont_ops_fast.hpp:158) of variable 'select_ln158_12', ../montgomery_converter/include/mont_ops_fast.hpp:158 on array 'c' [321]  (0.699 ns)
+
+ <State 35>: 0.699ns
+The critical path consists of the following:
+	'getelementptr' operation 5 bit ('c_addr_14', ../montgomery_converter/include/mont_ops_fast.hpp:158) [76]  (0.000 ns)
+	'store' operation 0 bit ('store_ln158', ../montgomery_converter/include/mont_ops_fast.hpp:158) of variable 'select_ln158_14', ../montgomery_converter/include/mont_ops_fast.hpp:158 on array 'c' [325]  (0.699 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

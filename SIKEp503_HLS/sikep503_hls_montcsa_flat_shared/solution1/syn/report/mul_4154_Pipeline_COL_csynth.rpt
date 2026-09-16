@@ -1,0 +1,222 @@
+
+
+================================================================
+== Vitis HLS Report for 'mul_4154_Pipeline_COL'
+================================================================
+* Date:           Mon Sep 14 16:37:52 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_montcsa_flat_shared
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.028 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       10|       10|  0.100 us|  0.100 us|    9|    9|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- COL     |        8|        8|         2|          1|          1|     8|       yes|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        0|      257|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|     16|        0|      110|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        0|      180|     -|
+|Register             |        -|      -|      139|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|     16|      139|      547|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|     ~0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|     ~0|       ~0|       ~0|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+    |           Instance          |         Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+    |mul_64ns_64ns_128_1_1_U2148  |mul_64ns_64ns_128_1_1  |        0|  16|  0|  45|    0|
+    |sparsemux_31_4_64_1_1_U2149  |sparsemux_31_4_64_1_1  |        0|   0|  0|  65|    0|
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+    |Total                        |                       |        0|  16|  0| 110|    0|
+    +-----------------------------+-----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+----+---+-----+------------+------------+
+    |    Variable Name    | Operation| DSP| FF| LUT | Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+----+---+-----+------------+------------+
+    |add_ln67_fu_380_p2   |         +|   0|  0|   12|           4|           1|
+    |add_ln69_fu_386_p2   |         +|   0|  0|   12|           4|           4|
+    |add_ln70_fu_397_p2   |         +|   0|  0|   12|           4|           4|
+    |add_ln71_fu_491_p2   |         +|   0|  0|   72|          65|          65|
+    |pp_fu_501_p2         |         +|   0|  0|  135|         128|         128|
+    |icmp_ln67_fu_374_p2  |      icmp|   0|  0|   12|           4|           5|
+    |ap_enable_pp0        |       xor|   0|  0|    2|           1|           2|
+    +---------------------+----------+----+---+-----+------------+------------+
+    |Total                |          |   0|  0|  257|         210|         209|
+    +---------------------+----------+----+---+-----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |acc_10_o                 |   9|          2|   64|        128|
+    |acc_11_o                 |   9|          2|   64|        128|
+    |acc_12_o                 |   9|          2|   64|        128|
+    |acc_13_o                 |   9|          2|   64|        128|
+    |acc_14_o                 |   9|          2|   64|        128|
+    |acc_1_o                  |   9|          2|   64|        128|
+    |acc_2_o                  |   9|          2|   64|        128|
+    |acc_3_o                  |   9|          2|   64|        128|
+    |acc_4_o                  |   9|          2|   64|        128|
+    |acc_5_o                  |   9|          2|   64|        128|
+    |acc_6_o                  |   9|          2|   64|        128|
+    |acc_7_o                  |   9|          2|   64|        128|
+    |acc_8_o                  |   9|          2|   64|        128|
+    |acc_9_o                  |   9|          2|   64|        128|
+    |acc_o                    |   9|          2|   64|        128|
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j_10    |   9|          2|    4|          8|
+    |carry_384_fu_108         |   9|          2|   64|        128|
+    |j_fu_112                 |   9|          2|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    | 180|         40| 1034|       2068|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |add_ln70_reg_573         |   4|   0|    4|          0|
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |carry_384_fu_108         |  64|   0|   64|          0|
+    |conv_cast_reg_560        |  64|   0|  128|         64|
+    |j_fu_112                 |   4|   0|    4|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 139|   0|  203|         64|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+-----------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++----------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  mul.4154_Pipeline_COL|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  mul.4154_Pipeline_COL|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  mul.4154_Pipeline_COL|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  mul.4154_Pipeline_COL|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  mul.4154_Pipeline_COL|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  mul.4154_Pipeline_COL|  return value|
+|acc_i                 |   in|   64|     ap_ovld|                    acc|       pointer|
+|acc_o                 |  out|   64|     ap_ovld|                    acc|       pointer|
+|acc_o_ap_vld          |  out|    1|     ap_ovld|                    acc|       pointer|
+|zext_ln69_4           |   in|    4|     ap_none|            zext_ln69_4|        scalar|
+|b_address0            |  out|    4|   ap_memory|                      b|         array|
+|b_ce0                 |  out|    1|   ap_memory|                      b|         array|
+|b_q0                  |   in|   64|   ap_memory|                      b|         array|
+|acc_14_i              |   in|   64|     ap_ovld|                 acc_14|       pointer|
+|acc_14_o              |  out|   64|     ap_ovld|                 acc_14|       pointer|
+|acc_14_o_ap_vld       |  out|    1|     ap_ovld|                 acc_14|       pointer|
+|acc_13_i              |   in|   64|     ap_ovld|                 acc_13|       pointer|
+|acc_13_o              |  out|   64|     ap_ovld|                 acc_13|       pointer|
+|acc_13_o_ap_vld       |  out|    1|     ap_ovld|                 acc_13|       pointer|
+|acc_12_i              |   in|   64|     ap_ovld|                 acc_12|       pointer|
+|acc_12_o              |  out|   64|     ap_ovld|                 acc_12|       pointer|
+|acc_12_o_ap_vld       |  out|    1|     ap_ovld|                 acc_12|       pointer|
+|acc_11_i              |   in|   64|     ap_ovld|                 acc_11|       pointer|
+|acc_11_o              |  out|   64|     ap_ovld|                 acc_11|       pointer|
+|acc_11_o_ap_vld       |  out|    1|     ap_ovld|                 acc_11|       pointer|
+|acc_10_i              |   in|   64|     ap_ovld|                 acc_10|       pointer|
+|acc_10_o              |  out|   64|     ap_ovld|                 acc_10|       pointer|
+|acc_10_o_ap_vld       |  out|    1|     ap_ovld|                 acc_10|       pointer|
+|acc_9_i               |   in|   64|     ap_ovld|                  acc_9|       pointer|
+|acc_9_o               |  out|   64|     ap_ovld|                  acc_9|       pointer|
+|acc_9_o_ap_vld        |  out|    1|     ap_ovld|                  acc_9|       pointer|
+|acc_8_i               |   in|   64|     ap_ovld|                  acc_8|       pointer|
+|acc_8_o               |  out|   64|     ap_ovld|                  acc_8|       pointer|
+|acc_8_o_ap_vld        |  out|    1|     ap_ovld|                  acc_8|       pointer|
+|acc_7_i               |   in|   64|     ap_ovld|                  acc_7|       pointer|
+|acc_7_o               |  out|   64|     ap_ovld|                  acc_7|       pointer|
+|acc_7_o_ap_vld        |  out|    1|     ap_ovld|                  acc_7|       pointer|
+|acc_6_i               |   in|   64|     ap_ovld|                  acc_6|       pointer|
+|acc_6_o               |  out|   64|     ap_ovld|                  acc_6|       pointer|
+|acc_6_o_ap_vld        |  out|    1|     ap_ovld|                  acc_6|       pointer|
+|acc_5_i               |   in|   64|     ap_ovld|                  acc_5|       pointer|
+|acc_5_o               |  out|   64|     ap_ovld|                  acc_5|       pointer|
+|acc_5_o_ap_vld        |  out|    1|     ap_ovld|                  acc_5|       pointer|
+|acc_4_i               |   in|   64|     ap_ovld|                  acc_4|       pointer|
+|acc_4_o               |  out|   64|     ap_ovld|                  acc_4|       pointer|
+|acc_4_o_ap_vld        |  out|    1|     ap_ovld|                  acc_4|       pointer|
+|acc_3_i               |   in|   64|     ap_ovld|                  acc_3|       pointer|
+|acc_3_o               |  out|   64|     ap_ovld|                  acc_3|       pointer|
+|acc_3_o_ap_vld        |  out|    1|     ap_ovld|                  acc_3|       pointer|
+|acc_2_i               |   in|   64|     ap_ovld|                  acc_2|       pointer|
+|acc_2_o               |  out|   64|     ap_ovld|                  acc_2|       pointer|
+|acc_2_o_ap_vld        |  out|    1|     ap_ovld|                  acc_2|       pointer|
+|acc_1_i               |   in|   64|     ap_ovld|                  acc_1|       pointer|
+|acc_1_o               |  out|   64|     ap_ovld|                  acc_1|       pointer|
+|acc_1_o_ap_vld        |  out|    1|     ap_ovld|                  acc_1|       pointer|
+|i                     |   in|    3|     ap_none|                      i|        scalar|
+|conv                  |   in|   64|     ap_none|                   conv|        scalar|
+|carry_593_out         |  out|   64|      ap_vld|          carry_593_out|       pointer|
+|carry_593_out_ap_vld  |  out|    1|      ap_vld|          carry_593_out|       pointer|
++----------------------+-----+-----+------------+-----------------------+--------------+
+

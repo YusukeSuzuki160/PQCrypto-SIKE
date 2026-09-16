@@ -1,0 +1,86 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "2 4 4 1",
+    "file": "rsa_modexp_hw.cpp",
+    "fileloc": 10,
+    "instructions": 410,
+    "loads": {
+      "L": 51
+    },
+    "name": "rsa_modexp_hw",
+    "stores": {
+      "L": 40
+    },
+    "total_instructions": 22154
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "mont_word.cpp",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "montMult_words",
+    "total_instructions": 5435
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "mont_word.cpp",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "montMult_words",
+    "total_instructions": 5447
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mont_ops_fios_csa_flat.hpp",
+    "fileloc": 47,
+    "instructions": 5445,
+    "loads": {
+      "L": 32
+    },
+    "name": "mul",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 5445
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "mont_word.cpp",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "montMult_words",
+    "total_instructions": 5431
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mont_ops_fios_csa_flat.hpp",
+    "fileloc": 47,
+    "instructions": 5429,
+    "loads": {
+      "L": 32
+    },
+    "name": "mul",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 5429
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mont_ops_fios_csa_flat.hpp",
+    "fileloc": 47,
+    "instructions": 5433,
+    "loads": {
+      "L": 32
+    },
+    "name": "mul",
+    "total_instructions": 5433
+  }
+}

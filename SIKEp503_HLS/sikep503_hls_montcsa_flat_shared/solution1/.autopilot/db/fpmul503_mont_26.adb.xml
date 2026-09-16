@@ -1,0 +1,114 @@
+<stg><name>fpmul503_mont.26</name>
+
+
+<trans_list>
+
+<trans id="6" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<![CDATA[
+entry:0 %call_ln77 = call void @mul.25, i64 %ma, i64 %mb_0, i64 %mb_1, i64 %mc
+
+]]></Node>
+<StgValue><ssdm name="call_ln77"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="4" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64" op_4_bw="64">
+<![CDATA[
+entry:0 %call_ln77 = call void @mul.25, i64 %ma, i64 %mb_0, i64 %mb_1, i64 %mc
+
+]]></Node>
+<StgValue><ssdm name="call_ln77"/></StgValue>
+</operation>
+
+<operation id="5" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0">
+<![CDATA[
+entry:1 %ret_ln79 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln79"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="7" name="ma" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="ma"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="8" name="mb_0" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mb_0"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="9" name="mb_1" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mb_1"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="10" name="mc" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mc"/><MemPortTyVec>0 0 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="12" from="mul.25" to="call_ln77" fromId="11" toId="3">
+</dataflow>
+<dataflow id="13" from="ma" to="call_ln77" fromId="7" toId="3">
+</dataflow>
+<dataflow id="14" from="mb_0" to="call_ln77" fromId="8" toId="3">
+</dataflow>
+<dataflow id="15" from="mb_1" to="call_ln77" fromId="9" toId="3">
+</dataflow>
+<dataflow id="16" from="mc" to="call_ln77" fromId="10" toId="3">
+</dataflow>
+<dataflow id="17" from="mul.25" to="call_ln77" fromId="11" toId="4">
+</dataflow>
+<dataflow id="18" from="ma" to="call_ln77" fromId="7" toId="4">
+</dataflow>
+<dataflow id="19" from="mb_0" to="call_ln77" fromId="8" toId="4">
+</dataflow>
+<dataflow id="20" from="mb_1" to="call_ln77" fromId="9" toId="4">
+</dataflow>
+<dataflow id="21" from="mc" to="call_ln77" fromId="10" toId="4">
+</dataflow>
+</dataflows>
+
+
+</stg>

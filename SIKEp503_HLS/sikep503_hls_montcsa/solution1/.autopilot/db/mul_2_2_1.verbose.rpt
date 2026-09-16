@@ -1,0 +1,1134 @@
+
+
+================================================================
+== Vitis HLS Report for 'mul_2_2_1'
+================================================================
+* Date:           Thu Sep 10 18:13:40 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_montcsa
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.152 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       40|       40|  0.400 us|  0.400 us|   40|   40|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------+-------------+---------+---------+----------+----------+-----+-----+---------+
+        |                       |             |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |        Instance       |    Module   |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-----------------------+-------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_square_full_fu_18  |square_full  |       12|       12|  0.120 us|  0.120 us|    8|    8|      yes|
+        |grp_redc_fu_24         |redc         |       24|       24|  0.240 us|  0.240 us|    8|    8|      yes|
+        +-----------------------+-------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+------+
+|         Name        | BRAM_18K|  DSP  |    FF   |   LUT   | URAM |
++---------------------+---------+-------+---------+---------+------+
+|DSP                  |        -|      -|        -|        -|     -|
+|Expression           |        -|      -|        -|        -|     -|
+|FIFO                 |        -|      -|        -|        -|     -|
+|Instance             |        -|    172|    15278|    24325|     -|
+|Memory               |        -|      -|        -|        -|     -|
+|Multiplexer          |        -|      -|        0|      185|     -|
+|Register             |        -|      -|     1067|        -|     -|
++---------------------+---------+-------+---------+---------+------+
+|Total                |        0|    172|    16345|    24510|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available SLR        |     1344|   3072|   864000|   432000|   320|
++---------------------+---------+-------+---------+---------+------+
+|Utilization SLR (%)  |        0|      5|        1|        5|     0|
++---------------------+---------+-------+---------+---------+------+
+|Available            |     5376|  12288|  3456000|  1728000|  1280|
++---------------------+---------+-------+---------+---------+------+
+|Utilization (%)      |        0|      1|       ~0|        1|     0|
++---------------------+---------+-------+---------+---------+------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------+-------------+---------+----+------+-------+-----+
+    |        Instance       |    Module   | BRAM_18K| DSP|  FF  |  LUT  | URAM|
+    +-----------------------+-------------+---------+----+------+-------+-----+
+    |grp_redc_fu_24         |redc         |        0|  92|  9784|  17437|    0|
+    |grp_square_full_fu_18  |square_full  |        0|  80|  5494|   6888|    0|
+    +-----------------------+-------------+---------+----+------+-------+-----+
+    |Total                  |             |        0| 172| 15278|  24325|    0|
+    +-----------------------+-------------+---------+----+------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------+-----+-----------+-----+-----------+
+    |    Name   | LUT | Input Size| Bits| Total Bits|
+    +-----------+-----+-----------+-----+-----------+
+    |ap_NS_fsm  |  185|         42|    1|         42|
+    +-----------+-----+-----------+-----+-----------+
+    |Total      |  185|         42|    1|         42|
+    +-----------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------+----+----+-----+-----------+
+    |                Name                | FF | LUT| Bits| Const Bits|
+    +------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                           |  41|   0|   41|          0|
+    |grp_redc_fu_24_ap_start_reg         |   1|   0|    1|          0|
+    |grp_square_full_fu_18_ap_start_reg  |   1|   0|    1|          0|
+    |prod_10_reg_160                     |  64|   0|   64|          0|
+    |prod_11_reg_165                     |  64|   0|   64|          0|
+    |prod_12_reg_170                     |  64|   0|   64|          0|
+    |prod_13_reg_175                     |  64|   0|   64|          0|
+    |prod_14_reg_180                     |  64|   0|   64|          0|
+    |prod_15_reg_185                     |  64|   0|   64|          0|
+    |prod_1_reg_115                      |  64|   0|   64|          0|
+    |prod_2_reg_120                      |  64|   0|   64|          0|
+    |prod_3_reg_125                      |  64|   0|   64|          0|
+    |prod_4_reg_130                      |  64|   0|   64|          0|
+    |prod_5_reg_135                      |  64|   0|   64|          0|
+    |prod_6_reg_140                      |  64|   0|   64|          0|
+    |prod_7_reg_145                      |  64|   0|   64|          0|
+    |prod_8_reg_150                      |  64|   0|   64|          0|
+    |prod_9_reg_155                      |  64|   0|   64|          0|
+    |prod_reg_110                        |  64|   0|   64|          0|
+    +------------------------------------+----+----+-----+-----------+
+    |Total                               |1067|   0| 1067|          0|
+    +------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------+-----+-----+------------+--------------+--------------+
+|  RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------+-----+-----+------------+--------------+--------------+
+|ap_clk      |   in|    1|  ap_ctrl_hs|     mul.2.2.1|  return value|
+|ap_rst      |   in|    1|  ap_ctrl_hs|     mul.2.2.1|  return value|
+|ap_start    |   in|    1|  ap_ctrl_hs|     mul.2.2.1|  return value|
+|ap_done     |  out|    1|  ap_ctrl_hs|     mul.2.2.1|  return value|
+|ap_idle     |  out|    1|  ap_ctrl_hs|     mul.2.2.1|  return value|
+|ap_ready    |  out|    1|  ap_ctrl_hs|     mul.2.2.1|  return value|
+|a_address0  |  out|    3|   ap_memory|             a|         array|
+|a_ce0       |  out|    1|   ap_memory|             a|         array|
+|a_q0        |   in|   64|   ap_memory|             a|         array|
+|c_address0  |  out|    3|   ap_memory|             c|         array|
+|c_ce0       |  out|    1|   ap_memory|             c|         array|
+|c_we0       |  out|    1|   ap_memory|             c|         array|
+|c_d0        |  out|   64|   ap_memory|             c|         array|
++------------+-----+-----+------------+--------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 41
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 42 [13/13] (0.00ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 42 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 7.15>
+ST_5 : Operation 43 [12/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 43 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 7.15>
+ST_6 : Operation 44 [11/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 44 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 7.15>
+ST_7 : Operation 45 [10/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 45 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 7.15>
+ST_8 : Operation 46 [9/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 46 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 9 <SV = 8> <Delay = 7.15>
+ST_9 : Operation 47 [8/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 47 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 7.15>
+ST_10 : Operation 48 [7/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 48 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 7.15>
+ST_11 : Operation 49 [6/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 49 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 7.15>
+ST_12 : Operation 50 [5/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 50 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 7.15>
+ST_13 : Operation 51 [4/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 51 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 7.15>
+ST_14 : Operation 52 [3/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 52 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 7.15>
+ST_15 : Operation 53 [2/13] (7.15ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 53 'call' 'call_ret' <Predicate = true> <Delay = 7.15> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 1.14>
+ST_16 : Operation 54 [1/13] (1.14ns)   --->   "%call_ret = call i1024 @square_full, i64 %a" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 54 'call' 'call_ret' <Predicate = true> <Delay = 1.14> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 55 [1/1] (0.00ns)   --->   "%prod = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 55 'extractvalue' 'prod' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 56 [1/1] (0.00ns)   --->   "%prod_1 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 56 'extractvalue' 'prod_1' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 57 [1/1] (0.00ns)   --->   "%prod_2 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 57 'extractvalue' 'prod_2' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 58 [1/1] (0.00ns)   --->   "%prod_3 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 58 'extractvalue' 'prod_3' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 59 [1/1] (0.00ns)   --->   "%prod_4 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 59 'extractvalue' 'prod_4' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 60 [1/1] (0.00ns)   --->   "%prod_5 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 60 'extractvalue' 'prod_5' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 61 [1/1] (0.00ns)   --->   "%prod_6 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 61 'extractvalue' 'prod_6' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 62 [1/1] (0.00ns)   --->   "%prod_7 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 62 'extractvalue' 'prod_7' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 63 [1/1] (0.00ns)   --->   "%prod_8 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 63 'extractvalue' 'prod_8' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 64 [1/1] (0.00ns)   --->   "%prod_9 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 64 'extractvalue' 'prod_9' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 65 [1/1] (0.00ns)   --->   "%prod_10 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 65 'extractvalue' 'prod_10' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 66 [1/1] (0.00ns)   --->   "%prod_11 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 66 'extractvalue' 'prod_11' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 67 [1/1] (0.00ns)   --->   "%prod_12 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 67 'extractvalue' 'prod_12' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 68 [1/1] (0.00ns)   --->   "%prod_13 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 68 'extractvalue' 'prod_13' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 69 [1/1] (0.00ns)   --->   "%prod_14 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 69 'extractvalue' 'prod_14' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 70 [1/1] (0.00ns)   --->   "%prod_15 = extractvalue i1024 %call_ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:150]   --->   Operation 70 'extractvalue' 'prod_15' <Predicate = true> <Delay = 0.00>
+
+State 17 <SV = 16> <Delay = 7.11>
+ST_17 : Operation 71 [25/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 71 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 18 <SV = 17> <Delay = 7.11>
+ST_18 : Operation 72 [24/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 72 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 19 <SV = 18> <Delay = 7.11>
+ST_19 : Operation 73 [23/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 73 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 20 <SV = 19> <Delay = 7.11>
+ST_20 : Operation 74 [22/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 74 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 21 <SV = 20> <Delay = 7.11>
+ST_21 : Operation 75 [21/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 75 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 7.11>
+ST_22 : Operation 76 [20/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 76 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 23 <SV = 22> <Delay = 7.11>
+ST_23 : Operation 77 [19/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 77 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 24 <SV = 23> <Delay = 7.11>
+ST_24 : Operation 78 [18/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 78 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 25 <SV = 24> <Delay = 7.11>
+ST_25 : Operation 79 [17/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 79 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 26 <SV = 25> <Delay = 7.11>
+ST_26 : Operation 80 [16/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 80 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 27 <SV = 26> <Delay = 7.11>
+ST_27 : Operation 81 [15/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 81 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 28 <SV = 27> <Delay = 7.11>
+ST_28 : Operation 82 [14/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 82 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 29 <SV = 28> <Delay = 7.11>
+ST_29 : Operation 83 [13/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 83 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 30 <SV = 29> <Delay = 7.11>
+ST_30 : Operation 84 [12/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 84 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 31 <SV = 30> <Delay = 7.11>
+ST_31 : Operation 85 [11/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 85 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 32 <SV = 31> <Delay = 7.11>
+ST_32 : Operation 86 [10/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 86 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 33 <SV = 32> <Delay = 7.11>
+ST_33 : Operation 87 [9/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 87 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 34 <SV = 33> <Delay = 7.11>
+ST_34 : Operation 88 [8/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 88 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 35 <SV = 34> <Delay = 7.11>
+ST_35 : Operation 89 [7/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 89 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 36 <SV = 35> <Delay = 7.11>
+ST_36 : Operation 90 [6/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 90 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 37 <SV = 36> <Delay = 7.11>
+ST_37 : Operation 91 [5/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 91 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 38 <SV = 37> <Delay = 7.11>
+ST_38 : Operation 92 [4/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 92 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 39 <SV = 38> <Delay = 7.11>
+ST_39 : Operation 93 [3/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 93 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 40 <SV = 39> <Delay = 7.11>
+ST_40 : Operation 94 [2/25] (7.11ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 94 'call' 'call_ln151' <Predicate = true> <Delay = 7.11> <CoreType = "Generic">   --->   Generic Core
+
+State 41 <SV = 40> <Delay = 0.00>
+ST_41 : Operation 95 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %c, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 95 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 96 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %a, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 96 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 97 [1/25] (0.00ns)   --->   "%call_ln151 = call void @redc, i64 %prod, i64 %prod_1, i64 %prod_2, i64 %prod_3, i64 %prod_4, i64 %prod_5, i64 %prod_6, i64 %prod_7, i64 %prod_8, i64 %prod_9, i64 %prod_10, i64 %prod_11, i64 %prod_12, i64 %prod_13, i64 %prod_14, i64 %prod_15, i64 %c" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:151]   --->   Operation 97 'call' 'call_ln151' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_41 : Operation 98 [1/1] (0.00ns)   --->   "%ret_ln152 = ret" [../montgomery_converter/include/mont_ops_fios_csa_square.hpp:152]   --->   Operation 98 'ret' 'ret_ln152' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ a]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ c]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[0]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+call_ret        (call        ) [ 000000000000000000000000000000000000000000]
+prod            (extractvalue) [ 000000000000000001000000000000000000000000]
+prod_1          (extractvalue) [ 000000000000000001000000000000000000000000]
+prod_2          (extractvalue) [ 000000000000000001100000000000000000000000]
+prod_3          (extractvalue) [ 000000000000000001100000000000000000000000]
+prod_4          (extractvalue) [ 000000000000000001110000000000000000000000]
+prod_5          (extractvalue) [ 000000000000000001110000000000000000000000]
+prod_6          (extractvalue) [ 000000000000000001111000000000000000000000]
+prod_7          (extractvalue) [ 000000000000000001111000000000000000000000]
+prod_8          (extractvalue) [ 000000000000000001111100000000000000000000]
+prod_9          (extractvalue) [ 000000000000000001111111000000000000000000]
+prod_10         (extractvalue) [ 000000000000000001111111100000000000000000]
+prod_11         (extractvalue) [ 000000000000000001111111100000000000000000]
+prod_12         (extractvalue) [ 000000000000000001111111100000000000000000]
+prod_13         (extractvalue) [ 000000000000000001111111100000000000000000]
+prod_14         (extractvalue) [ 000000000000000001111111100000000000000000]
+prod_15         (extractvalue) [ 000000000000000001111111100000000000000000]
+specmemcore_ln0 (specmemcore ) [ 000000000000000000000000000000000000000000]
+specmemcore_ln0 (specmemcore ) [ 000000000000000000000000000000000000000000]
+call_ln151      (call        ) [ 000000000000000000000000000000000000000000]
+ret_ln152       (ret         ) [ 000000000000000000000000000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="a">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="a"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="c">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="c"/><MemPortTyVec>0 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="square_full"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="redc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1004" name="grp_square_full_fu_18">
+<pin_list>
+<pin id="19" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="20" dir="0" index="1" bw="64" slack="0"/>
+<pin id="21" dir="1" index="2" bw="1024" slack="0"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ret/4 "/>
+</bind>
+</comp>
+
+<comp id="24" class="1004" name="grp_redc_fu_24">
+<pin_list>
+<pin id="25" dir="0" index="0" bw="0" slack="0"/>
+<pin id="26" dir="0" index="1" bw="64" slack="1"/>
+<pin id="27" dir="0" index="2" bw="64" slack="1"/>
+<pin id="28" dir="0" index="3" bw="64" slack="1"/>
+<pin id="29" dir="0" index="4" bw="64" slack="1"/>
+<pin id="30" dir="0" index="5" bw="64" slack="1"/>
+<pin id="31" dir="0" index="6" bw="64" slack="1"/>
+<pin id="32" dir="0" index="7" bw="64" slack="1"/>
+<pin id="33" dir="0" index="8" bw="64" slack="1"/>
+<pin id="34" dir="0" index="9" bw="64" slack="1"/>
+<pin id="35" dir="0" index="10" bw="64" slack="1"/>
+<pin id="36" dir="0" index="11" bw="64" slack="1"/>
+<pin id="37" dir="0" index="12" bw="64" slack="1"/>
+<pin id="38" dir="0" index="13" bw="64" slack="1"/>
+<pin id="39" dir="0" index="14" bw="64" slack="1"/>
+<pin id="40" dir="0" index="15" bw="64" slack="1"/>
+<pin id="41" dir="0" index="16" bw="64" slack="1"/>
+<pin id="42" dir="0" index="17" bw="64" slack="0"/>
+<pin id="43" dir="1" index="18" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln151/17 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="prod_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="48" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod/16 "/>
+</bind>
+</comp>
+
+<comp id="50" class="1004" name="prod_1_fu_50">
+<pin_list>
+<pin id="51" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="52" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_1/16 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="prod_2_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="56" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_2/16 "/>
+</bind>
+</comp>
+
+<comp id="58" class="1004" name="prod_3_fu_58">
+<pin_list>
+<pin id="59" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="60" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_3/16 "/>
+</bind>
+</comp>
+
+<comp id="62" class="1004" name="prod_4_fu_62">
+<pin_list>
+<pin id="63" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="64" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_4/16 "/>
+</bind>
+</comp>
+
+<comp id="66" class="1004" name="prod_5_fu_66">
+<pin_list>
+<pin id="67" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="68" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_5/16 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="prod_6_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="72" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_6/16 "/>
+</bind>
+</comp>
+
+<comp id="74" class="1004" name="prod_7_fu_74">
+<pin_list>
+<pin id="75" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="76" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_7/16 "/>
+</bind>
+</comp>
+
+<comp id="78" class="1004" name="prod_8_fu_78">
+<pin_list>
+<pin id="79" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="80" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_8/16 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="prod_9_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="84" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_9/16 "/>
+</bind>
+</comp>
+
+<comp id="86" class="1004" name="prod_10_fu_86">
+<pin_list>
+<pin id="87" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="88" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_10/16 "/>
+</bind>
+</comp>
+
+<comp id="90" class="1004" name="prod_11_fu_90">
+<pin_list>
+<pin id="91" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="92" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_11/16 "/>
+</bind>
+</comp>
+
+<comp id="94" class="1004" name="prod_12_fu_94">
+<pin_list>
+<pin id="95" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="96" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_12/16 "/>
+</bind>
+</comp>
+
+<comp id="98" class="1004" name="prod_13_fu_98">
+<pin_list>
+<pin id="99" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="100" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_13/16 "/>
+</bind>
+</comp>
+
+<comp id="102" class="1004" name="prod_14_fu_102">
+<pin_list>
+<pin id="103" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="104" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_14/16 "/>
+</bind>
+</comp>
+
+<comp id="106" class="1004" name="prod_15_fu_106">
+<pin_list>
+<pin id="107" dir="0" index="0" bw="1024" slack="0"/>
+<pin id="108" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opcode="extractvalue(56) " fcode="extractvalue"/>
+<opset="prod_15/16 "/>
+</bind>
+</comp>
+
+<comp id="110" class="1005" name="prod_reg_110">
+<pin_list>
+<pin id="111" dir="0" index="0" bw="64" slack="1"/>
+<pin id="112" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod "/>
+</bind>
+</comp>
+
+<comp id="115" class="1005" name="prod_1_reg_115">
+<pin_list>
+<pin id="116" dir="0" index="0" bw="64" slack="1"/>
+<pin id="117" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_1 "/>
+</bind>
+</comp>
+
+<comp id="120" class="1005" name="prod_2_reg_120">
+<pin_list>
+<pin id="121" dir="0" index="0" bw="64" slack="1"/>
+<pin id="122" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_2 "/>
+</bind>
+</comp>
+
+<comp id="125" class="1005" name="prod_3_reg_125">
+<pin_list>
+<pin id="126" dir="0" index="0" bw="64" slack="1"/>
+<pin id="127" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_3 "/>
+</bind>
+</comp>
+
+<comp id="130" class="1005" name="prod_4_reg_130">
+<pin_list>
+<pin id="131" dir="0" index="0" bw="64" slack="1"/>
+<pin id="132" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_4 "/>
+</bind>
+</comp>
+
+<comp id="135" class="1005" name="prod_5_reg_135">
+<pin_list>
+<pin id="136" dir="0" index="0" bw="64" slack="1"/>
+<pin id="137" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_5 "/>
+</bind>
+</comp>
+
+<comp id="140" class="1005" name="prod_6_reg_140">
+<pin_list>
+<pin id="141" dir="0" index="0" bw="64" slack="1"/>
+<pin id="142" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_6 "/>
+</bind>
+</comp>
+
+<comp id="145" class="1005" name="prod_7_reg_145">
+<pin_list>
+<pin id="146" dir="0" index="0" bw="64" slack="1"/>
+<pin id="147" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_7 "/>
+</bind>
+</comp>
+
+<comp id="150" class="1005" name="prod_8_reg_150">
+<pin_list>
+<pin id="151" dir="0" index="0" bw="64" slack="1"/>
+<pin id="152" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_8 "/>
+</bind>
+</comp>
+
+<comp id="155" class="1005" name="prod_9_reg_155">
+<pin_list>
+<pin id="156" dir="0" index="0" bw="64" slack="1"/>
+<pin id="157" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_9 "/>
+</bind>
+</comp>
+
+<comp id="160" class="1005" name="prod_10_reg_160">
+<pin_list>
+<pin id="161" dir="0" index="0" bw="64" slack="1"/>
+<pin id="162" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_10 "/>
+</bind>
+</comp>
+
+<comp id="165" class="1005" name="prod_11_reg_165">
+<pin_list>
+<pin id="166" dir="0" index="0" bw="64" slack="1"/>
+<pin id="167" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_11 "/>
+</bind>
+</comp>
+
+<comp id="170" class="1005" name="prod_12_reg_170">
+<pin_list>
+<pin id="171" dir="0" index="0" bw="64" slack="1"/>
+<pin id="172" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_12 "/>
+</bind>
+</comp>
+
+<comp id="175" class="1005" name="prod_13_reg_175">
+<pin_list>
+<pin id="176" dir="0" index="0" bw="64" slack="1"/>
+<pin id="177" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_13 "/>
+</bind>
+</comp>
+
+<comp id="180" class="1005" name="prod_14_reg_180">
+<pin_list>
+<pin id="181" dir="0" index="0" bw="64" slack="1"/>
+<pin id="182" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_14 "/>
+</bind>
+</comp>
+
+<comp id="185" class="1005" name="prod_15_reg_185">
+<pin_list>
+<pin id="186" dir="0" index="0" bw="64" slack="1"/>
+<pin id="187" dir="1" index="1" bw="64" slack="1"/>
+</pin_list>
+<bind>
+<opset="prod_15 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="22"><net_src comp="4" pin="0"/><net_sink comp="18" pin=0"/></net>
+
+<net id="23"><net_src comp="0" pin="0"/><net_sink comp="18" pin=1"/></net>
+
+<net id="44"><net_src comp="6" pin="0"/><net_sink comp="24" pin=0"/></net>
+
+<net id="45"><net_src comp="2" pin="0"/><net_sink comp="24" pin=17"/></net>
+
+<net id="49"><net_src comp="18" pin="2"/><net_sink comp="46" pin=0"/></net>
+
+<net id="53"><net_src comp="18" pin="2"/><net_sink comp="50" pin=0"/></net>
+
+<net id="57"><net_src comp="18" pin="2"/><net_sink comp="54" pin=0"/></net>
+
+<net id="61"><net_src comp="18" pin="2"/><net_sink comp="58" pin=0"/></net>
+
+<net id="65"><net_src comp="18" pin="2"/><net_sink comp="62" pin=0"/></net>
+
+<net id="69"><net_src comp="18" pin="2"/><net_sink comp="66" pin=0"/></net>
+
+<net id="73"><net_src comp="18" pin="2"/><net_sink comp="70" pin=0"/></net>
+
+<net id="77"><net_src comp="18" pin="2"/><net_sink comp="74" pin=0"/></net>
+
+<net id="81"><net_src comp="18" pin="2"/><net_sink comp="78" pin=0"/></net>
+
+<net id="85"><net_src comp="18" pin="2"/><net_sink comp="82" pin=0"/></net>
+
+<net id="89"><net_src comp="18" pin="2"/><net_sink comp="86" pin=0"/></net>
+
+<net id="93"><net_src comp="18" pin="2"/><net_sink comp="90" pin=0"/></net>
+
+<net id="97"><net_src comp="18" pin="2"/><net_sink comp="94" pin=0"/></net>
+
+<net id="101"><net_src comp="18" pin="2"/><net_sink comp="98" pin=0"/></net>
+
+<net id="105"><net_src comp="18" pin="2"/><net_sink comp="102" pin=0"/></net>
+
+<net id="109"><net_src comp="18" pin="2"/><net_sink comp="106" pin=0"/></net>
+
+<net id="113"><net_src comp="46" pin="1"/><net_sink comp="110" pin=0"/></net>
+
+<net id="114"><net_src comp="110" pin="1"/><net_sink comp="24" pin=1"/></net>
+
+<net id="118"><net_src comp="50" pin="1"/><net_sink comp="115" pin=0"/></net>
+
+<net id="119"><net_src comp="115" pin="1"/><net_sink comp="24" pin=2"/></net>
+
+<net id="123"><net_src comp="54" pin="1"/><net_sink comp="120" pin=0"/></net>
+
+<net id="124"><net_src comp="120" pin="1"/><net_sink comp="24" pin=3"/></net>
+
+<net id="128"><net_src comp="58" pin="1"/><net_sink comp="125" pin=0"/></net>
+
+<net id="129"><net_src comp="125" pin="1"/><net_sink comp="24" pin=4"/></net>
+
+<net id="133"><net_src comp="62" pin="1"/><net_sink comp="130" pin=0"/></net>
+
+<net id="134"><net_src comp="130" pin="1"/><net_sink comp="24" pin=5"/></net>
+
+<net id="138"><net_src comp="66" pin="1"/><net_sink comp="135" pin=0"/></net>
+
+<net id="139"><net_src comp="135" pin="1"/><net_sink comp="24" pin=6"/></net>
+
+<net id="143"><net_src comp="70" pin="1"/><net_sink comp="140" pin=0"/></net>
+
+<net id="144"><net_src comp="140" pin="1"/><net_sink comp="24" pin=7"/></net>
+
+<net id="148"><net_src comp="74" pin="1"/><net_sink comp="145" pin=0"/></net>
+
+<net id="149"><net_src comp="145" pin="1"/><net_sink comp="24" pin=8"/></net>
+
+<net id="153"><net_src comp="78" pin="1"/><net_sink comp="150" pin=0"/></net>
+
+<net id="154"><net_src comp="150" pin="1"/><net_sink comp="24" pin=9"/></net>
+
+<net id="158"><net_src comp="82" pin="1"/><net_sink comp="155" pin=0"/></net>
+
+<net id="159"><net_src comp="155" pin="1"/><net_sink comp="24" pin=10"/></net>
+
+<net id="163"><net_src comp="86" pin="1"/><net_sink comp="160" pin=0"/></net>
+
+<net id="164"><net_src comp="160" pin="1"/><net_sink comp="24" pin=11"/></net>
+
+<net id="168"><net_src comp="90" pin="1"/><net_sink comp="165" pin=0"/></net>
+
+<net id="169"><net_src comp="165" pin="1"/><net_sink comp="24" pin=12"/></net>
+
+<net id="173"><net_src comp="94" pin="1"/><net_sink comp="170" pin=0"/></net>
+
+<net id="174"><net_src comp="170" pin="1"/><net_sink comp="24" pin=13"/></net>
+
+<net id="178"><net_src comp="98" pin="1"/><net_sink comp="175" pin=0"/></net>
+
+<net id="179"><net_src comp="175" pin="1"/><net_sink comp="24" pin=14"/></net>
+
+<net id="183"><net_src comp="102" pin="1"/><net_sink comp="180" pin=0"/></net>
+
+<net id="184"><net_src comp="180" pin="1"/><net_sink comp="24" pin=15"/></net>
+
+<net id="188"><net_src comp="106" pin="1"/><net_sink comp="185" pin=0"/></net>
+
+<net id="189"><net_src comp="185" pin="1"/><net_sink comp="24" pin=16"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: a | {}
+	Port: c | {34 35 36 37 38 39 40 41 }
+ - Input state : 
+	Port: mul.2.2.1 : a | {4 5 6 7 8 9 10 11 12 }
+	Port: mul.2.2.1 : c | {}
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+		prod : 1
+		prod_1 : 1
+		prod_2 : 1
+		prod_3 : 1
+		prod_4 : 1
+		prod_5 : 1
+		prod_6 : 1
+		prod_7 : 1
+		prod_8 : 1
+		prod_9 : 1
+		prod_10 : 1
+		prod_11 : 1
+		prod_12 : 1
+		prod_13 : 1
+		prod_14 : 1
+		prod_15 : 1
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------|---------|---------|---------|---------|
+| Operation|    Functional Unit    |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|-----------------------|---------|---------|---------|---------|
+|   call   | grp_square_full_fu_18 |    80   | 5.48014 |   5897  |   6716  |
+|          |     grp_redc_fu_24    |    92   | 4.67314 |   9068  |  17220  |
+|----------|-----------------------|---------|---------|---------|---------|
+|          |       prod_fu_46      |    0    |    0    |    0    |    0    |
+|          |      prod_1_fu_50     |    0    |    0    |    0    |    0    |
+|          |      prod_2_fu_54     |    0    |    0    |    0    |    0    |
+|          |      prod_3_fu_58     |    0    |    0    |    0    |    0    |
+|          |      prod_4_fu_62     |    0    |    0    |    0    |    0    |
+|          |      prod_5_fu_66     |    0    |    0    |    0    |    0    |
+|          |      prod_6_fu_70     |    0    |    0    |    0    |    0    |
+|extractvalue|      prod_7_fu_74     |    0    |    0    |    0    |    0    |
+|          |      prod_8_fu_78     |    0    |    0    |    0    |    0    |
+|          |      prod_9_fu_82     |    0    |    0    |    0    |    0    |
+|          |     prod_10_fu_86     |    0    |    0    |    0    |    0    |
+|          |     prod_11_fu_90     |    0    |    0    |    0    |    0    |
+|          |     prod_12_fu_94     |    0    |    0    |    0    |    0    |
+|          |     prod_13_fu_98     |    0    |    0    |    0    |    0    |
+|          |     prod_14_fu_102    |    0    |    0    |    0    |    0    |
+|          |     prod_15_fu_106    |    0    |    0    |    0    |    0    |
+|----------|-----------------------|---------|---------|---------|---------|
+|   Total  |                       |   172   | 10.1533 |  14965  |  23936  |
+|----------|-----------------------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++---------------+--------+
+|               |   FF   |
++---------------+--------+
+|prod_10_reg_160|   64   |
+|prod_11_reg_165|   64   |
+|prod_12_reg_170|   64   |
+|prod_13_reg_175|   64   |
+|prod_14_reg_180|   64   |
+|prod_15_reg_185|   64   |
+| prod_1_reg_115|   64   |
+| prod_2_reg_120|   64   |
+| prod_3_reg_125|   64   |
+| prod_4_reg_130|   64   |
+| prod_5_reg_135|   64   |
+| prod_6_reg_140|   64   |
+| prod_7_reg_145|   64   |
+| prod_8_reg_150|   64   |
+| prod_9_reg_155|   64   |
+|  prod_reg_110 |   64   |
++---------------+--------+
+|     Total     |  1024  |
++---------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           |   DSP  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |   172  |   10   |  14965 |  23936 |
+|   Memory  |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |  1024  |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |   172  |   10   |  15989 |  23936 |
++-----------+--------+--------+--------+--------+

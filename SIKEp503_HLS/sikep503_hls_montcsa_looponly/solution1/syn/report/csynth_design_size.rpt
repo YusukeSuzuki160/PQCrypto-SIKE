@@ -1,0 +1,962 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 1,035,402 *  | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 3,396,133 *  | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 1,229,794 *  | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 1,222,828 *  | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 1,213,929 *  | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 1,128,909 *  | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 1,118,589 *  | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 1,118,589 *  | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 1,118,331 *  | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 1,123,253 *  | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 1,123,239 *  | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 1,147,846 *  | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 1,173,167 *  | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 1,164,373 *  | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             | 1,164,968 *  | After hardware transfomations                                                          |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
+
+* Instructions per Function for each Compilation Phase
++---------------------------------------+-------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+| Function                              | Location                      | Compile/Link         | Unroll/Inline        | Array/Struct         | Performance          | HW Transforms        |
++---------------------------------------+-------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+| + sikep503_kem_enc_hw                 | sikep503_kem_enc_hw.cpp:28    | 1,035,402 *          | 1,213,929 *          | 1,123,253 *          | 1,164,373 *          | 1,164,968 *          |
+|    print_hex                          | sikep503_kem_enc_hw.cpp:16    |      66 (3 calls)    |                      |                      |                      |                      |
+|  + crypto_kem_enc                     | sike.cpp:35                   | 1,035,316            |                      |                      |                      |                      |
+|   + randombytes                       | random.cpp:21                 |      27              |                      |                      |                      |                      |
+|      lcg_rand                         | random.cpp:15                 |       6              |                      |                      |                      |                      |
+|   + cshake256_simple                  | fips202.cpp:636               |   7,593 (3 calls)    |                      |                      |                      |                      |
+|    + cshake256_simple_absorb          | fips202.cpp:605               |   3,819 (3 calls)    |                      |                      |                      |                      |
+|       KeccakF1600_StatePermute        | fips202.cpp:71                |   1,701 (3 calls)    |                      |                      |                      |                      |
+|     + keccak_absorb                   | fips202.cpp:385               |   2,007 (3 calls)    |                      |                      |                      |                      |
+|        load64                         | fips202.cpp:22                |      48 (3 calls)    |                      |                      |                      |                      |
+|        KeccakF1600_StatePermute       | fips202.cpp:71                |   1,701 (3 calls)    |                      |                      |                      |                      |
+|    + keccak_squeezeblocks             | fips202.cpp:427               |   3,648 (6 calls)    |                      |                      |                      |                      |
+|       KeccakF1600_StatePermute        | fips202.cpp:71                |   3,402 (6 calls)    |                      |                      |                      |                      |
+|       store64                         | fips202.cpp:33                |      90 (6 calls)    |                      |                      |                      |                      |
+|   + EphemeralKeyGeneration_A          | sidh.cpp:118                  | 630,574              |                      |                      |                      |                      |
+|    + init_basis                       | sidh.cpp:25                   |     220 (2 calls)    |                      |                      |                      |                      |
+|       fpcopy503                       | fpx.cpp:12                    |     150 (10 calls)   |                      |                      |                      |                      |
+|       fpzero503                       | fpx.cpp:20                    |      24 (2 calls)    |                      |                      |                      |                      |
+|      fpcopy503                        | fpx.cpp:12                    |      60 (4 calls)    |                      |                      |                      |                      |
+|    + fp2add503                        | fpx.cpp:118                   |     293              |                      |                      |                      |                      |
+|     + fpadd503                        | fp_generic.cpp:26             |     278 (2 calls)    |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |      80 (10 calls)   |                      |                      |                      |                      |
+|      + is_digit_zero_ct               | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|         is_digit_nonzero_ct           | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|    + LADDER3PT                        | ec_isogeny.cpp:286            |  64,922              |                      |                      |                      |                      |
+|       fpcopy503                       | fpx.cpp:12                    |      60 (4 calls)    |                      |                      |                      |                      |
+|     + fp2add503                       | fpx.cpp:118                   |     586 (2 calls)    |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |     556 (4 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     160 (20 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|     + fp2div2_503                     | fpx.cpp:130                   |     342 (2 calls)    |                      |                      |                      |                      |
+|      + fpdiv2_503                     | fp_generic.cpp:87             |     320 (4 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|         mp_shiftr1                    | fpx.cpp:431                   |     116 (4 calls)    |                      |                      |                      |                      |
+|     + fp2copy503                      | fpx.cpp:100                   |     123 (3 calls)    |                      |                      |                      |                      |
+|        fpcopy503                      | fpx.cpp:12                    |      90 (6 calls)    |                      |                      |                      |                      |
+|       fpzero503                       | fpx.cpp:20                    |      12              |                      |                      |                      |                      |
+|       swap_points                     | ec_isogeny.cpp:263            |     145              |                      |                      |                      |                      |
+|     + xDBLADD                         | ec_isogeny.cpp:236            |  55,824              |                      |                      |                      |                      |
+|      + fp2add503                      | fpx.cpp:118                   |   1,172 (4 calls)    |                      |                      |                      |                      |
+|       + fpadd503                      | fp_generic.cpp:26             |   1,112 (8 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     320 (40 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      64 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      40 (8 calls)    |                      |                      |                      |                      |
+|      + fp2sub503                      | fpx.cpp:124                   |     820 (4 calls)    |                      |                      |                      |                      |
+|       + fpsub503                      | fp_generic.cpp:54             |     760 (8 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     192 (24 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      64 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      40 (8 calls)    |                      |                      |                      |                      |
+|      + fp2sqr503_mont                 | fpx.cpp:154                   |   7,200 (4 calls)    |                      |                      |                      |                      |
+|       + mp_addfast                    | fpx.cpp:142                   |     376 (8 calls)    |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     360 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |     128 (16 calls)   |                      |                      |                      |                      |
+|       + fpsub503                      | fp_generic.cpp:54             |     380 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|       + fpmul503_mont                 | fpx.cpp:57                    |   6,264 (8 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |   6,240 (8 calls)    |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |   4,488 (8 calls)    |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |   1,192 (8 calls)    |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |     528 (48 calls)   |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |     480 (8 calls)    |                      |                      |                      |                      |
+|      + fp2correction503               | fpx.cpp:136                   |     197              |                      |                      |                      |                      |
+|       + fpcorrection503               | fp_generic.cpp:100            |     190 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|      + fp2mul503_mont                 | fpx.cpp:186                   |  46,320 (6 calls)    |                      |                      |                      |                      |
+|       + mp_mul                        | fp_generic.cpp:270            |  39,222 (18 calls)   |                      |                      |                      |                      |
+|        + mul                          | mpx_iface_tvu_mul.hpp:50      |  38,952 (18 calls)   |                      |                      |                      |                      |
+|           pack                        | mpx_iface_tvu_mul.hpp:24      |   3,168 (36 calls)   |                      |                      |                      |                      |
+|           add_prod_to_acc             | mpx_iface_tvu_mul.hpp:129     |  18,000 (18 calls)   |                      |                      |                      |                      |
+|           convert_blocks_to_digits    | mpx_iface_tvu_mul.hpp:159     |   9,198 (18 calls)   |                      |                      |                      |                      |
+|       + mp_addfast                    | fpx.cpp:142                   |     564 (12 calls)   |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     540 (12 calls)   |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |     192 (24 calls)   |                      |                      |                      |                      |
+|       + mp_subfast                    | fpx.cpp:180                   |     624 (12 calls)   |                      |                      |                      |                      |
+|        + mp_sub                       | fpx.cpp:167                   |     576 (12 calls)   |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|         + is_digit_zero_ct            | config.h:98                   |      96 (12 calls)   |                      |                      |                      |                      |
+|            is_digit_nonzero_ct        | config.h:93                   |      60 (12 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|       + rdc_mont                      | fp_generic.cpp:299            |   4,896 (12 calls)   |                      |                      |                      |                      |
+|          digit_x_digit                | fp_generic.cpp:152            |     936 (24 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |   1,728 (216 calls)  |                      |                      |                      |                      |
+|       + mp_addfastx2                  | fpx.cpp:148                   |     282 (6 calls)    |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     270 (6 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|     + fp2mul503_mont                  | fpx.cpp:186                   |   7,720              |                      |                      |                      |                      |
+|      + mp_mul                         | fp_generic.cpp:270            |   6,537 (3 calls)    |                      |                      |                      |                      |
+|       + mul                           | mpx_iface_tvu_mul.hpp:50      |   6,492 (3 calls)    |                      |                      |                      |                      |
+|          pack                         | mpx_iface_tvu_mul.hpp:24      |     528 (6 calls)    |                      |                      |                      |                      |
+|          add_prod_to_acc              | mpx_iface_tvu_mul.hpp:129     |   3,000 (3 calls)    |                      |                      |                      |                      |
+|          convert_blocks_to_digits     | mpx_iface_tvu_mul.hpp:159     |   1,533 (3 calls)    |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |      94 (2 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |      90 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      32 (4 calls)    |                      |                      |                      |                      |
+|      + mp_subfast                     | fpx.cpp:180                   |     104 (2 calls)    |                      |                      |                      |                      |
+|       + mp_sub                        | fpx.cpp:167                   |      96 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      16 (2 calls)    |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |      16 (2 calls)    |                      |                      |                      |                      |
+|      + rdc_mont                       | fp_generic.cpp:299            |     816 (2 calls)    |                      |                      |                      |                      |
+|         digit_x_digit                 | fp_generic.cpp:152            |     156 (4 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     288 (36 calls)   |                      |                      |                      |                      |
+|      + mp_addfastx2                   | fpx.cpp:148                   |      47              |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |      45              |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      16 (2 calls)    |                      |                      |                      |                      |
+|    + fp2copy503                       | fpx.cpp:100                   |     164 (4 calls)    |                      |                      |                      |                      |
+|       fpcopy503                       | fpx.cpp:12                    |     120 (8 calls)    |                      |                      |                      |                      |
+|    + xDBLe                            | ec_isogeny.cpp:27             |  35,562              |                      |                      |                      |                      |
+|       copy_words                      | fpx.cpp:46                    |      15              |                      |                      |                      |                      |
+|     + xDBL                            | ec_isogeny.cpp:9              |  35,534              |                      |                      |                      |                      |
+|      + fp2sub503                      | fpx.cpp:124                   |     410 (2 calls)    |                      |                      |                      |                      |
+|       + fpsub503                      | fp_generic.cpp:54             |     380 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|      + fp2add503                      | fpx.cpp:118                   |     586 (2 calls)    |                      |                      |                      |                      |
+|       + fpadd503                      | fp_generic.cpp:26             |     556 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     160 (20 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|      + fp2sqr503_mont                 | fpx.cpp:154                   |   3,600 (2 calls)    |                      |                      |                      |                      |
+|       + mp_addfast                    | fpx.cpp:142                   |     188 (4 calls)    |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     180 (4 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|       + fpsub503                      | fp_generic.cpp:54             |     190 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|       + fpmul503_mont                 | fpx.cpp:57                    |   3,132 (4 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |   3,120 (4 calls)    |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |   2,244 (4 calls)    |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     596 (4 calls)    |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |     264 (24 calls)   |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |     240 (4 calls)    |                      |                      |                      |                      |
+|      + fp2mul503_mont                 | fpx.cpp:186                   |  30,880 (4 calls)    |                      |                      |                      |                      |
+|       + mp_mul                        | fp_generic.cpp:270            |  26,148 (12 calls)   |                      |                      |                      |                      |
+|        + mul                          | mpx_iface_tvu_mul.hpp:50      |  25,968 (12 calls)   |                      |                      |                      |                      |
+|           pack                        | mpx_iface_tvu_mul.hpp:24      |   2,112 (24 calls)   |                      |                      |                      |                      |
+|           add_prod_to_acc             | mpx_iface_tvu_mul.hpp:129     |  12,000 (12 calls)   |                      |                      |                      |                      |
+|           convert_blocks_to_digits    | mpx_iface_tvu_mul.hpp:159     |   6,132 (12 calls)   |                      |                      |                      |                      |
+|       + mp_addfast                    | fpx.cpp:142                   |     376 (8 calls)    |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     360 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |     128 (16 calls)   |                      |                      |                      |                      |
+|       + mp_subfast                    | fpx.cpp:180                   |     416 (8 calls)    |                      |                      |                      |                      |
+|        + mp_sub                       | fpx.cpp:167                   |     384 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|         + is_digit_zero_ct            | config.h:98                   |      64 (8 calls)    |                      |                      |                      |                      |
+|            is_digit_nonzero_ct        | config.h:93                   |      40 (8 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|       + rdc_mont                      | fp_generic.cpp:299            |   3,264 (8 calls)    |                      |                      |                      |                      |
+|          digit_x_digit                | fp_generic.cpp:152            |     624 (16 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |   1,152 (144 calls)  |                      |                      |                      |                      |
+|       + mp_addfastx2                  | fpx.cpp:148                   |     188 (4 calls)    |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     180 (4 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|    + get_4_isog                       | ec_isogeny.cpp:42             |  17,238 (2 calls)    |                      |                      |                      |                      |
+|     + fp2sub503                       | fpx.cpp:124                   |     410 (2 calls)    |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |     380 (4 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|     + fp2add503                       | fpx.cpp:118                   |   2,344 (8 calls)    |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |   2,224 (16 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     640 (80 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |     128 (16 calls)   |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      80 (16 calls)   |                      |                      |                      |                      |
+|     + fp2sqr503_mont                  | fpx.cpp:154                   |  14,400 (8 calls)    |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |     752 (16 calls)   |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     720 (16 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     256 (32 calls)   |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |     760 (8 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     192 (24 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      64 (8 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      40 (8 calls)    |                      |                      |                      |                      |
+|      + fpmul503_mont                  | fpx.cpp:57                    |  12,528 (16 calls)   |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |  12,480 (16 calls)   |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   8,976 (16 calls)   |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |   2,384 (16 calls)   |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |   1,056 (96 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     960 (16 calls)   |                      |                      |                      |                      |
+|    + eval_4_isog                      | ec_isogeny.cpp:59             | 360,507 (7 calls)    |                      |                      |                      |                      |
+|     + fp2add503                       | fpx.cpp:118                   |   6,153 (21 calls)   |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |   5,838 (42 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |   1,680 (210 calls)  |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |     336 (42 calls)   |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |     210 (42 calls)   |                      |                      |                      |                      |
+|     + fp2sub503                       | fpx.cpp:124                   |   4,305 (21 calls)   |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |   3,990 (42 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |   1,008 (126 calls)  |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |     336 (42 calls)   |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |     210 (42 calls)   |                      |                      |                      |                      |
+|     + fp2mul503_mont                  | fpx.cpp:186                   | 324,240 (42 calls)   |                      |                      |                      |                      |
+|      + mp_mul                         | fp_generic.cpp:270            | 274,554 (126 calls)  |                      |                      |                      |                      |
+|       + mul                           | mpx_iface_tvu_mul.hpp:50      | 272,664 (126 calls)  |                      |                      |                      |                      |
+|          pack                         | mpx_iface_tvu_mul.hpp:24      |  22,176 (252 calls)  |                      |                      |                      |                      |
+|          add_prod_to_acc              | mpx_iface_tvu_mul.hpp:129     | 126,000 (126 calls)  |                      |                      |                      |                      |
+|          convert_blocks_to_digits     | mpx_iface_tvu_mul.hpp:159     |  64,386 (126 calls)  |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |   3,948 (84 calls)   |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |   3,780 (84 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |   1,344 (168 calls)  |                      |                      |                      |                      |
+|      + mp_subfast                     | fpx.cpp:180                   |   4,368 (84 calls)   |                      |                      |                      |                      |
+|       + mp_sub                        | fpx.cpp:167                   |   4,032 (84 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     672 (84 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |     672 (84 calls)   |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |     420 (84 calls)   |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |     672 (84 calls)   |                      |                      |                      |                      |
+|      + rdc_mont                       | fp_generic.cpp:299            |  34,272 (84 calls)   |                      |                      |                      |                      |
+|         digit_x_digit                 | fp_generic.cpp:152            |   6,552 (168 calls)  |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |  12,096 (1512 calls) |                      |                      |                      |                      |
+|      + mp_addfastx2                   | fpx.cpp:148                   |   1,974 (42 calls)   |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |   1,890 (42 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     672 (84 calls)   |                      |                      |                      |                      |
+|     + fp2sqr503_mont                  | fpx.cpp:154                   |  25,200 (14 calls)   |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |   1,316 (28 calls)   |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |   1,260 (28 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     448 (56 calls)   |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |   1,330 (14 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     336 (42 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |     112 (14 calls)   |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      70 (14 calls)   |                      |                      |                      |                      |
+|      + fpmul503_mont                  | fpx.cpp:57                    |  21,924 (28 calls)   |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |  21,840 (28 calls)   |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |  15,708 (28 calls)   |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |   4,172 (28 calls)   |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |   1,848 (168 calls)  |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |   1,680 (28 calls)   |                      |                      |                      |                      |
+|    + inv_3_way                        | ec_isogeny.cpp:174            | 122,587              |                      |                      |                      |                      |
+|     + fp2mul503_mont                  | fpx.cpp:186                   |  46,320 (6 calls)    |                      |                      |                      |                      |
+|      + mp_mul                         | fp_generic.cpp:270            |  39,222 (18 calls)   |                      |                      |                      |                      |
+|       + mul                           | mpx_iface_tvu_mul.hpp:50      |  38,952 (18 calls)   |                      |                      |                      |                      |
+|          pack                         | mpx_iface_tvu_mul.hpp:24      |   3,168 (36 calls)   |                      |                      |                      |                      |
+|          add_prod_to_acc              | mpx_iface_tvu_mul.hpp:129     |  18,000 (18 calls)   |                      |                      |                      |                      |
+|          convert_blocks_to_digits     | mpx_iface_tvu_mul.hpp:159     |   9,198 (18 calls)   |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |     564 (12 calls)   |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     540 (12 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     192 (24 calls)   |                      |                      |                      |                      |
+|      + mp_subfast                     | fpx.cpp:180                   |     624 (12 calls)   |                      |                      |                      |                      |
+|       + mp_sub                        | fpx.cpp:167                   |     576 (12 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      96 (12 calls)   |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      60 (12 calls)   |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|      + rdc_mont                       | fp_generic.cpp:299            |   4,896 (12 calls)   |                      |                      |                      |                      |
+|         digit_x_digit                 | fp_generic.cpp:152            |     936 (24 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |   1,728 (216 calls)  |                      |                      |                      |                      |
+|      + mp_addfastx2                   | fpx.cpp:148                   |     282 (6 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     270 (6 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|     + fp2inv503_mont                  | fpx.cpp:356                   |  76,185              |                      |                      |                      |                      |
+|      + fpsqr503_mont                  | fpx.cpp:73                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |     139              |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      40 (5 calls)    |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |       8              |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |       5              |                      |                      |                      |                      |
+|      + fpinv503_mont                  | fpx.cpp:89                    |  72,823              |                      |                      |                      |                      |
+|         fpcopy503                     | fpx.cpp:12                    |      15              |                      |                      |                      |                      |
+|       + fpinv503_chain_mont           | fpx.cpp:209                   |  70,441              |                      |                      |                      |                      |
+|        + fpsqr503_mont                | fpx.cpp:73                    |  34,452 (44 calls)   |                      |                      |                      |                      |
+|         + mul                         | mont_ops.hpp:100              |  34,320 (44 calls)   |                      |                      |                      |                      |
+|          + mul                        | mont_ops_fios_csa_true.hpp:85 |  24,684 (44 calls)   |                      |                      |                      |                      |
+|           + csa_reduce8               | mont_ops_fios_csa_true.hpp:63 |   6,556 (44 calls)   |                      |                      |                      |                      |
+|              csa32                    | mont_ops_fios_csa_true.hpp:54 |   2,904 (264 calls)  |                      |                      |                      |                      |
+|            cond_sub<unsigned long, 8> | mont_ops.hpp:53               |   2,640 (44 calls)   |                      |                      |                      |                      |
+|        + fpmul503_mont                | fpx.cpp:57                    |  35,235 (45 calls)   |                      |                      |                      |                      |
+|         + mul                         | mont_ops.hpp:100              |  35,100 (45 calls)   |                      |                      |                      |                      |
+|          + mul                        | mont_ops_fios_csa_true.hpp:85 |  25,245 (45 calls)   |                      |                      |                      |                      |
+|           + csa_reduce8               | mont_ops_fios_csa_true.hpp:63 |   6,705 (45 calls)   |                      |                      |                      |                      |
+|              csa32                    | mont_ops_fios_csa_true.hpp:54 |   2,970 (270 calls)  |                      |                      |                      |                      |
+|            cond_sub<unsigned long, 8> | mont_ops.hpp:53               |   2,700 (45 calls)   |                      |                      |                      |                      |
+|          fpcopy503                    | fpx.cpp:12                    |      30 (2 calls)    |                      |                      |                      |                      |
+|       + fpsqr503_mont                 | fpx.cpp:73                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|       + fpmul503_mont                 | fpx.cpp:57                    |     783              |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |     780              |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |     561              |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     149              |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |      66 (6 calls)    |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |      60              |                      |                      |                      |                      |
+|      + fpneg503                       | fp_generic.cpp:76             |      48              |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |       8              |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |       8              |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |       5              |                      |                      |                      |                      |
+|      + fpmul503_mont                  | fpx.cpp:57                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|     + fp2copy503                      | fpx.cpp:100                   |      41              |                      |                      |                      |                      |
+|        fpcopy503                      | fpx.cpp:12                    |      30 (2 calls)    |                      |                      |                      |                      |
+|    + fp2mul503_mont                   | fpx.cpp:186                   |  23,160 (3 calls)    |                      |                      |                      |                      |
+|     + mp_mul                          | fp_generic.cpp:270            |  19,611 (9 calls)    |                      |                      |                      |                      |
+|      + mul                            | mpx_iface_tvu_mul.hpp:50      |  19,476 (9 calls)    |                      |                      |                      |                      |
+|         pack                          | mpx_iface_tvu_mul.hpp:24      |   1,584 (18 calls)   |                      |                      |                      |                      |
+|         add_prod_to_acc               | mpx_iface_tvu_mul.hpp:129     |   9,000 (9 calls)    |                      |                      |                      |                      |
+|         convert_blocks_to_digits      | mpx_iface_tvu_mul.hpp:159     |   4,599 (9 calls)    |                      |                      |                      |                      |
+|     + mp_addfast                      | fpx.cpp:142                   |     282 (6 calls)    |                      |                      |                      |                      |
+|      + mp_add                         | fpx.cpp:385                   |     270 (6 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|     + mp_subfast                      | fpx.cpp:180                   |     312 (6 calls)    |                      |                      |                      |                      |
+|      + mp_sub                         | fpx.cpp:167                   |     288 (6 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      48 (6 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      30 (6 calls)    |                      |                      |                      |                      |
+|       is_digit_lessthan_ct            | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|     + rdc_mont                        | fp_generic.cpp:299            |   2,448 (6 calls)    |                      |                      |                      |                      |
+|        digit_x_digit                  | fp_generic.cpp:152            |     468 (12 calls)   |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |     864 (108 calls)  |                      |                      |                      |                      |
+|     + mp_addfastx2                    | fpx.cpp:148                   |     141 (3 calls)    |                      |                      |                      |                      |
+|      + mp_add                         | fpx.cpp:385                   |     135 (3 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|    + fp2_encode                       | sidh.cpp:36                   |   5,556 (3 calls)    |                      |                      |                      |                      |
+|     + from_fp2mont                    | fpx.cpp:377                   |   5,379 (3 calls)    |                      |                      |                      |                      |
+|      + from_mont                      | fpx.cpp:36                    |   5,346 (6 calls)    |                      |                      |                      |                      |
+|       + fpmul503_mont                 | fpx.cpp:57                    |   4,698 (6 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |   4,680 (6 calls)    |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |   3,366 (6 calls)    |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     894 (6 calls)    |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |     396 (36 calls)   |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |     360 (6 calls)    |                      |                      |                      |                      |
+|       + fpcorrection503               | fp_generic.cpp:100            |     570 (6 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     144 (18 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      48 (6 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      30 (6 calls)    |                      |                      |                      |                      |
+|   + EphemeralSecretAgreement_A        | sidh.cpp:269                  | 397,051              |                      |                      |                      |                      |
+|    + fp2_decode                       | sidh.cpp:62                   |   4,980 (3 calls)    |                      |                      |                      |                      |
+|     + to_fp2mont                      | fpx.cpp:369                   |   4,743 (3 calls)    |                      |                      |                      |                      |
+|      + to_mont                        | fpx.cpp:28                    |   4,710 (6 calls)    |                      |                      |                      |                      |
+|       + fpmul503_mont                 | fpx.cpp:57                    |   4,698 (6 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |   4,680 (6 calls)    |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |   3,366 (6 calls)    |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     894 (6 calls)    |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |     396 (36 calls)   |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |     360 (6 calls)    |                      |                      |                      |                      |
+|    + get_A                            | ec_isogeny.cpp:190            | 110,807              |                      |                      |                      |                      |
+|       fpcopy503                       | fpx.cpp:12                    |      15              |                      |                      |                      |                      |
+|     + fp2add503                       | fpx.cpp:118                   |   1,465 (5 calls)    |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |   1,390 (10 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     400 (50 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      80 (10 calls)   |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      50 (10 calls)   |                      |                      |                      |                      |
+|     + fp2mul503_mont                  | fpx.cpp:186                   |  30,880 (4 calls)    |                      |                      |                      |                      |
+|      + mp_mul                         | fp_generic.cpp:270            |  26,148 (12 calls)   |                      |                      |                      |                      |
+|       + mul                           | mpx_iface_tvu_mul.hpp:50      |  25,968 (12 calls)   |                      |                      |                      |                      |
+|          pack                         | mpx_iface_tvu_mul.hpp:24      |   2,112 (24 calls)   |                      |                      |                      |                      |
+|          add_prod_to_acc              | mpx_iface_tvu_mul.hpp:129     |  12,000 (12 calls)   |                      |                      |                      |                      |
+|          convert_blocks_to_digits     | mpx_iface_tvu_mul.hpp:159     |   6,132 (12 calls)   |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |     376 (8 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     360 (8 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     128 (16 calls)   |                      |                      |                      |                      |
+|      + mp_subfast                     | fpx.cpp:180                   |     416 (8 calls)    |                      |                      |                      |                      |
+|       + mp_sub                        | fpx.cpp:167                   |     384 (8 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      64 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      40 (8 calls)    |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|      + rdc_mont                       | fp_generic.cpp:299            |   3,264 (8 calls)    |                      |                      |                      |                      |
+|         digit_x_digit                 | fp_generic.cpp:152            |     624 (16 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |   1,152 (144 calls)  |                      |                      |                      |                      |
+|      + mp_addfastx2                   | fpx.cpp:148                   |     188 (4 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     180 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|     + fp2sub503                       | fpx.cpp:124                   |     410 (2 calls)    |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |     380 (4 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|     + fp2sqr503_mont                  | fpx.cpp:154                   |   1,800              |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |      94 (2 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |      90 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      32 (4 calls)    |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |      95              |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      24 (3 calls)    |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |       8              |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |       5              |                      |                      |                      |                      |
+|      + fpmul503_mont                  | fpx.cpp:57                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|     + fp2inv503_mont                  | fpx.cpp:356                   |  76,185              |                      |                      |                      |                      |
+|      + fpsqr503_mont                  | fpx.cpp:73                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |     139              |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      40 (5 calls)    |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |       8              |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |       5              |                      |                      |                      |                      |
+|      + fpinv503_mont                  | fpx.cpp:89                    |  72,823              |                      |                      |                      |                      |
+|         fpcopy503                     | fpx.cpp:12                    |      15              |                      |                      |                      |                      |
+|       + fpinv503_chain_mont           | fpx.cpp:209                   |  70,441              |                      |                      |                      |                      |
+|        + fpsqr503_mont                | fpx.cpp:73                    |  34,452 (44 calls)   |                      |                      |                      |                      |
+|         + mul                         | mont_ops.hpp:100              |  34,320 (44 calls)   |                      |                      |                      |                      |
+|          + mul                        | mont_ops_fios_csa_true.hpp:85 |  24,684 (44 calls)   |                      |                      |                      |                      |
+|           + csa_reduce8               | mont_ops_fios_csa_true.hpp:63 |   6,556 (44 calls)   |                      |                      |                      |                      |
+|              csa32                    | mont_ops_fios_csa_true.hpp:54 |   2,904 (264 calls)  |                      |                      |                      |                      |
+|            cond_sub<unsigned long, 8> | mont_ops.hpp:53               |   2,640 (44 calls)   |                      |                      |                      |                      |
+|        + fpmul503_mont                | fpx.cpp:57                    |  35,235 (45 calls)   |                      |                      |                      |                      |
+|         + mul                         | mont_ops.hpp:100              |  35,100 (45 calls)   |                      |                      |                      |                      |
+|          + mul                        | mont_ops_fios_csa_true.hpp:85 |  25,245 (45 calls)   |                      |                      |                      |                      |
+|           + csa_reduce8               | mont_ops_fios_csa_true.hpp:63 |   6,705 (45 calls)   |                      |                      |                      |                      |
+|              csa32                    | mont_ops_fios_csa_true.hpp:54 |   2,970 (270 calls)  |                      |                      |                      |                      |
+|            cond_sub<unsigned long, 8> | mont_ops.hpp:53               |   2,700 (45 calls)   |                      |                      |                      |                      |
+|          fpcopy503                    | fpx.cpp:12                    |      30 (2 calls)    |                      |                      |                      |                      |
+|       + fpsqr503_mont                 | fpx.cpp:73                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|       + fpmul503_mont                 | fpx.cpp:57                    |     783              |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |     780              |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |     561              |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     149              |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |      66 (6 calls)    |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |      60              |                      |                      |                      |                      |
+|      + fpneg503                       | fp_generic.cpp:76             |      48              |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |       8              |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |       8              |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |       5              |                      |                      |                      |                      |
+|      + fpmul503_mont                  | fpx.cpp:57                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|    + fpadd503                         | fp_generic.cpp:26             |     278 (2 calls)    |                      |                      |                      |                      |
+|       is_digit_lessthan_ct            | config.h:103                  |      80 (10 calls)   |                      |                      |                      |                      |
+|     + is_digit_zero_ct                | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|        is_digit_nonzero_ct            | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|    + fp2add503                        | fpx.cpp:118                   |     293              |                      |                      |                      |                      |
+|     + fpadd503                        | fp_generic.cpp:26             |     278 (2 calls)    |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |      80 (10 calls)   |                      |                      |                      |                      |
+|      + is_digit_zero_ct               | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|         is_digit_nonzero_ct           | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|    + LADDER3PT                        | ec_isogeny.cpp:286            |  64,922              |                      |                      |                      |                      |
+|       fpcopy503                       | fpx.cpp:12                    |      60 (4 calls)    |                      |                      |                      |                      |
+|     + fp2add503                       | fpx.cpp:118                   |     586 (2 calls)    |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |     556 (4 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     160 (20 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|     + fp2div2_503                     | fpx.cpp:130                   |     342 (2 calls)    |                      |                      |                      |                      |
+|      + fpdiv2_503                     | fp_generic.cpp:87             |     320 (4 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|         mp_shiftr1                    | fpx.cpp:431                   |     116 (4 calls)    |                      |                      |                      |                      |
+|     + fp2copy503                      | fpx.cpp:100                   |     123 (3 calls)    |                      |                      |                      |                      |
+|        fpcopy503                      | fpx.cpp:12                    |      90 (6 calls)    |                      |                      |                      |                      |
+|       fpzero503                       | fpx.cpp:20                    |      12              |                      |                      |                      |                      |
+|       swap_points                     | ec_isogeny.cpp:263            |     145              |                      |                      |                      |                      |
+|     + xDBLADD                         | ec_isogeny.cpp:236            |  55,824              |                      |                      |                      |                      |
+|      + fp2add503                      | fpx.cpp:118                   |   1,172 (4 calls)    |                      |                      |                      |                      |
+|       + fpadd503                      | fp_generic.cpp:26             |   1,112 (8 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     320 (40 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      64 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      40 (8 calls)    |                      |                      |                      |                      |
+|      + fp2sub503                      | fpx.cpp:124                   |     820 (4 calls)    |                      |                      |                      |                      |
+|       + fpsub503                      | fp_generic.cpp:54             |     760 (8 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     192 (24 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      64 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      40 (8 calls)    |                      |                      |                      |                      |
+|      + fp2sqr503_mont                 | fpx.cpp:154                   |   7,200 (4 calls)    |                      |                      |                      |                      |
+|       + mp_addfast                    | fpx.cpp:142                   |     376 (8 calls)    |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     360 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |     128 (16 calls)   |                      |                      |                      |                      |
+|       + fpsub503                      | fp_generic.cpp:54             |     380 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|       + fpmul503_mont                 | fpx.cpp:57                    |   6,264 (8 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |   6,240 (8 calls)    |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |   4,488 (8 calls)    |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |   1,192 (8 calls)    |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |     528 (48 calls)   |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |     480 (8 calls)    |                      |                      |                      |                      |
+|      + fp2correction503               | fpx.cpp:136                   |     197              |                      |                      |                      |                      |
+|       + fpcorrection503               | fp_generic.cpp:100            |     190 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|      + fp2mul503_mont                 | fpx.cpp:186                   |  46,320 (6 calls)    |                      |                      |                      |                      |
+|       + mp_mul                        | fp_generic.cpp:270            |  39,222 (18 calls)   |                      |                      |                      |                      |
+|        + mul                          | mpx_iface_tvu_mul.hpp:50      |  38,952 (18 calls)   |                      |                      |                      |                      |
+|           pack                        | mpx_iface_tvu_mul.hpp:24      |   3,168 (36 calls)   |                      |                      |                      |                      |
+|           add_prod_to_acc             | mpx_iface_tvu_mul.hpp:129     |  18,000 (18 calls)   |                      |                      |                      |                      |
+|           convert_blocks_to_digits    | mpx_iface_tvu_mul.hpp:159     |   9,198 (18 calls)   |                      |                      |                      |                      |
+|       + mp_addfast                    | fpx.cpp:142                   |     564 (12 calls)   |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     540 (12 calls)   |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |     192 (24 calls)   |                      |                      |                      |                      |
+|       + mp_subfast                    | fpx.cpp:180                   |     624 (12 calls)   |                      |                      |                      |                      |
+|        + mp_sub                       | fpx.cpp:167                   |     576 (12 calls)   |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|         + is_digit_zero_ct            | config.h:98                   |      96 (12 calls)   |                      |                      |                      |                      |
+|            is_digit_nonzero_ct        | config.h:93                   |      60 (12 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|       + rdc_mont                      | fp_generic.cpp:299            |   4,896 (12 calls)   |                      |                      |                      |                      |
+|          digit_x_digit                | fp_generic.cpp:152            |     936 (24 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |   1,728 (216 calls)  |                      |                      |                      |                      |
+|       + mp_addfastx2                  | fpx.cpp:148                   |     282 (6 calls)    |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     270 (6 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|     + fp2mul503_mont                  | fpx.cpp:186                   |   7,720              |                      |                      |                      |                      |
+|      + mp_mul                         | fp_generic.cpp:270            |   6,537 (3 calls)    |                      |                      |                      |                      |
+|       + mul                           | mpx_iface_tvu_mul.hpp:50      |   6,492 (3 calls)    |                      |                      |                      |                      |
+|          pack                         | mpx_iface_tvu_mul.hpp:24      |     528 (6 calls)    |                      |                      |                      |                      |
+|          add_prod_to_acc              | mpx_iface_tvu_mul.hpp:129     |   3,000 (3 calls)    |                      |                      |                      |                      |
+|          convert_blocks_to_digits     | mpx_iface_tvu_mul.hpp:159     |   1,533 (3 calls)    |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |      94 (2 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |      90 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      32 (4 calls)    |                      |                      |                      |                      |
+|      + mp_subfast                     | fpx.cpp:180                   |     104 (2 calls)    |                      |                      |                      |                      |
+|       + mp_sub                        | fpx.cpp:167                   |      96 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      16 (2 calls)    |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |      16 (2 calls)    |                      |                      |                      |                      |
+|      + rdc_mont                       | fp_generic.cpp:299            |     816 (2 calls)    |                      |                      |                      |                      |
+|         digit_x_digit                 | fp_generic.cpp:152            |     156 (4 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     288 (36 calls)   |                      |                      |                      |                      |
+|      + mp_addfastx2                   | fpx.cpp:148                   |      47              |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |      45              |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      16 (2 calls)    |                      |                      |                      |                      |
+|    + fp2copy503                       | fpx.cpp:100                   |     164 (4 calls)    |                      |                      |                      |                      |
+|       fpcopy503                       | fpx.cpp:12                    |     120 (8 calls)    |                      |                      |                      |                      |
+|    + xDBLe                            | ec_isogeny.cpp:27             |  35,562              |                      |                      |                      |                      |
+|       copy_words                      | fpx.cpp:46                    |      15              |                      |                      |                      |                      |
+|     + xDBL                            | ec_isogeny.cpp:9              |  35,534              |                      |                      |                      |                      |
+|      + fp2sub503                      | fpx.cpp:124                   |     410 (2 calls)    |                      |                      |                      |                      |
+|       + fpsub503                      | fp_generic.cpp:54             |     380 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|      + fp2add503                      | fpx.cpp:118                   |     586 (2 calls)    |                      |                      |                      |                      |
+|       + fpadd503                      | fp_generic.cpp:26             |     556 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     160 (20 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|      + fp2sqr503_mont                 | fpx.cpp:154                   |   3,600 (2 calls)    |                      |                      |                      |                      |
+|       + mp_addfast                    | fpx.cpp:142                   |     188 (4 calls)    |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     180 (4 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|       + fpsub503                      | fp_generic.cpp:54             |     190 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|       + fpmul503_mont                 | fpx.cpp:57                    |   3,132 (4 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |   3,120 (4 calls)    |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |   2,244 (4 calls)    |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     596 (4 calls)    |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |     264 (24 calls)   |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |     240 (4 calls)    |                      |                      |                      |                      |
+|      + fp2mul503_mont                 | fpx.cpp:186                   |  30,880 (4 calls)    |                      |                      |                      |                      |
+|       + mp_mul                        | fp_generic.cpp:270            |  26,148 (12 calls)   |                      |                      |                      |                      |
+|        + mul                          | mpx_iface_tvu_mul.hpp:50      |  25,968 (12 calls)   |                      |                      |                      |                      |
+|           pack                        | mpx_iface_tvu_mul.hpp:24      |   2,112 (24 calls)   |                      |                      |                      |                      |
+|           add_prod_to_acc             | mpx_iface_tvu_mul.hpp:129     |  12,000 (12 calls)   |                      |                      |                      |                      |
+|           convert_blocks_to_digits    | mpx_iface_tvu_mul.hpp:159     |   6,132 (12 calls)   |                      |                      |                      |                      |
+|       + mp_addfast                    | fpx.cpp:142                   |     376 (8 calls)    |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     360 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |     128 (16 calls)   |                      |                      |                      |                      |
+|       + mp_subfast                    | fpx.cpp:180                   |     416 (8 calls)    |                      |                      |                      |                      |
+|        + mp_sub                       | fpx.cpp:167                   |     384 (8 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|         + is_digit_zero_ct            | config.h:98                   |      64 (8 calls)    |                      |                      |                      |                      |
+|            is_digit_nonzero_ct        | config.h:93                   |      40 (8 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|       + rdc_mont                      | fp_generic.cpp:299            |   3,264 (8 calls)    |                      |                      |                      |                      |
+|          digit_x_digit                | fp_generic.cpp:152            |     624 (16 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |   1,152 (144 calls)  |                      |                      |                      |                      |
+|       + mp_addfastx2                  | fpx.cpp:148                   |     188 (4 calls)    |                      |                      |                      |                      |
+|        + mp_add                       | fpx.cpp:385                   |     180 (4 calls)    |                      |                      |                      |                      |
+|           is_digit_lessthan_ct        | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|    + get_4_isog                       | ec_isogeny.cpp:42             |  17,238 (2 calls)    |                      |                      |                      |                      |
+|     + fp2sub503                       | fpx.cpp:124                   |     410 (2 calls)    |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |     380 (4 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|     + fp2add503                       | fpx.cpp:118                   |   2,344 (8 calls)    |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |   2,224 (16 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     640 (80 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |     128 (16 calls)   |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      80 (16 calls)   |                      |                      |                      |                      |
+|     + fp2sqr503_mont                  | fpx.cpp:154                   |  14,400 (8 calls)    |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |     752 (16 calls)   |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     720 (16 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     256 (32 calls)   |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |     760 (8 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     192 (24 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      64 (8 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      40 (8 calls)    |                      |                      |                      |                      |
+|      + fpmul503_mont                  | fpx.cpp:57                    |  12,528 (16 calls)   |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |  12,480 (16 calls)   |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   8,976 (16 calls)   |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |   2,384 (16 calls)   |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |   1,056 (96 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     960 (16 calls)   |                      |                      |                      |                      |
+|    + eval_4_isog                      | ec_isogeny.cpp:59             |  51,501              |                      |                      |                      |                      |
+|     + fp2add503                       | fpx.cpp:118                   |     879 (3 calls)    |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |     834 (6 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     240 (30 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      48 (6 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      30 (6 calls)    |                      |                      |                      |                      |
+|     + fp2sub503                       | fpx.cpp:124                   |     615 (3 calls)    |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |     570 (6 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     144 (18 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      48 (6 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      30 (6 calls)    |                      |                      |                      |                      |
+|     + fp2mul503_mont                  | fpx.cpp:186                   |  46,320 (6 calls)    |                      |                      |                      |                      |
+|      + mp_mul                         | fp_generic.cpp:270            |  39,222 (18 calls)   |                      |                      |                      |                      |
+|       + mul                           | mpx_iface_tvu_mul.hpp:50      |  38,952 (18 calls)   |                      |                      |                      |                      |
+|          pack                         | mpx_iface_tvu_mul.hpp:24      |   3,168 (36 calls)   |                      |                      |                      |                      |
+|          add_prod_to_acc              | mpx_iface_tvu_mul.hpp:129     |  18,000 (18 calls)   |                      |                      |                      |                      |
+|          convert_blocks_to_digits     | mpx_iface_tvu_mul.hpp:159     |   9,198 (18 calls)   |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |     564 (12 calls)   |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     540 (12 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     192 (24 calls)   |                      |                      |                      |                      |
+|      + mp_subfast                     | fpx.cpp:180                   |     624 (12 calls)   |                      |                      |                      |                      |
+|       + mp_sub                        | fpx.cpp:167                   |     576 (12 calls)   |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      96 (12 calls)   |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      60 (12 calls)   |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|      + rdc_mont                       | fp_generic.cpp:299            |   4,896 (12 calls)   |                      |                      |                      |                      |
+|         digit_x_digit                 | fp_generic.cpp:152            |     936 (24 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |   1,728 (216 calls)  |                      |                      |                      |                      |
+|      + mp_addfastx2                   | fpx.cpp:148                   |     282 (6 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     270 (6 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|     + fp2sqr503_mont                  | fpx.cpp:154                   |   3,600 (2 calls)    |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |     188 (4 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     180 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |     190 (2 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|      + fpmul503_mont                  | fpx.cpp:57                    |   3,132 (4 calls)    |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |   3,120 (4 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   2,244 (4 calls)    |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |     596 (4 calls)    |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |     264 (24 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     240 (4 calls)    |                      |                      |                      |                      |
+|    + fp2div2_503                      | fpx.cpp:130                   |     342 (2 calls)    |                      |                      |                      |                      |
+|     + fpdiv2_503                      | fp_generic.cpp:87             |     320 (4 calls)    |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |      64 (8 calls)    |                      |                      |                      |                      |
+|        mp_shiftr1                     | fpx.cpp:431                   |     116 (4 calls)    |                      |                      |                      |                      |
+|    + fp2sub503                        | fpx.cpp:124                   |     205              |                      |                      |                      |                      |
+|     + fpsub503                        | fp_generic.cpp:54             |     190 (2 calls)    |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|      + is_digit_zero_ct               | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|         is_digit_nonzero_ct           | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|    + j_inv                            | ec_isogeny.cpp:212            | 108,684              |                      |                      |                      |                      |
+|     + fp2sqr503_mont                  | fpx.cpp:154                   |   7,200 (4 calls)    |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |     376 (8 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     360 (8 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |     128 (16 calls)   |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |     380 (4 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      32 (4 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      20 (4 calls)    |                      |                      |                      |                      |
+|      + fpmul503_mont                  | fpx.cpp:57                    |   6,264 (8 calls)    |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |   6,240 (8 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   4,488 (8 calls)    |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |   1,192 (8 calls)    |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |     528 (48 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     480 (8 calls)    |                      |                      |                      |                      |
+|     + fp2add503                       | fpx.cpp:118                   |   1,465 (5 calls)    |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |   1,390 (10 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     400 (50 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      80 (10 calls)   |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      50 (10 calls)   |                      |                      |                      |                      |
+|     + fp2sub503                       | fpx.cpp:124                   |     615 (3 calls)    |                      |                      |                      |                      |
+|      + fpsub503                       | fp_generic.cpp:54             |     570 (6 calls)    |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     144 (18 calls)   |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |      48 (6 calls)    |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |      30 (6 calls)    |                      |                      |                      |                      |
+|     + fp2mul503_mont                  | fpx.cpp:186                   |  23,160 (3 calls)    |                      |                      |                      |                      |
+|      + mp_mul                         | fp_generic.cpp:270            |  19,611 (9 calls)    |                      |                      |                      |                      |
+|       + mul                           | mpx_iface_tvu_mul.hpp:50      |  19,476 (9 calls)    |                      |                      |                      |                      |
+|          pack                         | mpx_iface_tvu_mul.hpp:24      |   1,584 (18 calls)   |                      |                      |                      |                      |
+|          add_prod_to_acc              | mpx_iface_tvu_mul.hpp:129     |   9,000 (9 calls)    |                      |                      |                      |                      |
+|          convert_blocks_to_digits     | mpx_iface_tvu_mul.hpp:159     |   4,599 (9 calls)    |                      |                      |                      |                      |
+|      + mp_addfast                     | fpx.cpp:142                   |     282 (6 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     270 (6 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      96 (12 calls)   |                      |                      |                      |                      |
+|      + mp_subfast                     | fpx.cpp:180                   |     312 (6 calls)    |                      |                      |                      |                      |
+|       + mp_sub                        | fpx.cpp:167                   |     288 (6 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      48 (6 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      30 (6 calls)    |                      |                      |                      |                      |
+|        is_digit_lessthan_ct           | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|      + rdc_mont                       | fp_generic.cpp:299            |   2,448 (6 calls)    |                      |                      |                      |                      |
+|         digit_x_digit                 | fp_generic.cpp:152            |     468 (12 calls)   |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |     864 (108 calls)  |                      |                      |                      |                      |
+|      + mp_addfastx2                   | fpx.cpp:148                   |     141 (3 calls)    |                      |                      |                      |                      |
+|       + mp_add                        | fpx.cpp:385                   |     135 (3 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|     + fp2inv503_mont                  | fpx.cpp:356                   |  76,185              |                      |                      |                      |                      |
+|      + fpsqr503_mont                  | fpx.cpp:73                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|      + fpadd503                       | fp_generic.cpp:26             |     139              |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |      40 (5 calls)    |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |       8              |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |       5              |                      |                      |                      |                      |
+|      + fpinv503_mont                  | fpx.cpp:89                    |  72,823              |                      |                      |                      |                      |
+|         fpcopy503                     | fpx.cpp:12                    |      15              |                      |                      |                      |                      |
+|       + fpinv503_chain_mont           | fpx.cpp:209                   |  70,441              |                      |                      |                      |                      |
+|        + fpsqr503_mont                | fpx.cpp:73                    |  34,452 (44 calls)   |                      |                      |                      |                      |
+|         + mul                         | mont_ops.hpp:100              |  34,320 (44 calls)   |                      |                      |                      |                      |
+|          + mul                        | mont_ops_fios_csa_true.hpp:85 |  24,684 (44 calls)   |                      |                      |                      |                      |
+|           + csa_reduce8               | mont_ops_fios_csa_true.hpp:63 |   6,556 (44 calls)   |                      |                      |                      |                      |
+|              csa32                    | mont_ops_fios_csa_true.hpp:54 |   2,904 (264 calls)  |                      |                      |                      |                      |
+|            cond_sub<unsigned long, 8> | mont_ops.hpp:53               |   2,640 (44 calls)   |                      |                      |                      |                      |
+|        + fpmul503_mont                | fpx.cpp:57                    |  35,235 (45 calls)   |                      |                      |                      |                      |
+|         + mul                         | mont_ops.hpp:100              |  35,100 (45 calls)   |                      |                      |                      |                      |
+|          + mul                        | mont_ops_fios_csa_true.hpp:85 |  25,245 (45 calls)   |                      |                      |                      |                      |
+|           + csa_reduce8               | mont_ops_fios_csa_true.hpp:63 |   6,705 (45 calls)   |                      |                      |                      |                      |
+|              csa32                    | mont_ops_fios_csa_true.hpp:54 |   2,970 (270 calls)  |                      |                      |                      |                      |
+|            cond_sub<unsigned long, 8> | mont_ops.hpp:53               |   2,700 (45 calls)   |                      |                      |                      |                      |
+|          fpcopy503                    | fpx.cpp:12                    |      30 (2 calls)    |                      |                      |                      |                      |
+|       + fpsqr503_mont                 | fpx.cpp:73                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|       + fpmul503_mont                 | fpx.cpp:57                    |     783              |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |     780              |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |     561              |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     149              |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |      66 (6 calls)    |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |      60              |                      |                      |                      |                      |
+|      + fpneg503                       | fp_generic.cpp:76             |      48              |                      |                      |                      |                      |
+|         is_digit_lessthan_ct          | config.h:103                  |       8              |                      |                      |                      |                      |
+|       + is_digit_zero_ct              | config.h:98                   |       8              |                      |                      |                      |                      |
+|          is_digit_nonzero_ct          | config.h:93                   |       5              |                      |                      |                      |                      |
+|      + fpmul503_mont                  | fpx.cpp:57                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|       + mul                           | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|         + csa_reduce8                 | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|            csa32                      | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|          cond_sub<unsigned long, 8>   | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|    + fp2_encode                       | sidh.cpp:36                   |   1,852              |                      |                      |                      |                      |
+|     + from_fp2mont                    | fpx.cpp:377                   |   1,793              |                      |                      |                      |                      |
+|      + from_mont                      | fpx.cpp:36                    |   1,782 (2 calls)    |                      |                      |                      |                      |
+|       + fpmul503_mont                 | fpx.cpp:57                    |   1,566 (2 calls)    |                      |                      |                      |                      |
+|        + mul                          | mont_ops.hpp:100              |   1,560 (2 calls)    |                      |                      |                      |                      |
+|         + mul                         | mont_ops_fios_csa_true.hpp:85 |   1,122 (2 calls)    |                      |                      |                      |                      |
+|          + csa_reduce8                | mont_ops_fios_csa_true.hpp:63 |     298 (2 calls)    |                      |                      |                      |                      |
+|             csa32                     | mont_ops_fios_csa_true.hpp:54 |     132 (12 calls)   |                      |                      |                      |                      |
+|           cond_sub<unsigned long, 8>  | mont_ops.hpp:53               |     120 (2 calls)    |                      |                      |                      |                      |
+|       + fpcorrection503               | fp_generic.cpp:100            |     190 (2 calls)    |                      |                      |                      |                      |
+|          is_digit_lessthan_ct         | config.h:103                  |      48 (6 calls)    |                      |                      |                      |                      |
+|        + is_digit_zero_ct             | config.h:98                   |      16 (2 calls)    |                      |                      |                      |                      |
+|           is_digit_nonzero_ct         | config.h:93                   |      10 (2 calls)    |                      |                      |                      |                      |
+|  + cshake256_simple                   | fips202.cpp:636               |                      |   6,960 (3 calls)    |   4,835 (3 calls)    |   5,045 (3 calls)    |   4,996 (3 calls)    |
+|     KeccakF1600_StatePermute          | fips202.cpp:71                |                      |   6,432 (12 calls)   |   4,496 (8 calls)    |   4,296 (8 calls)    |   4,304 (8 calls)    |
+|  + EphemeralKeyGeneration_A           | sidh.cpp:118                  |                      | 520,491              | 489,997              | 508,085              | 508,469              |
+|     fpadd503                          | fp_generic.cpp:26             |                      |   1,716 (22 calls)   |   1,738 (22 calls)   |   1,716 (22 calls)   |   1,778 (22 calls)   |
+|   + LADDER3PT                         | ec_isogeny.cpp:286            |                      |  33,530              |  32,606              |  33,944              |  34,001              |
+|      fpadd503                         | fp_generic.cpp:26             |                      |     312 (4 calls)    |     316 (4 calls)    |     466 (4 calls)    |     466 (4 calls)    |
+|      fp2div2_503                      | fpx.cpp:130                   |                      |     186 (2 calls)    |     186 (2 calls)    |     334 (2 calls)    |     334 (2 calls)    |
+|    + xDBLADD                          | ec_isogeny.cpp:236            |                      |  31,279              |  30,195              |  30,989              |  30,993              |
+|       fpadd503                        | fp_generic.cpp:26             |                      |     624 (8 calls)    |     632 (8 calls)    |     624 (8 calls)    |     624 (8 calls)    |
+|       fpsub503                        | fp_generic.cpp:54             |                      |     440 (8 calls)    |     448 (8 calls)    |     440 (8 calls)    |     440 (8 calls)    |
+|     + fp2sqr503_mont                  | fpx.cpp:154                   |                      |  21,640 (4 calls)    |  19,584 (4 calls)    |  19,568 (4 calls)    |  19,568 (4 calls)    |
+|      + fpmul503_mont                  | fpx.cpp:57                    |                      |  21,192 (8 calls)    |  19,144 (8 calls)    |  19,144 (8 calls)    |  19,144 (8 calls)    |
+|       + mul                           | mont_ops.hpp:100              |                      |  21,176 (8 calls)    |  19,128 (8 calls)    |  19,128 (8 calls)    |  19,128 (8 calls)    |
+|          mul                          | mont_ops_fios_csa_true.hpp:85 |                      |  21,160 (8 calls)    |  19,112 (8 calls)    |  19,112 (8 calls)    |  19,112 (8 calls)    |
+|       fpcorrection503                 | fp_generic.cpp:100            |                      |     108 (2 calls)    |     110 (2 calls)    |     112 (2 calls)    |     112 (2 calls)    |
+|     + fp2mul503_mont                  | fpx.cpp:186                   |                      |   8,394 (6 calls)    |   9,348 (6 calls)    |  10,166 (6 calls)    |  10,170 (6 calls)    |
+|      + mp_mul                         | fp_generic.cpp:270            |                      |   3,204 (18 calls)   |   4,050 (18 calls)   |   4,600 (18 calls)   |   4,603 (18 calls)   |
+|       + mul                           | mpx_iface_tvu_mul.hpp:50      |                      |   3,168 (18 calls)   |   4,014 (18 calls)   |   4,564 (18 calls)   |   4,567 (18 calls)   |
+|          convert_blocks_to_digits     | mpx_iface_tvu_mul.hpp:159     |                      |   1,224 (18 calls)   |   1,440 (18 calls)   |   1,800 (18 calls)   |   1,800 (18 calls)   |
+|      + rdc_mont                       | fp_generic.cpp:299            |                      |   4,080 (12 calls)   |   4,212 (12 calls)   |   4,140 (12 calls)   |   4,140 (12 calls)   |
+|         digit_x_digit                 | fp_generic.cpp:152            |                      |     768 (24 calls)   |     792 (24 calls)   |     744 (24 calls)   |     744 (24 calls)   |
+|         is_digit_lessthan_ct          | config.h:103                  |                      |   1,536 (192 calls)  |   1,536 (192 calls)  |   1,536 (192 calls)  |   1,536 (192 calls)  |
+|    + fp2mul503_mont                   | fpx.cpp:186                   |                      |   1,399              |   1,558              |   1,693              |   1,697              |
+|     + mp_mul                          | fp_generic.cpp:270            |                      |     534 (3 calls)    |     675 (3 calls)    |     765 (3 calls)    |     768 (3 calls)    |
+|      + mul                            | mpx_iface_tvu_mul.hpp:50      |                      |     528 (3 calls)    |     669 (3 calls)    |     759 (3 calls)    |     762 (3 calls)    |
+|         convert_blocks_to_digits      | mpx_iface_tvu_mul.hpp:159     |                      |     204 (3 calls)    |     240 (3 calls)    |     300 (3 calls)    |     300 (3 calls)    |
+|     + rdc_mont                        | fp_generic.cpp:299            |                      |     680 (2 calls)    |     702 (2 calls)    |     690 (2 calls)    |     690 (2 calls)    |
+|        digit_x_digit                  | fp_generic.cpp:152            |                      |     128 (4 calls)    |     132 (4 calls)    |     124 (4 calls)    |     124 (4 calls)    |
+|        is_digit_lessthan_ct           | config.h:103                  |                      |     256 (32 calls)   |     256 (32 calls)   |     256 (32 calls)   |     256 (32 calls)   |
+|     fpsub503                          | fp_generic.cpp:54             |                      |     440 (8 calls)    |     448 (8 calls)    |     440 (8 calls)    |     471 (8 calls)    |
+|   + fp2sqr503_mont                    | fpx.cpp:154                   |                      |  54,100 (10 calls)   |  48,960 (10 calls)   |  48,930 (10 calls)   |  48,956 (10 calls)   |
+|    + fpmul503_mont                    | fpx.cpp:57                    |                      |  52,980 (20 calls)   |  47,860 (20 calls)   |  47,860 (20 calls)   |  47,860 (20 calls)   |
+|     + mul                             | mont_ops.hpp:100              |                      |  52,940 (20 calls)   |  47,820 (20 calls)   |  47,820 (20 calls)   |  47,820 (20 calls)   |
+|        mul                            | mont_ops_fios_csa_true.hpp:85 |                      |  52,900 (20 calls)   |  47,780 (20 calls)   |  47,780 (20 calls)   |  47,780 (20 calls)   |
+|   + fp2mul503_mont                    | fpx.cpp:186                   |                      |  18,187 (13 calls)   |  20,254 (13 calls)   |  21,995 (13 calls)   |  22,042 (13 calls)   |
+|    + mp_mul                           | fp_generic.cpp:270            |                      |   6,942 (39 calls)   |   8,775 (39 calls)   |   9,945 (39 calls)   |   9,951 (39 calls)   |
+|     + mul                             | mpx_iface_tvu_mul.hpp:50      |                      |   6,864 (39 calls)   |   8,697 (39 calls)   |   9,867 (39 calls)   |   9,873 (39 calls)   |
+|        convert_blocks_to_digits       | mpx_iface_tvu_mul.hpp:159     |                      |   2,652 (39 calls)   |   3,120 (39 calls)   |   3,900 (39 calls)   |   3,900 (39 calls)   |
+|    + rdc_mont                         | fp_generic.cpp:299            |                      |   8,840 (26 calls)   |   9,126 (26 calls)   |   8,970 (26 calls)   |   9,015 (26 calls)   |
+|       digit_x_digit                   | fp_generic.cpp:152            |                      |   1,664 (52 calls)   |   1,716 (52 calls)   |   1,612 (52 calls)   |   1,612 (52 calls)   |
+|       is_digit_lessthan_ct            | config.h:103                  |                      |   3,328 (416 calls)  |   3,328 (416 calls)  |   3,328 (416 calls)  |   3,328 (416 calls)  |
+|   + eval_4_isog                       | ec_isogeny.cpp:59             |                      | 140,546 (7 calls)    | 140,112 (7 calls)    | 145,701 (7 calls)    | 145,848 (7 calls)    |
+|      fpadd503                         | fp_generic.cpp:26             |                      |   3,276 (42 calls)   |   3,318 (42 calls)   |   3,276 (42 calls)   |   3,276 (42 calls)   |
+|      fpsub503                         | fp_generic.cpp:54             |                      |   2,310 (42 calls)   |   2,352 (42 calls)   |   2,310 (42 calls)   |   2,310 (42 calls)   |
+|    + fp2mul503_mont                   | fpx.cpp:186                   |                      |  58,758 (42 calls)   |  65,436 (42 calls)   |  71,076 (42 calls)   |  71,244 (42 calls)   |
+|     + mp_mul                          | fp_generic.cpp:270            |                      |  22,428 (126 calls)  |  28,350 (126 calls)  |  32,130 (126 calls)  |  32,235 (126 calls)  |
+|      + mul                            | mpx_iface_tvu_mul.hpp:50      |                      |  22,176 (126 calls)  |  28,098 (126 calls)  |  31,878 (126 calls)  |  31,983 (126 calls)  |
+|         convert_blocks_to_digits      | mpx_iface_tvu_mul.hpp:159     |                      |   8,568 (126 calls)  |  10,080 (126 calls)  |  12,600 (126 calls)  |  12,600 (126 calls)  |
+|     + rdc_mont                        | fp_generic.cpp:299            |                      |  28,560 (84 calls)   |  29,484 (84 calls)   |  28,980 (84 calls)   |  28,980 (84 calls)   |
+|        digit_x_digit                  | fp_generic.cpp:152            |                      |   5,376 (168 calls)  |   5,544 (168 calls)  |   5,208 (168 calls)  |   5,208 (168 calls)  |
+|        is_digit_lessthan_ct           | config.h:103                  |                      |  10,752 (1344 calls) |  10,752 (1344 calls) |  10,752 (1344 calls) |  10,752 (1344 calls) |
+|    + fp2sqr503_mont                   | fpx.cpp:154                   |                      |  75,740 (14 calls)   |  68,544 (14 calls)   |  68,491 (14 calls)   |  68,491 (14 calls)   |
+|     + fpmul503_mont                   | fpx.cpp:57                    |                      |  74,172 (28 calls)   |  67,004 (28 calls)   |  67,004 (28 calls)   |  67,004 (28 calls)   |
+|      + mul                            | mont_ops.hpp:100              |                      |  74,116 (28 calls)   |  66,948 (28 calls)   |  66,948 (28 calls)   |  66,948 (28 calls)   |
+|         mul                           | mont_ops_fios_csa_true.hpp:85 |                      |  74,060 (28 calls)   |  66,892 (28 calls)   |  66,892 (28 calls)   |  66,892 (28 calls)   |
+|   + fp2inv503_mont                    | fpx.cpp:356                   |                      | 254,788              | 230,211              | 239,594              | 239,594              |
+|    + fpsqr503_mont                    | fpx.cpp:73                    |                      |  10,596 (4 calls)    |   9,572 (4 calls)    |   9,572 (4 calls)    |   9,572 (4 calls)    |
+|     + mul                             | mont_ops.hpp:100              |                      |  10,588 (4 calls)    |   9,564 (4 calls)    |   9,564 (4 calls)    |   9,564 (4 calls)    |
+|        mul                            | mont_ops_fios_csa_true.hpp:85 |                      |  10,580 (4 calls)    |   9,556 (4 calls)    |   9,556 (4 calls)    |   9,556 (4 calls)    |
+|    + fpinv503_chain_mont              | fpx.cpp:209                   |                      | 236,114              | 213,329              | 222,706              | 222,706              |
+|     + fpsqr503_mont                   | fpx.cpp:73                    |                      | 116,556 (44 calls)   | 105,292 (44 calls)   | 114,864 (48 calls)   | 114,864 (48 calls)   |
+|      + mul                            | mont_ops.hpp:100              |                      | 116,468 (44 calls)   | 105,204 (44 calls)   | 114,768 (48 calls)   | 114,768 (48 calls)   |
+|         mul                           | mont_ops_fios_csa_true.hpp:85 |                      | 116,380 (44 calls)   | 105,116 (44 calls)   | 114,672 (48 calls)   | 114,672 (48 calls)   |
+|     + fpmul503_mont                   | fpx.cpp:57                    |                      | 119,205 (45 calls)   | 107,685 (45 calls)   | 107,357 (45 calls)   | 107,357 (45 calls)   |
+|      + mul                            | mont_ops.hpp:100              |                      | 119,115 (45 calls)   | 107,595 (45 calls)   | 107,267 (45 calls)   | 107,267 (45 calls)   |
+|         mul                           | mont_ops_fios_csa_true.hpp:85 |                      | 119,025 (45 calls)   | 107,505 (45 calls)   | 107,177 (45 calls)   | 107,177 (45 calls)   |
+|    + fpmul503_mont                    | fpx.cpp:57                    |                      |   7,947 (3 calls)    |   7,179 (3 calls)    |   7,179 (3 calls)    |   7,179 (3 calls)    |
+|     + mul                             | mont_ops.hpp:100              |                      |   7,941 (3 calls)    |   7,173 (3 calls)    |   7,173 (3 calls)    |   7,173 (3 calls)    |
+|        mul                            | mont_ops_fios_csa_true.hpp:85 |                      |   7,935 (3 calls)    |   7,167 (3 calls)    |   7,167 (3 calls)    |   7,167 (3 calls)    |
+|   + from_mont                         | fpx.cpp:36                    |                      |  16,224 (6 calls)    |  14,694 (6 calls)    |  14,640 (6 calls)    |  14,640 (6 calls)    |
+|    + fpmul503_mont                    | fpx.cpp:57                    |                      |  15,894 (6 calls)    |  14,358 (6 calls)    |  14,310 (6 calls)    |  14,310 (6 calls)    |
+|     + mul                             | mont_ops.hpp:100              |                      |  15,882 (6 calls)    |  14,346 (6 calls)    |  14,298 (6 calls)    |  14,298 (6 calls)    |
+|        mul                            | mont_ops_fios_csa_true.hpp:85 |                      |  15,870 (6 calls)    |  14,334 (6 calls)    |  14,286 (6 calls)    |  14,286 (6 calls)    |
+|  + EphemeralSecretAgreement_A         | sidh.cpp:269                  |                      | 686,381              | 628,321              | 651,013              | 651,272              |
+|   + fp2_decode                        | sidh.cpp:62                   |                      |  16,029 (3 calls)    |  14,499 (3 calls)    |  14,481 (3 calls)    |  14,487 (3 calls)    |
+|    + fpmul503_mont                    | fpx.cpp:57                    |                      |  15,894 (6 calls)    |  14,358 (6 calls)    |  14,310 (6 calls)    |  14,310 (6 calls)    |
+|     + mul                             | mont_ops.hpp:100              |                      |  15,882 (6 calls)    |  14,346 (6 calls)    |  14,298 (6 calls)    |  14,298 (6 calls)    |
+|        mul                            | mont_ops_fios_csa_true.hpp:85 |                      |  15,870 (6 calls)    |  14,334 (6 calls)    |  14,286 (6 calls)    |  14,286 (6 calls)    |
+|     fpadd503                          | fp_generic.cpp:26             |                      |   3,900 (50 calls)   |   3,950 (50 calls)   |   3,984 (50 calls)   |   4,044 (50 calls)   |
+|   + fp2mul503_mont                    | fpx.cpp:186                   |                      |  23,783 (17 calls)   |  26,486 (17 calls)   |  28,781 (17 calls)   |  28,852 (17 calls)   |
+|    + mp_mul                           | fp_generic.cpp:270            |                      |   9,078 (51 calls)   |  11,475 (51 calls)   |  13,015 (51 calls)   |  13,036 (51 calls)   |
+|     + mul                             | mpx_iface_tvu_mul.hpp:50      |                      |   8,976 (51 calls)   |  11,373 (51 calls)   |  12,913 (51 calls)   |  12,934 (51 calls)   |
+|        convert_blocks_to_digits       | mpx_iface_tvu_mul.hpp:159     |                      |   3,468 (51 calls)   |   4,080 (51 calls)   |   5,100 (51 calls)   |   5,100 (51 calls)   |
+|    + rdc_mont                         | fp_generic.cpp:299            |                      |  11,560 (34 calls)   |  11,934 (34 calls)   |  11,730 (34 calls)   |  11,775 (34 calls)   |
+|       digit_x_digit                   | fp_generic.cpp:152            |                      |   2,176 (68 calls)   |   2,244 (68 calls)   |   2,108 (68 calls)   |   2,108 (68 calls)   |
+|       is_digit_lessthan_ct            | config.h:103                  |                      |   4,352 (544 calls)  |   4,352 (544 calls)  |   4,352 (544 calls)  |   4,352 (544 calls)  |
+|     fpsub503                          | fp_generic.cpp:54             |                      |   1,430 (26 calls)   |   1,456 (26 calls)   |   1,440 (26 calls)   |   1,471 (26 calls)   |
+|   + fp2sqr503_mont                    | fpx.cpp:154                   |                      |  91,970 (17 calls)   |  83,232 (17 calls)   |  83,195 (17 calls)   |  83,221 (17 calls)   |
+|    + fpmul503_mont                    | fpx.cpp:57                    |                      |  90,066 (34 calls)   |  81,362 (34 calls)   |  81,362 (34 calls)   |  81,362 (34 calls)   |
+|     + mul                             | mont_ops.hpp:100              |                      |  89,998 (34 calls)   |  81,294 (34 calls)   |  81,294 (34 calls)   |  81,294 (34 calls)   |
+|        mul                            | mont_ops_fios_csa_true.hpp:85 |                      |  89,930 (34 calls)   |  81,226 (34 calls)   |  81,226 (34 calls)   |  81,226 (34 calls)   |
+|   + fp2inv503_mont                    | fpx.cpp:356                   |                      | 509,576 (2 calls)    | 460,422 (2 calls)    | 479,188 (2 calls)    | 479,188 (2 calls)    |
+|    + fpsqr503_mont                    | fpx.cpp:73                    |                      |  21,192 (8 calls)    |  19,144 (8 calls)    |  19,144 (8 calls)    |  19,144 (8 calls)    |
+|     + mul                             | mont_ops.hpp:100              |                      |  21,176 (8 calls)    |  19,128 (8 calls)    |  19,128 (8 calls)    |  19,128 (8 calls)    |
+|        mul                            | mont_ops_fios_csa_true.hpp:85 |                      |  21,160 (8 calls)    |  19,112 (8 calls)    |  19,112 (8 calls)    |  19,112 (8 calls)    |
+|    + fpinv503_chain_mont              | fpx.cpp:209                   |                      | 472,228 (2 calls)    | 426,658 (2 calls)    | 445,412 (2 calls)    | 445,412 (2 calls)    |
+|     + fpsqr503_mont                   | fpx.cpp:73                    |                      | 233,112 (88 calls)   | 210,584 (88 calls)   | 229,728 (96 calls)   | 229,728 (96 calls)   |
+|      + mul                            | mont_ops.hpp:100              |                      | 232,936 (88 calls)   | 210,408 (88 calls)   | 229,536 (96 calls)   | 229,536 (96 calls)   |
+|         mul                           | mont_ops_fios_csa_true.hpp:85 |                      | 232,760 (88 calls)   | 210,232 (88 calls)   | 229,344 (96 calls)   | 229,344 (96 calls)   |
+|     + fpmul503_mont                   | fpx.cpp:57                    |                      | 238,410 (90 calls)   | 215,370 (90 calls)   | 214,714 (90 calls)   | 214,714 (90 calls)   |
+|      + mul                            | mont_ops.hpp:100              |                      | 238,230 (90 calls)   | 215,190 (90 calls)   | 214,534 (90 calls)   | 214,534 (90 calls)   |
+|         mul                           | mont_ops_fios_csa_true.hpp:85 |                      | 238,050 (90 calls)   | 215,010 (90 calls)   | 214,354 (90 calls)   | 214,354 (90 calls)   |
+|    + fpmul503_mont                    | fpx.cpp:57                    |                      |  15,894 (6 calls)    |  14,358 (6 calls)    |  14,358 (6 calls)    |  14,358 (6 calls)    |
+|     + mul                             | mont_ops.hpp:100              |                      |  15,882 (6 calls)    |  14,346 (6 calls)    |  14,346 (6 calls)    |  14,346 (6 calls)    |
+|        mul                            | mont_ops_fios_csa_true.hpp:85 |                      |  15,870 (6 calls)    |  14,334 (6 calls)    |  14,334 (6 calls)    |  14,334 (6 calls)    |
+|   + LADDER3PT                         | ec_isogeny.cpp:286            |                      |  33,530              |  32,606              |  33,942              |  34,001              |
+|      fpadd503                         | fp_generic.cpp:26             |                      |     312 (4 calls)    |     316 (4 calls)    |     466 (4 calls)    |     466 (4 calls)    |
+|      fp2div2_503                      | fpx.cpp:130                   |                      |     186 (2 calls)    |     186 (2 calls)    |     334 (2 calls)    |     334 (2 calls)    |
+|    + xDBLADD                          | ec_isogeny.cpp:236            |                      |  31,279              |  30,195              |  30,989              |  30,993              |
+|       fpadd503                        | fp_generic.cpp:26             |                      |     624 (8 calls)    |     632 (8 calls)    |     624 (8 calls)    |     624 (8 calls)    |
+|       fpsub503                        | fp_generic.cpp:54             |                      |     440 (8 calls)    |     448 (8 calls)    |     440 (8 calls)    |     440 (8 calls)    |
+|     + fp2sqr503_mont                  | fpx.cpp:154                   |                      |  21,640 (4 calls)    |  19,584 (4 calls)    |  19,568 (4 calls)    |  19,568 (4 calls)    |
+|      + fpmul503_mont                  | fpx.cpp:57                    |                      |  21,192 (8 calls)    |  19,144 (8 calls)    |  19,144 (8 calls)    |  19,144 (8 calls)    |
+|       + mul                           | mont_ops.hpp:100              |                      |  21,176 (8 calls)    |  19,128 (8 calls)    |  19,128 (8 calls)    |  19,128 (8 calls)    |
+|          mul                          | mont_ops_fios_csa_true.hpp:85 |                      |  21,160 (8 calls)    |  19,112 (8 calls)    |  19,112 (8 calls)    |  19,112 (8 calls)    |
+|       fpcorrection503                 | fp_generic.cpp:100            |                      |     108 (2 calls)    |     110 (2 calls)    |     112 (2 calls)    |     112 (2 calls)    |
+|     + fp2mul503_mont                  | fpx.cpp:186                   |                      |   8,394 (6 calls)    |   9,348 (6 calls)    |  10,166 (6 calls)    |  10,170 (6 calls)    |
+|      + mp_mul                         | fp_generic.cpp:270            |                      |   3,204 (18 calls)   |   4,050 (18 calls)   |   4,600 (18 calls)   |   4,603 (18 calls)   |
+|       + mul                           | mpx_iface_tvu_mul.hpp:50      |                      |   3,168 (18 calls)   |   4,014 (18 calls)   |   4,564 (18 calls)   |   4,567 (18 calls)   |
+|          convert_blocks_to_digits     | mpx_iface_tvu_mul.hpp:159     |                      |   1,224 (18 calls)   |   1,440 (18 calls)   |   1,800 (18 calls)   |   1,800 (18 calls)   |
+|      + rdc_mont                       | fp_generic.cpp:299            |                      |   4,080 (12 calls)   |   4,212 (12 calls)   |   4,140 (12 calls)   |   4,140 (12 calls)   |
+|         digit_x_digit                 | fp_generic.cpp:152            |                      |     768 (24 calls)   |     792 (24 calls)   |     744 (24 calls)   |     744 (24 calls)   |
+|         is_digit_lessthan_ct          | config.h:103                  |                      |   1,536 (192 calls)  |   1,536 (192 calls)  |   1,536 (192 calls)  |   1,536 (192 calls)  |
+|    + fp2mul503_mont                   | fpx.cpp:186                   |                      |   1,399              |   1,558              |   1,693              |   1,697              |
+|     + mp_mul                          | fp_generic.cpp:270            |                      |     534 (3 calls)    |     675 (3 calls)    |     765 (3 calls)    |     768 (3 calls)    |
+|      + mul                            | mpx_iface_tvu_mul.hpp:50      |                      |     528 (3 calls)    |     669 (3 calls)    |     759 (3 calls)    |     762 (3 calls)    |
+|         convert_blocks_to_digits      | mpx_iface_tvu_mul.hpp:159     |                      |     204 (3 calls)    |     240 (3 calls)    |     300 (3 calls)    |     300 (3 calls)    |
+|     + rdc_mont                        | fp_generic.cpp:299            |                      |     680 (2 calls)    |     702 (2 calls)    |     690 (2 calls)    |     690 (2 calls)    |
+|        digit_x_digit                  | fp_generic.cpp:152            |                      |     128 (4 calls)    |     132 (4 calls)    |     124 (4 calls)    |     124 (4 calls)    |
+|        is_digit_lessthan_ct           | config.h:103                  |                      |     256 (32 calls)   |     256 (32 calls)   |     256 (32 calls)   |     256 (32 calls)   |
+|     fp2div2_503                       | fpx.cpp:130                   |                      |     186 (2 calls)    |     186 (2 calls)    |     334 (2 calls)    |     334 (2 calls)    |
+|   + from_mont                         | fpx.cpp:36                    |                      |   5,408 (2 calls)    |   4,898 (2 calls)    |   4,880 (2 calls)    |   4,880 (2 calls)    |
+|    + fpmul503_mont                    | fpx.cpp:57                    |                      |   5,298 (2 calls)    |   4,786 (2 calls)    |   4,770 (2 calls)    |   4,770 (2 calls)    |
+|     + mul                             | mont_ops.hpp:100              |                      |   5,294 (2 calls)    |   4,782 (2 calls)    |   4,766 (2 calls)    |   4,766 (2 calls)    |
+|        mul                            | mont_ops_fios_csa_true.hpp:85 |                      |   5,290 (2 calls)    |   4,778 (2 calls)    |   4,762 (2 calls)    |   4,762 (2 calls)    |
++---------------------------------------+-------------------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+    * - Exceeded design size warning message threshold
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

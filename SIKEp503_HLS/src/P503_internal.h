@@ -262,6 +262,12 @@ void get_3_isog(const point_proj_t P, f2elm_t A24minus, f2elm_t A24plus, f2elm_t
 // Computes the 3-isogeny R=phi(X:Z), given projective point (X3:Z3) of order 3 on a Montgomery curve and a point P with coefficients given in coeff.
 void eval_3_isog(point_proj_t Q, const f2elm_t *coeff);
 
+// 定数時間セレクト: mask==全1ならP<-Q、mask==0ならPは不変。
+void select_point(point_proj_t P, const point_proj_t Q, const digit_t mask);
+
+// point_proj_t のコピー(型安全: fpcopy をフィールド毎に適用)。
+void copy_point(const point_proj_t P, point_proj_t Q);
+
 // 3-way simultaneous inversion
 void inv_3_way(f2elm_t z1, f2elm_t z2, f2elm_t z3);
 

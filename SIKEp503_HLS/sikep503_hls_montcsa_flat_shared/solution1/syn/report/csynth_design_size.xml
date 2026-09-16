@@ -1,0 +1,1501 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,   315353 *, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 2085802 *, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 1283589 *, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 1276213 *, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 1270941 *, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 1281581 *, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 1281065 *, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 1281065 *, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 1281065 *, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 1282479 *, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 1282469 *, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 1293804 *, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 1281603 *, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 1280350 *, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 1280794 *, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 1299041 *, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="sikep503_kem_enc_hw" col1="sikep503_kem_enc_hw.cpp:28" col2="315353" col2_note="*" col3="1270941" col3_note="*" col4="1282479" col4_note="*" col5="1280350" col5_note="*" col6="1299041" col6_note="*">
+                    <row id="29" col0="print_hex" col1="sikep503_kem_enc_hw.cpp:16" col2="66" col2_disp="    66 (3 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="23" col0="crypto_kem_enc" col1="sike.cpp:35" col2="315262" col3="" col4="" col5="" col6="">
+                        <row id="48" col0="randombytes" col1="random.cpp:21" col2="27" col3="" col4="" col5="" col6="">
+                            <row id="11" col0="lcg_rand" col1="random.cpp:15" col2="6" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="18" col0="cshake256_simple" col1="fips202.cpp:636" col2="7593" col2_disp=" 7,593 (3 calls)" col3="" col4="" col5="" col6="">
+                            <row id="63" col0="cshake256_simple_absorb" col1="fips202.cpp:605" col2="3819" col2_disp=" 3,819 (3 calls)" col3="" col4="" col5="" col6="">
+                                <row id="52" col0="KeccakF1600_StatePermute" col1="fips202.cpp:71" col2="1701" col2_disp=" 1,701 (3 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="69" col0="keccak_absorb" col1="fips202.cpp:385" col2="2007" col2_disp=" 2,007 (3 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="1" col0="load64" col1="fips202.cpp:22" col2="48" col2_disp="    48 (3 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="52" col0="KeccakF1600_StatePermute" col1="fips202.cpp:71" col2="1701" col2_disp=" 1,701 (3 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="33" col0="keccak_squeezeblocks" col1="fips202.cpp:427" col2="3648" col2_disp=" 3,648 (6 calls)" col3="" col4="" col5="" col6="">
+                                <row id="52" col0="KeccakF1600_StatePermute" col1="fips202.cpp:71" col2="3402" col2_disp=" 3,402 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="35" col0="store64" col1="fips202.cpp:33" col2="90" col2_disp="    90 (6 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="32" col0="EphemeralKeyGeneration_A" col1="sidh.cpp:118" col2="172990" col3="" col4="" col5="" col6="">
+                            <row id="8" col0="init_basis" col1="sidh.cpp:25" col2="220" col2_disp="   220 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="150" col2_disp="   150 (10 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="4" col0="fpzero503" col1="fpx.cpp:21" col2="24" col2_disp="    24 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="60" col2_disp="    60 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="293" col3="" col4="" col5="" col6="">
+                                <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="278" col2_disp="   278 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="80" col2_disp="    80 (10 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="64" col0="LADDER3PT" col1="ec_isogeny.cpp:384" col2="32939" col3="" col4="" col5="" col6="">
+                                <row id="37" col0="LADDER3PT_impl&lt;250&gt;" col1="ec_isogeny.cpp:346" col2="16466" col3="" col4="" col5="" col6="">
+                                    <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="60" col2_disp="    60 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="586" col2_disp="   586 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="556" col2_disp="   556 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="160" col2_disp="   160 (20 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="22" col0="fp2div2_503" col1="fpx.cpp:141" col2="342" col2_disp="   342 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="42" col0="fpdiv2_503" col1="fp_generic.cpp:88" col2="320" col2_disp="   320 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="38" col0="mp_shiftr1" col1="fpx.cpp:442" col2="116" col2_disp="   116 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="2" col0="fp2copy503" col1="fpx.cpp:111" col2="123" col2_disp="   123 (3 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="90" col2_disp="    90 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="4" col0="fpzero503" col1="fpx.cpp:21" col2="12" col3="" col4="" col5="" col6=""/>
+                                    <row id="65" col0="swap_points" col1="ec_isogeny.cpp:281" col2="145" col3="" col4="" col5="" col6=""/>
+                                    <row id="56" col0="xDBLADD" col1="ec_isogeny.cpp:254" col2="13658" col3="" col4="" col5="" col6="">
+                                        <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="1172" col2_disp=" 1,172 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="1112" col2_disp=" 1,112 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="320" col2_disp="   320 (40 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="820" col2_disp="   820 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="760" col2_disp="   760 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="2744" col2_disp=" 2,744 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="376" col2_disp="   376 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="360" col2_disp="   360 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="128" col2_disp="   128 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="380" col2_disp="   380 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="1808" col2_disp=" 1,808 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="1784" col2_disp=" 1,784 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="46" col0="fp2correction503" col1="fpx.cpp:147" col2="197" col3="" col4="" col5="" col6="">
+                                            <row id="43" col0="fpcorrection503" col1="fp_generic.cpp:101" col2="190" col2_disp="   190 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="8610" col2_disp=" 8,610 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="1512" col2_disp=" 1,512 (18 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="1476" col2_disp=" 1,476 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="564" col2_disp="   564 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="540" col2_disp="   540 (12 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="624" col2_disp="   624 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="576" col2_disp="   576 (12 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                    <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6="">
+                                                        <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="60" col2_disp="    60 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                    </row>
+                                                </row>
+                                            </row>
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="4896" col2_disp=" 4,896 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="936" col2_disp="   936 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1728" col2_disp=" 1,728 (216 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="282" col2_disp="   282 (6 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="270" col2_disp="   270 (6 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="1435" col3="" col4="" col5="" col6="">
+                                        <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="252" col2_disp="   252 (3 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="246" col2_disp="   246 (3 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="94" col2_disp="    94 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="90" col2_disp="    90 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="104" col2_disp="   104 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="96" col2_disp="    96 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="816" col2_disp="   816 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="156" col2_disp="   156 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="288" col2_disp="   288 (36 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="47" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="45" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="24" col0="LADDER3PT_impl&lt;253&gt;" col1="ec_isogeny.cpp:346" col2="16466" col3="" col4="" col5="" col6="">
+                                    <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="60" col2_disp="    60 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="586" col2_disp="   586 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="556" col2_disp="   556 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="160" col2_disp="   160 (20 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="22" col0="fp2div2_503" col1="fpx.cpp:141" col2="342" col2_disp="   342 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="42" col0="fpdiv2_503" col1="fp_generic.cpp:88" col2="320" col2_disp="   320 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="38" col0="mp_shiftr1" col1="fpx.cpp:442" col2="116" col2_disp="   116 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="2" col0="fp2copy503" col1="fpx.cpp:111" col2="123" col2_disp="   123 (3 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="90" col2_disp="    90 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="4" col0="fpzero503" col1="fpx.cpp:21" col2="12" col3="" col4="" col5="" col6=""/>
+                                    <row id="65" col0="swap_points" col1="ec_isogeny.cpp:281" col2="145" col3="" col4="" col5="" col6=""/>
+                                    <row id="56" col0="xDBLADD" col1="ec_isogeny.cpp:254" col2="13658" col3="" col4="" col5="" col6="">
+                                        <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="1172" col2_disp=" 1,172 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="1112" col2_disp=" 1,112 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="320" col2_disp="   320 (40 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="820" col2_disp="   820 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="760" col2_disp="   760 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="2744" col2_disp=" 2,744 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="376" col2_disp="   376 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="360" col2_disp="   360 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="128" col2_disp="   128 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="380" col2_disp="   380 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="1808" col2_disp=" 1,808 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="1784" col2_disp=" 1,784 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="46" col0="fp2correction503" col1="fpx.cpp:147" col2="197" col3="" col4="" col5="" col6="">
+                                            <row id="43" col0="fpcorrection503" col1="fp_generic.cpp:101" col2="190" col2_disp="   190 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="8610" col2_disp=" 8,610 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="1512" col2_disp=" 1,512 (18 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="1476" col2_disp=" 1,476 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="564" col2_disp="   564 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="540" col2_disp="   540 (12 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="624" col2_disp="   624 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="576" col2_disp="   576 (12 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                    <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6="">
+                                                        <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="60" col2_disp="    60 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                    </row>
+                                                </row>
+                                            </row>
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="4896" col2_disp=" 4,896 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="936" col2_disp="   936 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1728" col2_disp=" 1,728 (216 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="282" col2_disp="   282 (6 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="270" col2_disp="   270 (6 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="1435" col3="" col4="" col5="" col6="">
+                                        <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="252" col2_disp="   252 (3 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="246" col2_disp="   246 (3 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="94" col2_disp="    94 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="90" col2_disp="    90 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="104" col2_disp="   104 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="96" col2_disp="    96 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="816" col2_disp="   816 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="156" col2_disp="   156 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="288" col2_disp="   288 (36 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="47" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="45" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="7" col0="copy_point" col1="ec_isogeny.cpp:322" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="120" col2_disp="   120 (8 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="28" col0="xDBLe" col1="ec_isogeny.cpp:27" col2="8364" col3="" col4="" col5="" col6="">
+                                <row id="7" col0="copy_point" col1="ec_isogeny.cpp:322" col2="89" col3="" col4="" col5="" col6="">
+                                    <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="60" col2_disp="    60 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="51" col0="xDBL" col1="ec_isogeny.cpp:9" col2="8166" col3="" col4="" col5="" col6="">
+                                    <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="410" col2_disp="   410 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="380" col2_disp="   380 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="586" col2_disp="   586 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="556" col2_disp="   556 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="160" col2_disp="   160 (20 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="1372" col2_disp=" 1,372 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="188" col2_disp="   188 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="180" col2_disp="   180 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="190" col2_disp="   190 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="904" col2_disp="   904 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="892" col2_disp="   892 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="5740" col2_disp=" 5,740 (4 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="1008" col2_disp=" 1,008 (12 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="984" col2_disp="   984 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="376" col2_disp="   376 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="360" col2_disp="   360 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="128" col2_disp="   128 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="416" col2_disp="   416 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="384" col2_disp="   384 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="3264" col2_disp=" 3,264 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="624" col2_disp="   624 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1152" col2_disp=" 1,152 (144 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="188" col2_disp="   188 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="180" col2_disp="   180 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="39" col0="select_point" col1="ec_isogeny.cpp:304" col2="85" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="39" col0="select_point" col1="ec_isogeny.cpp:304" col2="255" col2_disp="   255 (3 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="14" col0="get_4_isog" col1="ec_isogeny.cpp:56" col2="8326" col2_disp=" 8,326 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="410" col2_disp="   410 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="380" col2_disp="   380 (4 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="2344" col2_disp=" 2,344 (8 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="2224" col2_disp=" 2,224 (16 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="640" col2_disp="   640 (80 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="128" col2_disp="   128 (16 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="80" col2_disp="    80 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="5488" col2_disp=" 5,488 (8 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="752" col2_disp="   752 (16 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="720" col2_disp="   720 (16 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="256" col2_disp="   256 (32 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="760" col2_disp="   760 (8 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="3616" col2_disp=" 3,616 (16 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="3568" col2_disp=" 3,568 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="54" col0="eval_4_isog" col1="ec_isogeny.cpp:73" col2="80941" col2_disp="80,941 (7 calls)" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="6153" col2_disp=" 6,153 (21 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="5838" col2_disp=" 5,838 (42 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1680" col2_disp=" 1,680 (210 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="336" col2_disp="   336 (42 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="210" col2_disp="   210 (42 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="4305" col2_disp=" 4,305 (21 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="3990" col2_disp=" 3,990 (42 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1008" col2_disp=" 1,008 (126 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="336" col2_disp="   336 (42 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="210" col2_disp="   210 (42 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="60270" col2_disp="60,270 (42 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="10584" col2_disp="10,584 (126 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="10332" col2_disp="10,332 (126 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="3948" col2_disp=" 3,948 (84 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="3780" col2_disp=" 3,780 (84 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1344" col2_disp=" 1,344 (168 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="4368" col2_disp=" 4,368 (84 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="4032" col2_disp=" 4,032 (84 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="672" col2_disp="   672 (84 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="672" col2_disp="   672 (84 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="420" col2_disp="   420 (84 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="672" col2_disp="   672 (84 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="34272" col2_disp="34,272 (84 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="6552" col2_disp=" 6,552 (168 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="12096" col2_disp="12,096 (1512 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="1974" col2_disp=" 1,974 (42 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="1890" col2_disp=" 1,890 (42 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="672" col2_disp="   672 (84 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="9604" col2_disp=" 9,604 (14 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="1316" col2_disp=" 1,316 (28 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="1260" col2_disp=" 1,260 (28 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="448" col2_disp="   448 (56 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="1330" col2_disp=" 1,330 (14 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="336" col2_disp="   336 (42 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="112" col2_disp="   112 (14 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="70" col2_disp="    70 (14 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="6328" col2_disp=" 6,328 (28 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="6244" col2_disp=" 6,244 (28 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="2" col0="fp2copy503" col1="fpx.cpp:111" col2="82" col2_disp="    82 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="60" col2_disp="    60 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="60" col0="inv_3_way" col1="ec_isogeny.cpp:192" col2="34477" col3="" col4="" col5="" col6="">
+                                <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="8610" col2_disp=" 8,610 (6 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="1512" col2_disp=" 1,512 (18 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="1476" col2_disp=" 1,476 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="564" col2_disp="   564 (12 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="540" col2_disp="   540 (12 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="624" col2_disp="   624 (12 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="576" col2_disp="   576 (12 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="60" col2_disp="    60 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="4896" col2_disp=" 4,896 (12 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="936" col2_disp="   936 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1728" col2_disp=" 1,728 (216 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="282" col2_disp="   282 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="270" col2_disp="   270 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="21" col0="fp2inv503_mont" col1="fpx.cpp:367" col2="25785" col3="" col4="" col5="" col6="">
+                                    <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="580" col2_disp="   580 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="574" col2_disp="   574 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="240" col2_disp="   240 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="312" col2_disp="   312 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="139" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="40" col2_disp="    40 (5 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="8" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="5" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="34" col0="fpinv503_mont" col1="fpx.cpp:100" col2="24523" col3="" col4="" col5="" col6="">
+                                        <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="15" col3="" col4="" col5="" col6=""/>
+                                        <row id="58" col0="fpinv503_chain_mont" col1="fpx.cpp:220" col2="23684" col3="" col4="" col5="" col6="">
+                                            <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="12760" col2_disp="12,760 (44 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="12628" col2_disp="12,628 (44 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="5280" col2_disp=" 5,280 (44 calls)" col3="" col4="" col5="" col6=""/>
+                                                    <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="6864" col2_disp=" 6,864 (44 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="10170" col2_disp="10,170 (45 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="10035" col2_disp="10,035 (45 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="30" col2_disp="    30 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="580" col2_disp="   580 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="574" col2_disp="   574 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="240" col2_disp="   240 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="312" col2_disp="   312 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="226" col3="" col4="" col5="" col6="">
+                                            <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="223" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="31" col0="fpneg503" col1="fp_generic.cpp:77" col2="48" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="8" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="8" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="5" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="452" col2_disp="   452 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="446" col2_disp="   446 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="2" col0="fp2copy503" col1="fpx.cpp:111" col2="41" col3="" col4="" col5="" col6="">
+                                    <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="30" col2_disp="    30 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="4305" col2_disp=" 4,305 (3 calls)" col3="" col4="" col5="" col6="">
+                                <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="756" col2_disp="   756 (9 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="738" col2_disp="   738 (9 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="282" col2_disp="   282 (6 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="270" col2_disp="   270 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="312" col2_disp="   312 (6 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="288" col2_disp="   288 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="30" col2_disp="    30 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="2448" col2_disp=" 2,448 (6 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="468" col2_disp="   468 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="864" col2_disp="   864 (108 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="141" col2_disp="   141 (3 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="135" col2_disp="   135 (3 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="66" col0="fp2_encode" col1="sidh.cpp:36" col2="2214" col2_disp=" 2,214 (3 calls)" col3="" col4="" col5="" col6="">
+                                <row id="3" col0="from_fp2mont" col1="fpx.cpp:388" col2="2037" col2_disp=" 2,037 (3 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="13" col0="from_mont" col1="fpx.cpp:37" col2="2004" col2_disp=" 2,004 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="1356" col2_disp=" 1,356 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="1338" col2_disp=" 1,338 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="43" col0="fpcorrection503" col1="fp_generic.cpp:101" col2="570" col2_disp="   570 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="144" col2_disp="   144 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="30" col2_disp="    30 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="5" col0="EphemeralSecretAgreement_A" col1="sidh.cpp:307" col2="134581" col3="" col4="" col5="" col6="">
+                            <row id="55" col0="fp2_decode" col1="sidh.cpp:62" col2="1638" col2_disp=" 1,638 (3 calls)" col3="" col4="" col5="" col6="">
+                                <row id="26" col0="to_fp2mont" col1="fpx.cpp:380" col2="1401" col2_disp=" 1,401 (3 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="53" col0="to_mont" col1="fpx.cpp:29" col2="1368" col2_disp=" 1,368 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="1356" col2_disp=" 1,356 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="1338" col2_disp=" 1,338 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="17" col0="get_A" col1="ec_isogeny.cpp:208" col2="34153" col3="" col4="" col5="" col6="">
+                                <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="15" col3="" col4="" col5="" col6=""/>
+                                <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="1465" col2_disp=" 1,465 (5 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="1390" col2_disp=" 1,390 (10 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="400" col2_disp="   400 (50 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="80" col2_disp="    80 (10 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="50" col2_disp="    50 (10 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="5740" col2_disp=" 5,740 (4 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="1008" col2_disp=" 1,008 (12 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="984" col2_disp="   984 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="376" col2_disp="   376 (8 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="360" col2_disp="   360 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="128" col2_disp="   128 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="416" col2_disp="   416 (8 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="384" col2_disp="   384 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="3264" col2_disp=" 3,264 (8 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="624" col2_disp="   624 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1152" col2_disp=" 1,152 (144 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="188" col2_disp="   188 (4 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="180" col2_disp="   180 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="410" col2_disp="   410 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="380" col2_disp="   380 (4 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="686" col3="" col4="" col5="" col6="">
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="94" col2_disp="    94 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="90" col2_disp="    90 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="95" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="24" col2_disp="    24 (3 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="8" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="5" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="452" col2_disp="   452 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="446" col2_disp="   446 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="21" col0="fp2inv503_mont" col1="fpx.cpp:367" col2="25785" col3="" col4="" col5="" col6="">
+                                    <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="580" col2_disp="   580 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="574" col2_disp="   574 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="240" col2_disp="   240 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="312" col2_disp="   312 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="139" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="40" col2_disp="    40 (5 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="8" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="5" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="34" col0="fpinv503_mont" col1="fpx.cpp:100" col2="24523" col3="" col4="" col5="" col6="">
+                                        <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="15" col3="" col4="" col5="" col6=""/>
+                                        <row id="58" col0="fpinv503_chain_mont" col1="fpx.cpp:220" col2="23684" col3="" col4="" col5="" col6="">
+                                            <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="12760" col2_disp="12,760 (44 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="12628" col2_disp="12,628 (44 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="5280" col2_disp=" 5,280 (44 calls)" col3="" col4="" col5="" col6=""/>
+                                                    <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="6864" col2_disp=" 6,864 (44 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="10170" col2_disp="10,170 (45 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="10035" col2_disp="10,035 (45 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="30" col2_disp="    30 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="580" col2_disp="   580 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="574" col2_disp="   574 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="240" col2_disp="   240 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="312" col2_disp="   312 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="226" col3="" col4="" col5="" col6="">
+                                            <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="223" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="31" col0="fpneg503" col1="fp_generic.cpp:77" col2="48" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="8" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="8" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="5" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="452" col2_disp="   452 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="446" col2_disp="   446 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="278" col2_disp="   278 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="80" col2_disp="    80 (10 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="293" col3="" col4="" col5="" col6="">
+                                <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="278" col2_disp="   278 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="80" col2_disp="    80 (10 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="64" col0="LADDER3PT" col1="ec_isogeny.cpp:384" col2="32939" col3="" col4="" col5="" col6="">
+                                <row id="37" col0="LADDER3PT_impl&lt;250&gt;" col1="ec_isogeny.cpp:346" col2="16466" col3="" col4="" col5="" col6="">
+                                    <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="60" col2_disp="    60 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="586" col2_disp="   586 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="556" col2_disp="   556 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="160" col2_disp="   160 (20 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="22" col0="fp2div2_503" col1="fpx.cpp:141" col2="342" col2_disp="   342 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="42" col0="fpdiv2_503" col1="fp_generic.cpp:88" col2="320" col2_disp="   320 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="38" col0="mp_shiftr1" col1="fpx.cpp:442" col2="116" col2_disp="   116 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="2" col0="fp2copy503" col1="fpx.cpp:111" col2="123" col2_disp="   123 (3 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="90" col2_disp="    90 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="4" col0="fpzero503" col1="fpx.cpp:21" col2="12" col3="" col4="" col5="" col6=""/>
+                                    <row id="65" col0="swap_points" col1="ec_isogeny.cpp:281" col2="145" col3="" col4="" col5="" col6=""/>
+                                    <row id="56" col0="xDBLADD" col1="ec_isogeny.cpp:254" col2="13658" col3="" col4="" col5="" col6="">
+                                        <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="1172" col2_disp=" 1,172 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="1112" col2_disp=" 1,112 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="320" col2_disp="   320 (40 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="820" col2_disp="   820 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="760" col2_disp="   760 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="2744" col2_disp=" 2,744 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="376" col2_disp="   376 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="360" col2_disp="   360 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="128" col2_disp="   128 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="380" col2_disp="   380 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="1808" col2_disp=" 1,808 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="1784" col2_disp=" 1,784 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="46" col0="fp2correction503" col1="fpx.cpp:147" col2="197" col3="" col4="" col5="" col6="">
+                                            <row id="43" col0="fpcorrection503" col1="fp_generic.cpp:101" col2="190" col2_disp="   190 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="8610" col2_disp=" 8,610 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="1512" col2_disp=" 1,512 (18 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="1476" col2_disp=" 1,476 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="564" col2_disp="   564 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="540" col2_disp="   540 (12 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="624" col2_disp="   624 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="576" col2_disp="   576 (12 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                    <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6="">
+                                                        <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="60" col2_disp="    60 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                    </row>
+                                                </row>
+                                            </row>
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="4896" col2_disp=" 4,896 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="936" col2_disp="   936 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1728" col2_disp=" 1,728 (216 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="282" col2_disp="   282 (6 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="270" col2_disp="   270 (6 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="1435" col3="" col4="" col5="" col6="">
+                                        <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="252" col2_disp="   252 (3 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="246" col2_disp="   246 (3 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="94" col2_disp="    94 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="90" col2_disp="    90 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="104" col2_disp="   104 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="96" col2_disp="    96 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="816" col2_disp="   816 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="156" col2_disp="   156 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="288" col2_disp="   288 (36 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="47" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="45" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="24" col0="LADDER3PT_impl&lt;253&gt;" col1="ec_isogeny.cpp:346" col2="16466" col3="" col4="" col5="" col6="">
+                                    <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="60" col2_disp="    60 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="586" col2_disp="   586 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="556" col2_disp="   556 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="160" col2_disp="   160 (20 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="22" col0="fp2div2_503" col1="fpx.cpp:141" col2="342" col2_disp="   342 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="42" col0="fpdiv2_503" col1="fp_generic.cpp:88" col2="320" col2_disp="   320 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="38" col0="mp_shiftr1" col1="fpx.cpp:442" col2="116" col2_disp="   116 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="2" col0="fp2copy503" col1="fpx.cpp:111" col2="123" col2_disp="   123 (3 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="90" col2_disp="    90 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="4" col0="fpzero503" col1="fpx.cpp:21" col2="12" col3="" col4="" col5="" col6=""/>
+                                    <row id="65" col0="swap_points" col1="ec_isogeny.cpp:281" col2="145" col3="" col4="" col5="" col6=""/>
+                                    <row id="56" col0="xDBLADD" col1="ec_isogeny.cpp:254" col2="13658" col3="" col4="" col5="" col6="">
+                                        <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="1172" col2_disp=" 1,172 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="1112" col2_disp=" 1,112 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="320" col2_disp="   320 (40 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="820" col2_disp="   820 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="760" col2_disp="   760 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="2744" col2_disp=" 2,744 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="376" col2_disp="   376 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="360" col2_disp="   360 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="128" col2_disp="   128 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="380" col2_disp="   380 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="1808" col2_disp=" 1,808 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="1784" col2_disp=" 1,784 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="46" col0="fp2correction503" col1="fpx.cpp:147" col2="197" col3="" col4="" col5="" col6="">
+                                            <row id="43" col0="fpcorrection503" col1="fp_generic.cpp:101" col2="190" col2_disp="   190 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="8610" col2_disp=" 8,610 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="1512" col2_disp=" 1,512 (18 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="1476" col2_disp=" 1,476 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="564" col2_disp="   564 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="540" col2_disp="   540 (12 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="624" col2_disp="   624 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="576" col2_disp="   576 (12 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                    <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6="">
+                                                        <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="60" col2_disp="    60 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                    </row>
+                                                </row>
+                                            </row>
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="4896" col2_disp=" 4,896 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="936" col2_disp="   936 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1728" col2_disp=" 1,728 (216 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="282" col2_disp="   282 (6 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="270" col2_disp="   270 (6 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="1435" col3="" col4="" col5="" col6="">
+                                        <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="252" col2_disp="   252 (3 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="246" col2_disp="   246 (3 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="94" col2_disp="    94 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="90" col2_disp="    90 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="104" col2_disp="   104 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="96" col2_disp="    96 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="816" col2_disp="   816 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="156" col2_disp="   156 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="288" col2_disp="   288 (36 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="47" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="45" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="7" col0="copy_point" col1="ec_isogeny.cpp:322" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="120" col2_disp="   120 (8 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="28" col0="xDBLe" col1="ec_isogeny.cpp:27" col2="8364" col3="" col4="" col5="" col6="">
+                                <row id="7" col0="copy_point" col1="ec_isogeny.cpp:322" col2="89" col3="" col4="" col5="" col6="">
+                                    <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="60" col2_disp="    60 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="51" col0="xDBL" col1="ec_isogeny.cpp:9" col2="8166" col3="" col4="" col5="" col6="">
+                                    <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="410" col2_disp="   410 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="380" col2_disp="   380 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="586" col2_disp="   586 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="556" col2_disp="   556 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="160" col2_disp="   160 (20 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="1372" col2_disp=" 1,372 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="188" col2_disp="   188 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="180" col2_disp="   180 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="190" col2_disp="   190 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="904" col2_disp="   904 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="892" col2_disp="   892 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="5740" col2_disp=" 5,740 (4 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="1008" col2_disp=" 1,008 (12 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="984" col2_disp="   984 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="376" col2_disp="   376 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="360" col2_disp="   360 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="128" col2_disp="   128 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="416" col2_disp="   416 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="384" col2_disp="   384 (8 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                        </row>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="3264" col2_disp=" 3,264 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="624" col2_disp="   624 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1152" col2_disp=" 1,152 (144 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="188" col2_disp="   188 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="180" col2_disp="   180 (4 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="39" col0="select_point" col1="ec_isogeny.cpp:304" col2="85" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="39" col0="select_point" col1="ec_isogeny.cpp:304" col2="255" col2_disp="   255 (3 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="14" col0="get_4_isog" col1="ec_isogeny.cpp:56" col2="8326" col2_disp=" 8,326 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="410" col2_disp="   410 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="380" col2_disp="   380 (4 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="2344" col2_disp=" 2,344 (8 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="2224" col2_disp=" 2,224 (16 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="640" col2_disp="   640 (80 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="128" col2_disp="   128 (16 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="80" col2_disp="    80 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="5488" col2_disp=" 5,488 (8 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="752" col2_disp="   752 (16 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="720" col2_disp="   720 (16 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="256" col2_disp="   256 (32 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="760" col2_disp="   760 (8 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="40" col2_disp="    40 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="3616" col2_disp=" 3,616 (16 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="3568" col2_disp=" 3,568 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="54" col0="eval_4_isog" col1="ec_isogeny.cpp:73" col2="11563" col3="" col4="" col5="" col6="">
+                                <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="879" col2_disp="   879 (3 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="834" col2_disp="   834 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="240" col2_disp="   240 (30 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="30" col2_disp="    30 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="615" col2_disp="   615 (3 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="570" col2_disp="   570 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="144" col2_disp="   144 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="30" col2_disp="    30 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="8610" col2_disp=" 8,610 (6 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="1512" col2_disp=" 1,512 (18 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="1476" col2_disp=" 1,476 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="564" col2_disp="   564 (12 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="540" col2_disp="   540 (12 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="192" col2_disp="   192 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="624" col2_disp="   624 (12 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="576" col2_disp="   576 (12 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="60" col2_disp="    60 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="4896" col2_disp=" 4,896 (12 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="936" col2_disp="   936 (24 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="1728" col2_disp=" 1,728 (216 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="282" col2_disp="   282 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="270" col2_disp="   270 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="1372" col2_disp=" 1,372 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="188" col2_disp="   188 (4 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="180" col2_disp="   180 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="190" col2_disp="   190 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="904" col2_disp="   904 (4 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="892" col2_disp="   892 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="2" col0="fp2copy503" col1="fpx.cpp:111" col2="82" col2_disp="    82 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="60" col2_disp="    60 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="22" col0="fp2div2_503" col1="fpx.cpp:141" col2="342" col2_disp="   342 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="42" col0="fpdiv2_503" col1="fp_generic.cpp:88" col2="320" col2_disp="   320 (4 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="64" col2_disp="    64 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="38" col0="mp_shiftr1" col1="fpx.cpp:442" col2="116" col2_disp="   116 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="205" col3="" col4="" col5="" col6="">
+                                <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="190" col2_disp="   190 (2 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="59" col0="j_inv" col1="ec_isogeny.cpp:230" col2="34973" col3="" col4="" col5="" col6="">
+                                <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="2744" col2_disp=" 2,744 (4 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="376" col2_disp="   376 (8 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="360" col2_disp="   360 (8 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="128" col2_disp="   128 (16 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="380" col2_disp="   380 (4 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="32" col2_disp="    32 (4 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="20" col2_disp="    20 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="1808" col2_disp=" 1,808 (8 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="1784" col2_disp=" 1,784 (8 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="27" col0="fp2add503" col1="fpx.cpp:129" col2="1465" col2_disp=" 1,465 (5 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="1390" col2_disp=" 1,390 (10 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="400" col2_disp="   400 (50 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="80" col2_disp="    80 (10 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="50" col2_disp="    50 (10 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="50" col0="fp2sub503" col1="fpx.cpp:135" col2="615" col2_disp="   615 (3 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="570" col2_disp="   570 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="144" col2_disp="   144 (18 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="30" col2_disp="    30 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="4305" col2_disp=" 4,305 (3 calls)" col3="" col4="" col5="" col6="">
+                                    <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="756" col2_disp="   756 (9 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="738" col2_disp="   738 (9 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="41" col0="mp_addfast" col1="fpx.cpp:153" col2="282" col2_disp="   282 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="270" col2_disp="   270 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="96" col2_disp="    96 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="61" col0="mp_subfast" col1="fpx.cpp:191" col2="312" col2_disp="   312 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="40" col0="mp_sub" col1="fpx.cpp:178" col2="288" col2_disp="   288 (6 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="30" col2_disp="    30 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                    <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="2448" col2_disp=" 2,448 (6 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="468" col2_disp="   468 (12 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="864" col2_disp="   864 (108 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                    <row id="67" col0="mp_addfastx2" col1="fpx.cpp:159" col2="141" col2_disp="   141 (3 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="10" col0="mp_add" col1="fpx.cpp:396" col2="135" col2_disp="   135 (3 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                </row>
+                                <row id="21" col0="fp2inv503_mont" col1="fpx.cpp:367" col2="25785" col3="" col4="" col5="" col6="">
+                                    <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="580" col2_disp="   580 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="574" col2_disp="   574 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="240" col2_disp="   240 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="312" col2_disp="   312 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="139" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="40" col2_disp="    40 (5 calls)" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="8" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="5" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="34" col0="fpinv503_mont" col1="fpx.cpp:100" col2="24523" col3="" col4="" col5="" col6="">
+                                        <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="15" col3="" col4="" col5="" col6=""/>
+                                        <row id="58" col0="fpinv503_chain_mont" col1="fpx.cpp:220" col2="23684" col3="" col4="" col5="" col6="">
+                                            <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="12760" col2_disp="12,760 (44 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="12628" col2_disp="12,628 (44 calls)" col3="" col4="" col5="" col6="">
+                                                    <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="5280" col2_disp=" 5,280 (44 calls)" col3="" col4="" col5="" col6=""/>
+                                                    <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="6864" col2_disp=" 6,864 (44 calls)" col3="" col4="" col5="" col6=""/>
+                                                </row>
+                                            </row>
+                                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="10170" col2_disp="10,170 (45 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="10035" col2_disp="10,035 (45 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                            <row id="45" col0="fpcopy503" col1="fpx.cpp:13" col2="30" col2_disp="    30 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="580" col2_disp="   580 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="574" col2_disp="   574 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="240" col2_disp="   240 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                                <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="312" col2_disp="   312 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                        <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="226" col3="" col4="" col5="" col6="">
+                                            <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="223" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="31" col0="fpneg503" col1="fp_generic.cpp:77" col2="48" col3="" col4="" col5="" col6="">
+                                        <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="8" col3="" col4="" col5="" col6=""/>
+                                        <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="8" col3="" col4="" col5="" col6="">
+                                            <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="5" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                    </row>
+                                    <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="452" col2_disp="   452 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="446" col2_disp="   446 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                            </row>
+                            <row id="66" col0="fp2_encode" col1="sidh.cpp:36" col2="738" col3="" col4="" col5="" col6="">
+                                <row id="3" col0="from_fp2mont" col1="fpx.cpp:388" col2="679" col3="" col4="" col5="" col6="">
+                                    <row id="13" col0="from_mont" col1="fpx.cpp:37" col2="668" col2_disp="   668 (2 calls)" col3="" col4="" col5="" col6="">
+                                        <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="452" col2_disp="   452 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="446" col2_disp="   446 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                        </row>
+                                        <row id="43" col0="fpcorrection503" col1="fp_generic.cpp:101" col2="190" col2_disp="   190 (2 calls)" col3="" col4="" col5="" col6="">
+                                            <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="48" col2_disp="    48 (6 calls)" col3="" col4="" col5="" col6=""/>
+                                            <row id="49" col0="is_digit_zero_ct" col1="config.h:98" col2="16" col2_disp="    16 (2 calls)" col3="" col4="" col5="" col6="">
+                                                <row id="20" col0="is_digit_nonzero_ct" col1="config.h:93" col2="10" col2_disp="    10 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                            </row>
+                                        </row>
+                                    </row>
+                                </row>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="18" col0="cshake256_simple" col1="fips202.cpp:636" col2="" col3="6960" col3_disp="  6,960 (3 calls)" col4="4835" col4_disp="  4,835 (3 calls)" col5="5045" col5_disp="  5,045 (3 calls)" col6="5088" col6_disp="  5,088 (3 calls)">
+                        <row id="52" col0="KeccakF1600_StatePermute" col1="fips202.cpp:71" col2="" col3="6432" col3_disp="  6,432 (12 calls)" col4="4496" col4_disp="  4,496 (8 calls)" col5="4296" col5_disp="  4,296 (8 calls)" col6="4336" col6_disp="  4,336 (8 calls)"/>
+                    </row>
+                    <row id="32" col0="EphemeralKeyGeneration_A" col1="sidh.cpp:118" col2="" col3="739093" col4="753382" col5="746701" col6="758941">
+                        <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="" col3="1404" col3_disp="  1,404 (18 calls)" col4="1422" col4_disp="  1,422 (18 calls)" col5="1404" col5_disp="  1,404 (18 calls)" col6="1672" col6_disp="  1,672 (18 calls)"/>
+                        <row id="37" col0="LADDER3PT_impl&lt;250&gt;" col1="ec_isogeny.cpp:346" col2="" col3="72073" col4="74009" col5="73102" col6="74583">
+                            <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="" col3="936" col3_disp="    936 (12 calls)" col4="948" col4_disp="    948 (12 calls)" col5="1090" col5_disp="  1,090 (12 calls)" col6="1234" col6_disp="  1,234 (12 calls)"/>
+                            <row id="22" col0="fp2div2_503" col1="fpx.cpp:141" col2="" col3="186" col3_disp="    186 (2 calls)" col4="186" col4_disp="    186 (2 calls)" col5="318" col5_disp="    318 (2 calls)" col6="350" col6_disp="    350 (2 calls)"/>
+                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="" col3="440" col3_disp="    440 (8 calls)" col4="448" col4_disp="    448 (8 calls)" col5="440" col5_disp="    440 (8 calls)" col6="504" col6_disp="    504 (8 calls)"/>
+                            <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="" col3="12136" col3_disp=" 12,136 (4 calls)" col4="11792" col4_disp=" 11,792 (4 calls)" col5="11782" col5_disp=" 11,782 (4 calls)" col6="11854" col6_disp=" 11,854 (4 calls)">
+                                <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="11688" col3_disp=" 11,688 (8 calls)" col4="11352" col4_disp=" 11,352 (8 calls)" col5="11352" col5_disp=" 11,352 (8 calls)" col6="11368" col6_disp=" 11,368 (8 calls)">
+                                    <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="11672" col3_disp=" 11,672 (8 calls)" col4="11336" col4_disp=" 11,336 (8 calls)" col5="11336" col5_disp=" 11,336 (8 calls)" col6="11344" col6_disp=" 11,344 (8 calls)"/>
+                                </row>
+                            </row>
+                            <row id="43" col0="fpcorrection503" col1="fp_generic.cpp:101" col2="" col3="108" col3_disp="    108 (2 calls)" col4="110" col4_disp="    110 (2 calls)" col5="108" col5_disp="    108 (2 calls)" col6="124" col6_disp="    124 (2 calls)"/>
+                            <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="" col3="57897" col3_disp=" 57,897 (7 calls)" col4="60151" col4_disp=" 60,151 (7 calls)" col5="58941" col5_disp=" 58,941 (7 calls)" col6="59999" col6_disp=" 59,999 (7 calls)">
+                                <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="" col3="2436" col3_disp="  2,436 (21 calls)" col4="4116" col4_disp="  4,116 (21 calls)" col5="4063" col5_disp="  4,063 (21 calls)" col6="4342" col6_disp="  4,342 (21 calls)">
+                                    <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="" col3="2394" col3_disp="  2,394 (21 calls)" col4="4074" col4_disp="  4,074 (21 calls)" col5="4021" col5_disp="  4,021 (21 calls)" col6="4279" col6_disp="  4,279 (21 calls)"/>
+                                </row>
+                                <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="" col3="54236" col3_disp=" 54,236 (14 calls)" col4="54838" col4_disp=" 54,838 (14 calls)" col5="53690" col5_disp=" 53,690 (14 calls)" col6="54320" col6_disp=" 54,320 (14 calls)">
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="" col3="24528" col3_disp=" 24,528 (3066 calls)" col4="24528" col4_disp=" 24,528 (3066 calls)" col5="24528" col5_disp=" 24,528 (3066 calls)" col6="24528" col6_disp=" 24,528 (3066 calls)"/>
+                                    <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="" col3="18368" col3_disp=" 18,368 (574 calls)" col4="18942" col4_disp=" 18,942 (574 calls)" col5="17794" col5_disp=" 17,794 (574 calls)" col6="18368" col6_disp=" 18,368 (574 calls)"/>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="28" col0="xDBLe" col1="ec_isogeny.cpp:27" col2="" col3="39873" col4="40999" col5="40305" col6="41039">
+                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="" col3="220" col3_disp="    220 (4 calls)" col4="224" col4_disp="    224 (4 calls)" col5="220" col5_disp="    220 (4 calls)" col6="252" col6_disp="    252 (4 calls)"/>
+                            <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="" col3="312" col3_disp="    312 (4 calls)" col4="316" col4_disp="    316 (4 calls)" col5="312" col5_disp="    312 (4 calls)" col6="360" col6_disp="    360 (4 calls)"/>
+                            <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="" col3="6068" col3_disp="  6,068 (2 calls)" col4="5896" col4_disp="  5,896 (2 calls)" col5="5894" col5_disp="  5,894 (2 calls)" col6="5930" col6_disp="  5,930 (2 calls)">
+                                <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="5844" col3_disp="  5,844 (4 calls)" col4="5676" col4_disp="  5,676 (4 calls)" col5="5676" col5_disp="  5,676 (4 calls)" col6="5684" col6_disp="  5,684 (4 calls)">
+                                    <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="5836" col3_disp="  5,836 (4 calls)" col4="5668" col4_disp="  5,668 (4 calls)" col5="5668" col5_disp="  5,668 (4 calls)" col6="5672" col6_disp="  5,672 (4 calls)"/>
+                                </row>
+                            </row>
+                            <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="" col3="33084" col3_disp=" 33,084 (4 calls)" col4="34372" col4_disp=" 34,372 (4 calls)" col5="33676" col5_disp=" 33,676 (4 calls)" col6="34276" col6_disp=" 34,276 (4 calls)">
+                                <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="" col3="1392" col3_disp="  1,392 (12 calls)" col4="2352" col4_disp="  2,352 (12 calls)" col5="2316" col5_disp="  2,316 (12 calls)" col6="2472" col6_disp="  2,472 (12 calls)">
+                                    <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="" col3="1368" col3_disp="  1,368 (12 calls)" col4="2328" col4_disp="  2,328 (12 calls)" col5="2292" col5_disp="  2,292 (12 calls)" col6="2436" col6_disp="  2,436 (12 calls)"/>
+                                </row>
+                                <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="" col3="30992" col3_disp=" 30,992 (8 calls)" col4="31336" col4_disp=" 31,336 (8 calls)" col5="30680" col5_disp=" 30,680 (8 calls)" col6="31040" col6_disp=" 31,040 (8 calls)">
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="" col3="14016" col3_disp=" 14,016 (1752 calls)" col4="14016" col4_disp=" 14,016 (1752 calls)" col5="14016" col5_disp=" 14,016 (1752 calls)" col6="14016" col6_disp=" 14,016 (1752 calls)"/>
+                                    <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="" col3="10496" col3_disp=" 10,496 (328 calls)" col4="10824" col4_disp=" 10,824 (328 calls)" col5="10168" col5_disp=" 10,168 (328 calls)" col6="10496" col6_disp=" 10,496 (328 calls)"/>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="39" col0="select_point" col1="ec_isogeny.cpp:304" col2="" col3="117" col3_disp="    117 (3 calls)" col4="117" col4_disp="    117 (3 calls)" col5="127" col5_disp="    127 (3 calls)" col6="144" col6_disp="    144 (3 calls)"/>
+                        <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="" col3="220" col3_disp="    220 (4 calls)" col4="224" col4_disp="    224 (4 calls)" col5="220" col5_disp="    220 (4 calls)" col6="280" col6_disp="    280 (4 calls)"/>
+                        <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="" col3="24272" col3_disp=" 24,272 (8 calls)" col4="23584" col4_disp=" 23,584 (8 calls)" col5="23576" col5_disp=" 23,576 (8 calls)" col6="23746" col6_disp=" 23,746 (8 calls)">
+                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="23376" col3_disp=" 23,376 (16 calls)" col4="22704" col4_disp=" 22,704 (16 calls)" col5="22704" col5_disp=" 22,704 (16 calls)" col6="22736" col6_disp=" 22,736 (16 calls)">
+                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="23344" col3_disp=" 23,344 (16 calls)" col4="22672" col4_disp=" 22,672 (16 calls)" col5="22672" col5_disp=" 22,672 (16 calls)" col6="22688" col6_disp=" 22,688 (16 calls)"/>
+                            </row>
+                        </row>
+                        <row id="54" col0="eval_4_isog" col1="ec_isogeny.cpp:73" col2="" col3="395710" col3_disp="395,710 (7 calls)" col4="408100" col4_disp="408,100 (7 calls)" col5="400694" col5_disp="400,694 (7 calls)" col6="408233" col6_disp="408,233 (7 calls)">
+                            <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="" col3="3276" col3_disp="  3,276 (42 calls)" col4="3318" col4_disp="  3,318 (42 calls)" col5="3276" col5_disp="  3,276 (42 calls)" col6="3780" col6_disp="  3,780 (42 calls)"/>
+                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="" col3="2310" col3_disp="  2,310 (42 calls)" col4="2352" col4_disp="  2,352 (42 calls)" col5="2310" col5_disp="  2,310 (42 calls)" col6="2646" col6_disp="  2,646 (42 calls)"/>
+                            <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="" col3="347382" col3_disp="347,382 (42 calls)" col4="360906" col4_disp="360,906 (42 calls)" col5="353598" col5_disp="353,598 (42 calls)" col6="360066" col6_disp="360,066 (42 calls)">
+                                <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="" col3="14616" col3_disp=" 14,616 (126 calls)" col4="24696" col4_disp=" 24,696 (126 calls)" col5="24318" col5_disp=" 24,318 (126 calls)" col6="26061" col6_disp=" 26,061 (126 calls)">
+                                    <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="" col3="14364" col3_disp=" 14,364 (126 calls)" col4="24444" col4_disp=" 24,444 (126 calls)" col5="24066" col5_disp=" 24,066 (126 calls)" col6="25683" col6_disp=" 25,683 (126 calls)"/>
+                                </row>
+                                <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="" col3="325416" col3_disp="325,416 (84 calls)" col4="329028" col4_disp="329,028 (84 calls)" col5="322140" col5_disp="322,140 (84 calls)" col6="325920" col6_disp="325,920 (84 calls)">
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="" col3="147168" col3_disp="147,168 (18396 calls)" col4="147168" col4_disp="147,168 (18396 calls)" col5="147168" col5_disp="147,168 (18396 calls)" col6="147168" col6_disp="147,168 (18396 calls)"/>
+                                    <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="" col3="110208" col3_disp="110,208 (3444 calls)" col4="113652" col4_disp="113,652 (3444 calls)" col5="106764" col5_disp="106,764 (3444 calls)" col6="110208" col6_disp="110,208 (3444 calls)"/>
+                                </row>
+                            </row>
+                            <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="" col3="42476" col3_disp=" 42,476 (14 calls)" col4="41272" col4_disp=" 41,272 (14 calls)" col5="41258" col5_disp=" 41,258 (14 calls)" col6="41510" col6_disp=" 41,510 (14 calls)">
+                                <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="40908" col3_disp=" 40,908 (28 calls)" col4="39732" col4_disp=" 39,732 (28 calls)" col5="39732" col5_disp=" 39,732 (28 calls)" col6="39788" col6_disp=" 39,788 (28 calls)">
+                                    <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="40852" col3_disp=" 40,852 (28 calls)" col4="39676" col4_disp=" 39,676 (28 calls)" col5="39676" col5_disp=" 39,676 (28 calls)" col6="39704" col6_disp=" 39,704 (28 calls)"/>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="" col3="74439" col3_disp=" 74,439 (9 calls)" col4="77337" col4_disp=" 77,337 (9 calls)" col5="75771" col5_disp=" 75,771 (9 calls)" col6="77121" col6_disp=" 77,121 (9 calls)">
+                            <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="" col3="3132" col3_disp="  3,132 (27 calls)" col4="5292" col4_disp="  5,292 (27 calls)" col5="5211" col5_disp="  5,211 (27 calls)" col6="5562" col6_disp="  5,562 (27 calls)">
+                                <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="" col3="3078" col3_disp="  3,078 (27 calls)" col4="5238" col4_disp="  5,238 (27 calls)" col5="5157" col5_disp="  5,157 (27 calls)" col6="5481" col6_disp="  5,481 (27 calls)"/>
+                            </row>
+                            <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="" col3="69732" col3_disp=" 69,732 (18 calls)" col4="70506" col4_disp=" 70,506 (18 calls)" col5="69030" col5_disp=" 69,030 (18 calls)" col6="69840" col6_disp=" 69,840 (18 calls)">
+                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="" col3="31536" col3_disp=" 31,536 (3942 calls)" col4="31536" col4_disp=" 31,536 (3942 calls)" col5="31536" col5_disp=" 31,536 (3942 calls)" col6="31536" col6_disp=" 31,536 (3942 calls)"/>
+                                <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="" col3="23616" col3_disp=" 23,616 (738 calls)" col4="24354" col4_disp=" 24,354 (738 calls)" col5="22878" col5_disp=" 22,878 (738 calls)" col6="23616" col6_disp=" 23,616 (738 calls)"/>
+                            </row>
+                        </row>
+                        <row id="21" col0="fp2inv503_mont" col1="fpx.cpp:367" col2="" col3="121156" col4="117987" col5="121914" col6="122419">
+                            <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="" col3="4212" col3_disp="  4,212 (4 calls)" col4="4116" col4_disp="  4,116 (4 calls)" col5="4116" col5_disp="  4,116 (4 calls)" col6="4132" col6_disp="  4,132 (4 calls)">
+                                <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="" col3="4204" col3_disp="  4,204 (4 calls)" col4="4108" col4_disp="  4,108 (4 calls)" col5="4108" col5_disp="  4,108 (4 calls)" col6="4120" col6_disp="  4,120 (4 calls)">
+                                    <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="" col3="1616" col3_disp="  1,616 (4 calls)" col4="1552" col4_disp="  1,552 (4 calls)" col5="1552" col5_disp="  1,552 (4 calls)" col6="1556" col6_disp="  1,556 (4 calls)"/>
+                                    <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="" col3="2564" col3_disp="  2,564 (4 calls)" col4="2480" col4_disp="  2,480 (4 calls)" col5="2416" col5_disp="  2,416 (4 calls)" col6="2420" col6_disp="  2,420 (4 calls)"/>
+                                </row>
+                            </row>
+                            <row id="58" col0="fpinv503_chain_mont" col1="fpx.cpp:220" col2="" col3="112430" col4="109483" col5="113404" col6="113870">
+                                <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="" col3="46332" col3_disp=" 46,332 (44 calls)" col4="45276" col4_disp=" 45,276 (44 calls)" col5="49392" col5_disp=" 49,392 (48 calls)" col6="49584" col6_disp=" 49,584 (48 calls)">
+                                    <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="" col3="46244" col3_disp=" 46,244 (44 calls)" col4="45188" col4_disp=" 45,188 (44 calls)" col5="49296" col5_disp=" 49,296 (48 calls)" col6="49440" col6_disp=" 49,440 (48 calls)">
+                                        <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="" col3="17776" col3_disp=" 17,776 (44 calls)" col4="17072" col4_disp=" 17,072 (44 calls)" col5="18624" col5_disp=" 18,624 (48 calls)" col6="18672" col6_disp=" 18,672 (48 calls)"/>
+                                        <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="" col3="28204" col3_disp=" 28,204 (44 calls)" col4="27280" col4_disp=" 27,280 (44 calls)" col5="28992" col5_disp=" 28,992 (48 calls)" col6="29040" col6_disp=" 29,040 (48 calls)"/>
+                                    </row>
+                                </row>
+                                <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="65745" col3_disp=" 65,745 (45 calls)" col4="63855" col4_disp=" 63,855 (45 calls)" col5="63527" col5_disp=" 63,527 (45 calls)" col6="63617" col6_disp=" 63,617 (45 calls)">
+                                    <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="65655" col3_disp=" 65,655 (45 calls)" col4="63765" col4_disp=" 63,765 (45 calls)" col5="63437" col5_disp=" 63,437 (45 calls)" col6="63482" col6_disp=" 63,482 (45 calls)"/>
+                                </row>
+                            </row>
+                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="4383" col3_disp="  4,383 (3 calls)" col4="4257" col4_disp="  4,257 (3 calls)" col5="4257" col5_disp="  4,257 (3 calls)" col6="4263" col6_disp="  4,263 (3 calls)">
+                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="4377" col3_disp="  4,377 (3 calls)" col4="4251" col4_disp="  4,251 (3 calls)" col5="4251" col5_disp="  4,251 (3 calls)" col6="4254" col6_disp="  4,254 (3 calls)"/>
+                            </row>
+                        </row>
+                        <row id="13" col0="from_mont" col1="fpx.cpp:37" col2="" col3="9096" col3_disp="  9,096 (6 calls)" col4="8850" col4_disp="  8,850 (6 calls)" col5="8796" col5_disp="  8,796 (6 calls)" col6="8856" col6_disp="  8,856 (6 calls)">
+                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="8766" col3_disp="  8,766 (6 calls)" col4="8514" col4_disp="  8,514 (6 calls)" col5="8466" col5_disp="  8,466 (6 calls)" col6="8478" col6_disp="  8,478 (6 calls)">
+                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="8754" col3_disp="  8,754 (6 calls)" col4="8502" col4_disp="  8,502 (6 calls)" col5="8454" col5_disp="  8,454 (6 calls)" col6="8460" col6_disp="  8,460 (6 calls)"/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="5" col0="EphemeralSecretAgreement_A" col1="sidh.cpp:307" col2="" col3="524786" col4="524157" col5="528369" col6="534787">
+                        <row id="55" col0="fp2_decode" col1="sidh.cpp:62" col2="" col3="8901" col3_disp="  8,901 (3 calls)" col4="8655" col4_disp="  8,655 (3 calls)" col5="8607" col5_disp="  8,607 (3 calls)" col6="8652" col6_disp="  8,652 (3 calls)">
+                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="8766" col3_disp="  8,766 (6 calls)" col4="8514" col4_disp="  8,514 (6 calls)" col5="8466" col5_disp="  8,466 (6 calls)" col6="8478" col6_disp="  8,478 (6 calls)">
+                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="8754" col3_disp="  8,754 (6 calls)" col4="8502" col4_disp="  8,502 (6 calls)" col5="8454" col5_disp="  8,454 (6 calls)" col6="8460" col6_disp="  8,460 (6 calls)"/>
+                            </row>
+                        </row>
+                        <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="" col3="3588" col3_disp="  3,588 (46 calls)" col4="3634" col4_disp="  3,634 (46 calls)" col5="3672" col5_disp="  3,672 (46 calls)" col6="4274" col6_disp="  4,274 (46 calls)"/>
+                        <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="" col3="107523" col3_disp="107,523 (13 calls)" col4="111709" col4_disp="111,709 (13 calls)" col5="109447" col5_disp="109,447 (13 calls)" col6="111421" col6_disp="111,421 (13 calls)">
+                            <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="" col3="4524" col3_disp="  4,524 (39 calls)" col4="7644" col4_disp="  7,644 (39 calls)" col5="7527" col5_disp="  7,527 (39 calls)" col6="8049" col6_disp="  8,049 (39 calls)">
+                                <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="" col3="4446" col3_disp="  4,446 (39 calls)" col4="7566" col4_disp="  7,566 (39 calls)" col5="7449" col5_disp="  7,449 (39 calls)" col6="7932" col6_disp="  7,932 (39 calls)"/>
+                            </row>
+                            <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="" col3="100724" col3_disp="100,724 (26 calls)" col4="101842" col4_disp="101,842 (26 calls)" col5="99710" col5_disp=" 99,710 (26 calls)" col6="100880" col6_disp="100,880 (26 calls)">
+                                <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="" col3="45552" col3_disp=" 45,552 (5694 calls)" col4="45552" col4_disp=" 45,552 (5694 calls)" col5="45552" col5_disp=" 45,552 (5694 calls)" col6="45552" col6_disp=" 45,552 (5694 calls)"/>
+                                <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="" col3="34112" col3_disp=" 34,112 (1066 calls)" col4="35178" col4_disp=" 35,178 (1066 calls)" col5="33046" col5_disp=" 33,046 (1066 calls)" col6="34112" col6_disp=" 34,112 (1066 calls)"/>
+                            </row>
+                        </row>
+                        <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="" col3="1210" col3_disp="  1,210 (22 calls)" col4="1232" col4_disp="  1,232 (22 calls)" col5="1220" col5_disp="  1,220 (22 calls)" col6="1424" col6_disp="  1,424 (22 calls)"/>
+                        <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="" col3="45510" col3_disp=" 45,510 (15 calls)" col4="44220" col4_disp=" 44,220 (15 calls)" col5="44231" col5_disp=" 44,231 (15 calls)" col6="44527" col6_disp=" 44,527 (15 calls)">
+                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="43830" col3_disp=" 43,830 (30 calls)" col4="42570" col4_disp=" 42,570 (30 calls)" col5="42570" col5_disp=" 42,570 (30 calls)" col6="42630" col6_disp=" 42,630 (30 calls)">
+                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="43770" col3_disp=" 43,770 (30 calls)" col4="42510" col4_disp=" 42,510 (30 calls)" col5="42510" col5_disp=" 42,510 (30 calls)" col6="42540" col6_disp=" 42,540 (30 calls)"/>
+                            </row>
+                        </row>
+                        <row id="21" col0="fp2inv503_mont" col1="fpx.cpp:367" col2="" col3="242312" col3_disp="242,312 (2 calls)" col4="235974" col4_disp="235,974 (2 calls)" col5="243828" col5_disp="243,828 (2 calls)" col6="244838" col6_disp="244,838 (2 calls)">
+                            <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="" col3="8424" col3_disp="  8,424 (8 calls)" col4="8232" col4_disp="  8,232 (8 calls)" col5="8232" col5_disp="  8,232 (8 calls)" col6="8264" col6_disp="  8,264 (8 calls)">
+                                <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="" col3="8408" col3_disp="  8,408 (8 calls)" col4="8216" col4_disp="  8,216 (8 calls)" col5="8216" col5_disp="  8,216 (8 calls)" col6="8240" col6_disp="  8,240 (8 calls)">
+                                    <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="" col3="3232" col3_disp="  3,232 (8 calls)" col4="3104" col4_disp="  3,104 (8 calls)" col5="3104" col5_disp="  3,104 (8 calls)" col6="3112" col6_disp="  3,112 (8 calls)"/>
+                                    <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="" col3="5128" col3_disp="  5,128 (8 calls)" col4="4960" col4_disp="  4,960 (8 calls)" col5="4832" col5_disp="  4,832 (8 calls)" col6="4840" col6_disp="  4,840 (8 calls)"/>
+                                </row>
+                            </row>
+                            <row id="58" col0="fpinv503_chain_mont" col1="fpx.cpp:220" col2="" col3="224860" col3_disp="224,860 (2 calls)" col4="218966" col4_disp="218,966 (2 calls)" col5="226808" col5_disp="226,808 (2 calls)" col6="227740" col6_disp="227,740 (2 calls)">
+                                <row id="70" col0="fpsqr503_mont" col1="fpx.cpp:82" col2="" col3="92664" col3_disp=" 92,664 (88 calls)" col4="90552" col4_disp=" 90,552 (88 calls)" col5="98784" col5_disp=" 98,784 (96 calls)" col6="99168" col6_disp=" 99,168 (96 calls)">
+                                    <row id="15" col0="mul" col1="mont_ops_fios_csa_square.hpp:146" col2="" col3="92488" col3_disp=" 92,488 (88 calls)" col4="90376" col4_disp=" 90,376 (88 calls)" col5="98592" col5_disp=" 98,592 (96 calls)" col6="98880" col6_disp=" 98,880 (96 calls)">
+                                        <row id="47" col0="square_full" col1="mont_ops_fios_csa_square.hpp:43" col2="" col3="35552" col3_disp=" 35,552 (88 calls)" col4="34144" col4_disp=" 34,144 (88 calls)" col5="37248" col5_disp=" 37,248 (96 calls)" col6="37344" col6_disp=" 37,344 (96 calls)"/>
+                                        <row id="62" col0="redc" col1="mont_ops_fios_csa_square.hpp:92" col2="" col3="56408" col3_disp=" 56,408 (88 calls)" col4="54560" col4_disp=" 54,560 (88 calls)" col5="57984" col5_disp=" 57,984 (96 calls)" col6="58080" col6_disp=" 58,080 (96 calls)"/>
+                                    </row>
+                                </row>
+                                <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="131490" col3_disp="131,490 (90 calls)" col4="127710" col4_disp="127,710 (90 calls)" col5="127054" col5_disp="127,054 (90 calls)" col6="127234" col6_disp="127,234 (90 calls)">
+                                    <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="131310" col3_disp="131,310 (90 calls)" col4="127530" col4_disp="127,530 (90 calls)" col5="126874" col5_disp="126,874 (90 calls)" col6="126964" col6_disp="126,964 (90 calls)"/>
+                                </row>
+                            </row>
+                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="8766" col3_disp="  8,766 (6 calls)" col4="8514" col4_disp="  8,514 (6 calls)" col5="8514" col5_disp="  8,514 (6 calls)" col6="8526" col6_disp="  8,526 (6 calls)">
+                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="8754" col3_disp="  8,754 (6 calls)" col4="8502" col4_disp="  8,502 (6 calls)" col5="8502" col5_disp="  8,502 (6 calls)" col6="8508" col6_disp="  8,508 (6 calls)"/>
+                            </row>
+                        </row>
+                        <row id="37" col0="LADDER3PT_impl&lt;250&gt;" col1="ec_isogeny.cpp:346" col2="" col3="72073" col4="74009" col5="73102" col6="74585">
+                            <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="" col3="936" col3_disp="    936 (12 calls)" col4="948" col4_disp="    948 (12 calls)" col5="1090" col5_disp="  1,090 (12 calls)" col6="1234" col6_disp="  1,234 (12 calls)"/>
+                            <row id="22" col0="fp2div2_503" col1="fpx.cpp:141" col2="" col3="186" col3_disp="    186 (2 calls)" col4="186" col4_disp="    186 (2 calls)" col5="318" col5_disp="    318 (2 calls)" col6="350" col6_disp="    350 (2 calls)"/>
+                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="" col3="440" col3_disp="    440 (8 calls)" col4="448" col4_disp="    448 (8 calls)" col5="440" col5_disp="    440 (8 calls)" col6="504" col6_disp="    504 (8 calls)"/>
+                            <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="" col3="12136" col3_disp=" 12,136 (4 calls)" col4="11792" col4_disp=" 11,792 (4 calls)" col5="11782" col5_disp=" 11,782 (4 calls)" col6="11854" col6_disp=" 11,854 (4 calls)">
+                                <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="11688" col3_disp=" 11,688 (8 calls)" col4="11352" col4_disp=" 11,352 (8 calls)" col5="11352" col5_disp=" 11,352 (8 calls)" col6="11368" col6_disp=" 11,368 (8 calls)">
+                                    <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="11672" col3_disp=" 11,672 (8 calls)" col4="11336" col4_disp=" 11,336 (8 calls)" col5="11336" col5_disp=" 11,336 (8 calls)" col6="11344" col6_disp=" 11,344 (8 calls)"/>
+                                </row>
+                            </row>
+                            <row id="43" col0="fpcorrection503" col1="fp_generic.cpp:101" col2="" col3="108" col3_disp="    108 (2 calls)" col4="110" col4_disp="    110 (2 calls)" col5="108" col5_disp="    108 (2 calls)" col6="124" col6_disp="    124 (2 calls)"/>
+                            <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="" col3="57897" col3_disp=" 57,897 (7 calls)" col4="60151" col4_disp=" 60,151 (7 calls)" col5="58941" col5_disp=" 58,941 (7 calls)" col6="59999" col6_disp=" 59,999 (7 calls)">
+                                <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="" col3="2436" col3_disp="  2,436 (21 calls)" col4="4116" col4_disp="  4,116 (21 calls)" col5="4063" col5_disp="  4,063 (21 calls)" col6="4342" col6_disp="  4,342 (21 calls)">
+                                    <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="" col3="2394" col3_disp="  2,394 (21 calls)" col4="4074" col4_disp="  4,074 (21 calls)" col5="4021" col5_disp="  4,021 (21 calls)" col6="4279" col6_disp="  4,279 (21 calls)"/>
+                                </row>
+                                <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="" col3="54236" col3_disp=" 54,236 (14 calls)" col4="54838" col4_disp=" 54,838 (14 calls)" col5="53690" col5_disp=" 53,690 (14 calls)" col6="54320" col6_disp=" 54,320 (14 calls)">
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="" col3="24528" col3_disp=" 24,528 (3066 calls)" col4="24528" col4_disp=" 24,528 (3066 calls)" col5="24528" col5_disp=" 24,528 (3066 calls)" col6="24528" col6_disp=" 24,528 (3066 calls)"/>
+                                    <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="" col3="18368" col3_disp=" 18,368 (574 calls)" col4="18942" col4_disp=" 18,942 (574 calls)" col5="17794" col5_disp=" 17,794 (574 calls)" col6="18368" col6_disp=" 18,368 (574 calls)"/>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="28" col0="xDBLe" col1="ec_isogeny.cpp:27" col2="" col3="39873" col4="40999" col5="40325" col6="41059">
+                            <row id="36" col0="fpsub503" col1="fp_generic.cpp:55" col2="" col3="220" col3_disp="    220 (4 calls)" col4="224" col4_disp="    224 (4 calls)" col5="220" col5_disp="    220 (4 calls)" col6="252" col6_disp="    252 (4 calls)"/>
+                            <row id="19" col0="fpadd503" col1="fp_generic.cpp:27" col2="" col3="312" col3_disp="    312 (4 calls)" col4="316" col4_disp="    316 (4 calls)" col5="312" col5_disp="    312 (4 calls)" col6="360" col6_disp="    360 (4 calls)"/>
+                            <row id="30" col0="fp2sqr503_mont" col1="fpx.cpp:165" col2="" col3="6068" col3_disp="  6,068 (2 calls)" col4="5896" col4_disp="  5,896 (2 calls)" col5="5894" col5_disp="  5,894 (2 calls)" col6="5930" col6_disp="  5,930 (2 calls)">
+                                <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="5844" col3_disp="  5,844 (4 calls)" col4="5676" col4_disp="  5,676 (4 calls)" col5="5676" col5_disp="  5,676 (4 calls)" col6="5684" col6_disp="  5,684 (4 calls)">
+                                    <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="5836" col3_disp="  5,836 (4 calls)" col4="5668" col4_disp="  5,668 (4 calls)" col5="5668" col5_disp="  5,668 (4 calls)" col6="5672" col6_disp="  5,672 (4 calls)"/>
+                                </row>
+                            </row>
+                            <row id="12" col0="fp2mul503_mont" col1="fpx.cpp:197" col2="" col3="33084" col3_disp=" 33,084 (4 calls)" col4="34372" col4_disp=" 34,372 (4 calls)" col5="33696" col5_disp=" 33,696 (4 calls)" col6="34296" col6_disp=" 34,296 (4 calls)">
+                                <row id="57" col0="mp_mul" col1="fp_generic.cpp:286" col2="" col3="1392" col3_disp="  1,392 (12 calls)" col4="2352" col4_disp="  2,352 (12 calls)" col5="2326" col5_disp="  2,326 (12 calls)" col6="2482" col6_disp="  2,482 (12 calls)">
+                                    <row id="6" col0="mul" col1="mont_raw_mul.hpp:46" col2="" col3="1368" col3_disp="  1,368 (12 calls)" col4="2328" col4_disp="  2,328 (12 calls)" col5="2302" col5_disp="  2,302 (12 calls)" col6="2446" col6_disp="  2,446 (12 calls)"/>
+                                </row>
+                                <row id="25" col0="rdc_mont" col1="fp_generic.cpp:292" col2="" col3="30992" col3_disp=" 30,992 (8 calls)" col4="31336" col4_disp=" 31,336 (8 calls)" col5="30680" col5_disp=" 30,680 (8 calls)" col6="31040" col6_disp=" 31,040 (8 calls)">
+                                    <row id="16" col0="is_digit_lessthan_ct" col1="config.h:103" col2="" col3="14016" col3_disp=" 14,016 (1752 calls)" col4="14016" col4_disp=" 14,016 (1752 calls)" col5="14016" col5_disp=" 14,016 (1752 calls)" col6="14016" col6_disp=" 14,016 (1752 calls)"/>
+                                    <row id="44" col0="digit_x_digit" col1="fp_generic.cpp:153" col2="" col3="10496" col3_disp=" 10,496 (328 calls)" col4="10824" col4_disp=" 10,824 (328 calls)" col5="10168" col5_disp=" 10,168 (328 calls)" col6="10496" col6_disp=" 10,496 (328 calls)"/>
+                                </row>
+                            </row>
+                        </row>
+                        <row id="39" col0="select_point" col1="ec_isogeny.cpp:304" col2="" col3="117" col3_disp="    117 (3 calls)" col4="117" col4_disp="    117 (3 calls)" col5="127" col5_disp="    127 (3 calls)" col6="144" col6_disp="    144 (3 calls)"/>
+                        <row id="22" col0="fp2div2_503" col1="fpx.cpp:141" col2="" col3="186" col3_disp="    186 (2 calls)" col4="186" col4_disp="    186 (2 calls)" col5="318" col5_disp="    318 (2 calls)" col6="350" col6_disp="    350 (2 calls)"/>
+                        <row id="13" col0="from_mont" col1="fpx.cpp:37" col2="" col3="3032" col3_disp="  3,032 (2 calls)" col4="2950" col4_disp="  2,950 (2 calls)" col5="2932" col5_disp="  2,932 (2 calls)" col6="2952" col6_disp="  2,952 (2 calls)">
+                            <row id="9" col0="fpmul503_mont" col1="fpx.cpp:62" col2="" col3="2922" col3_disp="  2,922 (2 calls)" col4="2838" col4_disp="  2,838 (2 calls)" col5="2822" col5_disp="  2,822 (2 calls)" col6="2826" col6_disp="  2,826 (2 calls)">
+                                <row id="68" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="" col3="2918" col3_disp="  2,918 (2 calls)" col4="2834" col4_disp="  2,834 (2 calls)" col5="2818" col5_disp="  2,818 (2 calls)" col6="2820" col6_disp="  2,820 (2 calls)"/>
+                            </row>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes>
+                <note name="*" desc="Exceeded design size warning message threshold"/>
+            </notes>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

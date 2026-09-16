@@ -1,0 +1,1130 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="src_montcsa_flat/sha3/fips202.cpp:427:110" msg_body="unused parameter 'r'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4801" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:160:2" msg_body="'register' storage class specifier is deprecated and incompatible with C++17">
+        <args ClangWarningOption="deprecated-register"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5561" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:122:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:156:36" msg_body="unexpected pragma argument 'mul', expects function/operation">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:157:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5561" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:157:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5569" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:158:22" msg_body="unexpected pragma parameter 'off'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = acc type = ram_2p impl = bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = acc cyclic factor = 2 dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:87:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:107:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="0" ARG_PragmaOptions="op = mul impl = DSP" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:137:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="add_prod_to_acc" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:174:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convert_blocks_to_digits" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:186:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convert_blocks_to_digits" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor = 2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convert_blocks_to_digits" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/mpx_iface_tvu_mul.hpp:217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="convert_blocks_to_digits" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_raw_mul.hpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_raw_mul.hpp:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = acc complete dim = 1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_raw_mul.hpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_raw_mul.hpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_raw_mul.hpp:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:155:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="digit_x_digit" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:156:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="digit_x_digit" ARG_PragmaIsValid="0" ARG_PragmaOptions="instances = mul" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:157:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="digit_x_digit" ARG_PragmaIsValid="0" ARG_PragmaOptions="core = Mul_LUT" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:158:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="digit_x_digit" ARG_PragmaIsValid="0" ARG_PragmaOptions="off" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:288:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mp_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:312:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rdc_mont" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:315:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rdc_mont" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:337:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rdc_mont" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:344:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rdc_mont" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=402 port=ct" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=378 port=pk" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=16 port=ss" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="function instances=fpmul503_mont limit=1" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="function instances=fpsqr503_mont limit=1" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="function instances=fp2mul503_mont limit=1" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="function instances=fp2sqr503_mont limit=1" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="function instances=mp_mul limit=1" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sikep503_kem_enc_hw" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/sikep503_kem_enc_hw.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = ct offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/sikep503_kem_enc_hw.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = pk offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/sikep503_kem_enc_hw.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = ss offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/sikep503_kem_enc_hw.cpp:38:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = ct bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/sikep503_kem_enc_hw.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = pk bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/sikep503_kem_enc_hw.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = ss bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/sikep503_kem_enc_hw.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sikep503_kem_enc_hw" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/ec_isogeny.cpp:386:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LADDER3PT" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:65:36" msg_body="unexpected pragma argument 'mul', expects function/operation">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:66:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5561" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:66:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5569" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:67:22" msg_body="unexpected pragma parameter 'off'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5570" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:85:36" msg_body="unexpected pragma argument 'mul', expects function/operation">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:86:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5561" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:86:9" msg_body="missing argument for 'variable'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5569" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:87:22" msg_body="unexpected pragma parameter 'off'">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5584" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:68:9" msg_body="there are more than one pragma inline in the function scope, ignore the pragma">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5584" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:88:9" msg_body="there are more than one pragma inline in the function scope, ignore the pragma">
+        <args/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=t complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=NWORDS max=NWORDS avg=NWORDS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:63:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=base_lo complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=base_hi complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:92:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:110:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=u complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:113:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="square_full" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="square_full" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=acc complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="square_full" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="square_full" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="square_full" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="square_full" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="square_full" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:93:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:95:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=t complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:111:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:115:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:121:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:130:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=u complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="redc" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:147:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=prod complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:64:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpmul503_mont" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpmul503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="instances = mul" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpmul503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="core = Mul_LUT" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpmul503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="off" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpmul503_mont" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="instances = mul" ARG_PragmaType="allocation" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="core = Mul_LUT" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:87:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="0" ARG_PragmaOptions="off" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_montcsa_flat/fpx.cpp:88:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fpsqr503_mont" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:136:5" msg_body="Inlining function 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 385 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:340:5" msg_body="Inlining function 'LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="LADDER3PT(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, unsigned int, point_proj*, unsigned long const (*) [8])" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 385 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 308 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_139_5' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:139:27) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:139:27" LoopName="VITIS_LOOP_139_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_132_4' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:132:27) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:132:27" LoopName="VITIS_LOOP_132_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'RDC_OUTER' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:110:20) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:110:20" LoopName="RDC_OUTER"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_120_3' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 2">
+        <args Factor="2" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31" LoopName="VITIS_LOOP_120_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_114_2' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:114:31) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:114:31" LoopName="VITIS_LOOP_114_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_120_3' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31" LoopName="VITIS_LOOP_120_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_120_3' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31" LoopName="VITIS_LOOP_120_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_120_3' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31" LoopName="VITIS_LOOP_120_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_120_3' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 6">
+        <args Factor="6" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31" LoopName="VITIS_LOOP_120_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_120_3' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 7">
+        <args Factor="7" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31" LoopName="VITIS_LOOP_120_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_120_3' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31" LoopName="VITIS_LOOP_120_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_120_3' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 9">
+        <args Factor="9" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:120:31" LoopName="VITIS_LOOP_120_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:92:0" msg_body="Unrolling loop 'VITIS_LOOP_96_1' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:96:19) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::redc' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:96:19" LoopName="VITIS_LOOP_96_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'NORM' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:83:15) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:83:15" LoopName="NORM"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'CROSS' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:67:16) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:67:16" LoopName="CROSS"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'VITIS_LOOP_69_2' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 1">
+        <args Factor="1" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19" LoopName="VITIS_LOOP_69_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'VITIS_LOOP_69_2' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 2">
+        <args Factor="2" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19" LoopName="VITIS_LOOP_69_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'VITIS_LOOP_69_2' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19" LoopName="VITIS_LOOP_69_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'VITIS_LOOP_69_2' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19" LoopName="VITIS_LOOP_69_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'VITIS_LOOP_69_2' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19" LoopName="VITIS_LOOP_69_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'VITIS_LOOP_69_2' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 6">
+        <args Factor="6" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19" LoopName="VITIS_LOOP_69_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'VITIS_LOOP_69_2' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 7">
+        <args Factor="7" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:69:19" LoopName="VITIS_LOOP_69_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'DIAG' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:54:15) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:54:15" LoopName="DIAG"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:43:0" msg_body="Unrolling loop 'VITIS_LOOP_48_1' (../montgomery_converter/include/mont_ops_fios_csa_square.hpp:48:19) in function 'mont_fios_csa_square::MontOps_FIOS_CSA_Square&lt;unsigned long, 8u&gt;::square_full' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:48:19" LoopName="VITIS_LOOP_48_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_335_4' (src_montcsa_flat/generic/fp_generic.cpp:335:23) in function 'rdc_mont' completely with a factor of 7">
+        <args Factor="7" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:335:23" LoopName="VITIS_LOOP_335_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_342_5' (src_montcsa_flat/generic/fp_generic.cpp:342:27) in function 'rdc_mont' completely with a factor of 1">
+        <args Factor="1" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:342:27" LoopName="VITIS_LOOP_342_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_342_5' (src_montcsa_flat/generic/fp_generic.cpp:342:27) in function 'rdc_mont' completely with a factor of 2">
+        <args Factor="2" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:342:27" LoopName="VITIS_LOOP_342_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_342_5' (src_montcsa_flat/generic/fp_generic.cpp:342:27) in function 'rdc_mont' completely with a factor of 3">
+        <args Factor="3" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:342:27" LoopName="VITIS_LOOP_342_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_342_5' (src_montcsa_flat/generic/fp_generic.cpp:342:27) in function 'rdc_mont' completely with a factor of 4">
+        <args Factor="4" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:342:27" LoopName="VITIS_LOOP_342_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_342_5' (src_montcsa_flat/generic/fp_generic.cpp:342:27) in function 'rdc_mont' completely with a factor of 5">
+        <args Factor="5" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:342:27" LoopName="VITIS_LOOP_342_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_342_5' (src_montcsa_flat/generic/fp_generic.cpp:342:27) in function 'rdc_mont' completely with a factor of 6">
+        <args Factor="6" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:342:27" LoopName="VITIS_LOOP_342_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_342_5' (src_montcsa_flat/generic/fp_generic.cpp:342:27) in function 'rdc_mont' completely with a factor of 7">
+        <args Factor="7" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:342:27" LoopName="VITIS_LOOP_342_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_310_2' (src_montcsa_flat/generic/fp_generic.cpp:310:23) in function 'rdc_mont' completely with a factor of 8">
+        <args Factor="8" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:310:23" LoopName="VITIS_LOOP_310_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_313_3' (src_montcsa_flat/generic/fp_generic.cpp:313:20) in function 'rdc_mont' completely with a factor of 7">
+        <args Factor="7" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:313:20" LoopName="VITIS_LOOP_313_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_313_3' (src_montcsa_flat/generic/fp_generic.cpp:313:20) in function 'rdc_mont' completely with a factor of 6">
+        <args Factor="6" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:313:20" LoopName="VITIS_LOOP_313_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_313_3' (src_montcsa_flat/generic/fp_generic.cpp:313:20) in function 'rdc_mont' completely with a factor of 5">
+        <args Factor="5" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:313:20" LoopName="VITIS_LOOP_313_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_313_3' (src_montcsa_flat/generic/fp_generic.cpp:313:20) in function 'rdc_mont' completely with a factor of 4">
+        <args Factor="4" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:313:20" LoopName="VITIS_LOOP_313_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_313_3' (src_montcsa_flat/generic/fp_generic.cpp:313:20) in function 'rdc_mont' completely with a factor of 3">
+        <args Factor="3" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:313:20" LoopName="VITIS_LOOP_313_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_313_3' (src_montcsa_flat/generic/fp_generic.cpp:313:20) in function 'rdc_mont' completely with a factor of 2">
+        <args Factor="2" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:313:20" LoopName="VITIS_LOOP_313_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:293:0" msg_body="Unrolling loop 'VITIS_LOOP_313_3' (src_montcsa_flat/generic/fp_generic.cpp:313:20) in function 'rdc_mont' completely with a factor of 1">
+        <args Factor="1" LoopLoc="src_montcsa_flat/generic/fp_generic.cpp:313:20" LoopName="VITIS_LOOP_313_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:49:0" msg_body="Unrolling loop 'SEL_LOOP' (../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:121:19) in function 'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat&lt;unsigned long, 8u&gt;::mul' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:121:19" LoopName="SEL_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:49:0" msg_body="Unrolling loop 'CSUB_LOOP' (../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:112:20) in function 'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat&lt;unsigned long, 8u&gt;::mul' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:112:20" LoopName="CSUB_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:49:0" msg_body="Unrolling loop 'FIOS_OUTER' (../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:61:21) in function 'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat&lt;unsigned long, 8u&gt;::mul' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:61:21" LoopName="FIOS_OUTER"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:49:0" msg_body="Unrolling loop 'CARRY_CHAIN' (../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26) in function 'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat&lt;unsigned long, 8u&gt;::mul' completely with a factor of 7">
+        <args Factor="7" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:91:26" LoopName="CARRY_CHAIN"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:49:0" msg_body="Unrolling loop 'PRESUM' (../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10) in function 'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat&lt;unsigned long, 8u&gt;::mul' completely with a factor of 7">
+        <args Factor="7" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:81:10" LoopName="PRESUM"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:49:0" msg_body="Unrolling loop 'VITIS_LOOP_54_1' (../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:54:19) in function 'mont_fios_csa_flat::MontOps_FIOS_CSA_Flat&lt;unsigned long, 8u&gt;::mul' completely with a factor of 9">
+        <args Factor="9" LoopLoc="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp:54:19" LoopName="VITIS_LOOP_54_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_raw_mul.hpp:47:0" msg_body="Unrolling loop 'VITIS_LOOP_78_2' (../montgomery_converter/include/mont_raw_mul.hpp:78:26) in function 'mont_raw_mul::RawMul&lt;unsigned long, 8u&gt;::mul' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../montgomery_converter/include/mont_raw_mul.hpp:78:26" LoopName="VITIS_LOOP_78_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_raw_mul.hpp:47:0" msg_body="Unrolling loop 'VITIS_LOOP_52_1' (../montgomery_converter/include/mont_raw_mul.hpp:52:19) in function 'mont_raw_mul::RawMul&lt;unsigned long, 8u&gt;::mul' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../montgomery_converter/include/mont_raw_mul.hpp:52:19" LoopName="VITIS_LOOP_52_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src_montcsa_flat/sidh.cpp:390:5" msg_body="Duplicating function 'fp2_encode(unsigned long const (*) [8], unsigned char*)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="fp2_encode(unsigned long const (*) [8], unsigned char*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src_montcsa_flat/sike.cpp:89:3" msg_body="Duplicating function 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src_montcsa_flat/sike.cpp:65:3" msg_body="Duplicating function 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src_montcsa_flat/sha3/fips202.cpp:654:3" msg_body="Duplicating function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-366" msg_severity="WARNING" msg_loc="src_montcsa_flat/sha3/fips202.cpp:438:7" msg_body="Duplicating function 'store64(unsigned char*, unsigned long)' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.">
+        <args Name="store64(unsigned char*, unsigned long)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/random/random.cpp:22:0" msg_body="Inlining function 'lcg_rand()' into 'randombytes(unsigned char*, unsigned long long)'">
+        <args Callee="lcg_rand()" Callee-DebugLoc="File src_montcsa_flat/random/random.cpp Line 16 Column 0" Caller="randombytes(unsigned char*, unsigned long long)" Caller-DebugLoc="File src_montcsa_flat/random/random.cpp Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:386:0" msg_body="Inlining function 'load64(unsigned char const*)' into 'keccak_absorb(unsigned long*, unsigned int, unsigned char const*, unsigned long long, unsigned char)'">
+        <args Callee="load64(unsigned char const*)" Callee-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 23 Column 0" Caller="keccak_absorb(unsigned long*, unsigned int, unsigned char const*, unsigned long long, unsigned char)" Caller-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 386 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:606:0" msg_body="Inlining function 'keccak_absorb(unsigned long*, unsigned int, unsigned char const*, unsigned long long, unsigned char)' into 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)'">
+        <args Callee="keccak_absorb(unsigned long*, unsigned int, unsigned char const*, unsigned long long, unsigned char)" Callee-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 386 Column 0" Caller="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 606 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:428:0" msg_body="Inlining function 'store64(unsigned char*, unsigned long) (.48)' into 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)'">
+        <args Callee="store64(unsigned char*, unsigned long) (.48)" Callee-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 34 Column 0" Caller="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Caller-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 428 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:637:0" msg_body="Inlining function 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.46)'">
+        <args Callee="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Callee-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 606 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.46)" Caller-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 637 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.46)'">
+        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Callee-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long) (.46)" Caller-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 637 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:26:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 14 Column 0" Caller="init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 26 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:26:0" msg_body="Inlining function 'fpzero503(unsigned long*)' into 'init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])'">
+        <args Callee="fpzero503(unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 22 Column 0" Caller="init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 26 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/config.h:99:0" msg_body="Inlining function 'is_digit_nonzero_ct(unsigned long)' into 'is_digit_zero_ct(unsigned long)'">
+        <args Callee="is_digit_nonzero_ct(unsigned long)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 94 Column 0" Caller="is_digit_zero_ct(unsigned long)" Caller-DebugLoc="File src_montcsa_flat/config.h Line 99 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:28:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpadd503(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 104 Column 0" Caller="fpadd503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 28 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:28:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpadd503(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 99 Column 0" Caller="fpadd503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 28 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:89:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpdiv2_503(unsigned long const*, unsigned long*)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 104 Column 0" Caller="fpdiv2_503(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 89 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:89:0" msg_body="Inlining function 'mp_shiftr1(unsigned long*, unsigned int)' into 'fpdiv2_503(unsigned long const*, unsigned long*)'">
+        <args Callee="mp_shiftr1(unsigned long*, unsigned int)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 443 Column 0" Caller="fpdiv2_503(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 89 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:142:0" msg_body="Inlining function 'fpdiv2_503(unsigned long const*, unsigned long*)' into 'fp2div2_503(unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="fpdiv2_503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 89 Column 0" Caller="fp2div2_503(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 142 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:112:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 14 Column 0" Caller="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 112 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:56:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpsub503(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 104 Column 0" Caller="fpsub503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:56:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpsub503(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 99 Column 0" Caller="fpsub503(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:397:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long) (.66)' into 'mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long) (.66)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 104 Column 0" Caller="mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 397 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:154:0" msg_body="Inlining function 'mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 397 Column 0" Caller="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 154 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:166:0" msg_body="Inlining function 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 154 Column 0" Caller="fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 166 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:166:0" msg_body="Inlining function 'fpsub503(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="fpsub503(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 56 Column 0" Caller="fp2sqr503_mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 166 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:102:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpcorrection503(unsigned long*)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 104 Column 0" Caller="fpcorrection503(unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 102 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:102:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpcorrection503(unsigned long*)'">
+        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 99 Column 0" Caller="fpcorrection503(unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 102 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/config.h:99:0" msg_body="Inlining function 'is_digit_nonzero_ct(unsigned long) (.70)' into 'is_digit_zero_ct(unsigned long) (.69)'">
+        <args Callee="is_digit_nonzero_ct(unsigned long) (.70)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 94 Column 0" Caller="is_digit_zero_ct(unsigned long) (.69)" Caller-DebugLoc="File src_montcsa_flat/config.h Line 99 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:179:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long) (.66)' into 'mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long) (.66)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 104 Column 0" Caller="mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 179 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:179:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long) (.69)' into 'mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)'">
+        <args Callee="is_digit_zero_ct(unsigned long) (.69)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 99 Column 0" Caller="mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 179 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:192:0" msg_body="Inlining function 'mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_sub(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 179 Column 0" Caller="mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 192 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:160:0" msg_body="Inlining function 'mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)' into 'mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)'">
+        <args Callee="mp_add(unsigned long const*, unsigned long const*, unsigned long*, unsigned int)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 397 Column 0" Caller="mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 160 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:198:0" msg_body="Inlining function 'mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="mp_addfast(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 154 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 198 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:198:0" msg_body="Inlining function 'mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="mp_subfast(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 192 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 198 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:198:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long) (.66)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long) (.66)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 104 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 198 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:198:0" msg_body="Inlining function 'mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="mp_addfastx2(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 160 Column 0" Caller="fp2mul503_mont(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 198 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:255:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 130 Column 0" Caller="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 255 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:255:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])'">
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 136 Column 0" Caller="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 255 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:255:0" msg_body="Inlining function 'fp2correction503(unsigned long (*) [8])' into 'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])'">
+        <args Callee="fp2correction503(unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 148 Column 0" Caller="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 255 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:347:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 14 Column 0" Caller="void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 347 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:347:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 130 Column 0" Caller="void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 347 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:347:0" msg_body="Inlining function 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])' into 'void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])'">
+        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 112 Column 0" Caller="void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 347 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:347:0" msg_body="Inlining function 'fpzero503(unsigned long*)' into 'void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])'">
+        <args Callee="fpzero503(unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 22 Column 0" Caller="void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 347 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:347:0" msg_body="Inlining function 'swap_points(point_proj*, point_proj*, unsigned long) (.38)' into 'void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])'">
+        <args Callee="swap_points(point_proj*, point_proj*, unsigned long) (.38)" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 282 Column 0" Caller="void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 347 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:347:0" msg_body="Inlining function 'xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])' into 'void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])'">
+        <args Callee="xDBLADD(point_proj*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8])" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 255 Column 0" Caller="void LADDER3PT_impl&lt;250&gt;(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const*, point_proj*, unsigned long const (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 347 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:323:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'copy_point(point_proj const*, point_proj*) (.14.26)'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 14 Column 0" Caller="copy_point(point_proj const*, point_proj*) (.14.26)" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 323 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:10:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.23)'">
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 136 Column 0" Caller="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.23)" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:10:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.23)'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 130 Column 0" Caller="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.23)" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 10 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:28:0" msg_body="Inlining function 'copy_point(point_proj const*, point_proj*) (.14.26)' into 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)'">
+        <args Callee="copy_point(point_proj const*, point_proj*) (.14.26)" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 323 Column 0" Caller="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 28 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:28:0" msg_body="Inlining function 'xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.23)' into 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)'">
+        <args Callee="xDBL(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8]) (.23)" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 10 Column 0" Caller="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 28 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:28:0" msg_body="Inlining function 'select_point(point_proj*, point_proj const*, unsigned long) (.7.20)' into 'xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)'">
+        <args Callee="select_point(point_proj*, point_proj const*, unsigned long) (.7.20)" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 305 Column 0" Caller="xDBLe(point_proj const*, point_proj*, unsigned long const (*) [8], unsigned long const (*) [8], int)" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 28 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:57:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])'">
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 136 Column 0" Caller="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 57 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:57:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 130 Column 0" Caller="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 57 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:74:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'eval_4_isog(point_proj*, unsigned long (*) [2][8])'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 130 Column 0" Caller="eval_4_isog(point_proj*, unsigned long (*) [2][8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 74 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:74:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'eval_4_isog(point_proj*, unsigned long (*) [2][8])'">
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 136 Column 0" Caller="eval_4_isog(point_proj*, unsigned long (*) [2][8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 74 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:221:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'fpinv503_chain_mont(unsigned long*)'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 14 Column 0" Caller="fpinv503_chain_mont(unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 221 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:101:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'fpinv503_mont(unsigned long*)'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 14 Column 0" Caller="fpinv503_mont(unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 101 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:78:0" msg_body="Inlining function 'is_digit_lessthan_ct(unsigned long, unsigned long)' into 'fpneg503(unsigned long*)'">
+        <args Callee="is_digit_lessthan_ct(unsigned long, unsigned long)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 104 Column 0" Caller="fpneg503(unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 78 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:78:0" msg_body="Inlining function 'is_digit_zero_ct(unsigned long)' into 'fpneg503(unsigned long*)'">
+        <args Callee="is_digit_zero_ct(unsigned long)" Callee-DebugLoc="File src_montcsa_flat/config.h Line 99 Column 0" Caller="fpneg503(unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 78 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:368:0" msg_body="Inlining function 'fpadd503(unsigned long const*, unsigned long const*, unsigned long*)' into 'fp2inv503_mont(unsigned long (*) [8])'">
+        <args Callee="fpadd503(unsigned long const*, unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 28 Column 0" Caller="fp2inv503_mont(unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 368 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:368:0" msg_body="Inlining function 'fpinv503_mont(unsigned long*)' into 'fp2inv503_mont(unsigned long (*) [8])'">
+        <args Callee="fpinv503_mont(unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 101 Column 0" Caller="fp2inv503_mont(unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 368 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:368:0" msg_body="Inlining function 'fpneg503(unsigned long*)' into 'fp2inv503_mont(unsigned long (*) [8])'">
+        <args Callee="fpneg503(unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 78 Column 0" Caller="fp2inv503_mont(unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 368 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:193:0" msg_body="Inlining function 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])' into 'inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])'">
+        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 112 Column 0" Caller="inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 193 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:38:0" msg_body="Inlining function 'fpcorrection503(unsigned long*)' into 'from_mont(unsigned long const*, unsigned long*)'">
+        <args Callee="fpcorrection503(unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/generic/fp_generic.cpp Line 102 Column 0" Caller="from_mont(unsigned long const*, unsigned long*)" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 38 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:37:0" msg_body="Inlining function 'from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])' into 'fp2_encode(unsigned long const (*) [8], unsigned char*)'">
+        <args Callee="from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 389 Column 0" Caller="fp2_encode(unsigned long const (*) [8], unsigned char*)" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:119:0" msg_body="Inlining function 'init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="init_basis(unsigned long*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/sidh.cpp Line 26 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:119:0" msg_body="Inlining function 'fpcopy503(unsigned long const*, unsigned long*)' into 'EphemeralKeyGeneration_A'">
+        <args Callee="fpcopy503(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 14 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:119:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 130 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:119:0" msg_body="Inlining function 'copy_point(point_proj const*, point_proj*) (.14.26)' into 'EphemeralKeyGeneration_A'">
+        <args Callee="copy_point(point_proj const*, point_proj*) (.14.26)" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 323 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:119:0" msg_body="Inlining function 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 57 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:119:0" msg_body="Inlining function 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 112 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:119:0" msg_body="Inlining function 'inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])' into 'EphemeralKeyGeneration_A'">
+        <args Callee="inv_3_way(unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 193 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:119:0" msg_body="Inlining function 'fp2_encode(unsigned long const (*) [8], unsigned char*)' into 'EphemeralKeyGeneration_A'">
+        <args Callee="fp2_encode(unsigned long const (*) [8], unsigned char*)" Callee-DebugLoc="File src_montcsa_flat/sidh.cpp Line 37 Column 0" Caller="EphemeralKeyGeneration_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:381:0" msg_body="Inlining function 'to_mont(unsigned long const*, unsigned long*)' into 'to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="to_mont(unsigned long const*, unsigned long*)" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 30 Column 0" Caller="to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/fpx.cpp Line 381 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:63:0" msg_body="Inlining function 'to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])' into 'fp2_decode(unsigned char const*, unsigned long (*) [8])'">
+        <args Callee="to_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 381 Column 0" Caller="fp2_decode(unsigned char const*, unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 63 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:209:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 130 Column 0" Caller="get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 209 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:209:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 136 Column 0" Caller="get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 209 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:231:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 130 Column 0" Caller="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 231 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:231:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])'">
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 136 Column 0" Caller="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Caller-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 231 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:37:0" msg_body="Inlining function 'from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])' into 'fp2_encode(unsigned long const (*) [8], unsigned char*) (.45)'">
+        <args Callee="from_fp2mont(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 389 Column 0" Caller="fp2_encode(unsigned long const (*) [8], unsigned char*) (.45)" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 37 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:308:0" msg_body="Inlining function 'get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="get_A(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 209 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 308 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:308:0" msg_body="Inlining function 'fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="fp2add503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 130 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 308 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:308:0" msg_body="Inlining function 'copy_point(point_proj const*, point_proj*) (.14.26)' into 'EphemeralSecretAgreement_A'">
+        <args Callee="copy_point(point_proj const*, point_proj*) (.14.26)" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 323 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 308 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:308:0" msg_body="Inlining function 'get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="get_4_isog(point_proj const*, unsigned long (*) [8], unsigned long (*) [8], unsigned long (*) [2][8])" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 57 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 308 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:308:0" msg_body="Inlining function 'eval_4_isog(point_proj*, unsigned long (*) [2][8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="eval_4_isog(point_proj*, unsigned long (*) [2][8])" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 74 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 308 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:308:0" msg_body="Inlining function 'fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="fp2copy503(unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 112 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 308 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:308:0" msg_body="Inlining function 'fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="fp2sub503(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/fpx.cpp Line 136 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 308 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:308:0" msg_body="Inlining function 'j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])' into 'EphemeralSecretAgreement_A'">
+        <args Callee="j_inv(unsigned long const (*) [8], unsigned long const (*) [8], unsigned long (*) [8])" Callee-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 231 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 308 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:308:0" msg_body="Inlining function 'fp2_encode(unsigned long const (*) [8], unsigned char*) (.45)' into 'EphemeralSecretAgreement_A'">
+        <args Callee="fp2_encode(unsigned long const (*) [8], unsigned char*) (.45)" Callee-DebugLoc="File src_montcsa_flat/sidh.cpp Line 37 Column 0" Caller="EphemeralSecretAgreement_A" Caller-DebugLoc="File src_montcsa_flat/sidh.cpp Line 308 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:428:0" msg_body="Inlining function 'store64(unsigned char*, unsigned long)' into 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.47)'">
+        <args Callee="store64(unsigned char*, unsigned long)" Callee-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 34 Column 0" Caller="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.47)" Caller-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 428 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:637:0" msg_body="Inlining function 'cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
+        <args Callee="cshake256_simple_absorb(unsigned long*, unsigned short, unsigned char const*, unsigned long long)" Callee-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 606 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 637 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.47)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
+        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int) (.47)" Callee-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 637 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:637:0" msg_body="Inlining function 'keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)' into 'cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)'">
+        <args Callee="keccak_squeezeblocks(unsigned char*, unsigned long long, unsigned long*, unsigned int)" Callee-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 428 Column 0" Caller="cshake256_simple(unsigned char*, unsigned long long, unsigned short, unsigned char const*, unsigned long long)" Caller-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 637 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sike.cpp:36:0" msg_body="Inlining function 'randombytes(unsigned char*, unsigned long long)' into 'crypto_kem_enc'">
+        <args Callee="randombytes(unsigned char*, unsigned long long)" Callee-DebugLoc="File src_montcsa_flat/random/random.cpp Line 22 Column 0" Caller="crypto_kem_enc" Caller-DebugLoc="File src_montcsa_flat/sike.cpp Line 36 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="src_montcsa_flat/sikep503_kem_enc_hw.cpp:32:0" msg_body="Inlining function 'crypto_kem_enc' into 'sikep503_kem_enc_hw'">
+        <args Callee="crypto_kem_enc" Callee-DebugLoc="File src_montcsa_flat/sike.cpp Line 36 Column 0" Caller="sikep503_kem_enc_hw" Caller-DebugLoc="File src_montcsa_flat/sikep503_kem_enc_hw.cpp Line 32 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src_montcsa_flat/sha3/fips202.cpp:28:30" msg_body="The program may have out of bound array access on variable 'in'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src_montcsa_flat/sha3/fips202.cpp:39:10" msg_body="The program may have out of bound array access on variable 'output'"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-167" msg_severity="WARNING" msg_loc="src_montcsa_flat/sha3/fips202.cpp:39:10" msg_body="The program may have out of bound array access on variable 't'"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_raw_mul.hpp:49:4" msg_body="Applying array_partition to 'acc': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="acc"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_ops_fios_csa_square.hpp:148:4" msg_body="Applying array_partition to 'prod': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="prod"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:37:20" msg_body="Loop 'VITIS_LOOP_37_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_37_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:409:13" msg_body="Loop 'BYTE' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="BYTE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:26:20" msg_body="Loop 'VITIS_LOOP_26_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_26_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:360:28" msg_body="Loop 'VITIS_LOOP_360_45' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_360_45"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:637:0" msg_body="Unrolling loop 'VITIS_LOOP_37_1' (src_montcsa_flat/sha3/fips202.cpp:37:20) in function 'cshake256_simple' completely with a factor of 8">
+        <args Factor="8" LoopLoc="src_montcsa_flat/sha3/fips202.cpp:37:20" LoopName="VITIS_LOOP_37_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:637:0" msg_body="Unrolling loop 'BYTE' (src_montcsa_flat/sha3/fips202.cpp:409:13) in function 'cshake256_simple' completely with a factor of 8">
+        <args Factor="8" LoopLoc="src_montcsa_flat/sha3/fips202.cpp:409:13" LoopName="BYTE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:637:0" msg_body="Unrolling loop 'VITIS_LOOP_26_1' (src_montcsa_flat/sha3/fips202.cpp:26:20) in function 'cshake256_simple' completely with a factor of 8">
+        <args Factor="8" LoopLoc="src_montcsa_flat/sha3/fips202.cpp:26:20" LoopName="VITIS_LOOP_26_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:221:0" msg_body="Unrolling loop 'VITIS_LOOP_360_45' (src_montcsa_flat/fpx.cpp:360:28) in function 'fpinv503_chain_mont' completely with a factor of 5">
+        <args Factor="5" LoopLoc="src_montcsa_flat/fpx.cpp:360:28" LoopName="VITIS_LOOP_360_45"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_raw_mul.hpp:65:14" msg_body="Automatically disabling loop flattening for loop 'ROW'.">
+        <args LoopName="ROW"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../montgomery_converter/include/mont_raw_mul.hpp:65:14" msg_body="loop_flatten 0 1 mont_raw_mul::RawMul&lt;unsigned long, 8u&gt;::mul ../montgomery_converter/include/mont_raw_mul.hpp:65:14ROW ../montgomery_converter/include/mont_raw_mul.hpp:65:14">
+        <args LoopLoc="../montgomery_converter/include/mont_raw_mul.hpp:65:14" LoopLoc-DebugLoc="File ../montgomery_converter/include/mont_raw_mul.hpp Line 65 Column 14" LoopName="ROW" PragmaFunction="mont_raw_mul::RawMul&lt;unsigned long, 8u&gt;::mul" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="../montgomery_converter/include/mont_raw_mul.hpp:65:14" PragmaSrcLoc-DebugLoc="File ../montgomery_converter/include/mont_raw_mul.hpp Line 65 Column 14" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:388:21" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_388_1'.">
+        <args LoopName="VITIS_LOOP_388_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:388:21" msg_body="loop_flatten 0 1 cshake256_simple src_montcsa_flat/sha3/fips202.cpp:388:21VITIS_LOOP_388_1 src_montcsa_flat/sha3/fips202.cpp:388:21">
+        <args LoopLoc="src_montcsa_flat/sha3/fips202.cpp:388:21" LoopLoc-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 388 Column 21" LoopName="VITIS_LOOP_388_1" PragmaFunction="cshake256_simple" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="src_montcsa_flat/sha3/fips202.cpp:388:21" PragmaSrcLoc-DebugLoc="File src_montcsa_flat/sha3/fips202.cpp Line 388 Column 21" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:371:21" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_371_1'.">
+        <args LoopName="VITIS_LOOP_371_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:371:21" msg_body="loop_flatten 0 1 LADDER3PT_impl&lt;250&gt; src_montcsa_flat/ec_isogeny.cpp:371:21VITIS_LOOP_371_1 src_montcsa_flat/ec_isogeny.cpp:371:21">
+        <args LoopLoc="src_montcsa_flat/ec_isogeny.cpp:371:21" LoopLoc-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 371 Column 21" LoopName="VITIS_LOOP_371_1" PragmaFunction="LADDER3PT_impl&lt;250&gt;" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="src_montcsa_flat/ec_isogeny.cpp:371:21" PragmaSrcLoc-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 371 Column 21" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:47:20" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_47_1'.">
+        <args LoopName="VITIS_LOOP_47_1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:47:20" msg_body="loop_flatten 0 1 xDBLe src_montcsa_flat/ec_isogeny.cpp:47:20VITIS_LOOP_47_1 src_montcsa_flat/ec_isogeny.cpp:47:20">
+        <args LoopLoc="src_montcsa_flat/ec_isogeny.cpp:47:20" LoopLoc-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 47 Column 20" LoopName="VITIS_LOOP_47_1" PragmaFunction="xDBLe" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="src_montcsa_flat/ec_isogeny.cpp:47:20" PragmaSrcLoc-DebugLoc="File src_montcsa_flat/ec_isogeny.cpp Line 47 Column 20" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/P503.cpp:58:0" msg_body="Automatically partitioning array 'Montgomery_R2' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="Montgomery_R2"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:169:12" msg_body="Automatically partitioning array 't1' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="t1"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:169:20" msg_body="Automatically partitioning array 't3' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="t3"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="Automatically partitioning array 'pts.X' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="pts.X"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="Automatically partitioning array 'pts.X' dimension 3 completely based on constant index.">
+        <args Dim="3" Value="pts.X"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="Automatically partitioning array 'pts.Z' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="pts.Z"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="Automatically partitioning array 'pts.Z' dimension 3 completely based on constant index.">
+        <args Dim="3" Value="pts.Z"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="Automatically partitioning array 'c' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="c"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="Automatically partitioning array 'c' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="c"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="Automatically partitioning array 'pts.X' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="pts.X"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="Automatically partitioning array 'pts.X' dimension 3 completely based on constant index.">
+        <args Dim="3" Value="pts.X"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="Automatically partitioning array 'pts.Z' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="pts.Z"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="Automatically partitioning array 'pts.Z' dimension 3 completely based on constant index.">
+        <args Dim="3" Value="pts.Z"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="Automatically partitioning array 'c' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="c"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="Automatically partitioning array 'c' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="c"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:223:12" msg_body="Automatically partitioning array 't' dimension 2 completely based on constant index.">
+        <args Dim="2" Value="t"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:296:13" msg_body="Automatically partitioning small array 'UV' completely based on array size.">
+        <args Value="UV"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/P503.cpp:58:0" msg_body="array_partition dim=1 type=complete  variable=Montgomery_R2 1 sikep503_kem_enc_hw src_montcsa_flat/P503.cpp:58:0 Montgomery_R2">
+        <args PragmaFunction="sikep503_kem_enc_hw" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=Montgomery_R2" PragmaType="array_partition" VarName="Montgomery_R2" varLoc="src_montcsa_flat/P503.cpp:58:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/P503.cpp:58:0" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'Montgomery_R2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="Montgomery_R2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sike.cpp:41:17" msg_body="array_partition dim=1 type=cyclic factor=4 variable=jinvariant.i 1 sikep503_kem_enc_hw src_montcsa_flat/sike.cpp:41:17 jinvariant.i">
+        <args PragmaFunction="sikep503_kem_enc_hw" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=4 variable=jinvariant.i" PragmaType="array_partition" VarName="jinvariant.i" varLoc="src_montcsa_flat/sike.cpp:41:17"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sike.cpp:41:17" msg_body="Inferring pragma 'array_partition type=cyclic factor=4 dim=1' for array 'jinvariant.i' due to pipeline pragma">
+        <args Dim="1" Factor="4" Mode="cyclic" Name="jinvariant.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sike.cpp:43:17" msg_body="array_partition dim=1 type=cyclic factor=4 variable=temp.i 1 sikep503_kem_enc_hw src_montcsa_flat/sike.cpp:43:17 temp.i">
+        <args PragmaFunction="sikep503_kem_enc_hw" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=4 variable=temp.i" PragmaType="array_partition" VarName="temp.i" varLoc="src_montcsa_flat/sike.cpp:43:17"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sike.cpp:43:17" msg_body="Inferring pragma 'array_partition type=cyclic factor=4 dim=1' for array 'temp.i' due to pipeline pragma">
+        <args Dim="1" Factor="4" Mode="cyclic" Name="temp.i" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="array_partition dim=3 type=complete  variable=pts.X 1 EphemeralKeyGeneration_A src_montcsa_flat/sidh.cpp:120:57 pts.X">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=3 type=complete  variable=pts.X" PragmaType="array_partition" VarName="pts.X" varLoc="src_montcsa_flat/sidh.cpp:120:57"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="Inferring pragma 'array_partition type=complete dim=3' for array 'pts.X' due to pipeline pragma">
+        <args Dim="3" Mode="complete" Name="pts.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="array_partition dim=2 type=complete  variable=pts.X 1 EphemeralKeyGeneration_A src_montcsa_flat/sidh.cpp:120:57 pts.X">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=pts.X" PragmaType="array_partition" VarName="pts.X" varLoc="src_montcsa_flat/sidh.cpp:120:57"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'pts.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="pts.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="array_partition dim=3 type=complete  variable=pts.Z 1 EphemeralKeyGeneration_A src_montcsa_flat/sidh.cpp:120:57 pts.Z">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=3 type=complete  variable=pts.Z" PragmaType="array_partition" VarName="pts.Z" varLoc="src_montcsa_flat/sidh.cpp:120:57"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="Inferring pragma 'array_partition type=complete dim=3' for array 'pts.Z' due to pipeline pragma">
+        <args Dim="3" Mode="complete" Name="pts.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="array_partition dim=2 type=complete  variable=pts.Z 1 EphemeralKeyGeneration_A src_montcsa_flat/sidh.cpp:120:57 pts.Z">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=pts.Z" PragmaType="array_partition" VarName="pts.Z" varLoc="src_montcsa_flat/sidh.cpp:120:57"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'pts.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="pts.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="array_partition dim=1 type=complete  variable=R_cand.X 1 EphemeralKeyGeneration_A src_montcsa_flat/sidh.cpp:154:26 R_cand.X">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=R_cand.X" PragmaType="array_partition" VarName="R_cand.X" varLoc="src_montcsa_flat/sidh.cpp:154:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'R_cand.X' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="R_cand.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="array_partition dim=2 type=complete  variable=R_cand.X 1 EphemeralKeyGeneration_A src_montcsa_flat/sidh.cpp:154:26 R_cand.X">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R_cand.X" PragmaType="array_partition" VarName="R_cand.X" varLoc="src_montcsa_flat/sidh.cpp:154:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R_cand.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R_cand.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="array_partition dim=1 type=complete  variable=R_cand.Z 1 EphemeralKeyGeneration_A src_montcsa_flat/sidh.cpp:154:26 R_cand.Z">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=R_cand.Z" PragmaType="array_partition" VarName="R_cand.Z" varLoc="src_montcsa_flat/sidh.cpp:154:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'R_cand.Z' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="R_cand.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="array_partition dim=2 type=complete  variable=R_cand.Z 1 EphemeralKeyGeneration_A src_montcsa_flat/sidh.cpp:154:26 R_cand.Z">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R_cand.Z" PragmaType="array_partition" VarName="R_cand.Z" varLoc="src_montcsa_flat/sidh.cpp:154:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R_cand.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R_cand.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:157:26" msg_body="array_partition dim=2 type=complete  variable=R_next.X 1 EphemeralKeyGeneration_A src_montcsa_flat/sidh.cpp:157:26 R_next.X">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R_next.X" PragmaType="array_partition" VarName="R_next.X" varLoc="src_montcsa_flat/sidh.cpp:157:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:157:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R_next.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R_next.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:157:26" msg_body="array_partition dim=2 type=complete  variable=R_next.Z 1 EphemeralKeyGeneration_A src_montcsa_flat/sidh.cpp:157:26 R_next.Z">
+        <args PragmaFunction="EphemeralKeyGeneration_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R_next.Z" PragmaType="array_partition" VarName="R_next.Z" varLoc="src_montcsa_flat/sidh.cpp:157:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:157:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R_next.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R_next.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:169:12" msg_body="array_partition dim=1 type=complete  variable=t1 1 fp2sqr503_mont src_montcsa_flat/fpx.cpp:169:12 t1">
+        <args PragmaFunction="fp2sqr503_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1" PragmaType="array_partition" VarName="t1" varLoc="src_montcsa_flat/fpx.cpp:169:12"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:169:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:169:20" msg_body="array_partition dim=1 type=complete  variable=t3 1 fp2sqr503_mont src_montcsa_flat/fpx.cpp:169:20 t3">
+        <args PragmaFunction="fp2sqr503_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t3" PragmaType="array_partition" VarName="t3" varLoc="src_montcsa_flat/fpx.cpp:169:20"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:169:20" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't3' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:223:12" msg_body="array_partition dim=2 type=complete  variable=t 1 fpinv503_chain_mont src_montcsa_flat/fpx.cpp:223:12 t">
+        <args PragmaFunction="fpinv503_chain_mont" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=t" PragmaType="array_partition" VarName="t" varLoc="src_montcsa_flat/fpx.cpp:223:12"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:223:12" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 't' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="t" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:296:13" msg_body="array_partition dim=1 type=complete  variable=UV 1 rdc_mont src_montcsa_flat/generic/fp_generic.cpp:296:13 UV">
+        <args PragmaFunction="rdc_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=UV" PragmaType="array_partition" VarName="UV" varLoc="src_montcsa_flat/generic/fp_generic.cpp:296:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:296:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'UV' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="UV" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="array_partition dim=3 type=complete  variable=pts.X 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:313:21 pts.X">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=3 type=complete  variable=pts.X" PragmaType="array_partition" VarName="pts.X" varLoc="src_montcsa_flat/sidh.cpp:313:21"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="Inferring pragma 'array_partition type=complete dim=3' for array 'pts.X' due to pipeline pragma">
+        <args Dim="3" Mode="complete" Name="pts.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="array_partition dim=2 type=complete  variable=pts.X 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:313:21 pts.X">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=pts.X" PragmaType="array_partition" VarName="pts.X" varLoc="src_montcsa_flat/sidh.cpp:313:21"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'pts.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="pts.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="array_partition dim=3 type=complete  variable=pts.Z 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:313:21 pts.Z">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=3 type=complete  variable=pts.Z" PragmaType="array_partition" VarName="pts.Z" varLoc="src_montcsa_flat/sidh.cpp:313:21"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="Inferring pragma 'array_partition type=complete dim=3' for array 'pts.Z' due to pipeline pragma">
+        <args Dim="3" Mode="complete" Name="pts.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="array_partition dim=2 type=complete  variable=pts.Z 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:313:21 pts.Z">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=pts.Z" PragmaType="array_partition" VarName="pts.Z" varLoc="src_montcsa_flat/sidh.cpp:313:21"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'pts.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="pts.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:315:28" msg_body="array_partition dim=2 type=cyclic factor=2 variable=C24 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:315:28 C24">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=2 variable=C24" PragmaType="array_partition" VarName="C24" varLoc="src_montcsa_flat/sidh.cpp:315:28"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:315:28" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=2' for array 'C24' due to pipeline pragma">
+        <args Dim="2" Factor="2" Mode="cyclic" Name="C24" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:348:26" msg_body="array_partition dim=2 type=complete  variable=R2.X 1 LADDER3PT_impl&lt;250&gt; src_montcsa_flat/ec_isogeny.cpp:348:26 R2.X">
+        <args PragmaFunction="LADDER3PT_impl&lt;250&gt;" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R2.X" PragmaType="array_partition" VarName="R2.X" varLoc="src_montcsa_flat/ec_isogeny.cpp:348:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:348:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R2.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R2.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:348:26" msg_body="array_partition dim=2 type=complete  variable=R2.Z 1 LADDER3PT_impl&lt;250&gt; src_montcsa_flat/ec_isogeny.cpp:348:26 R2.Z">
+        <args PragmaFunction="LADDER3PT_impl&lt;250&gt;" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R2.Z" PragmaType="array_partition" VarName="R2.Z" varLoc="src_montcsa_flat/ec_isogeny.cpp:348:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:348:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R2.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R2.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:349:11" msg_body="array_partition dim=2 type=cyclic factor=2 variable=A24 1 LADDER3PT_impl&lt;250&gt; src_montcsa_flat/ec_isogeny.cpp:349:11 A24">
+        <args PragmaFunction="LADDER3PT_impl&lt;250&gt;" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=2 variable=A24" PragmaType="array_partition" VarName="A24" varLoc="src_montcsa_flat/ec_isogeny.cpp:349:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:349:11" msg_body="Inferring pragma 'array_partition type=cyclic factor=2 dim=2' for array 'A24' due to pipeline pragma">
+        <args Dim="2" Factor="2" Mode="cyclic" Name="A24" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="array_partition dim=1 type=complete  variable=R_cand.X 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:354:26 R_cand.X">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=R_cand.X" PragmaType="array_partition" VarName="R_cand.X" varLoc="src_montcsa_flat/sidh.cpp:354:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'R_cand.X' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="R_cand.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="array_partition dim=2 type=complete  variable=R_cand.X 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:354:26 R_cand.X">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R_cand.X" PragmaType="array_partition" VarName="R_cand.X" varLoc="src_montcsa_flat/sidh.cpp:354:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R_cand.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R_cand.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="array_partition dim=1 type=complete  variable=R_cand.Z 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:354:26 R_cand.Z">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=R_cand.Z" PragmaType="array_partition" VarName="R_cand.Z" varLoc="src_montcsa_flat/sidh.cpp:354:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'R_cand.Z' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="R_cand.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="array_partition dim=2 type=complete  variable=R_cand.Z 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:354:26 R_cand.Z">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R_cand.Z" PragmaType="array_partition" VarName="R_cand.Z" varLoc="src_montcsa_flat/sidh.cpp:354:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R_cand.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R_cand.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:357:26" msg_body="array_partition dim=2 type=complete  variable=R_next.X 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:357:26 R_next.X">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R_next.X" PragmaType="array_partition" VarName="R_next.X" varLoc="src_montcsa_flat/sidh.cpp:357:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:357:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R_next.X' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R_next.X" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:357:26" msg_body="array_partition dim=2 type=complete  variable=R_next.Z 1 EphemeralSecretAgreement_A src_montcsa_flat/sidh.cpp:357:26 R_next.Z">
+        <args PragmaFunction="EphemeralSecretAgreement_A" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=R_next.Z" PragmaType="array_partition" VarName="R_next.Z" varLoc="src_montcsa_flat/sidh.cpp:357:26"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:357:26" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'R_next.Z' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="R_next.Z" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:369:13" msg_body="array_partition dim=1 type=complete  variable=t1 1 fp2inv503_mont src_montcsa_flat/fpx.cpp:369:13 t1">
+        <args PragmaFunction="fp2inv503_mont" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=t1" PragmaType="array_partition" VarName="t1" varLoc="src_montcsa_flat/fpx.cpp:369:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:369:13" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 't1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="t1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:639:17" msg_body="array_partition dim=1 type=cyclic factor=4 variable=t 1 cshake256_simple src_montcsa_flat/sha3/fips202.cpp:639:17 t">
+        <args PragmaFunction="cshake256_simple" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=4 variable=t" PragmaType="array_partition" VarName="t" varLoc="src_montcsa_flat/sha3/fips202.cpp:639:17"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:639:17" msg_body="Inferring pragma 'array_partition type=cyclic factor=4 dim=1' for array 't' due to pipeline pragma">
+        <args Dim="1" Factor="4" Mode="cyclic" Name="t" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/P503.cpp:58:0" msg_body="Applying array_partition to 'Montgomery_R2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="Montgomery_R2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sha3/fips202.cpp:639:17" msg_body="Applying array_partition to 't': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="t"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/generic/fp_generic.cpp:296:13" msg_body="Applying array_partition to 'UV': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="UV"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:348:26" msg_body="Applying array_partition to 'R2.X': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="R2.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:348:26" msg_body="Applying array_partition to 'R2.Z': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="R2.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/ec_isogeny.cpp:349:11" msg_body="Applying array_partition to 'A24': Cyclic partitioning with factor 2 on dimension 2.">
+        <args Dim="2" Factor="2" Mode="Cyclic" UOName="A24"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:223:12" msg_body="Applying array_partition to 't': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="t"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:369:13" msg_body="Applying array_partition to 't1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="Applying array_partition to 'pts.X': Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
+        <args Dim="islist 2 3" Mode="islist Complete Complete" UOName="pts.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:120:57" msg_body="Applying array_partition to 'pts.Z': Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
+        <args Dim="islist 2 3" Mode="islist Complete Complete" UOName="pts.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="Applying array_partition to 'R_cand.X': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="R_cand.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:154:26" msg_body="Applying array_partition to 'R_cand.Z': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="R_cand.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:157:26" msg_body="Applying array_partition to 'R_next.X': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="R_next.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:157:26" msg_body="Applying array_partition to 'R_next.Z': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="R_next.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="Applying array_partition to 'pts.X': Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
+        <args Dim="islist 2 3" Mode="islist Complete Complete" UOName="pts.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:313:21" msg_body="Applying array_partition to 'pts.Z': Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
+        <args Dim="islist 2 3" Mode="islist Complete Complete" UOName="pts.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:315:28" msg_body="Applying array_partition to 'C24': Cyclic partitioning with factor 2 on dimension 2.">
+        <args Dim="2" Factor="2" Mode="Cyclic" UOName="C24"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="Applying array_partition to 'R_cand.X': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="R_cand.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:354:26" msg_body="Applying array_partition to 'R_cand.Z': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="R_cand.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:357:26" msg_body="Applying array_partition to 'R_next.X': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="R_next.X"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sidh.cpp:357:26" msg_body="Applying array_partition to 'R_next.Z': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="R_next.Z"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sike.cpp:41:17" msg_body="Applying array_partition to 'jinvariant.i': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="jinvariant.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/sike.cpp:43:17" msg_body="Applying array_partition to 'temp.i': Cyclic partitioning with factor 4 on dimension 1.">
+        <args Dim="1" Factor="4" Mode="Cyclic" UOName="temp.i"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:169:12" msg_body="Applying array_partition to 't1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src_montcsa_flat/fpx.cpp:169:20" msg_body="Applying array_partition to 't3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_ALLOCATION" msg_id="214-209" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:60:9" msg_body="Ignoring ALLOCATION pragma, because the corresponding call is removed"/>
+    <msg msg_groups="PRAGMA_ALLOCATION" msg_id="214-209" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:59:9" msg_body="Ignoring ALLOCATION pragma, because the corresponding call is removed"/>
+    <msg msg_groups="PRAGMA_ALLOCATION" msg_id="214-209" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:58:9" msg_body="Ignoring ALLOCATION pragma, because the corresponding call is removed"/>
+    <msg msg_groups="PRAGMA_ALLOCATION" msg_id="214-209" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:53:9" msg_body="Ignoring ALLOCATION pragma, because the corresponding call is removed"/>
+    <msg msg_groups="PRAGMA_ALLOCATION" msg_id="214-209" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_flat_shared.tcl:52:9" msg_body="Ignoring ALLOCATION pragma, because the corresponding call is removed"/>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,631 @@
+
+
+================================================================
+== Vitis HLS Report for 'mul_1_Pipeline_CIOS_LOOP'
+================================================================
+* Date:           Tue Sep 15 21:37:33 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        rsa_modexp_hls_converted_lean
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.228 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       39|       39|  0.390 us|  0.390 us|   34|   34|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- CIOS_LOOP  |       37|       37|         8|          2|          1|    16|       yes|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 8
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 1
+  Pipeline-0 : II = 2, D = 8, States = { 1 2 3 4 5 6 7 8 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.48>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%conv67_15 = alloca i32 1"   --->   Operation 11 'alloca' 'conv67_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%conv671 = alloca i32 1"   --->   Operation 12 'alloca' 'conv671' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%conv67_26 = alloca i32 1"   --->   Operation 13 'alloca' 'conv67_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%conv67_37 = alloca i32 1"   --->   Operation 14 'alloca' 'conv67_37' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%conv67_48 = alloca i32 1"   --->   Operation 15 'alloca' 'conv67_48' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%conv67_59 = alloca i32 1"   --->   Operation 16 'alloca' 'conv67_59' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%conv67_610 = alloca i32 1"   --->   Operation 17 'alloca' 'conv67_610' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%conv67_711 = alloca i32 1"   --->   Operation 18 'alloca' 'conv67_711' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%conv67_812 = alloca i32 1"   --->   Operation 19 'alloca' 'conv67_812' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%conv67_913 = alloca i32 1"   --->   Operation 20 'alloca' 'conv67_913' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%conv67_1014 = alloca i32 1"   --->   Operation 21 'alloca' 'conv67_1014' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%conv67_1115 = alloca i32 1"   --->   Operation 22 'alloca' 'conv67_1115' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%conv67_1216 = alloca i32 1"   --->   Operation 23 'alloca' 'conv67_1216' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%conv67_1317 = alloca i32 1"   --->   Operation 24 'alloca' 'conv67_1317' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%conv67_1418 = alloca i32 1"   --->   Operation 25 'alloca' 'conv67_1418' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%conv7919 = alloca i32 1"   --->   Operation 26 'alloca' 'conv7919' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 27 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%conv62_14_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_14"   --->   Operation 28 'read' 'conv62_14_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%conv62_13_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_13"   --->   Operation 29 'read' 'conv62_13_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%conv62_12_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_12"   --->   Operation 30 'read' 'conv62_12_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%conv62_11_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_11"   --->   Operation 31 'read' 'conv62_11_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%conv62_10_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_10"   --->   Operation 32 'read' 'conv62_10_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%conv62_9_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_9"   --->   Operation 33 'read' 'conv62_9_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%conv62_8_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_8"   --->   Operation 34 'read' 'conv62_8_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%conv62_7_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_7"   --->   Operation 35 'read' 'conv62_7_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%conv62_6_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_6"   --->   Operation 36 'read' 'conv62_6_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%conv62_5_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_5"   --->   Operation 37 'read' 'conv62_5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%conv62_4_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_4"   --->   Operation 38 'read' 'conv62_4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%conv62_3_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_3"   --->   Operation 39 'read' 'conv62_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%conv62_2_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_2"   --->   Operation 40 'read' 'conv62_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%conv62_1_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62_1"   --->   Operation 41 'read' 'conv62_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%conv62_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv62"   --->   Operation 42 'read' 'conv62_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%conv46_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %conv46"   --->   Operation 43 'read' 'conv46_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%mprime_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mprime"   --->   Operation 44 'read' 'mprime_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%a_load_15_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_15_cast"   --->   Operation 45 'read' 'a_load_15_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%a_load_14_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_14_cast"   --->   Operation 46 'read' 'a_load_14_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%a_load_13_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_13_cast"   --->   Operation 47 'read' 'a_load_13_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%a_load_12_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_12_cast"   --->   Operation 48 'read' 'a_load_12_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%a_load_11_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_11_cast"   --->   Operation 49 'read' 'a_load_11_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%a_load_10_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_10_cast"   --->   Operation 50 'read' 'a_load_10_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%a_load_9_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_9_cast"   --->   Operation 51 'read' 'a_load_9_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%a_load_8_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_8_cast"   --->   Operation 52 'read' 'a_load_8_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%a_load_7_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_7_cast"   --->   Operation 53 'read' 'a_load_7_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%a_load_6_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_6_cast"   --->   Operation 54 'read' 'a_load_6_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%a_load_5_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_5_cast"   --->   Operation 55 'read' 'a_load_5_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%a_load_4_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_4_cast"   --->   Operation 56 'read' 'a_load_4_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%a_load_3_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_3_cast"   --->   Operation 57 'read' 'a_load_3_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%a_load_2_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_2_cast"   --->   Operation 58 'read' 'a_load_2_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%a_load_1_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_1_cast"   --->   Operation 59 'read' 'a_load_1_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%a_load_cast_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_load_cast"   --->   Operation 60 'read' 'a_load_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%conv62_14_cast = zext i32 %conv62_14_read"   --->   Operation 61 'zext' 'conv62_14_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%conv62_13_cast = zext i32 %conv62_13_read"   --->   Operation 62 'zext' 'conv62_13_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%conv62_12_cast = zext i32 %conv62_12_read"   --->   Operation 63 'zext' 'conv62_12_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%conv62_11_cast = zext i32 %conv62_11_read"   --->   Operation 64 'zext' 'conv62_11_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%conv62_10_cast = zext i32 %conv62_10_read"   --->   Operation 65 'zext' 'conv62_10_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%conv62_9_cast = zext i32 %conv62_9_read"   --->   Operation 66 'zext' 'conv62_9_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%conv62_8_cast = zext i32 %conv62_8_read"   --->   Operation 67 'zext' 'conv62_8_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%conv62_7_cast = zext i32 %conv62_7_read"   --->   Operation 68 'zext' 'conv62_7_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%conv62_6_cast = zext i32 %conv62_6_read"   --->   Operation 69 'zext' 'conv62_6_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%conv62_5_cast = zext i32 %conv62_5_read"   --->   Operation 70 'zext' 'conv62_5_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%conv62_4_cast = zext i32 %conv62_4_read"   --->   Operation 71 'zext' 'conv62_4_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%conv62_3_cast = zext i32 %conv62_3_read"   --->   Operation 72 'zext' 'conv62_3_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%conv62_2_cast = zext i32 %conv62_2_read"   --->   Operation 73 'zext' 'conv62_2_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%conv62_1_cast = zext i32 %conv62_1_read"   --->   Operation 74 'zext' 'conv62_1_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%conv62_cast = zext i32 %conv62_read"   --->   Operation 75 'zext' 'conv62_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%conv46_cast = zext i32 %conv46_read"   --->   Operation 76 'zext' 'conv46_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.38ns)   --->   "%store_ln80 = store i5 0, i5 %i" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 77 'store' 'store_ln80' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 78 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv7919"   --->   Operation 78 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 79 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_1418"   --->   Operation 79 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 80 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_1317"   --->   Operation 80 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 81 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_1216"   --->   Operation 81 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 82 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_1115"   --->   Operation 82 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 83 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_1014"   --->   Operation 83 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 84 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_913"   --->   Operation 84 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 85 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_812"   --->   Operation 85 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 86 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_711"   --->   Operation 86 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 87 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_610"   --->   Operation 87 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 88 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_59"   --->   Operation 88 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 89 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_48"   --->   Operation 89 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 90 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_37"   --->   Operation 90 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 91 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_26"   --->   Operation 91 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 92 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv671"   --->   Operation 92 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 93 [1/1] (0.38ns)   --->   "%store_ln0 = store i32 0, i32 %conv67_15"   --->   Operation 93 'store' 'store_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 94 [1/1] (0.38ns)   --->   "%br_ln0 = br void %PP_LOOP"   --->   Operation 94 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%i_4 = load i5 %i" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 95 'load' 'i_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.70ns)   --->   "%icmp_ln80 = icmp_eq  i5 %i_4, i5 16" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 96 'icmp' 'icmp_ln80' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 97 [1/1] (0.70ns)   --->   "%add_ln80 = add i5 %i_4, i5 1" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 97 'add' 'add_ln80' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%br_ln80 = br i1 %icmp_ln80, void %PP_LOOP.split, void %for.end90.exitStub" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 98 'br' 'br_ln80' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%zext_ln80 = zext i5 %i_4" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 99 'zext' 'zext_ln80' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%b_addr = getelementptr i1 %b, i64 0, i64 %zext_ln80" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 100 'getelementptr' 'b_addr' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_1 : Operation 101 [2/2] (0.63ns)   --->   "%b_load = load i4 %b_addr" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 101 'load' 'b_load' <Predicate = (!icmp_ln80)> <Delay = 0.63> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.63> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+ST_1 : Operation 102 [1/1] (0.38ns)   --->   "%store_ln80 = store i5 %add_ln80, i5 %i" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 102 'store' 'store_ln80' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 5.17>
+ST_2 : Operation 103 [1/1] (0.00ns)   --->   "%conv671_load = load i32 %conv671" [../montgomery_converter/include/mont_ops_fast.hpp:92]   --->   Operation 103 'load' 'conv671_load' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_2 : Operation 104 [1/2] ( I:0.63ns O:0.63ns )   --->   "%b_load = load i4 %b_addr" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 104 'load' 'b_load' <Predicate = (!icmp_ln80)> <Delay = 0.63> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.63> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 16> <RAM>
+ST_2 : Operation 105 [1/1] (0.00ns)   --->   "%zext_ln92 = zext i32 %conv671_load" [../montgomery_converter/include/mont_ops_fast.hpp:92]   --->   Operation 105 'zext' 'zext_ln92' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_2 : Operation 106 [1/1] (0.27ns)   --->   "%select_ln92 = select i1 %b_load, i32 4294967295, i32 0" [../montgomery_converter/include/mont_ops_fast.hpp:92]   --->   Operation 106 'select' 'select_ln92' <Predicate = (!icmp_ln80)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 107 [1/1] (0.21ns)   --->   "%and_ln92 = and i32 %a_load_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:92]   --->   Operation 107 'and' 'and_ln92' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 108 [1/1] (0.00ns)   --->   "%zext_ln92_1 = zext i32 %and_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:92]   --->   Operation 108 'zext' 'zext_ln92_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_2 : Operation 109 [1/1] (0.88ns)   --->   "%add_ln92 = add i32 %and_ln92, i32 %conv671_load" [../montgomery_converter/include/mont_ops_fast.hpp:92]   --->   Operation 109 'add' 'add_ln92' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 110 [1/1] (0.88ns)   --->   "%p = add i33 %zext_ln92_1, i33 %zext_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:92]   --->   Operation 110 'add' 'p' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 111 [1/1] (0.00ns)   --->   "%C1 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 111 'bitselect' 'C1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_2 : Operation 112 [1/1] (3.17ns)   --->   "%m = mul i32 %add_ln92, i32 %mprime_read" [../montgomery_converter/include/mont_ops_fast.hpp:109]   --->   Operation 112 'mul' 'm' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 7.22>
+ST_3 : Operation 113 [1/1] (0.00ns)   --->   "%conv67_15_load_1 = load i32 %conv67_15" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 113 'load' 'conv67_15_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 114 [1/1] (0.00ns)   --->   "%conv67_26_load_1 = load i32 %conv67_26" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 114 'load' 'conv67_26_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 115 [1/1] (0.00ns)   --->   "%zext_ln95 = zext i1 %C1" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 115 'zext' 'zext_ln95' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln93 = zext i32 %conv67_15_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 116 'zext' 'zext_ln93' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 117 [1/1] (0.21ns)   --->   "%and_ln93 = and i32 %a_load_1_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 117 'and' 'and_ln93' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 118 [1/1] (0.00ns)   --->   "%zext_ln93_30 = zext i32 %and_ln93" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 118 'zext' 'zext_ln93_30' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 119 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93 = add i33 %zext_ln95, i33 %zext_ln93" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 119 'add' 'add_ln93' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 120 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_31 = add i33 %add_ln93, i33 %zext_ln93_30" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 120 'add' 'p_31' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 121 [1/1] (0.00ns)   --->   "%trunc_ln94 = trunc i33 %p_31" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 121 'trunc' 'trunc_ln94' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 122 [1/1] (0.00ns)   --->   "%C1_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_31, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 122 'bitselect' 'C1_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 123 [1/1] (0.00ns)   --->   "%zext_ln95_1 = zext i1 %C1_1" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 123 'zext' 'zext_ln95_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 124 [1/1] (0.00ns)   --->   "%zext_ln93_1 = zext i32 %conv67_26_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 124 'zext' 'zext_ln93_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 125 [1/1] (0.21ns)   --->   "%and_ln93_1 = and i32 %a_load_2_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 125 'and' 'and_ln93_1' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 126 [1/1] (0.00ns)   --->   "%zext_ln93_31 = zext i32 %and_ln93_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 126 'zext' 'zext_ln93_31' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 127 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_2 = add i33 %zext_ln93_31, i33 %zext_ln95_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 127 'add' 'add_ln93_2' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 128 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_32 = add i33 %add_ln93_2, i33 %zext_ln93_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 128 'add' 'p_32' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 129 [1/1] (0.00ns)   --->   "%trunc_ln94_16 = trunc i33 %p_32" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 129 'trunc' 'trunc_ln94_16' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 130 [1/1] (0.00ns)   --->   "%C1_2 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_32, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 130 'bitselect' 'C1_2' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 131 [1/1] (0.00ns)   --->   "%zext_ln111 = zext i32 %add_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:111]   --->   Operation 131 'zext' 'zext_ln111' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 132 [1/1] (0.00ns)   --->   "%zext_ln112 = zext i32 %m" [../montgomery_converter/include/mont_ops_fast.hpp:112]   --->   Operation 132 'zext' 'zext_ln112' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 133 [1/1] (3.17ns)   --->   "%mul_ln112 = mul i64 %zext_ln112, i64 %conv46_cast" [../montgomery_converter/include/mont_ops_fast.hpp:112]   --->   Operation 133 'mul' 'mul_ln112' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 134 [1/1] (1.14ns)   --->   "%p0 = add i64 %mul_ln112, i64 %zext_ln111" [../montgomery_converter/include/mont_ops_fast.hpp:112]   --->   Operation 134 'add' 'p0' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 135 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p0, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 135 'partselect' 'tmp_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 136 [1/1] (0.00ns)   --->   "%zext_ln113 = zext i32 %tmp_1" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 136 'zext' 'zext_ln113' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 137 [1/1] (0.00ns)   --->   "%zext_ln119 = zext i32 %trunc_ln94" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 137 'zext' 'zext_ln119' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 138 [1/1] (3.17ns)   --->   "%mul_ln119 = mul i64 %zext_ln112, i64 %conv62_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 138 'mul' 'mul_ln119' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 139 [1/1] (0.88ns)   --->   "%add_ln119 = add i33 %zext_ln113, i33 %zext_ln119" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 139 'add' 'add_ln119' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 140 [1/1] (0.00ns)   --->   "%zext_ln119_1 = zext i33 %add_ln119" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 140 'zext' 'zext_ln119_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 141 [1/1] (1.14ns)   --->   "%p_46 = add i64 %zext_ln119_1, i64 %mul_ln119" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 141 'add' 'p_46' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 142 [1/1] (0.00ns)   --->   "%trunc_ln120 = trunc i64 %p_46" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 142 'trunc' 'trunc_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 143 [1/1] (0.00ns)   --->   "%tmp_2 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_46, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 143 'partselect' 'tmp_2' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 144 [1/1] (0.00ns)   --->   "%zext_ln113_1 = zext i32 %tmp_2" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 144 'zext' 'zext_ln113_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 145 [1/1] (0.00ns)   --->   "%zext_ln119_2 = zext i32 %trunc_ln94_16" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 145 'zext' 'zext_ln119_2' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_3 : Operation 146 [1/1] (3.17ns)   --->   "%mul_ln119_1 = mul i64 %zext_ln112, i64 %conv62_1_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 146 'mul' 'mul_ln119_1' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 147 [1/1] (0.88ns)   --->   "%add_ln119_2 = add i33 %zext_ln113_1, i33 %zext_ln119_2" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 147 'add' 'add_ln119_2' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 148 [1/1] (3.17ns)   --->   "%mul_ln119_2 = mul i64 %zext_ln112, i64 %conv62_2_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 148 'mul' 'mul_ln119_2' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 149 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120, i32 %conv671" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 149 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+
+State 4 <SV = 3> <Delay = 4.05>
+ST_4 : Operation 150 [1/1] (0.00ns)   --->   "%conv67_37_load_1 = load i32 %conv67_37" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 150 'load' 'conv67_37_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 151 [1/1] (0.00ns)   --->   "%conv67_48_load_1 = load i32 %conv67_48" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 151 'load' 'conv67_48_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 152 [1/1] (0.00ns)   --->   "%zext_ln95_2 = zext i1 %C1_2" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 152 'zext' 'zext_ln95_2' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 153 [1/1] (0.00ns)   --->   "%zext_ln93_2 = zext i32 %conv67_37_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 153 'zext' 'zext_ln93_2' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 154 [1/1] (0.21ns)   --->   "%and_ln93_2 = and i32 %a_load_3_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 154 'and' 'and_ln93_2' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 155 [1/1] (0.00ns)   --->   "%zext_ln93_32 = zext i32 %and_ln93_2" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 155 'zext' 'zext_ln93_32' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 156 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_4 = add i33 %zext_ln95_2, i33 %zext_ln93_2" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 156 'add' 'add_ln93_4' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 157 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_33 = add i33 %add_ln93_4, i33 %zext_ln93_32" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 157 'add' 'p_33' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 158 [1/1] (0.00ns)   --->   "%trunc_ln94_17 = trunc i33 %p_33" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 158 'trunc' 'trunc_ln94_17' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 159 [1/1] (0.00ns)   --->   "%C1_3 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_33, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 159 'bitselect' 'C1_3' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 160 [1/1] (0.00ns)   --->   "%zext_ln95_3 = zext i1 %C1_3" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 160 'zext' 'zext_ln95_3' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 161 [1/1] (0.00ns)   --->   "%zext_ln93_3 = zext i32 %conv67_48_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 161 'zext' 'zext_ln93_3' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 162 [1/1] (0.21ns)   --->   "%and_ln93_3 = and i32 %a_load_4_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 162 'and' 'and_ln93_3' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 163 [1/1] (0.00ns)   --->   "%zext_ln93_33 = zext i32 %and_ln93_3" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 163 'zext' 'zext_ln93_33' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 164 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_6 = add i33 %zext_ln95_3, i33 %zext_ln93_3" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 164 'add' 'add_ln93_6' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 165 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_34 = add i33 %add_ln93_6, i33 %zext_ln93_33" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 165 'add' 'p_34' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 166 [1/1] (0.00ns)   --->   "%trunc_ln94_18 = trunc i33 %p_34" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 166 'trunc' 'trunc_ln94_18' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 167 [1/1] (0.00ns)   --->   "%C1_4 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_34, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 167 'bitselect' 'C1_4' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 168 [1/1] (0.00ns)   --->   "%zext_ln119_3 = zext i33 %add_ln119_2" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 168 'zext' 'zext_ln119_3' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 169 [1/1] (1.14ns)   --->   "%p_47 = add i64 %zext_ln119_3, i64 %mul_ln119_1" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 169 'add' 'p_47' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 170 [1/1] (0.00ns)   --->   "%trunc_ln120_15 = trunc i64 %p_47" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 170 'trunc' 'trunc_ln120_15' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 171 [1/1] (0.00ns)   --->   "%tmp_3 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_47, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 171 'partselect' 'tmp_3' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 172 [1/1] (0.00ns)   --->   "%zext_ln113_2 = zext i32 %tmp_3" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 172 'zext' 'zext_ln113_2' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 173 [1/1] (0.00ns)   --->   "%zext_ln119_4 = zext i32 %trunc_ln94_17" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 173 'zext' 'zext_ln119_4' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 174 [1/1] (0.88ns)   --->   "%add_ln119_4 = add i33 %zext_ln113_2, i33 %zext_ln119_4" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 174 'add' 'add_ln119_4' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 175 [1/1] (0.00ns)   --->   "%zext_ln119_5 = zext i33 %add_ln119_4" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 175 'zext' 'zext_ln119_5' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 176 [1/1] (1.14ns)   --->   "%p_48 = add i64 %zext_ln119_5, i64 %mul_ln119_2" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 176 'add' 'p_48' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 177 [1/1] (0.00ns)   --->   "%trunc_ln120_16 = trunc i64 %p_48" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 177 'trunc' 'trunc_ln120_16' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 178 [1/1] (0.00ns)   --->   "%tmp_4 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_48, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 178 'partselect' 'tmp_4' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 179 [1/1] (0.00ns)   --->   "%zext_ln113_3 = zext i32 %tmp_4" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 179 'zext' 'zext_ln113_3' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 180 [1/1] (0.00ns)   --->   "%zext_ln119_6 = zext i32 %trunc_ln94_18" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 180 'zext' 'zext_ln119_6' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_4 : Operation 181 [1/1] (0.88ns)   --->   "%add_ln119_6 = add i33 %zext_ln113_3, i33 %zext_ln119_6" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 181 'add' 'add_ln119_6' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 182 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_16, i32 %conv67_26" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 182 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_4 : Operation 183 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_15, i32 %conv67_15" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 183 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+
+State 5 <SV = 4> <Delay = 7.22>
+ST_5 : Operation 184 [1/1] (0.00ns)   --->   "%conv67_59_load_1 = load i32 %conv67_59" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 184 'load' 'conv67_59_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 185 [1/1] (0.00ns)   --->   "%conv67_610_load_1 = load i32 %conv67_610" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 185 'load' 'conv67_610_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 186 [1/1] (0.00ns)   --->   "%conv67_711_load_1 = load i32 %conv67_711" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 186 'load' 'conv67_711_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 187 [1/1] (0.00ns)   --->   "%zext_ln95_4 = zext i1 %C1_4" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 187 'zext' 'zext_ln95_4' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 188 [1/1] (0.00ns)   --->   "%zext_ln93_4 = zext i32 %conv67_59_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 188 'zext' 'zext_ln93_4' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 189 [1/1] (0.21ns)   --->   "%and_ln93_4 = and i32 %a_load_5_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 189 'and' 'and_ln93_4' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 190 [1/1] (0.00ns)   --->   "%zext_ln93_34 = zext i32 %and_ln93_4" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 190 'zext' 'zext_ln93_34' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 191 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_8 = add i33 %zext_ln95_4, i33 %zext_ln93_4" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 191 'add' 'add_ln93_8' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 192 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_35 = add i33 %add_ln93_8, i33 %zext_ln93_34" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 192 'add' 'p_35' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 193 [1/1] (0.00ns)   --->   "%trunc_ln94_19 = trunc i33 %p_35" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 193 'trunc' 'trunc_ln94_19' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 194 [1/1] (0.00ns)   --->   "%C1_5 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_35, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 194 'bitselect' 'C1_5' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 195 [1/1] (0.00ns)   --->   "%zext_ln95_5 = zext i1 %C1_5" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 195 'zext' 'zext_ln95_5' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 196 [1/1] (0.00ns)   --->   "%zext_ln93_5 = zext i32 %conv67_610_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 196 'zext' 'zext_ln93_5' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 197 [1/1] (0.21ns)   --->   "%and_ln93_5 = and i32 %a_load_6_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 197 'and' 'and_ln93_5' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 198 [1/1] (0.00ns)   --->   "%zext_ln93_35 = zext i32 %and_ln93_5" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 198 'zext' 'zext_ln93_35' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 199 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_10 = add i33 %zext_ln95_5, i33 %zext_ln93_5" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 199 'add' 'add_ln93_10' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 200 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_36 = add i33 %add_ln93_10, i33 %zext_ln93_35" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 200 'add' 'p_36' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 201 [1/1] (0.00ns)   --->   "%trunc_ln94_20 = trunc i33 %p_36" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 201 'trunc' 'trunc_ln94_20' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 202 [1/1] (0.00ns)   --->   "%C1_6 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_36, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 202 'bitselect' 'C1_6' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 203 [1/1] (0.00ns)   --->   "%zext_ln95_6 = zext i1 %C1_6" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 203 'zext' 'zext_ln95_6' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 204 [1/1] (0.00ns)   --->   "%zext_ln93_6 = zext i32 %conv67_711_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 204 'zext' 'zext_ln93_6' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 205 [1/1] (0.21ns)   --->   "%and_ln93_6 = and i32 %a_load_7_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 205 'and' 'and_ln93_6' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 206 [1/1] (0.00ns)   --->   "%zext_ln93_36 = zext i32 %and_ln93_6" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 206 'zext' 'zext_ln93_36' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 207 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_12 = add i33 %zext_ln95_6, i33 %zext_ln93_6" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 207 'add' 'add_ln93_12' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 208 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_37 = add i33 %add_ln93_12, i33 %zext_ln93_36" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 208 'add' 'p_37' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 209 [1/1] (0.00ns)   --->   "%trunc_ln94_21 = trunc i33 %p_37" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 209 'trunc' 'trunc_ln94_21' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 210 [1/1] (0.00ns)   --->   "%C1_7 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_37, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 210 'bitselect' 'C1_7' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 211 [1/1] (3.17ns)   --->   "%mul_ln119_3 = mul i64 %zext_ln112, i64 %conv62_3_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 211 'mul' 'mul_ln119_3' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 212 [1/1] (0.00ns)   --->   "%zext_ln119_7 = zext i33 %add_ln119_6" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 212 'zext' 'zext_ln119_7' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 213 [1/1] (1.14ns)   --->   "%p_49 = add i64 %zext_ln119_7, i64 %mul_ln119_3" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 213 'add' 'p_49' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 214 [1/1] (0.00ns)   --->   "%trunc_ln120_17 = trunc i64 %p_49" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 214 'trunc' 'trunc_ln120_17' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 215 [1/1] (0.00ns)   --->   "%tmp_5 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_49, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 215 'partselect' 'tmp_5' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 216 [1/1] (0.00ns)   --->   "%zext_ln113_4 = zext i32 %tmp_5" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 216 'zext' 'zext_ln113_4' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 217 [1/1] (0.00ns)   --->   "%zext_ln119_8 = zext i32 %trunc_ln94_19" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 217 'zext' 'zext_ln119_8' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 218 [1/1] (3.17ns)   --->   "%mul_ln119_4 = mul i64 %zext_ln112, i64 %conv62_4_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 218 'mul' 'mul_ln119_4' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 219 [1/1] (0.88ns)   --->   "%add_ln119_8 = add i33 %zext_ln113_4, i33 %zext_ln119_8" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 219 'add' 'add_ln119_8' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 220 [1/1] (0.00ns)   --->   "%zext_ln119_9 = zext i33 %add_ln119_8" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 220 'zext' 'zext_ln119_9' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 221 [1/1] (1.14ns)   --->   "%p_50 = add i64 %zext_ln119_9, i64 %mul_ln119_4" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 221 'add' 'p_50' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 222 [1/1] (0.00ns)   --->   "%trunc_ln120_18 = trunc i64 %p_50" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 222 'trunc' 'trunc_ln120_18' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 223 [1/1] (0.00ns)   --->   "%tmp_6 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_50, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 223 'partselect' 'tmp_6' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 224 [1/1] (0.00ns)   --->   "%zext_ln113_5 = zext i32 %tmp_6" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 224 'zext' 'zext_ln113_5' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 225 [1/1] (0.00ns)   --->   "%zext_ln119_10 = zext i32 %trunc_ln94_20" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 225 'zext' 'zext_ln119_10' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_5 : Operation 226 [1/1] (3.17ns)   --->   "%mul_ln119_5 = mul i64 %zext_ln112, i64 %conv62_5_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 226 'mul' 'mul_ln119_5' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 227 [1/1] (0.88ns)   --->   "%add_ln119_10 = add i33 %zext_ln113_5, i33 %zext_ln119_10" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 227 'add' 'add_ln119_10' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 228 [1/1] (3.17ns)   --->   "%mul_ln119_6 = mul i64 %zext_ln112, i64 %conv62_6_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 228 'mul' 'mul_ln119_6' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 229 [1/1] (3.17ns)   --->   "%mul_ln119_7 = mul i64 %zext_ln112, i64 %conv62_7_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 229 'mul' 'mul_ln119_7' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 230 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_18, i32 %conv67_48" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 230 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_5 : Operation 231 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_17, i32 %conv67_37" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 231 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+
+State 6 <SV = 5> <Delay = 7.22>
+ST_6 : Operation 232 [1/1] (0.00ns)   --->   "%conv8520 = phi i1 %tmp_34, void %PP_LOOP.split, i1 0, void %newFuncRoot" [../montgomery_converter/include/mont_ops_fast.hpp:127]   --->   Operation 232 'phi' 'conv8520' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 233 [1/1] (0.00ns)   --->   "%conv67_812_load_1 = load i32 %conv67_812" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 233 'load' 'conv67_812_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 234 [1/1] (0.00ns)   --->   "%conv67_913_load_1 = load i32 %conv67_913" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 234 'load' 'conv67_913_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 235 [1/1] (0.00ns)   --->   "%conv67_1014_load_1 = load i32 %conv67_1014" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 235 'load' 'conv67_1014_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 236 [1/1] (0.00ns)   --->   "%conv67_1115_load_1 = load i32 %conv67_1115" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 236 'load' 'conv67_1115_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 237 [1/1] (0.00ns)   --->   "%zext_ln95_7 = zext i1 %C1_7" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 237 'zext' 'zext_ln95_7' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 238 [1/1] (0.00ns)   --->   "%zext_ln93_7 = zext i32 %conv67_812_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 238 'zext' 'zext_ln93_7' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 239 [1/1] (0.21ns)   --->   "%and_ln93_7 = and i32 %a_load_8_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 239 'and' 'and_ln93_7' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 240 [1/1] (0.00ns)   --->   "%zext_ln93_37 = zext i32 %and_ln93_7" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 240 'zext' 'zext_ln93_37' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 241 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_14 = add i33 %zext_ln95_7, i33 %zext_ln93_7" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 241 'add' 'add_ln93_14' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 242 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_38 = add i33 %add_ln93_14, i33 %zext_ln93_37" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 242 'add' 'p_38' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 243 [1/1] (0.00ns)   --->   "%trunc_ln94_22 = trunc i33 %p_38" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 243 'trunc' 'trunc_ln94_22' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 244 [1/1] (0.00ns)   --->   "%C1_8 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_38, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 244 'bitselect' 'C1_8' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 245 [1/1] (0.00ns)   --->   "%zext_ln95_8 = zext i1 %C1_8" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 245 'zext' 'zext_ln95_8' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 246 [1/1] (0.00ns)   --->   "%zext_ln93_8 = zext i32 %conv67_913_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 246 'zext' 'zext_ln93_8' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 247 [1/1] (0.21ns)   --->   "%and_ln93_8 = and i32 %a_load_9_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 247 'and' 'and_ln93_8' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 248 [1/1] (0.00ns)   --->   "%zext_ln93_38 = zext i32 %and_ln93_8" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 248 'zext' 'zext_ln93_38' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 249 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_16 = add i33 %zext_ln95_8, i33 %zext_ln93_8" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 249 'add' 'add_ln93_16' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 250 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_39 = add i33 %add_ln93_16, i33 %zext_ln93_38" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 250 'add' 'p_39' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 251 [1/1] (0.00ns)   --->   "%trunc_ln94_23 = trunc i33 %p_39" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 251 'trunc' 'trunc_ln94_23' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 252 [1/1] (0.00ns)   --->   "%C1_9 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_39, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 252 'bitselect' 'C1_9' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 253 [1/1] (0.00ns)   --->   "%zext_ln95_9 = zext i1 %C1_9" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 253 'zext' 'zext_ln95_9' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 254 [1/1] (0.00ns)   --->   "%zext_ln93_9 = zext i32 %conv67_1014_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 254 'zext' 'zext_ln93_9' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 255 [1/1] (0.21ns)   --->   "%and_ln93_9 = and i32 %a_load_10_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 255 'and' 'and_ln93_9' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 256 [1/1] (0.00ns)   --->   "%zext_ln93_39 = zext i32 %and_ln93_9" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 256 'zext' 'zext_ln93_39' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 257 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_18 = add i33 %zext_ln95_9, i33 %zext_ln93_9" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 257 'add' 'add_ln93_18' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 258 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_40 = add i33 %add_ln93_18, i33 %zext_ln93_39" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 258 'add' 'p_40' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 259 [1/1] (0.00ns)   --->   "%trunc_ln94_24 = trunc i33 %p_40" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 259 'trunc' 'trunc_ln94_24' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 260 [1/1] (0.00ns)   --->   "%C1_10 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_40, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 260 'bitselect' 'C1_10' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 261 [1/1] (0.00ns)   --->   "%zext_ln95_10 = zext i1 %C1_10" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 261 'zext' 'zext_ln95_10' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 262 [1/1] (0.00ns)   --->   "%zext_ln93_10 = zext i32 %conv67_1115_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 262 'zext' 'zext_ln93_10' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 263 [1/1] (0.21ns)   --->   "%and_ln93_10 = and i32 %a_load_11_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 263 'and' 'and_ln93_10' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 264 [1/1] (0.00ns)   --->   "%zext_ln93_40 = zext i32 %and_ln93_10" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 264 'zext' 'zext_ln93_40' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 265 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_20 = add i33 %zext_ln95_10, i33 %zext_ln93_10" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 265 'add' 'add_ln93_20' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 266 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_41 = add i33 %add_ln93_20, i33 %zext_ln93_40" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 266 'add' 'p_41' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 267 [1/1] (0.00ns)   --->   "%trunc_ln94_25 = trunc i33 %p_41" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 267 'trunc' 'trunc_ln94_25' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 268 [1/1] (0.00ns)   --->   "%C1_11 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_41, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 268 'bitselect' 'C1_11' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 269 [1/1] (0.00ns)   --->   "%zext_ln119_11 = zext i33 %add_ln119_10" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 269 'zext' 'zext_ln119_11' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 270 [1/1] (1.14ns)   --->   "%p_51 = add i64 %zext_ln119_11, i64 %mul_ln119_5" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 270 'add' 'p_51' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 271 [1/1] (0.00ns)   --->   "%trunc_ln120_19 = trunc i64 %p_51" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 271 'trunc' 'trunc_ln120_19' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 272 [1/1] (0.00ns)   --->   "%tmp_7 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_51, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 272 'partselect' 'tmp_7' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 273 [1/1] (0.00ns)   --->   "%zext_ln113_6 = zext i32 %tmp_7" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 273 'zext' 'zext_ln113_6' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 274 [1/1] (0.00ns)   --->   "%zext_ln119_12 = zext i32 %trunc_ln94_21" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 274 'zext' 'zext_ln119_12' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 275 [1/1] (0.88ns)   --->   "%add_ln119_12 = add i33 %zext_ln113_6, i33 %zext_ln119_12" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 275 'add' 'add_ln119_12' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 276 [1/1] (0.00ns)   --->   "%zext_ln119_13 = zext i33 %add_ln119_12" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 276 'zext' 'zext_ln119_13' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 277 [1/1] (1.14ns)   --->   "%p_52 = add i64 %zext_ln119_13, i64 %mul_ln119_6" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 277 'add' 'p_52' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 278 [1/1] (0.00ns)   --->   "%trunc_ln120_20 = trunc i64 %p_52" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 278 'trunc' 'trunc_ln120_20' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 279 [1/1] (0.00ns)   --->   "%tmp_8 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_52, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 279 'partselect' 'tmp_8' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 280 [1/1] (0.00ns)   --->   "%zext_ln113_7 = zext i32 %tmp_8" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 280 'zext' 'zext_ln113_7' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 281 [1/1] (0.00ns)   --->   "%zext_ln119_14 = zext i32 %trunc_ln94_22" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 281 'zext' 'zext_ln119_14' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 282 [1/1] (0.88ns)   --->   "%add_ln119_14 = add i33 %zext_ln113_7, i33 %zext_ln119_14" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 282 'add' 'add_ln119_14' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 283 [1/1] (0.00ns)   --->   "%zext_ln119_15 = zext i33 %add_ln119_14" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 283 'zext' 'zext_ln119_15' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 284 [1/1] (1.14ns)   --->   "%p_53 = add i64 %zext_ln119_15, i64 %mul_ln119_7" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 284 'add' 'p_53' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 285 [1/1] (0.00ns)   --->   "%trunc_ln120_21 = trunc i64 %p_53" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 285 'trunc' 'trunc_ln120_21' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 286 [1/1] (0.00ns)   --->   "%tmp_9 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_53, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 286 'partselect' 'tmp_9' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 287 [1/1] (0.00ns)   --->   "%zext_ln113_8 = zext i32 %tmp_9" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 287 'zext' 'zext_ln113_8' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 288 [1/1] (0.00ns)   --->   "%zext_ln119_16 = zext i32 %trunc_ln94_23" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 288 'zext' 'zext_ln119_16' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 289 [1/1] (3.17ns)   --->   "%mul_ln119_8 = mul i64 %zext_ln112, i64 %conv62_8_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 289 'mul' 'mul_ln119_8' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 290 [1/1] (0.88ns)   --->   "%add_ln119_16 = add i33 %zext_ln113_8, i33 %zext_ln119_16" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 290 'add' 'add_ln119_16' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 291 [1/1] (0.00ns)   --->   "%zext_ln119_17 = zext i33 %add_ln119_16" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 291 'zext' 'zext_ln119_17' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 292 [1/1] (1.14ns)   --->   "%p_54 = add i64 %zext_ln119_17, i64 %mul_ln119_8" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 292 'add' 'p_54' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 293 [1/1] (0.00ns)   --->   "%trunc_ln120_22 = trunc i64 %p_54" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 293 'trunc' 'trunc_ln120_22' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 294 [1/1] (0.00ns)   --->   "%tmp_10 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_54, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 294 'partselect' 'tmp_10' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 295 [1/1] (3.17ns)   --->   "%mul_ln119_9 = mul i64 %zext_ln112, i64 %conv62_9_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 295 'mul' 'mul_ln119_9' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 296 [1/1] (3.17ns)   --->   "%mul_ln119_10 = mul i64 %zext_ln112, i64 %conv62_10_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 296 'mul' 'mul_ln119_10' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 297 [1/1] (3.17ns)   --->   "%mul_ln119_11 = mul i64 %zext_ln112, i64 %conv62_11_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 297 'mul' 'mul_ln119_11' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 298 [1/1] (3.17ns)   --->   "%mul_ln119_12 = mul i64 %zext_ln112, i64 %conv62_12_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 298 'mul' 'mul_ln119_12' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 299 [1/1] (3.17ns)   --->   "%mul_ln119_13 = mul i64 %zext_ln112, i64 %conv62_13_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 299 'mul' 'mul_ln119_13' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 300 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_21, i32 %conv67_711" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 300 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_6 : Operation 301 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_20, i32 %conv67_610" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 301 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_6 : Operation 302 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_19, i32 %conv67_59" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 302 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_6 : Operation 402 [1/1] (0.00ns)   --->   "%conv67_15_load = load i32 %conv67_15"   --->   Operation 402 'load' 'conv67_15_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 403 [1/1] (0.00ns)   --->   "%conv671_load_1 = load i32 %conv671"   --->   Operation 403 'load' 'conv671_load_1' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 404 [1/1] (0.00ns)   --->   "%conv67_26_load = load i32 %conv67_26"   --->   Operation 404 'load' 'conv67_26_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 405 [1/1] (0.00ns)   --->   "%conv67_37_load = load i32 %conv67_37"   --->   Operation 405 'load' 'conv67_37_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 406 [1/1] (0.00ns)   --->   "%conv67_48_load = load i32 %conv67_48"   --->   Operation 406 'load' 'conv67_48_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 407 [1/1] (0.00ns)   --->   "%conv67_59_load = load i32 %conv67_59"   --->   Operation 407 'load' 'conv67_59_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 408 [1/1] (0.00ns)   --->   "%conv67_610_load = load i32 %conv67_610"   --->   Operation 408 'load' 'conv67_610_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 409 [1/1] (0.00ns)   --->   "%conv67_711_load = load i32 %conv67_711"   --->   Operation 409 'load' 'conv67_711_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 410 [1/1] (0.00ns)   --->   "%conv67_812_load = load i32 %conv67_812"   --->   Operation 410 'load' 'conv67_812_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 411 [1/1] (0.00ns)   --->   "%conv67_913_load = load i32 %conv67_913"   --->   Operation 411 'load' 'conv67_913_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 412 [1/1] (0.00ns)   --->   "%conv67_1014_load = load i32 %conv67_1014"   --->   Operation 412 'load' 'conv67_1014_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 413 [1/1] (0.00ns)   --->   "%conv67_1115_load = load i32 %conv67_1115"   --->   Operation 413 'load' 'conv67_1115_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 414 [1/1] (0.00ns)   --->   "%conv67_1216_load = load i32 %conv67_1216"   --->   Operation 414 'load' 'conv67_1216_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 415 [1/1] (0.00ns)   --->   "%conv67_1317_load = load i32 %conv67_1317"   --->   Operation 415 'load' 'conv67_1317_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 416 [1/1] (0.00ns)   --->   "%conv67_1418_load = load i32 %conv67_1418"   --->   Operation 416 'load' 'conv67_1418_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 417 [1/1] (0.00ns)   --->   "%conv7919_load = load i32 %conv7919"   --->   Operation 417 'load' 'conv7919_load' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 418 [1/1] (0.00ns)   --->   "%write_ln127 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %conv8520_out, i1 %conv8520" [../montgomery_converter/include/mont_ops_fast.hpp:127]   --->   Operation 418 'write' 'write_ln127' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 419 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv7919_out, i32 %conv7919_load"   --->   Operation 419 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 420 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_1418_out, i32 %conv67_1418_load"   --->   Operation 420 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 421 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_1317_out, i32 %conv67_1317_load"   --->   Operation 421 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 422 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_1216_out, i32 %conv67_1216_load"   --->   Operation 422 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 423 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_1115_out, i32 %conv67_1115_load"   --->   Operation 423 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 424 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_1014_out, i32 %conv67_1014_load"   --->   Operation 424 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 425 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_913_out, i32 %conv67_913_load"   --->   Operation 425 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 426 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_812_out, i32 %conv67_812_load"   --->   Operation 426 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 427 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_711_out, i32 %conv67_711_load"   --->   Operation 427 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 428 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_610_out, i32 %conv67_610_load"   --->   Operation 428 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 429 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_59_out, i32 %conv67_59_load"   --->   Operation 429 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 430 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_48_out, i32 %conv67_48_load"   --->   Operation 430 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 431 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_37_out, i32 %conv67_37_load"   --->   Operation 431 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 432 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_26_out, i32 %conv67_26_load"   --->   Operation 432 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 433 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv67_15_out, i32 %conv67_15_load"   --->   Operation 433 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 434 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %conv671_out, i32 %conv671_load_1"   --->   Operation 434 'write' 'write_ln0' <Predicate = (icmp_ln80)> <Delay = 0.00>
+ST_6 : Operation 435 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 435 'ret' 'ret_ln0' <Predicate = (icmp_ln80)> <Delay = 0.38>
+
+State 7 <SV = 6> <Delay = 6.96>
+ST_7 : Operation 303 [1/1] (0.00ns)   --->   "%conv67_1216_load_1 = load i32 %conv67_1216" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 303 'load' 'conv67_1216_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 304 [1/1] (0.00ns)   --->   "%conv67_1317_load_1 = load i32 %conv67_1317" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 304 'load' 'conv67_1317_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 305 [1/1] (0.00ns)   --->   "%conv67_1418_load_1 = load i32 %conv67_1418" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 305 'load' 'conv67_1418_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 306 [1/1] (0.00ns)   --->   "%conv7919_load_1 = load i32 %conv7919" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 306 'load' 'conv7919_load_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 307 [1/1] (0.00ns)   --->   "%zext_ln95_11 = zext i1 %C1_11" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 307 'zext' 'zext_ln95_11' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 308 [1/1] (0.00ns)   --->   "%zext_ln93_11 = zext i32 %conv67_1216_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 308 'zext' 'zext_ln93_11' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 309 [1/1] (0.21ns)   --->   "%and_ln93_11 = and i32 %a_load_12_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 309 'and' 'and_ln93_11' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 310 [1/1] (0.00ns)   --->   "%zext_ln93_41 = zext i32 %and_ln93_11" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 310 'zext' 'zext_ln93_41' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 311 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_22 = add i33 %zext_ln95_11, i33 %zext_ln93_11" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 311 'add' 'add_ln93_22' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 312 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_42 = add i33 %add_ln93_22, i33 %zext_ln93_41" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 312 'add' 'p_42' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 313 [1/1] (0.00ns)   --->   "%trunc_ln94_26 = trunc i33 %p_42" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 313 'trunc' 'trunc_ln94_26' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 314 [1/1] (0.00ns)   --->   "%C1_12 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_42, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 314 'bitselect' 'C1_12' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 315 [1/1] (0.00ns)   --->   "%zext_ln95_12 = zext i1 %C1_12" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 315 'zext' 'zext_ln95_12' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 316 [1/1] (0.00ns)   --->   "%zext_ln93_12 = zext i32 %conv67_1317_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 316 'zext' 'zext_ln93_12' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 317 [1/1] (0.21ns)   --->   "%and_ln93_12 = and i32 %a_load_13_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 317 'and' 'and_ln93_12' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 318 [1/1] (0.00ns)   --->   "%zext_ln93_42 = zext i32 %and_ln93_12" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 318 'zext' 'zext_ln93_42' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 319 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_24 = add i33 %zext_ln95_12, i33 %zext_ln93_12" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 319 'add' 'add_ln93_24' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 320 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_43 = add i33 %add_ln93_24, i33 %zext_ln93_42" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 320 'add' 'p_43' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 321 [1/1] (0.00ns)   --->   "%trunc_ln94_27 = trunc i33 %p_43" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 321 'trunc' 'trunc_ln94_27' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 322 [1/1] (0.00ns)   --->   "%C1_13 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_43, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 322 'bitselect' 'C1_13' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 323 [1/1] (0.00ns)   --->   "%zext_ln95_13 = zext i1 %C1_13" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 323 'zext' 'zext_ln95_13' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 324 [1/1] (0.00ns)   --->   "%zext_ln93_13 = zext i32 %conv67_1418_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 324 'zext' 'zext_ln93_13' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 325 [1/1] (0.21ns)   --->   "%and_ln93_13 = and i32 %a_load_14_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 325 'and' 'and_ln93_13' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 326 [1/1] (0.00ns)   --->   "%zext_ln93_43 = zext i32 %and_ln93_13" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 326 'zext' 'zext_ln93_43' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 327 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_26 = add i33 %zext_ln95_13, i33 %zext_ln93_13" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 327 'add' 'add_ln93_26' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 328 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_44 = add i33 %add_ln93_26, i33 %zext_ln93_43" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 328 'add' 'p_44' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 329 [1/1] (0.00ns)   --->   "%trunc_ln94_28 = trunc i33 %p_44" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 329 'trunc' 'trunc_ln94_28' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 330 [1/1] (0.00ns)   --->   "%C1_14 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_44, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 330 'bitselect' 'C1_14' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 331 [1/1] (0.00ns)   --->   "%zext_ln95_14 = zext i1 %C1_14" [../montgomery_converter/include/mont_ops_fast.hpp:95]   --->   Operation 331 'zext' 'zext_ln95_14' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 332 [1/1] (0.00ns)   --->   "%zext_ln93_14 = zext i32 %conv7919_load_1" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 332 'zext' 'zext_ln93_14' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 333 [1/1] (0.21ns)   --->   "%and_ln93_14 = and i32 %a_load_15_cast_read, i32 %select_ln92" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 333 'and' 'and_ln93_14' <Predicate = (!icmp_ln80)> <Delay = 0.21> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.21> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 334 [1/1] (0.00ns)   --->   "%zext_ln93_44 = zext i32 %and_ln93_14" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 334 'zext' 'zext_ln93_44' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 335 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln93_28 = add i33 %zext_ln95_14, i33 %zext_ln93_14" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 335 'add' 'add_ln93_28' <Predicate = (!icmp_ln80)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 336 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%p_45 = add i33 %add_ln93_28, i33 %zext_ln93_44" [../montgomery_converter/include/mont_ops_fast.hpp:93]   --->   Operation 336 'add' 'p_45' <Predicate = (!icmp_ln80)> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 337 [1/1] (0.00ns)   --->   "%trunc_ln94_29 = trunc i33 %p_45" [../montgomery_converter/include/mont_ops_fast.hpp:94]   --->   Operation 337 'trunc' 'trunc_ln94_29' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 338 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %p_45, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:99]   --->   Operation 338 'bitselect' 'tmp' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 339 [1/1] (0.00ns)   --->   "%zext_ln99_1 = zext i1 %tmp" [../montgomery_converter/include/mont_ops_fast.hpp:99]   --->   Operation 339 'zext' 'zext_ln99_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 340 [1/1] (0.00ns)   --->   "%zext_ln99 = zext i1 %conv8520" [../montgomery_converter/include/mont_ops_fast.hpp:99]   --->   Operation 340 'zext' 'zext_ln99' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 341 [1/1] (0.43ns)   --->   "%s = add i2 %zext_ln99_1, i2 %zext_ln99" [../montgomery_converter/include/mont_ops_fast.hpp:99]   --->   Operation 341 'add' 's' <Predicate = (!icmp_ln80)> <Delay = 0.43> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.43> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 342 [1/1] (0.00ns)   --->   "%zext_ln113_9 = zext i32 %tmp_10" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 342 'zext' 'zext_ln113_9' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 343 [1/1] (0.00ns)   --->   "%zext_ln119_18 = zext i32 %trunc_ln94_24" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 343 'zext' 'zext_ln119_18' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 344 [1/1] (0.88ns)   --->   "%add_ln119_18 = add i33 %zext_ln113_9, i33 %zext_ln119_18" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 344 'add' 'add_ln119_18' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 345 [1/1] (0.00ns)   --->   "%zext_ln119_19 = zext i33 %add_ln119_18" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 345 'zext' 'zext_ln119_19' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 346 [1/1] (1.14ns)   --->   "%p_55 = add i64 %zext_ln119_19, i64 %mul_ln119_9" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 346 'add' 'p_55' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 347 [1/1] (0.00ns)   --->   "%trunc_ln120_23 = trunc i64 %p_55" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 347 'trunc' 'trunc_ln120_23' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 348 [1/1] (0.00ns)   --->   "%tmp_11 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_55, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 348 'partselect' 'tmp_11' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 349 [1/1] (0.00ns)   --->   "%zext_ln113_10 = zext i32 %tmp_11" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 349 'zext' 'zext_ln113_10' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 350 [1/1] (0.00ns)   --->   "%zext_ln119_20 = zext i32 %trunc_ln94_25" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 350 'zext' 'zext_ln119_20' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 351 [1/1] (0.88ns)   --->   "%add_ln119_20 = add i33 %zext_ln113_10, i33 %zext_ln119_20" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 351 'add' 'add_ln119_20' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 352 [1/1] (0.00ns)   --->   "%zext_ln119_21 = zext i33 %add_ln119_20" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 352 'zext' 'zext_ln119_21' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 353 [1/1] (1.14ns)   --->   "%p_56 = add i64 %zext_ln119_21, i64 %mul_ln119_10" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 353 'add' 'p_56' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 354 [1/1] (0.00ns)   --->   "%trunc_ln120_24 = trunc i64 %p_56" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 354 'trunc' 'trunc_ln120_24' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 355 [1/1] (0.00ns)   --->   "%tmp_12 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_56, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 355 'partselect' 'tmp_12' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 356 [1/1] (0.00ns)   --->   "%zext_ln113_11 = zext i32 %tmp_12" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 356 'zext' 'zext_ln113_11' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 357 [1/1] (0.00ns)   --->   "%zext_ln119_22 = zext i32 %trunc_ln94_26" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 357 'zext' 'zext_ln119_22' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 358 [1/1] (0.88ns)   --->   "%add_ln119_22 = add i33 %zext_ln113_11, i33 %zext_ln119_22" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 358 'add' 'add_ln119_22' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 359 [1/1] (0.00ns)   --->   "%zext_ln119_23 = zext i33 %add_ln119_22" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 359 'zext' 'zext_ln119_23' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 360 [1/1] (1.14ns)   --->   "%p_57 = add i64 %zext_ln119_23, i64 %mul_ln119_11" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 360 'add' 'p_57' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 361 [1/1] (0.00ns)   --->   "%trunc_ln120_25 = trunc i64 %p_57" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 361 'trunc' 'trunc_ln120_25' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 362 [1/1] (0.00ns)   --->   "%tmp_13 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_57, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 362 'partselect' 'tmp_13' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 363 [1/1] (0.00ns)   --->   "%zext_ln113_12 = zext i32 %tmp_13" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 363 'zext' 'zext_ln113_12' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 364 [1/1] (0.00ns)   --->   "%zext_ln119_24 = zext i32 %trunc_ln94_27" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 364 'zext' 'zext_ln119_24' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_7 : Operation 365 [1/1] (0.88ns)   --->   "%add_ln119_24 = add i33 %zext_ln113_12, i33 %zext_ln119_24" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 365 'add' 'add_ln119_24' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 366 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_25, i32 %conv67_1115" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 366 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_7 : Operation 367 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_24, i32 %conv67_1014" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 367 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_7 : Operation 368 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_23, i32 %conv67_913" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 368 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_7 : Operation 369 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_22, i32 %conv67_812" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 369 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+
+State 8 <SV = 7> <Delay = 6.46>
+ST_8 : Operation 370 [1/1] (0.00ns)   --->   "%specpipeline_ln82 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_1" [../montgomery_converter/include/mont_ops_fast.hpp:82]   --->   Operation 370 'specpipeline' 'specpipeline_ln82' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 371 [1/1] (0.00ns)   --->   "%speclooptripcount_ln81 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16" [../montgomery_converter/include/mont_ops_fast.hpp:81]   --->   Operation 371 'speclooptripcount' 'speclooptripcount_ln81' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 372 [1/1] (0.00ns)   --->   "%specloopname_ln80 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 372 'specloopname' 'specloopname_ln80' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 373 [1/1] (0.00ns)   --->   "%zext_ln119_25 = zext i33 %add_ln119_24" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 373 'zext' 'zext_ln119_25' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 374 [1/1] (1.14ns)   --->   "%p_58 = add i64 %zext_ln119_25, i64 %mul_ln119_12" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 374 'add' 'p_58' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 375 [1/1] (0.00ns)   --->   "%trunc_ln120_26 = trunc i64 %p_58" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 375 'trunc' 'trunc_ln120_26' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 376 [1/1] (0.00ns)   --->   "%tmp_14 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_58, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 376 'partselect' 'tmp_14' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 377 [1/1] (0.00ns)   --->   "%zext_ln113_13 = zext i32 %tmp_14" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 377 'zext' 'zext_ln113_13' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 378 [1/1] (0.00ns)   --->   "%zext_ln119_26 = zext i32 %trunc_ln94_28" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 378 'zext' 'zext_ln119_26' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 379 [1/1] (0.88ns)   --->   "%add_ln119_26 = add i33 %zext_ln113_13, i33 %zext_ln119_26" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 379 'add' 'add_ln119_26' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 380 [1/1] (0.00ns)   --->   "%zext_ln119_27 = zext i33 %add_ln119_26" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 380 'zext' 'zext_ln119_27' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 381 [1/1] (1.14ns)   --->   "%p_59 = add i64 %zext_ln119_27, i64 %mul_ln119_13" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 381 'add' 'p_59' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 382 [1/1] (0.00ns)   --->   "%trunc_ln120_27 = trunc i64 %p_59" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 382 'trunc' 'trunc_ln120_27' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 383 [1/1] (0.00ns)   --->   "%tmp_15 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_59, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 383 'partselect' 'tmp_15' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 384 [1/1] (0.00ns)   --->   "%zext_ln113_14 = zext i32 %tmp_15" [../montgomery_converter/include/mont_ops_fast.hpp:113]   --->   Operation 384 'zext' 'zext_ln113_14' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 385 [1/1] (0.00ns)   --->   "%zext_ln119_28 = zext i32 %trunc_ln94_29" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 385 'zext' 'zext_ln119_28' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 386 [1/1] (3.17ns)   --->   "%mul_ln119_14 = mul i64 %zext_ln112, i64 %conv62_14_cast" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 386 'mul' 'mul_ln119_14' <Predicate = (!icmp_ln80)> <Delay = 3.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 3.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 387 [1/1] (0.88ns)   --->   "%add_ln119_28 = add i33 %zext_ln113_14, i33 %zext_ln119_28" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 387 'add' 'add_ln119_28' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 388 [1/1] (0.00ns)   --->   "%zext_ln119_29 = zext i33 %add_ln119_28" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 388 'zext' 'zext_ln119_29' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 389 [1/1] (1.14ns)   --->   "%p_60 = add i64 %zext_ln119_29, i64 %mul_ln119_14" [../montgomery_converter/include/mont_ops_fast.hpp:119]   --->   Operation 389 'add' 'p_60' <Predicate = (!icmp_ln80)> <Delay = 1.14> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.14> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 390 [1/1] (0.00ns)   --->   "%trunc_ln120_28 = trunc i64 %p_60" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 390 'trunc' 'trunc_ln120_28' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 391 [1/1] (0.00ns)   --->   "%tmp_16 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %p_60, i32 32, i32 63" [../montgomery_converter/include/mont_ops_fast.hpp:124]   --->   Operation 391 'partselect' 'tmp_16' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 392 [1/1] (0.00ns)   --->   "%zext_ln124_1 = zext i32 %tmp_16" [../montgomery_converter/include/mont_ops_fast.hpp:124]   --->   Operation 392 'zext' 'zext_ln124_1' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 393 [1/1] (0.00ns)   --->   "%zext_ln124 = zext i2 %s" [../montgomery_converter/include/mont_ops_fast.hpp:124]   --->   Operation 393 'zext' 'zext_ln124' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 394 [1/1] (0.88ns)   --->   "%s_4 = add i33 %zext_ln124_1, i33 %zext_ln124" [../montgomery_converter/include/mont_ops_fast.hpp:124]   --->   Operation 394 'add' 's_4' <Predicate = (!icmp_ln80)> <Delay = 0.88> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 395 [1/1] (0.00ns)   --->   "%trunc_ln125 = trunc i33 %s_4" [../montgomery_converter/include/mont_ops_fast.hpp:125]   --->   Operation 395 'trunc' 'trunc_ln125' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 396 [1/1] (0.00ns)   --->   "%tmp_34 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %s_4, i32 32" [../montgomery_converter/include/mont_ops_fast.hpp:127]   --->   Operation 396 'bitselect' 'tmp_34' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+ST_8 : Operation 397 [1/1] (0.38ns)   --->   "%store_ln125 = store i32 %trunc_ln125, i32 %conv7919" [../montgomery_converter/include/mont_ops_fast.hpp:125]   --->   Operation 397 'store' 'store_ln125' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_8 : Operation 398 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_28, i32 %conv67_1418" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 398 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_8 : Operation 399 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_27, i32 %conv67_1317" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 399 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_8 : Operation 400 [1/1] (0.38ns)   --->   "%store_ln120 = store i32 %trunc_ln120_26, i32 %conv67_1216" [../montgomery_converter/include/mont_ops_fast.hpp:120]   --->   Operation 400 'store' 'store_ln120' <Predicate = (!icmp_ln80)> <Delay = 0.38>
+ST_8 : Operation 401 [1/1] (0.00ns)   --->   "%br_ln80 = br void %PP_LOOP" [../montgomery_converter/include/mont_ops_fast.hpp:80]   --->   Operation 401 'br' 'br_ln80' <Predicate = (!icmp_ln80)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.481ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln80', ../montgomery_converter/include/mont_ops_fast.hpp:80) of constant 0 on local variable 'i', ../montgomery_converter/include/mont_ops_fast.hpp:80 [118]  (0.387 ns)
+	'load' operation 5 bit ('i', ../montgomery_converter/include/mont_ops_fast.hpp:80) on local variable 'i', ../montgomery_converter/include/mont_ops_fast.hpp:80 [138]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln80', ../montgomery_converter/include/mont_ops_fast.hpp:80) [139]  (0.707 ns)
+	'store' operation 0 bit ('store_ln80', ../montgomery_converter/include/mont_ops_fast.hpp:80) of variable 'add_ln80', ../montgomery_converter/include/mont_ops_fast.hpp:80 on local variable 'i', ../montgomery_converter/include/mont_ops_fast.hpp:80 [426]  (0.387 ns)
+
+ <State 2>: 5.177ns
+The critical path consists of the following:
+	'load' operation 1 bit ('b_load', ../montgomery_converter/include/mont_ops_fast.hpp:80) on array 'b' [164]  (0.639 ns)
+	'select' operation 32 bit ('select_ln92', ../montgomery_converter/include/mont_ops_fast.hpp:92) [166]  (0.278 ns)
+	'and' operation 32 bit ('and_ln92', ../montgomery_converter/include/mont_ops_fast.hpp:92) [167]  (0.210 ns)
+	'add' operation 32 bit ('add_ln92', ../montgomery_converter/include/mont_ops_fast.hpp:92) [169]  (0.880 ns)
+	'mul' operation 32 bit ('m', ../montgomery_converter/include/mont_ops_fast.hpp:109) [295]  (3.170 ns)
+
+ <State 3>: 7.224ns
+The critical path consists of the following:
+	'mul' operation 64 bit ('mul_ln112', ../montgomery_converter/include/mont_ops_fast.hpp:112) [298]  (3.170 ns)
+	'add' operation 64 bit ('p0', ../montgomery_converter/include/mont_ops_fast.hpp:112) [299]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119', ../montgomery_converter/include/mont_ops_fast.hpp:119) [304]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [306]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_2', ../montgomery_converter/include/mont_ops_fast.hpp:119) [312]  (0.880 ns)
+
+ <State 4>: 4.054ns
+The critical path consists of the following:
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [314]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_4', ../montgomery_converter/include/mont_ops_fast.hpp:119) [320]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [322]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_6', ../montgomery_converter/include/mont_ops_fast.hpp:119) [328]  (0.880 ns)
+
+ <State 5>: 7.224ns
+The critical path consists of the following:
+	'mul' operation 64 bit ('mul_ln119_3', ../montgomery_converter/include/mont_ops_fast.hpp:119) [327]  (3.170 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [330]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_8', ../montgomery_converter/include/mont_ops_fast.hpp:119) [336]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [338]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_10', ../montgomery_converter/include/mont_ops_fast.hpp:119) [344]  (0.880 ns)
+
+ <State 6>: 7.228ns
+The critical path consists of the following:
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [346]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_12', ../montgomery_converter/include/mont_ops_fast.hpp:119) [352]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [354]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_14', ../montgomery_converter/include/mont_ops_fast.hpp:119) [360]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [362]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_16', ../montgomery_converter/include/mont_ops_fast.hpp:119) [368]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [370]  (1.147 ns)
+
+ <State 7>: 6.961ns
+The critical path consists of the following:
+	'add' operation 33 bit ('add_ln119_18', ../montgomery_converter/include/mont_ops_fast.hpp:119) [376]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [378]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_20', ../montgomery_converter/include/mont_ops_fast.hpp:119) [384]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [386]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_22', ../montgomery_converter/include/mont_ops_fast.hpp:119) [392]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [394]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_24', ../montgomery_converter/include/mont_ops_fast.hpp:119) [400]  (0.880 ns)
+
+ <State 8>: 6.468ns
+The critical path consists of the following:
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [402]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_26', ../montgomery_converter/include/mont_ops_fast.hpp:119) [408]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [410]  (1.147 ns)
+	'add' operation 33 bit ('add_ln119_28', ../montgomery_converter/include/mont_ops_fast.hpp:119) [416]  (0.880 ns)
+	'add' operation 64 bit ('p', ../montgomery_converter/include/mont_ops_fast.hpp:119) [418]  (1.147 ns)
+	'add' operation 33 bit ('s', ../montgomery_converter/include/mont_ops_fast.hpp:124) [423]  (0.880 ns)
+	multiplexor before 'phi' operation 1 bit ('conv8520', ../montgomery_converter/include/mont_ops_fast.hpp:127) with incoming values : ('tmp_34', ../montgomery_converter/include/mont_ops_fast.hpp:127) [137]  (0.387 ns)
+	'phi' operation 1 bit ('conv8520', ../montgomery_converter/include/mont_ops_fast.hpp:127) with incoming values : ('tmp_34', ../montgomery_converter/include/mont_ops_fast.hpp:127) [137]  (0.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

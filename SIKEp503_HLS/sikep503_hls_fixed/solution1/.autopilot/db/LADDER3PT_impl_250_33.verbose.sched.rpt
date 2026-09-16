@@ -1,0 +1,863 @@
+
+
+================================================================
+== Vitis HLS Report for 'LADDER3PT_impl_250_33'
+================================================================
+* Date:           Thu Sep 10 17:46:49 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        sikep503_hls_fixed
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.293 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
+    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  1353857|  1353857|  13.539 ms|  13.539 ms|  1353857|  1353857|       no|
+    +---------+---------+-----------+-----------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_371_1  |  1353500|  1353500|      5414|          -|          -|   250|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 44
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 17 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.71>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%i_065 = alloca i32 1" [src/ec_isogeny.cpp:351]   --->   Operation 45 'alloca' 'i_065' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%t0 = alloca i64 1" [src/ec_isogeny.cpp:258->src/ec_isogeny.cpp:379]   --->   Operation 46 'alloca' 't0' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%t0_3 = alloca i64 1" [src/ec_isogeny.cpp:258->src/ec_isogeny.cpp:379]   --->   Operation 47 'alloca' 't0_3' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%t1 = alloca i64 1" [src/ec_isogeny.cpp:258->src/ec_isogeny.cpp:379]   --->   Operation 48 'alloca' 't1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%t1_3 = alloca i64 1" [src/ec_isogeny.cpp:258->src/ec_isogeny.cpp:379]   --->   Operation 49 'alloca' 't1_3' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%t2 = alloca i64 1" [src/ec_isogeny.cpp:258->src/ec_isogeny.cpp:379]   --->   Operation 50 'alloca' 't2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%t2_1 = alloca i64 1" [src/ec_isogeny.cpp:258->src/ec_isogeny.cpp:379]   --->   Operation 51 'alloca' 't2_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%R0_X = alloca i64 1" [src/ec_isogeny.cpp:348]   --->   Operation 52 'alloca' 'R0_X' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%R0_X_addr = getelementptr i64 %R0_X, i64 0, i64 0"   --->   Operation 53 'getelementptr' 'R0_X_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%R0_X_2 = alloca i64 1" [src/ec_isogeny.cpp:348]   --->   Operation 54 'alloca' 'R0_X_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%R0_X_2_addr = getelementptr i64 %R0_X_2, i64 0, i64 0"   --->   Operation 55 'getelementptr' 'R0_X_2_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%R0_Z = alloca i64 1" [src/ec_isogeny.cpp:348]   --->   Operation 56 'alloca' 'R0_Z' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%R0_Z_addr = getelementptr i64 %R0_Z, i64 0, i64 0"   --->   Operation 57 'getelementptr' 'R0_Z_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%R0_Z_2 = alloca i64 1" [src/ec_isogeny.cpp:348]   --->   Operation 58 'alloca' 'R0_Z_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%R0_Z_2_addr = getelementptr i64 %R0_Z_2, i64 0, i64 0"   --->   Operation 59 'getelementptr' 'R0_Z_2_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%R2_X = alloca i64 1" [src/ec_isogeny.cpp:348]   --->   Operation 60 'alloca' 'R2_X' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%R2_X_addr = getelementptr i64 %R2_X, i64 0, i64 0"   --->   Operation 61 'getelementptr' 'R2_X_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%R2_X_2 = alloca i64 1" [src/ec_isogeny.cpp:348]   --->   Operation 62 'alloca' 'R2_X_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%R2_X_2_addr = getelementptr i64 %R2_X_2, i64 0, i64 0"   --->   Operation 63 'getelementptr' 'R2_X_2_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%R2_Z = alloca i64 1" [src/ec_isogeny.cpp:348]   --->   Operation 64 'alloca' 'R2_Z' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%R2_Z_addr = getelementptr i64 %R2_Z, i64 0, i64 0"   --->   Operation 65 'getelementptr' 'R2_Z_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%R2_Z_2 = alloca i64 1" [src/ec_isogeny.cpp:348]   --->   Operation 66 'alloca' 'R2_Z_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%R2_Z_2_addr = getelementptr i64 %R2_Z_2, i64 0, i64 0"   --->   Operation 67 'getelementptr' 'R2_Z_2_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%A24 = alloca i64 1" [src/ec_isogeny.cpp:349]   --->   Operation 68 'alloca' 'A24' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4> <RAM>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%A24_1 = alloca i64 1" [src/ec_isogeny.cpp:349]   --->   Operation 69 'alloca' 'A24_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4> <RAM>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%A24_2 = alloca i64 1" [src/ec_isogeny.cpp:349]   --->   Operation 70 'alloca' 'A24_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4> <RAM>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%A24_3 = alloca i64 1" [src/ec_isogeny.cpp:349]   --->   Operation 71 'alloca' 'A24_3' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 4> <RAM>
+ST_1 : Operation 72 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_addr"   --->   Operation 72 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 73 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_2_addr"   --->   Operation 73 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 74 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_addr"   --->   Operation 74 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 75 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr"   --->   Operation 75 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 76 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_addr"   --->   Operation 76 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 77 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_2_addr"   --->   Operation 77 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 78 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_addr"   --->   Operation 78 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 79 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr"   --->   Operation 79 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_1 : Operation 80 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_1, i64 %A24_3, i64 %A24_2, i64 %A24_1, i64 %A24"   --->   Operation 80 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 81 [1/1] (0.38ns)   --->   "%store_ln351 = store i8 0, i8 %i_065" [src/ec_isogeny.cpp:351]   --->   Operation 81 'store' 'store_ln351' <Predicate = true> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 1.48>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%R0_X_addr_1 = getelementptr i64 %R0_X, i64 0, i64 1"   --->   Operation 82 'getelementptr' 'R0_X_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%R0_X_2_addr_1 = getelementptr i64 %R0_X_2, i64 0, i64 1"   --->   Operation 83 'getelementptr' 'R0_X_2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%R0_Z_addr_1 = getelementptr i64 %R0_Z, i64 0, i64 1"   --->   Operation 84 'getelementptr' 'R0_Z_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%R0_Z_2_addr_1 = getelementptr i64 %R0_Z_2, i64 0, i64 1"   --->   Operation 85 'getelementptr' 'R0_Z_2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%R2_X_addr_1 = getelementptr i64 %R2_X, i64 0, i64 1"   --->   Operation 86 'getelementptr' 'R2_X_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "%R2_X_2_addr_1 = getelementptr i64 %R2_X_2, i64 0, i64 1"   --->   Operation 87 'getelementptr' 'R2_X_2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "%R2_Z_addr_1 = getelementptr i64 %R2_Z, i64 0, i64 1"   --->   Operation 88 'getelementptr' 'R2_Z_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%R2_Z_2_addr_1 = getelementptr i64 %R2_Z_2, i64 0, i64 1"   --->   Operation 89 'getelementptr' 'R2_Z_2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_addr_1"   --->   Operation 90 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 91 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_2_addr_1"   --->   Operation 91 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 92 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_addr_1"   --->   Operation 92 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 93 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr_1"   --->   Operation 93 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 94 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_addr_1"   --->   Operation 94 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 95 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_2_addr_1"   --->   Operation 95 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 96 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_addr_1"   --->   Operation 96 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 97 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_1"   --->   Operation 97 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_2 : Operation 98 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_1, i64 %A24_3, i64 %A24_2, i64 %A24_1, i64 %A24"   --->   Operation 98 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.71>
+ST_3 : Operation 99 [1/1] (0.00ns)   --->   "%R0_X_addr_2 = getelementptr i64 %R0_X, i64 0, i64 2"   --->   Operation 99 'getelementptr' 'R0_X_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 100 [1/1] (0.00ns)   --->   "%R0_X_2_addr_2 = getelementptr i64 %R0_X_2, i64 0, i64 2"   --->   Operation 100 'getelementptr' 'R0_X_2_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 101 [1/1] (0.00ns)   --->   "%R0_Z_addr_2 = getelementptr i64 %R0_Z, i64 0, i64 2"   --->   Operation 101 'getelementptr' 'R0_Z_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 102 [1/1] (0.00ns)   --->   "%R0_Z_2_addr_2 = getelementptr i64 %R0_Z_2, i64 0, i64 2"   --->   Operation 102 'getelementptr' 'R0_Z_2_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%R2_X_addr_2 = getelementptr i64 %R2_X, i64 0, i64 2"   --->   Operation 103 'getelementptr' 'R2_X_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%R2_X_2_addr_2 = getelementptr i64 %R2_X_2, i64 0, i64 2"   --->   Operation 104 'getelementptr' 'R2_X_2_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 105 [1/1] (0.00ns)   --->   "%R2_Z_addr_2 = getelementptr i64 %R2_Z, i64 0, i64 2"   --->   Operation 105 'getelementptr' 'R2_Z_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 106 [1/1] (0.00ns)   --->   "%R2_Z_2_addr_2 = getelementptr i64 %R2_Z_2, i64 0, i64 2"   --->   Operation 106 'getelementptr' 'R2_Z_2_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 107 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_addr_2"   --->   Operation 107 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 108 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_2_addr_2"   --->   Operation 108 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 109 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_addr_2"   --->   Operation 109 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 110 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr_2"   --->   Operation 110 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 111 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_addr_2"   --->   Operation 111 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 112 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_2_addr_2"   --->   Operation 112 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 113 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_addr_2"   --->   Operation 113 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 114 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_2"   --->   Operation 114 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_3 : Operation 115 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1, i64 %A24_1, i64 %A24, i64 %Montgomery_one_1"   --->   Operation 115 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 116 [2/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503.2, i64 %A24_2, i64 %A24_3, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:355]   --->   Operation 116 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 1.48>
+ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%R0_X_addr_3 = getelementptr i64 %R0_X, i64 0, i64 3"   --->   Operation 117 'getelementptr' 'R0_X_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 118 [1/1] (0.00ns)   --->   "%R0_X_2_addr_3 = getelementptr i64 %R0_X_2, i64 0, i64 3"   --->   Operation 118 'getelementptr' 'R0_X_2_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%R0_Z_addr_3 = getelementptr i64 %R0_Z, i64 0, i64 3"   --->   Operation 119 'getelementptr' 'R0_Z_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 120 [1/1] (0.00ns)   --->   "%R0_Z_2_addr_3 = getelementptr i64 %R0_Z_2, i64 0, i64 3"   --->   Operation 120 'getelementptr' 'R0_Z_2_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 121 [1/1] (0.00ns)   --->   "%R2_X_addr_3 = getelementptr i64 %R2_X, i64 0, i64 3"   --->   Operation 121 'getelementptr' 'R2_X_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 122 [1/1] (0.00ns)   --->   "%R2_X_2_addr_3 = getelementptr i64 %R2_X_2, i64 0, i64 3"   --->   Operation 122 'getelementptr' 'R2_X_2_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 123 [1/1] (0.00ns)   --->   "%R2_Z_addr_3 = getelementptr i64 %R2_Z, i64 0, i64 3"   --->   Operation 123 'getelementptr' 'R2_Z_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 124 [1/1] (0.00ns)   --->   "%R2_Z_2_addr_3 = getelementptr i64 %R2_Z_2, i64 0, i64 3"   --->   Operation 124 'getelementptr' 'R2_Z_2_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 125 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_addr_3"   --->   Operation 125 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 126 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_2_addr_3"   --->   Operation 126 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 127 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_addr_3"   --->   Operation 127 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 128 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr_3"   --->   Operation 128 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 129 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_addr_3"   --->   Operation 129 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 130 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_2_addr_3"   --->   Operation 130 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 131 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_addr_3"   --->   Operation 131 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 132 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_3"   --->   Operation 132 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_4 : Operation 133 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1, i64 %A24_1, i64 %A24, i64 %Montgomery_one_1"   --->   Operation 133 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 134 [1/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503.2, i64 %A24_2, i64 %A24_3, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:355]   --->   Operation 134 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.71>
+ST_5 : Operation 135 [1/1] (0.00ns)   --->   "%R0_X_addr_4 = getelementptr i64 %R0_X, i64 0, i64 4"   --->   Operation 135 'getelementptr' 'R0_X_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 136 [1/1] (0.00ns)   --->   "%R0_X_2_addr_4 = getelementptr i64 %R0_X_2, i64 0, i64 4"   --->   Operation 136 'getelementptr' 'R0_X_2_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 137 [1/1] (0.00ns)   --->   "%R0_Z_addr_4 = getelementptr i64 %R0_Z, i64 0, i64 4"   --->   Operation 137 'getelementptr' 'R0_Z_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 138 [1/1] (0.00ns)   --->   "%R2_X_addr_4 = getelementptr i64 %R2_X, i64 0, i64 4"   --->   Operation 138 'getelementptr' 'R2_X_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 139 [1/1] (0.00ns)   --->   "%R2_X_2_addr_4 = getelementptr i64 %R2_X_2, i64 0, i64 4"   --->   Operation 139 'getelementptr' 'R2_X_2_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 140 [1/1] (0.00ns)   --->   "%R2_Z_addr_4 = getelementptr i64 %R2_Z, i64 0, i64 4"   --->   Operation 140 'getelementptr' 'R2_Z_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 141 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_addr_4"   --->   Operation 141 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_5 : Operation 142 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_2_addr_4"   --->   Operation 142 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_5 : Operation 143 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_addr_4"   --->   Operation 143 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_5 : Operation 144 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_addr_4"   --->   Operation 144 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_5 : Operation 145 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_2_addr_4"   --->   Operation 145 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_5 : Operation 146 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_addr_4"   --->   Operation 146 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+
+State 6 <SV = 5> <Delay = 0.71>
+ST_6 : Operation 147 [1/1] (0.00ns)   --->   "%R0_X_addr_5 = getelementptr i64 %R0_X, i64 0, i64 5"   --->   Operation 147 'getelementptr' 'R0_X_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 148 [1/1] (0.00ns)   --->   "%R0_X_2_addr_5 = getelementptr i64 %R0_X_2, i64 0, i64 5"   --->   Operation 148 'getelementptr' 'R0_X_2_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 149 [1/1] (0.00ns)   --->   "%R0_Z_addr_5 = getelementptr i64 %R0_Z, i64 0, i64 5"   --->   Operation 149 'getelementptr' 'R0_Z_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 150 [1/1] (0.00ns)   --->   "%R2_X_addr_5 = getelementptr i64 %R2_X, i64 0, i64 5"   --->   Operation 150 'getelementptr' 'R2_X_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 151 [1/1] (0.00ns)   --->   "%R2_X_2_addr_5 = getelementptr i64 %R2_X_2, i64 0, i64 5"   --->   Operation 151 'getelementptr' 'R2_X_2_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 152 [1/1] (0.00ns)   --->   "%R2_Z_addr_5 = getelementptr i64 %R2_Z, i64 0, i64 5"   --->   Operation 152 'getelementptr' 'R2_Z_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 153 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_addr_5"   --->   Operation 153 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_6 : Operation 154 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_2_addr_5"   --->   Operation 154 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_6 : Operation 155 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_addr_5"   --->   Operation 155 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_6 : Operation 156 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_addr_5"   --->   Operation 156 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_6 : Operation 157 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_2_addr_5"   --->   Operation 157 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_6 : Operation 158 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_addr_5"   --->   Operation 158 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+
+State 7 <SV = 6> <Delay = 0.71>
+ST_7 : Operation 159 [1/1] (0.00ns)   --->   "%R0_X_addr_6 = getelementptr i64 %R0_X, i64 0, i64 6"   --->   Operation 159 'getelementptr' 'R0_X_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 160 [1/1] (0.00ns)   --->   "%R0_X_2_addr_6 = getelementptr i64 %R0_X_2, i64 0, i64 6"   --->   Operation 160 'getelementptr' 'R0_X_2_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 161 [1/1] (0.00ns)   --->   "%R0_Z_addr_6 = getelementptr i64 %R0_Z, i64 0, i64 6"   --->   Operation 161 'getelementptr' 'R0_Z_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 162 [1/1] (0.00ns)   --->   "%R2_X_addr_6 = getelementptr i64 %R2_X, i64 0, i64 6"   --->   Operation 162 'getelementptr' 'R2_X_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 163 [1/1] (0.00ns)   --->   "%R2_X_2_addr_6 = getelementptr i64 %R2_X_2, i64 0, i64 6"   --->   Operation 163 'getelementptr' 'R2_X_2_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 164 [1/1] (0.00ns)   --->   "%R2_Z_addr_6 = getelementptr i64 %R2_Z, i64 0, i64 6"   --->   Operation 164 'getelementptr' 'R2_Z_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 165 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_addr_6"   --->   Operation 165 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_7 : Operation 166 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_2_addr_6"   --->   Operation 166 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_7 : Operation 167 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_addr_6"   --->   Operation 167 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_7 : Operation 168 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_addr_6"   --->   Operation 168 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_7 : Operation 169 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_2_addr_6"   --->   Operation 169 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_7 : Operation 170 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_addr_6"   --->   Operation 170 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+
+State 8 <SV = 7> <Delay = 0.71>
+ST_8 : Operation 171 [1/1] (0.00ns)   --->   "%R0_X_addr_7 = getelementptr i64 %R0_X, i64 0, i64 7"   --->   Operation 171 'getelementptr' 'R0_X_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 172 [1/1] (0.00ns)   --->   "%R0_X_2_addr_7 = getelementptr i64 %R0_X_2, i64 0, i64 7"   --->   Operation 172 'getelementptr' 'R0_X_2_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 173 [1/1] (0.00ns)   --->   "%R0_Z_addr_7 = getelementptr i64 %R0_Z, i64 0, i64 7"   --->   Operation 173 'getelementptr' 'R0_Z_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 174 [1/1] (0.00ns)   --->   "%R2_X_addr_7 = getelementptr i64 %R2_X, i64 0, i64 7"   --->   Operation 174 'getelementptr' 'R2_X_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 175 [1/1] (0.00ns)   --->   "%R2_X_2_addr_7 = getelementptr i64 %R2_X_2, i64 0, i64 7"   --->   Operation 175 'getelementptr' 'R2_X_2_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 176 [1/1] (0.00ns)   --->   "%R2_Z_addr_7 = getelementptr i64 %R2_Z, i64 0, i64 7"   --->   Operation 176 'getelementptr' 'R2_Z_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 177 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_addr_7"   --->   Operation 177 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 178 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_X_2_addr_7"   --->   Operation 178 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 179 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_addr_7"   --->   Operation 179 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 180 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_addr_7"   --->   Operation 180 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 181 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_X_2_addr_7"   --->   Operation 181 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_8 : Operation 182 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_addr_7"   --->   Operation 182 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 183 [2/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503.2, i64 %A24, i64 %A24_1, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:355]   --->   Operation 183 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 184 [2/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503.4, i64 %A_1, i64 %A24_2, i64 %A24_3, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:356]   --->   Operation 184 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 185 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1165, i64 %xPQ_0, i64 %R0_X"   --->   Operation 185 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 186 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1166, i64 %xPQ_1, i64 %R0_X_2"   --->   Operation 186 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_9 : Operation 187 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1167, i64 %R0_Z, i64 %Montgomery_one_1"   --->   Operation 187 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 10 <SV = 9> <Delay = 1.48>
+ST_10 : Operation 188 [1/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503.2, i64 %A24, i64 %A24_1, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:355]   --->   Operation 188 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 189 [1/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503.4, i64 %A_1, i64 %A24_2, i64 %A24_3, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:356]   --->   Operation 189 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 190 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1165, i64 %xPQ_0, i64 %R0_X"   --->   Operation 190 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 191 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1166, i64 %xPQ_1, i64 %R0_X_2"   --->   Operation 191 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_10 : Operation 192 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1167, i64 %R0_Z, i64 %Montgomery_one_1"   --->   Operation 192 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 193 [2/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503.4, i64 %A_0, i64 %A24, i64 %A24_1, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:356]   --->   Operation 193 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 194 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1168, i64 %xPQ_0, i64 %R2_X"   --->   Operation 194 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 195 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1169, i64 %xPQ_1, i64 %R2_X_2"   --->   Operation 195 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_11 : Operation 196 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1170, i64 %R2_Z, i64 %Montgomery_one_1"   --->   Operation 196 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 12 <SV = 11> <Delay = 1.48>
+ST_12 : Operation 197 [1/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503.4, i64 %A_0, i64 %A24, i64 %A24_1, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:356]   --->   Operation 197 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 198 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1168, i64 %xPQ_0, i64 %R2_X"   --->   Operation 198 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 199 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1169, i64 %xPQ_1, i64 %R2_X_2"   --->   Operation 199 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_12 : Operation 200 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1170, i64 %R2_Z, i64 %Montgomery_one_1"   --->   Operation 200 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 13 <SV = 12> <Delay = 0.71>
+ST_13 : Operation 201 [1/1] (0.00ns)   --->   "%R0_Z_2_addr_4 = getelementptr i64 %R0_Z_2, i64 0, i64 4"   --->   Operation 201 'getelementptr' 'R0_Z_2_addr_4' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 202 [1/1] (0.00ns)   --->   "%R2_Z_2_addr_4 = getelementptr i64 %R2_Z_2, i64 0, i64 4"   --->   Operation 202 'getelementptr' 'R2_Z_2_addr_4' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 203 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr_4"   --->   Operation 203 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_13 : Operation 204 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_4"   --->   Operation 204 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_13 : Operation 205 [2/2] (0.00ns)   --->   "%call_ln357 = call void @fp2div2_503, i64 %A24, i64 %A24_1, i64 %A24_2, i64 %A24_3, i64 %p503_1" [src/ec_isogeny.cpp:357]   --->   Operation 205 'call' 'call_ln357' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 206 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1171, i64 %xPQ_0, i64 %R_X"   --->   Operation 206 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_13 : Operation 207 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1173, i64 %R_Z, i64 %Montgomery_one_1"   --->   Operation 207 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 14 <SV = 13> <Delay = 1.48>
+ST_14 : Operation 208 [1/1] (0.00ns)   --->   "%R0_Z_2_addr_5 = getelementptr i64 %R0_Z_2, i64 0, i64 5"   --->   Operation 208 'getelementptr' 'R0_Z_2_addr_5' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 209 [1/1] (0.00ns)   --->   "%R2_Z_2_addr_5 = getelementptr i64 %R2_Z_2, i64 0, i64 5"   --->   Operation 209 'getelementptr' 'R2_Z_2_addr_5' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 210 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr_5"   --->   Operation 210 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_14 : Operation 211 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_5"   --->   Operation 211 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_14 : Operation 212 [1/2] (0.00ns)   --->   "%call_ln357 = call void @fp2div2_503, i64 %A24, i64 %A24_1, i64 %A24_2, i64 %A24_3, i64 %p503_1" [src/ec_isogeny.cpp:357]   --->   Operation 212 'call' 'call_ln357' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 213 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1171, i64 %xPQ_0, i64 %R_X"   --->   Operation 213 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_14 : Operation 214 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1173, i64 %R_Z, i64 %Montgomery_one_1"   --->   Operation 214 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 0.71>
+ST_15 : Operation 215 [1/1] (0.00ns)   --->   "%R0_Z_2_addr_6 = getelementptr i64 %R0_Z_2, i64 0, i64 6"   --->   Operation 215 'getelementptr' 'R0_Z_2_addr_6' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 216 [1/1] (0.00ns)   --->   "%R2_Z_2_addr_6 = getelementptr i64 %R2_Z_2, i64 0, i64 6"   --->   Operation 216 'getelementptr' 'R2_Z_2_addr_6' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 217 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr_6"   --->   Operation 217 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_15 : Operation 218 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_6"   --->   Operation 218 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_15 : Operation 219 [2/2] (0.00ns)   --->   "%call_ln358 = call void @fp2div2_503, i64 %A24, i64 %A24_1, i64 %A24_2, i64 %A24_3, i64 %p503_1" [src/ec_isogeny.cpp:358]   --->   Operation 219 'call' 'call_ln358' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 220 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1172, i64 %xPQ_1, i64 %R_X"   --->   Operation 220 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 221 [2/2] (0.00ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_21_1, i64 %R_Z"   --->   Operation 221 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 16 <SV = 15> <Delay = 1.48>
+ST_16 : Operation 222 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_X, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 222 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 223 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_Z, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 223 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 224 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 224 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 225 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 225 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 226 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %xPQ_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 226 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 227 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %xPQ_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 227 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 228 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %xPQ_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 228 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 229 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %xPQ_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 229 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 230 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %xPQ_0, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 230 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 231 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %xPQ_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 231 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 232 [1/1] (0.00ns)   --->   "%R0_Z_2_addr_7 = getelementptr i64 %R0_Z_2, i64 0, i64 7"   --->   Operation 232 'getelementptr' 'R0_Z_2_addr_7' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 233 [1/1] (0.00ns)   --->   "%R2_Z_2_addr_7 = getelementptr i64 %R2_Z_2, i64 0, i64 7"   --->   Operation 233 'getelementptr' 'R2_Z_2_addr_7' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 234 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R0_Z_2_addr_7"   --->   Operation 234 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_16 : Operation 235 [1/1] ( I:0.71ns O:0.71ns )   --->   "%store_ln0 = store i64 0, i3 %R2_Z_2_addr_7"   --->   Operation 235 'store' 'store_ln0' <Predicate = true> <Delay = 0.71> <CoreInst = "RAM_1P">   --->   Core 87 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 64> <Depth = 8> <RAM>
+ST_16 : Operation 236 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 236 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 237 [1/2] (0.00ns)   --->   "%call_ln358 = call void @fp2div2_503, i64 %A24, i64 %A24_1, i64 %A24_2, i64 %A24_3, i64 %p503_1" [src/ec_isogeny.cpp:358]   --->   Operation 237 'call' 'call_ln358' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 238 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1172, i64 %xPQ_1, i64 %R_X"   --->   Operation 238 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 239 [1/2] (1.48ns)   --->   "%call_ln0 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_21_1, i64 %R_Z"   --->   Operation 239 'call' 'call_ln0' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 240 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 240 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 241 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 241 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 242 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 242 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 243 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 243 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 244 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 244 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 245 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 245 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 246 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 246 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 247 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 247 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 248 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 248 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 249 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 249 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 250 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 250 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 251 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 251 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 252 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 252 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 253 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 253 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 254 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 254 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 255 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 255 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 256 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 256 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 257 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 257 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 258 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 258 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 259 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 259 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 260 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 260 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 261 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 261 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 262 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 262 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 263 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 263 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 264 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 264 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 265 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 265 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 266 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 266 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 267 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 267 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 268 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 268 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 269 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 269 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 270 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 270 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 271 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 271 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 272 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 272 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 273 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 273 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 274 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_3, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 274 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 275 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 275 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 276 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_3, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 276 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 277 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 277 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 278 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_3, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 278 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 279 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 279 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 280 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 280 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 281 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 281 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 282 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_3, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 282 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 283 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 283 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 284 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 284 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 285 [1/1] (0.00ns)   --->   "%specmemcore_ln379 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:379]   --->   Operation 285 'specmemcore' 'specmemcore_ln379' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 286 [1/1] (0.00ns)   --->   "%specmemcore_ln380 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:380]   --->   Operation 286 'specmemcore' 'specmemcore_ln380' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 287 [1/1] (0.00ns)   --->   "%specmemcore_ln380 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:380]   --->   Operation 287 'specmemcore' 'specmemcore_ln380' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 288 [1/1] (0.00ns)   --->   "%specmemcore_ln380 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:380]   --->   Operation 288 'specmemcore' 'specmemcore_ln380' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 289 [1/1] (0.00ns)   --->   "%specmemcore_ln380 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:380]   --->   Operation 289 'specmemcore' 'specmemcore_ln380' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 290 [1/1] (0.00ns)   --->   "%specmemcore_ln380 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:380]   --->   Operation 290 'specmemcore' 'specmemcore_ln380' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 291 [1/1] (0.00ns)   --->   "%specmemcore_ln380 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:380]   --->   Operation 291 'specmemcore' 'specmemcore_ln380' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 292 [1/1] (0.38ns)   --->   "%br_ln371 = br void %for.inc" [src/ec_isogeny.cpp:371]   --->   Operation 292 'br' 'br_ln371' <Predicate = true> <Delay = 0.38>
+
+State 17 <SV = 16> <Delay = 1.09>
+ST_17 : Operation 293 [1/1] (0.00ns)   --->   "%prevbit = phi i1 0, void %entry, i1 %bit, void %for.inc.split"   --->   Operation 293 'phi' 'prevbit' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 294 [1/1] (0.00ns)   --->   "%i = load i8 %i_065" [src/ec_isogeny.cpp:371]   --->   Operation 294 'load' 'i' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 295 [1/1] (0.70ns)   --->   "%icmp_ln371 = icmp_eq  i8 %i, i8 250" [src/ec_isogeny.cpp:371]   --->   Operation 295 'icmp' 'icmp_ln371' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 296 [1/1] (0.70ns)   --->   "%i_253 = add i8 %i, i8 1" [src/ec_isogeny.cpp:371]   --->   Operation 296 'add' 'i_253' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 297 [1/1] (0.00ns)   --->   "%br_ln371 = br i1 %icmp_ln371, void %for.inc.split, void %for.end" [src/ec_isogeny.cpp:371]   --->   Operation 297 'br' 'br_ln371' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 298 [1/1] (0.00ns)   --->   "%trunc_ln371 = trunc i8 %i" [src/ec_isogeny.cpp:371]   --->   Operation 298 'trunc' 'trunc_ln371' <Predicate = (!icmp_ln371)> <Delay = 0.00>
+ST_17 : Operation 299 [1/1] (0.00ns)   --->   "%tmp_174 = partselect i2 @_ssdm_op_PartSelect.i2.i8.i32.i32, i8 %i, i32 6, i32 7" [src/ec_isogeny.cpp:373]   --->   Operation 299 'partselect' 'tmp_174' <Predicate = (!icmp_ln371)> <Delay = 0.00>
+ST_17 : Operation 300 [1/1] (0.00ns)   --->   "%and_ln = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %tmp_174, i3 0" [src/ec_isogeny.cpp:373]   --->   Operation 300 'bitconcatenate' 'and_ln' <Predicate = (!icmp_ln371)> <Delay = 0.00>
+ST_17 : Operation 301 [1/1] (0.00ns)   --->   "%zext_ln373 = zext i5 %and_ln" [src/ec_isogeny.cpp:373]   --->   Operation 301 'zext' 'zext_ln373' <Predicate = (!icmp_ln371)> <Delay = 0.00>
+ST_17 : Operation 302 [1/1] (0.00ns)   --->   "%ephemeralsk_i_addr = getelementptr i8 %ephemeralsk_i, i64 0, i64 %zext_ln373" [src/ec_isogeny.cpp:373]   --->   Operation 302 'getelementptr' 'ephemeralsk_i_addr' <Predicate = (!icmp_ln371)> <Delay = 0.00>
+ST_17 : Operation 303 [2/2] (0.66ns)   --->   "%ephemeralsk_i_load = load i5 %ephemeralsk_i_addr" [src/ec_isogeny.cpp:373]   --->   Operation 303 'load' 'ephemeralsk_i_load' <Predicate = (!icmp_ln371)> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_17 : Operation 304 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %tmp_174, i3 1" [src/ec_isogeny.cpp:373]   --->   Operation 304 'bitconcatenate' 'or_ln' <Predicate = (!icmp_ln371)> <Delay = 0.00>
+ST_17 : Operation 305 [1/1] (0.00ns)   --->   "%zext_ln373_2 = zext i5 %or_ln" [src/ec_isogeny.cpp:373]   --->   Operation 305 'zext' 'zext_ln373_2' <Predicate = (!icmp_ln371)> <Delay = 0.00>
+ST_17 : Operation 306 [1/1] (0.00ns)   --->   "%ephemeralsk_i_addr_1 = getelementptr i8 %ephemeralsk_i, i64 0, i64 %zext_ln373_2" [src/ec_isogeny.cpp:373]   --->   Operation 306 'getelementptr' 'ephemeralsk_i_addr_1' <Predicate = (!icmp_ln371)> <Delay = 0.00>
+ST_17 : Operation 307 [2/2] (0.66ns)   --->   "%ephemeralsk_i_load_1 = load i5 %ephemeralsk_i_addr_1" [src/ec_isogeny.cpp:373]   --->   Operation 307 'load' 'ephemeralsk_i_load_1' <Predicate = (!icmp_ln371)> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_17 : Operation 308 [1/1] (0.38ns)   --->   "%store_ln351 = store i8 %i_253, i8 %i_065" [src/ec_isogeny.cpp:351]   --->   Operation 308 'store' 'store_ln351' <Predicate = (!icmp_ln371)> <Delay = 0.38>
+ST_17 : Operation 309 [1/1] (0.00ns)   --->   "%ret_ln382 = ret" [src/ec_isogeny.cpp:382]   --->   Operation 309 'ret' 'ret_ln382' <Predicate = (icmp_ln371)> <Delay = 0.00>
+
+State 18 <SV = 17> <Delay = 0.66>
+ST_18 : Operation 310 [1/2] ( I:0.66ns O:0.66ns )   --->   "%ephemeralsk_i_load = load i5 %ephemeralsk_i_addr" [src/ec_isogeny.cpp:373]   --->   Operation 310 'load' 'ephemeralsk_i_load' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_18 : Operation 311 [1/2] ( I:0.66ns O:0.66ns )   --->   "%ephemeralsk_i_load_1 = load i5 %ephemeralsk_i_addr_1" [src/ec_isogeny.cpp:373]   --->   Operation 311 'load' 'ephemeralsk_i_load_1' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_18 : Operation 312 [1/1] (0.00ns)   --->   "%or_ln373_1 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %tmp_174, i3 2" [src/ec_isogeny.cpp:373]   --->   Operation 312 'bitconcatenate' 'or_ln373_1' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 313 [1/1] (0.00ns)   --->   "%zext_ln373_3 = zext i5 %or_ln373_1" [src/ec_isogeny.cpp:373]   --->   Operation 313 'zext' 'zext_ln373_3' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 314 [1/1] (0.00ns)   --->   "%ephemeralsk_i_addr_2 = getelementptr i8 %ephemeralsk_i, i64 0, i64 %zext_ln373_3" [src/ec_isogeny.cpp:373]   --->   Operation 314 'getelementptr' 'ephemeralsk_i_addr_2' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 315 [2/2] (0.66ns)   --->   "%ephemeralsk_i_load_2 = load i5 %ephemeralsk_i_addr_2" [src/ec_isogeny.cpp:373]   --->   Operation 315 'load' 'ephemeralsk_i_load_2' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_18 : Operation 316 [1/1] (0.00ns)   --->   "%or_ln373_2 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %tmp_174, i3 3" [src/ec_isogeny.cpp:373]   --->   Operation 316 'bitconcatenate' 'or_ln373_2' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 317 [1/1] (0.00ns)   --->   "%zext_ln373_4 = zext i5 %or_ln373_2" [src/ec_isogeny.cpp:373]   --->   Operation 317 'zext' 'zext_ln373_4' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 318 [1/1] (0.00ns)   --->   "%ephemeralsk_i_addr_3 = getelementptr i8 %ephemeralsk_i, i64 0, i64 %zext_ln373_4" [src/ec_isogeny.cpp:373]   --->   Operation 318 'getelementptr' 'ephemeralsk_i_addr_3' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 319 [2/2] (0.66ns)   --->   "%ephemeralsk_i_load_3 = load i5 %ephemeralsk_i_addr_3" [src/ec_isogeny.cpp:373]   --->   Operation 319 'load' 'ephemeralsk_i_load_3' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+
+State 19 <SV = 18> <Delay = 0.66>
+ST_19 : Operation 320 [1/2] ( I:0.66ns O:0.66ns )   --->   "%ephemeralsk_i_load_2 = load i5 %ephemeralsk_i_addr_2" [src/ec_isogeny.cpp:373]   --->   Operation 320 'load' 'ephemeralsk_i_load_2' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_19 : Operation 321 [1/2] ( I:0.66ns O:0.66ns )   --->   "%ephemeralsk_i_load_3 = load i5 %ephemeralsk_i_addr_3" [src/ec_isogeny.cpp:373]   --->   Operation 321 'load' 'ephemeralsk_i_load_3' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_19 : Operation 322 [1/1] (0.00ns)   --->   "%or_ln373_3 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %tmp_174, i3 4" [src/ec_isogeny.cpp:373]   --->   Operation 322 'bitconcatenate' 'or_ln373_3' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 323 [1/1] (0.00ns)   --->   "%zext_ln373_5 = zext i5 %or_ln373_3" [src/ec_isogeny.cpp:373]   --->   Operation 323 'zext' 'zext_ln373_5' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 324 [1/1] (0.00ns)   --->   "%ephemeralsk_i_addr_4 = getelementptr i8 %ephemeralsk_i, i64 0, i64 %zext_ln373_5" [src/ec_isogeny.cpp:373]   --->   Operation 324 'getelementptr' 'ephemeralsk_i_addr_4' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 325 [2/2] (0.66ns)   --->   "%ephemeralsk_i_load_4 = load i5 %ephemeralsk_i_addr_4" [src/ec_isogeny.cpp:373]   --->   Operation 325 'load' 'ephemeralsk_i_load_4' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_19 : Operation 326 [1/1] (0.00ns)   --->   "%or_ln373_4 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %tmp_174, i3 5" [src/ec_isogeny.cpp:373]   --->   Operation 326 'bitconcatenate' 'or_ln373_4' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 327 [1/1] (0.00ns)   --->   "%zext_ln373_6 = zext i5 %or_ln373_4" [src/ec_isogeny.cpp:373]   --->   Operation 327 'zext' 'zext_ln373_6' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 328 [1/1] (0.00ns)   --->   "%ephemeralsk_i_addr_5 = getelementptr i8 %ephemeralsk_i, i64 0, i64 %zext_ln373_6" [src/ec_isogeny.cpp:373]   --->   Operation 328 'getelementptr' 'ephemeralsk_i_addr_5' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 329 [2/2] (0.66ns)   --->   "%ephemeralsk_i_load_5 = load i5 %ephemeralsk_i_addr_5" [src/ec_isogeny.cpp:373]   --->   Operation 329 'load' 'ephemeralsk_i_load_5' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+
+State 20 <SV = 19> <Delay = 0.66>
+ST_20 : Operation 330 [1/2] ( I:0.66ns O:0.66ns )   --->   "%ephemeralsk_i_load_4 = load i5 %ephemeralsk_i_addr_4" [src/ec_isogeny.cpp:373]   --->   Operation 330 'load' 'ephemeralsk_i_load_4' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_20 : Operation 331 [1/2] ( I:0.66ns O:0.66ns )   --->   "%ephemeralsk_i_load_5 = load i5 %ephemeralsk_i_addr_5" [src/ec_isogeny.cpp:373]   --->   Operation 331 'load' 'ephemeralsk_i_load_5' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_20 : Operation 332 [1/1] (0.00ns)   --->   "%or_ln373_5 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %tmp_174, i3 6" [src/ec_isogeny.cpp:373]   --->   Operation 332 'bitconcatenate' 'or_ln373_5' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 333 [1/1] (0.00ns)   --->   "%zext_ln373_7 = zext i5 %or_ln373_5" [src/ec_isogeny.cpp:373]   --->   Operation 333 'zext' 'zext_ln373_7' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 334 [1/1] (0.00ns)   --->   "%ephemeralsk_i_addr_6 = getelementptr i8 %ephemeralsk_i, i64 0, i64 %zext_ln373_7" [src/ec_isogeny.cpp:373]   --->   Operation 334 'getelementptr' 'ephemeralsk_i_addr_6' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 335 [2/2] (0.66ns)   --->   "%ephemeralsk_i_load_6 = load i5 %ephemeralsk_i_addr_6" [src/ec_isogeny.cpp:373]   --->   Operation 335 'load' 'ephemeralsk_i_load_6' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_20 : Operation 336 [1/1] (0.00ns)   --->   "%or_ln373_6 = bitconcatenate i5 @_ssdm_op_BitConcatenate.i5.i2.i3, i2 %tmp_174, i3 7" [src/ec_isogeny.cpp:373]   --->   Operation 336 'bitconcatenate' 'or_ln373_6' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 337 [1/1] (0.00ns)   --->   "%zext_ln373_8 = zext i5 %or_ln373_6" [src/ec_isogeny.cpp:373]   --->   Operation 337 'zext' 'zext_ln373_8' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 338 [1/1] (0.00ns)   --->   "%ephemeralsk_i_addr_7 = getelementptr i8 %ephemeralsk_i, i64 0, i64 %zext_ln373_8" [src/ec_isogeny.cpp:373]   --->   Operation 338 'getelementptr' 'ephemeralsk_i_addr_7' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 339 [2/2] (0.66ns)   --->   "%ephemeralsk_i_load_7 = load i5 %ephemeralsk_i_addr_7" [src/ec_isogeny.cpp:373]   --->   Operation 339 'load' 'ephemeralsk_i_load_7' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+
+State 21 <SV = 20> <Delay = 2.16>
+ST_21 : Operation 340 [1/2] ( I:0.66ns O:0.66ns )   --->   "%ephemeralsk_i_load_6 = load i5 %ephemeralsk_i_addr_6" [src/ec_isogeny.cpp:373]   --->   Operation 340 'load' 'ephemeralsk_i_load_6' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_21 : Operation 341 [1/2] ( I:0.66ns O:0.66ns )   --->   "%ephemeralsk_i_load_7 = load i5 %ephemeralsk_i_addr_7" [src/ec_isogeny.cpp:373]   --->   Operation 341 'load' 'ephemeralsk_i_load_7' <Predicate = true> <Delay = 0.66> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.66> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 32> <RAM>
+ST_21 : Operation 342 [1/1] (0.00ns)   --->   "%or_ln373_s = bitconcatenate i64 @_ssdm_op_BitConcatenate.i64.i8.i8.i8.i8.i8.i8.i8.i8, i8 %ephemeralsk_i_load_7, i8 %ephemeralsk_i_load_6, i8 %ephemeralsk_i_load_5, i8 %ephemeralsk_i_load_4, i8 %ephemeralsk_i_load_3, i8 %ephemeralsk_i_load_2, i8 %ephemeralsk_i_load_1, i8 %ephemeralsk_i_load" [src/ec_isogeny.cpp:373]   --->   Operation 342 'bitconcatenate' 'or_ln373_s' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 343 [1/1] (0.00ns)   --->   "%zext_ln373_1 = zext i6 %trunc_ln371" [src/ec_isogeny.cpp:373]   --->   Operation 343 'zext' 'zext_ln373_1' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 344 [1/1] (1.09ns)   --->   "%lshr_ln373 = lshr i64 %or_ln373_s, i64 %zext_ln373_1" [src/ec_isogeny.cpp:373]   --->   Operation 344 'lshr' 'lshr_ln373' <Predicate = true> <Delay = 1.09> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.09> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 345 [1/1] (0.00ns)   --->   "%bit = trunc i64 %lshr_ln373" [src/ec_isogeny.cpp:373]   --->   Operation 345 'trunc' 'bit' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 346 [1/1] (0.12ns)   --->   "%swap = xor i1 %bit, i1 %prevbit" [src/ec_isogeny.cpp:374]   --->   Operation 346 'xor' 'swap' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 347 [2/2] (0.27ns)   --->   "%call_ln374 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_287_1, i64 %R2_X, i64 %R2_X_2, i64 %R2_Z, i64 %R2_Z_2, i64 %R_X, i1 %swap, i64 %R_Z" [src/ec_isogeny.cpp:374]   --->   Operation 347 'call' 'call_ln374' <Predicate = true> <Delay = 0.27> <CoreType = "Generic">   --->   Generic Core
+ST_21 : Operation 348 [2/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503.1, i64 %R0_X, i64 %R0_Z, i64 %t0, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:260->src/ec_isogeny.cpp:379]   --->   Operation 348 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_21 : Operation 349 [2/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503.1, i64 %R0_X_2, i64 %R0_Z_2, i64 %t0_3, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:260->src/ec_isogeny.cpp:379]   --->   Operation 349 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 22 <SV = 21> <Delay = 1.48>
+ST_22 : Operation 350 [1/2] (1.48ns)   --->   "%call_ln374 = call void @LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_287_1, i64 %R2_X, i64 %R2_X_2, i64 %R2_Z, i64 %R2_Z_2, i64 %R_X, i1 %swap, i64 %R_Z" [src/ec_isogeny.cpp:374]   --->   Operation 350 'call' 'call_ln374' <Predicate = true> <Delay = 1.48> <CoreType = "Generic">   --->   Generic Core
+ST_22 : Operation 351 [1/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503.1, i64 %R0_X, i64 %R0_Z, i64 %t0, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:260->src/ec_isogeny.cpp:379]   --->   Operation 351 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_22 : Operation 352 [1/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503.1, i64 %R0_X_2, i64 %R0_Z_2, i64 %t0_3, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:260->src/ec_isogeny.cpp:379]   --->   Operation 352 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 23 <SV = 22> <Delay = 0.00>
+ST_23 : Operation 353 [2/2] (0.00ns)   --->   "%call_ln127 = call void @fpsub503.2, i64 %R0_X, i64 %R0_Z, i64 %t1, i64 %p503x2_1" [src/fpx.cpp:127->src/ec_isogeny.cpp:261->src/ec_isogeny.cpp:379]   --->   Operation 353 'call' 'call_ln127' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_23 : Operation 354 [2/2] (0.00ns)   --->   "%call_ln128 = call void @fpsub503.2, i64 %R0_X_2, i64 %R0_Z_2, i64 %t1_3, i64 %p503x2_1" [src/fpx.cpp:128->src/ec_isogeny.cpp:261->src/ec_isogeny.cpp:379]   --->   Operation 354 'call' 'call_ln128' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 24 <SV = 23> <Delay = 0.00>
+ST_24 : Operation 355 [1/2] (0.00ns)   --->   "%call_ln127 = call void @fpsub503.2, i64 %R0_X, i64 %R0_Z, i64 %t1, i64 %p503x2_1" [src/fpx.cpp:127->src/ec_isogeny.cpp:261->src/ec_isogeny.cpp:379]   --->   Operation 355 'call' 'call_ln127' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_24 : Operation 356 [1/2] (0.00ns)   --->   "%call_ln128 = call void @fpsub503.2, i64 %R0_X_2, i64 %R0_Z_2, i64 %t1_3, i64 %p503x2_1" [src/fpx.cpp:128->src/ec_isogeny.cpp:261->src/ec_isogeny.cpp:379]   --->   Operation 356 'call' 'call_ln128' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 25 <SV = 24> <Delay = 0.00>
+ST_25 : Operation 357 [2/2] (0.00ns)   --->   "%call_ln262 = call void @fp2sqr503_mont.1, i64 %t0, i64 %t0_3, i64 %R0_X, i64 %R0_X_2, i64 %p503x2_1" [src/ec_isogeny.cpp:262->src/ec_isogeny.cpp:379]   --->   Operation 357 'call' 'call_ln262' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_25 : Operation 358 [2/2] (0.00ns)   --->   "%call_ln127 = call void @fpsub503.2, i64 %R2_X, i64 %R2_Z, i64 %t2, i64 %p503x2_1" [src/fpx.cpp:127->src/ec_isogeny.cpp:263->src/ec_isogeny.cpp:379]   --->   Operation 358 'call' 'call_ln127' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_25 : Operation 359 [2/2] (0.00ns)   --->   "%call_ln128 = call void @fpsub503.2, i64 %R2_X_2, i64 %R2_Z_2, i64 %t2_1, i64 %p503x2_1" [src/fpx.cpp:128->src/ec_isogeny.cpp:263->src/ec_isogeny.cpp:379]   --->   Operation 359 'call' 'call_ln128' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 26 <SV = 25> <Delay = 0.00>
+ST_26 : Operation 360 [1/2] (0.00ns)   --->   "%call_ln262 = call void @fp2sqr503_mont.1, i64 %t0, i64 %t0_3, i64 %R0_X, i64 %R0_X_2, i64 %p503x2_1" [src/ec_isogeny.cpp:262->src/ec_isogeny.cpp:379]   --->   Operation 360 'call' 'call_ln262' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_26 : Operation 361 [1/2] (0.00ns)   --->   "%call_ln127 = call void @fpsub503.2, i64 %R2_X, i64 %R2_Z, i64 %t2, i64 %p503x2_1" [src/fpx.cpp:127->src/ec_isogeny.cpp:263->src/ec_isogeny.cpp:379]   --->   Operation 361 'call' 'call_ln127' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_26 : Operation 362 [1/2] (0.00ns)   --->   "%call_ln128 = call void @fpsub503.2, i64 %R2_X_2, i64 %R2_Z_2, i64 %t2_1, i64 %p503x2_1" [src/fpx.cpp:128->src/ec_isogeny.cpp:263->src/ec_isogeny.cpp:379]   --->   Operation 362 'call' 'call_ln128' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 27 <SV = 26> <Delay = 0.00>
+ST_27 : Operation 363 [2/2] (0.00ns)   --->   "%call_ln139 = call void @fpcorrection503, i64 %t2, i64 %p503_1" [src/fpx.cpp:139->src/ec_isogeny.cpp:264->src/ec_isogeny.cpp:379]   --->   Operation 363 'call' 'call_ln139' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_27 : Operation 364 [2/2] (0.00ns)   --->   "%call_ln140 = call void @fpcorrection503, i64 %t2_1, i64 %p503_1" [src/fpx.cpp:140->src/ec_isogeny.cpp:264->src/ec_isogeny.cpp:379]   --->   Operation 364 'call' 'call_ln140' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_27 : Operation 365 [2/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503.245.1, i64 %R2_X, i64 %R2_Z, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:265->src/ec_isogeny.cpp:379]   --->   Operation 365 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_27 : Operation 366 [2/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503.245.1, i64 %R2_X_2, i64 %R2_Z_2, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:265->src/ec_isogeny.cpp:379]   --->   Operation 366 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_27 : Operation 367 [2/2] (0.00ns)   --->   "%call_ln267 = call void @fp2sqr503_mont.1, i64 %t1, i64 %t1_3, i64 %R0_Z, i64 %R0_Z_2, i64 %p503x2_1" [src/ec_isogeny.cpp:267->src/ec_isogeny.cpp:379]   --->   Operation 367 'call' 'call_ln267' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 28 <SV = 27> <Delay = 0.00>
+ST_28 : Operation 368 [1/2] (0.00ns)   --->   "%call_ln139 = call void @fpcorrection503, i64 %t2, i64 %p503_1" [src/fpx.cpp:139->src/ec_isogeny.cpp:264->src/ec_isogeny.cpp:379]   --->   Operation 368 'call' 'call_ln139' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_28 : Operation 369 [1/2] (0.00ns)   --->   "%call_ln140 = call void @fpcorrection503, i64 %t2_1, i64 %p503_1" [src/fpx.cpp:140->src/ec_isogeny.cpp:264->src/ec_isogeny.cpp:379]   --->   Operation 369 'call' 'call_ln140' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_28 : Operation 370 [1/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503.245.1, i64 %R2_X, i64 %R2_Z, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:265->src/ec_isogeny.cpp:379]   --->   Operation 370 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_28 : Operation 371 [1/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503.245.1, i64 %R2_X_2, i64 %R2_Z_2, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:265->src/ec_isogeny.cpp:379]   --->   Operation 371 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_28 : Operation 372 [1/2] (0.00ns)   --->   "%call_ln267 = call void @fp2sqr503_mont.1, i64 %t1, i64 %t1_3, i64 %R0_Z, i64 %R0_Z_2, i64 %p503x2_1" [src/ec_isogeny.cpp:267->src/ec_isogeny.cpp:379]   --->   Operation 372 'call' 'call_ln267' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 29 <SV = 28> <Delay = 0.00>
+ST_29 : Operation 373 [2/2] (0.00ns)   --->   "%call_ln266 = call void @fp2mul503_mont.623.2, i64 %t0, i64 %t0_3, i64 %t2, i64 %t2_1, i64 %p503_1" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 373 'call' 'call_ln266' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_29 : Operation 374 [2/2] (0.00ns)   --->   "%call_ln268 = call void @fp2mul503_mont.622, i64 %t1, i64 %t1_3, i64 %R2_X, i64 %R2_X_2, i64 %p503_1" [src/ec_isogeny.cpp:268->src/ec_isogeny.cpp:379]   --->   Operation 374 'call' 'call_ln268' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 30 <SV = 29> <Delay = 0.00>
+ST_30 : Operation 375 [1/2] (0.00ns)   --->   "%call_ln266 = call void @fp2mul503_mont.623.2, i64 %t0, i64 %t0_3, i64 %t2, i64 %t2_1, i64 %p503_1" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 375 'call' 'call_ln266' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_30 : Operation 376 [1/2] (0.00ns)   --->   "%call_ln268 = call void @fp2mul503_mont.622, i64 %t1, i64 %t1_3, i64 %R2_X, i64 %R2_X_2, i64 %p503_1" [src/ec_isogeny.cpp:268->src/ec_isogeny.cpp:379]   --->   Operation 376 'call' 'call_ln268' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 31 <SV = 30> <Delay = 0.00>
+ST_31 : Operation 377 [2/2] (0.00ns)   --->   "%call_ln127 = call void @fpsub503.2, i64 %R0_X, i64 %R0_Z, i64 %t2, i64 %p503x2_1" [src/fpx.cpp:127->src/ec_isogeny.cpp:269->src/ec_isogeny.cpp:379]   --->   Operation 377 'call' 'call_ln127' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_31 : Operation 378 [2/2] (0.00ns)   --->   "%call_ln128 = call void @fpsub503.2, i64 %R0_X_2, i64 %R0_Z_2, i64 %t2_1, i64 %p503x2_1" [src/fpx.cpp:128->src/ec_isogeny.cpp:269->src/ec_isogeny.cpp:379]   --->   Operation 378 'call' 'call_ln128' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_31 : Operation 379 [2/2] (0.00ns)   --->   "%call_ln127 = call void @fpsub503.3, i64 %t0, i64 %t1, i64 %R2_Z, i64 %p503x2_1" [src/fpx.cpp:127->src/ec_isogeny.cpp:272->src/ec_isogeny.cpp:379]   --->   Operation 379 'call' 'call_ln127' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_31 : Operation 380 [2/2] (0.00ns)   --->   "%call_ln128 = call void @fpsub503.3, i64 %t0_3, i64 %t1_3, i64 %R2_Z_2, i64 %p503x2_1" [src/fpx.cpp:128->src/ec_isogeny.cpp:272->src/ec_isogeny.cpp:379]   --->   Operation 380 'call' 'call_ln128' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 32 <SV = 31> <Delay = 0.00>
+ST_32 : Operation 381 [1/2] (0.00ns)   --->   "%call_ln127 = call void @fpsub503.2, i64 %R0_X, i64 %R0_Z, i64 %t2, i64 %p503x2_1" [src/fpx.cpp:127->src/ec_isogeny.cpp:269->src/ec_isogeny.cpp:379]   --->   Operation 381 'call' 'call_ln127' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_32 : Operation 382 [1/2] (0.00ns)   --->   "%call_ln128 = call void @fpsub503.2, i64 %R0_X_2, i64 %R0_Z_2, i64 %t2_1, i64 %p503x2_1" [src/fpx.cpp:128->src/ec_isogeny.cpp:269->src/ec_isogeny.cpp:379]   --->   Operation 382 'call' 'call_ln128' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_32 : Operation 383 [1/2] (0.00ns)   --->   "%call_ln127 = call void @fpsub503.3, i64 %t0, i64 %t1, i64 %R2_Z, i64 %p503x2_1" [src/fpx.cpp:127->src/ec_isogeny.cpp:272->src/ec_isogeny.cpp:379]   --->   Operation 383 'call' 'call_ln127' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_32 : Operation 384 [1/2] (0.00ns)   --->   "%call_ln128 = call void @fpsub503.3, i64 %t0_3, i64 %t1_3, i64 %R2_Z_2, i64 %p503x2_1" [src/fpx.cpp:128->src/ec_isogeny.cpp:272->src/ec_isogeny.cpp:379]   --->   Operation 384 'call' 'call_ln128' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 33 <SV = 32> <Delay = 0.00>
+ST_33 : Operation 385 [2/2] (0.00ns)   --->   "%call_ln270 = call void @fp2mul503_mont, i64 %R0_X, i64 %R0_X_2, i64 %R0_Z, i64 %R0_Z_2, i64 %p503_1" [src/ec_isogeny.cpp:270->src/ec_isogeny.cpp:379]   --->   Operation 385 'call' 'call_ln270' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_33 : Operation 386 [2/2] (0.00ns)   --->   "%call_ln271 = call void @fp2mul503_mont.6, i64 %t2, i64 %t2_1, i64 %A24, i64 %A24_1, i64 %A24_2, i64 %A24_3, i64 %R2_X, i64 %R2_X_2, i64 %p503_1" [src/ec_isogeny.cpp:271->src/ec_isogeny.cpp:379]   --->   Operation 386 'call' 'call_ln271' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_33 : Operation 387 [2/2] (0.00ns)   --->   "%call_ln276 = call void @fp2sqr503_mont, i64 %R2_Z, i64 %R2_Z_2, i64 %p503x2_1" [src/ec_isogeny.cpp:276->src/ec_isogeny.cpp:379]   --->   Operation 387 'call' 'call_ln276' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 34 <SV = 33> <Delay = 0.00>
+ST_34 : Operation 388 [1/2] (0.00ns)   --->   "%call_ln270 = call void @fp2mul503_mont, i64 %R0_X, i64 %R0_X_2, i64 %R0_Z, i64 %R0_Z_2, i64 %p503_1" [src/ec_isogeny.cpp:270->src/ec_isogeny.cpp:379]   --->   Operation 388 'call' 'call_ln270' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_34 : Operation 389 [1/2] (0.00ns)   --->   "%call_ln271 = call void @fp2mul503_mont.6, i64 %t2, i64 %t2_1, i64 %A24, i64 %A24_1, i64 %A24_2, i64 %A24_3, i64 %R2_X, i64 %R2_X_2, i64 %p503_1" [src/ec_isogeny.cpp:271->src/ec_isogeny.cpp:379]   --->   Operation 389 'call' 'call_ln271' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_34 : Operation 390 [1/2] (0.00ns)   --->   "%call_ln276 = call void @fp2sqr503_mont, i64 %R2_Z, i64 %R2_Z_2, i64 %p503x2_1" [src/ec_isogeny.cpp:276->src/ec_isogeny.cpp:379]   --->   Operation 390 'call' 'call_ln276' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 35 <SV = 34> <Delay = 0.00>
+ST_35 : Operation 391 [2/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503.245, i64 %R2_X, i64 %R0_Z, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:273->src/ec_isogeny.cpp:379]   --->   Operation 391 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_35 : Operation 392 [2/2] (0.00ns)   --->   "%call_ln278 = call void @fp2mul503_mont.38, i64 %R2_Z, i64 %R2_Z_2, i64 %R_X, i64 %p503_1" [src/ec_isogeny.cpp:278->src/ec_isogeny.cpp:379]   --->   Operation 392 'call' 'call_ln278' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 36 <SV = 35> <Delay = 0.00>
+ST_36 : Operation 393 [1/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503.245, i64 %R2_X, i64 %R0_Z, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:273->src/ec_isogeny.cpp:379]   --->   Operation 393 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_36 : Operation 394 [1/2] (0.00ns)   --->   "%call_ln278 = call void @fp2mul503_mont.38, i64 %R2_Z, i64 %R2_Z_2, i64 %R_X, i64 %p503_1" [src/ec_isogeny.cpp:278->src/ec_isogeny.cpp:379]   --->   Operation 394 'call' 'call_ln278' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 37 <SV = 36> <Delay = 0.00>
+ST_37 : Operation 395 [2/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503.245, i64 %R2_X_2, i64 %R0_Z_2, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:273->src/ec_isogeny.cpp:379]   --->   Operation 395 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_37 : Operation 396 [2/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503, i64 %t0, i64 %t1, i64 %R2_X, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:274->src/ec_isogeny.cpp:379]   --->   Operation 396 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 38 <SV = 37> <Delay = 0.00>
+ST_38 : Operation 397 [1/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503.245, i64 %R2_X_2, i64 %R0_Z_2, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:273->src/ec_isogeny.cpp:379]   --->   Operation 397 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_38 : Operation 398 [1/2] (0.00ns)   --->   "%call_ln121 = call void @fpadd503, i64 %t0, i64 %t1, i64 %R2_X, i64 %p503x2_1" [src/fpx.cpp:121->src/ec_isogeny.cpp:274->src/ec_isogeny.cpp:379]   --->   Operation 398 'call' 'call_ln121' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 39 <SV = 38> <Delay = 0.00>
+ST_39 : Operation 399 [2/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503, i64 %t0_3, i64 %t1_3, i64 %R2_X_2, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:274->src/ec_isogeny.cpp:379]   --->   Operation 399 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_39 : Operation 400 [2/2] (0.00ns)   --->   "%call_ln275 = call void @fp2mul503_mont.5, i64 %R0_Z, i64 %R0_Z_2, i64 %t2, i64 %t2_1, i64 %p503_1" [src/ec_isogeny.cpp:275->src/ec_isogeny.cpp:379]   --->   Operation 400 'call' 'call_ln275' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 40 <SV = 39> <Delay = 0.00>
+ST_40 : Operation 401 [1/2] (0.00ns)   --->   "%call_ln122 = call void @fpadd503, i64 %t0_3, i64 %t1_3, i64 %R2_X_2, i64 %p503x2_1" [src/fpx.cpp:122->src/ec_isogeny.cpp:274->src/ec_isogeny.cpp:379]   --->   Operation 401 'call' 'call_ln122' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_40 : Operation 402 [1/2] (0.00ns)   --->   "%call_ln275 = call void @fp2mul503_mont.5, i64 %R0_Z, i64 %R0_Z_2, i64 %t2, i64 %t2_1, i64 %p503_1" [src/ec_isogeny.cpp:275->src/ec_isogeny.cpp:379]   --->   Operation 402 'call' 'call_ln275' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 41 <SV = 40> <Delay = 0.00>
+ST_41 : Operation 403 [2/2] (0.00ns)   --->   "%call_ln277 = call void @fp2sqr503_mont, i64 %R2_X, i64 %R2_X_2, i64 %p503x2_1" [src/ec_isogeny.cpp:277->src/ec_isogeny.cpp:379]   --->   Operation 403 'call' 'call_ln277' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 42 <SV = 41> <Delay = 0.00>
+ST_42 : Operation 404 [1/2] (0.00ns)   --->   "%call_ln277 = call void @fp2sqr503_mont, i64 %R2_X, i64 %R2_X_2, i64 %p503x2_1" [src/ec_isogeny.cpp:277->src/ec_isogeny.cpp:379]   --->   Operation 404 'call' 'call_ln277' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 43 <SV = 42> <Delay = 0.00>
+ST_43 : Operation 405 [2/2] (0.00ns)   --->   "%call_ln380 = call void @fp2mul503_mont.38, i64 %R2_X, i64 %R2_X_2, i64 %R_Z, i64 %p503_1" [src/ec_isogeny.cpp:380]   --->   Operation 405 'call' 'call_ln380' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 44 <SV = 43> <Delay = 0.00>
+ST_44 : Operation 406 [1/1] (0.00ns)   --->   "%speclooptripcount_ln351 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 250, i64 250, i64 250" [src/ec_isogeny.cpp:351]   --->   Operation 406 'speclooptripcount' 'speclooptripcount_ln351' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 407 [1/1] (0.00ns)   --->   "%specloopname_ln371 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [src/ec_isogeny.cpp:371]   --->   Operation 407 'specloopname' 'specloopname_ln371' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 408 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 408 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 409 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_1, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 409 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 410 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_2, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 410 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 411 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %A24_3, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 411 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 412 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 412 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 413 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 413 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 414 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 414 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 415 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z_2, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 415 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 416 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 416 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 417 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X_2, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 417 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 418 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 418 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 419 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 419 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 420 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R_X, i64 666, i64 17, i64 18446744073709551615"   --->   Operation 420 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 421 [1/1] (0.00ns)   --->   "%specmemcore_ln262 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_3, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:262->src/ec_isogeny.cpp:379]   --->   Operation 421 'specmemcore' 'specmemcore_ln262' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 422 [1/1] (0.00ns)   --->   "%specmemcore_ln262 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_3, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:262->src/ec_isogeny.cpp:379]   --->   Operation 422 'specmemcore' 'specmemcore_ln262' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 423 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_3, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 423 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 424 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 424 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 425 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_3, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 425 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 426 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 426 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 427 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_3, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 427 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 428 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t0_3, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 428 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 429 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 429 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 430 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 430 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 431 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 431 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 432 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 432 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 433 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 433 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 434 [1/1] (0.00ns)   --->   "%specmemcore_ln266 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:266->src/ec_isogeny.cpp:379]   --->   Operation 434 'specmemcore' 'specmemcore_ln266' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 435 [1/1] (0.00ns)   --->   "%specmemcore_ln267 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_3, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:267->src/ec_isogeny.cpp:379]   --->   Operation 435 'specmemcore' 'specmemcore_ln267' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 436 [1/1] (0.00ns)   --->   "%specmemcore_ln267 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_3, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:267->src/ec_isogeny.cpp:379]   --->   Operation 436 'specmemcore' 'specmemcore_ln267' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 437 [1/1] (0.00ns)   --->   "%specmemcore_ln268 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_3, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:268->src/ec_isogeny.cpp:379]   --->   Operation 437 'specmemcore' 'specmemcore_ln268' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 438 [1/1] (0.00ns)   --->   "%specmemcore_ln268 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:268->src/ec_isogeny.cpp:379]   --->   Operation 438 'specmemcore' 'specmemcore_ln268' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 439 [1/1] (0.00ns)   --->   "%specmemcore_ln268 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_3, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:268->src/ec_isogeny.cpp:379]   --->   Operation 439 'specmemcore' 'specmemcore_ln268' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 440 [1/1] (0.00ns)   --->   "%specmemcore_ln268 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:268->src/ec_isogeny.cpp:379]   --->   Operation 440 'specmemcore' 'specmemcore_ln268' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 441 [1/1] (0.00ns)   --->   "%specmemcore_ln268 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_3, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:268->src/ec_isogeny.cpp:379]   --->   Operation 441 'specmemcore' 'specmemcore_ln268' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 442 [1/1] (0.00ns)   --->   "%specmemcore_ln268 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t1_3, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:268->src/ec_isogeny.cpp:379]   --->   Operation 442 'specmemcore' 'specmemcore_ln268' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 443 [1/1] (0.00ns)   --->   "%specmemcore_ln271 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:271->src/ec_isogeny.cpp:379]   --->   Operation 443 'specmemcore' 'specmemcore_ln271' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 444 [1/1] (0.00ns)   --->   "%specmemcore_ln271 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:271->src/ec_isogeny.cpp:379]   --->   Operation 444 'specmemcore' 'specmemcore_ln271' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 445 [1/1] (0.00ns)   --->   "%specmemcore_ln271 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:271->src/ec_isogeny.cpp:379]   --->   Operation 445 'specmemcore' 'specmemcore_ln271' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 446 [1/1] (0.00ns)   --->   "%specmemcore_ln271 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:271->src/ec_isogeny.cpp:379]   --->   Operation 446 'specmemcore' 'specmemcore_ln271' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 447 [1/1] (0.00ns)   --->   "%specmemcore_ln271 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:271->src/ec_isogeny.cpp:379]   --->   Operation 447 'specmemcore' 'specmemcore_ln271' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 448 [1/1] (0.00ns)   --->   "%specmemcore_ln271 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:271->src/ec_isogeny.cpp:379]   --->   Operation 448 'specmemcore' 'specmemcore_ln271' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 449 [1/1] (0.00ns)   --->   "%specmemcore_ln275 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:275->src/ec_isogeny.cpp:379]   --->   Operation 449 'specmemcore' 'specmemcore_ln275' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 450 [1/1] (0.00ns)   --->   "%specmemcore_ln275 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:275->src/ec_isogeny.cpp:379]   --->   Operation 450 'specmemcore' 'specmemcore_ln275' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 451 [1/1] (0.00ns)   --->   "%specmemcore_ln275 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:275->src/ec_isogeny.cpp:379]   --->   Operation 451 'specmemcore' 'specmemcore_ln275' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 452 [1/1] (0.00ns)   --->   "%specmemcore_ln275 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:275->src/ec_isogeny.cpp:379]   --->   Operation 452 'specmemcore' 'specmemcore_ln275' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 453 [1/1] (0.00ns)   --->   "%specmemcore_ln275 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 17, i64 18446744073709551615" [src/ec_isogeny.cpp:275->src/ec_isogeny.cpp:379]   --->   Operation 453 'specmemcore' 'specmemcore_ln275' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 454 [1/1] (0.00ns)   --->   "%specmemcore_ln275 = specmemcore void @_ssdm_op_SpecMemCore, i64 %t2_1, i64 666, i64 207, i64 18446744073709551615" [src/ec_isogeny.cpp:275->src/ec_isogeny.cpp:379]   --->   Operation 454 'specmemcore' 'specmemcore_ln275' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 455 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X_2, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 455 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 456 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_X, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 456 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 457 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z_2, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 457 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 458 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_Z, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 458 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 459 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z_2, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 459 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 460 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R2_Z, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 460 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 461 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X_2, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 461 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 462 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %R0_X, i64 666, i64 207, i64 18446744073709551615"   --->   Operation 462 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 463 [1/2] (0.00ns)   --->   "%call_ln380 = call void @fp2mul503_mont.38, i64 %R2_X, i64 %R2_X_2, i64 %R_Z, i64 %p503_1" [src/ec_isogeny.cpp:380]   --->   Operation 463 'call' 'call_ln380' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_44 : Operation 464 [1/1] (0.00ns)   --->   "%br_ln371 = br void %for.inc" [src/ec_isogeny.cpp:371]   --->   Operation 464 'br' 'br_ln371' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.714ns
+The critical path consists of the following:
+	'alloca' operation 64 bit ('c', src/ec_isogeny.cpp:348) [28]  (0.000 ns)
+	'getelementptr' operation 3 bit ('R0_X_addr') [29]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'c', src/ec_isogeny.cpp:348 [104]  (0.714 ns)
+
+ <State 2>: 1.481ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'LADDER3PT_impl<250>.33_Pipeline_1' [169]  (1.481 ns)
+
+ <State 3>: 0.714ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('R0_X_addr_2') [31]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'c', src/ec_isogeny.cpp:348 [106]  (0.714 ns)
+
+ <State 4>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1' [170]  (1.482 ns)
+
+ <State 5>: 0.714ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('R0_X_addr_4') [33]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'c', src/ec_isogeny.cpp:348 [108]  (0.714 ns)
+
+ <State 6>: 0.714ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('R0_X_addr_5') [34]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'c', src/ec_isogeny.cpp:348 [109]  (0.714 ns)
+
+ <State 7>: 0.714ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('R0_X_addr_6') [35]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'c', src/ec_isogeny.cpp:348 [110]  (0.714 ns)
+
+ <State 8>: 0.714ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('R0_X_addr_7') [36]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'c', src/ec_isogeny.cpp:348 [111]  (0.714 ns)
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1165' [177]  (1.482 ns)
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1168' [180]  (1.482 ns)
+
+ <State 13>: 0.714ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('R0_Z_2_addr_4') [60]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'R0.Z', src/ec_isogeny.cpp:348 [132]  (0.714 ns)
+
+ <State 14>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1171' [183]  (1.482 ns)
+
+ <State 15>: 0.714ns
+The critical path consists of the following:
+	'getelementptr' operation 3 bit ('R0_Z_2_addr_6') [62]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on array 'R0.Z', src/ec_isogeny.cpp:348 [134]  (0.714 ns)
+
+ <State 16>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln0') to 'LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_13_1172' [184]  (1.482 ns)
+
+ <State 17>: 1.092ns
+The critical path consists of the following:
+	'load' operation 8 bit ('i', src/ec_isogeny.cpp:371) on local variable 'i', src/ec_isogeny.cpp:351 [243]  (0.000 ns)
+	'add' operation 8 bit ('i', src/ec_isogeny.cpp:371) [245]  (0.705 ns)
+	'store' operation 0 bit ('store_ln351', src/ec_isogeny.cpp:351) of variable 'i', src/ec_isogeny.cpp:371 on local variable 'i', src/ec_isogeny.cpp:351 [374]  (0.387 ns)
+
+ <State 18>: 0.667ns
+The critical path consists of the following:
+	'load' operation 8 bit ('ephemeralsk_i_load', src/ec_isogeny.cpp:373) on array 'ephemeralsk_i' [255]  (0.667 ns)
+
+ <State 19>: 0.667ns
+The critical path consists of the following:
+	'load' operation 8 bit ('ephemeralsk_i_load_2', src/ec_isogeny.cpp:373) on array 'ephemeralsk_i' [263]  (0.667 ns)
+
+ <State 20>: 0.667ns
+The critical path consists of the following:
+	'load' operation 8 bit ('ephemeralsk_i_load_4', src/ec_isogeny.cpp:373) on array 'ephemeralsk_i' [271]  (0.667 ns)
+
+ <State 21>: 2.163ns
+The critical path consists of the following:
+	'load' operation 8 bit ('ephemeralsk_i_load_6', src/ec_isogeny.cpp:373) on array 'ephemeralsk_i' [279]  (0.667 ns)
+	'lshr' operation 64 bit ('lshr_ln373', src/ec_isogeny.cpp:373) [286]  (1.096 ns)
+	'xor' operation 1 bit ('swap', src/ec_isogeny.cpp:374) [288]  (0.122 ns)
+	'call' operation 0 bit ('call_ln374', src/ec_isogeny.cpp:374) to 'LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_287_1' [289]  (0.278 ns)
+
+ <State 22>: 1.482ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln374', src/ec_isogeny.cpp:374) to 'LADDER3PT_impl<250>.33_Pipeline_VITIS_LOOP_287_1' [289]  (1.482 ns)
+
+ <State 23>: 0.000ns
+The critical path consists of the following:
+
+ <State 24>: 0.000ns
+The critical path consists of the following:
+
+ <State 25>: 0.000ns
+The critical path consists of the following:
+
+ <State 26>: 0.000ns
+The critical path consists of the following:
+
+ <State 27>: 0.000ns
+The critical path consists of the following:
+
+ <State 28>: 0.000ns
+The critical path consists of the following:
+
+ <State 29>: 0.000ns
+The critical path consists of the following:
+
+ <State 30>: 0.000ns
+The critical path consists of the following:
+
+ <State 31>: 0.000ns
+The critical path consists of the following:
+
+ <State 32>: 0.000ns
+The critical path consists of the following:
+
+ <State 33>: 0.000ns
+The critical path consists of the following:
+
+ <State 34>: 0.000ns
+The critical path consists of the following:
+
+ <State 35>: 0.000ns
+The critical path consists of the following:
+
+ <State 36>: 0.000ns
+The critical path consists of the following:
+
+ <State 37>: 0.000ns
+The critical path consists of the following:
+
+ <State 38>: 0.000ns
+The critical path consists of the following:
+
+ <State 39>: 0.000ns
+The critical path consists of the following:
+
+ <State 40>: 0.000ns
+The critical path consists of the following:
+
+ <State 41>: 0.000ns
+The critical path consists of the following:
+
+ <State 42>: 0.000ns
+The critical path consists of the following:
+
+ <State 43>: 0.000ns
+The critical path consists of the following:
+
+ <State 44>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

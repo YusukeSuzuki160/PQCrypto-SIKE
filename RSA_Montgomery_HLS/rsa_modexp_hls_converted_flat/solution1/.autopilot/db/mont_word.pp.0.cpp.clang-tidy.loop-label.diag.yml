@@ -1,0 +1,22 @@
+---
+MainSourceFile:  /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_converted_flat/solution1/.autopilot/db/mont_word.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_54_1:  '
+    FileOffset:      54
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/montgomery_converter/include/mont_ops_fios_csa_flat.hpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_converted_flat/solution1/.autopilot/db/mont_word.pp.0.cpp
+        Offset:          85743
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_54_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_1:  '
+    FileOffset:      15
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat/mont_word.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_converted_flat/solution1/.autopilot/db/mont_word.pp.0.cpp
+        Offset:          88807
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_1: '
+...

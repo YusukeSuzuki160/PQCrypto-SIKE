@@ -40,13 +40,25 @@ void from_mont(const felm_t ma, felm_t c)
     fpcorrection(c);
 }
 
+// copy_words(digit_t* 版)は本プロジェクトでは point_proj_t を
+// (digit_t*)キャストしたフラット配列として扱うためだけに使われていたが、
+// これは構造体の最初のフィールド(X, f2elm_t=16要素)を超えてインデックス
+// アクセスする、型安全でないポインタキャストだった。nwordsを実行時引数の
+// ままにすると"infinite loop"誤診断が、テンプレート化・UNROLLしても
+// 再現し、さらにループを展開してコンパイル時リテラルindexで書き直すと
+// 今度はHLSの境界チェッカーがこの構造体境界超えアクセスを正しく検出し
+// "illegal out-of-bounds access"エラーになった(実行時可変indexだった
+// 間はチェッカーが証明できず見逃していただけで、元々未定義動作寸前の
+// コードだった)。point_proj_t のコピーには下記の型安全な copy_point
+// (fpcopy を X[0],X[1],Z[0],Z[1] に対して適用)を使うべきであり、
+// copy_words 自体は本プロジェクトでは不要(未使用)になったため元の
+// 単純な実装のまま残す。
 void copy_words(const digit_t *a, digit_t *c, const unsigned int nwords)
 { // Copy wordsize digits, c = a, where lng(a) = nwords.
     unsigned int i;
 
     for (i = 0; i < nwords; i++)
     {
-        // #pragma HLS loop_tripcount min = 1 max = 503 avg = 252
         c[i] = a[i];
     }
 }

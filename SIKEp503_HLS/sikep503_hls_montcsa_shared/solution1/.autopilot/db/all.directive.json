@@ -1,0 +1,305 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "ap_ctrl_hs",
+          "value": ""
+        },
+        {
+          "name": "port",
+          "value": "return"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 47,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "s_axilite",
+          "value": ""
+        },
+        {
+          "name": "port",
+          "value": "return"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 48,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "m_axi",
+          "value": ""
+        },
+        {
+          "name": "depth",
+          "value": "402"
+        },
+        {
+          "name": "port",
+          "value": "ct"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 49,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "m_axi",
+          "value": ""
+        },
+        {
+          "name": "depth",
+          "value": "378"
+        },
+        {
+          "name": "port",
+          "value": "pk"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 50,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "m_axi",
+          "value": ""
+        },
+        {
+          "name": "depth",
+          "value": "16"
+        },
+        {
+          "name": "port",
+          "value": "ss"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 51,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 5,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ALLOCATION",
+      "option": [
+        {
+          "name": "function",
+          "value": ""
+        },
+        {
+          "name": "instances",
+          "value": "fpmul503_mont"
+        },
+        {
+          "name": "limit",
+          "value": "1"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 59,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 6,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ALLOCATION",
+      "option": [
+        {
+          "name": "function",
+          "value": ""
+        },
+        {
+          "name": "instances",
+          "value": "fpsqr503_mont"
+        },
+        {
+          "name": "limit",
+          "value": "1"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 60,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 7,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ALLOCATION",
+      "option": [
+        {
+          "name": "function",
+          "value": ""
+        },
+        {
+          "name": "instances",
+          "value": "fp2mul503_mont"
+        },
+        {
+          "name": "limit",
+          "value": "1"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 63,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 8,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ALLOCATION",
+      "option": [
+        {
+          "name": "function",
+          "value": ""
+        },
+        {
+          "name": "instances",
+          "value": "fp2sqr503_mont"
+        },
+        {
+          "name": "limit",
+          "value": "1"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 64,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 9,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ALLOCATION",
+      "option": [
+        {
+          "name": "function",
+          "value": ""
+        },
+        {
+          "name": "instances",
+          "value": "mp_mul"
+        },
+        {
+          "name": "limit",
+          "value": "1"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 65,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "sikep503_kem_enc_hw",
+    "id": 10,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "sikep503_kem_enc_hw"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/meltpoint/eeic/PQCrypto-SIKE/SIKEp503_HLS/run_hls_montcsa_shared.tcl",
+    "sourceLine": 67,
+    "success": true
+  }
+]

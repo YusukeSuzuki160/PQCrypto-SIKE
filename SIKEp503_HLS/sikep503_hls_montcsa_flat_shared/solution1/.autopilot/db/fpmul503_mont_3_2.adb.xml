@@ -1,0 +1,124 @@
+<stg><name>fpmul503_mont.3.2</name>
+
+
+<trans_list>
+
+<trans id="7" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+entry:0 %mc_offset_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %mc_offset
+
+]]></Node>
+<StgValue><ssdm name="mc_offset_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64">
+<![CDATA[
+entry:1 %call_ln77 = call void @mul.3.2, i64 %mc, i1 %mc_offset_read, i64 %mb
+
+]]></Node>
+<StgValue><ssdm name="call_ln77"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="5" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="64">
+<![CDATA[
+entry:1 %call_ln77 = call void @mul.3.2, i64 %mc, i1 %mc_offset_read, i64 %mb
+
+]]></Node>
+<StgValue><ssdm name="call_ln77"/></StgValue>
+</operation>
+
+<operation id="6" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0">
+<![CDATA[
+entry:2 %ret_ln79 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln79"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="8" name="mc" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mc"/><MemPortTyVec>2 2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="9" name="mc_offset" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="mc_offset"/></StgValue>
+</port>
+<port id="10" name="mb" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="mb"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="12" from="_ssdm_op_Read.ap_auto.i1" to="mc_offset_read" fromId="11" toId="3">
+</dataflow>
+<dataflow id="13" from="mc_offset" to="mc_offset_read" fromId="9" toId="3">
+</dataflow>
+<dataflow id="15" from="mul.3.2" to="call_ln77" fromId="14" toId="4">
+</dataflow>
+<dataflow id="16" from="mc" to="call_ln77" fromId="8" toId="4">
+</dataflow>
+<dataflow id="17" from="mc_offset_read" to="call_ln77" fromId="3" toId="4">
+</dataflow>
+<dataflow id="18" from="mb" to="call_ln77" fromId="10" toId="4">
+</dataflow>
+<dataflow id="19" from="mul.3.2" to="call_ln77" fromId="14" toId="5">
+</dataflow>
+<dataflow id="20" from="mc" to="call_ln77" fromId="8" toId="5">
+</dataflow>
+<dataflow id="21" from="mc_offset_read" to="call_ln77" fromId="3" toId="5">
+</dataflow>
+<dataflow id="22" from="mb" to="call_ln77" fromId="10" toId="5">
+</dataflow>
+</dataflows>
+
+
+</stg>

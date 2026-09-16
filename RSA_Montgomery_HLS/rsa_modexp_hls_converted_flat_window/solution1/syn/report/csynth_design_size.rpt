@@ -1,0 +1,52 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             |  1,359       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 42,968       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 23,532       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 23,520       | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 23,520       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 23,231       | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 23,227       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 23,227       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 23,227       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 23,185       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 23,182       | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 23,385       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 23,448       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 23,448       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 23,460       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 23,316       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-------------------+-------------------------------+----------------+------------------+------------------+------------------+------------------+
+| Function          | Location                      | Compile/Link   | Unroll/Inline    | Array/Struct     | Performance      | HW Transforms    |
++-------------------+-------------------------------+----------------+------------------+------------------+------------------+------------------+
+| + rsa_modexp_hw   | rsa_modexp_hw.cpp:20          | 1,359          | 23,520           | 23,185           | 23,448           | 23,316           |
+|  + montMult_words | mont_word.cpp:22              |  900 (4 calls) | 22,136 (4 calls) | 21,784 (4 calls) | 21,736 (4 calls) | 21,744 (4 calls) |
+|     mul           | mont_ops_fios_csa_flat.hpp:47 |  892 (4 calls) | 22,128 (4 calls) | 21,776 (4 calls) | 21,728 (4 calls) | 21,732 (4 calls) |
+|    get_window     | rsa_modexp_hw.cpp:7           |   22           |                  |                  |                  |                  |
++-------------------+-------------------------------+----------------+------------------+------------------+------------------+------------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+
