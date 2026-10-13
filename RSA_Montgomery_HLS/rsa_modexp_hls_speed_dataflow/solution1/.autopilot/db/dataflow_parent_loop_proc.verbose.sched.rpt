@@ -1,0 +1,143 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_parent_loop_proc'
+================================================================
+* Date:           Wed Sep 16 17:20:11 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        rsa_modexp_hls_speed_dataflow
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    57602|    57602|  0.576 ms|  0.576 ms|  57602|  57602|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_77_8  |    57601|    57601|       452|          -|          -|   128|        no|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 2, States = { 2 3 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.38>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem, void @empty_5, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_7, void @empty_8, void @empty_6, i32 16, i32 16, i32 16, i32 16, void @empty_6, void @empty_6, i32 4294967295, i32 0, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%mprime_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mprime"   --->   Operation 5 'read' 'mprime_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%m_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %m"   --->   Operation 6 'read' 'm_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%d_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %d"   --->   Operation 7 'read' 'd_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.38ns)   --->   "%br_ln0 = br void %for.cond94"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 5.65>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%win = phi i8 0, void %newFuncRoot, i8 %add_ln77, void %codeRepl" [src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77]   --->   Operation 9 'phi' 'win' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.70ns)   --->   "%icmp_ln77 = icmp_eq  i8 %win, i8 128" [src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77]   --->   Operation 10 'icmp' 'icmp_ln77' <Predicate = true> <Delay = 0.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (0.70ns)   --->   "%add_ln77 = add i8 %win, i8 1" [src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77]   --->   Operation 11 'add' 'add_ln77' <Predicate = true> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln77 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @dataflow_parent_loop_str, i8 %win, i8 128, i32 0" [src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77]   --->   Operation 12 'specdataflowpipeline' 'specdataflowpipeline_ln77' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln77 = br i1 %icmp_ln77, void %codeRepl, void %for.inc226.preheader.exitStub" [src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77]   --->   Operation 13 'br' 'br_ln77' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [2/2] (4.94ns)   --->   "%call_ln119 = call void @dataflow_in_loop_VITIS_LOOP_77_8.1, i8 %win, i32 %gmem, i64 %d_read, i32 %table_r, i32 %z, i64 %m_read, i32 %mprime_read" [src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:119]   --->   Operation 14 'call' 'call_ln119' <Predicate = (!icmp_ln77)> <Delay = 4.94> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 15 'ret' 'ret_ln0' <Predicate = (icmp_ln77)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%speclooptripcount_ln119 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 128, i64 128, i64 128" [src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:119]   --->   Operation 16 'speclooptripcount' 'speclooptripcount_ln119' <Predicate = (!icmp_ln77)> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%specloopname_ln77 = specloopname void @_ssdm_op_SpecLoopName, void @empty_17" [src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77]   --->   Operation 17 'specloopname' 'specloopname_ln77' <Predicate = (!icmp_ln77)> <Delay = 0.00>
+ST_3 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln119 = call void @dataflow_in_loop_VITIS_LOOP_77_8.1, i8 %win, i32 %gmem, i64 %d_read, i32 %table_r, i32 %z, i64 %m_read, i32 %mprime_read" [src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:119]   --->   Operation 18 'call' 'call_ln119' <Predicate = (!icmp_ln77)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln77 = br void %for.cond94" [src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77]   --->   Operation 19 'br' 'br_ln77' <Predicate = (!icmp_ln77)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.387ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation 8 bit ('win', src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77) with incoming values : ('add_ln77', src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77) [13]  (0.387 ns)
+
+ <State 2>: 5.653ns
+The critical path consists of the following:
+	'phi' operation 8 bit ('win', src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77) with incoming values : ('add_ln77', src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77) [13]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln77', src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:77) [14]  (0.705 ns)
+	'call' operation 0 bit ('call_ln119', src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp:119) to 'dataflow_in_loop_VITIS_LOOP_77_8.1' [21]  (4.948 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

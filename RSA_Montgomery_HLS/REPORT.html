@@ -1091,6 +1091,302 @@ x[1]=c;   y[1]=r2m;
   </div>
 </section>
 
+<section class="stage">
+  <div class="stage-head"><span class="stage-num">7</span><h2>速度重視オプションのさらなる最適化</h2></div>
+  <p class="stage-sub">
+    速度重視オプション(46,044 cyc / 0.460 ms / LUT 305,063 / DSP 359)を
+    基準に、さらなる高速化を狙う4案を並行検証した。
+  </p>
+  <div class="stage-body">
+
+    <div>
+      <h3 class="sub">検証した4案</h3>
+      <div class="criteria">
+        <div class="criterion">
+          <span class="idx">1</span>
+          <p class="name">クロック周期を7.3nsへ短縮</p>
+          <p class="desc">合成レポートが一貫して"Estimated Fmax: 136.99MHz"
+          (&asymp;7.3ns)を報告し続けていた点に着目し、10ns指定で
+          余っていたスラックを削れるか検証。</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">2</span>
+          <p class="name">窓幅をWBITS=4&rarr;5へ拡大</p>
+          <p class="desc">乗算回数の理論値をさらに約657回&rarr;約648回へ
+          削減。512が5で割り切れないため天井除算とゼロパディングが必要。</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">3</span>
+          <p class="name">table-select と t-loop の重複実行(DATAFLOW)</p>
+          <p class="desc">table-select(cand計算)はmontMult_wordsを使わず
+          共有乗算器と競合しないはず、という仮説をDATAFLOWで検証。</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">4</span>
+          <p class="name">案1+案2の併用</p>
+          <p class="desc">クロック短縮と窓幅拡大は独立に効く要因のはずで、
+          重ねればさらに改善するかを検証。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="border-left-color:var(--accent);">
+      <p class="head" style="color:var(--accent);">案1・案2: Fmaxのスラックと窓幅拡大は共に効くが、案2は割高</p>
+      <p>
+        案1(clk7.3ns)はサイクル数こそ54,468へ<strong>増加</strong>したが、
+        絶対時間は<strong>0.398 ms(-13.5%)</strong>まで縮み、LUTはわずか
+        +2.6%、DSPはむしろ<strong>334へ減少(-7%)</strong>した。
+        「Estimated Fmax」は単なる目安表示ではなく、その近辺までtarget
+        clockを攻めると実際に絶対時間を削れるスラックが存在することを
+        実証した。案2(WBITS=5)は44,968 cyc・0.450 ms(-2.2%)まで縮んだが、
+        LUTが+6.3%(324,255)と増加が大きく、単独では速度対リソースの
+        割の良い改善とは言えない。
+      </p>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--warn);">
+      <p class="head" style="color: var(--warn);">案3: DATAFLOWは軽い処理の重複実行には向かない(不採用)</p>
+      <p>
+        <code class="mono">#pragma HLS DATAFLOW</code>を追加すると
+        <code class="mono">WARNING: [HLS 214-114] ... canonical dataflow
+        region ...</code>が出て(単純な変数宣言+関数呼び出しのみという
+        正規形の条件を満たせず)、狙った重複実行は実現しなかった。
+        結果は59,215 cyc・0.592 ms(<strong>+28.7%、明確に悪化</strong>)。
+        LUTは276,137(-9.5%)へ下がったが速度の犠牲が大きく不採用とした。
+        table-select自体が既にUNROLLで数サイクルまで圧縮済み(Section 5)
+        のため、重複実行で得られる余地はそもそも小さく、DATAFLOWの
+        タスク間同期オーバーヘッドの方が上回った。
+      </p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>4案の比較(ベースライン: WBITS=4, clk10ns)</caption>
+        <thead>
+          <tr><th>構成</th><th>サイクル数</th><th>絶対時間</th><th>LUT</th><th>DSP</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ベースライン</td>
+            <td class="num">46,044</td>
+            <td class="num">0.460 ms</td>
+            <td class="num">305,063 <span style="color:var(--ink-dim);">(SLR70%)</span></td>
+            <td class="num">359</td>
+          </tr>
+          <tr>
+            <td>案1: clk 7.3ns</td>
+            <td class="num">54,468</td>
+            <td class="num ok">0.398 ms</td>
+            <td class="num">312,986 <span style="color:var(--ink-dim);">(SLR72%)</span></td>
+            <td class="num ok">334</td>
+          </tr>
+          <tr>
+            <td>案2: WBITS=5</td>
+            <td class="num">44,968</td>
+            <td class="num">0.450 ms</td>
+            <td class="num">324,255 <span style="color:var(--ink-dim);">(SLR75%)</span></td>
+            <td class="num">359</td>
+          </tr>
+          <tr>
+            <td>案3: DATAFLOW重複実行</td>
+            <td class="num warn-cell">59,215</td>
+            <td class="num warn-cell">0.592 ms</td>
+            <td class="num">276,137 <span style="color:var(--ink-dim);">(SLR63%)</span></td>
+            <td class="num">363</td>
+          </tr>
+          <tr class="emph">
+            <td>案4: 案1+案2併用(採用)</td>
+            <td class="num">53,186</td>
+            <td class="num ok">0.388 ms</td>
+            <td class="num">332,178 <span style="color:var(--ink-dim);">(SLR76%)</span></td>
+            <td class="num ok">334</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <p class="head">要点</p>
+      <p>
+        案1と案2は独立に効く要因であり、重ねることでさらに絶対時間が
+        縮んだ(案1単独の0.398 msから0.388 msへ)。最終的に
+        <strong>ベースライン比で絶対時間-15.7%、DSPは-7%(むしろ減少)</strong>
+        を達成しつつ、LUTは332,178(デバイス全体では19%、単一SLR比76%)
+        &mdash;まだ予算内に収まる。csimでの正当性再確認
+        (<code class="mono">0x9107f695023f</code>と一致)も完了しており、
+        <code class="mono">src_converted_flat_speed_combo/</code>を
+        速度重視オプションの最終採用版とする。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="stage">
+  <div class="stage-head"><span class="stage-num">8</span><h2>さらに4案を検証 &mdash; combo版が引き続き最良</h2></div>
+  <p class="stage-sub">
+    Section 7のcombo版(53,186 cyc / 0.388 ms / LUT 332,178 / DSP 334)を
+    基準に、さらなる高速化を狙う4案を検証した。いずれも不採用となり、
+    combo版が速度重視オプションの最良解のまま変わらなかった。
+  </p>
+  <div class="stage-body">
+
+    <div>
+      <h3 class="sub">検証した4案</h3>
+      <div class="criteria">
+        <div class="criterion">
+          <span class="idx">A</span>
+          <p class="name">Vivado実装(P&amp;R)での実測検証</p>
+          <p class="desc">Vitis HLSのC合成レベル見積もりではなく、実際に
+          配置配線して7.3nsクロックが本当に閉じるか確認する。</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">B</span>
+          <p class="name">窓をまたいだ2インスタンス並列化</p>
+          <p class="desc">窓N+1の二乗開始と窓Nの最終乗算完了を重ねられ
+          ないか検討。</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">D</span>
+          <p class="name">precomputeチェーンのdoubling-ladder化</p>
+          <p class="desc">事前計算テーブル構築の依存チェーンの深さを
+          32段&rarr;17段へ圧縮し、2物理インスタンスで並列実行する。</p>
+        </div>
+        <div class="criterion">
+          <span class="idx">E</span>
+          <p class="name">窓幅をWBITS=6へさらに拡大</p>
+          <p class="desc">WBITS=5が総乗算回数の実質的最適点という予測を
+          検証する。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--warn);">
+      <p class="head" style="color: var(--warn);">案A: 環境のライセンス制限で実行不可</p>
+      <p>
+        <code class="mono">export_design -flow impl</code>でVivado
+        out-of-context synth+implを起動したところ、
+        <code class="mono">ERROR: [Common 17-345] A valid license was not
+        found for feature 'Synthesis' and/or device 'xcvu29p'</code>で
+        失敗した。この環境のVivadoライセンスはVitis HLSのC合成(レポート
+        推定のみ)までは動作するが、実際のRTL論理合成以降は対象デバイスで
+        ライセンスされていない。<strong>回避策なし</strong>——これまでの
+        全ての「クロック短縮で絶対時間が縮んだ」という結論は、Vitis HLS
+        のC合成レベル推定に基づくものであり、実配置配線後のタイミング
+        クロージャでは未検証のままである点に注意が必要。
+      </p>
+      <p style="margin-top:10px;">
+        参考として、「Estimated Fmax」をtarget clockで割ると、
+        target=10ns時は7.300ns(比0.730)、target=7.3ns時は5.329ns
+        (比0.7300...)と、<strong>target&times;0.73という単純な比例関係で
+        完全に一致</strong>することが分かった。これは実クリティカルパス
+        の静的解析ではなく、targetに対する単純な係数である可能性を
+        示唆するが、この仮説自体も案Aが実行できないため未検証のまま
+        残った。
+      </p>
+    </div>
+
+    <div class="callout">
+      <p class="head">案B: 実装前の再分析で実行不可能と判明</p>
+      <p>
+        Section 5の案C(1bit法時代の「二乗」と「z候補更新」の並列化、
+        共に「古いP/Z」だけに依存するため独立)と同じ発想を窓法の
+        メインループへ拡張できないか検討したが、<strong>windowed法の
+        t-loopは真に完全逐次な依存チェーン</strong>であることに気づいた:
+        窓iの二乗は直前の二乗結果に依存し、かつ窓i+1の二乗チェーンの
+        開始値は窓iの「最終」結果(テーブル乗算後のz)そのものである。
+        1bit法にあった「二乗とz更新が独立」という並列化の種は、窓法では
+        最終ステップ1回にz更新が集約されたことで失われている。実装を
+        試みる前に気づけたため、無駄な合成を避けられた。
+      </p>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--warn);">
+      <p class="head" style="color: var(--warn);">案D: 実装したがVitisの資源バインディングが並列化を打ち消した</p>
+      <p>
+        事前計算テーブルの構築を、線形チェーン(32段完全逐次)から
+        <code class="mono">table[base+k]=table[k]*table[base]</code>
+        という関係を使った深さ圧縮版(17段、各段内の最大2エントリを
+        2物理インスタンスで並列実行)へ再設計した。各バッチ内の2計算は
+        <strong>あえて別々のテキスト上の呼び出し文</strong>として記述
+        (Section 4.6の「loop化は1インスタンスへの共有を招く」という
+        教訓を踏まえ、意図的にloop化を避けた)。
+      </p>
+      <p style="margin-top:10px;">
+        結果は<strong>combo版とほぼ同じ(52,955 cyc・0.387 ms・
+        LUT 334,404、いずれも誤差の範囲)</strong>——狙った速度改善が
+        全く現れなかった。Instance内訳を調査したところ、2つの別々の
+        呼び出し文として書いたにも関わらず、Vitisの資源バインディングが
+        やはり1個の共有インスタンスへ統合していたことが判明した
+        (該当loopのインスタンスがDSP=138・LUT=99,927と、線形チェーン版
+        の単一インスタンス(DSP=138・LUT=99,917)と実質同一サイズ)。
+        Section 5の案Cで「別々の呼び出し文に戻すと2物理インスタンスで
+        並列実行できた」という過去の知見と矛盾する結果であり、
+        <strong>「別々のテキスト上の呼び出し文」だけでは2物理インスタンス
+        を保証する条件として不十分/不確実である</strong>ことを示す新たな
+        反例となった。加えて事前計算フェーズ自体が総乗算数の約5%程度に
+        過ぎないため、完全な2並列化が実現していても全体への影響は
+        最大2%程度と見積もられ、費用対効果はそもそも低かった。
+      </p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>案E(WBITS=6)との比較</caption>
+        <thead>
+          <tr><th>構成</th><th>サイクル数</th><th>絶対時間</th><th>LUT</th><th>DSP</th></tr>
+        </thead>
+        <tbody>
+          <tr class="emph">
+            <td>combo(WBITS=5+clk7.3ns、採用)</td>
+            <td class="num ok">53,186</td>
+            <td class="num ok">0.388 ms</td>
+            <td class="num">332,178 <span style="color:var(--ink-dim);">(SLR76%)</span></td>
+            <td class="num ok">334</td>
+          </tr>
+          <tr>
+            <td>案E: WBITS=6</td>
+            <td class="num warn-cell">46,288<span style="color:var(--ink-dim);font-weight:400;">*</span></td>
+            <td class="num warn-cell">0.463 ms</td>
+            <td class="num warn-cell">362,091 <span style="color:var(--ink-dim);">(SLR83%)</span></td>
+            <td class="num">359</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:12.5px; color:var(--ink-dim); margin-top:6px;">
+        *WBITS=6のサイクル数は10nsクロックでの計測(公平比較のため
+        窓幅単体の効果を見る目的、combo行は7.3nsクロックとの比較なので
+        絶対時間で比べる必要がある)。
+      </p>
+    </div>
+
+    <div class="callout">
+      <p class="head">要点</p>
+      <p>
+        案Eは事前計算チェーンの伸び(WSIZE&minus;1=63回)が窓数削減の
+        恩恵を上回り、<strong>WBITS=5より速度・リソース両面で悪化</strong>
+        した——4.9節での「WBITS=5が総乗算回数の実質的最適点」という
+        予測を裏付ける結果。4案とも不採用となり、
+        <strong>combo版(53,186 cyc / 0.388 ms / LUT 332,178 / DSP 334)
+        が引き続き速度重視オプションの最良解</strong>である。
+      </p>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--accent2);">
+      <p class="head" style="color: var(--accent2);">教訓: 「別々の呼び出し文」は空間並列化を保証しない</p>
+      <p>
+        次に空間並列化を狙う際は、必ずInstance内訳のLUT/DSPサイズを
+        実測で確認し、狙った数の物理インスタンスが本当に生成されて
+        いるかを検証してから結論を出すべきだと分かった(サイズが単一
+        インスタンス相当のままなら、意図せず共有されている兆候)。
+        また、改善対象のコストが全体に占める割合を先に見積もっておくと、
+        実装前に投資対効果の見込みを判断でき、無駄な深入りを避けやすい。
+      </p>
+    </div>
+
+  </div>
+</section>
+
 <footer class="report-foot">
-  RSA_Montgomery_HLS &nbsp;/&nbsp; xcvu29p-fsga2577-2L-e &nbsp;/&nbsp; Vitis HLS 2024.2 &nbsp;/&nbsp; 2026-09-15
+  RSA_Montgomery_HLS &nbsp;/&nbsp; xcvu29p-fsga2577-2L-e &nbsp;/&nbsp; Vitis HLS 2024.2 &nbsp;/&nbsp; 2026-09-16
 </footer>

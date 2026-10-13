@@ -1,0 +1,116 @@
+{
+  "0": {
+    "basicblocks": 19,
+    "calls": "2 4 6",
+    "file": "rsa_modexp_hw.cpp",
+    "fileloc": 20,
+    "instructions": 1102,
+    "loads": {
+      "L": 324
+    },
+    "name": "rsa_modexp_hw",
+    "stores": {
+      "L": 117
+    },
+    "total_instructions": 18288
+  },
+  "1": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "rsa_modexp_hw.cpp",
+    "fileloc": 7,
+    "instructions": 18,
+    "loads": {
+      "L": 1
+    },
+    "name": "get_window",
+    "total_instructions": 18
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "mont_word.cpp",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "montMult_words",
+    "total_instructions": 5398
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mont_ops_fios_csa_flat.hpp",
+    "fileloc": 47,
+    "instructions": 5412,
+    "loads": {
+      "L": 32
+    },
+    "name": "mul",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 5412
+  },
+  "4": {
+    "basicblocks": 12,
+    "calls": "1 7",
+    "file": "rsa_modexp_hw.cpp",
+    "fileloc": 0,
+    "instructions": 910,
+    "loads": {
+      "L": 66
+    },
+    "name": "rsa_modexp_hw_VITIS_LOOP_93_9",
+    "stores": {
+      "L": 51
+    },
+    "total_instructions": 6342
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mont_ops_fios_csa_flat.hpp",
+    "fileloc": 47,
+    "instructions": 5396,
+    "loads": {
+      "L": 32
+    },
+    "name": "mul",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 5396
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "8",
+    "file": "mont_word.cpp",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "montMult_words",
+    "total_instructions": 5446
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "mont_word.cpp",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "montMult_words",
+    "total_instructions": 5414
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mont_ops_fios_csa_flat.hpp",
+    "fileloc": 47,
+    "instructions": 5444,
+    "loads": {
+      "L": 32
+    },
+    "name": "mul",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 5444
+  }
+}

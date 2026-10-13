@@ -1,0 +1,6 @@
+
+Family       : virtexuplus58g
+Device       : xcvu29p
+Package      : -fsga2577
+Speed Grade  : -2L-e
+Clock Period : 7.3

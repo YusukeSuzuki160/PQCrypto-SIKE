@@ -1,0 +1,125 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (lin64) Build 6060944 Thu Mar 06 19:10:09 MST 2025
+| Date         : Wed Sep 16 18:12:22 2026
+| Host         : meltpointubuntu running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 7 -file ./report/kernel_top_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------------------------------------------+----------------------------------------------------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+|                          Instance                          |                                Module                                | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs  | RAMB36 | RAMB18 | URAM | DSP Blocks |
++------------------------------------------------------------+----------------------------------------------------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+| bd_0_wrapper                                               |                                                                (top) |      54828 |      54428 |     160 |  240 | 20869 |      1 |      2 |    0 |        115 |
+|   bd_0_i                                                   |                                                                 bd_0 |      54828 |      54428 |     160 |  240 | 20869 |      1 |      2 |    0 |        115 |
+|     hls_inst                                               |                                                      bd_0_hls_inst_0 |      54828 |      54428 |     160 |  240 | 20869 |      1 |      2 |    0 |        115 |
+|       (hls_inst)                                           |                                                      bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |     0 |      0 |      0 |    0 |          0 |
+|       inst                                                 |                                           bd_0_hls_inst_0_kernel_top |      54828 |      54428 |     160 |  240 | 20869 |      1 |      2 |    0 |        115 |
+|         (inst)                                             |                                           bd_0_hls_inst_0_kernel_top |          1 |          0 |       0 |    1 |   262 |      0 |      0 |    0 |          0 |
+|         control_r_s_axi_U                                  |                           bd_0_hls_inst_0_kernel_top_control_r_s_axi |        211 |        211 |       0 |    0 |   297 |      0 |      0 |    0 |          0 |
+|         control_s_axi_U                                    |                             bd_0_hls_inst_0_kernel_top_control_s_axi |         64 |         64 |       0 |    0 |    84 |      0 |      0 |    0 |          0 |
+|         gmem_m_axi_U                                       |                                bd_0_hls_inst_0_kernel_top_gmem_m_axi |       1163 |        928 |       0 |  235 |  1679 |      0 |      2 |    0 |          0 |
+|           bus_read                                         |                           bd_0_hls_inst_0_kernel_top_gmem_m_axi_read |        356 |        356 |       0 |    0 |   552 |      0 |      0 |    0 |          0 |
+|             fifo_burst                                     |        bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized1_33 |         16 |         16 |       0 |    0 |    13 |      0 |      0 |    0 |          0 |
+|               (fifo_burst)                                 |        bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized1_33 |         15 |         15 |       0 |    0 |    12 |      0 |      0 |    0 |          0 |
+|               U_fifo_srl                                   |         bd_0_hls_inst_0_kernel_top_gmem_m_axi_srl__parameterized0_37 |          1 |          1 |       0 |    0 |     1 |      0 |      0 |    0 |          0 |
+|             fifo_rctl                                      |        bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized1_34 |          9 |          9 |       0 |    0 |     8 |      0 |      0 |    0 |          0 |
+|             rreq_burst_conv                                |             bd_0_hls_inst_0_kernel_top_gmem_m_axi_burst_converter_35 |        291 |        291 |       0 |    0 |   460 |      0 |      0 |    0 |          0 |
+|               (rreq_burst_conv)                            |             bd_0_hls_inst_0_kernel_top_gmem_m_axi_burst_converter_35 |        177 |        177 |       0 |    0 |   327 |      0 |      0 |    0 |          0 |
+|               rs_req                                       |                   bd_0_hls_inst_0_kernel_top_gmem_m_axi_reg_slice_36 |        114 |        114 |       0 |    0 |   133 |      0 |      0 |    0 |          0 |
+|             rs_rdata                                       |      bd_0_hls_inst_0_kernel_top_gmem_m_axi_reg_slice__parameterized2 |         40 |         40 |       0 |    0 |    71 |      0 |      0 |    0 |          0 |
+|           bus_write                                        |                          bd_0_hls_inst_0_kernel_top_gmem_m_axi_write |        566 |        458 |       0 |  108 |   774 |      0 |      0 |    0 |          0 |
+|             (bus_write)                                    |                          bd_0_hls_inst_0_kernel_top_gmem_m_axi_write |          6 |          6 |       0 |    0 |    10 |      0 |      0 |    0 |          0 |
+|             fifo_burst                                     |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized4 |         24 |         20 |       0 |    4 |    16 |      0 |      0 |    0 |          0 |
+|               (fifo_burst)                                 |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized4 |          6 |          6 |       0 |    0 |    12 |      0 |      0 |    0 |          0 |
+|               U_fifo_srl                                   |            bd_0_hls_inst_0_kernel_top_gmem_m_axi_srl__parameterized2 |         18 |         14 |       0 |    4 |     4 |      0 |      0 |    0 |          0 |
+|             fifo_resp                                      |        bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized1_31 |         17 |         16 |       0 |    1 |    13 |      0 |      0 |    0 |          0 |
+|               (fifo_resp)                                  |        bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized1_31 |         13 |         13 |       0 |    0 |    12 |      0 |      0 |    0 |          0 |
+|               U_fifo_srl                                   |         bd_0_hls_inst_0_kernel_top_gmem_m_axi_srl__parameterized0_32 |          4 |          3 |       0 |    1 |     1 |      0 |      0 |    0 |          0 |
+|             rs_resp                                        |      bd_0_hls_inst_0_kernel_top_gmem_m_axi_reg_slice__parameterized1 |          4 |          4 |       0 |    0 |     5 |      0 |      0 |    0 |          0 |
+|             wreq_burst_conv                                |                bd_0_hls_inst_0_kernel_top_gmem_m_axi_burst_converter |        293 |        293 |       0 |    0 |   460 |      0 |      0 |    0 |          0 |
+|               (wreq_burst_conv)                            |                bd_0_hls_inst_0_kernel_top_gmem_m_axi_burst_converter |        178 |        178 |       0 |    0 |   327 |      0 |      0 |    0 |          0 |
+|               rs_req                                       |                      bd_0_hls_inst_0_kernel_top_gmem_m_axi_reg_slice |        115 |        115 |       0 |    0 |   133 |      0 |      0 |    0 |          0 |
+|             wreq_throttle                                  |                       bd_0_hls_inst_0_kernel_top_gmem_m_axi_throttle |        222 |        119 |       0 |  103 |   270 |      0 |      0 |    0 |          0 |
+|               (wreq_throttle)                              |                       bd_0_hls_inst_0_kernel_top_gmem_m_axi_throttle |          1 |          1 |       0 |    0 |     6 |      0 |      0 |    0 |          0 |
+|               data_fifo                                    |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized6 |         65 |         28 |       0 |   37 |    49 |      0 |      0 |    0 |          0 |
+|               req_fifo                                     |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized5 |         83 |         17 |       0 |   66 |    78 |      0 |      0 |    0 |          0 |
+|               rs_req                                       |      bd_0_hls_inst_0_kernel_top_gmem_m_axi_reg_slice__parameterized0 |         73 |         73 |       0 |    0 |   137 |      0 |      0 |    0 |          0 |
+|           load_unit_0                                      |                           bd_0_hls_inst_0_kernel_top_gmem_m_axi_load |        119 |         56 |       0 |   63 |   175 |      0 |      1 |    0 |          0 |
+|             (load_unit_0)                                  |                           bd_0_hls_inst_0_kernel_top_gmem_m_axi_load |          1 |          1 |       0 |    0 |    66 |      0 |      0 |    0 |          0 |
+|             buff_rdata                                     |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized3 |         41 |         41 |       0 |    0 |    36 |      0 |      1 |    0 |          0 |
+|               (buff_rdata)                                 |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized3 |         28 |         28 |       0 |    0 |    28 |      0 |      0 |    0 |          0 |
+|               U_fifo_mem                                   |            bd_0_hls_inst_0_kernel_top_gmem_m_axi_mem__parameterized0 |         13 |         13 |       0 |    0 |     8 |      0 |      1 |    0 |          0 |
+|             fifo_rreq                                      |                        bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo_29 |         77 |         14 |       0 |   63 |    73 |      0 |      0 |    0 |          0 |
+|               (fifo_rreq)                                  |                        bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo_29 |         11 |         11 |       0 |    0 |    10 |      0 |      0 |    0 |          0 |
+|               U_fifo_srl                                   |                         bd_0_hls_inst_0_kernel_top_gmem_m_axi_srl_30 |         66 |          3 |       0 |   63 |    63 |      0 |      0 |    0 |          0 |
+|           store_unit_0                                     |                          bd_0_hls_inst_0_kernel_top_gmem_m_axi_store |        122 |         58 |       0 |   64 |   178 |      0 |      1 |    0 |          0 |
+|             (store_unit_0)                                 |                          bd_0_hls_inst_0_kernel_top_gmem_m_axi_store |          1 |          1 |       0 |    0 |    65 |      0 |      0 |    0 |          0 |
+|             buff_wdata                                     |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized0 |         14 |         14 |       0 |    0 |    20 |      0 |      1 |    0 |          0 |
+|               (buff_wdata)                                 |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized0 |         11 |         11 |       0 |    0 |    16 |      0 |      0 |    0 |          0 |
+|               U_fifo_mem                                   |                            bd_0_hls_inst_0_kernel_top_gmem_m_axi_mem |          3 |          3 |       0 |    0 |     4 |      0 |      1 |    0 |          0 |
+|             fifo_wreq                                      |                           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo |         79 |         16 |       0 |   63 |    73 |      0 |      0 |    0 |          0 |
+|               (fifo_wreq)                                  |                           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo |         12 |         12 |       0 |    0 |    10 |      0 |      0 |    0 |          0 |
+|               U_fifo_srl                                   |                            bd_0_hls_inst_0_kernel_top_gmem_m_axi_srl |         67 |          4 |       0 |   63 |    63 |      0 |      0 |    0 |          0 |
+|             fifo_wrsp                                      |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized1 |         19 |         18 |       0 |    1 |    13 |      0 |      0 |    0 |          0 |
+|               (fifo_wrsp)                                  |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized1 |          5 |          5 |       0 |    0 |    12 |      0 |      0 |    0 |          0 |
+|               U_fifo_srl                                   |            bd_0_hls_inst_0_kernel_top_gmem_m_axi_srl__parameterized0 |         14 |         13 |       0 |    1 |     1 |      0 |      0 |    0 |          0 |
+|             user_resp                                      |           bd_0_hls_inst_0_kernel_top_gmem_m_axi_fifo__parameterized2 |          9 |          9 |       0 |    0 |     7 |      0 |      0 |    0 |          0 |
+|         grp_kernel_top_Pipeline_VITIS_LOOP_18_1_fu_132     |       bd_0_hls_inst_0_kernel_top_kernel_top_Pipeline_VITIS_LOOP_18_1 |        132 |        128 |       0 |    4 |   320 |      0 |      0 |    0 |          0 |
+|           (grp_kernel_top_Pipeline_VITIS_LOOP_18_1_fu_132) |       bd_0_hls_inst_0_kernel_top_kernel_top_Pipeline_VITIS_LOOP_18_1 |        112 |        108 |       0 |    4 |   318 |      0 |      0 |    0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U         | bd_0_hls_inst_0_kernel_top_flow_control_loop_pipe_sequential_init_28 |         29 |         29 |       0 |    0 |     2 |      0 |      0 |    0 |          0 |
+|         grp_kernel_top_Pipeline_VITIS_LOOP_20_2_fu_156     |       bd_0_hls_inst_0_kernel_top_kernel_top_Pipeline_VITIS_LOOP_20_2 |         16 |         16 |       0 |    0 |    10 |      0 |      0 |    0 |          0 |
+|           (grp_kernel_top_Pipeline_VITIS_LOOP_20_2_fu_156) |       bd_0_hls_inst_0_kernel_top_kernel_top_Pipeline_VITIS_LOOP_20_2 |          1 |          1 |       0 |    0 |     8 |      0 |      0 |    0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U         |    bd_0_hls_inst_0_kernel_top_flow_control_loop_pipe_sequential_init |         15 |         15 |       0 |    0 |     2 |      0 |      0 |    0 |          0 |
+|         grp_montMult_words_fu_147                          |                            bd_0_hls_inst_0_kernel_top_montMult_words |      53081 |      53081 |       0 |    0 | 18057 |      0 |      0 |    0 |        115 |
+|           (grp_montMult_words_fu_147)                      |                            bd_0_hls_inst_0_kernel_top_montMult_words |          0 |          0 |       0 |    0 |     3 |      0 |      0 |    0 |          0 |
+|           grp_mul_fu_20                                    |                                       bd_0_hls_inst_0_kernel_top_mul |      53081 |      53081 |       0 |    0 | 18054 |      0 |      0 |    0 |        115 |
+|             (grp_mul_fu_20)                                |                                       bd_0_hls_inst_0_kernel_top_mul |      14770 |      14770 |       0 |    0 | 18054 |      0 |      0 |    0 |          1 |
+|             mul_32ns_32ns_64_1_1_U10                       |                      bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1 |       3373 |       3373 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U11                       |                    bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_1 |       1793 |       1793 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U12                       |                    bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_2 |       2078 |       2078 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U13                       |                    bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_3 |       1286 |       1286 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U14                       |                    bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_4 |       2838 |       2838 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U15                       |                    bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_5 |       1426 |       1426 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U16                       |                    bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_6 |       2124 |       2124 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U17                       |                    bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_7 |       1173 |       1173 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U18                       |                    bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_8 |       2209 |       2209 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U19                       |                    bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_9 |       1153 |       1153 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U20                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_10 |       1313 |       1313 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U21                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_11 |        886 |        886 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U22                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_12 |       1677 |       1677 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U23                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_13 |       1053 |       1053 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U24                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_14 |        847 |        847 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U25                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_15 |        694 |        694 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U26                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_16 |       1250 |       1250 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U27                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_17 |        815 |        815 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U28                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_18 |        814 |        814 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U29                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_19 |        517 |        517 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U30                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_20 |        300 |        300 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U31                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_21 |        216 |        216 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U32                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_22 |        231 |        231 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U33                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_23 |        177 |        177 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U34                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_24 |         48 |         48 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U35                       |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_25 |         47 |         47 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U8                        |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_26 |       4186 |       4186 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32ns_32ns_64_1_1_U9                        |                   bd_0_hls_inst_0_kernel_top_mul_32ns_32ns_64_1_1_27 |       2519 |       2519 |       0 |    0 |     0 |      0 |      0 |    0 |          4 |
+|             mul_32s_32s_32_1_1_U36                         |                        bd_0_hls_inst_0_kernel_top_mul_32s_32s_32_1_1 |       1268 |       1268 |       0 |    0 |     0 |      0 |      0 |    0 |          2 |
+|         ml_U                                               |                          bd_0_hls_inst_0_kernel_top_xl_RAM_AUTO_1R1W |         64 |          0 |      64 |    0 |    64 |      0 |      0 |    0 |          0 |
+|         ol_U                                               |                          bd_0_hls_inst_0_kernel_top_ol_RAM_AUTO_1R1W |          0 |          0 |       0 |    0 |     0 |      1 |      0 |    0 |          0 |
+|         xl_U                                               |                        bd_0_hls_inst_0_kernel_top_xl_RAM_AUTO_1R1W_0 |         64 |          0 |      64 |    0 |    64 |      0 |      0 |    0 |          0 |
+|         yl_U                                               |                          bd_0_hls_inst_0_kernel_top_yl_RAM_AUTO_1R1W |         32 |          0 |      32 |    0 |    32 |      0 |      0 |    0 |          0 |
++------------------------------------------------------------+----------------------------------------------------------------------+------------+------------+---------+------+-------+--------+--------+------+------------+
+
+

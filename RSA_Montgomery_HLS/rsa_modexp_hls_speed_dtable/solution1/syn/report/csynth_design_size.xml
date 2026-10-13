@@ -1,0 +1,52 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,  1422, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 44867, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 24648, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 24637, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 24637, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 24348, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 24344, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 24344, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 24344, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 24304, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 24301, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 24973, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 27628, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 25068, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 25140, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 24889, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="rsa_modexp_hw" col1="rsa_modexp_hw.cpp:25" col2="1422" col3="24637" col4="24304" col5="25068" col6="24889">
+                    <row id="2" col0="montMult_words" col1="mont_word.cpp:22" col2="900" col2_disp=" 900 (4 calls)" col3="22136" col3_disp="22,136 (4 calls)" col4="21784" col4_disp="21,784 (4 calls)" col5="21656" col5_disp="21,656 (4 calls)" col6="21664" col6_disp="21,664 (4 calls)">
+                        <row id="1" col0="mul" col1="mont_ops_fios_csa_flat.hpp:47" col2="892" col2_disp=" 892 (4 calls)" col3="22128" col3_disp="22,128 (4 calls)" col4="21776" col4_disp="21,776 (4 calls)" col5="21648" col5_disp="21,648 (4 calls)" col6="21652" col6_disp="21,652 (4 calls)"/>
+                    </row>
+                    <row id="3" col0="get_window" col1="rsa_modexp_hw.cpp:10" col2="27" col3="" col4="" col5="" col6=""/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

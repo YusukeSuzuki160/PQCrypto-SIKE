@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<POWERDATA author="Vivado Power Analysis" dataVersion="2024.2.2" design="bd_0_wrapper" designState="routed" date="Wed Sep 16 18:36:01 2026" pwrOpt="BRAMPwropt" activityLevel="vectorless">
+	<ENVIRONMENT>
+		<DEVICE part="xczu7ev" grade="extended" package="ffvc1156" speed="-2" process="typical" vid="No">
+		</DEVICE>
+		<VOLTAGESOURCES>
+			<SOURCE name="Vccbram" voltage="0.850000" icc="0.000506" iccq="0.001823" power="0.001980">
+			</SOURCE>
+			<SOURCE name="Vccint" voltage="0.850000" icc="1.125987" iccq="0.140759" power="1.076734">
+			</SOURCE>
+			<SOURCE name="Vccaux" voltage="1.800000" icc="0.000000" iccq="0.148069" power="0.266523">
+			</SOURCE>
+			<SOURCE name="Vccint_io" voltage="0.850000" icc="0.000000" iccq="0.070205" power="0.059674">
+			</SOURCE>
+			<SOURCE name="Vccaux_io" voltage="1.800000" icc="0.000000" iccq="0.055019" power="0.099034">
+			</SOURCE>
+			<SOURCE name="Vccadc" voltage="1.800000" icc="0.000000" iccq="0.008000" power="0.014400">
+			</SOURCE>
+			<SOURCE name="VCC_PSINTLP" voltage="0.850000" icc="0.000000" iccq="0.005035" power="0.004280">
+			</SOURCE>
+			<SOURCE name="VCC_PSPLL" voltage="1.200000" icc="0.000000" iccq="0.001500" power="0.001800">
+			</SOURCE>
+			<SOURCE name="VCC_PSAUX" voltage="1.800000" icc="0.000000" iccq="0.002200" power="0.003960">
+			</SOURCE>
+			<SOURCE name="VCC_PSADC" voltage="1.800000" icc="0.000000" iccq="0.001500" power="0.002700">
+			</SOURCE>
+			<SOURCE name="VCC_PSBATT" voltage="1.200000" icc="0.000000" iccq="0.000000" power="0.000000">
+			</SOURCE>
+			<SOURCE name="VCCINT_VCU" voltage="0.900000" icc="0.000000" iccq="0.025696" power="0.023126">
+			</SOURCE>
+		</VOLTAGESOURCES>
+		<THERMAL>
+			<AMBIENT value="25.000000">
+			</AMBIENT>
+			<AIRFLOW value="250.000000">
+			</AIRFLOW>
+			<HEATSINK value="medium (Medium Profile)">
+			</HEATSINK>
+			<BOARDSELECTION value="medium (10&quot;x10&quot;)">
+			</BOARDSELECTION>
+			<BOARDLAYERS value="12to15 (12 to 15 Layers)">
+			</BOARDLAYERS>
+			<TSA value="1.500000">
+			</TSA>
+			<TJB value="2.390000">
+			</TJB>
+			<BOARDTEMP value="25.0 (C)">
+			</BOARDTEMP>
+			<JUNCTION value="26.5 (C)">
+			</JUNCTION>
+		</THERMAL>
+	</ENVIRONMENT>
+	<BLOCKDETAILS>
+		<BYTYPE>
+			<BLOCKTYPE name="Clocks">
+				<CLOCK name="ap_clk" freq="136.986298" belFanout="32401" sliceFanout="11183" FoPerSite="2.897344" sliceEnableRate="0.062708" leafs="0.000000" hrows="0.000000" power="0.080462">
+				</CLOCK>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="LOGIC">
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="136.986298" clockFreq2="136.986298" toggleRate="28.275043" toggleRate2="24.535385" totalRate="3253089.049560" name="ap_clk" hierName="bd_0_wrapper/bd_0_i" writeRate="0.000000" enableRate="0.000000" fanout="1.813126" ru="4.736479" fanout2="1.828738" totalFanout="65035.000000" fanoutRate="672485.452909" numNets="104162" extNets="35869" SMUX="32" carry8s="5517" luts="59149" logicCap="33128743912" signalCap="9413190.037552" power="0.340655" sp="0.056784">
+				</LOGIC>
+				<LOGIC clock="ap_clk" clockFreq="136.986298" clockFreq2="136.986298" toggleRate="34.963216" toggleRate2="8.132924" totalRate="1343.836412" name="ap_clk" hierName="bd_0_wrapper/bd_0_i" writeRate="0.000000" enableRate="0.356430" fanout="1.000000" ru="4.580074" fanout2="1.000000" totalFanout="240.000000" fanoutRate="920.435879" numNets="240" extNets="240" SRL="132" logicCap="230467258" signalCap="55076.707962" power="0.002199" sp="0.000118">
+				</LOGIC>
+				<LOGIC clock="ap_clk" clockFreq="136.986298" clockFreq2="136.986298" toggleRate="13.458395" toggleRate2="3.473204" totalRate="444.570100" name="ap_clk" hierName="bd_0_wrapper/bd_0_i" writeRate="0.038521" enableRate="0.000000" fanout="2.234375" ru="12.053304" fanout2="2.234375" totalFanout="286.000000" fanoutRate="683.415211" numNets="128" extNets="128" RAM="64" logicCap="95570631" signalCap="367340.072556" power="0.000318" sp="0.000636">
+				</LOGIC>
+				<LOGIC clock="ap_clk" clockFreq="136.986298" clockFreq2="136.986298" toggleRate="1.208764" toggleRate2="1.273377" totalRate="37211.799900" name="ap_clk" hierName="bd_0_wrapper/bd_0_i" writeRate="0.000000" enableRate="0.049937" fanout="3.447460" ru="12.378140" fanout2="3.477964" totalFanout="105544.000000" fanoutRate="101327.091082" numNets="30785" extNets="30615" ffs="30785" logicCap="2110728406" signalCap="24234060.433304" power="0.001285" sp="0.015964">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="136.986298" clockFreq2="26.602367" toggleRate="17.940134" toggleRate2="28.076532" totalRate="474527.478216" name="High_Fanout_Nets" hierName="bd_0_wrapper/bd_0_i" writeRate="0.000000" enableRate="0.400727" fanout="9.271970" ru="27.280198" fanout2="6.814615" totalFanout="160266.000000" fanoutRate="1995830.054645" numNets="17285" extNets="17285" carry8s="1785" ffs="1234" luts="280" logicCap="1242612764" signalCap="32877337.520920" power="0.014342" sp="0.334597">
+				</LOGIC>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="BRAM">
+				<MODULE name="bd_0_wrapper/bd_0_i|ap_clk" count="2">
+					<GROUPSUMMARY>
+						<BRAM name="bd_0_wrapper/bd_0_i|ap_clk" mode="RAMB18SDP" cascade="1" toggleRate="10.966172" power="0.003221" sp="0.000278" vccbram="0.000380" vccint="0.002841">
+							<RAMPORT name="A" clock="ap_clk" clockFreq="136.986298" readWidth="36" writeWidth="0" enableRate="0.470513" writeMode="READ_FIRST" writeRate="0.000000">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ap_clk" clockFreq="136.986298" readWidth="0" writeWidth="36" enableRate="0.324955" writeMode="READ_FIRST" writeRate="1.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="bd_0_wrapper/bd_0_i|ap_clk" count="1">
+					<GROUPSUMMARY>
+						<BRAM name="bd_0_wrapper/bd_0_i|ap_clk" mode="RAMB36" cascade="1" toggleRate="12.718402" power="0.001073" sp="0.000265" vccbram="0.000050" vccint="0.001022">
+							<RAMPORT name="A" clock="ap_clk" clockFreq="136.986298" readWidth="36" writeWidth="36" enableRate="0.411782" writeMode="READ_FIRST" writeRate="0.021944">
+							</RAMPORT>
+							<RAMPORT name="B" clock="ap_clk" clockFreq="136.986298" readWidth="36" writeWidth="36" enableRate="0.021944" writeMode="NO_CHANGE" writeRate="1.000000">
+							</RAMPORT>
+						</BRAM>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="DSP">
+				<MODULE name="bd_0_wrapper/bd_0_i|ap_clk" count="11">
+					<GROUPSUMMARY>
+						<DSP48E2 name="bd_0_wrapper/bd_0_i|ap_clk" clock="ap_clk" toggleRate="5.878736" clockFreq="136.986298" multUsed="Yes" mregUsed="No" preAdderUsed="No" power="0.003693">
+						</DSP48E2>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="bd_0_wrapper/bd_0_i|asynchronous" count="88">
+					<GROUPSUMMARY>
+						<DSP48E2 name="bd_0_wrapper/bd_0_i|asynchronous" clock="" toggleRate="3.595094" clockFreq="136.986298" multUsed="Yes" mregUsed="No" preAdderUsed="No" power="0.022779">
+						</DSP48E2>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IOBANK">
+				<IOBANK numInternalVref="0" numDelayControl="0" numLVDSBanks="0">
+				</IOBANK>
+			</BLOCKTYPE>
+		</BYTYPE>
+	</BLOCKDETAILS>
+</POWERDATA>
+

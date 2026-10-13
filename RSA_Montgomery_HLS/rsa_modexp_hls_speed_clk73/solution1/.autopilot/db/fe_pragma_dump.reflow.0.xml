@@ -1,0 +1,24 @@
+<pragmas>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="50" pragmaType="inline" parentfunction="mul" off="1" region="0" recursive="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="122" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="113" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="63" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="62" pragmaType="loop_tripcount" parentfunction="mul" min="16" max="16" avg="16"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="82" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="92" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="55" pragmaType="unroll" parentfunction="mul" factor="-1" skip_exit_check="0"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="52" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="t"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="78" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="base_lo"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="79" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="base_hi"/>
+<pragma file="../montgomery_converter/include/mont_ops_fios_csa_flat.hpp" line="110" pragmaType="array_partition" parentfunction="mul" dim="1" factor="0" mode="complete" dynamic="0" variable="u"/>
+<pragma file="src_converted_flat_speed/rsa_modexp_hw.cpp" line="90" pragmaType="unroll" parentfunction="rsa_modexp_hw" factor="-1" skip_exit_check="0"/>
+<pragma file="src_converted_flat_speed/rsa_modexp_hw.cpp" line="94" pragmaType="unroll" parentfunction="rsa_modexp_hw" factor="-1" skip_exit_check="0"/>
+<pragma file="src_converted_flat_speed/rsa_modexp_hw.cpp" line="28" pragmaType="interface" parentfunction="rsa_modexp_hw" mode="m_axi" port="c" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_converted_flat_speed/rsa_modexp_hw.cpp" line="29" pragmaType="interface" parentfunction="rsa_modexp_hw" mode="m_axi" port="d" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_converted_flat_speed/rsa_modexp_hw.cpp" line="30" pragmaType="interface" parentfunction="rsa_modexp_hw" mode="m_axi" port="m" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_converted_flat_speed/rsa_modexp_hw.cpp" line="31" pragmaType="interface" parentfunction="rsa_modexp_hw" mode="m_axi" port="r2m" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_converted_flat_speed/rsa_modexp_hw.cpp" line="32" pragmaType="interface" parentfunction="rsa_modexp_hw" mode="m_axi" port="p" bundle="gmem" offset="slave" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="src_converted_flat_speed/rsa_modexp_hw.cpp" line="33" pragmaType="interface" parentfunction="rsa_modexp_hw" mode="s_axilite" port="mprime" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src_converted_flat_speed/rsa_modexp_hw.cpp" line="34" pragmaType="interface" parentfunction="rsa_modexp_hw" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src_converted_flat_speed/mont_word.cpp" line="26" pragmaType="inline" parentfunction="montMult_words" off="1" region="0" recursive="0"/>
+</pragmas>

@@ -1,0 +1,351 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.2.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>6.911</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>6.911</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>6.911</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>3.089</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>3.089</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>3.089</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>3.089</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>4</BRAM>
+    <CLB>0</CLB>
+    <DSP>115</DSP>
+    <FF>20869</FF>
+    <LATCH>0</LATCH>
+    <LUT>54828</LUT>
+    <SRL>240</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>624</BRAM>
+    <CLB>0</CLB>
+    <DSP>1728</DSP>
+    <FF>460800</FF>
+    <LUT>230400</LUT>
+    <URAM>96</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="kernel_top" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="10">control_r_s_axi_U control_s_axi_U gmem_m_axi_U grp_kernel_top_Pipeline_VITIS_LOOP_18_1_fu_132 grp_kernel_top_Pipeline_VITIS_LOOP_20_2_fu_156 grp_montMult_words_fu_147 ml_U ol_U xl_U yl_U</SubModules>
+    <Resources BRAM="4" DSP="115" FF="20869" LUT="54828" LUTRAM="160" LogicLUT="54428" RAMB18="2" RAMB36="1" SRL="240"/>
+    <LocalResources FF="262" LUT="1" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_r_s_axi_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_control_r_s_axi">
+    <Resources FF="297" LUT="211" LogicLUT="211"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_control_s_axi">
+    <Resources FF="84" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem_m_axi_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_gmem_m_axi">
+    <Resources BRAM="2" FF="1679" LUT="1163" LogicLUT="928" RAMB18="2" SRL="235"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kernel_top_Pipeline_VITIS_LOOP_18_1_fu_132" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_kernel_top_Pipeline_VITIS_LOOP_18_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="320" LUT="132" LogicLUT="128" SRL="4"/>
+    <LocalResources FF="318" LUT="112" LogicLUT="108" SRL="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kernel_top_Pipeline_VITIS_LOOP_18_1_fu_132/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="kernel_top_kernel_top_Pipeline_VITIS_LOOP_18_1.v" ORIG_REF_NAME="kernel_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="29" LogicLUT="29"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kernel_top_Pipeline_VITIS_LOOP_20_2_fu_156" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_kernel_top_Pipeline_VITIS_LOOP_20_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="10" LUT="16" LogicLUT="16"/>
+    <LocalResources FF="8" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kernel_top_Pipeline_VITIS_LOOP_20_2_fu_156/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="kernel_top_kernel_top_Pipeline_VITIS_LOOP_20_2.v" ORIG_REF_NAME="kernel_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="15" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_montMult_words">
+    <SubModules count="1">grp_mul_fu_20</SubModules>
+    <Resources DSP="115" FF="18057" LUT="53081" LogicLUT="53081"/>
+    <LocalResources FF="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20" DEPTH="2" FILE_NAME="kernel_top_montMult_words.v" ORIG_REF_NAME="kernel_top_mul">
+    <SubModules count="29">mul_32ns_32ns_64_1_1_U10 mul_32ns_32ns_64_1_1_U11 mul_32ns_32ns_64_1_1_U12 mul_32ns_32ns_64_1_1_U13 mul_32ns_32ns_64_1_1_U14 mul_32ns_32ns_64_1_1_U15 mul_32ns_32ns_64_1_1_U16 mul_32ns_32ns_64_1_1_U17 mul_32ns_32ns_64_1_1_U18 mul_32ns_32ns_64_1_1_U19 mul_32ns_32ns_64_1_1_U20 mul_32ns_32ns_64_1_1_U21 mul_32ns_32ns_64_1_1_U22 mul_32ns_32ns_64_1_1_U23 mul_32ns_32ns_64_1_1_U24 mul_32ns_32ns_64_1_1_U25 mul_32ns_32ns_64_1_1_U26 mul_32ns_32ns_64_1_1_U27 mul_32ns_32ns_64_1_1_U28 mul_32ns_32ns_64_1_1_U29 mul_32ns_32ns_64_1_1_U30 mul_32ns_32ns_64_1_1_U31 mul_32ns_32ns_64_1_1_U32 mul_32ns_32ns_64_1_1_U33 mul_32ns_32ns_64_1_1_U34 mul_32ns_32ns_64_1_1_U35 mul_32ns_32ns_64_1_1_U8 mul_32ns_32ns_64_1_1_U9 mul_32s_32s_32_1_1_U36</SubModules>
+    <Resources DSP="115" FF="18054" LUT="53081" LogicLUT="53081"/>
+    <LocalResources DSP="1" FF="18054" LUT="14770" LogicLUT="14770"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="3373" LogicLUT="3373"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="1793" LogicLUT="1793"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U12" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="2078" LogicLUT="2078"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U13" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="1286" LogicLUT="1286"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U14" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="2838" LogicLUT="2838"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U15" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="1426" LogicLUT="1426"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U16" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="2124" LogicLUT="2124"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U17" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="1173" LogicLUT="1173"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="2209" LogicLUT="2209"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U19" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="1153" LogicLUT="1153"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U20" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="1313" LogicLUT="1313"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U21" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="886" LogicLUT="886"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U22" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="1677" LogicLUT="1677"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U23" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="1053" LogicLUT="1053"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U24" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="847" LogicLUT="847"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U25" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="694" LogicLUT="694"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U26" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="1250" LogicLUT="1250"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U27" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="815" LogicLUT="815"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U28" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="814" LogicLUT="814"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U29" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="517" LogicLUT="517"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U30" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="300" LogicLUT="300"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U31" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="216" LogicLUT="216"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U32" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="231" LogicLUT="231"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U33" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="177" LogicLUT="177"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U34" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="48" LogicLUT="48"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U35" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="47" LogicLUT="47"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="4186" LogicLUT="4186"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="2519" LogicLUT="2519"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32s_32s_32_1_1_U36" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_32s_32s_32_1_1">
+    <Resources DSP="2" LUT="1268" LogicLUT="1268"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ml_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_xl_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="64" LUTRAM="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ol_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_ol_RAM_AUTO_1R1W">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xl_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_xl_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="64" LUTRAM="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/yl_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_yl_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="32" LUTRAM="32"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="6.892" DATAPATH_LOGIC_DELAY="3.823" DATAPATH_NET_DELAY="3.069" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_367_reg_41684_reg[0]/D" LOGIC_LEVELS="27" MAX_FANOUT="1320" SLACK="3.089" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8835"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U21/reg_1153[31]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9968"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U19/tmp_product_i_181__5" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="11263"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_184__1" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8613"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_65__20" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8835"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_16__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8613"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339[23]_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339_reg[23]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668[1]_i_116" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13138"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668[1]_i_124" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13138"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668_reg[1]_i_98" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12970"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668_reg[1]_i_74" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12970"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668[1]_i_46" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14354"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668_reg[1]_i_21" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14354"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/add_ln95_164_reg_41678[31]_i_14" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13230"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/add_ln95_164_reg_41678[31]_i_22" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13230"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/add_ln95_164_reg_41678_reg[31]_i_10" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13012"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_367_reg_41684[0]_i_6" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13058"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_367_reg_41684_reg[0]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13058"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_367_reg_41684[0]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9640"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_367_reg_41684_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9640"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.852" DATAPATH_LOGIC_DELAY="3.755" DATAPATH_NET_DELAY="3.097" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_293_reg_40374_reg[0]/D" LOGIC_LEVELS="26" MAX_FANOUT="1123" SLACK="3.129" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8835"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/reg_1157[31]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9950"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_122__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9956"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_38__19" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9950"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_36__18" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9950"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1_i_1__17" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8517"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry_i_7__6" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14934"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_116" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13010"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_124" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13010"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_98" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12192"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_74" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12192"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_46" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12192"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_21" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12192"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_33" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13100"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_41" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13100"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374_reg[0]_i_21" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12944"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_7" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12944"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374_reg[0]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12944"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_293_reg_40374_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9085"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.830" DATAPATH_LOGIC_DELAY="3.785" DATAPATH_NET_DELAY="3.045" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_491_reg_41910_reg[0]/D" LOGIC_LEVELS="26" MAX_FANOUT="1320" SLACK="3.151" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8835"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U21/reg_1153[31]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9968"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U19/tmp_product_i_181__5" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="11263"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_184__1" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8613"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_65__20" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8835"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_16__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8613"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339[23]_i_8" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339_reg[23]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894[1]_i_116" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13322"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894[1]_i_124" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13322"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894_reg[1]_i_98" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13058"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894_reg[1]_i_74" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13058"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894[1]_i_46" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13012"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894_reg[1]_i_21" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13012"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910[0]_i_33" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13412"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910[0]_i_41" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13412"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910_reg[0]_i_20" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13012"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910[0]_i_5" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13012"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910_reg[0]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13012"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_491_reg_41910_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9466"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.825" DATAPATH_LOGIC_DELAY="3.736" DATAPATH_NET_DELAY="3.089" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_165_reg_39851_reg[0]/D" LOGIC_LEVELS="26" MAX_FANOUT="1123" SLACK="3.156" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8835"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/reg_1157[31]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9950"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_122__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9956"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1_i_124__3" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8505"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1_i_36__20" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8835"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1_i_1__16" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8505"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__2/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__2/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product_carry_i_7__4" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12682"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/add_ln97_72_reg_39825[2]_i_27" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12740"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835[1]_i_102" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12740"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835_reg[1]_i_89" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12740"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835[1]_i_68" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12740"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835_reg[1]_i_39" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12740"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835_reg[1]_i_21" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12740"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851[0]_i_36" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13806"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851[0]_i_44" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13806"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851_reg[0]_i_21" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12740"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851[0]_i_7" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14752"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851_reg[0]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14752"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_165_reg_39851_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9221"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="6.816" DATAPATH_LOGIC_DELAY="4.096" DATAPATH_NET_DELAY="2.720" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_reg_40353_reg[31]/D" LOGIC_LEVELS="28" MAX_FANOUT="1123" SLACK="3.165" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8835"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/reg_1157[31]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9950"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_122__3" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9956"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_38__19" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9950"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_36__18" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9950"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1_i_1__17" PRIMITIVE_TYPE="CLB.LUT.LUT5" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="8517"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry_i_7__6" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14934"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_116" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13010"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_124" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="13010"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_98" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12192"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_74" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12192"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_186_reg_40353[7]_i_20" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12192"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_186_reg_40353_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="12192"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14934"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14934"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14934"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14934"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353[23]_i_9" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14936"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[23]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14934"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[31]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="14934"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_reg_40353_reg[31]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="9077"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/kernel_top_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/kernel_top_failfast_synth.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/kernel_top_power_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/kernel_top_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/kernel_top_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/kernel_top_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/kernel_top_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

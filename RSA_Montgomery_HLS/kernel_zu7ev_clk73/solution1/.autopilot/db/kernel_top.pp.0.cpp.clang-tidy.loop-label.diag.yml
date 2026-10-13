@@ -1,0 +1,22 @@
+---
+MainSourceFile:  /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/kernel_zu7ev_clk73/solution1/.autopilot/db/kernel_top.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_18_1:  '
+    FileOffset:      18
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_mult_kernel_only/kernel_top.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/kernel_zu7ev_clk73/solution1/.autopilot/db/kernel_top.pp.0.cpp
+        Offset:          17734
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_18_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_20_2:  '
+    FileOffset:      20
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_mult_kernel_only/kernel_top.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/kernel_zu7ev_clk73/solution1/.autopilot/db/kernel_top.pp.0.cpp
+        Offset:          17863
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_20_2: '
+...

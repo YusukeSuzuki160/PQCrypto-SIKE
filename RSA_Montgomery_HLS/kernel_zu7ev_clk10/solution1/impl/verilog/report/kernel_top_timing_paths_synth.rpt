@@ -1,0 +1,1158 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2024.2.2 (lin64) Build 6060944 Thu Mar 06 19:10:09 MST 2025
+| Date              : Wed Sep 16 18:12:39 2026
+| Host              : meltpointubuntu running 64-bit Ubuntu 24.04.4 LTS
+| Command           : report_timing -max_paths 10 -file ./report/kernel_top_timing_paths_synth.rpt
+| Design            : bd_0_wrapper
+| Device            : xczu7ev-ffvc1156
+| Speed File        : -2  PRODUCTION 1.30 05-15-2022
+| Design State      : Synthesized
+| Temperature Grade : E
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             3.089ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_367_reg_41684_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.892ns  (logic 3.823ns (55.470%)  route 3.069ns (44.530%))
+  Logic Levels:           27  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT2=4 LUT3=3 LUT4=3 LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 10.021 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.030     0.030    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.107 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/Q
+                         net (fo=1320, unplaced)      0.281     0.388    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U21/ap_CS_fsm_state27
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.426 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U21/reg_1153[31]_i_1/O
+                         net (fo=98, unplaced)        0.271     0.697    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U19/p_89_in
+                         LUT4 (Prop_LUT4_I1_O)        0.038     0.735 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U19/tmp_product_i_181__5/O
+                         net (fo=66, unplaced)        0.262     0.997    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/grp_fu_716_p1155_out
+                         LUT5 (Prop_LUT5_I3_O)        0.038     1.035 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_184__1/O
+                         net (fo=32, unplaced)        0.246     1.281    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_184__1_n_0
+                         LUT6 (Prop_LUT6_I5_O)        0.038     1.319 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_65__20/O
+                         net (fo=1, unplaced)         0.186     1.505    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_65__20_n_0
+                         LUT6 (Prop_LUT6_I1_O)        0.038     1.543 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_16__3/O
+                         net (fo=2, unplaced)         0.227     1.770    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/B[16]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[16]_B2_DATA[16])
+                                                      0.151     1.921 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, unplaced)         0.000     1.921    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_A_B_DATA.B2_DATA<16>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[16]_B2B1[16])
+                                                      0.073     1.994 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, unplaced)         0.000     1.994    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_PREADD_DATA.B2B1<16>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[16]_V[43])
+                                                      0.609     2.603 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_MULTIPLIER_INST/V[43]
+                         net (fo=1, unplaced)         0.000     2.603    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_MULTIPLIER.V<43>
+                         DSP_M_DATA (Prop_DSP_M_DATA_V[43]_V_DATA[43])
+                                                      0.046     2.649 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_M_DATA_INST/V_DATA[43]
+                         net (fo=1, unplaced)         0.000     2.649    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_M_DATA.V_DATA<43>
+                         DSP_ALU (Prop_DSP_ALU_V_DATA[43]_ALU_OUT[47])
+                                                      0.571     3.220 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     3.220    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[47]_PCOUT[47])
+                                                      0.122     3.342 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_OUTPUT_INST/PCOUT[47]
+                         net (fo=1, unplaced)         0.014     3.356    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/PCIN[47]
+                         DSP_ALU (Prop_DSP_ALU_PCIN[47]_ALU_OUT[0])
+                                                      0.546     3.902 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_ALU_INST/ALU_OUT[0]
+                         net (fo=1, unplaced)         0.000     3.902    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_ALU.ALU_OUT<0>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[0]_P[0])
+                                                      0.109     4.011 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_OUTPUT_INST/P[0]
+                         net (fo=2, unplaced)         0.206     4.217    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2_n_105
+                         LUT2 (Prop_LUT2_I0_O)        0.052     4.269 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339[23]_i_8/O
+                         net (fo=1, unplaced)         0.023     4.292    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339[23]_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[5])
+                                                      0.237     4.529 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339_reg[23]_i_1/O[5]
+                         net (fo=81, unplaced)        0.222     4.751    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/grp_fu_712_p2[21]
+                         LUT3 (Prop_LUT3_I1_O)        0.105     4.856 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668[1]_i_116/O
+                         net (fo=2, unplaced)         0.216     5.072    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668[1]_i_116_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     5.109 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668[1]_i_124/O
+                         net (fo=1, unplaced)         0.023     5.132    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668[1]_i_124_n_0
+                         CARRY8 (Prop_CARRY8_S[6]_CO[7])
+                                                      0.124     5.256 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668_reg[1]_i_98/CO[7]
+                         net (fo=1, unplaced)         0.005     5.261    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668_reg[1]_i_98_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     5.337 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668_reg[1]_i_74/O[1]
+                         net (fo=2, unplaced)         0.184     5.521    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/p_167_in[25]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     5.558 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668[1]_i_46/O
+                         net (fo=1, unplaced)         0.023     5.581    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668[1]_i_46_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[2])
+                                                      0.117     5.698 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_336_reg_41668_reg[1]_i_21/O[2]
+                         net (fo=4, unplaced)         0.198     5.896    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/p_168_in[26]
+                         LUT3 (Prop_LUT3_I0_O)        0.068     5.964 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/add_ln95_164_reg_41678[31]_i_14/O
+                         net (fo=2, unplaced)         0.212     6.176    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/add_ln95_164_reg_41678[31]_i_14_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     6.213 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/add_ln95_164_reg_41678[31]_i_22/O
+                         net (fo=1, unplaced)         0.032     6.245    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/add_ln95_164_reg_41678[31]_i_22_n_0
+                         CARRY8 (Prop_CARRY8_S[3]_O[5])
+                                                      0.184     6.429 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/add_ln95_164_reg_41678_reg[31]_i_10/O[5]
+                         net (fo=2, unplaced)         0.141     6.570    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/p_169_in[29]
+                         LUT2 (Prop_LUT2_I1_O)        0.051     6.621 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_367_reg_41684[0]_i_6/O
+                         net (fo=1, unplaced)         0.029     6.650    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_367_reg_41684[0]_i_6_n_0
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     6.816 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_367_reg_41684_reg[0]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.020     6.836    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/lo_sum_82_fu_13466_p2[32]
+                         LUT3 (Prop_LUT3_I0_O)        0.038     6.874 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_367_reg_41684[0]_i_1/O
+                         net (fo=1, unplaced)         0.048     6.922    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18_n_64
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_367_reg_41684_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.021    10.021    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_367_reg_41684_reg[0]/C
+                         clock pessimism              0.000    10.021    
+                         clock uncertainty           -0.035     9.986    
+                         FDRE (Setup_FDRE_C_D)        0.025    10.011    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_367_reg_41684_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.011    
+                         arrival time                          -6.922    
+  -------------------------------------------------------------------
+                         slack                                  3.089    
+
+Slack (MET) :             3.129ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_293_reg_40374_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.852ns  (logic 3.755ns (54.802%)  route 3.097ns (45.198%))
+  Logic Levels:           26  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT2=4 LUT3=3 LUT4=2 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 10.021 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.030     0.030    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.107 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/Q
+                         net (fo=1123, unplaced)      0.277     0.384    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_state29
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.422 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/reg_1157[31]_i_1/O
+                         net (fo=33, unplaced)        0.200     0.622    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/E[0]
+                         LUT6 (Prop_LUT6_I1_O)        0.090     0.712 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_122__3/O
+                         net (fo=131, unplaced)       0.278     0.990    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/grp_fu_676_p1149_out
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.028 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_38__19/O
+                         net (fo=65, unplaced)        0.262     1.290    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_reg[34]
+                         LUT5 (Prop_LUT5_I4_O)        0.038     1.328 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_36__18/O
+                         net (fo=64, unplaced)        0.261     1.589    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/DSP_A_B_DATA_INST
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.627 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1_i_1__17/O
+                         net (fo=2, unplaced)         0.227     1.854    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/B[16]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[16]_B2_DATA[16])
+                                                      0.151     2.005 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, unplaced)         0.000     2.005    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_A_B_DATA.B2_DATA<16>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[16]_B2B1[16])
+                                                      0.073     2.078 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, unplaced)         0.000     2.078    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_PREADD_DATA.B2B1<16>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[16]_V[43])
+                                                      0.609     2.687 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_MULTIPLIER_INST/V[43]
+                         net (fo=1, unplaced)         0.000     2.687    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_MULTIPLIER.V<43>
+                         DSP_M_DATA (Prop_DSP_M_DATA_V[43]_V_DATA[43])
+                                                      0.046     2.733 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_M_DATA_INST/V_DATA[43]
+                         net (fo=1, unplaced)         0.000     2.733    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_M_DATA.V_DATA<43>
+                         DSP_ALU (Prop_DSP_ALU_V_DATA[43]_ALU_OUT[47])
+                                                      0.571     3.304 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     3.304    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[47]_PCOUT[47])
+                                                      0.122     3.426 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_OUTPUT_INST/PCOUT[47]
+                         net (fo=1, unplaced)         0.014     3.440    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/PCIN[47]
+                         DSP_ALU (Prop_DSP_ALU_PCIN[47]_ALU_OUT[0])
+                                                      0.546     3.986 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_ALU_INST/ALU_OUT[0]
+                         net (fo=1, unplaced)         0.000     3.986    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_ALU.ALU_OUT<0>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[0]_P[0])
+                                                      0.109     4.095 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_OUTPUT_INST/P[0]
+                         net (fo=2, unplaced)         0.206     4.301    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2_n_105
+                         LUT2 (Prop_LUT2_I0_O)        0.052     4.353 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry_i_7__6/O
+                         net (fo=1, unplaced)         0.023     4.376    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry_i_7__6_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[5])
+                                                      0.237     4.613 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry/O[5]
+                         net (fo=132, unplaced)       0.233     4.846    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/grp_fu_680_p2[21]
+                         LUT3 (Prop_LUT3_I1_O)        0.105     4.951 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_116/O
+                         net (fo=2, unplaced)         0.216     5.167    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_116_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     5.204 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_124/O
+                         net (fo=1, unplaced)         0.023     5.227    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_124_n_0
+                         CARRY8 (Prop_CARRY8_S[6]_CO[7])
+                                                      0.124     5.351 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_98/CO[7]
+                         net (fo=1, unplaced)         0.005     5.356    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_98_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     5.432 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_74/O[1]
+                         net (fo=2, unplaced)         0.184     5.616    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/p_485_in[25]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     5.653 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_46/O
+                         net (fo=1, unplaced)         0.023     5.676    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_46_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[2])
+                                                      0.117     5.793 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_21/O[2]
+                         net (fo=4, unplaced)         0.198     5.991    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/C_lo_48_reg_40201_reg[30][2]
+                         LUT3 (Prop_LUT3_I0_O)        0.038     6.029 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_33/O
+                         net (fo=2, unplaced)         0.186     6.215    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_33_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     6.252 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_41/O
+                         net (fo=1, unplaced)         0.032     6.284    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_41_n_0
+                         CARRY8 (Prop_CARRY8_S[3]_O[4])
+                                                      0.149     6.433 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374_reg[0]_i_21/O[4]
+                         net (fo=2, unplaced)         0.184     6.617    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/p_487_in[28]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     6.654 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_7/O
+                         net (fo=1, unplaced)         0.021     6.675    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_7_n_0
+                         CARRY8 (Prop_CARRY8_S[4]_CO[7])
+                                                      0.163     6.838 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374_reg[0]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.044     6.882    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/lo_sum_62_fu_5428_p2[32]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_293_reg_40374_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.021    10.021    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_293_reg_40374_reg[0]/C
+                         clock pessimism              0.000    10.021    
+                         clock uncertainty           -0.035     9.986    
+                         FDRE (Setup_FDRE_C_D)        0.025    10.011    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_293_reg_40374_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.011    
+                         arrival time                          -6.882    
+  -------------------------------------------------------------------
+                         slack                                  3.129    
+
+Slack (MET) :             3.151ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_491_reg_41910_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.830ns  (logic 3.785ns (55.417%)  route 3.045ns (44.583%))
+  Logic Levels:           26  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT2=4 LUT3=2 LUT4=3 LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 10.021 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.030     0.030    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.107 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/Q
+                         net (fo=1320, unplaced)      0.281     0.388    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U21/ap_CS_fsm_state27
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.426 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U21/reg_1153[31]_i_1/O
+                         net (fo=98, unplaced)        0.271     0.697    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U19/p_89_in
+                         LUT4 (Prop_LUT4_I1_O)        0.038     0.735 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U19/tmp_product_i_181__5/O
+                         net (fo=66, unplaced)        0.262     0.997    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/grp_fu_716_p1155_out
+                         LUT5 (Prop_LUT5_I3_O)        0.038     1.035 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_184__1/O
+                         net (fo=32, unplaced)        0.246     1.281    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_184__1_n_0
+                         LUT6 (Prop_LUT6_I5_O)        0.038     1.319 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_65__20/O
+                         net (fo=1, unplaced)         0.186     1.505    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_65__20_n_0
+                         LUT6 (Prop_LUT6_I1_O)        0.038     1.543 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_16__3/O
+                         net (fo=2, unplaced)         0.227     1.770    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/B[16]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[16]_B2_DATA[16])
+                                                      0.151     1.921 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, unplaced)         0.000     1.921    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_A_B_DATA.B2_DATA<16>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[16]_B2B1[16])
+                                                      0.073     1.994 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, unplaced)         0.000     1.994    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_PREADD_DATA.B2B1<16>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[16]_V[43])
+                                                      0.609     2.603 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_MULTIPLIER_INST/V[43]
+                         net (fo=1, unplaced)         0.000     2.603    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_MULTIPLIER.V<43>
+                         DSP_M_DATA (Prop_DSP_M_DATA_V[43]_V_DATA[43])
+                                                      0.046     2.649 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_M_DATA_INST/V_DATA[43]
+                         net (fo=1, unplaced)         0.000     2.649    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_M_DATA.V_DATA<43>
+                         DSP_ALU (Prop_DSP_ALU_V_DATA[43]_ALU_OUT[47])
+                                                      0.571     3.220 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     3.220    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[47]_PCOUT[47])
+                                                      0.122     3.342 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_OUTPUT_INST/PCOUT[47]
+                         net (fo=1, unplaced)         0.014     3.356    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/PCIN[47]
+                         DSP_ALU (Prop_DSP_ALU_PCIN[47]_ALU_OUT[0])
+                                                      0.546     3.902 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_ALU_INST/ALU_OUT[0]
+                         net (fo=1, unplaced)         0.000     3.902    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_ALU.ALU_OUT<0>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[0]_P[0])
+                                                      0.109     4.011 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_OUTPUT_INST/P[0]
+                         net (fo=2, unplaced)         0.206     4.217    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2_n_105
+                         LUT2 (Prop_LUT2_I0_O)        0.052     4.269 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339[23]_i_8/O
+                         net (fo=1, unplaced)         0.023     4.292    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339[23]_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[5])
+                                                      0.237     4.529 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339_reg[23]_i_1/O[5]
+                         net (fo=81, unplaced)        0.222     4.751    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/grp_fu_712_p2[21]
+                         LUT3 (Prop_LUT3_I1_O)        0.105     4.856 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894[1]_i_116/O
+                         net (fo=2, unplaced)         0.216     5.072    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894[1]_i_116_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     5.109 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894[1]_i_124/O
+                         net (fo=1, unplaced)         0.023     5.132    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894[1]_i_124_n_0
+                         CARRY8 (Prop_CARRY8_S[6]_CO[7])
+                                                      0.124     5.256 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894_reg[1]_i_98/CO[7]
+                         net (fo=1, unplaced)         0.005     5.261    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894_reg[1]_i_98_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     5.337 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894_reg[1]_i_74/O[1]
+                         net (fo=2, unplaced)         0.184     5.521    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/p_299_in[25]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     5.558 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894[1]_i_46/O
+                         net (fo=1, unplaced)         0.023     5.581    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894[1]_i_46_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[2])
+                                                      0.117     5.698 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_460_reg_41894_reg[1]_i_21/O[2]
+                         net (fo=4, unplaced)         0.198     5.896    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/p_300_in[26]
+                         LUT3 (Prop_LUT3_I0_O)        0.068     5.964 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910[0]_i_33/O
+                         net (fo=2, unplaced)         0.212     6.176    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910[0]_i_33_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     6.213 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910[0]_i_41/O
+                         net (fo=1, unplaced)         0.032     6.245    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910[0]_i_41_n_0
+                         CARRY8 (Prop_CARRY8_S[3]_O[5])
+                                                      0.184     6.429 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910_reg[0]_i_20/O[5]
+                         net (fo=2, unplaced)         0.141     6.570    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/p_301_in[29]
+                         LUT2 (Prop_LUT2_I1_O)        0.051     6.621 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910[0]_i_5/O
+                         net (fo=1, unplaced)         0.029     6.650    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910[0]_i_5_n_0
+                         CARRY8 (Prop_CARRY8_S[5]_CO[7])
+                                                      0.166     6.816 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_491_reg_41910_reg[0]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.044     6.860    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/lo_sum_110_fu_15669_p2[32]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_491_reg_41910_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.021    10.021    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_491_reg_41910_reg[0]/C
+                         clock pessimism              0.000    10.021    
+                         clock uncertainty           -0.035     9.986    
+                         FDRE (Setup_FDRE_C_D)        0.025    10.011    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_491_reg_41910_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.011    
+                         arrival time                          -6.860    
+  -------------------------------------------------------------------
+                         slack                                  3.151    
+
+Slack (MET) :             3.156ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_165_reg_39851_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.825ns  (logic 3.736ns (54.740%)  route 3.089ns (45.260%))
+  Logic Levels:           26  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT2=4 LUT3=3 LUT4=2 LUT6=3)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 10.021 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.030     0.030    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.107 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/Q
+                         net (fo=1123, unplaced)      0.277     0.384    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_state29
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.422 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/reg_1157[31]_i_1/O
+                         net (fo=33, unplaced)        0.200     0.622    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/E[0]
+                         LUT6 (Prop_LUT6_I1_O)        0.090     0.712 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_122__3/O
+                         net (fo=131, unplaced)       0.278     0.990    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/grp_fu_676_p1149_out
+                         LUT3 (Prop_LUT3_I2_O)        0.038     1.028 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1_i_124__3/O
+                         net (fo=32, unplaced)        0.246     1.274    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1_i_124__3_n_0
+                         LUT6 (Prop_LUT6_I5_O)        0.038     1.312 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1_i_36__20/O
+                         net (fo=1, unplaced)         0.186     1.498    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1_i_36__20_n_0
+                         LUT6 (Prop_LUT6_I1_O)        0.038     1.536 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1_i_1__16/O
+                         net (fo=2, unplaced)         0.227     1.763    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/B[16]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[16]_B2_DATA[16])
+                                                      0.151     1.914 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, unplaced)         0.000     1.914    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_A_B_DATA.B2_DATA<16>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[16]_B2B1[16])
+                                                      0.073     1.987 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, unplaced)         0.000     1.987    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_PREADD_DATA.B2B1<16>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[16]_V[43])
+                                                      0.609     2.596 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_MULTIPLIER_INST/V[43]
+                         net (fo=1, unplaced)         0.000     2.596    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_MULTIPLIER.V<43>
+                         DSP_M_DATA (Prop_DSP_M_DATA_V[43]_V_DATA[43])
+                                                      0.046     2.642 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_M_DATA_INST/V_DATA[43]
+                         net (fo=1, unplaced)         0.000     2.642    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_M_DATA.V_DATA<43>
+                         DSP_ALU (Prop_DSP_ALU_V_DATA[43]_ALU_OUT[47])
+                                                      0.571     3.213 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     3.213    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[47]_PCOUT[47])
+                                                      0.122     3.335 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__1/DSP_OUTPUT_INST/PCOUT[47]
+                         net (fo=1, unplaced)         0.014     3.349    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__2/PCIN[47]
+                         DSP_ALU (Prop_DSP_ALU_PCIN[47]_ALU_OUT[0])
+                                                      0.546     3.895 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__2/DSP_ALU_INST/ALU_OUT[0]
+                         net (fo=1, unplaced)         0.000     3.895    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__2/DSP_ALU.ALU_OUT<0>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[0]_P[0])
+                                                      0.109     4.004 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__2/DSP_OUTPUT_INST/P[0]
+                         net (fo=2, unplaced)         0.206     4.210    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product__2_n_105
+                         LUT2 (Prop_LUT2_I0_O)        0.052     4.262 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product_carry_i_7__4/O
+                         net (fo=1, unplaced)         0.023     4.285    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product_carry_i_7__4_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[2])
+                                                      0.117     4.402 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U9/tmp_product_carry/O[2]
+                         net (fo=123, unplaced)       0.276     4.678    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/grp_fu_676_p2[18]
+                         LUT3 (Prop_LUT3_I2_O)        0.068     4.746 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/add_ln97_72_reg_39825[2]_i_27/O
+                         net (fo=4, unplaced)         0.225     4.971    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/add_ln97_72_reg_39825[2]_i_27_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     5.008 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835[1]_i_102/O
+                         net (fo=1, unplaced)         0.032     5.040    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835[1]_i_102_n_0
+                         CARRY8 (Prop_CARRY8_S[3]_O[4])
+                                                      0.149     5.189 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835_reg[1]_i_89/O[4]
+                         net (fo=2, unplaced)         0.184     5.373    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/p_419_in[20]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     5.410 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835[1]_i_68/O
+                         net (fo=1, unplaced)         0.021     5.431    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835[1]_i_68_n_0
+                         CARRY8 (Prop_CARRY8_S[4]_CO[7])
+                                                      0.163     5.594 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835_reg[1]_i_39/CO[7]
+                         net (fo=1, unplaced)         0.005     5.599    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835_reg[1]_i_39_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.056     5.655 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_134_reg_39835_reg[1]_i_21/O[0]
+                         net (fo=4, unplaced)         0.198     5.853    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/p_420_in[24]
+                         LUT3 (Prop_LUT3_I0_O)        0.070     5.923 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851[0]_i_36/O
+                         net (fo=2, unplaced)         0.219     6.142    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851[0]_i_36_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     6.179 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851[0]_i_44/O
+                         net (fo=1, unplaced)         0.023     6.202    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851[0]_i_44_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[4])
+                                                      0.204     6.406 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851_reg[0]_i_21/O[4]
+                         net (fo=2, unplaced)         0.184     6.590    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/p_421_in[28]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     6.627 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851[0]_i_7/O
+                         net (fo=1, unplaced)         0.021     6.648    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851[0]_i_7_n_0
+                         CARRY8 (Prop_CARRY8_S[4]_CO[7])
+                                                      0.163     6.811 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8/tmp_165_reg_39851_reg[0]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.044     6.855    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/lo_sum_32_fu_3251_p2[32]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_165_reg_39851_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.021    10.021    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_165_reg_39851_reg[0]/C
+                         clock pessimism              0.000    10.021    
+                         clock uncertainty           -0.035     9.986    
+                         FDRE (Setup_FDRE_C_D)        0.025    10.011    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_165_reg_39851_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.011    
+                         arrival time                          -6.855    
+  -------------------------------------------------------------------
+                         slack                                  3.156    
+
+Slack (MET) :             3.165ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_reg_40353_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.816ns  (logic 4.096ns (60.094%)  route 2.720ns (39.906%))
+  Logic Levels:           28  (CARRY8=9 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT2=5 LUT3=2 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 10.021 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.030     0.030    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.107 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/Q
+                         net (fo=1123, unplaced)      0.277     0.384    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_state29
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.422 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/reg_1157[31]_i_1/O
+                         net (fo=33, unplaced)        0.200     0.622    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/E[0]
+                         LUT6 (Prop_LUT6_I1_O)        0.090     0.712 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_122__3/O
+                         net (fo=131, unplaced)       0.278     0.990    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/grp_fu_676_p1149_out
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.028 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_38__19/O
+                         net (fo=65, unplaced)        0.262     1.290    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_reg[34]
+                         LUT5 (Prop_LUT5_I4_O)        0.038     1.328 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_36__18/O
+                         net (fo=64, unplaced)        0.261     1.589    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/DSP_A_B_DATA_INST
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.627 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1_i_1__17/O
+                         net (fo=2, unplaced)         0.227     1.854    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/B[16]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[16]_B2_DATA[16])
+                                                      0.151     2.005 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, unplaced)         0.000     2.005    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_A_B_DATA.B2_DATA<16>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[16]_B2B1[16])
+                                                      0.073     2.078 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, unplaced)         0.000     2.078    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_PREADD_DATA.B2B1<16>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[16]_V[43])
+                                                      0.609     2.687 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_MULTIPLIER_INST/V[43]
+                         net (fo=1, unplaced)         0.000     2.687    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_MULTIPLIER.V<43>
+                         DSP_M_DATA (Prop_DSP_M_DATA_V[43]_V_DATA[43])
+                                                      0.046     2.733 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_M_DATA_INST/V_DATA[43]
+                         net (fo=1, unplaced)         0.000     2.733    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_M_DATA.V_DATA<43>
+                         DSP_ALU (Prop_DSP_ALU_V_DATA[43]_ALU_OUT[47])
+                                                      0.571     3.304 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     3.304    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[47]_PCOUT[47])
+                                                      0.122     3.426 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_OUTPUT_INST/PCOUT[47]
+                         net (fo=1, unplaced)         0.014     3.440    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/PCIN[47]
+                         DSP_ALU (Prop_DSP_ALU_PCIN[47]_ALU_OUT[0])
+                                                      0.546     3.986 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_ALU_INST/ALU_OUT[0]
+                         net (fo=1, unplaced)         0.000     3.986    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_ALU.ALU_OUT<0>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[0]_P[0])
+                                                      0.109     4.095 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_OUTPUT_INST/P[0]
+                         net (fo=2, unplaced)         0.206     4.301    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2_n_105
+                         LUT2 (Prop_LUT2_I0_O)        0.052     4.353 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry_i_7__6/O
+                         net (fo=1, unplaced)         0.023     4.376    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry_i_7__6_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[5])
+                                                      0.237     4.613 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry/O[5]
+                         net (fo=132, unplaced)       0.233     4.846    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/grp_fu_680_p2[21]
+                         LUT3 (Prop_LUT3_I1_O)        0.105     4.951 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_116/O
+                         net (fo=2, unplaced)         0.216     5.167    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_116_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     5.204 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_124/O
+                         net (fo=1, unplaced)         0.023     5.227    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_124_n_0
+                         CARRY8 (Prop_CARRY8_S[6]_CO[7])
+                                                      0.124     5.351 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_98/CO[7]
+                         net (fo=1, unplaced)         0.005     5.356    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_98_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     5.432 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_74/O[1]
+                         net (fo=2, unplaced)         0.184     5.616    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/p_485_in[25]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     5.653 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_186_reg_40353[7]_i_20/O
+                         net (fo=1, unplaced)         0.023     5.676    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_186_reg_40353[7]_i_20_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.197     5.873 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_186_reg_40353_reg[7]_i_12/CO[7]
+                         net (fo=1, unplaced)         0.020     5.893    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[7]_i_2_0[0]
+                         LUT2 (Prop_LUT2_I1_O)        0.038     5.931 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353[7]_i_11/O
+                         net (fo=1, unplaced)         0.020     5.951    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353[7]_i_11_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.199     6.150 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.005     6.155    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[7]_i_2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.022     6.177 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.005     6.182    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[15]_i_2_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     6.258 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[23]_i_2/O[1]
+                         net (fo=2, unplaced)         0.184     6.442    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/zext_ln97_124_fu_5320_p1[17]
+                         LUT2 (Prop_LUT2_I0_O)        0.037     6.479 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353[23]_i_9/O
+                         net (fo=1, unplaced)         0.023     6.502    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353[23]_i_9_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.197     6.699 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[23]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.005     6.704    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[23]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[7])
+                                                      0.116     6.820 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[31]_i_1/O[7]
+                         net (fo=1, unplaced)         0.026     6.846    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_fu_5324_p2[31]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_reg_40353_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.021    10.021    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_reg_40353_reg[31]/C
+                         clock pessimism              0.000    10.021    
+                         clock uncertainty           -0.035     9.986    
+                         FDRE (Setup_FDRE_C_D)        0.025    10.011    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_reg_40353_reg[31]
+  -------------------------------------------------------------------
+                         required time                         10.011    
+                         arrival time                          -6.846    
+  -------------------------------------------------------------------
+                         slack                                  3.165    
+
+Slack (MET) :             3.166ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_reg_40353_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.815ns  (logic 4.096ns (60.103%)  route 2.719ns (39.897%))
+  Logic Levels:           28  (CARRY8=9 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT2=5 LUT3=2 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 10.021 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.030     0.030    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.107 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/Q
+                         net (fo=1123, unplaced)      0.277     0.384    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_state29
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.422 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/reg_1157[31]_i_1/O
+                         net (fo=33, unplaced)        0.200     0.622    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/E[0]
+                         LUT6 (Prop_LUT6_I1_O)        0.090     0.712 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_122__3/O
+                         net (fo=131, unplaced)       0.278     0.990    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/grp_fu_676_p1149_out
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.028 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_38__19/O
+                         net (fo=65, unplaced)        0.262     1.290    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_reg[34]
+                         LUT5 (Prop_LUT5_I4_O)        0.038     1.328 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_36__18/O
+                         net (fo=64, unplaced)        0.261     1.589    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/DSP_A_B_DATA_INST
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.627 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1_i_1__17/O
+                         net (fo=2, unplaced)         0.227     1.854    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/B[16]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[16]_B2_DATA[16])
+                                                      0.151     2.005 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, unplaced)         0.000     2.005    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_A_B_DATA.B2_DATA<16>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[16]_B2B1[16])
+                                                      0.073     2.078 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, unplaced)         0.000     2.078    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_PREADD_DATA.B2B1<16>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[16]_V[43])
+                                                      0.609     2.687 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_MULTIPLIER_INST/V[43]
+                         net (fo=1, unplaced)         0.000     2.687    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_MULTIPLIER.V<43>
+                         DSP_M_DATA (Prop_DSP_M_DATA_V[43]_V_DATA[43])
+                                                      0.046     2.733 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_M_DATA_INST/V_DATA[43]
+                         net (fo=1, unplaced)         0.000     2.733    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_M_DATA.V_DATA<43>
+                         DSP_ALU (Prop_DSP_ALU_V_DATA[43]_ALU_OUT[47])
+                                                      0.571     3.304 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     3.304    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[47]_PCOUT[47])
+                                                      0.122     3.426 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_OUTPUT_INST/PCOUT[47]
+                         net (fo=1, unplaced)         0.014     3.440    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/PCIN[47]
+                         DSP_ALU (Prop_DSP_ALU_PCIN[47]_ALU_OUT[0])
+                                                      0.546     3.986 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_ALU_INST/ALU_OUT[0]
+                         net (fo=1, unplaced)         0.000     3.986    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_ALU.ALU_OUT<0>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[0]_P[0])
+                                                      0.109     4.095 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_OUTPUT_INST/P[0]
+                         net (fo=2, unplaced)         0.206     4.301    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2_n_105
+                         LUT2 (Prop_LUT2_I0_O)        0.052     4.353 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry_i_7__6/O
+                         net (fo=1, unplaced)         0.023     4.376    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry_i_7__6_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[5])
+                                                      0.237     4.613 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry/O[5]
+                         net (fo=132, unplaced)       0.233     4.846    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/grp_fu_680_p2[21]
+                         LUT3 (Prop_LUT3_I1_O)        0.105     4.951 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_116/O
+                         net (fo=2, unplaced)         0.216     5.167    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_116_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     5.204 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_124/O
+                         net (fo=1, unplaced)         0.023     5.227    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_124_n_0
+                         CARRY8 (Prop_CARRY8_S[6]_CO[7])
+                                                      0.124     5.351 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_98/CO[7]
+                         net (fo=1, unplaced)         0.005     5.356    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_98_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     5.432 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_74/O[1]
+                         net (fo=2, unplaced)         0.184     5.616    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/p_485_in[25]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     5.653 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_186_reg_40353[7]_i_20/O
+                         net (fo=1, unplaced)         0.023     5.676    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_186_reg_40353[7]_i_20_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.197     5.873 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_186_reg_40353_reg[7]_i_12/CO[7]
+                         net (fo=1, unplaced)         0.020     5.893    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[7]_i_2_0[0]
+                         LUT2 (Prop_LUT2_I1_O)        0.038     5.931 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353[7]_i_11/O
+                         net (fo=1, unplaced)         0.020     5.951    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353[7]_i_11_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.199     6.150 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.005     6.155    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[7]_i_2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.022     6.177 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.005     6.182    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[15]_i_2_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     6.258 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[23]_i_2/O[1]
+                         net (fo=2, unplaced)         0.184     6.442    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/zext_ln97_124_fu_5320_p1[17]
+                         LUT2 (Prop_LUT2_I0_O)        0.037     6.479 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353[23]_i_9/O
+                         net (fo=1, unplaced)         0.023     6.502    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353[23]_i_9_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.197     6.699 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[23]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.005     6.704    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[23]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.116     6.820 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_186_reg_40353_reg[31]_i_1/O[5]
+                         net (fo=1, unplaced)         0.025     6.845    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_fu_5324_p2[29]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_reg_40353_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.021    10.021    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_reg_40353_reg[29]/C
+                         clock pessimism              0.000    10.021    
+                         clock uncertainty           -0.035     9.986    
+                         FDRE (Setup_FDRE_C_D)        0.025    10.011    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_186_reg_40353_reg[29]
+  -------------------------------------------------------------------
+                         required time                         10.011    
+                         arrival time                          -6.845    
+  -------------------------------------------------------------------
+                         slack                                  3.166    
+
+Slack (MET) :             3.168ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_421_reg_41070_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.813ns  (logic 3.733ns (54.792%)  route 3.080ns (45.208%))
+  Logic Levels:           26  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT2=4 LUT3=2 LUT4=3 LUT5=1 LUT6=2)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 10.021 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.030     0.030    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.107 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[26]/Q
+                         net (fo=1320, unplaced)      0.281     0.388    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U21/ap_CS_fsm_state27
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.426 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U21/reg_1153[31]_i_1/O
+                         net (fo=98, unplaced)        0.271     0.697    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U19/p_89_in
+                         LUT4 (Prop_LUT4_I1_O)        0.038     0.735 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U19/tmp_product_i_181__5/O
+                         net (fo=66, unplaced)        0.262     0.997    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/grp_fu_716_p1155_out
+                         LUT5 (Prop_LUT5_I3_O)        0.038     1.035 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_184__1/O
+                         net (fo=32, unplaced)        0.246     1.281    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_184__1_n_0
+                         LUT6 (Prop_LUT6_I5_O)        0.038     1.319 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_65__20/O
+                         net (fo=1, unplaced)         0.186     1.505    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_65__20_n_0
+                         LUT6 (Prop_LUT6_I1_O)        0.038     1.543 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product_i_16__3/O
+                         net (fo=2, unplaced)         0.227     1.770    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/B[16]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[16]_B2_DATA[16])
+                                                      0.151     1.921 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, unplaced)         0.000     1.921    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_A_B_DATA.B2_DATA<16>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[16]_B2B1[16])
+                                                      0.073     1.994 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, unplaced)         0.000     1.994    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_PREADD_DATA.B2B1<16>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[16]_V[43])
+                                                      0.609     2.603 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_MULTIPLIER_INST/V[43]
+                         net (fo=1, unplaced)         0.000     2.603    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_MULTIPLIER.V<43>
+                         DSP_M_DATA (Prop_DSP_M_DATA_V[43]_V_DATA[43])
+                                                      0.046     2.649 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_M_DATA_INST/V_DATA[43]
+                         net (fo=1, unplaced)         0.000     2.649    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_M_DATA.V_DATA<43>
+                         DSP_ALU (Prop_DSP_ALU_V_DATA[43]_ALU_OUT[47])
+                                                      0.571     3.220 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     3.220    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[47]_PCOUT[47])
+                                                      0.122     3.342 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__1/DSP_OUTPUT_INST/PCOUT[47]
+                         net (fo=1, unplaced)         0.014     3.356    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/PCIN[47]
+                         DSP_ALU (Prop_DSP_ALU_PCIN[47]_ALU_OUT[0])
+                                                      0.546     3.902 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_ALU_INST/ALU_OUT[0]
+                         net (fo=1, unplaced)         0.000     3.902    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_ALU.ALU_OUT<0>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[0]_P[0])
+                                                      0.109     4.011 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2/DSP_OUTPUT_INST/P[0]
+                         net (fo=2, unplaced)         0.206     4.217    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_product__2_n_105
+                         LUT2 (Prop_LUT2_I0_O)        0.052     4.269 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339[23]_i_8/O
+                         net (fo=1, unplaced)         0.023     4.292    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339[23]_i_8_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[5])
+                                                      0.237     4.529 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/trunc_ln83_252_reg_44339_reg[23]_i_1/O[5]
+                         net (fo=81, unplaced)        0.222     4.751    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/grp_fu_712_p2[21]
+                         LUT3 (Prop_LUT3_I1_O)        0.105     4.856 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_390_reg_41054[1]_i_116/O
+                         net (fo=2, unplaced)         0.216     5.072    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_390_reg_41054[1]_i_116_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     5.109 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_390_reg_41054[1]_i_124/O
+                         net (fo=1, unplaced)         0.023     5.132    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_390_reg_41054[1]_i_124_n_0
+                         CARRY8 (Prop_CARRY8_S[6]_CO[7])
+                                                      0.124     5.256 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_390_reg_41054_reg[1]_i_98/CO[7]
+                         net (fo=1, unplaced)         0.005     5.261    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_390_reg_41054_reg[1]_i_98_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     5.337 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_390_reg_41054_reg[1]_i_74/O[1]
+                         net (fo=2, unplaced)         0.184     5.521    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/p_564_in[25]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     5.558 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_390_reg_41054[1]_i_46/O
+                         net (fo=1, unplaced)         0.023     5.581    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_390_reg_41054[1]_i_46_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[2])
+                                                      0.117     5.698 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_390_reg_41054_reg[1]_i_21/O[2]
+                         net (fo=4, unplaced)         0.198     5.896    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/p_565_in[26]
+                         LUT3 (Prop_LUT3_I0_O)        0.068     5.964 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_421_reg_41070[0]_i_32/O
+                         net (fo=2, unplaced)         0.212     6.176    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_421_reg_41070[0]_i_32_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     6.213 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_421_reg_41070[0]_i_40/O
+                         net (fo=1, unplaced)         0.032     6.245    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_421_reg_41070[0]_i_40_n_0
+                         CARRY8 (Prop_CARRY8_S[3]_O[4])
+                                                      0.149     6.394 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_421_reg_41070_reg[0]_i_20/O[4]
+                         net (fo=2, unplaced)         0.184     6.578    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/p_566_in[28]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     6.615 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_421_reg_41070[0]_i_6/O
+                         net (fo=1, unplaced)         0.021     6.636    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_421_reg_41070[0]_i_6_n_0
+                         CARRY8 (Prop_CARRY8_S[4]_CO[7])
+                                                      0.163     6.799 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U18/tmp_421_reg_41070_reg[0]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.044     6.843    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/lo_sum_92_fu_9089_p2[32]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_421_reg_41070_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.021    10.021    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_421_reg_41070_reg[0]/C
+                         clock pessimism              0.000    10.021    
+                         clock uncertainty           -0.035     9.986    
+                         FDRE (Setup_FDRE_C_D)        0.025    10.011    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/tmp_421_reg_41070_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.011    
+                         arrival time                          -6.843    
+  -------------------------------------------------------------------
+                         slack                                  3.168    
+
+Slack (MET) :             3.168ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_382_reg_42357_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.813ns  (logic 4.047ns (59.401%)  route 2.766ns (40.599%))
+  Logic Levels:           28  (CARRY8=9 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT2=5 LUT3=2 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 10.021 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.030     0.030    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.107 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/Q
+                         net (fo=1123, unplaced)      0.277     0.384    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_state29
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.422 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/reg_1157[31]_i_1/O
+                         net (fo=33, unplaced)        0.200     0.622    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/E[0]
+                         LUT6 (Prop_LUT6_I1_O)        0.090     0.712 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_122__3/O
+                         net (fo=131, unplaced)       0.278     0.990    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/grp_fu_676_p1149_out
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.028 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_38__19/O
+                         net (fo=65, unplaced)        0.262     1.290    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_reg[34]
+                         LUT5 (Prop_LUT5_I4_O)        0.038     1.328 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_36__18/O
+                         net (fo=64, unplaced)        0.261     1.589    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_reg[20]
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.627 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_1__18/O
+                         net (fo=2, unplaced)         0.227     1.854    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/B[16]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[16]_B2_DATA[16])
+                                                      0.151     2.005 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, unplaced)         0.000     2.005    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_A_B_DATA.B2_DATA<16>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[16]_B2B1[16])
+                                                      0.073     2.078 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, unplaced)         0.000     2.078    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_PREADD_DATA.B2B1<16>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[16]_V[43])
+                                                      0.609     2.687 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_MULTIPLIER_INST/V[43]
+                         net (fo=1, unplaced)         0.000     2.687    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_MULTIPLIER.V<43>
+                         DSP_M_DATA (Prop_DSP_M_DATA_V[43]_V_DATA[43])
+                                                      0.046     2.733 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_M_DATA_INST/V_DATA[43]
+                         net (fo=1, unplaced)         0.000     2.733    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_M_DATA.V_DATA<43>
+                         DSP_ALU (Prop_DSP_ALU_V_DATA[43]_ALU_OUT[47])
+                                                      0.571     3.304 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     3.304    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[47]_PCOUT[47])
+                                                      0.122     3.426 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_OUTPUT_INST/PCOUT[47]
+                         net (fo=1, unplaced)         0.014     3.440    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__2/PCIN[47]
+                         DSP_ALU (Prop_DSP_ALU_PCIN[47]_ALU_OUT[0])
+                                                      0.546     3.986 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__2/DSP_ALU_INST/ALU_OUT[0]
+                         net (fo=1, unplaced)         0.000     3.986    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__2/DSP_ALU.ALU_OUT<0>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[0]_P[0])
+                                                      0.109     4.095 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__2/DSP_OUTPUT_INST/P[0]
+                         net (fo=2, unplaced)         0.206     4.301    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__2_n_105
+                         LUT2 (Prop_LUT2_I0_O)        0.052     4.353 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product_carry_i_7__5/O
+                         net (fo=1, unplaced)         0.023     4.376    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product_carry_i_7__5_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.197     4.573 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product_carry/CO[7]
+                         net (fo=1, unplaced)         0.005     4.578    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.056     4.634 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product_carry__0/O[0]
+                         net (fo=134, unplaced)       0.278     4.912    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/grp_fu_684_p2[24]
+                         LUT3 (Prop_LUT3_I2_O)        0.070     4.982 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_468_reg_42362[1]_i_95/O
+                         net (fo=2, unplaced)         0.219     5.201    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_468_reg_42362[1]_i_95_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     5.238 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_468_reg_42362[1]_i_103/O
+                         net (fo=1, unplaced)         0.023     5.261    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_468_reg_42362[1]_i_103_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[4])
+                                                      0.204     5.465 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_468_reg_42362_reg[1]_i_73/O[4]
+                         net (fo=2, unplaced)         0.184     5.649    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/p_347_in[28]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     5.686 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_382_reg_42357[7]_i_17/O
+                         net (fo=1, unplaced)         0.021     5.707    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_382_reg_42357[7]_i_17_n_0
+                         CARRY8 (Prop_CARRY8_S[4]_CO[7])
+                                                      0.163     5.870 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_382_reg_42357_reg[7]_i_12/CO[7]
+                         net (fo=1, unplaced)         0.020     5.890    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[7]_i_2_0[0]
+                         LUT2 (Prop_LUT2_I1_O)        0.038     5.928 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357[7]_i_11/O
+                         net (fo=1, unplaced)         0.020     5.948    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357[7]_i_11_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.199     6.147 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.005     6.152    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[7]_i_2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.022     6.174 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.005     6.179    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[15]_i_2_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     6.255 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[23]_i_2/O[1]
+                         net (fo=2, unplaced)         0.184     6.439    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/zext_ln97_271_fu_19957_p1[17]
+                         LUT2 (Prop_LUT2_I0_O)        0.037     6.476 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357[23]_i_9/O
+                         net (fo=1, unplaced)         0.023     6.499    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357[23]_i_9_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.197     6.696 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[23]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.005     6.701    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[23]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[7])
+                                                      0.116     6.817 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[31]_i_1/O[7]
+                         net (fo=1, unplaced)         0.026     6.843    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_382_fu_19961_p2[31]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_382_reg_42357_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.021    10.021    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_382_reg_42357_reg[31]/C
+                         clock pessimism              0.000    10.021    
+                         clock uncertainty           -0.035     9.986    
+                         FDRE (Setup_FDRE_C_D)        0.025    10.011    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_382_reg_42357_reg[31]
+  -------------------------------------------------------------------
+                         required time                         10.011    
+                         arrival time                          -6.843    
+  -------------------------------------------------------------------
+                         slack                                  3.168    
+
+Slack (MET) :             3.169ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_382_reg_42357_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.812ns  (logic 4.047ns (59.410%)  route 2.765ns (40.590%))
+  Logic Levels:           28  (CARRY8=9 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT2=5 LUT3=2 LUT4=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 10.021 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.030     0.030    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.107 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/Q
+                         net (fo=1123, unplaced)      0.277     0.384    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_state29
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.422 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/reg_1157[31]_i_1/O
+                         net (fo=33, unplaced)        0.200     0.622    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/E[0]
+                         LUT6 (Prop_LUT6_I1_O)        0.090     0.712 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_122__3/O
+                         net (fo=131, unplaced)       0.278     0.990    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/grp_fu_676_p1149_out
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.028 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_38__19/O
+                         net (fo=65, unplaced)        0.262     1.290    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_reg[34]
+                         LUT5 (Prop_LUT5_I4_O)        0.038     1.328 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_36__18/O
+                         net (fo=64, unplaced)        0.261     1.589    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_reg[20]
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.627 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_1__18/O
+                         net (fo=2, unplaced)         0.227     1.854    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/B[16]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[16]_B2_DATA[16])
+                                                      0.151     2.005 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, unplaced)         0.000     2.005    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_A_B_DATA.B2_DATA<16>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[16]_B2B1[16])
+                                                      0.073     2.078 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, unplaced)         0.000     2.078    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_PREADD_DATA.B2B1<16>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[16]_V[43])
+                                                      0.609     2.687 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_MULTIPLIER_INST/V[43]
+                         net (fo=1, unplaced)         0.000     2.687    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_MULTIPLIER.V<43>
+                         DSP_M_DATA (Prop_DSP_M_DATA_V[43]_V_DATA[43])
+                                                      0.046     2.733 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_M_DATA_INST/V_DATA[43]
+                         net (fo=1, unplaced)         0.000     2.733    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_M_DATA.V_DATA<43>
+                         DSP_ALU (Prop_DSP_ALU_V_DATA[43]_ALU_OUT[47])
+                                                      0.571     3.304 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     3.304    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[47]_PCOUT[47])
+                                                      0.122     3.426 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1/DSP_OUTPUT_INST/PCOUT[47]
+                         net (fo=1, unplaced)         0.014     3.440    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__2/PCIN[47]
+                         DSP_ALU (Prop_DSP_ALU_PCIN[47]_ALU_OUT[0])
+                                                      0.546     3.986 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__2/DSP_ALU_INST/ALU_OUT[0]
+                         net (fo=1, unplaced)         0.000     3.986    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__2/DSP_ALU.ALU_OUT<0>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[0]_P[0])
+                                                      0.109     4.095 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__2/DSP_OUTPUT_INST/P[0]
+                         net (fo=2, unplaced)         0.206     4.301    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__2_n_105
+                         LUT2 (Prop_LUT2_I0_O)        0.052     4.353 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product_carry_i_7__5/O
+                         net (fo=1, unplaced)         0.023     4.376    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product_carry_i_7__5_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.197     4.573 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product_carry/CO[7]
+                         net (fo=1, unplaced)         0.005     4.578    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product_carry_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[0])
+                                                      0.056     4.634 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product_carry__0/O[0]
+                         net (fo=134, unplaced)       0.278     4.912    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/grp_fu_684_p2[24]
+                         LUT3 (Prop_LUT3_I2_O)        0.070     4.982 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_468_reg_42362[1]_i_95/O
+                         net (fo=2, unplaced)         0.219     5.201    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_468_reg_42362[1]_i_95_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     5.238 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_468_reg_42362[1]_i_103/O
+                         net (fo=1, unplaced)         0.023     5.261    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_468_reg_42362[1]_i_103_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[4])
+                                                      0.204     5.465 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_468_reg_42362_reg[1]_i_73/O[4]
+                         net (fo=2, unplaced)         0.184     5.649    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/p_347_in[28]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     5.686 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_382_reg_42357[7]_i_17/O
+                         net (fo=1, unplaced)         0.021     5.707    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_382_reg_42357[7]_i_17_n_0
+                         CARRY8 (Prop_CARRY8_S[4]_CO[7])
+                                                      0.163     5.870 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln97_382_reg_42357_reg[7]_i_12/CO[7]
+                         net (fo=1, unplaced)         0.020     5.890    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[7]_i_2_0[0]
+                         LUT2 (Prop_LUT2_I1_O)        0.038     5.928 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357[7]_i_11/O
+                         net (fo=1, unplaced)         0.020     5.948    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357[7]_i_11_n_0
+                         CARRY8 (Prop_CARRY8_S[0]_CO[7])
+                                                      0.199     6.147 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[7]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.005     6.152    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[7]_i_2_n_0
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.022     6.174 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[15]_i_2/CO[7]
+                         net (fo=1, unplaced)         0.005     6.179    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[15]_i_2_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     6.255 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[23]_i_2/O[1]
+                         net (fo=2, unplaced)         0.184     6.439    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/zext_ln97_271_fu_19957_p1[17]
+                         LUT2 (Prop_LUT2_I0_O)        0.037     6.476 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357[23]_i_9/O
+                         net (fo=1, unplaced)         0.023     6.499    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357[23]_i_9_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_CO[7])
+                                                      0.197     6.696 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[23]_i_1/CO[7]
+                         net (fo=1, unplaced)         0.005     6.701    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[23]_i_1_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[5])
+                                                      0.116     6.817 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/add_ln97_382_reg_42357_reg[31]_i_1/O[5]
+                         net (fo=1, unplaced)         0.025     6.842    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_382_fu_19961_p2[29]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_382_reg_42357_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.021    10.021    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_382_reg_42357_reg[29]/C
+                         clock pessimism              0.000    10.021    
+                         clock uncertainty           -0.035     9.986    
+                         FDRE (Setup_FDRE_C_D)        0.025    10.011    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln97_382_reg_42357_reg[29]
+  -------------------------------------------------------------------
+                         required time                         10.011    
+                         arrival time                          -6.842    
+  -------------------------------------------------------------------
+                         slack                                  3.169    
+
+Slack (MET) :             3.173ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln95_124_reg_40368_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        6.808ns  (logic 3.729ns (54.774%)  route 3.079ns (45.226%))
+  Logic Levels:           26  (CARRY8=6 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT2=4 LUT3=3 LUT4=2 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.021ns = ( 10.021 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.030ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.030     0.030    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_FDRE_C_Q)         0.077     0.107 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_CS_fsm_reg[28]/Q
+                         net (fo=1123, unplaced)      0.277     0.384    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_state29
+                         LUT2 (Prop_LUT2_I1_O)        0.038     0.422 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/reg_1157[31]_i_1/O
+                         net (fo=33, unplaced)        0.200     0.622    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/E[0]
+                         LUT6 (Prop_LUT6_I1_O)        0.090     0.712 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_122__3/O
+                         net (fo=131, unplaced)       0.278     0.990    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/grp_fu_676_p1149_out
+                         LUT3 (Prop_LUT3_I1_O)        0.038     1.028 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_38__19/O
+                         net (fo=65, unplaced)        0.262     1.290    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/ap_CS_fsm_reg[34]
+                         LUT5 (Prop_LUT5_I4_O)        0.038     1.328 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U11/tmp_product__1_i_36__18/O
+                         net (fo=64, unplaced)        0.261     1.589    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/DSP_A_B_DATA_INST
+                         LUT5 (Prop_LUT5_I1_O)        0.038     1.627 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1_i_1__17/O
+                         net (fo=2, unplaced)         0.227     1.854    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/B[16]
+                         DSP_A_B_DATA (Prop_DSP_A_B_DATA_B[16]_B2_DATA[16])
+                                                      0.151     2.005 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_A_B_DATA_INST/B2_DATA[16]
+                         net (fo=1, unplaced)         0.000     2.005    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_A_B_DATA.B2_DATA<16>
+                         DSP_PREADD_DATA (Prop_DSP_PREADD_DATA_B2_DATA[16]_B2B1[16])
+                                                      0.073     2.078 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_PREADD_DATA_INST/B2B1[16]
+                         net (fo=1, unplaced)         0.000     2.078    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_PREADD_DATA.B2B1<16>
+                         DSP_MULTIPLIER (Prop_DSP_MULTIPLIER_B2B1[16]_V[43])
+                                                      0.609     2.687 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_MULTIPLIER_INST/V[43]
+                         net (fo=1, unplaced)         0.000     2.687    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_MULTIPLIER.V<43>
+                         DSP_M_DATA (Prop_DSP_M_DATA_V[43]_V_DATA[43])
+                                                      0.046     2.733 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_M_DATA_INST/V_DATA[43]
+                         net (fo=1, unplaced)         0.000     2.733    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_M_DATA.V_DATA<43>
+                         DSP_ALU (Prop_DSP_ALU_V_DATA[43]_ALU_OUT[47])
+                                                      0.571     3.304 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_ALU_INST/ALU_OUT[47]
+                         net (fo=1, unplaced)         0.000     3.304    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_ALU.ALU_OUT<47>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[47]_PCOUT[47])
+                                                      0.122     3.426 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__1/DSP_OUTPUT_INST/PCOUT[47]
+                         net (fo=1, unplaced)         0.014     3.440    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/PCIN[47]
+                         DSP_ALU (Prop_DSP_ALU_PCIN[47]_ALU_OUT[0])
+                                                      0.546     3.986 f  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_ALU_INST/ALU_OUT[0]
+                         net (fo=1, unplaced)         0.000     3.986    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_ALU.ALU_OUT<0>
+                         DSP_OUTPUT (Prop_DSP_OUTPUT_ALU_OUT[0]_P[0])
+                                                      0.109     4.095 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2/DSP_OUTPUT_INST/P[0]
+                         net (fo=2, unplaced)         0.206     4.301    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product__2_n_105
+                         LUT2 (Prop_LUT2_I0_O)        0.052     4.353 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry_i_7__6/O
+                         net (fo=1, unplaced)         0.023     4.376    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry_i_7__6_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[5])
+                                                      0.237     4.613 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_product_carry/O[5]
+                         net (fo=132, unplaced)       0.233     4.846    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/grp_fu_680_p2[21]
+                         LUT3 (Prop_LUT3_I1_O)        0.105     4.951 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_116/O
+                         net (fo=2, unplaced)         0.216     5.167    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_116_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     5.204 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_124/O
+                         net (fo=1, unplaced)         0.023     5.227    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_124_n_0
+                         CARRY8 (Prop_CARRY8_S[6]_CO[7])
+                                                      0.124     5.351 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_98/CO[7]
+                         net (fo=1, unplaced)         0.005     5.356    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_98_n_0
+                         CARRY8 (Prop_CARRY8_CI_O[1])
+                                                      0.076     5.432 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_74/O[1]
+                         net (fo=2, unplaced)         0.184     5.616    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/p_485_in[25]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     5.653 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_46/O
+                         net (fo=1, unplaced)         0.023     5.676    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358[1]_i_46_n_0
+                         CARRY8 (Prop_CARRY8_S[1]_O[2])
+                                                      0.117     5.793 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_262_reg_40358_reg[1]_i_21/O[2]
+                         net (fo=4, unplaced)         0.198     5.991    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/C_lo_48_reg_40201_reg[30][2]
+                         LUT3 (Prop_LUT3_I0_O)        0.038     6.029 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_33/O
+                         net (fo=2, unplaced)         0.186     6.215    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_33_n_0
+                         LUT4 (Prop_LUT4_I3_O)        0.037     6.252 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_41/O
+                         net (fo=1, unplaced)         0.032     6.284    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374[0]_i_41_n_0
+                         CARRY8 (Prop_CARRY8_S[3]_O[4])
+                                                      0.149     6.433 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/tmp_293_reg_40374_reg[0]_i_21/O[4]
+                         net (fo=2, unplaced)         0.184     6.617    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/p_487_in[28]
+                         LUT2 (Prop_LUT2_I1_O)        0.037     6.654 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln95_124_reg_40368[31]_i_5/O
+                         net (fo=1, unplaced)         0.021     6.675    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln95_124_reg_40368[31]_i_5_n_0
+                         CARRY8 (Prop_CARRY8_S[4]_O[7])
+                                                      0.137     6.812 r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U10/add_ln95_124_reg_40368_reg[31]_i_1/O[7]
+                         net (fo=1, unplaced)         0.026     6.838    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln95_124_fu_5422_p2[31]
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln95_124_reg_40368_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=21340, unset)        0.021    10.021    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/ap_clk
+                         FDRE                                         r  bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln95_124_reg_40368_reg[31]/C
+                         clock pessimism              0.000    10.021    
+                         clock uncertainty           -0.035     9.986    
+                         FDRE (Setup_FDRE_C_D)        0.025    10.011    bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/add_ln95_124_reg_40368_reg[31]
+  -------------------------------------------------------------------
+                         required time                         10.011    
+                         arrival time                          -6.838    
+  -------------------------------------------------------------------
+                         slack                                  3.173    
+
+
+
+

@@ -1,0 +1,193 @@
+---
+MainSourceFile:  /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_11_1:  '
+    FileOffset:      11
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          17298
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_11_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_41_1:  '
+    FileOffset:      41
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          18542
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_41_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_53_2:  '
+    FileOffset:      53
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          18700
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_53_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_58_3:  '
+    FileOffset:      58
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          18822
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_58_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_62_4:  '
+    FileOffset:      62
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          18952
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_62_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_66_5:  '
+    FileOffset:      66
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          19068
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_66_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_70_6:  '
+    FileOffset:      70
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          19256
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_70_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_75_7:  '
+    FileOffset:      75
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          19349
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_75_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_8:  '
+    FileOffset:      77
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          19409
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_9:  '
+    FileOffset:      93
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          19633
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_94_10:  '
+    FileOffset:      94
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          19689
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_94_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_98_11:  '
+    FileOffset:      98
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          19820
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_98_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_107_12:  '
+    FileOffset:      107
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          19981
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_107_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_13:  '
+    FileOffset:      108
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          20040
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_113_14:  '
+    FileOffset:      113
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          20180
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_113_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_15:  '
+    FileOffset:      117
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          20298
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_121_16:  '
+    FileOffset:      121
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          20477
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_121_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_17:  '
+    FileOffset:      123
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          20551
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_129_18:  '
+    FileOffset:      129
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          20681
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_129_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_130_19:  '
+    FileOffset:      130
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          20770
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_130_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_134_20:  '
+    FileOffset:      134
+    FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/src_converted_flat_speed_dataflow/rsa_modexp_hw.cpp
+    Replacements:    
+      - FilePath:        /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/rsa_modexp_hls_speed_dataflow/solution1/.autopilot/db/rsa_modexp_hw.pp.0.cpp
+        Offset:          20892
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_134_20: '
+...

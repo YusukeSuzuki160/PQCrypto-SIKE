@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.2 (64-bit)
+# SW Build 6060944 on Thu Mar 06 19:10:09 MST 2025
+# IP Build 6050500 on Thu Mar  6 23:33:39 MST 2025
+# SharedData Build 6060542 on Thu Mar 06 10:31:07 MST 2025
+# Start of session at: Wed Sep 16 18:21:18 2026
+# Process ID         : 2717415
+# Current directory  : /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/kernel_zu7ev_clk73/solution1/impl/verilog
+# Command line       : vivado -mode batch -source run_vivado.tcl
+# Log file           : /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/kernel_zu7ev_clk73/solution1/impl/verilog/vivado.log
+# Journal file       : /home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/kernel_zu7ev_clk73/solution1/impl/verilog/vivado.jou
+# Running On         : meltpointubuntu
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13600K
+# CPU Frequency      : 5102.956 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 100993 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 109583 MB
+# Available Virtual  : 96876 MB
+#-----------------------------------------------------------
+source run_vivado.tcl

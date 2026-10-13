@@ -1,0 +1,107 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (lin64) Build 6060944 Thu Mar 06 19:10:09 MST 2025
+| Date         : Wed Sep 16 18:36:04 2026
+| Host         : meltpointubuntu running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_design_analysis -file ./report/kernel_top_design_analysis_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu7ev
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+3. Placer Final Level Congestion Reporting
+4. Router Initial Congestion
+5. SLR Net Crossing Reporting
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Characteristics      |                                                                                                       Path #1                                                                                                      |
++---------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Requirement               | 7.300                                                                                                                                                                                                              |
+| Path Delay                | 8.093                                                                                                                                                                                                              |
+| Logic Delay               | 3.639(45%)                                                                                                                                                                                                         |
+| Net Delay                 | 4.454(55%)                                                                                                                                                                                                         |
+| Clock Skew                | -0.007                                                                                                                                                                                                             |
+| Slack                     | -0.810                                                                                                                                                                                                             |
+| Clock Uncertainty         | 0.035                                                                                                                                                                                                              |
+| Clock Relationship        | Timed                                                                                                                                                                                                              |
+| Clock Delay Group         | Same Clock                                                                                                                                                                                                         |
+| Logic Levels              | 19                                                                                                                                                                                                                 |
+| Routes                    | 9                                                                                                                                                                                                                  |
+| Logical Path              | FDRE/C-(13)-LUT6-(1)-LUT6-(1)-LUT4-(2)-DSP_A_B_DATA-(1)-DSP_PREADD_DATA-DSP_MULTIPLIER-DSP_M_DATA-DSP_ALU-DSP_OUTPUT-DSP_ALU-DSP_OUTPUT-LUT2-(1)-CARRY8-(1)-CARRY8-LUT3-(2)-LUT4-CARRY8-LUT2-(1)-CARRY8-(1)-FDRE/D |
+| Start Point Clock         | ap_clk                                                                                                                                                                                                             |
+| End Point Clock           | ap_clk                                                                                                                                                                                                             |
+| DSP Block                 | Comb                                                                                                                                                                                                               |
+| RAM Registers             | None-None                                                                                                                                                                                                          |
+| IO Crossings              | 2                                                                                                                                                                                                                  |
+| SLR Crossings             | 0                                                                                                                                                                                                                  |
+| PBlocks                   | 0                                                                                                                                                                                                                  |
+| High Fanout               | 13                                                                                                                                                                                                                 |
+| Dont Touch                | 0                                                                                                                                                                                                                  |
+| Mark Debug                | 0                                                                                                                                                                                                                  |
+| Start Point Pin Primitive | FDRE/C                                                                                                                                                                                                             |
+| End Point Pin Primitive   | FDRE/D                                                                                                                                                                                                             |
+| Start Point Pin           | mod_load_4_reg_38918_reg[9]/C                                                                                                                                                                                      |
+| End Point Pin             | tmp_933_reg_44834_reg[0]/D                                                                                                                                                                                         |
++---------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Bounding box calculated as % of dimensions for the target device (2770, 746)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+---+---+----+----+----+----+----+----+----+----+-----+-----+-----+-----+
+| End Point Clock | Requirement | 1 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 |  18 |  19 |  20 |  21 |
++-----------------+-------------+---+---+----+----+----+----+----+----+----+----+-----+-----+-----+-----+
+| ap_clk          | 7.300ns     | 1 | 2 | 24 |  9 |  3 |  4 | 36 | 35 | 48 | 92 | 135 | 209 | 237 | 165 |
++-----------------+-------------+---+---+----+----+----+----+----+----+----+----+-----+-----+-----+-----+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 1000 paths
+
+
+3. Placer Final Level Congestion Reporting
+------------------------------------------
+
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+------------+
+| Direction | Type | Level | Window | Combined LUTs | Avg LUT Input | LUT | LUTRAM | Flop | MUXF | RAMB | URAM | DSP | CARRY | SRL | Cell Names |
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+------------+
+* No congestion windows are found above level 5
+
+
+4. Router Initial Congestion
+----------------------------
+
++-----------+--------+-------+---------------------------------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Direction |  Type  | Level |              Window             | Combined LUTs | Avg LUT Input | LUT | LUTRAM | Flop | MUXF | RAMB | URAM | DSP | CARRY | SRL |                                                                                      Cell Names                                                                                     |                                                                                                                                                                                            Sub Windows                                                                                                                                                                                            |
++-----------+--------+-------+---------------------------------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| North     | Global |     5 | (CLEM_X48Y147,CLEL_L_X63Y194)   |            0% |         5.490 | 59% |     0% |  12% |   0% |   0% |   NA | 42% |    7% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(96%),bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8(2%),bd_0_i/hls_inst/inst(0%) | (CLEM_X48Y171,CLEL_R_X55Y178), (CLEM_X48Y163,CLEL_R_X55Y170), (CLEM_X48Y155,CLEL_R_X55Y162), (CLEM_X48Y147,CLEL_R_X55Y154), (CLEL_L_X56Y187,CLEL_R_X63Y194), (CLEL_L_X56Y179,CLEL_R_X63Y186), (CLEL_L_X56Y171,CLEL_R_X63Y178), (CLEL_L_X56Y163,CLEL_R_X63Y170), (CLEL_L_X56Y155,CLEL_R_X63Y162), (CLEL_L_X56Y147,CLEL_R_X63Y154)                                                                  |
+| North     | Global |     5 | (CLEM_X48Y147,CLEL_L_X63Y194)   |            0% |         5.436 | 58% |     0% |  12% |   0% |   0% |   NA | 31% |    9% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(96%),bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8(3%),bd_0_i/hls_inst/inst(0%) | (CLEM_X48Y179,CLEL_R_X63Y194), (CLEM_X48Y163,CLEL_R_X63Y178), (CLEM_X48Y147,CLEL_R_X63Y162)                                                                                                                                                                                                                                                                                                       |
+| South     | Global |     5 | (CLEM_X50Y168,CLEM_R_X65Y231)   |            0% |         4.901 | 55% |     0% |  14% |   0% |   0% |   NA | 15% |   25% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(93%),bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8(5%),bd_0_i/hls_inst/inst(0%) | (CLEM_X50Y224,CLEM_X57Y231), (CLEM_X50Y216,CLEM_X57Y223), (CLEM_X50Y208,CLEM_X57Y215), (CLEM_X50Y200,CLEM_X57Y207), (CLEM_X50Y192,CLEM_X57Y199), (CLEM_X50Y184,CLEM_X57Y191), (CLEM_X50Y176,CLEM_X57Y183), (CLEM_X50Y168,CLEM_X57Y175), (CLEM_X58Y200,CLEM_R_X65Y207), (CLEM_X58Y192,CLEM_R_X65Y199), (CLEM_X58Y184,CLEM_R_X65Y191), (CLEM_X58Y176,CLEM_R_X65Y183), (CLEM_X58Y168,CLEM_R_X65Y175) |
+| South     | Global |     5 | (CLEM_X50Y168,CLEM_R_X65Y215)   |            0% |         5.056 | 56% |     0% |  14% |   0% |   0% |   NA | 33% |   20% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(93%),bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8(5%),bd_0_i/hls_inst/inst(1%) | (CLEM_X50Y200,CLEM_R_X65Y215), (CLEM_X50Y184,CLEM_R_X65Y199), (CLEM_X50Y168,CLEM_R_X65Y183)                                                                                                                                                                                                                                                                                                       |
+| North     | Long   |     5 | (CLEL_R_X37Y145,CLEM_R_X68Y192) |            0% |         5.175 | 42% |     0% |  10% |   0% |   0% |   NA | 12% |   15% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(97%),bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8(2%),bd_0_i/hls_inst/inst(0%) | (CLEL_R_X37Y161,CLEL_R_X52Y176), (CLEL_R_X37Y145,CLEL_R_X52Y160), (CLEM_X53Y177,CLEL_R_X68Y192), (CLEM_X53Y161,CLEL_R_X68Y176)                                                                                                                                                                                                                                                                    |
+| North     | Long   |     5 | (CLEM_X45Y145,CLEL_R_X60Y192)   |            0% |         5.348 | 57% |     0% |  11% |   0% |   0% |   NA | 34% |   11% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(96%),bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8(2%),bd_0_i/hls_inst/inst(0%) | (CLEM_X45Y177,CLEL_R_X52Y184), (CLEM_X45Y169,CLEL_R_X52Y176), (CLEM_X45Y161,CLEL_R_X52Y168), (CLEM_X45Y153,CLEL_R_X52Y160), (CLEM_X45Y145,CLEL_R_X52Y152), (CLEM_X53Y185,CLEL_R_X60Y192), (CLEM_X53Y177,CLEL_R_X60Y184), (CLEM_X53Y169,CLEL_R_X60Y176), (CLEM_X53Y161,CLEL_R_X60Y168), (CLEM_X53Y153,CLEL_R_X60Y160), (CLEM_X53Y145,CLEL_R_X60Y152)                                               |
+| South     | Long   |     6 | (CLEM_X32Y163,CLEL_L_X63Y226)   |            0% |         4.665 | 48% |     0% |  12% |   0% |   0% |   0% | 15% |   35% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(99%),bd_0_i/hls_inst/inst(0%)                                                                                          | (CLEM_X32Y195,CLEL_R_X63Y226), (CLEM_X32Y163,CLEL_R_X63Y194)                                                                                                                                                                                                                                                                                                                                      |
+| North     | Short  |     5 | (CLEM_X48Y141,CLEL_L_X63Y188)   |            0% |         5.407 | 61% |     0% |  12% |   0% |   0% |   NA | 38% |    9% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(97%),bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8(2%),bd_0_i/hls_inst/inst(0%) | (CLEM_X48Y173,CLEL_R_X63Y188), (CLEM_X48Y157,CLEL_R_X63Y172), (CLEM_X48Y141,CLEL_R_X63Y156)                                                                                                                                                                                                                                                                                                       |
+| South     | Short  |     5 | (CLEM_X48Y176,CLEL_L_X63Y207)   |            0% |         5.077 | 56% |     0% |  13% |   0% |   0% |   NA | 12% |   20% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(92%),bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8(6%),bd_0_i/hls_inst/inst(1%) | (CLEM_X48Y192,CLEL_R_X63Y207), (CLEM_X48Y176,CLEL_R_X63Y191)                                                                                                                                                                                                                                                                                                                                      |
+| West      | Short  |     5 | (CLEM_X48Y150,CLEL_L_X63Y197)   |            0% |         5.421 | 58% |     0% |  12% |   0% |   0% |   NA | 28% |    9% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(95%),bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8(3%),bd_0_i/hls_inst/inst(0%) | (CLEM_X48Y182,CLEL_R_X63Y197), (CLEM_X48Y166,CLEL_R_X63Y181), (CLEM_X48Y150,CLEL_R_X63Y165)                                                                                                                                                                                                                                                                                                       |
+| West      | Short  |     5 | (CLEM_X48Y150,CLEL_L_X63Y205)   |            0% |         5.487 | 60% |     0% |  13% |   0% |   0% |   NA | 41% |    7% |  0% | bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20(94%),bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/mul_32ns_32ns_64_1_1_U8(3%),bd_0_i/hls_inst/inst(1%) | (CLEM_X48Y182,CLEL_R_X55Y189), (CLEM_X48Y166,CLEL_R_X55Y173), (CLEM_X48Y150,CLEL_R_X55Y157), (CLEL_L_X56Y198,CLEL_R_X63Y205), (CLEL_L_X56Y190,CLEL_R_X63Y197), (CLEL_L_X56Y182,CLEL_R_X63Y189), (CLEL_L_X56Y174,CLEL_R_X63Y181), (CLEL_L_X56Y166,CLEL_R_X63Y173), (CLEL_L_X56Y158,CLEL_R_X63Y165), (CLEL_L_X56Y150,CLEL_R_X63Y157)                                                                |
++-----------+--------+-------+---------------------------------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+5. SLR Net Crossing Reporting
+-----------------------------
+
++------------+-----------------------------+
+| Cell Names | Number of Nets crossing SLR |
++------------+-----------------------------+
+* The current part is not an SSI device
+
+

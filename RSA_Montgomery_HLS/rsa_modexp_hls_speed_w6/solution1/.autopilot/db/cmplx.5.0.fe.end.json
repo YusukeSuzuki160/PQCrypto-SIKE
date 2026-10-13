@@ -1,0 +1,263 @@
+{
+    "1": {
+        "name": "montMult_words.1",
+        "file": "src_converted_flat_speed_w6\/mont_word.cpp",
+        "fileloc": "22",
+        "instructions": "5",
+        "total_instructions": "7155",
+        "calls": "2",
+        "basicblocks": "1"
+    },
+    "0": {
+        "name": "rsa_modexp_hw",
+        "file": "rsa_modexp_hw.cpp",
+        "fileloc": "25",
+        "instructions": "4405",
+        "total_instructions": "29494",
+        "calls": "6 8 12 11 1 5 13 7 3 16 14",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1057"
+        },
+        "stores": {
+            "L": "19"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "mul.2",
+        "file": "..\/montgomery_converter\/include\/mont_ops_fios_csa_flat.hpp",
+        "fileloc": "47",
+        "instructions": "7150",
+        "total_instructions": "7150",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "L": "32"
+        },
+        "stores": {
+            "L": "16"
+        }
+    },
+    "3": {
+        "name": "rsa_modexp_hw_Pipeline_VITIS_LOOP_107_12",
+        "file": "src_converted_flat_speed_w6\/rsa_modexp_hw.cpp",
+        "fileloc": "107",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "mul.1",
+        "file": "..\/montgomery_converter\/include\/mont_ops_fios_csa_flat.hpp",
+        "fileloc": "47",
+        "instructions": "8579",
+        "total_instructions": "8579",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "L": "16"
+        }
+    },
+    "5": {
+        "name": "rsa_modexp_hw_Pipeline_VITIS_LOOP_134_20",
+        "file": "src_converted_flat_speed_w6\/rsa_modexp_hw.cpp",
+        "fileloc": "134",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "rsa_modexp_hw_Pipeline_VITIS_LOOP_47_1",
+        "file": "src_converted_flat_speed_w6\/rsa_modexp_hw.cpp",
+        "fileloc": "47",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "rsa_modexp_hw_Pipeline_VITIS_LOOP_93_9",
+        "file": "src_converted_flat_speed_w6\/rsa_modexp_hw.cpp",
+        "fileloc": "93",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "rsa_modexp_hw_Pipeline_VITIS_LOOP_59_2",
+        "file": "src_converted_flat_speed_w6\/rsa_modexp_hw.cpp",
+        "fileloc": "59",
+        "instructions": "439",
+        "total_instructions": "9039",
+        "calls": "15",
+        "basicblocks": "8",
+        "loads": {
+            "L": "33"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "mul",
+        "file": "..\/montgomery_converter\/include\/mont_ops_fios_csa_flat.hpp",
+        "fileloc": "47",
+        "instructions": "8563",
+        "total_instructions": "8563",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "10": {
+        "name": "montMult_words.9.12.1",
+        "file": "src_converted_flat_speed_w6\/mont_word.cpp",
+        "fileloc": "22",
+        "instructions": "21",
+        "total_instructions": "8600",
+        "calls": "4",
+        "basicblocks": "1"
+    },
+    "11": {
+        "name": "rsa_modexp_hw_Pipeline_VITIS_LOOP_129_18",
+        "file": "src_converted_flat_speed_w6\/rsa_modexp_hw.cpp",
+        "fileloc": "129",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "rsa_modexp_hw_Pipeline_VITIS_LOOP_81_7",
+        "file": "src_converted_flat_speed_w6\/rsa_modexp_hw.cpp",
+        "fileloc": "81",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "rsa_modexp_hw_Pipeline_VITIS_LOOP_14_1",
+        "file": "src_converted_flat_speed_w6\/rsa_modexp_hw.cpp",
+        "fileloc": "86",
+        "instructions": "50",
+        "total_instructions": "50",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "rsa_modexp_hw_Pipeline_VITIS_LOOP_123_17",
+        "file": "src_converted_flat_speed_w6\/rsa_modexp_hw.cpp",
+        "fileloc": "123",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "montMult_words.5.8.1",
+        "file": "src_converted_flat_speed_w6\/mont_word.cpp",
+        "fileloc": "22",
+        "instructions": "37",
+        "total_instructions": "8600",
+        "calls": "9",
+        "basicblocks": "1"
+    },
+    "16": {
+        "name": "rsa_modexp_hw_Pipeline_VITIS_LOOP_108_13",
+        "file": "src_converted_flat_speed_w6\/rsa_modexp_hw.cpp",
+        "fileloc": "108",
+        "instructions": "115",
+        "total_instructions": "8715",
+        "calls": "10",
+        "basicblocks": "4",
+        "loads": {
+            "L": "17"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "0": {
+    "basicblocks": 5,
+    "calls": "2",
+    "file": "kernel_top.cpp",
+    "fileloc": 3,
+    "instructions": 46,
+    "loads": {
+      "L": 1,
+      "T": 3
+    },
+    "name": "kernel_top",
+    "stores": {
+      "L": 3,
+      "T": 1
+    },
+    "total_instructions": 5505
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "mont_ops_fios_csa_flat.hpp",
+    "fileloc": 47,
+    "instructions": 5457,
+    "loads": {
+      "L": 48
+    },
+    "name": "mul",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 5457
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "mont_word.cpp",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "montMult_words",
+    "total_instructions": 5459
+  }
+}
