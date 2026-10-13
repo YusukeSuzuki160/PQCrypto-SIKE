@@ -1219,6 +1219,16 @@ x[1]=c;   y[1]=r2m;
       </p>
     </div>
 
+    <div class="callout" style="border-left-color: var(--warn);">
+      <p class="head" style="color: var(--warn);">⚠ 訂正(Section 9参照)</p>
+      <p>
+        この節の「clk7.3ns化」および「combo版の採用」は、<strong>実際の
+        配置配線(place &amp; route)では成立しないことがSection 9の実機
+        検証で判明し、撤回された</strong>。0.388 msという絶対時間の数値は
+        参考にしないこと。詳細は後述のSection 9を参照。
+      </p>
+    </div>
+
   </div>
 </section>
 
@@ -1372,6 +1382,15 @@ x[1]=c;   y[1]=r2m;
       </p>
     </div>
 
+    <div class="callout" style="border-left-color: var(--warn);">
+      <p class="head" style="color: var(--warn);">⚠ 訂正(Section 9参照)</p>
+      <p>
+        上記の「combo版が最良解」という結論は、<strong>Section 9の
+        実機(実配置配線)検証により撤回された</strong>。combo版が前提と
+        するclk7.3ns化が実ハードウェアでは成立しないため。
+      </p>
+    </div>
+
     <div class="callout" style="border-left-color: var(--accent2);">
       <p class="head" style="color: var(--accent2);">教訓: 「別々の呼び出し文」は空間並列化を保証しない</p>
       <p>
@@ -1381,6 +1400,134 @@ x[1]=c;   y[1]=r2m;
         インスタンス相当のままなら、意図せず共有されている兆候)。
         また、改善対象のコストが全体に占める割合を先に見積もっておくと、
         実装前に投資対効果の見込みを判断でき、無駄な深入りを避けやすい。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="stage">
+  <div class="stage-head"><span class="stage-num">9</span><h2 style="color:var(--warn);">【重要な訂正】clk7.3ns化は実ハードウェアでは成立しない</h2></div>
+  <p class="stage-sub">
+    Section 7・8で確立・維持してきた「クロックをEstimated Fmax付近
+    (7.3ns)まで攻めると絶対時間が縮む」という結論が、<strong>実際の
+    配置配線(place &amp; route)では成立しないことが判明した</strong>。
+    WebPACK(無償)対象デバイスでの実機検証により確定。
+  </p>
+  <div class="stage-body">
+
+    <div class="callout" style="border-left-color: var(--warn);">
+      <p class="head" style="color: var(--warn);">発端: xcvu29pは本環境でVivado実装ライセンス対象外</p>
+      <p>
+        Section 8の案Aで、<code class="mono">export_design -flow impl</code>
+        によるVivado実装(論理合成+配置配線)を試みたところ
+        <code class="mono">ERROR: A valid license was not found for
+        feature 'Synthesis' and/or device 'xcvu29p'</code>で失敗した。
+        本環境のVivadoライセンスは無償WebPACKのみで、xcvu29p
+        (Virtex UltraScale+の大型デバイス)はその対象外。WebPACK対象
+        デバイスを探索したところ、<code class="mono">xczu7ev</code>・
+        <code class="mono">xczu3eg</code>(Zynq UltraScale+)では
+        実際に合成が通ることを確認した
+        (<code class="mono">xczu9eg</code>/<code class="mono">xcku15p</code>/
+        <code class="mono">xcvu9p</code>は同様のライセンスエラーで不可)。
+      </p>
+    </div>
+
+    <div>
+      <h3 class="sub">検証方法</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px;">
+        RSA全体ではなく<code class="mono">montMult_words</code>単体
+        (FIOS-CSA-Flatコア)を1回呼ぶだけの最小カーネル
+        (<code class="mono">src_mult_kernel_only/kernel_top.cpp</code>)
+        を新設し、<code class="mono">xczu7ev-ffvc1156-2-e</code>上で
+        <code class="mono">export_design -flow impl</code>により実際に
+        Vivado synth+implを完走させた(各回CPU時間約510秒、総経過時間
+        約850〜975秒)。正当性はMontForm往復変換
+        (<code class="mono">c &rarr; MontForm(c) &rarr; 戻すとc</code>)
+        で外部参照値なしに自己検証する方式で確認(ネイティブg++・
+        Vitis HLS csim共にPASSED)。
+      </p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>post-synthesis推定 vs post-implementation実測(xczu7ev)</caption>
+        <thead>
+          <tr><th>target</th><th>post-synthesis推定</th><th>post-implementation(真の値)</th><th>Timing</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10.0 ns</td>
+            <td class="num">6.911 ns</td>
+            <td class="num ok">9.974 ns</td>
+            <td>達成(WNS=+0.026ns、ギリギリ)</td>
+          </tr>
+          <tr class="emph">
+            <td>7.3 ns</td>
+            <td class="num">5.966 ns</td>
+            <td class="num warn-cell">8.110 ns</td>
+            <td class="warn-cell">未達(WNS=&minus;0.810ns)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--warn);">
+      <p class="head" style="color: var(--warn);">この実測が示す2つの重要な事実</p>
+      <p>
+        <strong>1.</strong> post-synthesis推定(Vitis HLSの"Estimated
+        Fmax"と同種の性質)は実配置配線後の値より一貫して楽観的
+        (6.911ns vs 9.974ns、5.966ns vs 8.110ns——いずれも約3ns、
+        30〜40%の差)。Section 7・8で観測した「Estimated Fmax =
+        target&times;0.73」という比例関係は、この楽観的な論理合成
+        レベル推定のみに基づく見かけ上の規則性であり、<strong>実
+        ハードウェアの真のクリティカルパスとは無関係</strong>だったと
+        確定した。
+      </p>
+      <p style="margin-top:10px;">
+        <strong>2.</strong> target=10nsの回路がそもそも実際には
+        約9.974nsとほぼ10ns一杯ギリギリで動いている。7.3nsへの短縮は
+        実際には0.81ns(約11%)のタイミング違反になり、<strong>この
+        回路は実際には7.3nsでは動作しない</strong>。
+      </p>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--accent2);">
+      <p class="head" style="color: var(--accent2);">結論・訂正</p>
+      <p>
+        Section 7で「採用」としたcombo版(WBITS=5+clk7.3ns)のクロック
+        短縮の部分は、<strong>実ハードウェアでは成立しない誤った結論
+        だったため撤回する</strong>。速度重視オプションの最終推奨は、
+        クロックを10ns(安全マージンのある値)に戻した
+        <strong>WBITS=5単独版(Section 7の「案2」、
+        <code class="mono">src_converted_flat_speed_w5/</code>、
+        44,968 cyc・0.450 ms・LUT 324,255・DSP 359)</strong>とする。
+        これはSection 7のベースライン(WBITS=4,10ns、46,044 cyc・
+        0.460 ms)に対してサイクル数&minus;2.3%・絶対時間&minus;2.2%の、
+        堅実だが実証済みの改善である。combo版(clk7.3ns)で報告していた
+        0.388 msという絶対時間の数値は、<strong>実際にはタイミング
+        違反を起こす非現実的な前提に基づく値であり、参考にしては
+        ならない</strong>。
+      </p>
+    </div>
+
+    <div class="callout">
+      <p class="head">How to apply</p>
+      <p>
+        当研究で「Estimated Fmax」や"post-synthesis"のクロック推定
+        だけを根拠に絶対時間の改善を結論づけることは、今後は行わない。
+        クロック関連の結論を出す際は、可能な限り実際の
+        <code class="mono">export_design -flow impl</code>(または同等の
+        実配置配線)でpost-implementationのタイミングを確認してから
+        確定すべきである。本環境ではxcvu29pが対象デバイスとしてライセ
+        ンスされていないため、xcvu29pそのものでの実P&amp;R検証はできない
+        &mdash;&mdash;WebPACK対象デバイス(xczu7ev等)での検証はあくまで
+        「手法・傾向の検証」であり、絶対的なリソース数値(LUT/DSP)は
+        xcvu29pでの数値とは対応しない点に注意。今後xcvu29pでの実装
+        ライセンスが使える環境に移った際は、まず主要構成について
+        <code class="mono">export_design -flow impl</code>を再実行し、
+        本節の推定値(post-synthesis)が実際のpost-implementationと
+        どの程度ずれるかを再確認することが望ましい。
       </p>
     </div>
 
