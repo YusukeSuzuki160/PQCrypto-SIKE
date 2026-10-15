@@ -1,0 +1,1036 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Tue Oct 13 17:21:19 JST 2026
+    * Version:         2024.2 (Build 6049644 on Mar  5 2025)
+    * Project:         lean_full_zu7ev
+    * Solution:        solution1 (Vivado IP Flow Target)
+    * Product family:  zynquplus
+    * Target device:   xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              9739
+FF:               12043
+DSP:              110
+BRAM:             6
+URAM:             0
+SRL:              245
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 5.679       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++----------------------------------------------------------+------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                     | LUT  | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++----------------------------------------------------------+------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                     | 9739 | 12043 | 110 | 6    |      |     |        |      |         |          |        |
+|   (inst)                                                 | 31   | 490   |     |      |      |     |        |      |         |          |        |
+|   control_r_s_axi_U                                      | 337  | 362   |     |      |      |     |        |      |         |          |        |
+|   control_s_axi_U                                        | 58   | 84    |     |      |      |     |        |      |         |          |        |
+|   conv_out_U                                             | 1    |       |     | 2    |      |     |        |      |         |          |        |
+|   conv_x_U                                               | 64   | 64    |     |      |      |     |        |      |         |          |        |
+|   conv_y_U                                               | 32   | 32    |     |      |      |     |        |      |         |          |        |
+|   gmem_m_axi_U                                           | 1307 | 1688  |     | 2    |      |     |        |      |         |          |        |
+|   grp_montMult_words_1_1_fu_301                          | 4000 | 4996  | 71  |      |      |     |        |      |         |          |        |
+|     (grp_montMult_words_1_1_fu_301)                      | 3    | 3     |     |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U12                         | 111  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U13                         | 208  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U14                         | 144  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U15                         | 172  |       | 2   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U16                         | 235  |       | 2   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U17                         | 79   |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U18                         | 111  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U19                         | 127  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U20                         | 146  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U21                         | 124  |       | 2   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U22                         | 91   |       | 2   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U23                         | 79   |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U24                         | 79   |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U25                         | 176  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U26                         | 209  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U27                         | 72   |       | 2   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U28                         | 112  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32s_32s_32_1_1_U29                           | 31   |       | 2   |      |      |     |        |      |         |          |        |
+|   grp_montMult_words_1_2_fu_350                          | 3175 | 3750  | 39  |      |      |     |        |      |         |          |        |
+|     (grp_montMult_words_1_2_fu_350)                      | 1    | 3     |     |      |      |     |        |      |         |          |        |
+|     grp_mul_1_fu_52                                      | 3174 | 3747  | 39  |      |      |     |        |      |         |          |        |
+|       (grp_mul_1_fu_52)                                  | 290  | 1803  |     |      |      |     |        |      |         |          |        |
+|       grp_mul_1_Pipeline_CIOS_LOOP_fu_479                | 2884 | 1944  | 39  |      |      |     |        |      |         |          |        |
+|         (grp_mul_1_Pipeline_CIOS_LOOP_fu_479)            | 1745 | 1942  | 7   |      |      |     |        |      |         |          |        |
+|         flow_control_loop_pipe_sequential_init_U         | 11   | 2     |     |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U120                        | 160  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U121                        | 145  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U122                        | 124  |       | 2   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U123                        | 155  |       | 2   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U124                        | 79   |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U125                        | 79   |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U126                        | 179  |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U127                        | 80   |       | 4   |      |      |     |        |      |         |          |        |
+|         mul_32ns_32ns_64_1_1_U128                        | 56   |       | 2   |      |      |     |        |      |         |          |        |
+|         mul_32s_32s_32_1_1_U129                          | 71   |       | 2   |      |      |     |        |      |         |          |        |
+|   grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1_fu_268      | 15   | 7     |     |      |      |     |        |      |         |          |        |
+|     (grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1_fu_268)  |      | 5     |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U             | 15   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2_fu_274      | 28   | 53    |     |      |      |     |        |      |         |          |        |
+|     (grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2_fu_274)  | 14   | 51    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U             | 14   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3_fu_284      | 182  | 219   |     |      |      |     |        |      |         |          |        |
+|     (grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3_fu_284)  | 163  | 217   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U             | 25   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5_fu_294      | 30   | 12    |     |      |      |     |        |      |         |          |        |
+|     (grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5_fu_294)  | 16   | 10    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U             | 14   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_64_7_fu_315      | 17   | 13    |     |      |      |     |        |      |         |          |        |
+|     (grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_64_7_fu_315)  | 4    | 11    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U             | 13   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_65_8_fu_322      | 12   | 12    |     |      |      |     |        |      |         |          |        |
+|     (grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_65_8_fu_322)  | 1    | 10    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U             | 11   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_79_10_fu_330     | 44   | 12    |     |      |      |     |        |      |         |          |        |
+|     (grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_79_10_fu_330) | 34   | 10    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U             | 10   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_82_11_fu_338     | 16   | 12    |     |      |      |     |        |      |         |          |        |
+|     (grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_82_11_fu_338) | 5    | 10    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U             | 11   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_83_12_fu_344     | 19   | 12    |     |      |      |     |        |      |         |          |        |
+|     (grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_83_12_fu_344) | 2    | 10    |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U             | 17   | 2     |     |      |      |     |        |      |         |          |        |
+|   loop_out_U                                             | 32   |       |     | 2    |      |     |        |      |         |          |        |
+|   loop_x_U                                               | 97   | 64    |     |      |      |     |        |      |         |          |        |
+|   loop_y_U                                               | 48   | 32    |     |      |      |     |        |      |         |          |        |
+|   one_U                                                  | 2    | 1     |     |      |      |     |        |      |         |          |        |
+|   parr1_U                                                | 32   | 32    |     |      |      |     |        |      |         |          |        |
+|   zarr1_U                                                | 96   | 64    |     |      |      |     |        |      |         |          |        |
+|   zarr2_U                                                | 64   | 32    |     |      |      |     |        |      |         |          |        |
++----------------------------------------------------------+------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 4.23%  | OK     |
+| FD                                                        | 50%       | 2.61%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.56%  | OK     |
+| CARRY8                                                    | 25%       | 3.22%  | OK     |
+| MUXF7                                                     | 15%       | 0.01%  | OK     |
+| DSP                                                       | 80%       | 6.37%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.96%  | OK     |
+| URAM                                                      | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 3.67%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 4320      | 195    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.17   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.300ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.208ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+----------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                                                       | ENDPOINT PIN                                                                                                | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                                                      |                                                                                                             |              |            |                |          DELAY |        DELAY |
++-------+-------+----------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 4.321 | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST/CLK | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[31]/D |           24 |         12 |          5.630 |          3.864 |        1.766 |
+| Path2 | 4.321 | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST/CLK | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[31]/D  |           24 |         12 |          5.630 |          3.864 |        1.766 |
+| Path3 | 4.322 | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST/CLK | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[29]/D |           24 |         12 |          5.629 |          3.864 |        1.765 |
+| Path4 | 4.322 | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST/CLK | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[29]/D  |           24 |         12 |          5.629 |          3.864 |        1.765 |
+| Path5 | 4.330 | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/gmem_addr_read_7_reg_1650_reg[1]/C                                     | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/or_ln158_10_reg_1975_reg[0]/D                                 |           55 |        512 |          5.651 |          3.307 |        2.344 |
++-------+-------+----------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path1 Cells                                                                                                                                  | Primitive Type         |
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20   | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9        | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17       | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2    | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[31]                                    | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9           | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17          | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[31]                                     | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20   | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9        | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17       | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2    | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[29]                                    | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9           | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17          | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[29]                                     | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/gmem_addr_read_7_reg_1650_reg[1]                                                               | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960[7]_i_10                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_12                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965[7]_i_11                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_12                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970[7]_i_11                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_3                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[0]_i_1                                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/or_ln158_10_reg_1975_reg[0]                                                                    | REGISTER.SDR.FDRE      |
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path2 Cells                                                                                                                                  | Primitive Type         |
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20   | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9        | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17       | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2    | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[31]                                    | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9           | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17          | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[31]                                     | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20   | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9        | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17       | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2    | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[29]                                    | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9           | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17          | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[29]                                     | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/gmem_addr_read_7_reg_1650_reg[1]                                                               | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960[7]_i_10                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_12                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965[7]_i_11                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_12                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970[7]_i_11                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_3                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[0]_i_1                                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/or_ln158_10_reg_1975_reg[0]                                                                    | REGISTER.SDR.FDRE      |
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path3 Cells                                                                                                                                  | Primitive Type         |
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20   | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9        | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17       | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2    | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[31]                                    | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9           | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17          | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[31]                                     | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20   | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9        | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17       | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2    | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[29]                                    | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9           | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17          | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[29]                                     | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/gmem_addr_read_7_reg_1650_reg[1]                                                               | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960[7]_i_10                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_12                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965[7]_i_11                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_12                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970[7]_i_11                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_3                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[0]_i_1                                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/or_ln158_10_reg_1975_reg[0]                                                                    | REGISTER.SDR.FDRE      |
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path4 Cells                                                                                                                                  | Primitive Type         |
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20   | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9        | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17       | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2    | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[31]                                    | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9           | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17          | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[31]                                     | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20   | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9        | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17       | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2    | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[29]                                    | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9           | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17          | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[29]                                     | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/gmem_addr_read_7_reg_1650_reg[1]                                                               | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960[7]_i_10                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_12                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965[7]_i_11                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_12                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970[7]_i_11                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_3                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[0]_i_1                                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/or_ln158_10_reg_1975_reg[0]                                                                    | REGISTER.SDR.FDRE      |
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | Path5 Cells                                                                                                                                  | Primitive Type         |
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20   | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9        | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17       | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2    | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[31]                                    | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9           | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17          | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[31]                                     | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20   | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9        | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17       | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2    | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[29]                                    | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST                             | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12          | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry                  | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0               | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST    | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST  | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST         | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST      | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST   | ARITHMETIC.DSP.DSP48E2 |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14     | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19      | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9           | CLB.LUT.LUT3           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17          | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1        | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1       | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[29]                                     | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/gmem_addr_read_7_reg_1650_reg[1]                                                               | REGISTER.SDR.FDRE      |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960[7]_i_10                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_12                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965[7]_i_11                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_12                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970[7]_i_11                                | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_2                             | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[15]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[23]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[31]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_12                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000[7]_i_11                               | CLB.LUT.LUT2           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_2                            | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[15]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[23]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_2                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_3                           | CLB.CARRY.CARRY8       |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[0]_i_1                                | CLB.LUT.LUT4           |
+    | grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/or_ln158_10_reg_1975_reg[0]                                                                    | REGISTER.SDR.FDRE      |
+    +----------------------------------------------------------------------------------------------------------------------------------------------+------------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+----------------------------------------------------------------------+
+| Report Type              | Report Location                                                      |
++--------------------------+----------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/rsa_modexp_hw_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/rsa_modexp_hw_failfast_synth.rpt                 |
+| power                    | impl/verilog/report/rsa_modexp_hw_power_synth.rpt                    |
+| timing                   | impl/verilog/report/rsa_modexp_hw_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/rsa_modexp_hw_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/rsa_modexp_hw_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/rsa_modexp_hw_utilization_hierarchical_synth.rpt |
++--------------------------+----------------------------------------------------------------------+
+
+

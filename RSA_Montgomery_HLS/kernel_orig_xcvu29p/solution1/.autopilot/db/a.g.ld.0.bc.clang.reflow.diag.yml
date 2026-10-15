@@ -1,0 +1,563 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 19, 
+                   Column: 5 }
+Function:        kernel_top
+Args:            
+  - Callee:          montMult_words
+    DebugLoc:        { File: src_mult_kernel_orig/mont_word.c, Line: 22, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 19, 
+                   Column: 5 }
+Function:        kernel_top
+Args:            
+  - Callee:          montMult_words
+    DebugLoc:        { File: src_mult_kernel_orig/mont_word.c, Line: 22, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_kernel_top_ir
+Args:            
+  - Callee:          kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_kernel_top_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        x5seq
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:18:22'
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                       Column: 67 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.4
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        y6seq
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:18:22'
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                       Column: 81 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.9
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        m7seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:18:22'
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                       Column: 95 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.load.14
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 20, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        out8seq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_20_2
+  - String:          ' '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:20:22'
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 20, 
+                       Column: 64 }
+  - OrigDirection:   write
+  - OrigID:          for.inc23.store.6
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 20, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 20, 
+                       Column: 22 }
+  - OrigDirection:   write
+  - OrigID:          out8seq
+  - ArrayName:       out
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_20_2
+  - String:          ' '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:20:22'
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          x5seq
+  - ArrayName:       x
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:18:22'
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          y6seq
+  - ArrayName:       'y'
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:18:22'
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          m7seq
+  - ArrayName:       m
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:18:22'
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_28_1
+  - String:          '> at '
+  - LoopLoc:         'src_mult_kernel_orig/mont_word.c:28:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_33_2
+  - String:          '> at '
+  - LoopLoc:         'src_mult_kernel_orig/mont_word.c:33:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_88_6
+  - String:          '> at '
+  - LoopLoc:         'src_mult_kernel_orig/mont_word.c:88:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_98_7
+  - String:          '> at '
+  - LoopLoc:         'src_mult_kernel_orig/mont_word.c:98:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_107_8
+  - String:          '> at '
+  - LoopLoc:         'src_mult_kernel_orig/mont_word.c:107:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          '> at '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:18:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_20_2
+  - String:          '> at '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:20:22'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_mult_kernel_orig/mont_word.c, Line: 37, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_mult_kernel_orig/mont_word.c, Line: 52, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src_mult_kernel_orig/mont_word.c, Line: 65, Column: 26 }
+Function:        montMult_words
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_65_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_mult_kernel_orig/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_37_3
+  - String:          ''' ('
+  - LoopLoc:         'src_mult_kernel_orig/mont_word.c:37:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_mult_kernel_orig/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_52_4
+  - String:          ''' ('
+  - LoopLoc:         'src_mult_kernel_orig/mont_word.c:52:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src_mult_kernel_orig/mont_word.c, Line: 22, Column: 0 }
+Function:        montMult_words
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_65_5
+  - String:          ''' ('
+  - LoopLoc:         'src_mult_kernel_orig/mont_word.c:65:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          montMult_words
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 18, 
+                       Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 20, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_20_2
+  - String:          ' '
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:20:22'
+  - String:          ' '
+  - Function:        kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 20, 
+                   Column: 22 }
+Function:        kernel_top
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '16'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_20_2
+  - String:          '''('
+  - LoopLoc:         'src_mult_kernel_orig/kernel_top.cpp:20:22'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 19, 
+                   Column: 5 }
+Function:        kernel_top
+Args:            
+  - Callee:          montMult_words
+    DebugLoc:        { File: src_mult_kernel_orig/mont_word.c, Line: 22, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          kernel_top
+    DebugLoc:        { File: src_mult_kernel_orig/kernel_top.cpp, Line: 9, 
+                       Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

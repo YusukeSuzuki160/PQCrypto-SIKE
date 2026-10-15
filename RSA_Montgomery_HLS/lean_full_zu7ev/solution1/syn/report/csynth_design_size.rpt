@@ -1,0 +1,52 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             |   916        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 2,862        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 1,900        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 1,829        | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 1,829        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 1,716        | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 1,716        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 1,716        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 1,716        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 1,768        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 1,766        | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 1,667        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 1,667        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 1,667        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 1,677        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 1,757        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-------------------+----------------------+---------------+-----------------+-----------------+-----------------+-----------------+
+| Function          | Location             | Compile/Link  | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms   |
++-------------------+----------------------+---------------+-----------------+-----------------+-----------------+-----------------+
+| + rsa_modexp_hw   | rsa_modexp_hw.cpp:10 | 916           | 1,829           | 1,768           | 1,667           | 1,757           |
+|  + montMult_words | mont_word.cpp:22     | 615 (3 calls) | 1,641 (3 calls) | 1,568 (3 calls) | 1,469 (3 calls) | 1,536 (3 calls) |
+|     mul           | mont_ops_fast.hpp:59 | 609 (3 calls) | 1,635 (3 calls) | 1,562 (3 calls) | 1,463 (3 calls) | 1,527 (3 calls) |
+|    get_bit        | rsa_modexp_hw.cpp:5  |   8           |                 |                 |                 |                 |
++-------------------+----------------------+---------------+-----------------+-----------------+-----------------+-----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

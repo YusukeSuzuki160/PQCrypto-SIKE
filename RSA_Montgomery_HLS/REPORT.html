@@ -1534,6 +1534,181 @@ x[1]=c;   y[1]=r2m;
   </div>
 </section>
 
+<section class="stage">
+  <div class="stage-head"><span class="stage-num">10</span><h2>サイクル数削減への方針転換 &mdash; 語幅64bit化で新推奨構成を確立</h2></div>
+  <p class="stage-sub">
+    Section 9の訂正を受け、以後の改善は「クロック周期短縮」ではなく
+    <strong>「サイクル数削減」</strong>(HLSスケジューリング結果であり、
+    クロック周期の絶対時間推定とは別物の信頼できる指標)を主軸とする
+    方針へ転換した。この方針のもとで検証した語幅64bit化が、これまでで
+    最大級の改善をもたらした。
+  </p>
+  <div class="stage-body">
+
+    <div>
+      <h3 class="sub">10.1 lean核での同核比較(xczu7ev実P&amp;R) &mdash; トップレベル追加は悪化要因ではないと確認</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px;">
+        Section 9で判明した「xcvu29pは本環境でVivado実装ライセンス対象外」
+        という制約により、採用構成(WBITS=5+FIOS-CSA-Flat核)の全体トップは
+        WebPACKデバイスにLUT容量上収まらない(見積もり324,255 LUT &gt;
+        xczu7evの230,400 LUT)ため、そのままでは実P&amp;R検証ができない。
+        そこで<strong>同じ核(MontOps_Fast、lean核)を使った「単体カーネル」
+        と「RSAトップ全体」を同デバイス・同targetクロック(10ns)で比較</strong>
+        し、「トップレベルのマルチプレクサ/制御FSM/AXIインターフェースが
+        追加されることでクリティカルパスが悪化するか」を間接的に検証した。
+      </p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>lean核での同核比較(xczu7ev実P&amp;R、target=10ns)</caption>
+        <thead>
+          <tr><th>構成</th><th>post-impl CP(実測)</th><th>WNS</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>単体カーネル</td>
+            <td class="num">9.052 ns</td>
+            <td class="num">+0.948</td>
+          </tr>
+          <tr class="emph">
+            <td>全体トップ</td>
+            <td class="num ok">8.452 ns</td>
+            <td class="num ok">+1.548</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout">
+      <p class="head">要点</p>
+      <p>
+        <strong>全体トップの方がむしろクリティカルパスが短い</strong>
+        (マージンが大きい)という結果になった。トップレベルの窓/制御
+        ロジックは別のスケジューリング状態(サイクル)に分離されるため、
+        乗算器本体のキャリーチェーンに直接積み重なることは少なく、
+        周辺のレジスタ段が信号経路を分割する効果があったと推測される。
+        この結果は「トップレベル追加が主要なリスク要因ではない」という
+        安心材料にはなるが、<strong>lean核(PIPELINE主体、浅い組み合わせ
+        論理)での結果であり、採用構成のFIOS-CSA-Flat核(深いキャリー
+        チェーンを持つ構造)にそのまま当てはまるとは限らない</strong>
+        点に注意(FIOS-CSA-Flat核の単体カーネルはSection 9の実測で
+        WNS=+0.026nsとほぼゼロマージンだった)。
+      </p>
+    </div>
+
+    <div>
+      <h3 class="sub">10.2 語幅64bit化(NWORDS 16&rarr;8) &mdash; 乗算器単体での検証</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px;">
+        CIOSの二重ループはO(N&sup2;)であるため、語幅を32bit&rarr;64bitへ
+        倍化しNWORDSを16&rarr;8へ半減すると、乗算1回あたりの内部ステップ数
+        が理論上1/4に減る。<code class="mono">mont_ops</code>系コアは
+        <code class="mono">wide_type&lt;T&gt;</code>で<code class="mono">T=uint64_t</code>
+        時に<code class="mono">Wide=__uint128_t</code>を自動導出する設計の
+        ため、<code class="mono">Digit</code>型を差し替えるだけで対応できた。
+        まず<code class="mono">montMult_words</code>単体を1回呼ぶだけの
+        最小カーネルで、32bit語版と64bit語版を同条件(xcvu29p、clk=10ns、
+        HLS推定)で比較した。
+      </p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>乗算器単体カーネルの比較(xcvu29p, clk=10ns, HLS推定)</caption>
+        <thead>
+          <tr><th>語幅</th><th>カーネル全体サイクル数</th><th>montMult_words自体のサイクル数</th><th>DSP</th><th>LUT</th><th>SLR比(LUT)</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>32bit(N=16)</td>
+            <td class="num">128</td>
+            <td class="num">40</td>
+            <td class="num">137</td>
+            <td class="num">96,469 <span style="color:var(--ink-dim);">(モジュール単体94,088)</span></td>
+            <td class="num">22%</td>
+          </tr>
+          <tr class="emph">
+            <td>64bit(N=8)</td>
+            <td class="num ok">83<span style="color:var(--ink-dim);font-weight:400;">(-35.2%)</span></td>
+            <td class="num ok">27<span style="color:var(--ink-dim);font-weight:400;">(-32.5%)</span></td>
+            <td class="num">250<span style="color:var(--ink-dim);font-weight:400;">(+82.5%)</span></td>
+            <td class="num ok">45,203<span style="color:var(--ink-dim);font-weight:400;">(-53.1%、モジュール単体42,388)</span></td>
+            <td class="num ok">10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h3 class="sub">10.3 語幅64bit化 &mdash; アプリケーション全体(RSA modExp)での検証</h3>
+      <p style="max-width:68ch; color:var(--ink-dim); font-size:14.5px;">
+        乗算器単体で確認した傾向が、WBITS=5窓法+呼び出し統合を備えた
+        RSA512bit modExp全体(現行推奨構成の語幅のみを差し替えた版)でも
+        再現するかを確認した。<code class="mono">mont_word_compute_mprime</code>
+        のNewton法反復数も5回&rarr;6回に増やして64bit対応させた
+        (1&rarr;2&rarr;4&rarr;8&rarr;16&rarr;32&rarr;64と倍加)。
+      </p>
+    </div>
+
+    <div class="tablewrap">
+      <table class="data">
+        <caption>アプリケーション全体の比較(RSA512bit modExp、xcvu29p, clk=10ns, HLS推定)</caption>
+        <thead>
+          <tr><th>語幅</th><th>サイクル数</th><th>LUT(SLR比)</th><th>DSP</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>32bit(N=16、Section 9訂正後の推奨)</td>
+            <td class="num">44,968</td>
+            <td class="num">324,255 <span style="color:var(--ink-dim);">(75%)</span></td>
+            <td class="num">359</td>
+          </tr>
+          <tr class="emph">
+            <td>64bit(N=8、新採用)</td>
+            <td class="num ok">32,637<span style="color:var(--ink-dim);font-weight:400;">(-27.4%)</span></td>
+            <td class="num ok">173,310 <span style="color:var(--ink-dim);font-weight:400;">(40%、-46.6%)</span></td>
+            <td class="num">770<span style="color:var(--ink-dim);font-weight:400;">(+114%、デバイス比では25%のまま余裕)</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout" style="border-left-color: var(--accent2);">
+      <p class="head" style="color: var(--accent2);">結論: 新推奨構成を確立</p>
+      <p>
+        単体カーネルで観測した「サイクル数減・LUT減・DSP増」という傾向が
+        全体トップでもほぼ同じ比率で再現した。DSPは2倍以上に増えるが、
+        デバイス全体のDSP予算(12,288)に対しては770(6%)・SLR比でも
+        25%と依然余裕がある。正当性はネイティブg++・Vitis HLS csim両方で
+        PASSED(<code class="mono">0x9107f695023f</code>と一致)、
+        サイクル数min=max固定も維持。<strong>64bit語化は「サイクル数削減」
+        という信頼できる指標で過去最大の改善(-27.4%)を達成し、同時にLUTも
+        大幅に削減した。クロック周期の仮定に一切依存しない、実証済みの
+        改善である</strong>。
+        <code class="mono">src_converted_flat_speed_w5_64bit/</code>
+        (WBITS=5窓法+呼び出し統合+64bit語、clk=10ns、32,637 cyc・
+        LUT 173,310・DSP 770)を新推奨構成として採用する。
+      </p>
+    </div>
+
+    <div class="callout">
+      <p class="head">How to apply</p>
+      <p>
+        「語幅を広げてNWORDSを減らす」は、CIOSのO(N&sup2;)構造を持つ
+        Montgomery乗算コアに対して極めて効果の大きい改善手段であることが
+        改めて実証された&mdash;&mdash;32bit語で構築したプロトタイプがある場合、
+        まず語幅を64bit化できるか(ターゲット言語/HLSツールが対応する
+        ネイティブ整数幅、Wide型の自動倍幅化の可否)を確認する価値が高い。
+        次の候補はさらに大きな語幅(128bit)や、64bit化後のFromMont孤立
+        呼び出しコスト比率の再測定。またこの64bit版についても、クロック
+        周期に関する絶対時間の主張は実P&amp;Rでの検証なしに行わないこと
+        (Section 9の教訓を継続適用)。
+      </p>
+    </div>
+
+  </div>
+</section>
+
 <footer class="report-foot">
-  RSA_Montgomery_HLS &nbsp;/&nbsp; xcvu29p-fsga2577-2L-e &nbsp;/&nbsp; Vitis HLS 2024.2 &nbsp;/&nbsp; 2026-09-16
+  RSA_Montgomery_HLS &nbsp;/&nbsp; xcvu29p-fsga2577-2L-e &nbsp;/&nbsp; Vitis HLS 2024.2 &nbsp;/&nbsp; 2026-10-13
 </footer>

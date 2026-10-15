@@ -1,0 +1,68 @@
+-------------------------------------
+| Tool Version : Vivado v.2024.2.2
+| Date         : Tue Oct 13 17:19:27 2026
+| Host         : meltpointubuntu
+| Design       : checkpoint_bd_0_wrapper
+| Device       : xczu7ev-ffvc1156-2-E-
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 1
+	Number of BUFGCE: 1
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 0
+	Number of BUFG_PS: 0
+	Number of BUFG_FABRIC: 0
+	Running suboptimal placement checker for 1 clocks (and their loads) which do not have the CLOCK_LOW_FANOUT property but have a fanout less than 2000...
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: bd_0_i/hls_inst/inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/ap_CS_fsm_pp0_stage0_bufg_place
+	Clock source type: BUFGCE
+	Clock source region: X2Y3
+	Clock regions with locked loads: X1Y2 X1Y3 X2Y2 X2Y3 
+	initial rect ((1, 2), (2, 3))
+
+
+
+*****************
+User Constraints:
+*****************
+No user constraints found
+
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 1
+	Number of BUFGCE: 1
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 0
+	Number of BUFG_PS: 0
+	Number of BUFG_FABRIC: 0
+	Running suboptimal placement checker for 1 clocks (and their loads) which do not have the CLOCK_LOW_FANOUT property but have a fanout less than 2000...
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: bd_0_i/hls_inst/inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/ap_CS_fsm_pp0_stage0
+	Clock source type: BUFGCE
+	Clock source region: X2Y3
+	Clock regions with locked loads: X1Y2 X1Y3 X2Y2 X2Y3 
+	initial rect ((1, 2), (2, 3))
+
+
+
+*****************
+User Constraints:
+*****************
+No user constraints found
+
+

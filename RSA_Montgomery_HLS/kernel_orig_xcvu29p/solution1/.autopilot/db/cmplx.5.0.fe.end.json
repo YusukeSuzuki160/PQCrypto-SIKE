@@ -1,0 +1,152 @@
+{
+    "1": {
+        "name": "montMult_words_Pipeline_VITIS_LOOP_33_2",
+        "file": "src_mult_kernel_orig\/mont_word.c",
+        "fileloc": "33",
+        "instructions": "471",
+        "total_instructions": "471",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "37"
+        },
+        "stores": {
+            "L": "38"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "montMult_words_Pipeline_VITIS_LOOP_88_6",
+        "file": "src_mult_kernel_orig\/mont_word.c",
+        "fileloc": "86",
+        "instructions": "41",
+        "total_instructions": "41",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "montMult_words_Pipeline_VITIS_LOOP_28_1",
+        "file": "src_mult_kernel_orig\/mont_word.c",
+        "fileloc": "28",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "montMult_words_Pipeline_VITIS_LOOP_107_8",
+        "file": "src_mult_kernel_orig\/mont_word.c",
+        "fileloc": "107",
+        "instructions": "25",
+        "total_instructions": "25",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "montMult_words",
+        "file": "mont_word.c",
+        "fileloc": "19",
+        "instructions": "167",
+        "total_instructions": "748",
+        "calls": "3 1 2 7 4",
+        "basicblocks": "1",
+        "loads": {
+            "L": "68"
+        },
+        "stores": {
+            "L": "18"
+        }
+    },
+    "0": {
+        "name": "kernel_top",
+        "file": "kernel_top.cpp",
+        "fileloc": "3",
+        "instructions": "36",
+        "total_instructions": "850",
+        "calls": "6 5 8",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "kernel_top_Pipeline_VITIS_LOOP_18_1",
+        "file": "src_mult_kernel_orig\/kernel_top.cpp",
+        "fileloc": "18",
+        "instructions": "44",
+        "total_instructions": "44",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "montMult_words_Pipeline_VITIS_LOOP_98_7",
+        "file": "src_mult_kernel_orig\/mont_word.c",
+        "fileloc": "97",
+        "instructions": "28",
+        "total_instructions": "28",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "kernel_top_Pipeline_VITIS_LOOP_20_2",
+        "file": "src_mult_kernel_orig\/kernel_top.cpp",
+        "fileloc": "20",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

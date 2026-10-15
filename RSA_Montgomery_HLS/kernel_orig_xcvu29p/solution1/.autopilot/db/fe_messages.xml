@@ -1,0 +1,42 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/meltpoint/eeic/PQCrypto-SIKE/RSA_Montgomery_HLS/run_hls_kernel_orig_xcvu29p.tcl:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="kernel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=kernel_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_mult_kernel_orig/kernel_top.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kernel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = x offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_mult_kernel_orig/kernel_top.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kernel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = y offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_mult_kernel_orig/kernel_top.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kernel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = m offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_mult_kernel_orig/kernel_top.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kernel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port = out offset = slave bundle = gmem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_mult_kernel_orig/kernel_top.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kernel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = mprime bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src_mult_kernel_orig/kernel_top.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kernel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src_mult_kernel_orig/mont_word.c:37:26" msg_body="Loop 'VITIS_LOOP_37_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_37_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src_mult_kernel_orig/mont_word.c:52:26" msg_body="Loop 'VITIS_LOOP_52_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_52_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="src_mult_kernel_orig/mont_word.c:65:26" msg_body="Loop 'VITIS_LOOP_65_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_65_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_mult_kernel_orig/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_37_3' (src_mult_kernel_orig/mont_word.c:37:26) in function 'montMult_words' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src_mult_kernel_orig/mont_word.c:37:26" LoopName="VITIS_LOOP_37_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_mult_kernel_orig/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_52_4' (src_mult_kernel_orig/mont_word.c:52:26) in function 'montMult_words' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src_mult_kernel_orig/mont_word.c:52:26" LoopName="VITIS_LOOP_52_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="src_mult_kernel_orig/mont_word.c:22:0" msg_body="Unrolling loop 'VITIS_LOOP_65_5' (src_mult_kernel_orig/mont_word.c:65:26) in function 'montMult_words' completely with a factor of 16">
+        <args Factor="16" LoopLoc="src_mult_kernel_orig/mont_word.c:65:26" LoopName="VITIS_LOOP_65_5"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,116 @@
+
+
+================================================================
+== Vitis HLS Report for 'montMult_words'
+================================================================
+* Date:           Tue Oct 13 17:17:31 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        kernel64_xcvu29p
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.295 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       27|       27|  0.270 us|  0.270 us|   27|   27|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.43>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%mprime_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %mprime" [src_mult_kernel_64/mont_word.cpp:20]   --->   Operation 3 'read' 'mprime_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [2/2] (4.43ns)   --->   "%call_ln27 = call void @mul, i64 %x, i64 %y, i64 %out_r, i64 %m, i64 %mprime_read" [src_mult_kernel_64/mont_word.cpp:27]   --->   Operation 4 'call' 'call_ln27' <Predicate = true> <Delay = 4.43> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 5 [1/2] (0.00ns)   --->   "%call_ln27 = call void @mul, i64 %x, i64 %y, i64 %out_r, i64 %m, i64 %mprime_read" [src_mult_kernel_64/mont_word.cpp:27]   --->   Operation 5 'call' 'call_ln27' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%ret_ln29 = ret" [src_mult_kernel_64/mont_word.cpp:29]   --->   Operation 6 'ret' 'ret_ln29' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.430ns
+The critical path consists of the following:
+	wire read operation ('mprime_read', src_mult_kernel_64/mont_word.cpp:20) on port 'mprime' (src_mult_kernel_64/mont_word.cpp:20) [6]  (0.000 ns)
+	'call' operation 0 bit ('call_ln27', src_mult_kernel_64/mont_word.cpp:27) to 'mul' [7]  (4.430 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

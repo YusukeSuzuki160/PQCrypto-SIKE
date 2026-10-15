@@ -1,0 +1,466 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.2.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>5.679</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>5.679</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>5.679</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>4.321</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>4.321</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>4.321</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>4.321</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>6</BRAM>
+    <CLB>0</CLB>
+    <DSP>110</DSP>
+    <FF>12043</FF>
+    <LATCH>0</LATCH>
+    <LUT>9739</LUT>
+    <SRL>245</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>624</BRAM>
+    <CLB>0</CLB>
+    <DSP>1728</DSP>
+    <FF>460800</FF>
+    <LUT>230400</LUT>
+    <URAM>96</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="rsa_modexp_hw" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="24">control_r_s_axi_U control_s_axi_U conv_out_U conv_x_U conv_y_U gmem_m_axi_U grp_montMult_words_1_1_fu_301 grp_montMult_words_1_2_fu_350 grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1_fu_268 grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2_fu_274 grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3_fu_284 grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5_fu_294 grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_64_7_fu_315 grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_65_8_fu_322 grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_79_10_fu_330 grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_82_11_fu_338 grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_83_12_fu_344 loop_out_U loop_x_U loop_y_U one_U parr1_U zarr1_U zarr2_U</SubModules>
+    <Resources BRAM="6" DSP="110" FF="12043" LUT="9739" LUTRAM="321" LogicLUT="9173" RAMB18="2" RAMB36="2" SRL="245"/>
+    <LocalResources FF="490" LUT="31" LogicLUT="30" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_r_s_axi_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_control_r_s_axi">
+    <Resources FF="362" LUT="337" LogicLUT="337"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_control_s_axi">
+    <Resources FF="84" LUT="58" LogicLUT="58"/>
+  </RtlModule>
+  <RtlModule CELL="inst/conv_out_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_conv_out_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="1" LogicLUT="1" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/conv_x_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_conv_x_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="64" LUTRAM="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/conv_y_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_conv_y_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="32" LUTRAM="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem_m_axi_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_gmem_m_axi">
+    <Resources BRAM="2" FF="1688" LUT="1307" LogicLUT="1071" RAMB18="2" SRL="236"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_montMult_words_1_1">
+    <SubModules count="1">grp_mul_fu_72</SubModules>
+    <Resources DSP="71" FF="4996" LUT="4000" LogicLUT="3999" SRL="1"/>
+    <LocalResources FF="3" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72" DEPTH="2" FILE_NAME="rsa_modexp_hw_montMult_words_1_1.v" ORIG_REF_NAME="rsa_modexp_hw_mul">
+    <SubModules count="1">grp_mul_Pipeline_CIOS_LOOP_fu_482</SubModules>
+    <Resources DSP="71" FF="4993" LUT="3997" LogicLUT="3996" SRL="1"/>
+    <LocalResources FF="1767" LUT="181" LogicLUT="180" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482" DEPTH="3" FILE_NAME="rsa_modexp_hw_mul.v" ORIG_REF_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP">
+    <SubModules count="19">flow_control_loop_pipe_sequential_init_U mul_32ns_32ns_64_1_1_U12 mul_32ns_32ns_64_1_1_U13 mul_32ns_32ns_64_1_1_U14 mul_32ns_32ns_64_1_1_U15 mul_32ns_32ns_64_1_1_U16 mul_32ns_32ns_64_1_1_U17 mul_32ns_32ns_64_1_1_U18 mul_32ns_32ns_64_1_1_U19 mul_32ns_32ns_64_1_1_U20 mul_32ns_32ns_64_1_1_U21 mul_32ns_32ns_64_1_1_U22 mul_32ns_32ns_64_1_1_U23 mul_32ns_32ns_64_1_1_U24 mul_32ns_32ns_64_1_1_U25 mul_32ns_32ns_64_1_1_U26 mul_32ns_32ns_64_1_1_U27 mul_32ns_32ns_64_1_1_U28 mul_32s_32s_32_1_1_U29</SubModules>
+    <Resources DSP="71" FF="3226" LUT="3816" LogicLUT="3816"/>
+    <LocalResources DSP="11" FF="3224" LUT="1493" LogicLUT="1493"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U12" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="111" LogicLUT="111"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U13" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="208" LogicLUT="208"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U14" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="144" LogicLUT="144"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U15" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="172" LogicLUT="172"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U16" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="235" LogicLUT="235"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U17" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="79" LogicLUT="79"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U18" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="111" LogicLUT="111"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U19" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="127" LogicLUT="127"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U20" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="146" LogicLUT="146"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U21" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="124" LogicLUT="124"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U22" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="91" LogicLUT="91"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U23" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="79" LogicLUT="79"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U24" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="79" LogicLUT="79"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U25" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="176" LogicLUT="176"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U26" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="209" LogicLUT="209"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U27" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="72" LogicLUT="72"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32ns_32ns_64_1_1_U28" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="112" LogicLUT="112"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_1_fu_301/grp_mul_fu_72/grp_mul_Pipeline_CIOS_LOOP_fu_482/mul_32s_32s_32_1_1_U29" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32s_32s_32_1_1">
+    <Resources DSP="2" LUT="31" LogicLUT="31"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_montMult_words_1_2">
+    <SubModules count="1">grp_mul_1_fu_52</SubModules>
+    <Resources DSP="39" FF="3750" LUT="3175" LogicLUT="3173" SRL="2"/>
+    <LocalResources FF="3" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52" DEPTH="2" FILE_NAME="rsa_modexp_hw_montMult_words_1_2.v" ORIG_REF_NAME="rsa_modexp_hw_mul_1">
+    <SubModules count="1">grp_mul_1_Pipeline_CIOS_LOOP_fu_479</SubModules>
+    <Resources DSP="39" FF="3747" LUT="3174" LogicLUT="3172" SRL="2"/>
+    <LocalResources FF="1803" LUT="290" LogicLUT="288" SRL="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479" DEPTH="3" FILE_NAME="rsa_modexp_hw_mul_1.v" ORIG_REF_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP">
+    <SubModules count="11">flow_control_loop_pipe_sequential_init_U mul_32ns_32ns_64_1_1_U120 mul_32ns_32ns_64_1_1_U121 mul_32ns_32ns_64_1_1_U122 mul_32ns_32ns_64_1_1_U123 mul_32ns_32ns_64_1_1_U124 mul_32ns_32ns_64_1_1_U125 mul_32ns_32ns_64_1_1_U126 mul_32ns_32ns_64_1_1_U127 mul_32ns_32ns_64_1_1_U128 mul_32s_32s_32_1_1_U129</SubModules>
+    <Resources DSP="39" FF="1944" LUT="2884" LogicLUT="2884"/>
+    <LocalResources DSP="7" FF="1942" LUT="1745" LogicLUT="1745"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="160" LogicLUT="160"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="145" LogicLUT="145"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U122" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="124" LogicLUT="124"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U123" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="155" LogicLUT="155"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U124" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="79" LogicLUT="79"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U125" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="79" LogicLUT="79"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U126" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="179" LogicLUT="179"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U127" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="80" LogicLUT="80"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U128" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="56" LogicLUT="56"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129" DEPTH="4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="rsa_modexp_hw_mul_32s_32s_32_1_1">
+    <Resources DSP="2" LUT="71" LogicLUT="71"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1_fu_268" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="7" LUT="15" LogicLUT="15"/>
+    <LocalResources FF="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1_fu_268/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_27_1.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="15" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2_fu_274" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="53" LUT="28" LogicLUT="28"/>
+    <LocalResources FF="51" LUT="14" LogicLUT="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2_fu_274/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_42_2.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="14" LogicLUT="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3_fu_284" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="219" LUT="182" LogicLUT="177" SRL="5"/>
+    <LocalResources FF="217" LUT="163" LogicLUT="158" SRL="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3_fu_284/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_43_3.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="25" LogicLUT="25"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5_fu_294" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="12" LUT="30" LogicLUT="30"/>
+    <LocalResources FF="10" LUT="16" LogicLUT="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5_fu_294/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_48_5.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="14" LogicLUT="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_64_7_fu_315" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_64_7">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="13" LUT="17" LogicLUT="17"/>
+    <LocalResources FF="11" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_64_7_fu_315/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_64_7.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="13" LogicLUT="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_65_8_fu_322" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_65_8">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="12" LUT="12" LogicLUT="12"/>
+    <LocalResources FF="10" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_65_8_fu_322/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_65_8.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_79_10_fu_330" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_79_10">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="12" LUT="44" LogicLUT="44"/>
+    <LocalResources FF="10" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_79_10_fu_330/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_79_10.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_82_11_fu_338" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_82_11">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="12" LUT="16" LogicLUT="16"/>
+    <LocalResources FF="10" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_82_11_fu_338/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_82_11.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="11" LogicLUT="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_83_12_fu_344" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_83_12">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="12" LUT="19" LogicLUT="19"/>
+    <LocalResources FF="10" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_rsa_modexp_hw_Pipeline_VITIS_LOOP_83_12_fu_344/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="rsa_modexp_hw_rsa_modexp_hw_Pipeline_VITIS_LOOP_83_12.v" ORIG_REF_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/loop_out_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_loop_out_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="32" LogicLUT="32" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/loop_x_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_conv_x_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="97" LUTRAM="64" LogicLUT="33"/>
+  </RtlModule>
+  <RtlModule CELL="inst/loop_y_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_conv_y_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="48" LUTRAM="32" LogicLUT="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/one_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_one_RAM_AUTO_1R1W">
+    <Resources FF="1" LUT="2" LUTRAM="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/parr1_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_zarr2_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="32" LUTRAM="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/zarr1_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_zarr1_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="96" LUTRAM="64" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/zarr2_U" DEPTH="1" FILE_NAME="rsa_modexp_hw.v" ORIG_REF_NAME="rsa_modexp_hw_zarr2_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="64" LUTRAM="32" LogicLUT="32"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="5.630" DATAPATH_LOGIC_DELAY="3.864" DATAPATH_NET_DELAY="1.766" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[31]/D" LOGIC_LEVELS="24" MAX_FANOUT="12" SLACK="4.321" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1448"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1448"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[31]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="972"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.630" DATAPATH_LOGIC_DELAY="3.864" DATAPATH_NET_DELAY="1.766" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[31]/D" LOGIC_LEVELS="24" MAX_FANOUT="12" SLACK="4.321" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1468"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1468"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[31]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1007"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.629" DATAPATH_LOGIC_DELAY="3.864" DATAPATH_NET_DELAY="1.765" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[29]/D" LOGIC_LEVELS="24" MAX_FANOUT="12" SLACK="4.322" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv67_913_fu_180_reg[31]_i_20" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_11_reg_2665_reg[7]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_9" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1448"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180[31]_i_17" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1448"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv67_913_fu_180_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[7]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[15]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[23]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_11_reg_2665_reg[31]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_11_reg_2665_reg[29]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="972"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.629" DATAPATH_LOGIC_DELAY="3.864" DATAPATH_NET_DELAY="1.765" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[29]/D" LOGIC_LEVELS="24" MAX_FANOUT="12" SLACK="4.322" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/m_reg_2562_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry_i_7__12" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_32s_32s_32_1_1.v" LINE_NUMBER="44"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_carry__0" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32s_32s_32_1_1_U129/tmp_product_i_7__16" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="rsa_modexp_hw_flow_control_loop_pipe_sequential_init.v" LINE_NUMBER="69"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_ALU_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product__0/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2_i_8__14" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_32ns_32ns_64_1_1.v" LINE_NUMBER="41"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_product_carry__3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/conv671_fu_148_reg[31]_i_19" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U120/tmp_2_reg_2595_reg[7]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_9" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1468"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148[31]_i_17" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1468"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/conv671_fu_148_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[7]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[15]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[23]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/mul_32ns_32ns_64_1_1_U121/tmp_2_reg_2595_reg[31]_i_1" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1440"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/tmp_2_reg_2595_reg[29]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="rsa_modexp_hw_mul_1_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1007"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="5.651" DATAPATH_LOGIC_DELAY="3.307" DATAPATH_NET_DELAY="2.344" ENDPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/or_ln158_10_reg_1975_reg[0]/D" LOGIC_LEVELS="55" MAX_FANOUT="512" SLACK="4.330" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/gmem_addr_read_7_reg_1650_reg[1]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/gmem_addr_read_7_reg_1650_reg[1]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="602"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960[7]_i_10" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw.v" LINE_NUMBER="351"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_7_reg_1960_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1827"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_8_reg_1965_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1829"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_9_reg_1970_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1801"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1803"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_11_reg_1980_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1805"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_12_reg_1985_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1807"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_13_reg_1990_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1809"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_14_reg_1995_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1811"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_15_reg_2000_reg[31]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/grp_mul_1_Pipeline_CIOS_LOOP_fu_479/or_ln158_10_reg_1975[0]_i_1" PRIMITIVE_TYPE="CLB.LUT.LUT4" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="1631"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_1_2_fu_350/grp_mul_1_fu_52/or_ln158_10_reg_1975_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="rsa_modexp_hw_mul_1.v" LINE_NUMBER="794"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/rsa_modexp_hw_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/rsa_modexp_hw_failfast_synth.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/rsa_modexp_hw_power_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/rsa_modexp_hw_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/rsa_modexp_hw_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/rsa_modexp_hw_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/rsa_modexp_hw_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

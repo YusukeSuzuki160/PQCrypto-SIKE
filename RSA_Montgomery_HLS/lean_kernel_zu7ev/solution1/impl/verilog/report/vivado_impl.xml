@@ -1,0 +1,449 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.2.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>9.052</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>9.052</CP_FINAL>
+  <CP_ROUTE>9.052</CP_ROUTE>
+  <CP_SYNTH>5.992</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>0.948</SLACK_FINAL>
+  <SLACK_ROUTE>0.948</SLACK_ROUTE>
+  <SLACK_SYNTH>4.008</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>0.948</WNS_FINAL>
+  <WNS_ROUTE>0.948</WNS_ROUTE>
+  <WNS_SYNTH>4.008</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>4</BRAM>
+    <CLB>1279</CLB>
+    <DSP>71</DSP>
+    <FF>7759</FF>
+    <LATCH>0</LATCH>
+    <LUT>5468</LUT>
+    <SRL>132</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>624</BRAM>
+    <CLB>28800</CLB>
+    <DSP>1728</DSP>
+    <FF>460800</FF>
+    <LUT>230400</LUT>
+    <URAM>96</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="kernel_top" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="10">control_r_s_axi_U control_s_axi_U gmem_m_axi_U grp_kernel_top_Pipeline_VITIS_LOOP_18_1_fu_132 grp_kernel_top_Pipeline_VITIS_LOOP_20_2_fu_156 grp_montMult_words_fu_147 ml_U ol_U xl_U yl_U</SubModules>
+    <Resources BRAM="4" DSP="71" FF="7759" LUT="5468" LUTRAM="80" LogicLUT="5256" RAMB18="2" RAMB36="1" SRL="132"/>
+    <LocalResources FF="262"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_r_s_axi_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_control_r_s_axi">
+    <Resources FF="297" LUT="211" LogicLUT="211"/>
+  </RtlModule>
+  <RtlModule CELL="inst/control_s_axi_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_control_s_axi">
+    <Resources FF="84" LUT="62" LogicLUT="62"/>
+  </RtlModule>
+  <RtlModule CELL="inst/gmem_m_axi_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_gmem_m_axi">
+    <Resources BRAM="2" FF="1679" LUT="1063" LogicLUT="935" RAMB18="2" SRL="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kernel_top_Pipeline_VITIS_LOOP_18_1_fu_132" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_kernel_top_Pipeline_VITIS_LOOP_18_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="320" LUT="130" LogicLUT="126" SRL="4"/>
+    <LocalResources FF="318" LUT="112" LogicLUT="108" SRL="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kernel_top_Pipeline_VITIS_LOOP_18_1_fu_132/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="kernel_top_kernel_top_Pipeline_VITIS_LOOP_18_1.v" ORIG_REF_NAME="kernel_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="29" LogicLUT="29"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kernel_top_Pipeline_VITIS_LOOP_20_2_fu_156" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_kernel_top_Pipeline_VITIS_LOOP_20_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="10" LUT="16" LogicLUT="16"/>
+    <LocalResources FF="8" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_kernel_top_Pipeline_VITIS_LOOP_20_2_fu_156/flow_control_loop_pipe_sequential_init_U" DEPTH="2" FILE_NAME="kernel_top_kernel_top_Pipeline_VITIS_LOOP_20_2.v" ORIG_REF_NAME="kernel_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="15" LogicLUT="15"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_montMult_words">
+    <SubModules count="1">grp_mul_fu_20</SubModules>
+    <Resources DSP="71" FF="4947" LUT="3908" LogicLUT="3908"/>
+    <LocalResources FF="3" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20" DEPTH="2" FILE_NAME="kernel_top_montMult_words.v" ORIG_REF_NAME="kernel_top_mul">
+    <SubModules count="1">grp_mul_Pipeline_CIOS_LOOP_fu_585</SubModules>
+    <Resources DSP="71" FF="4944" LUT="3907" LogicLUT="3907"/>
+    <LocalResources FF="1717" LUT="168" LogicLUT="168"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585" DEPTH="3" FILE_NAME="kernel_top_mul.v" ORIG_REF_NAME="kernel_top_mul_Pipeline_CIOS_LOOP">
+    <SubModules count="19">flow_control_loop_pipe_sequential_init_U mul_32ns_32ns_64_1_1_U10 mul_32ns_32ns_64_1_1_U11 mul_32ns_32ns_64_1_1_U12 mul_32ns_32ns_64_1_1_U13 mul_32ns_32ns_64_1_1_U14 mul_32ns_32ns_64_1_1_U15 mul_32ns_32ns_64_1_1_U16 mul_32ns_32ns_64_1_1_U17 mul_32ns_32ns_64_1_1_U18 mul_32ns_32ns_64_1_1_U19 mul_32ns_32ns_64_1_1_U20 mul_32ns_32ns_64_1_1_U21 mul_32ns_32ns_64_1_1_U22 mul_32ns_32ns_64_1_1_U23 mul_32ns_32ns_64_1_1_U24 mul_32ns_32ns_64_1_1_U8 mul_32ns_32ns_64_1_1_U9 mul_32s_32s_32_1_1_U25</SubModules>
+    <Resources DSP="71" FF="3227" LUT="3739" LogicLUT="3739"/>
+    <LocalResources DSP="11" FF="3225" LUT="1490" LogicLUT="1490"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/flow_control_loop_pipe_sequential_init_U" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="13" LogicLUT="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U10" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="144" LogicLUT="144"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U11" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="171" LogicLUT="171"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U12" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="234" LogicLUT="234"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U13" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="79" LogicLUT="79"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U14" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="111" LogicLUT="111"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U15" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="127" LogicLUT="127"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U16" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="146" LogicLUT="146"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U17" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="124" LogicLUT="124"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U18" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="91" LogicLUT="91"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U19" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="79" LogicLUT="79"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U20" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="79" LogicLUT="79"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U21" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="176" LogicLUT="176"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U22" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="209" LogicLUT="209"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U23" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="2" LUT="72" LogicLUT="72"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U24" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="112" LogicLUT="112"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U8" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="111" LogicLUT="111"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32ns_32ns_64_1_1_U9" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32ns_32ns_64_1_1">
+    <Resources DSP="4" LUT="208" LogicLUT="208"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/mul_32s_32s_32_1_1_U25" DEPTH="4" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" ORIG_REF_NAME="kernel_top_mul_32s_32s_32_1_1">
+    <Resources DSP="2" LUT="31" LogicLUT="31"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ml_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_xl_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="32" LUTRAM="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ol_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_ol_RAM_AUTO_1R1W">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/xl_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_xl_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="32" LUTRAM="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/yl_U" DEPTH="1" FILE_NAME="kernel_top.v" ORIG_REF_NAME="kernel_top_yl_RAM_AUTO_1R1W">
+    <Resources FF="32" LUT="16" LUTRAM="16"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="8.730" DATAPATH_LOGIC_DELAY="3.298" DATAPATH_NET_DELAY="5.432" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ol_U/ram_reg_bram_0/DINBDIN[30]" LOGIC_LEVELS="51" MAX_FANOUT="512" SLACK="0.948" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/conv67_818_fu_176_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/conv67_818_fu_176_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1115"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1097"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1069"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1071"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1073"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1075"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1077"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1079"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[31]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[31]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949[31]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/ram_reg_bram_0_i_177" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/ram_reg_bram_0_i_44" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/ol_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="kernel_top_ol_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="8.735" DATAPATH_LOGIC_DELAY="3.247" DATAPATH_NET_DELAY="5.488" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ol_U/ram_reg_bram_0/DINADIN[5]" LOGIC_LEVELS="51" MAX_FANOUT="512" SLACK="0.969" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/conv67_818_fu_176_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/conv67_818_fu_176_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1115"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1097"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1069"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1071"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1073"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1075"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1077"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1079"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[31]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[31]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949[31]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/ram_reg_bram_0_i_156" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/ram_reg_bram_0_i_37" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/ol_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="kernel_top_ol_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="8.657" DATAPATH_LOGIC_DELAY="3.289" DATAPATH_NET_DELAY="5.368" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ol_U/ram_reg_bram_0/DINBDIN[0]" LOGIC_LEVELS="51" MAX_FANOUT="512" SLACK="1.043" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/conv67_818_fu_176_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/conv67_818_fu_176_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1115"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1097"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1069"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1071"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1073"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1075"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1077"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1079"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[31]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[31]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949[31]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/ram_reg_bram_0_i_267" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/ram_reg_bram_0_i_74" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/ol_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="kernel_top_ol_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="8.664" DATAPATH_LOGIC_DELAY="3.233" DATAPATH_NET_DELAY="5.431" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ol_U/ram_reg_bram_0/DINBDIN[2]" LOGIC_LEVELS="51" MAX_FANOUT="512" SLACK="1.049" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/conv67_818_fu_176_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/conv67_818_fu_176_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1115"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1097"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1069"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1071"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1073"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1075"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1077"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1079"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[31]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[31]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949[31]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/ram_reg_bram_0_i_261" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/ram_reg_bram_0_i_72" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/ol_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="kernel_top_ol_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="8.649" DATAPATH_LOGIC_DELAY="3.257" DATAPATH_NET_DELAY="5.392" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ol_U/ram_reg_bram_0/DINADIN[2]" LOGIC_LEVELS="51" MAX_FANOUT="512" SLACK="1.051" STARTPOINT_PIN="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/conv67_818_fu_176_reg[0]/C">
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/conv67_818_fu_176_reg[0]" PRIMITIVE_TYPE="REGISTER.SDR.FDRE" FILE_NAME="kernel_top_mul_Pipeline_CIOS_LOOP.v" LINE_NUMBER="1115"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_8_reg_1914_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1097"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_9_reg_1919_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1069"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_10_reg_1924_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1071"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_11_reg_1929_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1073"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_12_reg_1934_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1075"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_13_reg_1939_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1077"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_14_reg_1944_reg[31]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[7]_i_12" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949[7]_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="1079"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[7]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[15]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[23]_i_2" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[31]_i_3" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949_reg[31]_i_4" PRIMITIVE_TYPE="CLB.CARRY.CARRY8" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/select_ln158_15_reg_1949[31]_i_2" PRIMITIVE_TYPE="CLB.LUT.LUT3" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/ram_reg_bram_0_i_165" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/grp_montMult_words_fu_147/grp_mul_fu_20/grp_mul_Pipeline_CIOS_LOOP_fu_585/ram_reg_bram_0_i_40" PRIMITIVE_TYPE="CLB.LUT.LUT6" FILE_NAME="kernel_top_mul.v" LINE_NUMBER="475"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/ol_U/ram_reg_bram_0" PRIMITIVE_TYPE="BLOCKRAM.BRAM.RAMB36E2" FILE_NAME="kernel_top_ol_RAM_AUTO_1R1W.v" LINE_NUMBER="38"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/kernel_top_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/kernel_top_failfast_routed.rpt"/>
+  <ReportFile TYPE="power" PATH="verilog/report/kernel_top_power_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/kernel_top_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/kernel_top_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/kernel_top_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/kernel_top_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/kernel_top_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

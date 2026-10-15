@@ -1,0 +1,96 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.2 (lin64) Build 6060944 Thu Mar 06 19:10:09 MST 2025
+| Date         : Tue Oct 13 17:21:02 2026
+| Host         : meltpointubuntu running 64-bit Ubuntu 24.04.5 LTS
+| Command      : report_design_analysis -file ./report/rsa_modexp_hw_design_analysis_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu7ev
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Design Analysis
+
+Table of Contents
+-----------------
+1. Setup Path Characteristics 1-1
+2. Logic Level Distribution
+3. Placer Final Level Congestion Reporting
+4. Router Initial Congestion
+5. SLR Net Crossing Reporting
+
+1. Setup Path Characteristics 1-1
+---------------------------------
+
++---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      Characteristics      |                                                                                                                                                                                                                 Path #1                                                                                                                                                                                                                |
++---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Requirement               | 10.000                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Path Delay                | 8.431                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Logic Delay               | 3.757(45%)                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Net Delay                 | 4.674(55%)                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Clock Skew                | -0.010                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Slack                     | 1.548                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Clock Uncertainty         | 0.035                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Clock Relationship        | Timed                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Clock Delay Group         | Same Clock                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Logic Levels              | 55                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Routes                    | 10                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Logical Path              | FDRE/C-(4)-LUT2-(1)-CARRY8-CARRY8-CARRY8-CARRY8-CARRY8-LUT2-(1)-CARRY8-CARRY8-CARRY8-CARRY8-CARRY8-LUT2-(1)-CARRY8-CARRY8-CARRY8-CARRY8-CARRY8-LUT2-(1)-CARRY8-CARRY8-CARRY8-CARRY8-CARRY8-LUT2-(1)-CARRY8-CARRY8-CARRY8-CARRY8-CARRY8-LUT2-(1)-CARRY8-CARRY8-CARRY8-CARRY8-CARRY8-LUT2-(1)-CARRY8-CARRY8-CARRY8-CARRY8-CARRY8-LUT2-(1)-CARRY8-CARRY8-CARRY8-CARRY8-CARRY8-LUT2-(1)-CARRY8-CARRY8-CARRY8-CARRY8-CARRY8-LUT4-(1)-FDRE/D |
+| Start Point Clock         | ap_clk                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| End Point Clock           | ap_clk                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| DSP Block                 | None                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| RAM Registers             | None-None                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| IO Crossings              | 0                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| SLR Crossings             | 0                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| PBlocks                   | 0                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| High Fanout               | 4                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Dont Touch                | 0                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Mark Debug                | 0                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Start Point Pin Primitive | FDRE/C                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| End Point Pin Primitive   | FDRE/D                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Start Point Pin           | conv67_711_fu_172_reg[0]/C                                                                                                                                                                                                                                                                                                                                                                                                             |
+| End Point Pin             | or_ln158_1_reg_1930_reg[1]/D                                                                                                                                                                                                                                                                                                                                                                                                           |
++---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* Bounding box calculated as % of dimensions for the target device (2770, 746)
+
+
+2. Logic Level Distribution
+---------------------------
+
++-----------------+-------------+----+----+----+----+----+----+----+----+----+----+----+----+----+-----+----+----+----+----+----+----+-----+
+| End Point Clock | Requirement | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 44 |  45 | 49 | 50 | 51 | 52 | 53 | 54 |  55 |
++-----------------+-------------+----+----+----+----+----+----+----+----+----+----+----+----+----+-----+----+----+----+----+----+----+-----+
+| ap_clk          | 10.000ns    |  6 |  6 | 22 | 35 | 32 | 39 | 43 | 26 | 30 | 24 | 16 |  8 | 40 | 128 |  8 |  8 |  8 |  8 |  1 |  1 | 511 |
++-----------------+-------------+----+----+----+----+----+----+----+----+----+----+----+----+----+-----+----+----+----+----+----+----+-----+
+* Columns represent the logic levels per end point clock
+** Distribution is for top worst 1000 paths
+
+
+3. Placer Final Level Congestion Reporting
+------------------------------------------
+
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+------------+
+| Direction | Type | Level | Window | Combined LUTs | Avg LUT Input | LUT | LUTRAM | Flop | MUXF | RAMB | URAM | DSP | CARRY | SRL | Cell Names |
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+------------+
+* No congestion windows are found above level 5
+
+
+4. Router Initial Congestion
+----------------------------
+
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+------------+-------------+
+| Direction | Type | Level | Window | Combined LUTs | Avg LUT Input | LUT | LUTRAM | Flop | MUXF | RAMB | URAM | DSP | CARRY | SRL | Cell Names | Sub Windows |
++-----------+------+-------+--------+---------------+---------------+-----+--------+------+------+------+------+-----+-------+-----+------------+-------------+
+* No effective congestion windows are found above level 5
+
+
+5. SLR Net Crossing Reporting
+-----------------------------
+
++------------+-----------------------------+
+| Cell Names | Number of Nets crossing SLR |
++------------+-----------------------------+
+* The current part is not an SSI device
+
+

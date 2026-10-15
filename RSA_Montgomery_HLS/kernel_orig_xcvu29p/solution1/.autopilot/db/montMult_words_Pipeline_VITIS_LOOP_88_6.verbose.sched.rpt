@@ -1,0 +1,171 @@
+
+
+================================================================
+== Vitis HLS Report for 'montMult_words_Pipeline_VITIS_LOOP_88_6'
+================================================================
+* Date:           Thu Oct 15 17:39:53 2026
+
+* Version:        2024.2.2 (Build 6049644 on Mar  5 2025)
+* Project:        kernel_orig_xcvu29p
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: virtexuplus58g
+* Target device:  xcvu29p-fsga2577-2L-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.475 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       18|       18|  0.180 us|  0.180 us|   17|   17|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_88_6  |       16|       16|         2|          1|          1|    16|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.48>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%ge = alloca i32 1" [src_mult_kernel_orig/mont_word.c:86]   --->   Operation 5 'alloca' 'ge' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%decided = alloca i32 1" [src_mult_kernel_orig/mont_word.c:87]   --->   Operation 6 'alloca' 'decided' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%k = alloca i32 1" [src_mult_kernel_orig/mont_word.c:88]   --->   Operation 7 'alloca' 'k' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.38ns)   --->   "%store_ln88 = store i5 15, i5 %k" [src_mult_kernel_orig/mont_word.c:88]   --->   Operation 8 'store' 'store_ln88' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 9 [1/1] (0.38ns)   --->   "%store_ln87 = store i32 0, i32 %decided" [src_mult_kernel_orig/mont_word.c:87]   --->   Operation 9 'store' 'store_ln87' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 10 [1/1] (0.38ns)   --->   "%store_ln86 = store i32 1, i32 %ge" [src_mult_kernel_orig/mont_word.c:86]   --->   Operation 10 'store' 'store_ln86' <Predicate = true> <Delay = 0.38>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body92"   --->   Operation 11 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%k_1 = load i5 %k" [src_mult_kernel_orig/mont_word.c:88]   --->   Operation 12 'load' 'k_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i5.i32, i5 %k_1, i32 4" [src_mult_kernel_orig/mont_word.c:88]   --->   Operation 13 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln88 = br i1 %tmp, void %for.body92.split_ifconv, void %for.inc135.preheader.exitStub" [src_mult_kernel_orig/mont_word.c:88]   --->   Operation 14 'br' 'br_ln88' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln88 = zext i5 %k_1" [src_mult_kernel_orig/mont_word.c:88]   --->   Operation 15 'zext' 'zext_ln88' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%t_addr = getelementptr i32 %t, i64 0, i64 %zext_ln88" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 16 'getelementptr' 't_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (0.69ns)   --->   "%t_load = load i5 %t_addr" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 17 'load' 't_load' <Predicate = (!tmp)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18> <RAM>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%m_addr = getelementptr i32 %m, i64 0, i64 %zext_ln88" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 18 'getelementptr' 'm_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 19 [2/2] (0.69ns)   --->   "%m_load = load i4 %m_addr" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 19 'load' 'm_load' <Predicate = (!tmp)> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_1 : Operation 20 [1/1] (0.70ns)   --->   "%add_ln88 = add i5 %k_1, i5 31" [src_mult_kernel_orig/mont_word.c:88]   --->   Operation 20 'add' 'add_ln88' <Predicate = (!tmp)> <Delay = 0.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.38ns)   --->   "%store_ln88 = store i5 %add_ln88, i5 %k" [src_mult_kernel_orig/mont_word.c:88]   --->   Operation 21 'store' 'store_ln88' <Predicate = (!tmp)> <Delay = 0.38>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%ge_load = load i32 %ge"   --->   Operation 45 'load' 'ge_load' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i32P0A, i32 %ge_out, i32 %ge_load"   --->   Operation 46 'write' 'write_ln0' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.38ns)   --->   "%ret_ln0 = ret"   --->   Operation 47 'ret' 'ret_ln0' <Predicate = (tmp)> <Delay = 0.38>
+
+State 2 <SV = 1> <Delay = 2.47>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%ge_load_1 = load i32 %ge"   --->   Operation 22 'load' 'ge_load_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%decided_load = load i32 %decided"   --->   Operation 23 'load' 'decided_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specpipeline_ln86 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_9" [src_mult_kernel_orig/mont_word.c:86]   --->   Operation 24 'specpipeline' 'specpipeline_ln86' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%speclooptripcount_ln86 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16" [src_mult_kernel_orig/mont_word.c:86]   --->   Operation 25 'speclooptripcount' 'speclooptripcount_ln86' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specloopname_ln88 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [src_mult_kernel_orig/mont_word.c:88]   --->   Operation 26 'specloopname' 'specloopname_ln88' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.88ns)   --->   "%icmp_ln90 = icmp_eq  i32 %decided_load, i32 0" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 27 'icmp' 'icmp_ln90' <Predicate = true> <Delay = 0.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/2] ( I:0.69ns O:0.69ns )   --->   "%t_load = load i5 %t_addr" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 28 'load' 't_load' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 18> <RAM>
+ST_2 : Operation 29 [1/2] ( I:0.69ns O:0.69ns )   --->   "%m_load = load i4 %m_addr" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 29 'load' 'm_load' <Predicate = true> <Delay = 0.69> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 0.69> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16> <RAM>
+ST_2 : Operation 30 [1/1] (0.88ns)   --->   "%icmp_ln90_1 = icmp_ugt  i32 %t_load, i32 %m_load" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 30 'icmp' 'icmp_ln90_1' <Predicate = true> <Delay = 0.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 31 [1/1] (0.88ns)   --->   "%icmp_ln91 = icmp_ult  i32 %t_load, i32 %m_load" [src_mult_kernel_orig/mont_word.c:91]   --->   Operation 31 'icmp' 'icmp_ln91' <Predicate = true> <Delay = 0.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node ge_1)   --->   "%xor_ln91 = xor i1 %icmp_ln91, i1 1" [src_mult_kernel_orig/mont_word.c:91]   --->   Operation 32 'xor' 'xor_ln91' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node ge_1)   --->   "%zext_ln91_1 = zext i1 %xor_ln91" [src_mult_kernel_orig/mont_word.c:91]   --->   Operation 33 'zext' 'zext_ln91_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.88ns)   --->   "%icmp_ln91_1 = icmp_ne  i32 %t_load, i32 %m_load" [src_mult_kernel_orig/mont_word.c:91]   --->   Operation 34 'icmp' 'icmp_ln91_1' <Predicate = true> <Delay = 0.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node ge_1)   --->   "%select_ln91 = select i1 %icmp_ln91_1, i32 %zext_ln91_1, i32 %ge_load_1" [src_mult_kernel_orig/mont_word.c:91]   --->   Operation 35 'select' 'select_ln91' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.22> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln91 = zext i1 %icmp_ln91" [src_mult_kernel_orig/mont_word.c:91]   --->   Operation 36 'zext' 'zext_ln91' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.12ns)   --->   "%xor_ln90 = xor i1 %icmp_ln90, i1 1" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 37 'xor' 'xor_ln90' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.12ns)   --->   "%and_ln90 = and i1 %icmp_ln90, i1 %icmp_ln90_1" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 38 'and' 'and_ln90' <Predicate = true> <Delay = 0.12> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.12> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%sel_tmp2 = bitconcatenate i2 @_ssdm_op_BitConcatenate.i2.i1.i1, i1 %xor_ln90, i1 %and_ln90" [src_mult_kernel_orig/mont_word.c:90]   --->   Operation 39 'bitconcatenate' 'sel_tmp2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.38ns) (out node of the LUT)   --->   "%ge_1 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.3i32.i32.i2, i2 2, i32 %ge_load_1, i2 1, i32 1, i2 0, i32 %select_ln91, i32 0, i2 %sel_tmp2" [src_mult_kernel_orig/mont_word.c:91]   --->   Operation 40 'sparsemux' 'ge_1' <Predicate = true> <Delay = 0.38> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 162 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.38ns)   --->   "%decided_1 = sparsemux i32 @_ssdm_op_SparseMux.ap_auto.3i32.i32.i2, i2 2, i32 %decided_load, i2 1, i32 1, i2 0, i32 %zext_ln91, i32 0, i2 %sel_tmp2" [src_mult_kernel_orig/mont_word.c:91]   --->   Operation 41 'sparsemux' 'decided_1' <Predicate = true> <Delay = 0.38> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 162 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 42 [1/1] (0.38ns)   --->   "%store_ln87 = store i32 %decided_1, i32 %decided" [src_mult_kernel_orig/mont_word.c:87]   --->   Operation 42 'store' 'store_ln87' <Predicate = true> <Delay = 0.38>
+ST_2 : Operation 43 [1/1] (0.38ns)   --->   "%store_ln86 = store i32 %ge_1, i32 %ge" [src_mult_kernel_orig/mont_word.c:86]   --->   Operation 43 'store' 'store_ln86' <Predicate = true> <Delay = 0.38>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln88 = br void %for.body92" [src_mult_kernel_orig/mont_word.c:88]   --->   Operation 44 'br' 'br_ln88' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.481ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln88', src_mult_kernel_orig/mont_word.c:88) of constant 15 on local variable 'k', src_mult_kernel_orig/mont_word.c:88 [7]  (0.387 ns)
+	'load' operation 5 bit ('k', src_mult_kernel_orig/mont_word.c:88) on local variable 'k', src_mult_kernel_orig/mont_word.c:88 [12]  (0.000 ns)
+	'add' operation 5 bit ('add_ln88', src_mult_kernel_orig/mont_word.c:88) [39]  (0.707 ns)
+	'store' operation 0 bit ('store_ln88', src_mult_kernel_orig/mont_word.c:88) of variable 'add_ln88', src_mult_kernel_orig/mont_word.c:88 on local variable 'k', src_mult_kernel_orig/mont_word.c:88 [40]  (0.387 ns)
+
+ <State 2>: 2.475ns
+The critical path consists of the following:
+	'load' operation 32 bit ('t_load', src_mult_kernel_orig/mont_word.c:90) on array 't' [24]  (0.699 ns)
+	'icmp' operation 1 bit ('icmp_ln90_1', src_mult_kernel_orig/mont_word.c:90) [27]  (0.880 ns)
+	'and' operation 1 bit ('and_ln90', src_mult_kernel_orig/mont_word.c:90) [35]  (0.122 ns)
+	'sparsemux' operation 32 bit ('decided', src_mult_kernel_orig/mont_word.c:91) [38]  (0.387 ns)
+	'store' operation 0 bit ('store_ln87', src_mult_kernel_orig/mont_word.c:87) of variable 'decided', src_mult_kernel_orig/mont_word.c:91 on local variable 'decided', src_mult_kernel_orig/mont_word.c:87 [41]  (0.387 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,34 @@
+{
+  "0": {
+    "basicblocks": 9,
+    "calls": "1",
+    "file": "kernel_top.cpp",
+    "fileloc": 3,
+    "instructions": 54,
+    "loads": {
+      "L": 1,
+      "T": 3
+    },
+    "name": "kernel_top",
+    "stores": {
+      "L": 3,
+      "T": 1
+    },
+    "total_instructions": 261
+  },
+  "1": {
+    "basicblocks": 35,
+    "calls": "",
+    "file": "mont_word.c",
+    "fileloc": 19,
+    "instructions": 207,
+    "loads": {
+      "L": 21
+    },
+    "name": "montMult_words",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 207
+  }
+}
